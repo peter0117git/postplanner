@@ -114,26 +114,26 @@
 
         .day {
             background: var(--paper); border: 1px solid transparent; border-radius: 4px; position: relative;
-            aspect-ratio: 1; display: flex; flex-direction: column; justify-content: space-between; padding: 4px; cursor: pointer;
-            transition: background-color 0.1s;
+            aspect-ratio: 1; display: flex; align-items: center; justify-content: center; padding: 2px; cursor: pointer;
+            transition: background-color 0.1s; overflow: hidden;
         }
         .day:hover { background: #F0EBDD; }
         .day.selected {
             background: var(--ink) !important; color: var(--paper) !important;
         }
         .day.selected::before {
-            /* 摺角標記：簽名元素 */
             content: ''; position: absolute; top: 0; right: 0; width: 0; height: 0;
-            border-style: solid; border-width: 0 9px 9px 0; border-color: transparent var(--red-pen) transparent transparent;
+            border-style: solid; border-width: 0 8px 8px 0; border-color: transparent var(--red-pen) transparent transparent;
         }
         .day.selected .day-num { color: var(--paper); }
         .day.selected .badge { background: var(--red-pen); color: var(--paper); }
         .day.today:not(.selected) { border: 1.5px solid var(--green-stamp); }
         .day.today:not(.selected) .day-num { color: var(--green-stamp); font-weight: 800; }
-        .day .day-num { font-size: 11px; color: var(--ink-soft); font-family: var(--font-mono); }
+        .day .day-num { font-size: 11px; color: var(--ink-soft); font-family: var(--font-mono); line-height: 1; }
         .day .badge {
-            background: var(--ink-soft); color: var(--paper-raised); border-radius: 3px; font-size: 9px; font-weight: 700;
-            padding: 1px 4px; align-self: flex-end; min-width: 14px; text-align: center; font-family: var(--font-mono);
+            position: absolute; bottom: 2px; right: 2px;
+            background: var(--ink-soft); color: var(--paper-raised); border-radius: 3px; font-size: 8px; font-weight: 700;
+            padding: 1px 3px; min-width: 12px; text-align: center; font-family: var(--font-mono); line-height: 1.4;
         }
 
         /* ================= 2. 中間：今日貼文便條卡列表 ================= */
@@ -695,6 +695,7 @@
                             showToast('偵測到本機有較新的未同步資料，請手動同步後再重新整理');
                         } else {
                             db = remoteDb;
+                            migrateIds(); // 補齊從 GitHub 拉回的舊資料
                             localStorage.setItem('planner_db', JSON.stringify(db));
                             localStorage.setItem('gh_last_sync_sha', remoteSha);
                             renderCalendar();
@@ -714,6 +715,7 @@
             const today = new Date();
             currentYear = today.getFullYear(); currentMonth = today.getMonth();
             await initDatabase();
+            migrateIds(); // 補齊舊資料缺少的 _id
             selectDate(`${currentYear}-${String(currentMonth + 1).padStart(2, '0')}-${String(today.getDate()).padStart(2, '0')}`);
         });
 
@@ -721,6 +723,18 @@
             localStorage.setItem('gh_token', document.getElementById('gh-token').value.trim());
             localStorage.setItem('gh_repo', document.getElementById('gh-repo').value.trim());
         }
+        /* 舊資料遷移：確保所有貼文都有 _id 欄位 */
+        function migrateIds() {
+            Object.keys(db).forEach(dateStr => {
+                if (!Array.isArray(db[dateStr])) return;
+                db[dateStr].forEach(post => {
+                    if (!post._id) {
+                        post._id = 'p_' + Date.now() + '_' + Math.random().toString(36).slice(2, 7);
+                    }
+                });
+            });
+        }
+
         function saveLocal() {
             localStorage.setItem('planner_db', JSON.stringify(db));
             markSaved();
@@ -827,17 +841,25 @@
             renderCalendar(); renderList(); showEditor(false);
         }
 
-        /* ===================== 貼文列表 ===================== */
+        /* ===================== 貼文列表 =====================
+           currentId 現在儲存的是貼文的 _id 字串，不再是陣列索引，
+           避免排序或刪除後索引錯位導致所有操作打到錯誤的貼文。 */
+        function getPostById(id) {
+            if (!db[selectedDateStr] || id === null) return null;
+            return db[selectedDateStr].find(p => p._id === id) || null;
+        }
+
         function renderList() {
             const container = document.getElementById('post-list-container'); container.innerHTML = '';
-            // 用副本排序，不改動原始陣列，避免 currentId 索引錯位
             const list = [...(db[selectedDateStr] || [])];
             list.sort((a, b) => (a.time || '00:00').localeCompare(b.time || '00:00'));
-            list.forEach((post, index) => {
-                const item = document.createElement('div'); item.className = `post-item ${index === currentId ? 'active' : ''}`;
+            list.forEach((post) => {
+                const item = document.createElement('div');
+                item.className = `post-item ${post._id === currentId ? 'active' : ''}`;
                 const previewText = getPlainTextPreview(post.caption);
                 item.innerHTML = `<div class="item-time">${post.time || '00:00'}</div><div class="item-title">${previewText.substring(0, 14) || '無內文'}</div>`;
-                item.onclick = () => loadPost(index); container.appendChild(item);
+                item.onclick = () => loadPost(post._id);
+                container.appendChild(item);
             });
         }
 
@@ -847,11 +869,12 @@
             return _textScratchpad.innerText || '';
         }
 
-        function loadPost(index) {
-            currentId = index; isIGExpanded = false; currentIdxIG = 0; currentIdxFB = 0;
+        function loadPost(id) {
+            currentId = id; isIGExpanded = false; currentIdxIG = 0; currentIdxFB = 0;
             activeInputMode = 'img';
             renderList(); showEditor(true);
-            const post = db[selectedDateStr][currentId];
+            const post = getPostById(currentId);
+            if (!post) return;
             document.getElementById('edit-time').value = post.time || '09:00';
             document.getElementById('edit-ratio').value = post.ratio || '1-1';
             document.getElementById('edit-caption').innerHTML = post.caption || '';
@@ -868,7 +891,9 @@
 
         function updateCurrentPost(field, value) {
             if (currentId === null || !db[selectedDateStr]) return;
-            db[selectedDateStr][currentId][field] = value;
+            const post = getPostById(currentId);
+            if (!post) return;
+            post[field] = value;
             saveLocal();
             if (field === 'time' || field === 'caption') renderList();
             updatePreview();
@@ -890,8 +915,8 @@
         }
 
         function getActiveList() {
-            const post = db[selectedDateStr][currentId];
-            return post[activeInputMode] || [];
+            const post = getPostById(currentId);
+            return (post && post[activeInputMode]) || [];
         }
         function setActiveList(list) {
             updateCurrentPost(activeInputMode, list);
@@ -955,7 +980,7 @@
         }
 
         function updatePreview() {
-            const post = db[selectedDateStr][currentId];
+            const post = getPostById(currentId);
             if (!post) return;
 
             const ratioClass = 'r-' + (post.ratio || '1-1');
@@ -1055,15 +1080,16 @@
 
         function createNewPost() {
             if (!db[selectedDateStr]) db[selectedDateStr] = [];
-            db[selectedDateStr].push({ caption: "", time: "09:00", img: [], fbImg: [], ratio: "1-1" });
+            const newId = 'p_' + Date.now() + '_' + Math.random().toString(36).slice(2, 7);
+            db[selectedDateStr].push({ _id: newId, caption: "", time: "09:00", img: [], fbImg: [], ratio: "1-1" });
             saveLocal();
-            loadPost(db[selectedDateStr].length - 1); renderCalendar();
+            loadPost(newId); renderCalendar();
         }
 
         async function deletePost() {
             const ok = await showConfirm('確定刪除此貼文？此動作無法復原。');
             if (!ok) return;
-            db[selectedDateStr].splice(currentId, 1);
+            db[selectedDateStr] = db[selectedDateStr].filter(p => p._id !== currentId);
             currentId = null;
             saveLocal(); renderList(); renderCalendar(); showEditor(false);
         }
