@@ -2,168 +2,194 @@
 <html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
-    <title>IG/FB Post Planner Pro - GitHub 雲端同步版</title>
+    <title>IG/FB Post Planner Pro - 雲端旗艦優化版</title>
     <script src="database.js" onerror="console.log('尚未偵測到 database.js，啟用空資料庫')"></script>
     <style>
         :root {
-            --ig-bg: #fafafa;
+            --ig-bg: #f8f9fa;
             --ig-white: #ffffff;
-            --ig-border: #dbdbdb;
-            --ig-text-main: #262626;
-            --ig-text-light: #737373;
+            --ig-border: #e2e8f0;
+            --ig-text-main: #1e293b;
+            --ig-text-light: #64748b;
             --ig-blue: #0095f6;
             --ig-blue-hover: #1877f2;
             --fb-bg: #f0f2f5;
-            --danger-red: #ed4956;
-            --sidebar-width: 320px;
-            --list-col-width: 280px;
-            --success-green: #2ecc71;
+            --danger-red: #ef4444;
+            --sidebar-width: 340px;
+            --list-col-width: 300px;
+            --success-green: #10b981;
+            --primary-gradient: linear-gradient(135deg, #4f46e5, #06b6d4);
         }
 
         * { box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
         body { background-color: var(--ig-bg); margin: 0; display: flex; height: 100vh; color: var(--ig-text-main); overflow: hidden; }
 
+        /* 隱藏微調滾動條 */
+        ::-webkit-scrollbar { width: 6px; height: 6px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+
         /* ================= 1. 左側：工具與日曆列 ================= */
         .sidebar {
             width: var(--sidebar-width); background: var(--ig-white); border-right: 1px solid var(--ig-border);
-            display: flex; flex-direction: column; height: 100%;
+            display: flex; flex-direction: column; height: 100%; box-shadow: 2px 0 12px rgba(0,0,0,0.02);
         }
 
-        /* GitHub 設定區塊 */
         .github-config-panel {
-            padding: 15px;
-            background: #fdfdfd;
-            border-bottom: 2px dashed var(--ig-border);
+            padding: 20px;
+            background: #f8fafc;
+            border-bottom: 1px solid var(--ig-border);
         }
-        .github-config-panel h3 { margin: 0 0 10px 0; font-size: 14px; color: var(--ig-text-main); }
+        .github-config-panel h3 { margin: 0 0 12px 0; font-size: 14px; font-weight: 700; color: #334155; display: flex; align-items: center; gap: 6px; }
         .github-config-panel input {
-            width: 100%; padding: 6px; margin-bottom: 6px; 
-            border: 1px solid var(--ig-border); border-radius: 4px; font-size: 12px;
+            width: 100%; padding: 10px; margin-bottom: 8px; 
+            border: 1px solid var(--ig-border); border-radius: 8px; font-size: 13px;
+            transition: all 0.2s; background: white;
         }
+        .github-config-panel input:focus { border-color: #6366f1; outline: none; box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1); }
         .github-sync-btn {
-            width: 100%; padding: 8px; background-color: var(--ig-blue); 
-            color: white; border: none; border-radius: 4px; font-weight: bold; 
-            cursor: pointer; font-size: 13px; transition: background 0.2s;
+            width: 100%; padding: 11px; background-color: var(--ig-blue); 
+            color: white; border: none; border-radius: 8px; font-weight: bold; 
+            cursor: pointer; font-size: 13px; transition: all 0.2s;
+            box-shadow: 0 2px 4px rgba(0, 149, 246, 0.2);
         }
-        .github-sync-btn:hover { background-color: var(--ig-blue-hover); }
+        .github-sync-btn:hover { background-color: var(--ig-blue-hover); transform: translateY(-1px); }
 
-        .calendar-section { padding: 15px; flex: 1; overflow-y: auto; }
-        .calendar-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
-        .calendar-header h2 { font-size: 16px; margin: 0; }
-        .calendar-header button { background: none; border: 1px solid var(--ig-border); border-radius: 4px; padding: 4px 8px; cursor: pointer; }
+        /* 精美日曆區區塊 */
+        .calendar-section { padding: 20px; flex: 1; overflow-y: auto; display: flex; flex-direction: column; }
+        .calendar-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; }
+        .calendar-header h2 { font-size: 16px; font-weight: 700; margin: 0; color: #1e293b; }
+        .calendar-header button { background: #f1f5f9; border: none; border-radius: 6px; width: 32px; height: 32px; cursor: pointer; font-size: 12px; transition: all 0.2s; }
+        .calendar-header button:hover { background: #e2e8f0; }
         
-        .calendar-grid { display: grid; grid-template-columns: repeat(7, 1-1fr); gap: 4px; margin-bottom: 15px; text-align: center; font-size: 12px; }
-        .weekday { font-weight: bold; color: var(--ig-text-light); padding: 5px 0; }
-        .day { 
-            background: var(--ig-bg); border: 1px solid transparent; border-radius: 4px; 
-            aspect-ratio: 1; display: flex; flex-direction: column; justify-content: space-between; 
-            padding: 4px; cursor: pointer; position: relative;
-        }
-        .day:hover { border-color: var(--ig-border); background: #f0f0f0; }
-        .day.selected { border-color: var(--ig-text-main); background: #e8e8e8; }
-        .day.today { font-weight: bold; color: var(--ig-blue); }
-        .day .day-num { font-size: 12px; }
-        .day .badge { 
-            background: var(--ig-blue); color: white; border-radius: 10px; 
-            font-size: 9px; padding: 1px 4px; align-self: center; min-width: 15px;
-        }
+        .calendar-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 6px; text-align: center; }
+        .weekday { font-size: 11px; font-weight: 700; color: var(--ig-text-light); padding: 5px 0; text-transform: uppercase; }
+        .weekday:nth-child(1) { color: #ef4444; } /* 週日紅 */
+        .weekday:nth-child(7) { color: #3b82f6; } /* 週六藍 */
 
-        .backup-section { padding: 15px; border-top: 1px solid var(--ig-border); display: flex; gap: 10px; }
-        .backup-section button { flex: 1; padding: 8px; border: 1px solid var(--ig-border); background: white; border-radius: 4px; cursor: pointer; font-size: 12px; }
-        .backup-section button:hover { background: var(--ig-bg); }
+        #calendar-days { margin-top: 5px; }
+        .day { 
+            background: #f8fafc; border: 1px solid transparent; border-radius: 8px; 
+            aspect-ratio: 1; display: flex; flex-direction: column; justify-content: space-between; 
+            padding: 6px; cursor: pointer; position: relative; transition: all 0.15s ease-in-out;
+        }
+        .day:hover { background: #edf2f7; transform: scale(1.05); z-index: 2; }
+        .day.selected { background: #1e293b !important; color: white !important; box-shadow: 0 4px 10px rgba(0,0,0,0.15); }
+        .day.selected .day-num { color: white; }
+        .day.selected .badge { background: white; color: #1e293b; }
+        .day.today { border: 2px solid #6366f1; background: #f5f3ff; }
+        .day.today .day-num { font-weight: 800; color: #4f46e5; }
+        .day .day-num { font-size: 12px; font-weight: 500; color: #475569; align-self: flex-start; }
+        .day .badge { 
+            background: #6366f1; color: white; border-radius: 6px; 
+            font-size: 10px; font-weight: 700; padding: 2px 5px; align-self: flex-end;
+            min-width: 16px; text-align: center; box-shadow: 0 2px 4px rgba(99, 102, 241, 0.2);
+        }
 
         /* ================= 2. 中間：今日貼文列表 ================= */
         .list-column {
             width: var(--list-col-width); background: var(--ig-white); border-right: 1px solid var(--ig-border);
-            display: flex; flex-direction: column; height: 100%;
+            display: flex; flex-direction: column; height: 100%; box-shadow: 2px 0 12px rgba(0,0,0,0.01);
         }
-        .list-header { padding: 20px 15px 10px 15px; border-bottom: 1px solid var(--ig-border); }
-        .list-header h2 { margin: 0 0 5px 0; font-size: 18px; }
-        .list-header .date-sub { font-size: 13px; color: var(--ig-text-light); }
-        .post-list { flex: 1; overflow-y: auto; padding: 10px; }
+        .list-header { padding: 24px 20px 15px 20px; border-bottom: 1px solid var(--ig-border); }
+        .list-header h2 { margin: 0 0 4px 0; font-size: 18px; font-weight: 700; color: #0f172a; }
+        .list-header .date-sub { font-size: 12px; color: var(--ig-text-light); }
+        .post-list { flex: 1; overflow-y: auto; padding: 15px; }
+        
         .post-item { 
-            padding: 12px; border: 1px solid var(--ig-border); border-radius: 6px; 
-            margin-bottom: 10px; cursor: pointer; background: var(--ig-bg);
-            transition: all 0.2s;
+            padding: 14px; border: 1px solid var(--ig-border); border-radius: 10px; 
+            margin-bottom: 12px; cursor: pointer; background: #f8fafc;
+            transition: all 0.2s ease;
         }
-        .post-item:hover { border-color: var(--ig-text-light); }
-        .post-item.active { background: var(--ig-white); border-color: var(--ig-blue); box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
-        .post-item .item-time { font-size: 11px; color: var(--ig-blue); font-weight: bold; margin-bottom: 4px; }
-        .post-item .item-title { font-size: 13px; font-weight: bold; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-        .post-item .item-preview { font-size: 12px; color: var(--ig-text-light); margin-top: 4px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+        .post-item:hover { border-color: #cbd5e1; background: #f1f5f9; transform: translateY(-1px); }
+        .post-item.active { background: var(--ig-white); border-color: #6366f1; box-shadow: 0 4px 12px rgba(99,102,241,0.08); }
+        .post-item .item-time { font-size: 11px; color: #6366f1; font-weight: 700; margin-bottom: 6px; display: flex; align-items: center; gap: 4px;}
+        .post-item .item-title { font-size: 13px; font-weight: 700; color: #1e293b; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .post-item .item-preview { font-size: 12px; color: var(--ig-text-light); margin-top: 6px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; line-height: 1.4; }
         
         .add-post-btn {
-            margin: 10px; padding: 10px; background: none; border: 1px dashed var(--ig-blue); 
-            color: var(--ig-blue); border-radius: 6px; cursor: pointer; font-weight: bold; text-align: center;
+            margin: 15px; padding: 12px; background: #f5f3ff; border: 1px dashed #6366f1; 
+            color: #4f46e5; border-radius: 10px; cursor: pointer; font-weight: 700; text-align: center;
+            font-size: 13px; transition: all 0.2s;
         }
-        .add-post-btn:hover { background: #f0f9ff; }
+        .add-post-btn:hover { background: #eeebff; transform: translateY(-1px); }
 
         /* ================= 3. 右側：編輯與預覽區 ================= */
-        .main-content { flex: 1; display: flex; height: 100%; background: var(--ig-bg); overflow: hidden; }
-        .editor-container { flex: 1; padding: 20px; display: flex; flex-direction: column; gap: 15px; overflow-y: auto; height: 100%; border-right: 1px solid var(--ig-border); background: #fff;}
-        .preview-container { flex: 1; padding: 20px; overflow-y: auto; height: 100%; display: flex; flex-direction: column; align-items: center; gap: 20px;}
+        .main-content { flex: 1; display: flex; height: 100%; background: #f1f5f9; overflow: hidden; }
+        .editor-container { flex: 1.1; padding: 24px; display: flex; flex-direction: column; gap: 20px; overflow-y: auto; height: 100%; border-right: 1px solid var(--ig-border); background: #fff;}
+        .preview-container { flex: 0.9; padding: 24px; overflow-y: auto; height: 100%; display: flex; flex-direction: column; align-items: center; gap: 24px;}
 
-        .editor-card { background: white; border: 1px solid var(--ig-border); border-radius: 8px; padding: 15px; }
-        .editor-card h3 { margin: 0 0 12px 0; font-size: 14px; border-bottom: 1px solid var(--ig-border); padding-bottom: 6px; }
-        .form-group { margin-bottom: 12px; }
-        .form-group label { display: block; font-size: 12px; color: var(--ig-text-light); margin-bottom: 4px; font-weight: bold; }
-        .form-group input, .form-group select { width: 100%; padding: 8px; border: 1px solid var(--ig-border); border-radius: 4px; font-size: 13px; }
+        .editor-card { background: white; border: 1px solid var(--ig-border); border-radius: 12px; padding: 18px; box-shadow: 0 1px 3px rgba(0,0,0,0.02); }
+        .editor-card h3 { margin: 0 0 16px 0; font-size: 14px; font-weight: 700; color: #334155; border-bottom: 1px solid var(--ig-border); padding-bottom: 10px; }
+        .form-group { margin-bottom: 14px; }
+        .form-group label { display: block; font-size: 12px; color: var(--ig-text-light); margin-bottom: 6px; font-weight: 700; }
+        .form-group input, .form-group select { width: 100%; padding: 9px 12px; border: 1px solid var(--ig-border); border-radius: 8px; font-size: 13px; transition: all 0.2s; color: #334155;}
+        .form-group input:focus, .form-group select:focus { border-color: #6366f1; outline: none; box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1); }
         
-        /* 編輯器工具列 */
-        .toolbar { display: flex; gap: 4px; background: #f5f5f5; padding: 4px; border-radius: 4px; margin-bottom: 6px; }
-        .toolbar button { background: white; border: 1px solid var(--ig-border); border-radius: 3px; padding: 4px 8px; font-size: 12px; cursor: pointer; font-weight: bold;}
-        .toolbar button:hover { background: #eee; }
-        .rich-editor { width: 100%; min-height: 150px; border: 1px solid var(--ig-border); border-radius: 4px; padding: 10px; font-size: 14px; overflow-y: auto; line-height: 1.5; outline: none;}
+        .toolbar { display: flex; gap: 6px; background: #f8fafc; padding: 6px; border-radius: 8px; margin-bottom: 8px; border: 1px solid var(--ig-border); }
+        .toolbar button { background: white; border: 1px solid var(--ig-border); border-radius: 6px; padding: 5px 10px; font-size: 12px; cursor: pointer; font-weight: 700; transition: all 0.15s;}
+        .toolbar button:hover { background: #f1f5f9; border-color: #cbd5e1; }
+        .rich-editor { width: 100%; min-height: 180px; border: 1px solid var(--ig-border); border-radius: 8px; padding: 12px; font-size: 14px; overflow-y: auto; line-height: 1.5; outline: none; transition: all 0.2s;}
+        .rich-editor:focus { border-color: #6366f1; box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1); }
         .rich-editor b { font-weight: bold; }
 
-        .btn-danger { background: none; border: 1px solid var(--danger-red); color: var(--danger-red); padding: 8px 12px; border-radius: 4px; cursor: pointer; font-size: 13px; font-weight: bold; width: 100%;}
-        .btn-danger:hover { background: #fff5f5; }
+        .btn-danger { background: #fff5f5; border: 1px solid #fca5a5; color: var(--danger-red); padding: 10px 12px; border-radius: 8px; cursor: pointer; font-size: 13px; font-weight: 700; width: 100%; transition: all 0.2s;}
+        .btn-danger:hover { background: #fee2e2; }
 
-        /* 模擬手機外殼 */
+        /* 手機模擬 */
         .phone-mockup {
-            background: white; border: 1px solid var(--ig-border); border-radius: 12px; 
-            width: 100%; max-width: 400px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); overflow: hidden;
+            background: white; border: 1px solid var(--ig-border); border-radius: 24px; 
+            width: 100%; max-width: 375px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); overflow: hidden;
+            border: 4px solid #1e293b;
         }
-        /* IG 樣式 */
         .ig-post { background: white; }
-        .ig-header { display: flex; align-items: center; padding: 10px; gap: 10px; border-bottom: 1px solid #efefef; }
-        .ig-avatar { width: 32px; height: 32px; background: #dbdbdb; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: bold; color: white;}
-        .ig-username { font-size: 13px; font-weight: 600; }
-        .ig-media-box { width: 100%; background: #efefef; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;}
+        .ig-header { display: flex; align-items: center; padding: 12px; gap: 10px; border-bottom: 1px solid #f1f5f9; }
+        .ig-avatar { width: 32px; height: 32px; background: #e2e8f0; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 700; color: #64748b;}
+        .ig-username { font-size: 13px; font-weight: 600; color: #0f172a; }
+        .ig-media-box { width: 100%; background: #f8fafc; display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative; overflow: hidden;}
         .ig-media-box.r-1-1 { aspect-ratio: 1; }
         .ig-media-box.r-4-5 { aspect-ratio: 4/5; }
         .ig-media-box.r-16-9 { aspect-ratio: 16/9; }
         .ig-img-preview { width: 100%; height: 100%; object-fit: cover; }
-        .ig-actions { padding: 10px; display: flex; gap: 15px; font-size: 20px; border-bottom: 1px solid #efefef; color: #262626;}
-        .ig-caption-box { padding: 10px; font-size: 14px; line-height: 1.4; }
-        .ig-caption-box .ig-user { font-weight: 600; margin-right: 6px; }
+        .ig-actions { padding: 12px; display: flex; gap: 16px; font-size: 18px; border-bottom: 1px solid #f1f5f9; color: #0f172a;}
+        .ig-caption-box { padding: 12px; font-size: 13px; line-height: 1.5; color: #334155; }
+        .ig-caption-box .ig-user { font-weight: 600; margin-right: 6px; color: #0f172a; }
         .ig-caption-text { display: inline; white-space: pre-wrap; }
-        .ig-time { font-size: 10px; color: var(--ig-text-light); margin-top: 6px; text-transform: uppercase; }
+        .ig-time { font-size: 10px; color: var(--ig-text-light); margin-top: 8px; }
 
         /* FB 樣式 */
-        .fb-post { background: white; font-family: Helvetica, Arial, sans-serif; padding: 12px; box-shadow: 0 1px 2px rgba(0,0,0,0.1); border-radius: 8px;}
-        .fb-header { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; }
-        .fb-avatar { width: 40px; height: 40px; background: #dbdbdb; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; color: white;}
+        .fb-post { background: white; padding: 14px; border-radius: 8px;}
+        .fb-header { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+        .fb-avatar { width: 38px; height: 38px; background: #e2e8f0; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; color: #64748b;}
         .fb-meta { display: flex; flex-direction: column; }
-        .fb-username { font-size: 15px; font-weight: bold; color: #050505; }
-        .fb-time { font-size: 13px; color: #65676b; }
-        .fb-caption-text { font-size: 15px; line-height: 1.4; color: #050505; margin-bottom: 12px; white-space: pre-wrap; }
-        .fb-media-box { background: #f0f2f5; margin: 0 -12px 12px -12px; display: flex; align-items: center; justify-content: center; overflow: hidden;}
+        .fb-username { font-size: 14px; font-weight: bold; color: #050505; }
+        .fb-time { font-size: 12px; color: #65676b; margin-top: 2px; }
+        .fb-caption-text { font-size: 14px; line-height: 1.5; color: #050505; margin-bottom: 12px; white-space: pre-wrap; }
+        .fb-media-box { background: #f0f2f5; margin: 0 -14px 12px -14px; display: flex; flex-direction: column; align-items: center; justify-content: center; overflow: hidden;}
         .fb-media-box.r-1-1 { aspect-ratio: 1; }
         .fb-media-box.r-4-5 { aspect-ratio: 4/5; }
         .fb-media-box.r-16-9 { aspect-ratio: 16/9; }
         .fb-img-preview { width: 100%; height: 100%; object-fit: cover; }
-        .fb-actions { display: flex; justify-content: space-around; padding: 4px 0; border-top: 1px solid #ced0d4; border-bottom: 1px solid #ced0d4; color: #65676b; font-size: 14px; font-weight: bold;}
-        .fb-action-btn { padding: 4px 8px; cursor: pointer; }
+        .fb-actions { display: flex; justify-content: space-around; padding: 6px 0; border-top: 1px solid #e5e7eb; color: #65676b; font-size: 13px; font-weight: 600;}
 
-        .no-post-msg { color: var(--ig-text-light); margin-top: 100px; text-align: center; font-size: 14px; width: 100%;}
+        /* Canva 提示樣式 */
+        .canva-badge {
+            background: linear-gradient(135deg, #7d2ae8, #00c4cc); color: white;
+            padding: 10px 16px; border-radius: 20px; font-size: 12px; font-weight: bold;
+            text-decoration: none; box-shadow: 0 4px 10px rgba(125,42,232,0.3);
+            transition: transform 0.2s; display: inline-flex; align-items: center; gap: 6px;
+        }
+        .canva-badge:hover { transform: scale(1.05); color: white; }
+
+        .no-post-msg { color: var(--ig-text-light); margin-top: 150px; text-align: center; font-size: 14px; width: 100%; font-weight: 500;}
     </style>
 </head>
 <body>
 
     <div class="sidebar">
         <div class="github-config-panel">
-            <h3>☁️ GitHub 雲端同步設定</h3>
+            <h3>☁️ GitHub 雲端即時同步</h3>
             <input type="password" id="gh-token" placeholder="GitHub Token (ghp_...)" onchange="saveGitConfig()">
             <input type="text" id="gh-repo" placeholder="使用者名稱/儲存庫名稱" onchange="saveGitConfig()">
             <button class="github-sync-btn" id="sync-btn" onclick="syncToGitHub()">儲存並同步到 GitHub</button>
@@ -172,7 +198,7 @@
         <div class="calendar-section">
             <div class="calendar-header">
                 <button onclick="changeMonth(-1)">◀</button>
-                <h2 id="calendar-title">2023 年 10 月</h2>
+                <h2 id="calendar-title">2026 年 06 月</h2>
                 <button onclick="changeMonth(1)">▶</button>
             </div>
             <div class="calendar-grid" id="calendar-weekdays">
@@ -180,11 +206,6 @@
                 <div class="weekday">三</div><div class="weekday">四</div><div class="weekday">五</div><div class="weekday">六</div>
             </div>
             <div class="calendar-grid" id="calendar-days"></div>
-        </div>
-        <div class="backup-section">
-            <button onclick="exportAsJS()">匯出 database.js</button>
-            <button onclick="document.getElementById('import-file').click()">匯入備份</button>
-            <input type="file" id="import-file" style="display:none" accept=".js" onchange="importJS(this)">
         </div>
     </div>
 
@@ -216,7 +237,7 @@
                     <input type="text" id="edit-postUser" oninput="updateCurrentPost('postUser', this.value)">
                 </div>
                 <div class="form-group">
-                    <label>圖片比例 (切換預覽框尺寸)</label>
+                    <label>圖片比例</label>
                     <select id="edit-ratio" onchange="updateCurrentPost('ratio', this.value)">
                         <option value="1-1">1:1 (正方形)</option>
                         <option value="4-5">4:5 (IG直式長形)</option>
@@ -224,17 +245,17 @@
                     </select>
                 </div>
                 <div class="form-group">
-                    <label>圖片網址 (以逗號分隔多張，首張會顯示在預覽)</label>
-                    <input type="text" id="edit-img" placeholder="https://example.com/image.jpg" oninput="updateCurrentPost('img', this.value.split(','))">
+                    <label>圖片或 Canva 連結 (多張請用英文逗號隔開)</label>
+                    <input type="text" id="edit-img" placeholder="https://example.com/a.jpg 或 Canva 連結" oninput="updateCurrentPost('img', this.value.split(','))">
                 </div>
                 <div class="form-group">
-                    <label>FB 專用圖片網址 (若無則使用上方圖片)</label>
-                    <input type="text" id="edit-fbImg" placeholder="https://example.com/fb-image.jpg" oninput="updateCurrentPost('fbImg', this.value.split(','))">
+                    <label>FB 專用圖片/Canva 連結 (若無則自動帶入上方欄位)</label>
+                    <input type="text" id="edit-fbImg" placeholder="FB專用網址" oninput="updateCurrentPost('fbImg', this.value.split(','))">
                 </div>
             </div>
 
             <div class="editor-card" style="flex:1; display:flex; flex-direction:column;">
-                <h3>📝 貼文內文編輯 (支援豐富文本、自動轉存)</h3>
+                <h3>📝 貼文內文編輯</h3>
                 <div class="toolbar">
                     <button onclick="formatDoc('bold')">B</button>
                     <button onclick="formatDoc('insertHTML', '&lt;b&gt;【早上只讀一點點】&lt;/b&gt;')">【標題】</button>
@@ -254,6 +275,9 @@
                         <div class="ig-username" id="prev-ig-headerUser">username</div>
                     </div>
                     <div class="ig-media-box" id="prev-ig-mediabox">
+                        <div id="prev-ig-canvabox" style="display:none;">
+                            <a href="#" id="prev-ig-canvalink" target="_blank" class="canva-badge">🎨 開啟 Canva 設計項目</a>
+                        </div>
                         <span style="color:var(--ig-text-light); font-size:12px;" id="prev-ig-noimg">無圖片預覽</span>
                         <img class="ig-img-preview" id="prev-ig-img" style="display:none">
                     </div>
@@ -277,13 +301,16 @@
                     </div>
                     <div class="fb-caption-text" id="prev-fb-caption"></div>
                     <div class="fb-media-box" id="prev-fb-mediabox">
+                        <div id="prev-fb-canvabox" style="display:none;">
+                            <a href="#" id="prev-fb-canvalink" target="_blank" class="canva-badge">🎨 開啟 Canva 設計項目</a>
+                        </div>
                         <span style="color:var(--ig-text-light); font-size:12px;" id="prev-fb-noimg">無圖片預覽</span>
                         <img class="fb-img-preview" id="prev-fb-img" style="display:none">
                     </div>
                     <div class="fb-actions">
-                        <div class="fb-action-btn">👍 讚</div>
-                        <div class="fb-action-btn">💬 留言</div>
-                        <div class="fb-action-btn">↩️ 分享</div>
+                        <div style="flex:1; text-align:center;">👍 讚</div>
+                        <div style="flex:1; text-align:center;">💬 留言</div>
+                        <div style="flex:1; text-align:center;">↩️ 分享</div>
                     </div>
                 </div>
             </div>
@@ -291,28 +318,52 @@
     </div>
 
     <script>
-        // 初始化資料庫邏輯：優先使用 localStorage，若無則看 externalDB 是否存在，再無則空物件
         let db = {};
-        try {
-            const localData = localStorage.getItem('planner_db');
-            if (localData) {
-                db = JSON.parse(localData);
-            } else if (typeof externalDB !== 'undefined') {
-                db = externalDB;
-                localStorage.setItem('planner_db', JSON.stringify(db));
-            }
-        } catch(e) {
-            console.error("資料初始化失敗", e);
-        }
-
         let currentYear, currentMonth;
         let selectedDateStr = null;
         let currentId = null;
 
-        // 讀取 GitHub 設定
-        window.addEventListener('DOMContentLoaded', () => {
+        // 初始化與強效即時讀取機制
+        async function initDatabase() {
+            // 1. 先吃本地快取
+            const localData = localStorage.getItem('planner_db');
+            if (localData) db = JSON.parse(localData);
+            else if (typeof externalDB !== 'undefined') db = externalDB;
+
+            // 2. 即時優化：直接向 GitHub 撈取最新資料，不受 Pages 幾分鐘的快取限制！
+            const token = localStorage.getItem('gh_token');
+            const repo = localStorage.getItem('gh_repo');
+            if (token && repo) {
+                try {
+                    const res = await fetch(`https://api.github.com/repos/${repo}/contents/database.js?nocache=${new Date().getTime()}`, {
+                        headers: { 'Authorization': `token ${token}` }
+                    });
+                    if (res.ok) {
+                        const fileData = await res.json();
+                        const rawText = decodeURIComponent(escape(atob(fileData.content)));
+                        const jsonText = rawText.replace(/var\s+externalDB\s*=\s*/, '').replace(/;$/, '');
+                        db = JSON.parse(jsonText);
+                        localStorage.setItem('planner_db', JSON.stringify(db));
+                        console.log("⚡ 已成功經由 API 繞過快取，加載 GitHub 上的最新即時數據！");
+                        renderCalendar();
+                        if (selectedDateStr) selectDate(selectedDateStr);
+                    }
+                } catch(e) { console.log("即時 API 加載失敗，採用本地數據:", e); }
+            }
+        }
+
+        window.addEventListener('DOMContentLoaded', async () => {
             document.getElementById('gh-token').value = localStorage.getItem('gh_token') || '';
             document.getElementById('gh-repo').value = localStorage.getItem('gh_repo') || '';
+            
+            const today = new Date();
+            currentYear = today.getFullYear();
+            currentMonth = today.getMonth();
+            
+            await initDatabase();
+            
+            const dateStr = `${currentYear}-${String(currentMonth + 1).padStart(2, '0')}-${String(today.getDate()).padStart(2, '0')}`;
+            selectDate(dateStr);
         });
 
         function saveGitConfig() {
@@ -320,54 +371,46 @@
             localStorage.setItem('gh_repo', document.getElementById('gh-repo').value.trim());
         }
 
-        // ==================== ☁️ GitHub 同步核心功能 ====================
+        function saveLocal() {
+            localStorage.setItem('planner_db', JSON.stringify(db));
+        }
+
+        // ==================== ☁️ GitHub 同步功能 ====================
         async function syncToGitHub() {
             const token = localStorage.getItem('gh_token');
             const repo = localStorage.getItem('gh_repo');
             const syncBtn = document.getElementById('sync-btn');
 
             if (!token || !repo) {
-                alert('請先填寫 GitHub Token 與 儲存庫名稱（格式: 使用者名稱/儲存庫）');
+                alert('請先正確輸入 GitHub Token 與 儲存庫路徑！');
                 return;
             }
 
             syncBtn.disabled = true;
-            syncBtn.innerText = '正在同步到 GitHub...';
-            syncBtn.style.backgroundColor = '#f39c12';
+            syncBtn.innerText = '正在即時同步...';
+            syncBtn.style.backgroundColor = '#f59e0b';
 
-            const filePath = 'database.js'; 
-            const url = `https://api.github.com/repos/${repo}/contents/${filePath}`;
-            
-            // 將目前的 db 轉化為 database.js 的文字內容
+            const url = `https://api.github.com/repos/${repo}/contents/database.js`;
             const fileContent = "var externalDB = " + JSON.stringify(db, null, 4) + ";";
-            // 必須轉成 Base64 編碼
             const base64Content = btoa(unescape(encodeURIComponent(fileContent)));
 
             try {
-                // 1. 必須先取得原檔案的 sha 雜湊值，否則 GitHub 會拒絕更新
                 let sha = null;
-                const getRes = await fetch(url, {
-                    headers: { 'Authorization': `token ${token}` }
-                });
-                
+                const getRes = await fetch(url, { headers: { 'Authorization': `token ${token}` } });
                 if (getRes.status === 200) {
                     const getData = await getRes.json();
                     sha = getData.sha;
                 }
 
-                // 2. 發送 PUT 請求更新檔案
                 const bodyData = {
-                    message: `更新貼文排版資料庫: ${new Date().toLocaleString()}`,
+                    message: `⚡ 貼文系統即時更新: ${new Date().toLocaleString()}`,
                     content: base64Content
                 };
-                if (sha) bodyData.sha = sha; // 如果檔案存在，帶入 sha 才能覆蓋
+                if (sha) bodyData.sha = sha;
 
                 const putRes = await fetch(url, {
                     method: 'PUT',
-                    headers: {
-                        'Authorization': `token ${token}`,
-                        'Content-Type': 'application/json'
-                    },
+                    headers: { 'Authorization': `token ${token}`, 'Content-Type': 'application/json' },
                     body: JSON.stringify(bodyData)
                 });
 
@@ -378,29 +421,20 @@
                         syncBtn.disabled = false;
                         syncBtn.style.backgroundColor = 'var(--ig-blue)';
                         syncBtn.innerText = '儲存並同步到 GitHub';
-                    }, 2000);
-                } else {
-                    const errData = await putRes.json();
-                    throw new Error(errData.message || '連線錯誤');
-                }
-
+                    }, 1500);
+                } else { throw new Error('同步失敗'); }
             } catch (error) {
-                console.error(error);
-                alert('同步失敗，請檢查 Token 權限、專案名稱是否正確！\n錯誤訊息: ' + error.message);
+                alert('上傳失敗，請檢查 Token 是否有效或專案名稱是否正確！');
                 syncBtn.disabled = false;
                 syncBtn.style.backgroundColor = 'var(--ig-blue)';
                 syncBtn.innerText = '儲存並同步到 GitHub';
             }
         }
-        // ================================================================
 
-        function saveLocal() {
-            localStorage.setItem('planner_db', JSON.stringify(db));
-        }
-
+        // ==================== 📅 精美日曆渲染 ====================
         function renderCalendar() {
             const title = document.getElementById('calendar-title');
-            title.innerText = `${currentYear} 年 ${currentMonth + 1} 月`;
+            title.innerText = `${currentYear} 年 ${String(currentMonth + 1).padStart(2, '0')} 月`;
             const container = document.getElementById('calendar-days');
             container.innerHTML = '';
 
@@ -409,8 +443,7 @@
             const today = new Date();
 
             for (let i = 0; i < firstDay; i++) {
-                const empty = document.createElement('div');
-                container.appendChild(empty);
+                container.appendChild(document.createElement('div'));
             }
 
             for (let d = 1; d <= totalDays; d++) {
@@ -466,11 +499,13 @@
             container.innerHTML = '';
             const list = db[selectedDateStr] || [];
 
+            // 依時間自動排序
+            list.sort((a, b) => (a.time || '00:00').localeCompare(b.time || '00:00'));
+
             list.forEach((post, index) => {
                 const item = document.createElement('div');
                 item.className = `post-item ${index === currentId ? 'active' : ''}`;
                 
-                // 去除 HTML 標籤做預覽純文字
                 const tempDiv = document.createElement('div');
                 tempDiv.innerHTML = post.caption || '';
                 const pureText = tempDiv.innerText || tempDiv.textContent || '';
@@ -519,11 +554,16 @@
             updatePreview();
         }
 
+        // 檢查是否為 Canva 網址
+        function isCanvaLink(url) {
+            if(!url) return false;
+            return url.includes('canva.com') || url.includes('canva.link');
+        }
+
         function updatePreview() {
             const post = db[selectedDateStr][currentId];
             if (!post) return;
 
-            // 頭像文字
             const char = (post.headerUser || 'U').charAt(0).toUpperCase();
             document.getElementById('prev-ig-avatar').innerText = char;
             document.getElementById('prev-fb-avatar').innerText = char;
@@ -532,39 +572,53 @@
             document.getElementById('prev-fb-headerUser').innerText = post.headerUser || 'username';
             document.getElementById('prev-ig-postUser').innerText = post.postUser || 'username';
 
-            // 時間
             document.getElementById('prev-ig-time').innerText = post.time || '09:00';
             document.getElementById('prev-fb-time').innerText = '預計發布：' + (post.time || '09:00');
 
-            // 內文
             document.getElementById('prev-ig-caption').innerHTML = post.caption || '';
             document.getElementById('prev-fb-caption').innerHTML = post.caption || '';
 
-            // 比例與圖片控制
             const ratioClass = 'r-' + (post.ratio || '1-1');
             
-            // IG 圖片
+            // IG 圖片或 Canva 處理
             const igBox = document.getElementById('prev-ig-mediabox');
             igBox.className = 'ig-media-box ' + ratioClass;
-            if (post.img && post.img[0] && post.img[0].trim() !== '') {
+            const igSrc = post.img && post.img[0] ? post.img[0].trim() : '';
+
+            if (isCanvaLink(igSrc)) {
                 document.getElementById('prev-ig-noimg').style.display = 'none';
+                document.getElementById('prev-ig-img').style.display = 'none';
+                document.getElementById('prev-ig-canvabox').style.display = 'block';
+                document.getElementById('prev-ig-canvalink').href = igSrc;
+            } else if (igSrc !== '') {
+                document.getElementById('prev-ig-noimg').style.display = 'none';
+                document.getElementById('prev-ig-canvabox').style.display = 'none';
                 document.getElementById('prev-ig-img').style.display = 'block';
-                document.getElementById('prev-ig-img').src = post.img[0].trim();
+                document.getElementById('prev-ig-img').src = igSrc;
             } else {
                 document.getElementById('prev-ig-noimg').style.display = 'block';
+                document.getElementById('prev-ig-canvabox').style.display = 'none';
                 document.getElementById('prev-ig-img').style.display = 'none';
             }
 
-            // FB 圖片
+            // FB 圖片或 Canva 處理
             const fbBox = document.getElementById('prev-fb-mediabox');
             fbBox.className = 'fb-media-box ' + ratioClass;
-            const fbSrc = (post.fbImg && post.fbImg[0] && post.fbImg[0].trim() !== '') ? post.fbImg[0].trim() : (post.img ? post.img[0] : '');
-            if (fbSrc && fbSrc.trim() !== '') {
+            const fbSrc = (post.fbImg && post.fbImg[0] && post.fbImg[0].trim() !== '') ? post.fbImg[0].trim() : igSrc;
+
+            if (isCanvaLink(fbSrc)) {
                 document.getElementById('prev-fb-noimg').style.display = 'none';
+                document.getElementById('prev-fb-img').style.display = 'none';
+                document.getElementById('prev-fb-canvabox').style.display = 'block';
+                document.getElementById('prev-fb-canvalink').href = fbSrc;
+            } else if (fbSrc !== '') {
+                document.getElementById('prev-fb-noimg').style.display = 'none';
+                document.getElementById('prev-fb-canvabox').style.display = 'none';
                 document.getElementById('prev-fb-img').style.display = 'block';
-                document.getElementById('prev-fb-img').src = fbSrc.trim();
+                document.getElementById('prev-fb-img').src = fbSrc;
             } else {
                 document.getElementById('prev-fb-noimg').style.display = 'block';
+                document.getElementById('prev-fb-canvabox').style.display = 'none';
                 document.getElementById('prev-fb-img').style.display = 'none';
             }
         }
@@ -572,7 +626,6 @@
         function formatDoc(cmd, val) {
             document.execCommand(cmd, false, val);
             document.getElementById('edit-caption').focus();
-            // 手動觸發 update
             updateCurrentPost('caption', document.getElementById('edit-caption').innerHTML);
         }
 
@@ -592,45 +645,6 @@
                 renderCalendar();
                 showEditor(false);
             }
-        }
-
-        function exportAsJS() {
-            const dataStr = "var externalDB = " + JSON.stringify(db, null, 4) + ";";
-            const blob = new Blob([dataStr], {type: "text/javascript"});
-            const dl = document.createElement('a');
-            dl.href = URL.createObjectURL(blob);
-            dl.download = "database.js";
-            dl.click();
-        }
-
-        function importJS(input) {
-            const file = input.files[0];
-            if (!file) return;
-            const reader = new FileReader();
-            reader.onload = function(e) {
-                const text = e.target.result;
-                try {
-                    // 解析 var externalDB = {...}
-                    const jsonText = text.replace(/var\s+externalDB\s*=\s*/, '').replace(/;$/, '');
-                    const importedData = JSON.parse(jsonText);
-                    db = importedData;
-                    saveLocal();
-                    alert('備份匯入成功！');
-                    renderCalendar();
-                    if (selectedDateStr) selectDate(selectedDateStr);
-                } catch (err) {
-                    alert('解析失敗，請確認檔案格式是否正確。');
-                }
-            };
-            reader.readAsText(file);
-        }
-
-        window.onload = () => {
-            const today = new Date();
-            currentYear = today.getFullYear();
-            currentMonth = today.getMonth();
-            const dateStr = `${currentYear}-${String(currentMonth + 1).padStart(2, '0')}-${String(today.getDate()).padStart(2, '0')}`;
-            selectDate(dateStr);
         }
     </script>
 </body>
