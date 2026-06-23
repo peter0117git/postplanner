@@ -667,18 +667,40 @@
             const repo = localStorage.getItem('gh_repo');
             if (token && repo) {
                 try {
+                    // 加上官方建議的 Accept header，讓 API 回應更穩定
                     const res = await fetch(`https://api.github.com/repos/${repo}/contents/database.js?nocache=${new Date().getTime()}`, {
-                        headers: { 'Authorization': `token ${token}` }
+                        headers: {
+                            'Authorization': `token ${token}`,
+                            'Accept': 'application/vnd.github+json'
+                        }
                     });
                     if (res.ok) {
                         const fileData = await res.json();
-                        const rawText = decodeURIComponent(escape(atob(fileData.content)));
+                        const rawText = decodeURIComponent(escape(atob(fileData.content.replace(/\n/g, ''))));
                         const jsonText = rawText.replace(/var\s+externalDB\s*=\s*/, '').replace(/;\s*$/, '');
-                        db = JSON.parse(jsonText);
-                        localStorage.setItem('planner_db', JSON.stringify(db));
-                        renderCalendar();
-                        if (selectedDateStr) selectDate(selectedDateStr);
-                        showToast('已從 GitHub 載入最新資料');
+                        const remoteDb = JSON.parse(jsonText);
+
+                        // 比對本機與遠端的資料筆數：若本機資料較多（離線工作過），保留本機
+                        const localKeys = Object.keys(db).length;
+                        const remoteKeys = Object.keys(remoteDb).length;
+                        const localSaved = localStorage.getItem('planner_db_saved_at');
+                        const remoteSha = fileData.sha;
+                        const lastSyncSha = localStorage.getItem('gh_last_sync_sha');
+
+                        // 若 SHA 相同代表本機與遠端一致，不需要覆蓋
+                        if (remoteSha === lastSyncSha) {
+                            showToast('資料已是最新，無需重新載入');
+                        } else if (localSaved && localKeys > remoteKeys) {
+                            // 本機比遠端多資料，提示使用者決定
+                            showToast('偵測到本機有較新的未同步資料，請手動同步後再重新整理');
+                        } else {
+                            db = remoteDb;
+                            localStorage.setItem('planner_db', JSON.stringify(db));
+                            localStorage.setItem('gh_last_sync_sha', remoteSha);
+                            renderCalendar();
+                            if (selectedDateStr) selectDate(selectedDateStr);
+                            showToast('已從 GitHub 載入最新資料');
+                        }
                     } else if (res.status === 401 || res.status === 403) {
                         showToast('GitHub Token 無效或權限不足，已改用本機資料');
                     }
@@ -721,6 +743,12 @@
                     body: JSON.stringify({ message: `排版更新: ${new Date().toLocaleString()}`, content: base64Content, sha: sha })
                 });
                 if (putRes.ok) {
+                    // 記錄此次同步的 SHA，避免下次啟動誤判為衝突
+                    const putData = await putRes.json().catch(() => ({}));
+                    if (putData.content && putData.content.sha) {
+                        localStorage.setItem('gh_last_sync_sha', putData.content.sha);
+                    }
+                    localStorage.setItem('planner_db_saved_at', new Date().toISOString());
                     syncBtn.style.backgroundColor = 'var(--green-stamp)'; syncBtn.innerText = '✓ 同步成功！';
                     setTimeout(() => { syncBtn.disabled = false; syncBtn.style.backgroundColor = 'var(--ink)'; syncBtn.innerText = '儲存並同步到 GitHub'; }, 1200);
                 } else {
@@ -802,7 +830,8 @@
         /* ===================== 貼文列表 ===================== */
         function renderList() {
             const container = document.getElementById('post-list-container'); container.innerHTML = '';
-            const list = db[selectedDateStr] || [];
+            // 用副本排序，不改動原始陣列，避免 currentId 索引錯位
+            const list = [...(db[selectedDateStr] || [])];
             list.sort((a, b) => (a.time || '00:00').localeCompare(b.time || '00:00'));
             list.forEach((post, index) => {
                 const item = document.createElement('div'); item.className = `post-item ${index === currentId ? 'active' : ''}`;
