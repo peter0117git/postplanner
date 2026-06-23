@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>IG/FB Post Planner Pro - GitHub 雲端同步版</title>
+    <script src="database.js" onerror="console.log('尚未偵測到 database.js，啟用空資料庫')"></script>
+    <style>
+        :root {
+            --ig-bg: #fafafa;
+            --ig-white: #ffffff;
+            --ig-border: #dbdbdb;
+            --ig-text-main: #262626;
+            --ig-text-light: #737373;
+            --ig-blue: #0095f6;
+            --ig-blue-hover: #1877f2;
+            --fb-bg: #f0f2f5;
+            --danger-red: #ed4956;
+            --sidebar-width: 320px;
+            --list-col-width: 280px;
+            --success-green: #2ecc71;
+        }
+
+        * { box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+        body { background-color: var(--ig-bg); margin: 0; display: flex; height: 100vh; color: var(--ig-text-main); overflow: hidden; }
+
+        /* ================= 1. 左側：工具與日曆列 ================= */
+        .sidebar {
+            width: var(--sidebar-width); background: var(--ig-white); border-right: 1px solid var(--ig-border);
+            display: flex; flex-direction: column; height: 100%;
+        }
+
+        /* GitHub 設定區塊 */
+        .github-config-panel {
+            padding: 15px;
+            background: #fdfdfd;
+            border-bottom: 2px dashed var(--ig-border);
+        }
+        .github-config-panel h3 { margin: 0 0 10px 0; font-size: 14px; color: var(--ig-text-main); }
+        .github-config-panel input {
+            width: 100%; padding: 6px; margin-bottom: 6px; 
+            border: 1px solid var(--ig-border); border-radius: 4px; font-size: 12px;
+        }
+        .github-sync-btn {
+            width: 100%; padding: 8px; background-color: var(--ig-blue); 
+            color: white; border: none; border-radius: 4px; font-weight: bold; 
+            cursor: pointer; font-size: 13px; transition: background 0.2s;
+        }
+        .github-sync-btn:hover { background-color: var(--ig-blue-hover); }
+
+        .calendar-section { padding: 15px; flex: 1; overflow-y: auto; }
+        .calendar-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+        .calendar-header h2 { font-size: 16px; margin: 0; }
+        .calendar-header button { background: none; border: 1px solid var(--ig-border); border-radius: 4px; padding: 4px 8px; cursor: pointer; }
+        
+        .calendar-grid { display: grid; grid-template-columns: repeat(7, 1-1fr); gap: 4px; margin-bottom: 15px; text-align: center; font-size: 12px; }
+        .weekday { font-weight: bold; color: var(--ig-text-light); padding: 5px 0; }
+        .day { 
+            background: var(--ig-bg); border: 1px solid transparent; border-radius: 4px; 
+            aspect-ratio: 1; display: flex; flex-direction: column; justify-content: space-between; 
+            padding: 4px; cursor: pointer; position: relative;
+        }
+        .day:hover { border-color: var(--ig-border); background: #f0f0f0; }
+        .day.selected { border-color: var(--ig-text-main); background: #e8e8e8; }
+        .day.today { font-weight: bold; color: var(--ig-blue); }
+        .day .day-num { font-size: 12px; }
+        .day .badge { 
+            background: var(--ig-blue); color: white; border-radius: 10px; 
+            font-size: 9px; padding: 1px 4px; align-self: center; min-width: 15px;
+        }
+
+        .backup-section { padding: 15px; border-top: 1px solid var(--ig-border); display: flex; gap: 10px; }
+        .backup-section button { flex: 1; padding: 8px; border: 1px solid var(--ig-border); background: white; border-radius: 4px; cursor: pointer; font-size: 12px; }
+        .backup-section button:hover { background: var(--ig-bg); }
+
+        /* ================= 2. 中間：今日貼文列表 ================= */
+        .list-column {
+            width: var(--list-col-width); background: var(--ig-white); border-right: 1px solid var(--ig-border);
+            display: flex; flex-direction: column; height: 100%;
+        }
+        .list-header { padding: 20px 15px 10px 15px; border-bottom: 1px solid var(--ig-border); }
+        .list-header h2 { margin: 0 0 5px 0; font-size: 18px; }
+        .list-header .date-sub { font-size: 13px; color: var(--ig-text-light); }
+        .post-list { flex: 1; overflow-y: auto; padding: 10px; }
+        .post-item { 
+            padding: 12px; border: 1px solid var(--ig-border); border-radius: 6px; 
+            margin-bottom: 10px; cursor: pointer; background: var(--ig-bg);
+            transition: all 0.2s;
+        }
+        .post-item:hover { border-color: var(--ig-text-light); }
+        .post-item.active { background: var(--ig-white); border-color: var(--ig-blue); box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+        .post-item .item-time { font-size: 11px; color: var(--ig-blue); font-weight: bold; margin-bottom: 4px; }
+        .post-item .item-title { font-size: 13px; font-weight: bold; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .post-item .item-preview { font-size: 12px; color: var(--ig-text-light); margin-top: 4px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+        
+        .add-post-btn {
+            margin: 10px; padding: 10px; background: none; border: 1px dashed var(--ig-blue); 
+            color: var(--ig-blue); border-radius: 6px; cursor: pointer; font-weight: bold; text-align: center;
+        }
+        .add-post-btn:hover { background: #f0f9ff; }
+
+        /* ================= 3. 右側：編輯與預覽區 ================= */
+        .main-content { flex: 1; display: flex; height: 100%; background: var(--ig-bg); overflow: hidden; }
+        .editor-container { flex: 1; padding: 20px; display: flex; flex-direction: column; gap: 15px; overflow-y: auto; height: 100%; border-right: 1px solid var(--ig-border); background: #fff;}
+        .preview-container { flex: 1; padding: 20px; overflow-y: auto; height: 100%; display: flex; flex-direction: column; align-items: center; gap: 20px;}
+
+        .editor-card { background: white; border: 1px solid var(--ig-border); border-radius: 8px; padding: 15px; }
+        .editor-card h3 { margin: 0 0 12px 0; font-size: 14px; border-bottom: 1px solid var(--ig-border); padding-bottom: 6px; }
+        .form-group { margin-bottom: 12px; }
+        .form-group label { display: block; font-size: 12px; color: var(--ig-text-light); margin-bottom: 4px; font-weight: bold; }
+        .form-group input, .form-group select { width: 100%; padding: 8px; border: 1px solid var(--ig-border); border-radius: 4px; font-size: 13px; }
+        
+        /* 編輯器工具列 */
+        .toolbar { display: flex; gap: 4px; background: #f5f5f5; padding: 4px; border-radius: 4px; margin-bottom: 6px; }
+        .toolbar button { background: white; border: 1px solid var(--ig-border); border-radius: 3px; padding: 4px 8px; font-size: 12px; cursor: pointer; font-weight: bold;}
+        .toolbar button:hover { background: #eee; }
+        .rich-editor { width: 100%; min-height: 150px; border: 1px solid var(--ig-border); border-radius: 4px; padding: 10px; font-size: 14px; overflow-y: auto; line-height: 1.5; outline: none;}
+        .rich-editor b { font-weight: bold; }
+
+        .btn-danger { background: none; border: 1px solid var(--danger-red); color: var(--danger-red); padding: 8px 12px; border-radius: 4px; cursor: pointer; font-size: 13px; font-weight: bold; width: 100%;}
+        .btn-danger:hover { background: #fff5f5; }
+
+        /* 模擬手機外殼 */
+        .phone-mockup {
+            background: white; border: 1px solid var(--ig-border); border-radius: 12px; 
+            width: 100%; max-width: 400px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); overflow: hidden;
+        }
+        /* IG 樣式 */
+        .ig-post { background: white; }
+        .ig-header { display: flex; align-items: center; padding: 10px; gap: 10px; border-bottom: 1px solid #efefef; }
+        .ig-avatar { width: 32px; height: 32px; background: #dbdbdb; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: bold; color: white;}
+        .ig-username { font-size: 13px; font-weight: 600; }
+        .ig-media-box { width: 100%; background: #efefef; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;}
+        .ig-media-box.r-1-1 { aspect-ratio: 1; }
+        .ig-media-box.r-4-5 { aspect-ratio: 4/5; }
+        .ig-media-box.r-16-9 { aspect-ratio: 16/9; }
+        .ig-img-preview { width: 100%; height: 100%; object-fit: cover; }
+        .ig-actions { padding: 10px; display: flex; gap: 15px; font-size: 20px; border-bottom: 1px solid #efefef; color: #262626;}
+        .ig-caption-box { padding: 10px; font-size: 14px; line-height: 1.4; }
+        .ig-caption-box .ig-user { font-weight: 600; margin-right: 6px; }
+        .ig-caption-text { display: inline; white-space: pre-wrap; }
+        .ig-time { font-size: 10px; color: var(--ig-text-light); margin-top: 6px; text-transform: uppercase; }
+
+        /* FB 樣式 */
+        .fb-post { background: white; font-family: Helvetica, Arial, sans-serif; padding: 12px; box-shadow: 0 1px 2px rgba(0,0,0,0.1); border-radius: 8px;}
+        .fb-header { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; }
+        .fb-avatar { width: 40px; height: 40px; background: #dbdbdb; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; color: white;}
+        .fb-meta { display: flex; flex-direction: column; }
+        .fb-username { font-size: 15px; font-weight: bold; color: #050505; }
+        .fb-time { font-size: 13px; color: #65676b; }
+        .fb-caption-text { font-size: 15px; line-height: 1.4; color: #050505; margin-bottom: 12px; white-space: pre-wrap; }
+        .fb-media-box { background: #f0f2f5; margin: 0 -12px 12px -12px; display: flex; align-items: center; justify-content: center; overflow: hidden;}
+        .fb-media-box.r-1-1 { aspect-ratio: 1; }
+        .fb-media-box.r-4-5 { aspect-ratio: 4/5; }
+        .fb-media-box.r-16-9 { aspect-ratio: 16/9; }
+        .fb-img-preview { width: 100%; height: 100%; object-fit: cover; }
+        .fb-actions { display: flex; justify-content: space-around; padding: 4px 0; border-top: 1px solid #ced0d4; border-bottom: 1px solid #ced0d4; color: #65676b; font-size: 14px; font-weight: bold;}
+        .fb-action-btn { padding: 4px 8px; cursor: pointer; }
+
+        .no-post-msg { color: var(--ig-text-light); margin-top: 100px; text-align: center; font-size: 14px; width: 100%;}
+    </style>
+</head>
+<body>
+
+    <div class="sidebar">
+        <div class="github-config-panel">
+            <h3>☁️ GitHub 雲端同步設定</h3>
+            <input type="password" id="gh-token" placeholder="GitHub Token (ghp_...)" onchange="saveGitConfig()">
+            <input type="text" id="gh-repo" placeholder="使用者名稱/儲存庫名稱" onchange="saveGitConfig()">
+            <button class="github-sync-btn" id="sync-btn" onclick="syncToGitHub()">儲存並同步到 GitHub</button>
+        </div>
+
+        <div class="calendar-section">
+            <div class="calendar-header">
+                <button onclick="changeMonth(-1)">◀</button>
+                <h2 id="calendar-title">2023 年 10 月</h2>
+                <button onclick="changeMonth(1)">▶</button>
+            </div>
+            <div class="calendar-grid" id="calendar-weekdays">
+                <div class="weekday">日</div><div class="weekday">一</div><div class="weekday">二</div>
+                <div class="weekday">三</div><div class="weekday">四</div><div class="weekday">五</div><div class="weekday">六</div>
+            </div>
+            <div class="calendar-grid" id="calendar-days"></div>
+        </div>
+        <div class="backup-section">
+            <button onclick="exportAsJS()">匯出 database.js</button>
+            <button onclick="document.getElementById('import-file').click()">匯入備份</button>
+            <input type="file" id="import-file" style="display:none" accept=".js" onchange="importJS(this)">
+        </div>
+    </div>
+
+    <div class="list-column">
+        <div class="list-header">
+            <h2 id="list-date-title">選擇日期</h2>
+            <div class="date-sub" id="list-date-sub">請從左側點選日期以查看貼文</div>
+        </div>
+        <div class="post-list" id="post-list-container"></div>
+        <button class="add-post-btn" id="add-post-btn" style="display:none" onclick="createNewPost()">+ 新增今日貼文項目</button>
+    </div>
+
+    <div class="main-content" id="main-content-area">
+        <div class="no-post-msg" id="empty-state-msg">請選擇或建立一則貼文進行編輯</div>
+        
+        <div class="editor-container" id="editor-ui" style="display:none">
+            <div class="editor-card">
+                <h3>📌 基本設定</h3>
+                <div class="form-group">
+                    <label>預計發布時間</label>
+                    <input type="time" id="edit-time" oninput="updateCurrentPost('time', this.value)">
+                </div>
+                <div class="form-group">
+                    <label>帳號頭像名稱 (Header User)</label>
+                    <input type="text" id="edit-headerUser" oninput="updateCurrentPost('headerUser', this.value)">
+                </div>
+                <div class="form-group">
+                    <label>內文開頭名稱 (Post User)</label>
+                    <input type="text" id="edit-postUser" oninput="updateCurrentPost('postUser', this.value)">
+                </div>
+                <div class="form-group">
+                    <label>圖片比例 (切換預覽框尺寸)</label>
+                    <select id="edit-ratio" onchange="updateCurrentPost('ratio', this.value)">
+                        <option value="1-1">1:1 (正方形)</option>
+                        <option value="4-5">4:5 (IG直式長形)</option>
+                        <option value="16-9">16:9 (橫式風景)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>圖片網址 (以逗號分隔多張，首張會顯示在預覽)</label>
+                    <input type="text" id="edit-img" placeholder="https://example.com/image.jpg" oninput="updateCurrentPost('img', this.value.split(','))">
+                </div>
+                <div class="form-group">
+                    <label>FB 專用圖片網址 (若無則使用上方圖片)</label>
+                    <input type="text" id="edit-fbImg" placeholder="https://example.com/fb-image.jpg" oninput="updateCurrentPost('fbImg', this.value.split(','))">
+                </div>
+            </div>
+
+            <div class="editor-card" style="flex:1; display:flex; flex-direction:column;">
+                <h3>📝 貼文內文編輯 (支援豐富文本、自動轉存)</h3>
+                <div class="toolbar">
+                    <button onclick="formatDoc('bold')">B</button>
+                    <button onclick="formatDoc('insertHTML', '&lt;b&gt;【早上只讀一點點】&lt;/b&gt;')">【標題】</button>
+                    <button onclick="formatDoc('insertHTML', '&lt;br&gt; &lt;br&gt;')">【空行】</button>
+                </div>
+                <div class="rich-editor" id="edit-caption" contenteditable="true" oninput="updateCurrentPost('caption', this.innerHTML)"></div>
+            </div>
+
+            <button class="btn-danger" onclick="deletePost()">🗑 刪除此編排貼文</button>
+        </div>
+
+        <div class="preview-container" id="preview-ui" style="display:none">
+            <div class="phone-mockup">
+                <div class="ig-post">
+                    <div class="ig-header">
+                        <div class="ig-avatar" id="prev-ig-avatar">U</div>
+                        <div class="ig-username" id="prev-ig-headerUser">username</div>
+                    </div>
+                    <div class="ig-media-box" id="prev-ig-mediabox">
+                        <span style="color:var(--ig-text-light); font-size:12px;" id="prev-ig-noimg">無圖片預覽</span>
+                        <img class="ig-img-preview" id="prev-ig-img" style="display:none">
+                    </div>
+                    <div class="ig-actions">❤️ 💬 ✈️</div>
+                    <div class="ig-caption-box">
+                        <span class="ig-user" id="prev-ig-postUser">username</span>
+                        <div class="ig-caption-text" id="prev-ig-caption"></div>
+                        <div class="ig-time" id="prev-ig-time">9:00 AM</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="phone-mockup">
+                <div class="fb-post">
+                    <div class="fb-header">
+                        <div class="fb-avatar" id="prev-fb-avatar">U</div>
+                        <div class="fb-meta">
+                            <div class="fb-username" id="prev-fb-headerUser">username</div>
+                            <div class="fb-time" id="prev-fb-time">上午 9:00</div>
+                        </div>
+                    </div>
+                    <div class="fb-caption-text" id="prev-fb-caption"></div>
+                    <div class="fb-media-box" id="prev-fb-mediabox">
+                        <span style="color:var(--ig-text-light); font-size:12px;" id="prev-fb-noimg">無圖片預覽</span>
+                        <img class="fb-img-preview" id="prev-fb-img" style="display:none">
+                    </div>
+                    <div class="fb-actions">
+                        <div class="fb-action-btn">👍 讚</div>
+                        <div class="fb-action-btn">💬 留言</div>
+                        <div class="fb-action-btn">↩️ 分享</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 初始化資料庫邏輯：優先使用 localStorage，若無則看 externalDB 是否存在，再無則空物件
+        let db = {};
+        try {
+            const localData = localStorage.getItem('planner_db');
+            if (localData) {
+                db = JSON.parse(localData);
+            } else if (typeof externalDB !== 'undefined') {
+                db = externalDB;
+                localStorage.setItem('planner_db', JSON.stringify(db));
+            }
+        } catch(e) {
+            console.error("資料初始化失敗", e);
+        }
+
+        let currentYear, currentMonth;
+        let selectedDateStr = null;
+        let currentId = null;
+
+        // 讀取 GitHub 設定
+        window.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('gh-token').value = localStorage.getItem('gh_token') || '';
+            document.getElementById('gh-repo').value = localStorage.getItem('gh_repo') || '';
+        });
+
+        function saveGitConfig() {
+            localStorage.setItem('gh_token', document.getElementById('gh-token').value.trim());
+            localStorage.setItem('gh_repo', document.getElementById('gh-repo').value.trim());
+        }
+
+        // ==================== ☁️ GitHub 同步核心功能 ====================
+        async function syncToGitHub() {
+            const token = localStorage.getItem('gh_token');
+            const repo = localStorage.getItem('gh_repo');
+            const syncBtn = document.getElementById('sync-btn');
+
+            if (!token || !repo) {
+                alert('請先填寫 GitHub Token 與 儲存庫名稱（格式: 使用者名稱/儲存庫）');
+                return;
+            }
+
+            syncBtn.disabled = true;
+            syncBtn.innerText = '正在同步到 GitHub...';
+            syncBtn.style.backgroundColor = '#f39c12';
+
+            const filePath = 'database.js'; 
+            const url = `https://api.github.com/repos/${repo}/contents/${filePath}`;
+            
+            // 將目前的 db 轉化為 database.js 的文字內容
+            const fileContent = "var externalDB = " + JSON.stringify(db, null, 4) + ";";
+            // 必須轉成 Base64 編碼
+            const base64Content = btoa(unescape(encodeURIComponent(fileContent)));
+
+            try {
+                // 1. 必須先取得原檔案的 sha 雜湊值，否則 GitHub 會拒絕更新
+                let sha = null;
+                const getRes = await fetch(url, {
+                    headers: { 'Authorization': `token ${token}` }
+                });
+                
+                if (getRes.status === 200) {
+                    const getData = await getRes.json();
+                    sha = getData.sha;
+                }
+
+                // 2. 發送 PUT 請求更新檔案
+                const bodyData = {
+                    message: `更新貼文排版資料庫: ${new Date().toLocaleString()}`,
+                    content: base64Content
+                };
+                if (sha) bodyData.sha = sha; // 如果檔案存在，帶入 sha 才能覆蓋
+
+                const putRes = await fetch(url, {
+                    method: 'PUT',
+                    headers: {
+                        'Authorization': `token ${token}`,
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(bodyData)
+                });
+
+                if (putRes.ok) {
+                    syncBtn.style.backgroundColor = 'var(--success-green)';
+                    syncBtn.innerText = '✅ 同步成功！';
+                    setTimeout(() => {
+                        syncBtn.disabled = false;
+                        syncBtn.style.backgroundColor = 'var(--ig-blue)';
+                        syncBtn.innerText = '儲存並同步到 GitHub';
+                    }, 2000);
+                } else {
+                    const errData = await putRes.json();
+                    throw new Error(errData.message || '連線錯誤');
+                }
+
+            } catch (error) {
+                console.error(error);
+                alert('同步失敗，請檢查 Token 權限、專案名稱是否正確！\n錯誤訊息: ' + error.message);
+                syncBtn.disabled = false;
+                syncBtn.style.backgroundColor = 'var(--ig-blue)';
+                syncBtn.innerText = '儲存並同步到 GitHub';
+            }
+        }
+        // ================================================================
+
+        function saveLocal() {
+            localStorage.setItem('planner_db', JSON.stringify(db));
+        }
+
+        function renderCalendar() {
+            const title = document.getElementById('calendar-title');
+            title.innerText = `${currentYear} 年 ${currentMonth + 1} 月`;
+            const container = document.getElementById('calendar-days');
+            container.innerHTML = '';
+
+            const firstDay = new Date(currentYear, currentMonth, 1).getDay();
+            const totalDays = new Date(currentYear, currentMonth + 1, 0).getDate();
+            const today = new Date();
+
+            for (let i = 0; i < firstDay; i++) {
+                const empty = document.createElement('div');
+                container.appendChild(empty);
+            }
+
+            for (let d = 1; d <= totalDays; d++) {
+                const dayDiv = document.createElement('div');
+                dayDiv.className = 'day';
+                
+                const dateStr = `${currentYear}-${String(currentMonth + 1).padStart(2, '0')}-${String(d).padStart(2, '0')}`;
+                
+                if (dateStr === selectedDateStr) dayDiv.classList.add('selected');
+                if (currentYear === today.getFullYear() && currentMonth === today.getMonth() && d === today.getDate()) {
+                    dayDiv.classList.add('today');
+                }
+
+                const numSpan = document.createElement('span');
+                numSpan.className = 'day-num';
+                numSpan.innerText = d;
+                dayDiv.appendChild(numSpan);
+
+                if (db[dateStr] && db[dateStr].length > 0) {
+                    const badge = document.createElement('span');
+                    badge.className = 'badge';
+                    badge.innerText = db[dateStr].length;
+                    dayDiv.appendChild(badge);
+                }
+
+                dayDiv.onclick = () => selectDate(dateStr);
+                container.appendChild(dayDiv);
+            }
+        }
+
+        function changeMonth(dir) {
+            currentMonth += dir;
+            if (currentMonth > 11) { currentMonth = 0; currentYear++; }
+            if (currentMonth < 0) { currentMonth = 11; currentYear--; }
+            renderCalendar();
+        }
+
+        function selectDate(dateStr) {
+            selectedDateStr = dateStr;
+            currentId = null;
+            
+            document.getElementById('list-date-title').innerText = dateStr;
+            document.getElementById('list-date-sub').innerText = `此日期共有 ${(db[dateStr] || []).length} 則貼文`;
+            document.getElementById('add-post-btn').style.display = 'block';
+            
+            renderCalendar();
+            renderList();
+            showEditor(false);
+        }
+
+        function renderList() {
+            const container = document.getElementById('post-list-container');
+            container.innerHTML = '';
+            const list = db[selectedDateStr] || [];
+
+            list.forEach((post, index) => {
+                const item = document.createElement('div');
+                item.className = `post-item ${index === currentId ? 'active' : ''}`;
+                
+                // 去除 HTML 標籤做預覽純文字
+                const tempDiv = document.createElement('div');
+                tempDiv.innerHTML = post.caption || '';
+                const pureText = tempDiv.innerText || tempDiv.textContent || '';
+
+                item.innerHTML = `
+                    <div class="item-time">⏰ ${post.time || '00:00'}</div>
+                    <div class="item-title">👤 ${post.headerUser || '未命名'}</div>
+                    <div class="item-preview">${pureText || '無內文'}</div>
+                `;
+                item.onclick = () => loadPost(index);
+                container.appendChild(item);
+            });
+        }
+
+        function loadPost(index) {
+            currentId = index;
+            renderList();
+            showEditor(true);
+
+            const post = db[selectedDateStr][currentId];
+            document.getElementById('edit-time').value = post.time || '09:00';
+            document.getElementById('edit-headerUser').value = post.headerUser || '';
+            document.getElementById('edit-postUser').value = post.postUser || '';
+            document.getElementById('edit-ratio').value = post.ratio || '1-1';
+            document.getElementById('edit-img').value = (post.img || []).join(',');
+            document.getElementById('edit-fbImg').value = (post.fbImg || []).join(',');
+            document.getElementById('edit-caption').innerHTML = post.caption || '';
+
+            updatePreview();
+        }
+
+        function showEditor(visible) {
+            document.getElementById('empty-state-msg').style.display = visible ? 'none' : 'block';
+            document.getElementById('editor-ui').style.display = visible ? 'flex' : 'none';
+            document.getElementById('preview-ui').style.display = visible ? 'flex' : 'none';
+        }
+
+        function updateCurrentPost(field, value) {
+            if (currentId === null || !db[selectedDateStr]) return;
+            db[selectedDateStr][currentId][field] = value;
+            saveLocal();
+            
+            if (field === 'time' || field === 'headerUser' || field === 'caption') {
+                renderList();
+            }
+            updatePreview();
+        }
+
+        function updatePreview() {
+            const post = db[selectedDateStr][currentId];
+            if (!post) return;
+
+            // 頭像文字
+            const char = (post.headerUser || 'U').charAt(0).toUpperCase();
+            document.getElementById('prev-ig-avatar').innerText = char;
+            document.getElementById('prev-fb-avatar').innerText = char;
+
+            document.getElementById('prev-ig-headerUser').innerText = post.headerUser || 'username';
+            document.getElementById('prev-fb-headerUser').innerText = post.headerUser || 'username';
+            document.getElementById('prev-ig-postUser').innerText = post.postUser || 'username';
+
+            // 時間
+            document.getElementById('prev-ig-time').innerText = post.time || '09:00';
+            document.getElementById('prev-fb-time').innerText = '預計發布：' + (post.time || '09:00');
+
+            // 內文
+            document.getElementById('prev-ig-caption').innerHTML = post.caption || '';
+            document.getElementById('prev-fb-caption').innerHTML = post.caption || '';
+
+            // 比例與圖片控制
+            const ratioClass = 'r-' + (post.ratio || '1-1');
+            
+            // IG 圖片
+            const igBox = document.getElementById('prev-ig-mediabox');
+            igBox.className = 'ig-media-box ' + ratioClass;
+            if (post.img && post.img[0] && post.img[0].trim() !== '') {
+                document.getElementById('prev-ig-noimg').style.display = 'none';
+                document.getElementById('prev-ig-img').style.display = 'block';
+                document.getElementById('prev-ig-img').src = post.img[0].trim();
+            } else {
+                document.getElementById('prev-ig-noimg').style.display = 'block';
+                document.getElementById('prev-ig-img').style.display = 'none';
+            }
+
+            // FB 圖片
+            const fbBox = document.getElementById('prev-fb-mediabox');
+            fbBox.className = 'fb-media-box ' + ratioClass;
+            const fbSrc = (post.fbImg && post.fbImg[0] && post.fbImg[0].trim() !== '') ? post.fbImg[0].trim() : (post.img ? post.img[0] : '');
+            if (fbSrc && fbSrc.trim() !== '') {
+                document.getElementById('prev-fb-noimg').style.display = 'none';
+                document.getElementById('prev-fb-img').style.display = 'block';
+                document.getElementById('prev-fb-img').src = fbSrc.trim();
+            } else {
+                document.getElementById('prev-fb-noimg').style.display = 'block';
+                document.getElementById('prev-fb-img').style.display = 'none';
+            }
+        }
+
+        function formatDoc(cmd, val) {
+            document.execCommand(cmd, false, val);
+            document.getElementById('edit-caption').focus();
+            // 手動觸發 update
+            updateCurrentPost('caption', document.getElementById('edit-caption').innerHTML);
+        }
+
+        function createNewPost() {
+            if (!db[selectedDateStr]) db[selectedDateStr] = [];
+            db[selectedDateStr].push({headerUser:"大田出版", postUser:"大田出版", caption:"主內文排版樣式...", time:"09:00", img:[], fbImg:[], ratio:"1-1"});
+            loadPost(db[selectedDateStr].length - 1);
+            renderCalendar();
+        }
+
+        function deletePost() {
+            if (confirm('確定刪除此貼文？')) {
+                db[selectedDateStr].splice(currentId, 1);
+                currentId = null;
+                saveLocal();
+                renderList();
+                renderCalendar();
+                showEditor(false);
+            }
+        }
+
+        function exportAsJS() {
+            const dataStr = "var externalDB = " + JSON.stringify(db, null, 4) + ";";
+            const blob = new Blob([dataStr], {type: "text/javascript"});
+            const dl = document.createElement('a');
+            dl.href = URL.createObjectURL(blob);
+            dl.download = "database.js";
+            dl.click();
+        }
+
+        function importJS(input) {
+            const file = input.files[0];
+            if (!file) return;
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const text = e.target.result;
+                try {
+                    // 解析 var externalDB = {...}
+                    const jsonText = text.replace(/var\s+externalDB\s*=\s*/, '').replace(/;$/, '');
+                    const importedData = JSON.parse(jsonText);
+                    db = importedData;
+                    saveLocal();
+                    alert('備份匯入成功！');
+                    renderCalendar();
+                    if (selectedDateStr) selectDate(selectedDateStr);
+                } catch (err) {
+                    alert('解析失敗，請確認檔案格式是否正確。');
+                }
+            };
+            reader.readAsText(file);
+        }
+
+        window.onload = () => {
+            const today = new Date();
+            currentYear = today.getFullYear();
+            currentMonth = today.getMonth();
+            const dateStr = `${currentYear}-${String(currentMonth + 1).padStart(2, '0')}-${String(today.getDate()).padStart(2, '0')}`;
+            selectDate(dateStr);
+        }
+    </script>
+</body>
+</html>
