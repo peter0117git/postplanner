@@ -2,199 +2,378 @@
 <html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
-    <title>IG/FB Post Planner Pro - 雲端旗艦優化版</title>
+    <title>排版桌 — IG / FB Post Planner</title>
     <script src="database.js" onerror="console.log('尚未偵測到 database.js，啟用空資料庫')"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;700;900&family=Noto+Sans+TC:wght@400;500;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --ig-bg: #f8f9fa;
-            --ig-white: #ffffff;
-            --ig-border: #e2e8f0;
-            --ig-text-main: #1e293b;
-            --ig-text-light: #64748b;
-            --ig-blue: #0095f6;
-            --ig-blue-hover: #1877f2;
-            --fb-bg: #f0f2f5;
-            --danger-red: #ef4444;
-            --sidebar-width: 340px;
-            --list-col-width: 300px;
-            --success-green: #10b981;
-            --primary-gradient: linear-gradient(135deg, #4f46e5, #06b6d4);
+            /* ===== 校對台色票 ===== */
+            --paper: #FBF9F4;
+            --paper-raised: #FFFFFF;
+            --paper-line: #E4DFD3;
+            --ink: #1C1B19;
+            --ink-soft: #5B5648;
+            --ink-faint: #A39B8B;
+            --red-pen: #B5482A;
+            --red-pen-deep: #93371E;
+            --green-stamp: #2F6F5E;
+            --amber-flag: #B8852C;
+            --danger: #B5482A;
+
+            --sidebar-width: 290px;
+            --list-col-width: 270px;
+
+            --color-tag-blue: #2A4F6B;
+            --color-fb-blue: #1877f2;
+            --highlight-yellow: rgba(232, 196, 84, 0.45);
+
+            --font-display: 'Noto Serif TC', serif;
+            --font-body: 'Noto Sans TC', -apple-system, sans-serif;
+            --font-mono: 'JetBrains Mono', monospace;
         }
 
-        * { box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
-        body { background-color: var(--ig-bg); margin: 0; display: flex; height: 100vh; color: var(--ig-text-main); overflow: hidden; }
+        * { box-sizing: border-box; font-family: var(--font-body); }
+        body {
+            background-color: var(--paper); margin: 0; display: flex; height: 100vh; color: var(--ink); overflow: hidden;
+            background-image:
+                linear-gradient(rgba(0,0,0,0.012) 1px, transparent 1px);
+            background-size: 100% 32px;
+        }
 
-        /* 隱藏微調滾動條 */
         ::-webkit-scrollbar { width: 6px; height: 6px; }
         ::-webkit-scrollbar-track { background: transparent; }
-        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
-        ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+        ::-webkit-scrollbar-thumb { background: var(--paper-line); border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: var(--ink-faint); }
 
-        /* ================= 1. 左側：工具與日曆列 ================= */
+        :focus-visible { outline: 2px solid var(--red-pen); outline-offset: 1px; }
+
+        /* ================= 1. 左側：桌曆與雲端設定 ================= */
         .sidebar {
-            width: var(--sidebar-width); background: var(--ig-white); border-right: 1px solid var(--ig-border);
-            display: flex; flex-direction: column; height: 100%; box-shadow: 2px 0 12px rgba(0,0,0,0.02);
+            width: var(--sidebar-width); background: var(--paper-raised); border-right: 1px solid var(--paper-line);
+            display: flex; flex-direction: column; height: 100%; z-index: 10;
         }
+        .brand-strip {
+            padding: 16px 16px 12px 16px; border-bottom: 1px solid var(--paper-line);
+            display: flex; align-items: baseline; gap: 8px;
+        }
+        .brand-strip .brand-mark {
+            font-family: var(--font-display); font-weight: 900; font-size: 17px; color: var(--ink); letter-spacing: 0.5px;
+        }
+        .brand-strip .brand-sub { font-size: 10px; color: var(--ink-faint); font-family: var(--font-mono); letter-spacing: 0.5px; }
 
-        .github-config-panel {
-            padding: 20px;
-            background: #f8fafc;
-            border-bottom: 1px solid var(--ig-border);
+        .github-config-panel { padding: 14px 16px; background: #F4F0E6; border-bottom: 1px solid var(--paper-line); }
+        .github-config-panel h3 {
+            margin: 0 0 8px 0; font-size: 11.5px; font-weight: 800; color: var(--ink-soft);
+            text-transform: uppercase; letter-spacing: 0.6px; display: flex; align-items: center; gap: 5px;
         }
-        .github-config-panel h3 { margin: 0 0 12px 0; font-size: 14px; font-weight: 700; color: #334155; display: flex; align-items: center; gap: 6px; }
+        .config-warning {
+            font-size: 10.5px; color: var(--amber-flag); background: #FBF3DF; border: 1px solid #E9D29A;
+            border-radius: 3px; padding: 7px 9px; margin-bottom: 8px; line-height: 1.5;
+        }
         .github-config-panel input {
-            width: 100%; padding: 10px; margin-bottom: 8px; 
-            border: 1px solid var(--ig-border); border-radius: 8px; font-size: 13px;
-            transition: all 0.2s; background: white;
+            width: 100%; padding: 8px 10px; margin-bottom: 6px;
+            border: 1px solid var(--paper-line); border-radius: 4px; font-size: 12px; background: var(--paper-raised); color: var(--ink);
         }
-        .github-config-panel input:focus { border-color: #6366f1; outline: none; box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1); }
+        .github-config-panel input:focus { border-color: var(--red-pen); }
+        .token-input-row { position: relative; }
+        .token-input-row input { padding-right: 36px; }
+        .token-toggle-btn {
+            position: absolute; right: 4px; top: 4px; bottom: 10px; width: 28px; background: none; border: none;
+            cursor: pointer; font-size: 12px; color: var(--ink-faint);
+        }
         .github-sync-btn {
-            width: 100%; padding: 11px; background-color: var(--ig-blue); 
-            color: white; border: none; border-radius: 8px; font-weight: bold; 
-            cursor: pointer; font-size: 13px; transition: all 0.2s;
-            box-shadow: 0 2px 4px rgba(0, 149, 246, 0.2);
+            width: 100%; padding: 9px; background-color: var(--ink);
+            color: var(--paper); border: none; border-radius: 4px; font-weight: 700; cursor: pointer; font-size: 12px;
+            letter-spacing: 0.3px; transition: background-color 0.15s;
         }
-        .github-sync-btn:hover { background-color: var(--ig-blue-hover); transform: translateY(-1px); }
+        .github-sync-btn:hover { background-color: var(--red-pen-deep); }
+        .github-sync-btn:disabled { opacity: 0.6; cursor: not-allowed; }
 
-        /* 精美日曆區區塊 */
-        .calendar-section { padding: 20px; flex: 1; overflow-y: auto; display: flex; flex-direction: column; }
-        .calendar-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; }
-        .calendar-header h2 { font-size: 16px; font-weight: 700; margin: 0; color: #1e293b; }
-        .calendar-header button { background: #f1f5f9; border: none; border-radius: 6px; width: 32px; height: 32px; cursor: pointer; font-size: 12px; transition: all 0.2s; }
-        .calendar-header button:hover { background: #e2e8f0; }
-        
-        .calendar-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 6px; text-align: center; }
-        .weekday { font-size: 11px; font-weight: 700; color: var(--ig-text-light); padding: 5px 0; text-transform: uppercase; }
-        .weekday:nth-child(1) { color: #ef4444; } /* 週日紅 */
-        .weekday:nth-child(7) { color: #3b82f6; } /* 週六藍 */
-
-        #calendar-days { margin-top: 5px; }
-        .day { 
-            background: #f8fafc; border: 1px solid transparent; border-radius: 8px; 
-            aspect-ratio: 1; display: flex; flex-direction: column; justify-content: space-between; 
-            padding: 6px; cursor: pointer; position: relative; transition: all 0.15s ease-in-out;
+        .backup-row { display: flex; gap: 6px; margin-top: 8px; }
+        .backup-btn {
+            flex: 1; padding: 7px; background: var(--paper-raised); border: 1px solid var(--paper-line); color: var(--ink-soft);
+            border-radius: 4px; font-weight: 700; cursor: pointer; font-size: 10.5px;
         }
-        .day:hover { background: #edf2f7; transform: scale(1.05); z-index: 2; }
-        .day.selected { background: #1e293b !important; color: white !important; box-shadow: 0 4px 10px rgba(0,0,0,0.15); }
-        .day.selected .day-num { color: white; }
-        .day.selected .badge { background: white; color: #1e293b; }
-        .day.today { border: 2px solid #6366f1; background: #f5f3ff; }
-        .day.today .day-num { font-weight: 800; color: #4f46e5; }
-        .day .day-num { font-size: 12px; font-weight: 500; color: #475569; align-self: flex-start; }
-        .day .badge { 
-            background: #6366f1; color: white; border-radius: 6px; 
-            font-size: 10px; font-weight: 700; padding: 2px 5px; align-self: flex-end;
-            min-width: 16px; text-align: center; box-shadow: 0 2px 4px rgba(99, 102, 241, 0.2);
+        .backup-btn:hover { border-color: var(--ink-faint); background: #F4F0E6; }
+        #import-file-input { display: none; }
+
+        .calendar-section { padding: 16px; flex: 1; overflow-y: auto; display: flex; flex-direction: column; }
+        .calendar-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+        .calendar-header h2 { font-family: var(--font-display); font-size: 15px; font-weight: 700; margin: 0; color: var(--ink); }
+        .calendar-header button {
+            background: var(--paper); border: 1px solid var(--paper-line); border-radius: 4px; width: 26px; height: 26px; cursor: pointer;
+            color: var(--ink-soft); font-size: 11px;
+        }
+        .calendar-header button:hover { border-color: var(--red-pen); color: var(--red-pen); }
+
+        .calendar-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; text-align: center; }
+        .weekday { font-size: 10px; font-weight: 700; color: var(--ink-faint); padding: 4px 0; font-family: var(--font-mono); }
+        .weekday:nth-child(1) { color: var(--red-pen); }
+        .weekday:nth-child(7) { color: var(--color-tag-blue); }
+
+        .day {
+            background: var(--paper); border: 1px solid transparent; border-radius: 4px; position: relative;
+            aspect-ratio: 1; display: flex; flex-direction: column; justify-content: space-between; padding: 4px; cursor: pointer;
+            transition: background-color 0.1s;
+        }
+        .day:hover { background: #F0EBDD; }
+        .day.selected {
+            background: var(--ink) !important; color: var(--paper) !important;
+        }
+        .day.selected::before {
+            /* 摺角標記：簽名元素 */
+            content: ''; position: absolute; top: 0; right: 0; width: 0; height: 0;
+            border-style: solid; border-width: 0 9px 9px 0; border-color: transparent var(--red-pen) transparent transparent;
+        }
+        .day.selected .day-num { color: var(--paper); }
+        .day.selected .badge { background: var(--red-pen); color: var(--paper); }
+        .day.today:not(.selected) { border: 1.5px solid var(--green-stamp); }
+        .day.today:not(.selected) .day-num { color: var(--green-stamp); font-weight: 800; }
+        .day .day-num { font-size: 11px; color: var(--ink-soft); font-family: var(--font-mono); }
+        .day .badge {
+            background: var(--ink-soft); color: var(--paper-raised); border-radius: 3px; font-size: 9px; font-weight: 700;
+            padding: 1px 4px; align-self: flex-end; min-width: 14px; text-align: center; font-family: var(--font-mono);
         }
 
-        /* ================= 2. 中間：今日貼文列表 ================= */
+        /* ================= 2. 中間：今日貼文便條卡列表 ================= */
         .list-column {
-            width: var(--list-col-width); background: var(--ig-white); border-right: 1px solid var(--ig-border);
-            display: flex; flex-direction: column; height: 100%; box-shadow: 2px 0 12px rgba(0,0,0,0.01);
+            width: var(--list-col-width); background: var(--paper-raised); border-right: 1px solid var(--paper-line);
+            display: flex; flex-direction: column; height: 100%; z-index: 9;
         }
-        .list-header { padding: 24px 20px 15px 20px; border-bottom: 1px solid var(--ig-border); }
-        .list-header h2 { margin: 0 0 4px 0; font-size: 18px; font-weight: 700; color: #0f172a; }
-        .list-header .date-sub { font-size: 12px; color: var(--ig-text-light); }
-        .post-list { flex: 1; overflow-y: auto; padding: 15px; }
-        
-        .post-item { 
-            padding: 14px; border: 1px solid var(--ig-border); border-radius: 10px; 
-            margin-bottom: 12px; cursor: pointer; background: #f8fafc;
-            transition: all 0.2s ease;
+        .list-header {
+            padding: 18px 16px 12px 16px; border-bottom: 1px solid var(--paper-line);
+            display: flex; justify-content: space-between; align-items: baseline;
         }
-        .post-item:hover { border-color: #cbd5e1; background: #f1f5f9; transform: translateY(-1px); }
-        .post-item.active { background: var(--ig-white); border-color: #6366f1; box-shadow: 0 4px 12px rgba(99,102,241,0.08); }
-        .post-item .item-time { font-size: 11px; color: #6366f1; font-weight: 700; margin-bottom: 6px; display: flex; align-items: center; gap: 4px;}
-        .post-item .item-title { font-size: 13px; font-weight: 700; color: #1e293b; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-        .post-item .item-preview { font-size: 12px; color: var(--ig-text-light); margin-top: 6px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; line-height: 1.4; }
-        
+        .list-header h2 { margin: 0 0 2px 0; font-family: var(--font-display); font-size: 17px; font-weight: 700; color: var(--ink); }
+        .list-header .date-sub { font-size: 11px; color: var(--ink-faint); font-family: var(--font-mono); }
+        .save-status { font-size: 9.5px; color: var(--ink-faint); font-weight: 700; white-space: nowrap; font-family: var(--font-mono); }
+        .save-status.saved { color: var(--green-stamp); }
+
+        .post-list { flex: 1; overflow-y: auto; padding: 12px; }
+
+        .post-item {
+            padding: 11px 12px; border: 1px solid var(--paper-line); border-radius: 5px; margin-bottom: 9px; cursor: pointer;
+            background: var(--paper); position: relative; transition: border-color 0.12s;
+        }
+        .post-item:hover { border-color: var(--ink-faint); }
+        .post-item.active {
+            background: var(--paper-raised); border-color: var(--red-pen);
+            box-shadow: 2px 2px 0 0 rgba(181, 72, 42, 0.12);
+        }
+        .post-item .item-time { font-size: 11px; color: var(--red-pen); font-weight: 700; margin-bottom: 4px; font-family: var(--font-mono); }
+        .post-item .item-title { font-size: 12px; font-weight: 700; color: var(--ink); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
         .add-post-btn {
-            margin: 15px; padding: 12px; background: #f5f3ff; border: 1px dashed #6366f1; 
-            color: #4f46e5; border-radius: 10px; cursor: pointer; font-weight: 700; text-align: center;
-            font-size: 13px; transition: all 0.2s;
+            margin: 12px; padding: 10px; background: transparent; border: 1.5px dashed var(--ink-faint); color: var(--ink-soft);
+            border-radius: 5px; cursor: pointer; font-weight: 700; text-align: center; font-size: 12px; transition: all 0.15s;
         }
-        .add-post-btn:hover { background: #eeebff; transform: translateY(-1px); }
+        .add-post-btn:hover { border-color: var(--red-pen); color: var(--red-pen); background: rgba(181,72,42,0.04); }
 
-        /* ================= 3. 右側：編輯與預覽區 ================= */
-        .main-content { flex: 1; display: flex; height: 100%; background: #f1f5f9; overflow: hidden; }
-        .editor-container { flex: 1.1; padding: 24px; display: flex; flex-direction: column; gap: 20px; overflow-y: auto; height: 100%; border-right: 1px solid var(--ig-border); background: #fff;}
-        .preview-container { flex: 0.9; padding: 24px; overflow-y: auto; height: 100%; display: flex; flex-direction: column; align-items: center; gap: 24px;}
+        /* ================= 3. 右側：稿紙編輯區 + 預覽 ================= */
+        .main-content { flex: 1; display: flex; height: 100%; background: var(--paper); overflow: hidden; }
+        .no-post-msg { color: var(--ink-faint); margin: auto; font-size: 13.5px; font-weight: 500; font-family: var(--font-display); }
 
-        .editor-card { background: white; border: 1px solid var(--ig-border); border-radius: 12px; padding: 18px; box-shadow: 0 1px 3px rgba(0,0,0,0.02); }
-        .editor-card h3 { margin: 0 0 16px 0; font-size: 14px; font-weight: 700; color: #334155; border-bottom: 1px solid var(--ig-border); padding-bottom: 10px; }
-        .form-group { margin-bottom: 14px; }
-        .form-group label { display: block; font-size: 12px; color: var(--ig-text-light); margin-bottom: 6px; font-weight: 700; }
-        .form-group input, .form-group select { width: 100%; padding: 9px 12px; border: 1px solid var(--ig-border); border-radius: 8px; font-size: 13px; transition: all 0.2s; color: #334155;}
-        .form-group input:focus, .form-group select:focus { border-color: #6366f1; outline: none; box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1); }
-        
-        .toolbar { display: flex; gap: 6px; background: #f8fafc; padding: 6px; border-radius: 8px; margin-bottom: 8px; border: 1px solid var(--ig-border); }
-        .toolbar button { background: white; border: 1px solid var(--ig-border); border-radius: 6px; padding: 5px 10px; font-size: 12px; cursor: pointer; font-weight: 700; transition: all 0.15s;}
-        .toolbar button:hover { background: #f1f5f9; border-color: #cbd5e1; }
-        .rich-editor { width: 100%; min-height: 180px; border: 1px solid var(--ig-border); border-radius: 8px; padding: 12px; font-size: 14px; overflow-y: auto; line-height: 1.5; outline: none; transition: all 0.2s;}
-        .rich-editor:focus { border-color: #6366f1; box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1); }
-        .rich-editor b { font-weight: bold; }
-
-        .btn-danger { background: #fff5f5; border: 1px solid #fca5a5; color: var(--danger-red); padding: 10px 12px; border-radius: 8px; cursor: pointer; font-size: 13px; font-weight: 700; width: 100%; transition: all 0.2s;}
-        .btn-danger:hover { background: #fee2e2; }
-
-        /* 手機模擬 */
-        .phone-mockup {
-            background: white; border: 1px solid var(--ig-border); border-radius: 24px; 
-            width: 100%; max-width: 375px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); overflow: hidden;
-            border: 4px solid #1e293b;
+        .editor-container {
+            width: 400px; min-width: 400px; padding: 20px; display: flex; flex-direction: column; gap: 14px; overflow-y: auto; height: 100%;
+            border-right: 1px solid var(--paper-line); background: var(--paper-raised);
         }
-        .ig-post { background: white; }
-        .ig-header { display: flex; align-items: center; padding: 12px; gap: 10px; border-bottom: 1px solid #f1f5f9; }
-        .ig-avatar { width: 32px; height: 32px; background: #e2e8f0; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 700; color: #64748b;}
-        .ig-username { font-size: 13px; font-weight: 600; color: #0f172a; }
-        .ig-media-box { width: 100%; background: #f8fafc; display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative; overflow: hidden;}
-        .ig-media-box.r-1-1 { aspect-ratio: 1; }
-        .ig-media-box.r-4-5 { aspect-ratio: 4/5; }
-        .ig-media-box.r-16-9 { aspect-ratio: 16/9; }
-        .ig-img-preview { width: 100%; height: 100%; object-fit: cover; }
-        .ig-actions { padding: 12px; display: flex; gap: 16px; font-size: 18px; border-bottom: 1px solid #f1f5f9; color: #0f172a;}
-        .ig-caption-box { padding: 12px; font-size: 13px; line-height: 1.5; color: #334155; }
-        .ig-caption-box .ig-user { font-weight: 600; margin-right: 6px; color: #0f172a; }
-        .ig-caption-text { display: inline; white-space: pre-wrap; }
-        .ig-time { font-size: 10px; color: var(--ig-text-light); margin-top: 8px; }
+        .editor-card { background: var(--paper-raised); border: 1px solid var(--paper-line); border-radius: 6px; padding: 14px; }
+        .editor-card h3 {
+            margin: 0 0 11px 0; font-size: 11.5px; font-weight: 800; color: var(--ink-soft); border-bottom: 1px solid var(--paper-line);
+            padding-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px;
+        }
 
-        /* FB 樣式 */
-        .fb-post { background: white; padding: 14px; border-radius: 8px;}
+        .compact-row { display: flex; gap: 10px; margin-bottom: 10px; }
+        .compact-row .form-group { flex: 1; margin-bottom: 0; }
+        .form-group { margin-bottom: 10px; }
+        .form-group label { display: block; font-size: 10.5px; color: var(--ink-faint); margin-bottom: 4px; font-weight: 700; }
+        .form-group input, .form-group select {
+            width: 100%; padding: 8px 10px; border: 1px solid var(--paper-line); border-radius: 4px; font-size: 12px; color: var(--ink);
+            background: var(--paper);
+        }
+        .form-group input:focus, .form-group select:focus { border-color: var(--red-pen); background: var(--paper-raised); }
+        .field-hint { font-size: 10px; color: var(--ink-faint); margin-top: 3px; }
+
+        /* Canva 連結列表 */
+        .canva-list { display: flex; flex-direction: column; gap: 6px; }
+        .canva-row { display: flex; gap: 6px; align-items: center; }
+        .canva-row input { flex: 1; }
+        .canva-row .canva-remove {
+            width: 26px; height: 26px; border-radius: 4px; border: 1px solid var(--paper-line); background: var(--paper);
+            color: var(--danger); cursor: pointer; font-size: 12px; flex-shrink: 0;
+        }
+        .canva-row .canva-remove:hover { background: #FBE9E3; border-color: var(--red-pen); }
+        .canva-add-row-btn {
+            margin-top: 2px; padding: 6px; background: transparent; border: 1px dashed var(--paper-line); color: var(--ink-faint);
+            border-radius: 4px; cursor: pointer; font-size: 11px; font-weight: 700;
+        }
+        .canva-add-row-btn:hover { border-color: var(--red-pen); color: var(--red-pen); }
+        .input-mode-toggle { display: flex; gap: 4px; margin-bottom: 8px; }
+        .mode-toggle-btn {
+            flex: 1; padding: 6px; font-size: 10.5px; font-weight: 700; border: 1px solid var(--paper-line); background: var(--paper);
+            color: var(--ink-faint); cursor: pointer; border-radius: 4px;
+        }
+        .mode-toggle-btn.active { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+
+        .editor-toolbar-box { background: #F4F0E6; border: 1px solid var(--paper-line); border-radius: 6px; padding: 8px; margin-bottom: 8px; display: flex; flex-direction: column; gap: 6px; }
+        .toolbar-row { display: flex; gap: 4px; align-items: center; flex-wrap: wrap; }
+        .toolbar-divider { width: 1px; height: 16px; background: var(--paper-line); margin: 0 4px; }
+        .toolbar-label { font-size: 9.5px; font-weight: 800; color: var(--ink-faint); text-transform: uppercase; margin-right: 2px; letter-spacing: 0.4px; }
+
+        .toolbar-btn {
+            background: var(--paper-raised); border: 1px solid var(--paper-line); border-radius: 4px; padding: 3px 8px; font-size: 11px;
+            font-weight: 700; cursor: pointer; color: var(--ink-soft); transition: all 0.12s;
+        }
+        .toolbar-btn:hover { background: var(--paper); border-color: var(--red-pen); color: var(--red-pen); }
+
+        .color-dot-btn { width: 21px; height: 21px; border-radius: 4px; border: 1px solid var(--paper-line); cursor: pointer; transition: transform 0.1s; }
+        .color-dot-btn:hover { transform: scale(1.12); }
+
+        .rich-editor {
+            width: 100%; min-height: 230px; border: 1px solid var(--paper-line); border-radius: 6px; padding: 13px; font-size: 13px;
+            overflow-y: auto; line-height: 1.6; outline: none; background: var(--paper-raised); color: var(--ink);
+        }
+        .rich-editor:focus { border-color: var(--red-pen); box-shadow: 0 0 0 3px rgba(181,72,42,0.07); }
+        .rich-editor:empty::before { content: attr(data-placeholder); color: var(--ink-faint); }
+
+        .size-a1 { font-size: 20px !important; font-weight: 800 !important; display: block; margin: 6px 0; }
+        .size-a2 { font-size: 17px !important; font-weight: 700 !important; display: block; margin: 4px 0; }
+        .size-a3 { font-size: 15px !important; font-weight: 700 !important; }
+        .size-a4 { font-size: 13px !important; font-weight: normal !important; }
+
+        .btn-danger {
+            background: #FBF1EC; border: 1px solid #E0A188; color: var(--danger); padding: 9px; border-radius: 5px; cursor: pointer;
+            font-size: 12px; font-weight: 700; width: 100%; margin-top: auto; transition: all 0.12s;
+        }
+        .btn-danger:hover { background: var(--danger); color: white; border-color: var(--danger); }
+
+        /* ================= 預覽區（手機介面維持高擬真，不套用主題風格） ================= */
+        .preview-container-horizontal {
+            flex: 1; padding: 26px; overflow-y: auto; display: flex; flex-direction: row; justify-content: center; align-items: flex-start; gap: 32px; height: 100%;
+            background: var(--paper);
+            background-image: radial-gradient(circle at 1px 1px, rgba(0,0,0,0.045) 1px, transparent 0);
+            background-size: 14px 14px;
+        }
+
+        .pure-post-card {
+            background: white; border: 1px solid #e2e8f0; border-radius: 14px; width: 100%; max-width: 380px;
+            box-shadow: 0 10px 32px rgba(28, 27, 25, 0.1); overflow: hidden; display: flex; flex-direction: column;
+        }
+
+        .platform-badge-header {
+            background: #0f172a; color: #94a3b8; font-size: 10px; font-weight: 800; padding: 7px 14px; text-transform: uppercase;
+            letter-spacing: 0.6px; font-family: var(--font-mono);
+        }
+
+        .ig-post { background: white; width: 100%; }
+        .ig-header { display: flex; align-items: center; padding: 12px; gap: 10px; }
+        .ig-avatar { width: 32px; height: 32px; background: #e2e8f0; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; color: #475569;}
+        .ig-username { font-size: 13px; font-weight: 600; color: #262626; }
+
+        .media-container { width: 100%; background: #fafafa; display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative; overflow: hidden; border-top: 1px solid #f1f5f9; border-bottom: 1px solid #f1f5f9; }
+        .media-container.r-1-1 { aspect-ratio: 1; }
+        .media-container.r-4-5 { aspect-ratio: 4/5; }
+        .media-container.r-16-9 { aspect-ratio: 16/9; }
+        .img-contain-preview { width: 100%; height: 100%; object-fit: cover; display: none; }
+        .img-contain-preview.active { display: block; }
+        .canva-embed-frame { width: 100%; height: 100%; border: none; display: none; background: #fafafa; }
+        .canva-embed-frame.active { display: block; }
+        .media-slot { width: 100%; height: 100%; position: relative; }
+
+        .carousel-btn {
+            position: absolute; top: 50%; transform: translateY(-50%); background: rgba(255,255,255,0.92); border: none; width: 28px; height: 28px;
+            border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: bold; cursor: pointer;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.12); z-index: 6; color: #262626;
+        }
+        .carousel-btn.prev { left: 12px; }
+        .carousel-btn.next { right: 12px; }
+        .carousel-badge { position: absolute; top: 12px; right: 12px; background: rgba(38,38,38,0.82); color: white; padding: 3px 8px; border-radius: 12px; font-size: 11px; font-weight: 600; z-index: 6; letter-spacing: 0.5px; }
+        .canva-source-tag {
+            position: absolute; bottom: 10px; left: 10px; background: rgba(125,42,232,0.88); color: white; padding: 3px 9px;
+            border-radius: 12px; font-size: 10px; font-weight: 700; z-index: 6; display: flex; align-items: center; gap: 4px;
+        }
+
+        .ig-actions-row { display: flex; justify-content: space-between; align-items: center; padding: 12px 14px 6px 14px; }
+        .ig-actions-icons { display: flex; gap: 16px; font-size: 18px; color: #262626; }
+        .ig-dots-indicator { display: flex; gap: 4px; justify-content: center; }
+        .ig-dot { width: 6px; height: 6px; background: #cbd5e1; border-radius: 50%; transition: all 0.2s; }
+        .ig-dot.active { background: #0095f6; transform: scale(1.2); }
+
+        .ig-caption-box { padding: 0 14px 14px 14px; font-size: 13px; line-height: 1.5; color: #262626; word-break: break-all;}
+        .ig-user { font-weight: 600; margin-right: 5px; color: #262626; display: inline; }
+        .ig-caption-text { display: inline; white-space: pre-wrap; font-size: 13px; }
+
+        .ig-more-btn { color: #8e8e8e; cursor: pointer; margin-left: 4px; display: inline; font-size: 12px; }
+        .ig-time { font-size: 10px; color: #8e8e8e; margin-top: 10px; text-transform: uppercase; letter-spacing: 0.2px; }
+
+        .fb-post { background: white; padding: 12px; width: 100%; }
         .fb-header { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
-        .fb-avatar { width: 38px; height: 38px; background: #e2e8f0; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; color: #64748b;}
+        .fb-avatar { width: 38px; height: 38px; background: #e2e8f0; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; color: #475569; font-size: 14px;}
         .fb-meta { display: flex; flex-direction: column; }
         .fb-username { font-size: 14px; font-weight: bold; color: #050505; }
         .fb-time { font-size: 12px; color: #65676b; margin-top: 2px; }
-        .fb-caption-text { font-size: 14px; line-height: 1.5; color: #050505; margin-bottom: 12px; white-space: pre-wrap; }
-        .fb-media-box { background: #f0f2f5; margin: 0 -14px 12px -14px; display: flex; flex-direction: column; align-items: center; justify-content: center; overflow: hidden;}
-        .fb-media-box.r-1-1 { aspect-ratio: 1; }
-        .fb-media-box.r-4-5 { aspect-ratio: 4/5; }
-        .fb-media-box.r-16-9 { aspect-ratio: 16/9; }
-        .fb-img-preview { width: 100%; height: 100%; object-fit: cover; }
-        .fb-actions { display: flex; justify-content: space-around; padding: 6px 0; border-top: 1px solid #e5e7eb; color: #65676b; font-size: 13px; font-weight: 600;}
 
-        /* Canva 提示樣式 */
-        .canva-badge {
-            background: linear-gradient(135deg, #7d2ae8, #00c4cc); color: white;
-            padding: 10px 16px; border-radius: 20px; font-size: 12px; font-weight: bold;
-            text-decoration: none; box-shadow: 0 4px 10px rgba(125,42,232,0.3);
-            transition: transform 0.2s; display: inline-flex; align-items: center; gap: 6px;
+        .fb-caption-text-wrap { font-size: 13px; line-height: 1.5; color: #050505; margin-bottom: 12px; word-break: break-all;}
+        .fb-caption-text { display: inline; white-space: pre-wrap; font-size: 13px; }
+
+        .fb-media-wrap { margin: 0 -12px 12px -12px; background: #fafafa; display: flex; align-items: center; justify-content: center; overflow: hidden; width: calc(100% + 24px); position: relative; border-top: 1px solid #f1f5f9; border-bottom: 1px solid #f1f5f9;}
+        .fb-media-wrap.r-1-1 { aspect-ratio: 1; }
+        .fb-media-wrap.r-4-5 { aspect-ratio: 4/5; }
+        .fb-media-wrap.r-16-9 { aspect-ratio: 16/9; }
+
+        .fb-actions { display: flex; justify-content: space-around; padding: 10px 0 2px 0; border-top: 1px solid #e5e7eb; color: #65676b; font-size: 13px; font-weight: 600;}
+
+        .hashtag-link { color: #00376b; font-weight: 600; text-decoration: none; }
+        .fb-post .hashtag-link { color: #1877f2; }
+
+        /* ================= 自訂確認彈窗 / Toast ================= */
+        .modal-overlay {
+            position: fixed; inset: 0; background: rgba(28,27,25,0.5); display: none;
+            align-items: center; justify-content: center; z-index: 100;
         }
-        .canva-badge:hover { transform: scale(1.05); color: white; }
+        .modal-overlay.show { display: flex; }
+        .modal-box {
+            background: var(--paper-raised); border-radius: 8px; padding: 20px; width: 280px; box-shadow: 0 14px 36px rgba(0,0,0,0.22);
+            border: 1px solid var(--paper-line);
+        }
+        .modal-box p { font-size: 13px; color: var(--ink); margin: 0 0 16px 0; line-height: 1.55; }
+        .modal-actions { display: flex; gap: 8px; justify-content: flex-end; }
+        .modal-btn { padding: 7px 14px; border-radius: 4px; font-size: 12px; font-weight: 700; cursor: pointer; border: 1px solid var(--paper-line); background: var(--paper-raised); color: var(--ink-soft); }
+        .modal-btn.confirm { background: var(--danger); color: white; border-color: var(--danger); }
 
-        .no-post-msg { color: var(--ig-text-light); margin-top: 150px; text-align: center; font-size: 14px; width: 100%; font-weight: 500;}
+        .toast-msg {
+            position: fixed; bottom: 22px; left: 50%; transform: translateX(-50%) translateY(20px);
+            background: var(--ink); color: var(--paper); padding: 10px 18px; border-radius: 6px; font-size: 12px; font-weight: 600;
+            opacity: 0; transition: all 0.25s; z-index: 200; pointer-events: none; max-width: 80vw; text-align: center;
+        }
+        .toast-msg.show { opacity: 1; transform: translateX(-50%) translateY(0); }
     </style>
 </head>
 <body>
 
     <div class="sidebar">
+        <div class="brand-strip">
+            <span class="brand-mark">排版桌</span>
+            <span class="brand-sub">POST PLANNER</span>
+        </div>
         <div class="github-config-panel">
-            <h3>☁️ GitHub 雲端即時同步</h3>
-            <input type="password" id="gh-token" placeholder="GitHub Token (ghp_...)" onchange="saveGitConfig()">
+            <h3>☁ GitHub 雲端同步</h3>
+            <div class="config-warning">
+                Token 僅存於本機瀏覽器，不會自動上傳。請使用僅限該 repo「Contents 讀寫」權限的 Fine-grained Token。此頁為純前端工具，若部署在公開網址，任何打開頁面的人都可能透過開發者工具看到已填入的 Token。
+            </div>
+            <div class="token-input-row">
+                <input type="password" id="gh-token" placeholder="GitHub Fine-grained Token" onchange="saveGitConfig()">
+                <button type="button" class="token-toggle-btn" id="token-toggle" onclick="toggleTokenVisibility()">👁</button>
+            </div>
             <input type="text" id="gh-repo" placeholder="使用者名稱/儲存庫名稱" onchange="saveGitConfig()">
             <button class="github-sync-btn" id="sync-btn" onclick="syncToGitHub()">儲存並同步到 GitHub</button>
+            <div class="backup-row">
+                <button class="backup-btn" onclick="exportBackup()">⬇ 匯出備份</button>
+                <button class="backup-btn" onclick="document.getElementById('import-file-input').click()">⬆ 匯入備份</button>
+            </div>
+            <input type="file" id="import-file-input" accept="application/json" onchange="importBackup(event)">
         </div>
-
         <div class="calendar-section">
             <div class="calendar-header">
                 <button onclick="changeMonth(-1)">◀</button>
@@ -202,8 +381,7 @@
                 <button onclick="changeMonth(1)">▶</button>
             </div>
             <div class="calendar-grid" id="calendar-weekdays">
-                <div class="weekday">日</div><div class="weekday">一</div><div class="weekday">二</div>
-                <div class="weekday">三</div><div class="weekday">四</div><div class="weekday">五</div><div class="weekday">六</div>
+                <div class="weekday">日</div><div class="weekday">一</div><div class="weekday">二</div><div class="weekday">三</div><div class="weekday">四</div><div class="weekday">五</div><div class="weekday">六</div>
             </div>
             <div class="calendar-grid" id="calendar-days"></div>
         </div>
@@ -211,8 +389,11 @@
 
     <div class="list-column">
         <div class="list-header">
-            <h2 id="list-date-title">選擇日期</h2>
-            <div class="date-sub" id="list-date-sub">請從左側點選日期以查看貼文</div>
+            <div>
+                <h2 id="list-date-title">選擇日期</h2>
+                <div class="date-sub" id="list-date-sub">請點選左側日期</div>
+            </div>
+            <div class="save-status" id="save-status">已載入</div>
         </div>
         <div class="post-list" id="post-list-container"></div>
         <button class="add-post-btn" id="add-post-btn" style="display:none" onclick="createNewPost()">+ 新增今日貼文項目</button>
@@ -220,117 +401,268 @@
 
     <div class="main-content" id="main-content-area">
         <div class="no-post-msg" id="empty-state-msg">請選擇或建立一則貼文進行編輯</div>
-        
+
         <div class="editor-container" id="editor-ui" style="display:none">
             <div class="editor-card">
-                <h3>📌 基本設定</h3>
-                <div class="form-group">
-                    <label>預計發布時間</label>
-                    <input type="time" id="edit-time" oninput="updateCurrentPost('time', this.value)">
+                <h3>圖片與多圖配置</h3>
+                <div class="compact-row">
+                    <div class="form-group">
+                        <label>預計發布時間</label>
+                        <input type="time" id="edit-time" oninput="updateCurrentPost('time', this.value)">
+                    </div>
+                    <div class="form-group">
+                        <label>全圖一致比例</label>
+                        <select id="edit-ratio" onchange="updateCurrentPost('ratio', this.value)">
+                            <option value="1-1">1:1 (正方形)</option>
+                            <option value="4-5">4:5 (IG直式長形)</option>
+                            <option value="16-9">16:9 (橫式風景)</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label>帳號頭像名稱 (Header User)</label>
-                    <input type="text" id="edit-headerUser" oninput="updateCurrentPost('headerUser', this.value)">
+
+                <div class="input-mode-toggle">
+                    <button class="mode-toggle-btn active" id="mode-btn-img" onclick="switchInputMode('img')">IG 圖片來源</button>
+                    <button class="mode-toggle-btn" id="mode-btn-fbImg" onclick="switchInputMode('fbImg')">FB 圖片來源（留空自動同步）</button>
                 </div>
-                <div class="form-group">
-                    <label>內文開頭名稱 (Post User)</label>
-                    <input type="text" id="edit-postUser" oninput="updateCurrentPost('postUser', this.value)">
-                </div>
-                <div class="form-group">
-                    <label>圖片比例</label>
-                    <select id="edit-ratio" onchange="updateCurrentPost('ratio', this.value)">
-                        <option value="1-1">1:1 (正方形)</option>
-                        <option value="4-5">4:5 (IG直式長形)</option>
-                        <option value="16-9">16:9 (橫式風景)</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label>圖片或 Canva 連結 (多張請用英文逗號隔開)</label>
-                    <input type="text" id="edit-img" placeholder="https://example.com/a.jpg 或 Canva 連結" oninput="updateCurrentPost('img', this.value.split(','))">
-                </div>
-                <div class="form-group">
-                    <label>FB 專用圖片/Canva 連結 (若無則自動帶入上方欄位)</label>
-                    <input type="text" id="edit-fbImg" placeholder="FB專用網址" oninput="updateCurrentPost('fbImg', this.value.split(','))">
+
+                <div class="form-group" id="canva-editor-wrap">
+                    <label id="canva-editor-label">IG 圖片 / Canva 公開連結列表</label>
+                    <div class="canva-list" id="canva-list-container"></div>
+                    <button type="button" class="canva-add-row-btn" onclick="addUrlRow()">+ 新增一筆網址</button>
+                    <div class="field-hint">支援一般圖片網址，或 Canva 公開分享連結（含 #頁碼 可自動跳至該頁，例如貼上連結結尾為 #2 會顯示設計稿第 2 頁）。</div>
                 </div>
             </div>
 
-            <div class="editor-card" style="flex:1; display:flex; flex-direction:column;">
-                <h3>📝 貼文內文編輯</h3>
-                <div class="toolbar">
-                    <button onclick="formatDoc('bold')">B</button>
-                    <button onclick="formatDoc('insertHTML', '&lt;b&gt;【早上只讀一點點】&lt;/b&gt;')">【標題】</button>
-                    <button onclick="formatDoc('insertHTML', '&lt;br&gt; &lt;br&gt;')">【空行】</button>
-                </div>
-                <div class="rich-editor" id="edit-caption" contenteditable="true" oninput="updateCurrentPost('caption', this.innerHTML)"></div>
-            </div>
+            <div class="editor-card" style="flex:1; display:flex; flex-direction:column; min-height: 0;">
+                <h3>貼文內文排版（輸入 #字詞 自動產生標籤）</h3>
 
-            <button class="btn-danger" onclick="deletePost()">🗑 刪除此編排貼文</button>
+                <div class="editor-toolbar-box">
+                    <div class="toolbar-row">
+                        <span class="toolbar-label">大小</span>
+                        <button class="toolbar-btn" onclick="applyTextFormat('size', 'size-a1')">A1</button>
+                        <button class="toolbar-btn" onclick="applyTextFormat('size', 'size-a2')">A2</button>
+                        <button class="toolbar-btn" onclick="applyTextFormat('size', 'size-a3')">A3</button>
+                        <button class="toolbar-btn" onclick="applyTextFormat('size', 'size-a4')">A4</button>
+
+                        <div class="toolbar-divider"></div>
+                        <span class="toolbar-label">樣式</span>
+                        <button class="toolbar-btn" style="font-weight:900;" onclick="applyTextFormat('bold')">B</button>
+                        <button class="toolbar-btn" style="background:#F3E3A8;" onclick="applyTextFormat('highlight')">🖍 螢光筆</button>
+                    </div>
+                    <div class="toolbar-row" style="margin-top:2px;">
+                        <span class="toolbar-label">色彩</span>
+                        <div class="color-dot-btn" style="background:#2A4F6B;" title="標籤藍" onclick="applyTextFormat('color', '#2A4F6B')"></div>
+                        <div class="color-dot-btn" style="background:#1C1B19;" title="純黑色" onclick="applyTextFormat('color', '#1C1B19')"></div>
+                        <div class="color-dot-btn" style="background:#B5482A;" title="校對紅" onclick="applyTextFormat('color', '#B5482A')"></div>
+                        <div class="color-dot-btn" style="background:#5B5648;" title="副標灰" onclick="applyTextFormat('color', '#5B5648')"></div>
+
+                        <div class="toolbar-divider"></div>
+                        <button class="toolbar-btn" style="padding:2px 5px; font-size:10px;" onclick="applyTextFormat('clear')">清除格式</button>
+                        <button class="toolbar-btn" style="color:var(--red-pen);" onclick="insertBreak()">↩ 換行</button>
+                    </div>
+                </div>
+
+                <div class="rich-editor" id="edit-caption" contenteditable="true" data-placeholder="輸入貼文內文…" oninput="updateCurrentPost('caption', this.innerHTML)"></div>
+            </div>
+            <button class="btn-danger" onclick="deletePost()">刪除此編排貼文</button>
         </div>
 
-        <div class="preview-container" id="preview-ui" style="display:none">
-            <div class="phone-mockup">
+        <div class="preview-container-horizontal" id="preview-ui" style="display:none">
+
+            <div class="pure-post-card">
+                <div class="platform-badge-header">Instagram</div>
                 <div class="ig-post">
                     <div class="ig-header">
-                        <div class="ig-avatar" id="prev-ig-avatar">U</div>
-                        <div class="ig-username" id="prev-ig-headerUser">username</div>
+                        <div class="ig-avatar">大</div>
+                        <div class="ig-username">大田出版</div>
                     </div>
-                    <div class="ig-media-box" id="prev-ig-mediabox">
-                        <div id="prev-ig-canvabox" style="display:none;">
-                            <a href="#" id="prev-ig-canvalink" target="_blank" class="canva-badge">🎨 開啟 Canva 設計項目</a>
-                        </div>
-                        <span style="color:var(--ig-text-light); font-size:12px;" id="prev-ig-noimg">無圖片預覽</span>
-                        <img class="ig-img-preview" id="prev-ig-img" style="display:none">
+                    <div class="media-container" id="prev-ig-mediabox"></div>
+                    <div class="ig-actions-row">
+                        <div class="ig-actions-icons">❤️ 💬 ✈️</div>
+                        <div class="ig-dots-indicator" id="prev-ig-dots"></div>
+                        <div style="width:20px"></div>
                     </div>
-                    <div class="ig-actions">❤️ 💬 ✈️</div>
                     <div class="ig-caption-box">
-                        <span class="ig-user" id="prev-ig-postUser">username</span>
-                        <div class="ig-caption-text" id="prev-ig-caption"></div>
-                        <div class="ig-time" id="prev-ig-time">9:00 AM</div>
+                        <div>
+                            <span class="ig-user">大田出版</span><span class="ig-caption-text" id="prev-ig-caption"></span><span class="ig-more-btn" id="ig-more-trigger" style="display:none;" onclick="expandIGText()">... 更多</span>
+                        </div>
+                        <div class="ig-time" id="prev-ig-time">09:00 AM</div>
                     </div>
                 </div>
             </div>
 
-            <div class="phone-mockup">
+            <div class="pure-post-card">
+                <div class="platform-badge-header">Facebook</div>
                 <div class="fb-post">
                     <div class="fb-header">
-                        <div class="fb-avatar" id="prev-fb-avatar">U</div>
+                        <div class="fb-avatar">大</div>
                         <div class="fb-meta">
-                            <div class="fb-username" id="prev-fb-headerUser">username</div>
-                            <div class="fb-time" id="prev-fb-time">上午 9:00</div>
+                            <div class="fb-username">大田出版</div>
+                            <div class="fb-time" id="prev-fb-time">上午 09:00</div>
                         </div>
                     </div>
-                    <div class="fb-caption-text" id="prev-fb-caption"></div>
-                    <div class="fb-media-box" id="prev-fb-mediabox">
-                        <div id="prev-fb-canvabox" style="display:none;">
-                            <a href="#" id="prev-fb-canvalink" target="_blank" class="canva-badge">🎨 開啟 Canva 設計項目</a>
-                        </div>
-                        <span style="color:var(--ig-text-light); font-size:12px;" id="prev-fb-noimg">無圖片預覽</span>
-                        <img class="fb-img-preview" id="prev-fb-img" style="display:none">
+                    <div class="fb-caption-text-wrap">
+                        <span class="fb-caption-text" id="prev-fb-caption"></span>
                     </div>
+                    <div class="fb-media-wrap" id="prev-fb-mediabox"></div>
                     <div class="fb-actions">
-                        <div style="flex:1; text-align:center;">👍 讚</div>
-                        <div style="flex:1; text-align:center;">💬 留言</div>
-                        <div style="flex:1; text-align:center;">↩️ 分享</div>
+                        <div>👍 讚</div>
+                        <div>💬 留言</div>
+                        <div>↩️ 分享</div>
                     </div>
                 </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="confirm-modal">
+        <div class="modal-box">
+            <p id="confirm-modal-text">確定要執行此操作？</p>
+            <div class="modal-actions">
+                <button class="modal-btn" onclick="closeConfirmModal(false)">取消</button>
+                <button class="modal-btn confirm" id="confirm-modal-ok" onclick="closeConfirmModal(true)">確定</button>
             </div>
         </div>
     </div>
+    <div class="toast-msg" id="toast-msg"></div>
 
     <script>
         let db = {};
         let currentYear, currentMonth;
         let selectedDateStr = null;
         let currentId = null;
+        let isIGExpanded = false;
+        let currentIdxIG = 0, currentIdxFB = 0;
+        let pendingConfirmResolve = null;
+        let saveStatusTimer = null;
+        let activeInputMode = 'img'; // 'img' | 'fbImg' — 控制目前在編輯哪一組網址列表
 
-        // 初始化與強效即時讀取機制
+        /* ===================== Toast / 自訂確認框 ===================== */
+        function showToast(msg) {
+            const el = document.getElementById('toast-msg');
+            el.innerText = msg;
+            el.classList.add('show');
+            clearTimeout(el._hideTimer);
+            el._hideTimer = setTimeout(() => el.classList.remove('show'), 2200);
+        }
+
+        function showConfirm(message) {
+            return new Promise((resolve) => {
+                document.getElementById('confirm-modal-text').innerText = message;
+                document.getElementById('confirm-modal').classList.add('show');
+                pendingConfirmResolve = resolve;
+            });
+        }
+        function closeConfirmModal(result) {
+            document.getElementById('confirm-modal').classList.remove('show');
+            if (pendingConfirmResolve) { pendingConfirmResolve(result); pendingConfirmResolve = null; }
+        }
+
+        function markSaved() {
+            const el = document.getElementById('save-status');
+            el.innerText = '已自動儲存 ✓';
+            el.classList.add('saved');
+            clearTimeout(saveStatusTimer);
+            saveStatusTimer = setTimeout(() => { el.innerText = '待儲存變更會自動存於本機'; el.classList.remove('saved'); }, 1800);
+        }
+
+        function toggleTokenVisibility() {
+            const input = document.getElementById('gh-token');
+            const btn = document.getElementById('token-toggle');
+            if (input.type === 'password') { input.type = 'text'; btn.innerText = '🙈'; }
+            else { input.type = 'password'; btn.innerText = '👁'; }
+        }
+
+        /* ===================== 富文本格式工具 ===================== */
+        function applyTextFormat(type, value) {
+            const editor = document.getElementById('edit-caption');
+            editor.focus();
+            const selection = window.getSelection();
+
+            if (!selection.rangeCount || selection.isCollapsed) {
+                if (type === 'bold') document.execCommand('bold', false, null);
+                else if (type === 'highlight') document.execCommand('backColor', false, 'rgba(232, 196, 84, 0.45)');
+                else if (type === 'clear') document.execCommand('removeFormat', false, null);
+                updateCurrentPost('caption', editor.innerHTML);
+                return;
+            }
+
+            const range = selection.getRangeAt(0);
+
+            if (type === 'bold') {
+                document.execCommand('bold', false, null);
+            } else if (type === 'highlight') {
+                document.execCommand('backColor', false, 'rgba(232, 196, 84, 0.45)');
+            } else if (type === 'clear') {
+                document.execCommand('removeFormat', false, null);
+            } else if (type === 'size' || type === 'color') {
+                const span = document.createElement('span');
+                if (type === 'size') span.className = value;
+                else span.style.color = value;
+
+                try {
+                    const fragment = range.extractContents();
+                    span.appendChild(fragment);
+                    range.insertNode(span);
+
+                    const newRange = document.createRange();
+                    newRange.selectNodeContents(span);
+                    selection.removeAllRanges();
+                    selection.addRange(newRange);
+                } catch (e) {
+                    if (type === 'color') {
+                        document.execCommand('foreColor', false, value);
+                    } else {
+                        showToast('這段選取範圍較複雜，請嘗試只選取單一行文字後再套用字級');
+                    }
+                }
+            }
+
+            updateCurrentPost('caption', editor.innerHTML);
+        }
+
+        function insertBreak() {
+            document.getElementById('edit-caption').focus();
+            document.execCommand('insertHTML', false, '<br>');
+        }
+
+        /* ===================== Hashtag 解析 ===================== */
+        function parseHashtags(text) {
+            if (!text) return '';
+            return text.replace(/#([^\s<>&"'，。、！？；：「」『』（）,.!?;:()\[\]【】《》]+)/g, '<span class="hashtag-link">#$1</span>');
+        }
+
+        /* ===================== Canva 連結判別與 embed URL 轉換 =====================
+           原理：Canva 一般 /view 分享連結無法被 iframe 嵌入（官方安全性限制），
+           但加上 ?embed 參數的特殊網址可以嵌入，且網址結尾的 #頁碼 可以讓 iframe
+           直接跳到該頁。這裡把使用者貼上的一般分享連結自動轉成 embed 格式。 */
+        function parseCanvaUrl(url) {
+            if (!url) return null;
+            if (!url.includes('canva.com') && !url.includes('canva.link')) return null;
+
+            const hashMatch = url.match(/#(\d+)\s*$/);
+            const page = hashMatch ? hashMatch[1] : null;
+            const baseUrl = url.split('#')[0].trim();
+
+            let embedBase = baseUrl;
+            if (!/[?&]embed(=|&|$)/.test(embedBase)) {
+                embedBase += (embedBase.includes('?') ? '&' : '?') + 'embed';
+            }
+            const embedUrl = page ? `${embedBase}#${page}` : embedBase;
+
+            return { originalUrl: url.trim(), embedUrl, page };
+        }
+
+        /* ===================== 資料庫初始化 / 本機快取 ===================== */
         async function initDatabase() {
-            // 1. 先吃本地快取
             const localData = localStorage.getItem('planner_db');
-            if (localData) db = JSON.parse(localData);
-            else if (typeof externalDB !== 'undefined') db = externalDB;
+            if (localData) {
+                try { db = JSON.parse(localData); } catch (e) { db = {}; }
+            } else if (typeof externalDB !== 'undefined') {
+                db = externalDB;
+            }
 
-            // 2. 即時優化：直接向 GitHub 撈取最新資料，不受 Pages 幾分鐘的快取限制！
             const token = localStorage.getItem('gh_token');
             const repo = localStorage.getItem('gh_repo');
             if (token && repo) {
@@ -341,199 +673,161 @@
                     if (res.ok) {
                         const fileData = await res.json();
                         const rawText = decodeURIComponent(escape(atob(fileData.content)));
-                        const jsonText = rawText.replace(/var\s+externalDB\s*=\s*/, '').replace(/;$/, '');
+                        const jsonText = rawText.replace(/var\s+externalDB\s*=\s*/, '').replace(/;\s*$/, '');
                         db = JSON.parse(jsonText);
                         localStorage.setItem('planner_db', JSON.stringify(db));
-                        console.log("⚡ 已成功經由 API 繞過快取，加載 GitHub 上的最新即時數據！");
                         renderCalendar();
                         if (selectedDateStr) selectDate(selectedDateStr);
+                        showToast('已從 GitHub 載入最新資料');
+                    } else if (res.status === 401 || res.status === 403) {
+                        showToast('GitHub Token 無效或權限不足，已改用本機資料');
                     }
-                } catch(e) { console.log("即時 API 加載失敗，採用本地數據:", e); }
+                } catch (e) { console.log(e); showToast('連線 GitHub 失敗，已改用本機資料'); }
             }
         }
 
         window.addEventListener('DOMContentLoaded', async () => {
             document.getElementById('gh-token').value = localStorage.getItem('gh_token') || '';
             document.getElementById('gh-repo').value = localStorage.getItem('gh_repo') || '';
-            
             const today = new Date();
-            currentYear = today.getFullYear();
-            currentMonth = today.getMonth();
-            
+            currentYear = today.getFullYear(); currentMonth = today.getMonth();
             await initDatabase();
-            
-            const dateStr = `${currentYear}-${String(currentMonth + 1).padStart(2, '0')}-${String(today.getDate()).padStart(2, '0')}`;
-            selectDate(dateStr);
+            selectDate(`${currentYear}-${String(currentMonth + 1).padStart(2, '0')}-${String(today.getDate()).padStart(2, '0')}`);
         });
 
         function saveGitConfig() {
             localStorage.setItem('gh_token', document.getElementById('gh-token').value.trim());
             localStorage.setItem('gh_repo', document.getElementById('gh-repo').value.trim());
         }
-
         function saveLocal() {
             localStorage.setItem('planner_db', JSON.stringify(db));
+            markSaved();
         }
 
-        // ==================== ☁️ GitHub 同步功能 ====================
         async function syncToGitHub() {
-            const token = localStorage.getItem('gh_token');
-            const repo = localStorage.getItem('gh_repo');
+            const token = localStorage.getItem('gh_token'); const repo = localStorage.getItem('gh_repo');
             const syncBtn = document.getElementById('sync-btn');
-
-            if (!token || !repo) {
-                alert('請先正確輸入 GitHub Token 與 儲存庫路徑！');
-                return;
-            }
-
-            syncBtn.disabled = true;
-            syncBtn.innerText = '正在即時同步...';
-            syncBtn.style.backgroundColor = '#f59e0b';
-
+            if (!token || !repo) { showToast('請先填寫完整 GitHub 設定'); return; }
+            syncBtn.disabled = true; syncBtn.innerText = '同步中...'; syncBtn.style.backgroundColor = 'var(--amber-flag)';
             const url = `https://api.github.com/repos/${repo}/contents/database.js`;
             const fileContent = "var externalDB = " + JSON.stringify(db, null, 4) + ";";
             const base64Content = btoa(unescape(encodeURIComponent(fileContent)));
-
             try {
                 let sha = null;
                 const getRes = await fetch(url, { headers: { 'Authorization': `token ${token}` } });
-                if (getRes.status === 200) {
-                    const getData = await getRes.json();
-                    sha = getData.sha;
-                }
-
-                const bodyData = {
-                    message: `⚡ 貼文系統即時更新: ${new Date().toLocaleString()}`,
-                    content: base64Content
-                };
-                if (sha) bodyData.sha = sha;
-
+                if (getRes.status === 200) { sha = (await getRes.json()).sha; }
                 const putRes = await fetch(url, {
-                    method: 'PUT',
-                    headers: { 'Authorization': `token ${token}`, 'Content-Type': 'application/json' },
-                    body: JSON.stringify(bodyData)
+                    method: 'PUT', headers: { 'Authorization': `token ${token}`, 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ message: `排版更新: ${new Date().toLocaleString()}`, content: base64Content, sha: sha })
                 });
-
                 if (putRes.ok) {
-                    syncBtn.style.backgroundColor = 'var(--success-green)';
-                    syncBtn.innerText = '✅ 同步成功！';
-                    setTimeout(() => {
-                        syncBtn.disabled = false;
-                        syncBtn.style.backgroundColor = 'var(--ig-blue)';
-                        syncBtn.innerText = '儲存並同步到 GitHub';
-                    }, 1500);
-                } else { throw new Error('同步失敗'); }
+                    syncBtn.style.backgroundColor = 'var(--green-stamp)'; syncBtn.innerText = '✓ 同步成功！';
+                    setTimeout(() => { syncBtn.disabled = false; syncBtn.style.backgroundColor = 'var(--ink)'; syncBtn.innerText = '儲存並同步到 GitHub'; }, 1200);
+                } else {
+                    const errBody = await putRes.json().catch(() => ({}));
+                    throw new Error(errBody.message || `HTTP ${putRes.status}`);
+                }
             } catch (error) {
-                alert('上傳失敗，請檢查 Token 是否有效或專案名稱是否正確！');
-                syncBtn.disabled = false;
-                syncBtn.style.backgroundColor = 'var(--ig-blue)';
-                syncBtn.innerText = '儲存並同步到 GitHub';
+                showToast('同步失敗：' + (error.message || '請確認 Token 與 repo 是否正確'));
+                syncBtn.disabled = false; syncBtn.style.backgroundColor = 'var(--ink)'; syncBtn.innerText = '儲存並同步到 GitHub';
             }
         }
 
-        // ==================== 📅 精美日曆渲染 ====================
+        /* ===================== 本機備份匯出 / 匯入 ===================== */
+        function exportBackup() {
+            const blob = new Blob([JSON.stringify(db, null, 2)], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            const stamp = new Date().toISOString().slice(0, 10);
+            a.href = url; a.download = `planner-backup-${stamp}.json`;
+            document.body.appendChild(a); a.click(); document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+            showToast('已匯出備份檔');
+        }
+
+        function importBackup(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+            const reader = new FileReader();
+            reader.onload = async (e) => {
+                try {
+                    const parsed = JSON.parse(e.target.result);
+                    const ok = await showConfirm('匯入備份將覆蓋目前所有本機資料，確定要繼續嗎？');
+                    if (!ok) { event.target.value = ''; return; }
+                    db = parsed;
+                    saveLocal();
+                    renderCalendar();
+                    if (selectedDateStr) selectDate(selectedDateStr);
+                    showToast('備份已匯入');
+                } catch (err) {
+                    showToast('匯入失敗：檔案格式不正確');
+                }
+                event.target.value = '';
+            };
+            reader.readAsText(file);
+        }
+
+        /* ===================== 日曆 ===================== */
         function renderCalendar() {
             const title = document.getElementById('calendar-title');
             title.innerText = `${currentYear} 年 ${String(currentMonth + 1).padStart(2, '0')} 月`;
-            const container = document.getElementById('calendar-days');
-            container.innerHTML = '';
-
+            const container = document.getElementById('calendar-days'); container.innerHTML = '';
             const firstDay = new Date(currentYear, currentMonth, 1).getDay();
             const totalDays = new Date(currentYear, currentMonth + 1, 0).getDate();
             const today = new Date();
-
-            for (let i = 0; i < firstDay; i++) {
-                container.appendChild(document.createElement('div'));
-            }
-
+            for (let i = 0; i < firstDay; i++) container.appendChild(document.createElement('div'));
             for (let d = 1; d <= totalDays; d++) {
-                const dayDiv = document.createElement('div');
-                dayDiv.className = 'day';
-                
+                const dayDiv = document.createElement('div'); dayDiv.className = 'day';
                 const dateStr = `${currentYear}-${String(currentMonth + 1).padStart(2, '0')}-${String(d).padStart(2, '0')}`;
-                
                 if (dateStr === selectedDateStr) dayDiv.classList.add('selected');
-                if (currentYear === today.getFullYear() && currentMonth === today.getMonth() && d === today.getDate()) {
-                    dayDiv.classList.add('today');
-                }
-
-                const numSpan = document.createElement('span');
-                numSpan.className = 'day-num';
-                numSpan.innerText = d;
-                dayDiv.appendChild(numSpan);
-
+                if (currentYear === today.getFullYear() && currentMonth === today.getMonth() && d === today.getDate()) dayDiv.classList.add('today');
+                const numSpan = document.createElement('span'); numSpan.className = 'day-num'; numSpan.innerText = d; dayDiv.appendChild(numSpan);
                 if (db[dateStr] && db[dateStr].length > 0) {
-                    const badge = document.createElement('span');
-                    badge.className = 'badge';
-                    badge.innerText = db[dateStr].length;
-                    dayDiv.appendChild(badge);
+                    const badge = document.createElement('span'); badge.className = 'badge'; badge.innerText = db[dateStr].length; dayDiv.appendChild(badge);
                 }
-
-                dayDiv.onclick = () => selectDate(dateStr);
-                container.appendChild(dayDiv);
+                dayDiv.onclick = () => selectDate(dateStr); container.appendChild(dayDiv);
             }
         }
 
-        function changeMonth(dir) {
-            currentMonth += dir;
-            if (currentMonth > 11) { currentMonth = 0; currentYear++; }
-            if (currentMonth < 0) { currentMonth = 11; currentYear--; }
-            renderCalendar();
-        }
+        function changeMonth(dir) { currentMonth += dir; if (currentMonth > 11) { currentMonth = 0; currentYear++; } if (currentMonth < 0) { currentMonth = 11; currentYear--; } renderCalendar(); }
 
         function selectDate(dateStr) {
-            selectedDateStr = dateStr;
-            currentId = null;
-            
+            selectedDateStr = dateStr; currentId = null;
             document.getElementById('list-date-title').innerText = dateStr;
-            document.getElementById('list-date-sub').innerText = `此日期共有 ${(db[dateStr] || []).length} 則貼文`;
+            document.getElementById('list-date-sub').innerText = `共有 ${(db[dateStr] || []).length} 則排程`;
             document.getElementById('add-post-btn').style.display = 'block';
-            
-            renderCalendar();
-            renderList();
-            showEditor(false);
+            renderCalendar(); renderList(); showEditor(false);
         }
 
+        /* ===================== 貼文列表 ===================== */
         function renderList() {
-            const container = document.getElementById('post-list-container');
-            container.innerHTML = '';
+            const container = document.getElementById('post-list-container'); container.innerHTML = '';
             const list = db[selectedDateStr] || [];
-
-            // 依時間自動排序
             list.sort((a, b) => (a.time || '00:00').localeCompare(b.time || '00:00'));
-
             list.forEach((post, index) => {
-                const item = document.createElement('div');
-                item.className = `post-item ${index === currentId ? 'active' : ''}`;
-                
-                const tempDiv = document.createElement('div');
-                tempDiv.innerHTML = post.caption || '';
-                const pureText = tempDiv.innerText || tempDiv.textContent || '';
-
-                item.innerHTML = `
-                    <div class="item-time">⏰ ${post.time || '00:00'}</div>
-                    <div class="item-title">👤 ${post.headerUser || '未命名'}</div>
-                    <div class="item-preview">${pureText || '無內文'}</div>
-                `;
-                item.onclick = () => loadPost(index);
-                container.appendChild(item);
+                const item = document.createElement('div'); item.className = `post-item ${index === currentId ? 'active' : ''}`;
+                const previewText = getPlainTextPreview(post.caption);
+                item.innerHTML = `<div class="item-time">${post.time || '00:00'}</div><div class="item-title">${previewText.substring(0, 14) || '無內文'}</div>`;
+                item.onclick = () => loadPost(index); container.appendChild(item);
             });
         }
 
-        function loadPost(index) {
-            currentId = index;
-            renderList();
-            showEditor(true);
+        const _textScratchpad = document.createElement('div');
+        function getPlainTextPreview(html) {
+            _textScratchpad.innerHTML = html || '';
+            return _textScratchpad.innerText || '';
+        }
 
+        function loadPost(index) {
+            currentId = index; isIGExpanded = false; currentIdxIG = 0; currentIdxFB = 0;
+            activeInputMode = 'img';
+            renderList(); showEditor(true);
             const post = db[selectedDateStr][currentId];
             document.getElementById('edit-time').value = post.time || '09:00';
-            document.getElementById('edit-headerUser').value = post.headerUser || '';
-            document.getElementById('edit-postUser').value = post.postUser || '';
             document.getElementById('edit-ratio').value = post.ratio || '1-1';
-            document.getElementById('edit-img').value = (post.img || []).join(',');
-            document.getElementById('edit-fbImg').value = (post.fbImg || []).join(',');
             document.getElementById('edit-caption').innerHTML = post.caption || '';
-
+            setModeButtons();
+            renderUrlEditor();
             updatePreview();
         }
 
@@ -547,104 +841,202 @@
             if (currentId === null || !db[selectedDateStr]) return;
             db[selectedDateStr][currentId][field] = value;
             saveLocal();
-            
-            if (field === 'time' || field === 'headerUser' || field === 'caption') {
-                renderList();
-            }
+            if (field === 'time' || field === 'caption') renderList();
             updatePreview();
         }
 
-        // 檢查是否為 Canva 網址
-        function isCanvaLink(url) {
-            if(!url) return false;
-            return url.includes('canva.com') || url.includes('canva.link');
+        /* ===================== 圖片/Canva 網址逐行編輯器 =====================
+           取代逗號分隔輸入框：逐行輸入，每行可填一般圖片網址或 Canva 公開連結。 */
+        function switchInputMode(mode) {
+            activeInputMode = mode;
+            setModeButtons();
+            renderUrlEditor();
+        }
+        function setModeButtons() {
+            document.getElementById('mode-btn-img').classList.toggle('active', activeInputMode === 'img');
+            document.getElementById('mode-btn-fbImg').classList.toggle('active', activeInputMode === 'fbImg');
+            document.getElementById('canva-editor-label').innerText = activeInputMode === 'img'
+                ? 'IG 圖片 / Canva 公開連結列表'
+                : 'FB 圖片 / Canva 公開連結列表（留空自動同步 IG）';
+        }
+
+        function getActiveList() {
+            const post = db[selectedDateStr][currentId];
+            return post[activeInputMode] || [];
+        }
+        function setActiveList(list) {
+            updateCurrentPost(activeInputMode, list);
+        }
+
+        function renderUrlEditor() {
+            const container = document.getElementById('canva-list-container');
+            container.innerHTML = '';
+            const list = getActiveList();
+            const rows = list.length > 0 ? list : [''];
+            rows.forEach((url, idx) => {
+                container.appendChild(buildUrlRow(url, idx));
+            });
+        }
+
+        function buildUrlRow(value, idx) {
+            const row = document.createElement('div');
+            row.className = 'canva-row';
+            const input = document.createElement('input');
+            input.type = 'text';
+            input.placeholder = '貼上圖片網址，或 Canva 公開連結（可含 #頁碼）';
+            input.value = value;
+            input.oninput = (e) => updateUrlAt(idx, e.target.value);
+            const removeBtn = document.createElement('button');
+            removeBtn.type = 'button';
+            removeBtn.className = 'canva-remove';
+            removeBtn.innerText = '✕';
+            removeBtn.onclick = () => removeUrlAt(idx);
+            row.appendChild(input);
+            row.appendChild(removeBtn);
+            return row;
+        }
+
+        function updateUrlAt(idx, value) {
+            const list = [...getActiveList()];
+            while (list.length <= idx) list.push('');
+            list[idx] = value;
+            setActiveList(list);
+        }
+
+        function addUrlRow() {
+            const list = [...getActiveList(), ''];
+            setActiveList(list);
+            renderUrlEditor();
+            const inputs = document.querySelectorAll('#canva-list-container input');
+            if (inputs.length) inputs[inputs.length - 1].focus();
+        }
+
+        function removeUrlAt(idx) {
+            const list = [...getActiveList()];
+            list.splice(idx, 1);
+            setActiveList(list);
+            renderUrlEditor();
+        }
+
+        function expandIGText() { isIGExpanded = true; updatePreview(); }
+
+        function slideMedia(platform, dir, max) {
+            if (platform === 'ig') { currentIdxIG = (currentIdxIG + dir + max) % max; } else { currentIdxFB = (currentIdxFB + dir + max) % max; }
+            updatePreview();
         }
 
         function updatePreview() {
             const post = db[selectedDateStr][currentId];
             if (!post) return;
 
-            const char = (post.headerUser || 'U').charAt(0).toUpperCase();
-            document.getElementById('prev-ig-avatar').innerText = char;
-            document.getElementById('prev-fb-avatar').innerText = char;
-
-            document.getElementById('prev-ig-headerUser').innerText = post.headerUser || 'username';
-            document.getElementById('prev-fb-headerUser').innerText = post.headerUser || 'username';
-            document.getElementById('prev-ig-postUser').innerText = post.postUser || 'username';
-
-            document.getElementById('prev-ig-time').innerText = post.time || '09:00';
+            const ratioClass = 'r-' + (post.ratio || '1-1');
+            document.getElementById('prev-ig-time').innerText = (post.time || '09:00') + ' AM';
             document.getElementById('prev-fb-time').innerText = '預計發布：' + (post.time || '09:00');
 
-            document.getElementById('prev-ig-caption').innerHTML = post.caption || '';
-            document.getElementById('prev-fb-caption').innerHTML = post.caption || '';
+            const rawCaption = post.caption || '';
+            const parsedCaption = parseHashtags(rawCaption);
 
-            const ratioClass = 'r-' + (post.ratio || '1-1');
-            
-            // IG 圖片或 Canva 處理
-            const igBox = document.getElementById('prev-ig-mediabox');
-            igBox.className = 'ig-media-box ' + ratioClass;
-            const igSrc = post.img && post.img[0] ? post.img[0].trim() : '';
-
-            if (isCanvaLink(igSrc)) {
-                document.getElementById('prev-ig-noimg').style.display = 'none';
-                document.getElementById('prev-ig-img').style.display = 'none';
-                document.getElementById('prev-ig-canvabox').style.display = 'block';
-                document.getElementById('prev-ig-canvalink').href = igSrc;
-            } else if (igSrc !== '') {
-                document.getElementById('prev-ig-noimg').style.display = 'none';
-                document.getElementById('prev-ig-canvabox').style.display = 'none';
-                document.getElementById('prev-ig-img').style.display = 'block';
-                document.getElementById('prev-ig-img').src = igSrc;
+            const plainText = getPlainTextPreview(rawCaption);
+            if ((plainText.length > 50 || rawCaption.includes('<br>')) && !isIGExpanded) {
+                document.getElementById('prev-ig-caption').innerHTML = parseHashtags(plainText.substring(0, 45)) + '...';
+                document.getElementById('ig-more-trigger').style.display = 'inline';
             } else {
-                document.getElementById('prev-ig-noimg').style.display = 'block';
-                document.getElementById('prev-ig-canvabox').style.display = 'none';
-                document.getElementById('prev-ig-img').style.display = 'none';
+                document.getElementById('prev-ig-caption').innerHTML = parsedCaption;
+                document.getElementById('ig-more-trigger').style.display = 'none';
             }
+            document.getElementById('prev-fb-caption').innerHTML = parsedCaption;
 
-            // FB 圖片或 Canva 處理
-            const fbBox = document.getElementById('prev-fb-mediabox');
-            fbBox.className = 'fb-media-box ' + ratioClass;
-            const fbSrc = (post.fbImg && post.fbImg[0] && post.fbImg[0].trim() !== '') ? post.fbImg[0].trim() : igSrc;
-
-            if (isCanvaLink(fbSrc)) {
-                document.getElementById('prev-fb-noimg').style.display = 'none';
-                document.getElementById('prev-fb-img').style.display = 'none';
-                document.getElementById('prev-fb-canvabox').style.display = 'block';
-                document.getElementById('prev-fb-canvalink').href = fbSrc;
-            } else if (fbSrc !== '') {
-                document.getElementById('prev-fb-noimg').style.display = 'none';
-                document.getElementById('prev-fb-canvabox').style.display = 'none';
-                document.getElementById('prev-fb-img').style.display = 'block';
-                document.getElementById('prev-fb-img').src = fbSrc;
-            } else {
-                document.getElementById('prev-fb-noimg').style.display = 'block';
-                document.getElementById('prev-fb-canvabox').style.display = 'none';
-                document.getElementById('prev-fb-img').style.display = 'none';
-            }
+            renderPlatformCarousel('ig', post.img || [], ratioClass);
+            const fbList = (post.fbImg && post.fbImg.length > 0 && post.fbImg[0] !== '') ? post.fbImg : (post.img || []);
+            renderPlatformCarousel('fb', fbList, ratioClass);
         }
 
-        function formatDoc(cmd, val) {
-            document.execCommand(cmd, false, val);
-            document.getElementById('edit-caption').focus();
-            updateCurrentPost('caption', document.getElementById('edit-caption').innerHTML);
+        function renderPlatformCarousel(platform, list, ratioClass) {
+            const boxId = platform === 'ig' ? 'prev-ig-mediabox' : 'prev-fb-mediabox';
+            const box = document.getElementById(boxId);
+            box.className = (platform === 'ig' ? 'media-container ' : 'fb-media-wrap ') + ratioClass;
+            box.innerHTML = '';
+
+            const cleanList = list.filter(url => url && url.trim() !== '');
+            if (cleanList.length === 0) {
+                box.innerHTML = `<span style="color:#94a3b8; font-size:12px; padding: 20px;">無圖片預覽</span>`;
+                if (platform === 'ig') document.getElementById('prev-ig-dots').innerHTML = '';
+                return;
+            }
+
+            const activeIdx = platform === 'ig' ? currentIdxIG : currentIdxFB;
+            const safeIdx = activeIdx >= cleanList.length ? 0 : activeIdx;
+            if (platform === 'ig') currentIdxIG = safeIdx; else currentIdxFB = safeIdx;
+
+            const src = cleanList[safeIdx];
+            const canva = parseCanvaUrl(src);
+
+            const slot = document.createElement('div');
+            slot.className = 'media-slot';
+
+            if (canva) {
+                // 嵌入 Canva embed iframe，並用網址裡的頁碼自動跳頁
+                const iframe = document.createElement('iframe');
+                iframe.className = 'canva-embed-frame active';
+                iframe.src = canva.embedUrl;
+                iframe.loading = 'lazy';
+                iframe.setAttribute('allowfullscreen', 'allowfullscreen');
+                iframe.setAttribute('allow', 'fullscreen');
+                slot.appendChild(iframe);
+
+                const tag = document.createElement('div');
+                tag.className = 'canva-source-tag';
+                tag.innerText = canva.page ? `Canva · 第 ${canva.page} 頁` : 'Canva';
+                slot.appendChild(tag);
+            } else {
+                const img = document.createElement('img');
+                img.className = 'img-contain-preview active'; img.src = src; img.loading = 'lazy';
+                img.onerror = function () { this.replaceWith(Object.assign(document.createElement('span'), { innerText: '⚠ 圖片載入失敗', style: 'color:#B5482A;font-size:12px;padding:20px;' })); };
+                slot.appendChild(img);
+            }
+            box.appendChild(slot);
+
+            if (cleanList.length > 1) {
+                const badge = document.createElement('div');
+                badge.className = 'carousel-badge'; badge.innerText = `${safeIdx + 1}/${cleanList.length}`;
+                box.appendChild(badge);
+
+                const prevBtn = document.createElement('button');
+                prevBtn.className = 'carousel-btn prev'; prevBtn.innerText = '◀'; prevBtn.type = 'button';
+                prevBtn.onclick = (e) => { e.stopPropagation(); slideMedia(platform, -1, cleanList.length); };
+                box.appendChild(prevBtn);
+
+                const nextBtn = document.createElement('button');
+                nextBtn.className = 'carousel-btn next'; nextBtn.innerText = '▶'; nextBtn.type = 'button';
+                nextBtn.onclick = (e) => { e.stopPropagation(); slideMedia(platform, 1, cleanList.length); };
+                box.appendChild(nextBtn);
+            }
+
+            if (platform === 'ig') {
+                const dotsContainer = document.getElementById('prev-ig-dots'); dotsContainer.innerHTML = '';
+                if (cleanList.length > 1) {
+                    for (let i = 0; i < cleanList.length; i++) {
+                        const dot = document.createElement('div');
+                        dot.className = `ig-dot ${i === safeIdx ? 'active' : ''}`;
+                        dotsContainer.appendChild(dot);
+                    }
+                }
+            }
         }
 
         function createNewPost() {
             if (!db[selectedDateStr]) db[selectedDateStr] = [];
-            db[selectedDateStr].push({headerUser:"大田出版", postUser:"大田出版", caption:"主內文排版樣式...", time:"09:00", img:[], fbImg:[], ratio:"1-1"});
-            loadPost(db[selectedDateStr].length - 1);
-            renderCalendar();
+            db[selectedDateStr].push({ caption: "", time: "09:00", img: [], fbImg: [], ratio: "1-1" });
+            saveLocal();
+            loadPost(db[selectedDateStr].length - 1); renderCalendar();
         }
 
-        function deletePost() {
-            if (confirm('確定刪除此貼文？')) {
-                db[selectedDateStr].splice(currentId, 1);
-                currentId = null;
-                saveLocal();
-                renderList();
-                renderCalendar();
-                showEditor(false);
-            }
+        async function deletePost() {
+            const ok = await showConfirm('確定刪除此貼文？此動作無法復原。');
+            if (!ok) return;
+            db[selectedDateStr].splice(currentId, 1);
+            currentId = null;
+            saveLocal(); renderList(); renderCalendar(); showEditor(false);
         }
     </script>
 </body>
