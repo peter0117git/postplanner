@@ -2,6 +2,7 @@
 <html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>排版桌 — IG Post Planner</title>
     <script src="database.js" onerror="console.log('尚未偵測到 database.js')"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,8 +20,8 @@
             --green-stamp: #2F6F5E;
             --amber-flag: #B8852C;
             --danger: #B5482A;
-            --sidebar-width: 280px;
-            --list-col-width: 260px;
+            --sidebar-width: 220px;
+            --list-col-width: 240px;
             --font-display: 'Noto Serif TC', serif;
             --font-body: 'Noto Sans TC', -apple-system, sans-serif;
             --font-mono: 'JetBrains Mono', monospace;
@@ -32,7 +33,7 @@
             background-image: linear-gradient(rgba(0,0,0,0.012) 1px, transparent 1px);
             background-size: 100% 32px;
         }
-        ::-webkit-scrollbar { width: 5px; height: 5px; }
+        ::-webkit-scrollbar { width: 4px; height: 4px; }
         ::-webkit-scrollbar-track { background: transparent; }
         ::-webkit-scrollbar-thumb { background: var(--paper-line); border-radius: 4px; }
         ::-webkit-scrollbar-thumb:hover { background: var(--ink-faint); }
@@ -42,55 +43,74 @@
         .sidebar {
             width: var(--sidebar-width); background: var(--paper-raised); border-right: 1px solid var(--paper-line);
             display: flex; flex-direction: column; height: 100%; z-index: 10; flex-shrink: 0;
+            transition: width 0.25s ease;
         }
-        .brand-strip {
-            padding: 14px 16px 10px; border-bottom: 1px solid var(--paper-line);
-            display: flex; align-items: baseline; gap: 8px;
-        }
-        .brand-mark { font-family: var(--font-display); font-weight: 900; font-size: 16px; color: var(--ink); }
-        .brand-sub { font-size: 9px; color: var(--ink-faint); font-family: var(--font-mono); }
 
-        .github-config-panel { padding: 12px 14px; background: #F4F0E6; border-bottom: 1px solid var(--paper-line); }
-        .github-config-panel h3 {
-            margin: 0 0 7px; font-size: 10.5px; font-weight: 800; color: var(--ink-soft);
-            text-transform: uppercase; letter-spacing: 0.6px;
+        /* Brand strip — now holds title + presentation mode btn */
+        .brand-strip {
+            padding: 12px 12px 10px; border-bottom: 1px solid var(--paper-line);
+            display: flex; align-items: center; justify-content: space-between; gap: 6px; flex-shrink: 0;
         }
+        .brand-left { display: flex; align-items: baseline; gap: 6px; }
+        .brand-mark { font-family: var(--font-display); font-weight: 900; font-size: 14px; color: var(--ink); }
+        .brand-sub { font-size: 8px; color: var(--ink-faint); font-family: var(--font-mono); }
+        .present-btn {
+            padding: 4px 8px; background: var(--paper); border: 1px solid var(--paper-line);
+            border-radius: 4px; font-size: 10px; font-weight: 700; color: var(--ink-soft);
+            cursor: pointer; white-space: nowrap; transition: all 0.15s; flex-shrink: 0;
+        }
+        .present-btn:hover { border-color: var(--green-stamp); color: var(--green-stamp); }
+        body.presenting .present-btn { background: var(--green-stamp); color: white; border-color: var(--green-stamp); }
+
+        /* GitHub 設定 — 收合式抽屜 */
+        .github-drawer { border-bottom: 1px solid var(--paper-line); flex-shrink: 0; }
+        .github-drawer-toggle {
+            width: 100%; padding: 8px 12px; background: #F7F4EE; border: none; cursor: pointer;
+            display: flex; align-items: center; justify-content: space-between;
+            font-size: 10px; font-weight: 700; color: var(--ink-soft); text-transform: uppercase; letter-spacing: 0.5px;
+        }
+        .github-drawer-toggle:hover { background: #F0EBDD; }
+        .drawer-arrow { font-size: 8px; transition: transform 0.2s; color: var(--ink-faint); }
+        .github-drawer.open .drawer-arrow { transform: rotate(180deg); }
+        .github-drawer-body { display: none; padding: 10px 12px 12px; background: #F7F4EE; }
+        .github-drawer.open .github-drawer-body { display: block; }
         .config-warning {
-            font-size: 10px; color: var(--amber-flag); background: #FBF3DF; border: 1px solid #E9D29A;
-            border-radius: 3px; padding: 6px 8px; margin-bottom: 7px; line-height: 1.5;
+            font-size: 9.5px; color: var(--amber-flag); background: #FBF3DF; border: 1px solid #E9D29A;
+            border-radius: 3px; padding: 5px 7px; margin-bottom: 6px; line-height: 1.5;
         }
-        .github-config-panel input {
-            width: 100%; padding: 7px 9px; margin-bottom: 5px;
-            border: 1px solid var(--paper-line); border-radius: 4px; font-size: 11.5px; background: var(--paper-raised); color: var(--ink);
+        .github-drawer-body input {
+            width: 100%; padding: 6px 8px; margin-bottom: 5px;
+            border: 1px solid var(--paper-line); border-radius: 4px; font-size: 11px; background: var(--paper-raised); color: var(--ink);
         }
-        .github-config-panel input:focus { border-color: var(--red-pen); outline: none; }
+        .github-drawer-body input:focus { border-color: var(--red-pen); outline: none; }
         .token-input-row { position: relative; }
-        .token-input-row input { padding-right: 34px; }
-        .token-toggle-btn { position: absolute; right: 4px; top: 4px; bottom: 9px; width: 26px; background: none; border: none; cursor: pointer; font-size: 11px; color: var(--ink-faint); }
+        .token-input-row input { padding-right: 30px; }
+        .token-toggle-btn { position: absolute; right: 4px; top: 4px; bottom: 9px; width: 24px; background: none; border: none; cursor: pointer; font-size: 10px; color: var(--ink-faint); }
         .github-sync-btn {
-            width: 100%; padding: 8px; background: var(--ink); color: var(--paper);
-            border: none; border-radius: 4px; font-weight: 700; cursor: pointer; font-size: 11.5px; transition: background 0.15s;
+            width: 100%; padding: 7px; background: var(--ink); color: var(--paper);
+            border: none; border-radius: 4px; font-weight: 700; cursor: pointer; font-size: 11px; transition: background 0.15s;
         }
         .github-sync-btn:hover { background: var(--red-pen-deep); }
         .github-sync-btn:disabled { opacity: 0.6; cursor: not-allowed; }
-        .backup-row { display: flex; gap: 5px; margin-top: 7px; }
+        .backup-row { display: flex; gap: 4px; margin-top: 6px; }
         .backup-btn {
-            flex: 1; padding: 6px; background: var(--paper-raised); border: 1px solid var(--paper-line);
-            color: var(--ink-soft); border-radius: 4px; font-weight: 700; cursor: pointer; font-size: 10px;
+            flex: 1; padding: 5px; background: var(--paper-raised); border: 1px solid var(--paper-line);
+            color: var(--ink-soft); border-radius: 4px; font-weight: 700; cursor: pointer; font-size: 9.5px;
         }
-        .backup-btn:hover { border-color: var(--ink-faint); background: #F4F0E6; }
+        .backup-btn:hover { border-color: var(--ink-faint); background: #F0EBDD; }
         #import-file-input { display: none; }
 
-        .calendar-section { padding: 14px; flex: 1; overflow-y: auto; }
-        .calendar-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
-        .calendar-header h2 { font-family: var(--font-display); font-size: 14px; font-weight: 700; color: var(--ink); }
+        /* 日曆本體 */
+        .calendar-section { padding: 12px; flex: 1; overflow-y: auto; }
+        .calendar-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+        .calendar-header h2 { font-family: var(--font-display); font-size: 13px; font-weight: 700; color: var(--ink); }
         .calendar-nav-btn {
             background: var(--paper); border: 1px solid var(--paper-line); border-radius: 4px;
-            width: 24px; height: 24px; cursor: pointer; color: var(--ink-soft); font-size: 10px;
+            width: 22px; height: 22px; cursor: pointer; color: var(--ink-soft); font-size: 9px;
         }
         .calendar-nav-btn:hover { border-color: var(--red-pen); color: var(--red-pen); }
-        .calendar-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 3px; text-align: center; }
-        .weekday { font-size: 9px; font-weight: 700; color: var(--ink-faint); padding: 3px 0; font-family: var(--font-mono); }
+        .calendar-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 2px; text-align: center; }
+        .weekday { font-size: 8.5px; font-weight: 700; color: var(--ink-faint); padding: 3px 0; font-family: var(--font-mono); }
         .weekday:nth-child(1) { color: var(--red-pen); }
         .weekday:nth-child(7) { color: #2A4F6B; }
         .day {
@@ -102,45 +122,96 @@
         .day.selected { background: var(--ink) !important; }
         .day.selected::before {
             content: ''; position: absolute; top: 0; right: 0; width: 0; height: 0;
-            border-style: solid; border-width: 0 7px 7px 0; border-color: transparent var(--red-pen) transparent transparent;
+            border-style: solid; border-width: 0 6px 6px 0; border-color: transparent var(--red-pen) transparent transparent;
         }
         .day.selected .day-num { color: var(--paper); }
         .day.selected .badge { background: var(--red-pen); color: var(--paper); }
         .day.today:not(.selected) { border: 1.5px solid var(--green-stamp); }
         .day.today:not(.selected) .day-num { color: var(--green-stamp); font-weight: 800; }
-        .day .day-num { font-size: 10px; color: var(--ink-soft); font-family: var(--font-mono); line-height: 1; }
+        .day .day-num { font-size: 9.5px; color: var(--ink-soft); font-family: var(--font-mono); line-height: 1; }
         .day .badge {
-            position: absolute; bottom: 2px; right: 2px;
+            position: absolute; bottom: 1px; right: 1px;
             background: var(--ink-soft); color: var(--paper-raised); border-radius: 2px;
-            font-size: 7.5px; font-weight: 700; padding: 1px 2px; min-width: 11px;
+            font-size: 7px; font-weight: 700; padding: 1px 2px; min-width: 10px;
             text-align: center; font-family: var(--font-mono); line-height: 1.3;
         }
+
+        /* 簡報模式：隱藏側欄裝飾 */
+        body.presenting .github-drawer { display: none; }
+        body.presenting .brand-sub { display: none; }
 
         /* ===== 中欄：貼文列表 ===== */
         .list-column {
             width: var(--list-col-width); background: var(--paper-raised); border-right: 1px solid var(--paper-line);
             display: flex; flex-direction: column; height: 100%; flex-shrink: 0;
         }
-        .list-header { padding: 16px 14px 10px; border-bottom: 1px solid var(--paper-line); }
-        .list-header-top { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2px; }
-        .list-header h2 { font-family: var(--font-display); font-size: 16px; font-weight: 700; color: var(--ink); }
-        .save-status { font-size: 9px; color: var(--ink-faint); font-weight: 700; font-family: var(--font-mono); white-space: nowrap; }
+        /* 簡報模式：隱藏中欄 */
+        body.presenting .list-column { display: none; }
+
+        .list-header { padding: 13px 12px 8px; border-bottom: 1px solid var(--paper-line); flex-shrink: 0; }
+        .list-header-top { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 1px; }
+        .list-header h2 { font-family: var(--font-display); font-size: 15px; font-weight: 700; color: var(--ink); }
+        .save-status { font-size: 8.5px; color: var(--ink-faint); font-weight: 700; font-family: var(--font-mono); white-space: nowrap; }
         .save-status.saved { color: var(--green-stamp); }
-        .date-sub { font-size: 10.5px; color: var(--ink-faint); font-family: var(--font-mono); }
-        .post-list { flex: 1; overflow-y: auto; padding: 10px; }
+        .date-sub { font-size: 10px; color: var(--ink-faint); font-family: var(--font-mono); }
+
+        /* 日／週 切換 tabs */
+        .view-tabs { display: flex; border-bottom: 1px solid var(--paper-line); flex-shrink: 0; }
+        .view-tab {
+            flex: 1; padding: 7px 0; font-size: 10.5px; font-weight: 700; text-align: center;
+            background: none; border: none; cursor: pointer; color: var(--ink-faint);
+            border-bottom: 2px solid transparent; margin-bottom: -1px; transition: all 0.15s;
+        }
+        .view-tab:hover { color: var(--ink-soft); }
+        .view-tab.active { color: var(--red-pen); border-bottom-color: var(--red-pen); }
+
+        /* 貼文列表（日視圖）*/
+        .post-list { flex: 1; overflow-y: auto; padding: 8px; }
         .post-item {
-            padding: 10px 11px; border: 1px solid var(--paper-line); border-radius: 5px; margin-bottom: 7px; cursor: pointer;
+            padding: 9px 10px; border: 1px solid var(--paper-line); border-radius: 5px; margin-bottom: 6px; cursor: pointer;
             background: var(--paper); transition: border-color 0.12s;
         }
         .post-item:hover { border-color: var(--ink-faint); }
         .post-item.active { background: var(--paper-raised); border-color: var(--red-pen); box-shadow: 2px 2px 0 0 rgba(181,72,42,0.1); }
-        .post-item .item-time { font-size: 10.5px; color: var(--red-pen); font-weight: 700; margin-bottom: 3px; font-family: var(--font-mono); }
-        .post-item .item-title { font-size: 11.5px; font-weight: 700; color: var(--ink); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .post-item .item-time { font-size: 10px; color: var(--red-pen); font-weight: 700; margin-bottom: 2px; font-family: var(--font-mono); }
+        .post-item .item-title { font-size: 11px; font-weight: 700; color: var(--ink); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+        /* 週視圖 */
+        .week-view { flex: 1; overflow-y: auto; padding: 8px; display: none; flex-direction: column; gap: 4px; }
+        .week-view.visible { display: flex; }
+        .week-day-row {
+            border: 1px solid var(--paper-line); border-radius: 5px; overflow: hidden; cursor: pointer;
+            transition: border-color 0.12s;
+        }
+        .week-day-row:hover { border-color: var(--ink-faint); }
+        .week-day-row.selected-week-day { border-color: var(--red-pen); }
+        .week-day-header {
+            padding: 6px 10px; display: flex; align-items: center; justify-content: space-between;
+            background: var(--paper);
+        }
+        .week-day-label { font-size: 10px; font-weight: 700; font-family: var(--font-mono); color: var(--ink-soft); }
+        .week-day-label.is-today { color: var(--green-stamp); }
+        .week-day-label.is-selected { color: var(--red-pen); }
+        .week-day-count { font-size: 9px; font-family: var(--font-mono); color: var(--ink-faint); }
+        .week-day-posts { padding: 0 8px 6px; background: var(--paper); }
+        .week-post-pill {
+            display: inline-block; margin: 2px 2px 0 0; padding: 2px 7px;
+            background: var(--paper-raised); border: 1px solid var(--paper-line);
+            border-radius: 10px; font-size: 9.5px; color: var(--ink-soft); font-weight: 700;
+        }
+        .week-post-pill .pill-time { color: var(--red-pen); margin-right: 3px; }
+        .week-nav { display: flex; justify-content: space-between; align-items: center; padding: 6px 8px; flex-shrink: 0; border-bottom: 1px solid var(--paper-line); }
+        .week-nav-btn { background: none; border: none; cursor: pointer; font-size: 12px; color: var(--ink-faint); padding: 2px 6px; border-radius: 3px; }
+        .week-nav-btn:hover { background: var(--paper-line); color: var(--ink); }
+        .week-nav-label { font-size: 10px; font-family: var(--font-mono); color: var(--ink-soft); font-weight: 700; }
+
         .add-post-btn {
-            margin: 10px; padding: 9px; background: transparent; border: 1.5px dashed var(--ink-faint);
-            color: var(--ink-soft); border-radius: 5px; cursor: pointer; font-weight: 700; font-size: 11.5px; transition: all 0.15s;
+            margin: 8px; padding: 8px; background: transparent; border: 1.5px dashed var(--ink-faint);
+            color: var(--ink-soft); border-radius: 5px; cursor: pointer; font-weight: 700; font-size: 11px; transition: all 0.15s;
+            flex-shrink: 0;
         }
         .add-post-btn:hover { border-color: var(--red-pen); color: var(--red-pen); background: rgba(181,72,42,0.04); }
+        body.presenting .add-post-btn { display: none !important; }
 
         /* ===== 右側：編輯 + IG 預覽 ===== */
         .main-content { flex: 1; display: flex; height: 100%; overflow: hidden; }
@@ -148,65 +219,60 @@
 
         /* 編輯區 */
         .editor-container {
-            width: 380px; min-width: 380px; display: flex; flex-direction: column;
+            width: 360px; min-width: 360px; display: flex; flex-direction: column;
             border-right: 1px solid var(--paper-line); background: var(--paper-raised); height: 100%; overflow: hidden;
         }
-        .editor-scroll { flex: 1; overflow-y: auto; padding: 16px; display: flex; flex-direction: column; gap: 12px; }
-        .editor-card { border: 1px solid var(--paper-line); border-radius: 6px; padding: 12px; background: var(--paper-raised); }
+        /* 簡報模式：隱藏編輯器 */
+        body.presenting #editor-ui { display: none !important; }
+        body.presenting #preview-ui { display: flex !important; }
+
+        .editor-scroll { flex: 1; overflow-y: auto; padding: 14px; display: flex; flex-direction: column; gap: 10px; }
+        .editor-card { border: 1px solid var(--paper-line); border-radius: 6px; padding: 11px; background: var(--paper-raised); }
         .editor-card h3 {
-            font-size: 10.5px; font-weight: 800; color: var(--ink-soft); text-transform: uppercase;
-            letter-spacing: 0.5px; margin-bottom: 10px; padding-bottom: 7px; border-bottom: 1px solid var(--paper-line);
+            font-size: 10px; font-weight: 800; color: var(--ink-soft); text-transform: uppercase;
+            letter-spacing: 0.5px; margin-bottom: 9px; padding-bottom: 6px; border-bottom: 1px solid var(--paper-line);
         }
         .form-row { display: flex; gap: 8px; }
         .form-group { display: flex; flex-direction: column; gap: 4px; flex: 1; }
-        .form-group label { font-size: 10px; color: var(--ink-faint); font-weight: 700; }
+        .form-group label { font-size: 9.5px; color: var(--ink-faint); font-weight: 700; }
         .form-group input, .form-group select {
-            padding: 7px 9px; border: 1px solid var(--paper-line); border-radius: 4px;
-            font-size: 12px; color: var(--ink); background: var(--paper);
+            padding: 6px 8px; border: 1px solid var(--paper-line); border-radius: 4px;
+            font-size: 11.5px; color: var(--ink); background: var(--paper);
         }
         .form-group input:focus, .form-group select:focus { border-color: var(--red-pen); outline: none; background: var(--paper-raised); }
 
-        /* Canva 網址（單列）*/
         .canva-single-row { display: flex; gap: 6px; align-items: center; margin-top: 4px; }
-        .canva-single-row input { flex: 1; padding: 7px 9px; border: 1px solid var(--paper-line); border-radius: 4px; font-size: 12px; color: var(--ink); background: var(--paper); }
+        .canva-single-row input { flex: 1; padding: 6px 8px; border: 1px solid var(--paper-line); border-radius: 4px; font-size: 11.5px; color: var(--ink); background: var(--paper); }
         .canva-single-row input:focus { border-color: var(--red-pen); outline: none; background: var(--paper-raised); }
-        .field-hint { font-size: 9.5px; color: var(--ink-faint); margin-top: 4px; line-height: 1.5; }
+        .field-hint { font-size: 9px; color: var(--ink-faint); margin-top: 4px; line-height: 1.5; }
 
         /* ===== 全新文字編輯器 ===== */
         .editor-card.caption-card { flex: 1; display: flex; flex-direction: column; min-height: 0; }
         .caption-card h3 { flex-shrink: 0; }
-
-        /* 工具列 */
         .editor-toolbar {
             flex-shrink: 0; background: #F4F0E6; border: 1px solid var(--paper-line);
-            border-radius: 5px; padding: 6px 8px; margin-bottom: 8px; display: flex; flex-direction: column; gap: 5px;
+            border-radius: 5px; padding: 5px 7px; margin-bottom: 7px; display: flex; flex-direction: column; gap: 4px;
         }
         .toolbar-row { display: flex; gap: 3px; align-items: center; flex-wrap: wrap; }
-        .tb-sep { width: 1px; height: 14px; background: var(--paper-line); margin: 0 3px; flex-shrink: 0; }
-        .tb-label { font-size: 9px; font-weight: 800; color: var(--ink-faint); text-transform: uppercase; letter-spacing: 0.3px; }
-
+        .tb-sep { width: 1px; height: 13px; background: var(--paper-line); margin: 0 2px; flex-shrink: 0; }
+        .tb-label { font-size: 8.5px; font-weight: 800; color: var(--ink-faint); text-transform: uppercase; letter-spacing: 0.3px; }
         .tb-btn {
-            padding: 3px 7px; border: 1px solid var(--paper-line); border-radius: 3px;
-            background: var(--paper-raised); color: var(--ink-soft); font-size: 10.5px; font-weight: 700;
+            padding: 2px 6px; border: 1px solid var(--paper-line); border-radius: 3px;
+            background: var(--paper-raised); color: var(--ink-soft); font-size: 10px; font-weight: 700;
             cursor: pointer; transition: all 0.1s; line-height: 1.4; white-space: nowrap;
         }
         .tb-btn:hover { border-color: var(--red-pen); color: var(--red-pen); background: #fff; }
         .tb-btn.active-fmt { background: var(--ink); color: var(--paper); border-color: var(--ink); }
-
-        .color-swatch { width: 18px; height: 18px; border-radius: 3px; border: 1px solid var(--paper-line); cursor: pointer; flex-shrink: 0; transition: transform 0.1s; }
+        .color-swatch { width: 16px; height: 16px; border-radius: 3px; border: 1px solid var(--paper-line); cursor: pointer; flex-shrink: 0; transition: transform 0.1s; }
         .color-swatch:hover { transform: scale(1.15); }
 
-        /* 編輯器本體 */
         .rich-editor {
-            flex: 1; min-height: 160px; border: 1px solid var(--paper-line); border-radius: 5px;
-            padding: 11px 13px; font-size: 13.5px; line-height: 1.7; outline: none;
-            background: var(--paper-raised); color: var(--ink); overflow-y: auto;
-            word-break: break-word;
+            flex: 1; min-height: 140px; border: 1px solid var(--paper-line); border-radius: 5px;
+            padding: 10px 12px; font-size: 13px; line-height: 1.7; outline: none;
+            background: var(--paper-raised); color: var(--ink); overflow-y: auto; word-break: break-word;
         }
         .rich-editor:focus { border-color: var(--red-pen); box-shadow: 0 0 0 3px rgba(181,72,42,0.07); }
         .rich-editor:empty::before { content: attr(data-placeholder); color: var(--ink-faint); pointer-events: none; }
-
-        /* 段落格式（由 JS 插入 data-block 標記）*/
         .rich-editor [data-block="h1"] { font-size: 20px; font-weight: 800; display: block; margin: 6px 0 2px; line-height: 1.3; }
         .rich-editor [data-block="h2"] { font-size: 16px; font-weight: 700; display: block; margin: 4px 0 2px; line-height: 1.35; }
         .rich-editor [data-block="quote"] {
@@ -214,11 +280,10 @@
             color: var(--ink-soft); font-style: italic; margin: 4px 0;
         }
 
-        /* 底部刪除按鈕列 */
-        .editor-footer { padding: 10px 16px; border-top: 1px solid var(--paper-line); flex-shrink: 0; }
+        .editor-footer { padding: 9px 14px; border-top: 1px solid var(--paper-line); flex-shrink: 0; }
         .btn-danger {
-            width: 100%; padding: 8px; background: #FBF1EC; border: 1px solid #E0A188;
-            color: var(--danger); border-radius: 4px; font-size: 12px; font-weight: 700; cursor: pointer; transition: all 0.12s;
+            width: 100%; padding: 7px; background: #FBF1EC; border: 1px solid #E0A188;
+            color: var(--danger); border-radius: 4px; font-size: 11.5px; font-weight: 700; cursor: pointer; transition: all 0.12s;
         }
         .btn-danger:hover { background: var(--danger); color: white; border-color: var(--danger); }
 
@@ -230,14 +295,13 @@
             background-image: radial-gradient(circle at 1px 1px, rgba(0,0,0,0.04) 1px, transparent 0);
             background-size: 14px 14px;
         }
-
         .ig-card {
             background: white; border: 1px solid #dbdbdb; border-radius: 12px;
             width: 100%; max-width: 360px; overflow: hidden;
             box-shadow: 0 8px 28px rgba(0,0,0,0.09);
         }
+        body.presenting .ig-card { max-width: 400px; }
 
-        /* IG 頂部 bar */
         .ig-topbar { padding: 10px 12px; display: flex; align-items: center; gap: 9px; border-bottom: 1px solid #f0f0f0; }
         .ig-avatar-ring {
             width: 34px; height: 34px; border-radius: 50%;
@@ -254,7 +318,6 @@
         .ig-location { font-size: 10px; color: #8e8e8e; }
         .ig-more { font-size: 18px; color: #262626; letter-spacing: 1px; cursor: default; }
 
-        /* Canva embed 區 */
         .ig-media {
             width: 100%; background: #fafafa; position: relative; overflow: hidden;
             border-top: 1px solid #f0f0f0; border-bottom: 1px solid #f0f0f0;
@@ -270,21 +333,15 @@
             border-radius: 10px; font-size: 9.5px; font-weight: 700;
         }
 
-        /* IG 動作列 */
         .ig-actions { padding: 10px 12px 6px; display: flex; align-items: center; gap: 14px; }
         .ig-action-icon { font-size: 22px; cursor: default; }
         .ig-bookmark { margin-left: auto; }
-
-        /* IG 文字區 */
         .ig-caption-area { padding: 0 12px 12px; }
         .ig-likes { font-size: 13px; font-weight: 700; color: #262626; margin-bottom: 5px; }
         .ig-caption-line { font-size: 13.5px; line-height: 1.5; color: #262626; word-break: break-word; }
         .ig-caption-line .ig-handle { font-weight: 700; margin-right: 4px; }
         .ig-caption-text-inner { display: inline; }
-        .ig-more-btn {
-            color: #8e8e8e; cursor: pointer; font-size: 12.5px;
-            background: none; border: none; padding: 0; margin-left: 2px;
-        }
+        .ig-more-btn { color: #8e8e8e; cursor: pointer; font-size: 12.5px; background: none; border: none; padding: 0; margin-left: 2px; }
         .ig-time { font-size: 10px; color: #8e8e8e; margin-top: 6px; text-transform: uppercase; letter-spacing: 0.2px; }
         .hashtag-link { color: #00376b; font-weight: 600; }
 
@@ -306,31 +363,115 @@
             pointer-events: none; max-width: 80vw; text-align: center;
         }
         .toast-msg.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+        /* 手機專用元素：桌面預設隱藏 */
+        .mobile-header, .mobile-nav { display: none; }
+
+        /* ===== 手機版（行動預覽模式）===== */
+        @media (max-width: 767px) {
+            body { flex-direction: column; overflow: hidden; height: 100dvh; }
+
+            .mobile-header {
+                display: flex; align-items: center; justify-content: space-between;
+                padding: 10px 14px; background: var(--paper-raised);
+                border-bottom: 1px solid var(--paper-line); flex-shrink: 0; height: 48px;
+            }
+            .mobile-header .brand-mark { font-family: var(--font-display); font-weight: 900; font-size: 15px; }
+            .mobile-header .brand-sub { font-size: 9px; color: var(--ink-faint); font-family: var(--font-mono); margin-left: 6px; }
+            .mobile-back-btn { background: none; border: none; font-size: 18px; cursor: pointer; color: var(--ink-soft); padding: 4px 8px; display: none; }
+            .mobile-month-label { font-family: var(--font-mono); font-size: 11px; color: var(--ink-faint); }
+
+            .sidebar .brand-strip, .github-drawer { display: none !important; }
+            .sidebar {
+                width: 100%; border-right: none; border-bottom: 1px solid var(--paper-line);
+                height: auto; flex-shrink: 0; z-index: auto; display: none;
+            }
+            .sidebar.mobile-visible { display: flex; }
+            .calendar-section { padding: 10px 12px; flex: none; overflow: visible; }
+            .calendar-grid { gap: 2px; }
+
+            .list-column {
+                width: 100%; border-right: none; flex-shrink: 0;
+                height: auto; display: none; flex-direction: column; max-height: 260px;
+            }
+            .list-column.mobile-visible { display: flex; }
+            .post-list { max-height: 200px; overflow-y: auto; }
+            .week-view { max-height: 200px; }
+
+            .main-content { flex: 1; overflow: hidden; display: none; flex-direction: column; height: auto; min-height: 0; }
+            .main-content.mobile-visible { display: flex; }
+            .preview-pane { flex: 1; overflow-y: auto; padding: 12px 10px; align-items: flex-start; }
+            .ig-card { max-width: 100%; border-radius: 8px; }
+
+            .mobile-nav {
+                display: flex; background: var(--paper-raised);
+                border-top: 1px solid var(--paper-line); flex-shrink: 0; height: 52px;
+            }
+            .mobile-nav-btn {
+                flex: 1; display: flex; flex-direction: column; align-items: center;
+                justify-content: center; gap: 2px; background: none; border: none;
+                cursor: pointer; font-size: 18px; color: var(--ink-soft); transition: color 0.15s;
+            }
+            .mobile-nav-btn span { font-size: 9px; font-family: var(--font-mono); color: var(--ink-faint); }
+            .mobile-nav-btn.active { color: var(--red-pen); }
+            .mobile-nav-btn.active span { color: var(--red-pen); }
+
+            #empty-state-msg { display: none !important; }
+            #editor-ui { display: none !important; }
+            .main-content.mobile-visible #preview-ui { display: flex !important; flex: 1; }
+            .main-content.mobile-visible #empty-state-msg { display: none !important; }
+        }
+
+        @media (max-width: 767px) {
+            .mobile-header { display: flex; }
+            .mobile-nav { display: flex; }
+        }
     </style>
 </head>
 <body>
 
-<!-- ===== 左欄：日曆 ===== -->
-<div class="sidebar">
-    <div class="brand-strip">
+<!-- ===== 手機版頂部列 ===== -->
+<div class="mobile-header" id="mobile-header">
+    <button class="mobile-back-btn" id="mobile-back-btn" onclick="mobileGoBack()">←</button>
+    <div>
         <span class="brand-mark">排版桌</span>
-        <span class="brand-sub">IG POST PLANNER v4</span>
+        <span class="brand-sub">IG POST PLANNER</span>
     </div>
-    <div class="github-config-panel">
-        <h3>☁ GitHub 雲端同步</h3>
-        <div class="config-warning">Token 僅存於本機瀏覽器。請使用僅限該 repo「Contents 讀寫」的 Fine-grained Token。</div>
-        <div class="token-input-row">
-            <input type="password" id="gh-token" placeholder="GitHub Fine-grained Token" onchange="saveGitConfig()">
-            <button type="button" class="token-toggle-btn" id="token-toggle" onclick="toggleTokenVisibility()">👁</button>
+    <span class="mobile-month-label" id="mobile-month-label"></span>
+</div>
+
+<!-- ===== 左欄：日曆 ===== -->
+<div class="sidebar" id="sidebar">
+    <div class="brand-strip">
+        <div class="brand-left">
+            <span class="brand-mark">排版桌</span>
+            <span class="brand-sub">IG POST PLANNER v4</span>
         </div>
-        <input type="text" id="gh-repo" placeholder="使用者名稱/儲存庫名稱" onchange="saveGitConfig()">
-        <button class="github-sync-btn" id="sync-btn" onclick="syncToGitHub()">儲存並同步到 GitHub</button>
-        <div class="backup-row">
-            <button class="backup-btn" onclick="exportBackup()">⬇ 匯出備份</button>
-            <button class="backup-btn" onclick="document.getElementById('import-file-input').click()">⬆ 匯入備份</button>
-        </div>
-        <input type="file" id="import-file-input" accept="application/json" onchange="importBackup(event)">
+        <button class="present-btn" id="present-btn" onclick="togglePresenting()">🖥 簡報</button>
     </div>
+
+    <!-- GitHub 收合式抽屜 -->
+    <div class="github-drawer" id="github-drawer">
+        <button class="github-drawer-toggle" onclick="toggleGithubDrawer()">
+            <span>☁ GitHub 同步</span>
+            <span class="drawer-arrow" id="drawer-arrow">▼</span>
+        </button>
+        <div class="github-drawer-body" id="github-drawer-body">
+            <div class="config-warning">Token 僅存於本機。請使用僅限該 repo「Contents 讀寫」的 Fine-grained Token。</div>
+            <div class="token-input-row">
+                <input type="password" id="gh-token" placeholder="GitHub Fine-grained Token" onchange="saveGitConfig()">
+                <button type="button" class="token-toggle-btn" id="token-toggle" onclick="toggleTokenVisibility()">👁</button>
+            </div>
+            <input type="text" id="gh-repo" placeholder="使用者名稱/儲存庫名稱" onchange="saveGitConfig()">
+            <button class="github-sync-btn" id="sync-btn" onclick="syncToGitHub()">儲存並同步到 GitHub</button>
+            <div class="backup-row">
+                <button class="backup-btn" onclick="exportBackup()">⬇ 匯出備份</button>
+                <button class="backup-btn" onclick="document.getElementById('import-file-input').click()">⬆ 匯入備份</button>
+            </div>
+            <input type="file" id="import-file-input" accept="application/json" onchange="importBackup(event)">
+        </div>
+    </div>
+
     <div class="calendar-section">
         <div class="calendar-header">
             <button class="calendar-nav-btn" onclick="changeMonth(-1)">◀</button>
@@ -354,7 +495,26 @@
         </div>
         <div class="date-sub" id="list-date-sub">請點選左側日期</div>
     </div>
+
+    <!-- 日／週 切換 -->
+    <div class="view-tabs">
+        <button class="view-tab active" id="tab-day" onclick="switchView('day')">日視圖</button>
+        <button class="view-tab" id="tab-week" onclick="switchView('week')">週視圖</button>
+    </div>
+
+    <!-- 週視圖導覽列 -->
+    <div class="week-nav" id="week-nav" style="display:none">
+        <button class="week-nav-btn" onclick="changeWeek(-1)">◀</button>
+        <span class="week-nav-label" id="week-nav-label"></span>
+        <button class="week-nav-btn" onclick="changeWeek(1)">▶</button>
+    </div>
+
+    <!-- 日視圖貼文列表 -->
     <div class="post-list" id="post-list-container"></div>
+
+    <!-- 週視圖 -->
+    <div class="week-view" id="week-view-container"></div>
+
     <button class="add-post-btn" id="add-post-btn" style="display:none" onclick="createNewPost()">＋ 新增貼文</button>
 </div>
 
@@ -365,8 +525,6 @@
     <!-- 編輯區 -->
     <div class="editor-container" id="editor-ui" style="display:none">
         <div class="editor-scroll">
-
-            <!-- 基本設定 -->
             <div class="editor-card">
                 <h3>基本設定</h3>
                 <div class="form-row">
@@ -385,7 +543,6 @@
                 </div>
             </div>
 
-            <!-- Canva 連結（單列）-->
             <div class="editor-card">
                 <h3>Canva 連結</h3>
                 <div class="canva-single-row">
@@ -394,17 +551,15 @@
                 <div class="field-hint">例：https://www.canva.com/design/xxx/view#2　→ 顯示第 2 頁</div>
             </div>
 
-            <!-- 內文編輯 -->
             <div class="editor-card caption-card">
                 <h3>貼文內文</h3>
-
                 <div class="editor-toolbar" id="editor-toolbar">
                     <div class="toolbar-row">
                         <span class="tb-label">段落</span>
-                        <button class="tb-btn" data-cmd="block-h1" onclick="applyBlock('h1')" title="大標">大標 H1</button>
-                        <button class="tb-btn" data-cmd="block-h2" onclick="applyBlock('h2')" title="小標">小標 H2</button>
-                        <button class="tb-btn" data-cmd="block-quote" onclick="applyBlock('quote')" title="引言">引言</button>
-                        <button class="tb-btn" data-cmd="block-p" onclick="applyBlock('p')" title="正文">正文</button>
+                        <button class="tb-btn" onclick="applyBlock('h1')">大標 H1</button>
+                        <button class="tb-btn" onclick="applyBlock('h2')">小標 H2</button>
+                        <button class="tb-btn" onclick="applyBlock('quote')">引言</button>
+                        <button class="tb-btn" onclick="applyBlock('p')">正文</button>
                         <div class="tb-sep"></div>
                         <button class="tb-btn" onclick="insertLineBreak()">↩ 換行</button>
                     </div>
@@ -426,7 +581,6 @@
                         <button class="tb-btn" onclick="clearFormat()">清除格式</button>
                     </div>
                 </div>
-
                 <div class="rich-editor" id="edit-caption" contenteditable="true"
                      data-placeholder="輸入貼文內文… 輸入 #字詞 自動套用 hashtag 樣式"
                      oninput="onCaptionInput()"
@@ -435,8 +589,7 @@
                      onkeyup="updateToolbarState()">
                 </div>
             </div>
-
-        </div><!-- /editor-scroll -->
+        </div>
         <div class="editor-footer">
             <button class="btn-danger" onclick="deletePost()">刪除此貼文</button>
         </div>
@@ -445,7 +598,6 @@
     <!-- IG 預覽 -->
     <div class="preview-pane" id="preview-ui" style="display:none">
         <div class="ig-card">
-            <!-- 頂部 -->
             <div class="ig-topbar">
                 <div class="ig-avatar-ring">
                     <div class="ig-avatar-inner" id="prev-avatar-text">大</div>
@@ -456,21 +608,15 @@
                 </div>
                 <div class="ig-more">···</div>
             </div>
-
-            <!-- 媒體 -->
             <div class="ig-media r-1-1" id="prev-ig-media">
                 <div class="ig-media-empty">尚未設定 Canva 連結</div>
             </div>
-
-            <!-- 動作列 -->
             <div class="ig-actions">
                 <span class="ig-action-icon">🤍</span>
                 <span class="ig-action-icon">💬</span>
                 <span class="ig-action-icon">✈️</span>
                 <span class="ig-action-icon ig-bookmark">🔖</span>
             </div>
-
-            <!-- 文字 -->
             <div class="ig-caption-area">
                 <div class="ig-likes">讚數顯示於此</div>
                 <div class="ig-caption-line">
@@ -494,33 +640,40 @@
 </div>
 <div class="toast-msg" id="toast-msg"></div>
 
+<!-- ===== 手機版底部導覽 ===== -->
+<div class="mobile-nav" id="mobile-nav">
+    <button class="mobile-nav-btn active" id="mnav-cal" onclick="mobileShowPanel('calendar')">📅<span>日曆</span></button>
+    <button class="mobile-nav-btn" id="mnav-list" onclick="mobileShowPanel('list')">📋<span>貼文</span></button>
+    <button class="mobile-nav-btn" id="mnav-preview" onclick="mobileShowPanel('preview')">👁<span>預覽</span></button>
+</div>
+
 <script>
 /* ===================================================================
    狀態
 =================================================================== */
 let db = {};
-let currentYear, currentMonth;
 let selectedDateStr = null;
 let currentId = null;
+let currentYear, currentMonth;
 let isIGExpanded = false;
+let saveStatusTimer;
 let pendingConfirmResolve = null;
-let saveStatusTimer = null;
+let currentView = 'day'; // 'day' | 'week'
+let weekOffset = 0; // 相對於今天所在週的偏移
 
 /* ===================================================================
-   Toast / Confirm
+   Toast / Modal
 =================================================================== */
-function showToast(msg) {
+function showToast(msg, dur = 2200) {
     const el = document.getElementById('toast-msg');
-    el.innerText = msg;
-    el.classList.add('show');
-    clearTimeout(el._t);
-    el._t = setTimeout(() => el.classList.remove('show'), 2400);
+    el.innerText = msg; el.classList.add('show');
+    setTimeout(() => el.classList.remove('show'), dur);
 }
 function showConfirm(msg) {
     return new Promise(resolve => {
+        pendingConfirmResolve = resolve;
         document.getElementById('confirm-modal-text').innerText = msg;
         document.getElementById('confirm-modal').classList.add('show');
-        pendingConfirmResolve = resolve;
     });
 }
 function closeConfirmModal(result) {
@@ -543,8 +696,28 @@ function saveLocal() {
 }
 
 /* ===================================================================
+   簡報模式
+=================================================================== */
+function togglePresenting() {
+    document.body.classList.toggle('presenting');
+    const btn = document.getElementById('present-btn');
+    const isPresenting = document.body.classList.contains('presenting');
+    btn.innerText = isPresenting ? '✕ 結束簡報' : '🖥 簡報';
+    if (isPresenting && currentId === null) {
+        // 如果還沒選貼文，嘗試選今天第一則
+        const list = [...(db[selectedDateStr] || [])];
+        list.sort((a, b) => (a.time || '00:00').localeCompare(b.time || '00:00'));
+        if (list.length > 0) loadPost(list[0]._id);
+    }
+}
+
+/* ===================================================================
    GitHub 設定
 =================================================================== */
+function toggleGithubDrawer() {
+    const drawer = document.getElementById('github-drawer');
+    drawer.classList.toggle('open');
+}
 function toggleTokenVisibility() {
     const inp = document.getElementById('gh-token');
     const btn = document.getElementById('token-toggle');
@@ -625,7 +798,6 @@ function migrateIds() {
         if (!Array.isArray(arr)) return;
         arr.forEach(p => {
             if (!p._id) p._id = 'p_' + Date.now() + '_' + Math.random().toString(36).slice(2, 6);
-            // 舊格式：img 陣列 → canvaUrl 字串
             if (!p.canvaUrl) {
                 if (Array.isArray(p.img) && p.img.length > 0) p.canvaUrl = p.img[0];
                 else p.canvaUrl = '';
@@ -642,7 +814,6 @@ async function initDatabase() {
     const local = localStorage.getItem('planner_db');
     if (local) { try { db = JSON.parse(local); } catch { db = {}; } }
     else if (typeof externalDB !== 'undefined') db = externalDB;
-
     const token = localStorage.getItem('gh_token');
     const repo = localStorage.getItem('gh_repo');
     if (!token || !repo) return;
@@ -701,6 +872,86 @@ function changeMonth(dir) {
 }
 
 /* ===================================================================
+   視圖切換：日／週
+=================================================================== */
+function switchView(view) {
+    currentView = view;
+    document.getElementById('tab-day').classList.toggle('active', view === 'day');
+    document.getElementById('tab-week').classList.toggle('active', view === 'week');
+    document.getElementById('post-list-container').style.display = view === 'day' ? 'block' : 'none';
+    document.getElementById('week-view-container').classList.toggle('visible', view === 'week');
+    document.getElementById('week-nav').style.display = view === 'week' ? 'flex' : 'none';
+    if (view === 'week') renderWeekView();
+}
+
+function getWeekDates(offset) {
+    const today = new Date();
+    const dayOfWeek = today.getDay();
+    const monday = new Date(today);
+    monday.setDate(today.getDate() - dayOfWeek + (dayOfWeek === 0 ? -6 : 1) + offset * 7);
+    const dates = [];
+    for (let i = 0; i < 7; i++) {
+        const d = new Date(monday);
+        d.setDate(monday.getDate() + i);
+        dates.push(d);
+    }
+    return dates;
+}
+
+function renderWeekView() {
+    const dates = getWeekDates(weekOffset);
+    const today = new Date();
+    const todayStr = `${today.getFullYear()}-${String(today.getMonth()+1).padStart(2,'0')}-${String(today.getDate()).padStart(2,'0')}`;
+    const fmt = (d) => `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+    const weekDays = ['日','一','二','三','四','五','六'];
+
+    // 導覽標籤
+    const startFmt = `${dates[0].getMonth()+1}/${dates[0].getDate()}`;
+    const endFmt = `${dates[6].getMonth()+1}/${dates[6].getDate()}`;
+    document.getElementById('week-nav-label').innerText = `${startFmt} — ${endFmt}`;
+
+    const container = document.getElementById('week-view-container');
+    container.innerHTML = '';
+
+    dates.forEach(date => {
+        const dStr = fmt(date);
+        const posts = [...(db[dStr] || [])].sort((a, b) => (a.time||'00:00').localeCompare(b.time||'00:00'));
+        const isToday = dStr === todayStr;
+        const isSelected = dStr === selectedDateStr;
+
+        const row = document.createElement('div');
+        row.className = 'week-day-row' + (isSelected ? ' selected-week-day' : '');
+        row.onclick = () => { selectDate(dStr); if (currentView === 'week') renderWeekView(); };
+
+        const header = document.createElement('div');
+        header.className = 'week-day-header';
+        const labelClass = 'week-day-label' + (isToday ? ' is-today' : '') + (isSelected ? ' is-selected' : '');
+        header.innerHTML = `<span class="${labelClass}">${weekDays[date.getDay()]} ${date.getMonth()+1}/${date.getDate()}</span><span class="week-day-count">${posts.length > 0 ? posts.length + ' 則' : '—'}</span>`;
+        row.appendChild(header);
+
+        if (posts.length > 0) {
+            const pillsDiv = document.createElement('div');
+            pillsDiv.className = 'week-day-posts';
+            posts.forEach(p => {
+                const plain = getPlainText(p.caption || '');
+                const pill = document.createElement('span');
+                pill.className = 'week-post-pill';
+                pill.innerHTML = `<span class="pill-time">${p.time || '??:??'}</span>${plain.slice(0, 10) || '（空）'}`;
+                pill.onclick = (e) => { e.stopPropagation(); selectDate(dStr); setTimeout(() => loadPost(p._id), 50); };
+                pillsDiv.appendChild(pill);
+            });
+            row.appendChild(pillsDiv);
+        }
+        container.appendChild(row);
+    });
+}
+
+function changeWeek(dir) {
+    weekOffset += dir;
+    renderWeekView();
+}
+
+/* ===================================================================
    日期選取 & 貼文列表
 =================================================================== */
 function selectDate(dateStr) {
@@ -709,6 +960,12 @@ function selectDate(dateStr) {
     updateDateSubCount();
     document.getElementById('add-post-btn').style.display = 'block';
     renderCalendar(); renderList(); showEditor(false);
+    // 自動選取第一則貼文
+    const list = [...(db[selectedDateStr] || [])];
+    list.sort((a, b) => (a.time || '00:00').localeCompare(b.time || '00:00'));
+    if (list.length > 0) loadPost(list[0]._id);
+    // 手機：切換到列表
+    if (isMobile()) mobileShowPanel('list');
 }
 function updateDateSubCount() {
     const count = (db[selectedDateStr] || []).length;
@@ -723,10 +980,11 @@ function renderList() {
         const item = document.createElement('div');
         item.className = 'post-item' + (post._id === currentId ? ' active' : '');
         const preview = getPlainText(post.caption || '');
-        item.innerHTML = `<div class="item-time">${post.time || '00:00'}</div><div class="item-title">${preview.slice(0, 16) || '（無內文）'}</div>`;
+        item.innerHTML = `<div class="item-time">${post.time || '00:00'}</div><div class="item-title">${preview.slice(0, 18) || '（無內文）'}</div>`;
         item.onclick = () => loadPost(post._id);
         container.appendChild(item);
     });
+    if (currentView === 'week') renderWeekView();
 }
 
 const _scratch = document.createElement('div');
@@ -748,12 +1006,10 @@ function loadPost(id) {
     currentId = id; isIGExpanded = false;
     const post = getPostById(id);
     if (!post) return;
-    // 填入表單
     document.getElementById('edit-time').value = post.time || '09:00';
     document.getElementById('edit-ratio').value = post.ratio || '1-1';
     document.getElementById('canva-url-input').value = post.canvaUrl || '';
     document.getElementById('edit-caption').innerHTML = post.caption || '';
-    // 更新 UI
     renderList();
     showEditor(true);
     updatePreview();
@@ -779,10 +1035,7 @@ function createNewPost() {
     if (!db[selectedDateStr]) db[selectedDateStr] = [];
     const newId = 'p_' + Date.now() + '_' + Math.random().toString(36).slice(2, 6);
     db[selectedDateStr].push({ _id: newId, caption: '', time: '09:00', canvaUrl: '', ratio: '1-1' });
-    saveLocal();
-    updateDateSubCount();
-    renderCalendar();
-    loadPost(newId);
+    saveLocal(); updateDateSubCount(); renderCalendar(); loadPost(newId);
 }
 async function deletePost() {
     const ok = await showConfirm('確定刪除此貼文？此動作無法復原。');
@@ -810,58 +1063,38 @@ function parseHashtags(html) {
 function updatePreview() {
     const post = getPostById(currentId);
     if (!post) return;
-
-    // 時間
     document.getElementById('prev-ig-time').innerText = post.time || '09:00';
     document.getElementById('prev-ig-time-label').innerText = formatTimeLabel(post.time);
-
-    // 比例
     const media = document.getElementById('prev-ig-media');
     media.className = 'ig-media r-' + (post.ratio || '1-1');
-
-    // Canva embed
     media.innerHTML = '';
     const canva = parseCanvaUrl(post.canvaUrl || '');
     if (canva) {
         const iframe = document.createElement('iframe');
-        iframe.className = 'canva-frame';
-        iframe.src = canva.embedUrl;
-        iframe.loading = 'lazy';
-        iframe.setAttribute('allowfullscreen', 'allowfullscreen');
-        iframe.setAttribute('allow', 'fullscreen');
+        iframe.className = 'canva-frame'; iframe.src = canva.embedUrl; iframe.loading = 'lazy';
+        iframe.setAttribute('allowfullscreen', 'allowfullscreen'); iframe.setAttribute('allow', 'fullscreen');
         media.appendChild(iframe);
-        const badge = document.createElement('div');
-        badge.className = 'canva-badge';
+        const badge = document.createElement('div'); badge.className = 'canva-badge';
         badge.innerText = canva.page ? `Canva · 第 ${canva.page} 頁` : 'Canva';
         media.appendChild(badge);
     } else {
         media.innerHTML = '<div class="ig-media-empty">尚未設定 Canva 連結</div>';
     }
-
-    // Caption
     const raw = post.caption || '';
     const plain = getPlainText(raw);
     const captionEl = document.getElementById('prev-ig-caption');
     const moreBtn = document.getElementById('ig-more-trigger');
-
     if (!isIGExpanded && (plain.length > 80 || raw.includes('\n') || raw.includes('<br'))) {
         captionEl.innerHTML = parseHashtags(plain.slice(0, 75)) + '…';
-        moreBtn.innerText = '更多';
-        moreBtn.style.display = 'inline';
+        moreBtn.innerText = '更多'; moreBtn.style.display = 'inline';
     } else if (isIGExpanded) {
-        captionEl.innerHTML = parseHashtags(raw);
-        moreBtn.innerText = '收起';
-        moreBtn.style.display = 'inline';
+        captionEl.innerHTML = parseHashtags(raw); moreBtn.innerText = '收起'; moreBtn.style.display = 'inline';
     } else {
-        captionEl.innerHTML = parseHashtags(raw);
-        moreBtn.style.display = 'none';
+        captionEl.innerHTML = parseHashtags(raw); moreBtn.style.display = 'none';
     }
 }
 
-function toggleIGExpand() {
-    isIGExpanded = !isIGExpanded;
-    updatePreview();
-}
+function toggleIGExpand() { isIGExpanded = !isIGExpanded; updatePreview(); }
 
 function formatTimeLabel(time) {
     if (!time) return '剛剛';
@@ -872,90 +1105,58 @@ function formatTimeLabel(time) {
 }
 
 /* ===================================================================
-   全新文字編輯器
+   文字編輯器
 =================================================================== */
-
-// 1. 段落格式：在選取範圍所在的 block 外包一層帶 data-block 的 div/p
 function applyBlock(type) {
     const editor = document.getElementById('edit-caption');
     editor.focus();
     const sel = window.getSelection();
     if (!sel.rangeCount) return;
-
     if (type === 'p') {
-        // 清除段落格式：移除外層 data-block 包裝
         document.execCommand('formatBlock', false, 'div');
-        // 移除 data-block attr
         const range = sel.getRangeAt(0);
         let node = range.commonAncestorContainer;
         while (node && node !== editor) {
-            if (node.nodeType === 1 && node.hasAttribute && node.hasAttribute('data-block')) {
-                node.removeAttribute('data-block');
-                node.className = '';
-            }
+            if (node.nodeType === 1 && node.hasAttribute && node.hasAttribute('data-block')) { node.removeAttribute('data-block'); node.className = ''; }
             node = node.parentNode;
         }
     } else {
         document.execCommand('formatBlock', false, 'div');
-        // 找到剛包的 block，加上 data-block
         const range = sel.getRangeAt(0);
         let node = range.commonAncestorContainer;
         while (node && node !== editor) {
-            if (node.nodeType === 1 && node.tagName === 'DIV') {
-                node.setAttribute('data-block', type);
-                break;
-            }
+            if (node.nodeType === 1 && node.tagName === 'DIV') { node.setAttribute('data-block', type); break; }
             node = node.parentNode;
         }
     }
     onCaptionInput();
 }
-
-// 2. 行內樣式
 function applyInline(command) {
     const editor = document.getElementById('edit-caption');
-    editor.focus();
-    document.execCommand(command, false, null);
-    onCaptionInput();
-    updateToolbarState();
+    editor.focus(); document.execCommand(command, false, null); onCaptionInput(); updateToolbarState();
 }
-
-// 3. 螢光筆
 function applyHighlight() {
     const editor = document.getElementById('edit-caption');
-    editor.focus();
-    document.execCommand('backColor', false, 'rgba(232,196,84,0.5)');
-    onCaptionInput();
+    editor.focus(); document.execCommand('backColor', false, 'rgba(232,196,84,0.5)'); onCaptionInput();
 }
-
-// 4. 文字顏色
 function applyColor(hex) {
     const editor = document.getElementById('edit-caption');
-    editor.focus();
-    document.execCommand('foreColor', false, hex);
-    onCaptionInput();
+    editor.focus(); document.execCommand('foreColor', false, hex); onCaptionInput();
 }
-
-// 5. 清除所有格式
 function clearFormat() {
     const editor = document.getElementById('edit-caption');
     editor.focus();
     const sel = window.getSelection();
     if (sel.rangeCount) {
         document.execCommand('removeFormat', false, null);
-        // 也移除 data-block
         let node = sel.getRangeAt(0).commonAncestorContainer;
         while (node && node !== editor) {
-            if (node.nodeType === 1 && node.hasAttribute && node.hasAttribute('data-block')) {
-                node.removeAttribute('data-block');
-            }
+            if (node.nodeType === 1 && node.hasAttribute && node.hasAttribute('data-block')) node.removeAttribute('data-block');
             node = node.parentNode;
         }
     }
     onCaptionInput();
 }
-
-// 6. 換行（插入 <br>，避免 div 換段落）
 function insertLineBreak() {
     const editor = document.getElementById('edit-caption');
     editor.focus();
@@ -965,41 +1166,61 @@ function insertLineBreak() {
     range.deleteContents();
     const br = document.createElement('br');
     range.insertNode(br);
-    // 在 br 後面放游標
     const after = document.createRange();
     after.setStartAfter(br); after.collapse(true);
     sel.removeAllRanges(); sel.addRange(after);
     onCaptionInput();
 }
-
-// 7. Enter 鍵行為：預設 div 換段，Shift+Enter 插 <br>
 function onCaptionKeydown(e) {
-    if (e.key === 'Enter' && e.shiftKey) {
-        e.preventDefault();
-        insertLineBreak();
-    }
+    if (e.key === 'Enter' && e.shiftKey) { e.preventDefault(); insertLineBreak(); }
 }
-
-// 8. 每次輸入 → 同步存檔 + 更新預覽
 function onCaptionInput() {
     const editor = document.getElementById('edit-caption');
     updateCurrentPost('caption', editor.innerHTML);
 }
-
-// 9. 工具列狀態反映
 function updateToolbarState() {
     const cmds = ['bold', 'italic', 'underline', 'strikeThrough'];
     const ids = ['tb-bold', 'tb-italic', 'tb-underline', 'tb-strike'];
     cmds.forEach((cmd, i) => {
-        const active = document.queryCommandState(cmd);
-        document.getElementById(ids[i]).classList.toggle('active-fmt', active);
+        document.getElementById(ids[i]).classList.toggle('active-fmt', document.queryCommandState(cmd));
     });
+}
+
+/* ===================================================================
+   手機版邏輯
+=================================================================== */
+function isMobile() { return window.innerWidth <= 767; }
+let mobileCurrentPanel = 'calendar';
+
+function mobileShowPanel(panel) {
+    if (!isMobile()) return;
+    mobileCurrentPanel = panel;
+    document.querySelector('.sidebar').classList.toggle('mobile-visible', panel === 'calendar');
+    document.querySelector('.list-column').classList.toggle('mobile-visible', panel === 'list');
+    document.querySelector('.main-content').classList.toggle('mobile-visible', panel === 'preview');
+    ['cal', 'list', 'preview'].forEach(k => document.getElementById('mnav-' + k)?.classList.remove('active'));
+    const navMap = { calendar: 'cal', list: 'list', preview: 'preview' };
+    document.getElementById('mnav-' + navMap[panel])?.classList.add('active');
+    const backBtn = document.getElementById('mobile-back-btn');
+    backBtn.style.display = panel === 'preview' ? 'block' : 'none';
+    document.getElementById('mobile-month-label').innerText = panel === 'calendar' ? '' : (document.getElementById('calendar-title')?.innerText || '');
+}
+function mobileGoBack() {
+    if (mobileCurrentPanel === 'preview') mobileShowPanel('list');
+    else mobileShowPanel('calendar');
 }
 
 /* ===================================================================
    啟動
 =================================================================== */
 window.addEventListener('DOMContentLoaded', async () => {
+    // 手機版：包裝 loadPost，點貼文後自動切換到預覽
+    const _origLoadPost = window.loadPost;
+    window.loadPost = function(id) {
+        _origLoadPost(id);
+        if (isMobile()) setTimeout(() => mobileShowPanel('preview'), 50);
+    };
+
     document.getElementById('gh-token').value = localStorage.getItem('gh_token') || '';
     document.getElementById('gh-repo').value = localStorage.getItem('gh_repo') || '';
     const today = new Date();
@@ -1008,6 +1229,7 @@ window.addEventListener('DOMContentLoaded', async () => {
     migrateIds();
     renderCalendar();
     selectDate(`${currentYear}-${String(currentMonth + 1).padStart(2, '0')}-${String(today.getDate()).padStart(2, '0')}`);
+    if (isMobile()) mobileShowPanel('calendar');
 });
 </script>
 </body>
