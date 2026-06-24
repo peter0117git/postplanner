@@ -221,6 +221,11 @@
         .week-day-head:hover { background: rgba(0,0,0,0.02); }
 
         .week-day-left { display: flex; align-items: baseline; gap: 8px; }
+        .week-day-chevron {
+            font-size: 9px; color: var(--ink-faint); display: inline-block;
+            transition: transform 0.15s; transform: rotate(0deg); transform-origin: center;
+        }
+        .week-day-card.is-expanded .week-day-chevron { transform: rotate(90deg); color: var(--ink-soft); }
         .week-day-dow {
             font-family: var(--font-mono); font-size: 10px; font-weight: 700;
             color: var(--ink-faint); text-transform: uppercase; letter-spacing: 0.5px;
@@ -248,8 +253,12 @@
         .week-day-add:hover { color: var(--red-pen); }
         body.presenting .week-day-add { display: none; }
 
-        /* 貼文列表 */
-        .week-day-posts { padding: 6px 8px 8px; display: flex; flex-direction: column; gap: 4px; }
+        /* 貼文列表：展開時固定最大高度，超出用滾輪在天卡片內部捲動，
+           不會把其他天數往下推 */
+        .week-day-posts {
+            padding: 6px 8px 8px; display: flex; flex-direction: column; gap: 4px;
+            max-height: 320px; overflow-y: auto;
+        }
 
         .post-card {
             padding: 8px 10px; border: 1px solid var(--paper-line); border-radius: 6px;
@@ -288,7 +297,7 @@
         }
 
         /* =====================================================
-           右側主內容：編輯 + IG 預覽
+           主內容：IG 預覽（置中）＋ 編輯區（右側 sidebar）
         ===================================================== */
         .main-content { flex: 1; display: flex; height: 100%; overflow: hidden; }
         .no-post-msg {
@@ -297,10 +306,10 @@
         }
         body.presenting .no-post-msg { display: none !important; }
 
-        /* 編輯區 */
+        /* 編輯區（右側 sidebar） */
         .editor-container {
             width: 380px; min-width: 380px; display: flex; flex-direction: column;
-            border-right: 1px solid var(--paper-line); background: var(--paper-raised); height: 100%; overflow: hidden;
+            border-left: 1px solid var(--paper-line); background: var(--paper-raised); height: 100%; overflow: hidden;
         }
         body.presenting #editor-ui { display: none !important; }
         body.presenting #preview-ui { display: flex !important; }
@@ -362,7 +371,7 @@
         }
         .btn-danger:hover { background: var(--danger); color: white; border-color: var(--danger); }
 
-        /* IG 預覽 */
+        /* IG 預覽（置中） */
         .preview-pane {
             flex: 1; overflow-y: auto; display: flex; align-items: flex-start; justify-content: center;
             padding: 28px 24px;
@@ -540,7 +549,37 @@
             <span style="font-size:11px; color:var(--ink-faint);">或點擊日期旁的 ＋ 新增</span>
         </div>
 
-        <!-- 編輯區 -->
+        <!-- IG 預覽（置中） -->
+        <div class="preview-pane" id="preview-ui" style="display:none">
+            <div class="ig-card">
+                <div class="ig-topbar">
+                    <div class="ig-avatar-ring"><div class="ig-avatar-inner" id="prev-avatar-text">大</div></div>
+                    <div class="ig-meta">
+                        <div class="ig-username">大田出版</div>
+                        <div class="ig-location" id="prev-ig-time">09:00</div>
+                    </div>
+                    <div class="ig-more">···</div>
+                </div>
+                <div class="ig-media r-1-1" id="prev-ig-media">
+                    <div class="ig-media-empty">尚未設定 Canva 連結</div>
+                </div>
+                <div class="ig-actions">
+                    <span class="ig-action-icon">🤍</span>
+                    <span class="ig-action-icon">💬</span>
+                    <span class="ig-action-icon">✈️</span>
+                    <span class="ig-action-icon ig-bookmark">🔖</span>
+                </div>
+                <div class="ig-caption-area">
+                    <div class="ig-likes">讚數顯示於此</div>
+                    <div class="ig-caption-line">
+                        <span class="ig-handle">大田出版</span><span class="ig-caption-text-inner" id="prev-ig-caption"></span><button class="ig-more-btn" id="ig-more-trigger" style="display:none" onclick="toggleIGExpand()">更多</button>
+                    </div>
+                    <div class="ig-time" id="prev-ig-time-label">剛剛</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 編輯區（右側 sidebar） -->
         <div class="editor-container" id="editor-ui" style="display:none">
             <div class="editor-scroll">
                 <div class="editor-card">
@@ -612,36 +651,6 @@
                 <button class="btn-danger" onclick="deletePost()">刪除此貼文</button>
             </div>
         </div>
-
-        <!-- IG 預覽 -->
-        <div class="preview-pane" id="preview-ui" style="display:none">
-            <div class="ig-card">
-                <div class="ig-topbar">
-                    <div class="ig-avatar-ring"><div class="ig-avatar-inner" id="prev-avatar-text">大</div></div>
-                    <div class="ig-meta">
-                        <div class="ig-username">大田出版</div>
-                        <div class="ig-location" id="prev-ig-time">09:00</div>
-                    </div>
-                    <div class="ig-more">···</div>
-                </div>
-                <div class="ig-media r-1-1" id="prev-ig-media">
-                    <div class="ig-media-empty">尚未設定 Canva 連結</div>
-                </div>
-                <div class="ig-actions">
-                    <span class="ig-action-icon">🤍</span>
-                    <span class="ig-action-icon">💬</span>
-                    <span class="ig-action-icon">✈️</span>
-                    <span class="ig-action-icon ig-bookmark">🔖</span>
-                </div>
-                <div class="ig-caption-area">
-                    <div class="ig-likes">讚數顯示於此</div>
-                    <div class="ig-caption-line">
-                        <span class="ig-handle">大田出版</span><span class="ig-caption-text-inner" id="prev-ig-caption"></span><button class="ig-more-btn" id="ig-more-trigger" style="display:none" onclick="toggleIGExpand()">更多</button>
-                    </div>
-                    <div class="ig-time" id="prev-ig-time-label">剛剛</div>
-                </div>
-            </div>
-        </div>
     </div>
 </div>
 
@@ -675,6 +684,7 @@ let saveStatusTimer;
 let pendingConfirmResolve = null;
 let weekOffset = 0;        // 相對於今天所在週的偏移（週一起算）
 let calYear, calMonth;     // 日曆浮動視窗的當前年月
+let expandedDays = new Set(); // 週視圖中，使用者點擊展開的日期（YYYY-MM-DD），控制該天貼文清單是否顯示
 
 /* =============================================================
    Toast / Modal
@@ -957,20 +967,28 @@ function renderWeek() {
         const isToday = dStr === todayStr;
         const isSelected = dStr === selectedDateStr;
 
+        const isExpanded = expandedDays.has(dStr);
+
         const card = document.createElement('div');
         card.className = 'week-day-card'
             + (posts.length > 0 ? ' has-posts' : '')
             + (isToday ? ' is-today-date' : '')
-            + (isSelected ? ' is-selected-date' : '');
+            + (isSelected ? ' is-selected-date' : '')
+            + (isExpanded ? ' is-expanded' : '');
 
-        // 天標頭
+        // 天標頭：點擊＝選取該日＋切換展開/收合（若已是選取中且已展開，則收合）
         const head = document.createElement('div');
         head.className = 'week-day-head';
-        head.onclick = () => selectDate(dStr);
+        head.onclick = () => {
+            const alreadyActiveAndOpen = (dStr === selectedDateStr) && expandedDays.has(dStr);
+            selectDate(dStr);
+            if (alreadyActiveAndOpen) { expandedDays.delete(dStr); renderWeek(); }
+        };
 
         const left = document.createElement('div');
         left.className = 'week-day-left';
-        left.innerHTML = `<span class="week-day-dow">${DOW_LABELS[date.getDay()]}</span><span class="week-day-date">${date.getMonth()+1} / ${date.getDate()}</span>`;
+        const chevronVis = posts.length > 0 ? '' : 'visibility:hidden';
+        left.innerHTML = `<span class="week-day-chevron" style="${chevronVis}">▸</span><span class="week-day-dow">${DOW_LABELS[date.getDay()]}</span><span class="week-day-date">${date.getMonth()+1} / ${date.getDate()}</span>`;
 
         const right = document.createElement('div');
         right.className = 'week-day-right';
@@ -987,8 +1005,8 @@ function renderWeek() {
         head.appendChild(left); head.appendChild(right);
         card.appendChild(head);
 
-        // 貼文卡片
-        if (posts.length > 0) {
+        // 貼文卡片：只在該天展開時渲染，收合時完全隱藏以保持整週輪廓精簡
+        if (posts.length > 0 && isExpanded) {
             const postsDiv = document.createElement('div');
             postsDiv.className = 'week-day-posts';
             posts.forEach(post => {
@@ -1057,6 +1075,7 @@ function changeWeek(dir) {
 function selectDate(dateStr) {
     selectedDateStr = dateStr;
     currentId = null;
+    expandedDays.add(dateStr); // 選取的日期一律展開，確保使用者能看到該天內容
     showEditor(false);
     renderWeek();
     // 自動選第一則貼文
@@ -1112,6 +1131,7 @@ function createNewPost() {
     if (!db[selectedDateStr]) db[selectedDateStr] = [];
     const newId = 'p_' + Date.now() + '_' + Math.random().toString(36).slice(2, 6);
     db[selectedDateStr].push({ _id: newId, caption: '', time: '09:00', canvaUrl: '', ratio: '1-1' });
+    expandedDays.add(selectedDateStr); // 確保新貼文不會因排序被摺進收合區而看不到
     saveLocal(); renderWeek(); loadPost(newId);
 }
 async function deletePost() {
