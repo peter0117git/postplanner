@@ -51,17 +51,17 @@
 
         .topbar-divider { width: 1px; height: 22px; background: var(--paper-line); flex-shrink: 0; }
 
-        /* 週範圍按鈕 */
-        .week-range-btn {
+        /* 日期導覽按鈕 */
+        .day-range-btn {
             display: flex; align-items: center; gap: 8px;
             background: var(--paper); border: 1px solid var(--paper-line); border-radius: 6px;
             padding: 6px 14px; cursor: pointer; transition: all 0.15s;
         }
-        .week-range-btn:hover { border-color: var(--red-pen); background: #FFF8F6; }
-        .week-range-nav { background: none; border: none; cursor: pointer; font-size: 11px; color: var(--ink-faint); padding: 2px 5px; border-radius: 3px; transition: color 0.1s; }
-        .week-range-nav:hover { color: var(--red-pen); }
-        .week-range-label { font-family: var(--font-mono); font-size: 13px; font-weight: 700; color: var(--ink); letter-spacing: 0.3px; }
-        .week-range-cal-icon { font-size: 14px; opacity: 0.6; }
+        .day-range-btn:hover { border-color: var(--red-pen); background: #FFF8F6; }
+        .day-range-nav { background: none; border: none; cursor: pointer; font-size: 11px; color: var(--ink-faint); padding: 2px 5px; border-radius: 3px; transition: color 0.1s; }
+        .day-range-nav:hover { color: var(--red-pen); }
+        .day-range-label { font-family: var(--font-mono); font-size: 13px; font-weight: 700; color: var(--ink); letter-spacing: 0.3px; }
+        .day-range-cal-icon { font-size: 14px; opacity: 0.6; }
 
         .topbar-right { margin-left: auto; display: flex; align-items: center; gap: 8px; }
 
@@ -124,7 +124,6 @@
         .cal-day.selected .cal-badge { background: var(--red-pen); }
         .cal-day.today:not(.selected) { border: 1.5px solid var(--green-stamp); }
         .cal-day.today:not(.selected) .cal-day-num { color: var(--green-stamp); font-weight: 800; }
-        .cal-day.in-selected-week:not(.selected) { background: rgba(181,72,42,0.06); }
         .cal-day-num { font-size: 11px; color: var(--ink-soft); font-family: var(--font-mono); line-height: 1; }
         .cal-badge {
             position: absolute; bottom: 2px; right: 2px;
@@ -185,80 +184,40 @@
         }
 
         /* =====================================================
-           週視圖欄
+           日視圖欄
         ===================================================== */
-        .week-col {
+        .day-col {
             width: 340px; flex-shrink: 0;
             background: var(--paper-raised); border-right: 1px solid var(--paper-line);
             display: flex; flex-direction: column; height: 100%; overflow: hidden;
         }
-        body.presenting .week-col { display: none; }
+        body.presenting .day-col { display: none; }
 
-        .week-col-header {
-            padding: 14px 16px 10px; border-bottom: 1px solid var(--paper-line); flex-shrink: 0;
-            display: flex; align-items: baseline; justify-content: space-between;
+        .day-col-header {
+            padding: 14px 16px; border-bottom: 1px solid var(--paper-line); flex-shrink: 0;
+            display: flex; align-items: center; justify-content: space-between;
         }
-        .week-col-title { font-family: var(--font-display); font-size: 16px; font-weight: 700; color: var(--ink); }
-        .week-col-count { font-size: 10px; color: var(--ink-faint); font-family: var(--font-mono); }
-
-        .week-list { flex: 1; overflow-y: auto; padding: 10px 12px; display: flex; flex-direction: column; gap: 6px; }
-
-        /* 每一天的卡片 */
-        .week-day-card {
-            border: 1px solid var(--paper-line); border-radius: 8px; overflow: hidden;
-            transition: border-color 0.15s; background: var(--paper);
-        }
-        .week-day-card.has-posts { background: var(--paper-raised); }
-        .week-day-card.is-selected-date { border-color: var(--red-pen); box-shadow: 0 2px 8px rgba(181,72,42,0.09); }
-        .week-day-card.is-today-date { border-color: var(--green-stamp); }
-
-        .week-day-head {
-            padding: 9px 12px 8px; display: flex; align-items: center; justify-content: space-between;
-            cursor: pointer; user-select: none;
-            border-bottom: 1px solid transparent;
-        }
-        .week-day-card.has-posts .week-day-head { border-bottom-color: var(--paper-line); }
-        .week-day-head:hover { background: rgba(0,0,0,0.02); }
-
-        .week-day-left { display: flex; align-items: baseline; gap: 8px; }
-        .week-day-chevron {
-            font-size: 9px; color: var(--ink-faint); display: inline-block;
-            transition: transform 0.15s; transform: rotate(0deg); transform-origin: center;
-        }
-        .week-day-card.is-expanded .week-day-chevron { transform: rotate(90deg); color: var(--ink-soft); }
-        .week-day-dow {
-            font-family: var(--font-mono); font-size: 10px; font-weight: 700;
+        .day-col-left { display: flex; align-items: baseline; gap: 9px; }
+        .day-col-dow {
+            font-family: var(--font-mono); font-size: 11px; font-weight: 700;
             color: var(--ink-faint); text-transform: uppercase; letter-spacing: 0.5px;
         }
-        .week-day-card.is-today-date .week-day-dow { color: var(--green-stamp); }
-        .week-day-card.is-selected-date .week-day-dow { color: var(--red-pen); }
-        .week-day-date {
-            font-family: var(--font-display); font-size: 15px; font-weight: 700; color: var(--ink);
-        }
-        .week-day-card.is-today-date .week-day-date { color: var(--green-stamp); }
-        .week-day-card.is-selected-date .week-day-date { color: var(--red-pen); }
+        .day-col-date { font-family: var(--font-display); font-size: 19px; font-weight: 700; color: var(--ink); }
+        .day-col-header.is-today-date .day-col-dow,
+        .day-col-header.is-today-date .day-col-date { color: var(--green-stamp); }
 
-        .week-day-right { display: flex; align-items: center; gap: 6px; }
-        .week-day-badge {
-            background: var(--ink-soft); color: var(--paper-raised);
-            border-radius: 3px; font-size: 9px; font-weight: 700; padding: 2px 5px;
-            font-family: var(--font-mono); line-height: 1.3;
+        .day-col-right { display: flex; align-items: center; gap: 10px; }
+        .day-col-count { font-size: 10px; color: var(--ink-faint); font-family: var(--font-mono); }
+        .day-col-add {
+            font-size: 16px; color: var(--ink-faint); background: var(--paper); border: 1px solid var(--paper-line);
+            border-radius: 6px; width: 28px; height: 28px; cursor: pointer; transition: all 0.12s;
+            display: flex; align-items: center; justify-content: center; line-height: 1;
         }
-        .week-day-card.is-today-date .week-day-badge { background: var(--green-stamp); }
-        .week-day-card.is-selected-date .week-day-badge { background: var(--red-pen); }
-        .week-day-add {
-            font-size: 14px; color: var(--ink-faint); background: none; border: none;
-            cursor: pointer; padding: 0 2px; line-height: 1; border-radius: 3px; transition: color 0.1s;
-        }
-        .week-day-add:hover { color: var(--red-pen); }
-        body.presenting .week-day-add { display: none; }
+        .day-col-add:hover { color: var(--red-pen); border-color: var(--red-pen); background: #FFF8F6; }
+        body.presenting .day-col-add { display: none; }
 
-        /* 貼文列表：展開時固定最大高度，超出用滾輪在天卡片內部捲動，
-           不會把其他天數往下推 */
-        .week-day-posts {
-            padding: 6px 8px 8px; display: flex; flex-direction: column; gap: 4px;
-            max-height: 320px; overflow-y: auto;
-        }
+        /* 貼文列表：單日扁平清單，整欄用滾輪捲動 */
+        .day-list { flex: 1; overflow-y: auto; padding: 10px 12px; display: flex; flex-direction: column; gap: 6px; }
 
         .post-card {
             padding: 8px 10px; border: 1px solid var(--paper-line); border-radius: 6px;
@@ -291,9 +250,9 @@
         }
         .post-card-tag.has-canva { color: #6B2EC8; border-color: #C9A8F0; background: #F5EFFE; }
 
-        .week-day-empty {
-            padding: 10px 12px;
-            font-size: 11px; color: var(--ink-faint); font-style: italic;
+        .day-list-empty {
+            padding: 40px 16px; text-align: center;
+            font-size: 12px; color: var(--ink-faint); font-style: italic; line-height: 1.7;
         }
 
         /* =====================================================
@@ -434,10 +393,10 @@
             body { flex-direction: column; }
             .topbar { padding: 0 14px; gap: 10px; }
             .brand-sub { display: none; }
-            .week-range-label { font-size: 12px; }
+            .day-range-label { font-size: 12px; }
             .app-body { flex-direction: column; overflow: hidden; }
-            .week-col { width: 100%; border-right: none; border-bottom: 1px solid var(--paper-line); height: auto; max-height: 55vh; display: none; }
-            .week-col.mobile-visible { display: flex; }
+            .day-col { width: 100%; border-right: none; border-bottom: 1px solid var(--paper-line); height: auto; max-height: 55vh; display: none; }
+            .day-col.mobile-visible { display: flex; }
             .main-content { display: none; }
             .main-content.mobile-visible { display: flex; }
             #editor-ui { display: none !important; }
@@ -466,14 +425,14 @@
 
     <div class="topbar-divider"></div>
 
-    <!-- 週範圍：點中間標籤開日曆；左右箭頭換週 -->
+    <!-- 日期導覽：點中間標籤開日曆；左右箭頭換天 -->
     <div style="display:flex; align-items:center; gap:4px;">
-        <button class="week-range-nav" onclick="changeWeek(-1)" title="上一週">◀</button>
-        <button class="week-range-btn" onclick="toggleCalOverlay()" id="week-range-btn" title="選擇日期">
-            <span class="week-range-cal-icon">📅</span>
-            <span class="week-range-label" id="week-range-label">載入中…</span>
+        <button class="day-range-nav" onclick="changeDay(-1)" title="前一天">◀</button>
+        <button class="day-range-btn" onclick="toggleCalOverlay()" id="day-range-btn" title="選擇日期">
+            <span class="day-range-cal-icon">📅</span>
+            <span class="day-range-label" id="day-range-label">載入中…</span>
         </button>
-        <button class="week-range-nav" onclick="changeWeek(1)" title="下一週">▶</button>
+        <button class="day-range-nav" onclick="changeDay(1)" title="後一天">▶</button>
     </div>
 
     <div class="topbar-right">
@@ -533,13 +492,19 @@
 ===================================================== -->
 <div class="app-body">
 
-    <!-- 週視圖欄 -->
-    <div class="week-col" id="week-col">
-        <div class="week-col-header">
-            <span class="week-col-title" id="week-col-title">本週貼文</span>
-            <span class="week-col-count" id="week-col-count"></span>
+    <!-- 日視圖欄 -->
+    <div class="day-col" id="day-col">
+        <div class="day-col-header" id="day-col-header">
+            <div class="day-col-left">
+                <span class="day-col-dow" id="day-col-dow">—</span>
+                <span class="day-col-date" id="day-col-date">載入中…</span>
+            </div>
+            <div class="day-col-right">
+                <span class="day-col-count" id="day-col-count"></span>
+                <button class="day-col-add" onclick="createNewPost()" title="新增貼文">＋</button>
+            </div>
         </div>
-        <div class="week-list" id="week-list"></div>
+        <div class="day-list" id="day-list"></div>
     </div>
 
     <!-- 右側：編輯 + 預覽 -->
@@ -668,7 +633,7 @@
 
 <!-- 手機底部導覽 -->
 <div class="mobile-nav" id="mobile-nav">
-    <button class="mobile-nav-btn active" id="mnav-week" onclick="mobileShowPanel('week')">📋<span>週視圖</span></button>
+    <button class="mobile-nav-btn active" id="mnav-day" onclick="mobileShowPanel('day')">📋<span>日視圖</span></button>
     <button class="mobile-nav-btn" id="mnav-preview" onclick="mobileShowPanel('preview')">👁<span>預覽</span></button>
 </div>
 
@@ -682,9 +647,7 @@ let currentId = null;
 let isIGExpanded = false;
 let saveStatusTimer;
 let pendingConfirmResolve = null;
-let weekOffset = 0;        // 相對於今天所在週的偏移（週一起算）
 let calYear, calMonth;     // 日曆浮動視窗的當前年月
-let expandedDays = new Set(); // 週視圖中，使用者點擊展開的日期（YYYY-MM-DD），控制該天貼文清單是否顯示
 
 /* =============================================================
    Toast / Modal
@@ -747,8 +710,6 @@ function goToToday() {
     const today = new Date();
     const todayStr = fmtDate(today);
     selectDate(todayStr);
-    weekOffset = 0;
-    renderWeek();
     closeCalOverlay();
 }
 function renderCalPopup() {
@@ -760,10 +721,6 @@ function renderCalPopup() {
     const today = new Date();
     const todayStr = fmtDate(today);
 
-    // 本週哪些日期
-    const weekDates = getWeekDates();
-    const weekStrs = new Set(weekDates.map(d => fmtDate(d)));
-
     for (let i = 0; i < firstDay; i++) container.appendChild(document.createElement('div'));
     for (let d = 1; d <= totalDays; d++) {
         const dateStr = `${calYear}-${String(calMonth + 1).padStart(2, '0')}-${String(d).padStart(2, '0')}`;
@@ -771,7 +728,6 @@ function renderCalPopup() {
         div.className = 'cal-day';
         if (dateStr === selectedDateStr) div.classList.add('selected');
         if (dateStr === todayStr) div.classList.add('today');
-        if (weekStrs.has(dateStr) && dateStr !== selectedDateStr) div.classList.add('in-selected-week');
         const numSpan = document.createElement('span');
         numSpan.className = 'cal-day-num'; numSpan.innerText = d;
         div.appendChild(numSpan);
@@ -870,7 +826,7 @@ function importBackup(event) {
             const parsed = JSON.parse(e.target.result);
             const ok = await showConfirm('匯入備份將覆蓋目前所有本機資料，確定繼續嗎？');
             if (!ok) { event.target.value = ''; return; }
-            db = parsed; migrateIds(); saveLocal(); renderWeek();
+            db = parsed; migrateIds(); saveLocal(); renderDay();
             if (selectedDateStr) selectDate(selectedDateStr);
             showToast('備份已匯入');
         } catch { showToast('匯入失敗：格式不正確'); }
@@ -932,141 +888,93 @@ async function initDatabase() {
 function fmtDate(d) {
     return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
 }
-function getWeekDates() {
-    const today = new Date();
-    const dow = today.getDay();
-    const monday = new Date(today);
-    monday.setDate(today.getDate() - (dow === 0 ? 6 : dow - 1) + weekOffset * 7);
-    monday.setHours(0,0,0,0);
-    return Array.from({length: 7}, (_, i) => { const d = new Date(monday); d.setDate(monday.getDate() + i); return d; });
-}
 const DOW_LABELS = ['日','一','二','三','四','五','六'];
 
 /* =============================================================
-   週視圖
+   日視圖
 ============================================================= */
-function renderWeek() {
-    const dates = getWeekDates();
+function renderDay() {
+    if (!selectedDateStr) return;
+    const date = new Date(selectedDateStr + 'T00:00:00');
+    const dStr = selectedDateStr;
     const todayStr = fmtDate(new Date());
+    const isToday = dStr === todayStr;
+    const posts = [...(db[dStr] || [])].sort((a, b) => (a.time||'00:00').localeCompare(b.time||'00:00'));
 
-    // topbar 週範圍標籤
-    const s = dates[0], e = dates[6];
-    document.getElementById('week-range-label').innerText =
-        `${s.getMonth()+1}/${s.getDate()} — ${e.getMonth()+1}/${e.getDate()}`;
+    // topbar 日期標籤
+    document.getElementById('day-range-label').innerText =
+        `${date.getMonth()+1}/${date.getDate()}（${DOW_LABELS[date.getDay()]}）`;
 
-    // 欄標題
-    const totalPosts = dates.reduce((sum, d) => sum + (db[fmtDate(d)] || []).length, 0);
-    document.getElementById('week-col-count').innerText = totalPosts > 0 ? `共 ${totalPosts} 則` : '';
+    // 欄標頭
+    document.getElementById('day-col-dow').innerText = DOW_LABELS[date.getDay()];
+    document.getElementById('day-col-date').innerText = `${date.getMonth()+1} / ${date.getDate()}`;
+    document.getElementById('day-col-count').innerText = posts.length > 0 ? `共 ${posts.length} 則` : '';
+    document.getElementById('day-col-header').classList.toggle('is-today-date', isToday);
 
-    const container = document.getElementById('week-list');
+    const container = document.getElementById('day-list');
     container.innerHTML = '';
 
-    dates.forEach(date => {
-        const dStr = fmtDate(date);
-        const posts = [...(db[dStr] || [])].sort((a, b) => (a.time||'00:00').localeCompare(b.time||'00:00'));
-        const isToday = dStr === todayStr;
-        const isSelected = dStr === selectedDateStr;
+    if (posts.length === 0) {
+        const empty = document.createElement('div');
+        empty.className = 'day-list-empty';
+        empty.innerHTML = '本日尚無貼文<br>點擊右上角「＋」新增';
+        container.appendChild(empty);
+    } else {
+        posts.forEach(post => {
+            const plain = getPlainText(post.caption || '');
+            const hasCanva = !!(post.canvaUrl);
+            const ratio = post.ratio || '1-1';
 
-        const isExpanded = expandedDays.has(dStr);
+            const pc = document.createElement('div');
+            pc.className = 'post-card' + (post._id === currentId ? ' active' : '');
+            pc.onclick = () => loadPost(post._id);
 
-        const card = document.createElement('div');
-        card.className = 'week-day-card'
-            + (posts.length > 0 ? ' has-posts' : '')
-            + (isToday ? ' is-today-date' : '')
-            + (isSelected ? ' is-selected-date' : '')
-            + (isExpanded ? ' is-expanded' : '');
+            const timeEl = document.createElement('div');
+            timeEl.className = 'post-card-time'; timeEl.innerText = post.time || '??:??';
 
-        // 天標頭：點擊＝選取該日＋切換展開/收合（若已是選取中且已展開，則收合）
-        const head = document.createElement('div');
-        head.className = 'week-day-head';
-        head.onclick = () => {
-            const alreadyActiveAndOpen = (dStr === selectedDateStr) && expandedDays.has(dStr);
-            selectDate(dStr);
-            if (alreadyActiveAndOpen) { expandedDays.delete(dStr); renderWeek(); }
-        };
+            const bodyEl = document.createElement('div');
+            bodyEl.className = 'post-card-body';
 
-        const left = document.createElement('div');
-        left.className = 'week-day-left';
-        const chevronVis = posts.length > 0 ? '' : 'visibility:hidden';
-        left.innerHTML = `<span class="week-day-chevron" style="${chevronVis}">▸</span><span class="week-day-dow">${DOW_LABELS[date.getDay()]}</span><span class="week-day-date">${date.getMonth()+1} / ${date.getDate()}</span>`;
+            const titleEl = document.createElement('div');
+            titleEl.className = 'post-card-title';
+            titleEl.innerText = plain.slice(0, 30) || '（無內文）';
 
-        const right = document.createElement('div');
-        right.className = 'week-day-right';
-        if (posts.length > 0) {
-            const badge = document.createElement('span');
-            badge.className = 'week-day-badge'; badge.innerText = posts.length;
-            right.appendChild(badge);
-        }
-        const addBtn = document.createElement('button');
-        addBtn.className = 'week-day-add'; addBtn.innerText = '＋'; addBtn.title = '新增貼文';
-        addBtn.onclick = (e) => { e.stopPropagation(); selectDate(dStr); createNewPost(); };
-        right.appendChild(addBtn);
+            const previewEl = document.createElement('div');
+            previewEl.className = 'post-card-preview';
+            previewEl.innerText = plain.length > 30 ? plain.slice(30, 100) : '';
 
-        head.appendChild(left); head.appendChild(right);
-        card.appendChild(head);
+            const metaEl = document.createElement('div');
+            metaEl.className = 'post-card-meta';
 
-        // 貼文卡片：只在該天展開時渲染，收合時完全隱藏以保持整週輪廓精簡
-        if (posts.length > 0 && isExpanded) {
-            const postsDiv = document.createElement('div');
-            postsDiv.className = 'week-day-posts';
-            posts.forEach(post => {
-                const plain = getPlainText(post.caption || '');
-                const hasCanva = !!(post.canvaUrl);
-                const ratio = post.ratio || '1-1';
+            const ratioTag = document.createElement('span');
+            ratioTag.className = 'post-card-tag';
+            ratioTag.innerText = ratio === '1-1' ? '1:1' : ratio === '4-5' ? '4:5' : '16:9';
+            metaEl.appendChild(ratioTag);
 
-                const pc = document.createElement('div');
-                pc.className = 'post-card' + (post._id === currentId ? ' active' : '');
-                pc.onclick = () => { selectDate(dStr); setTimeout(() => loadPost(post._id), 20); };
+            if (hasCanva) {
+                const canvaTag = document.createElement('span');
+                canvaTag.className = 'post-card-tag has-canva';
+                canvaTag.innerText = 'Canva';
+                metaEl.appendChild(canvaTag);
+            }
 
-                const timeEl = document.createElement('div');
-                timeEl.className = 'post-card-time'; timeEl.innerText = post.time || '??:??';
+            bodyEl.appendChild(titleEl);
+            if (plain.length > 30) bodyEl.appendChild(previewEl);
+            bodyEl.appendChild(metaEl);
 
-                const bodyEl = document.createElement('div');
-                bodyEl.className = 'post-card-body';
-
-                const titleEl = document.createElement('div');
-                titleEl.className = 'post-card-title';
-                titleEl.innerText = plain.slice(0, 30) || '（無內文）';
-
-                const previewEl = document.createElement('div');
-                previewEl.className = 'post-card-preview';
-                previewEl.innerText = plain.length > 30 ? plain.slice(30, 100) : '';
-
-                const metaEl = document.createElement('div');
-                metaEl.className = 'post-card-meta';
-
-                const ratioTag = document.createElement('span');
-                ratioTag.className = 'post-card-tag';
-                ratioTag.innerText = ratio === '1-1' ? '1:1' : ratio === '4-5' ? '4:5' : '16:9';
-                metaEl.appendChild(ratioTag);
-
-                if (hasCanva) {
-                    const canvaTag = document.createElement('span');
-                    canvaTag.className = 'post-card-tag has-canva';
-                    canvaTag.innerText = 'Canva';
-                    metaEl.appendChild(canvaTag);
-                }
-
-                bodyEl.appendChild(titleEl);
-                if (plain.length > 30) bodyEl.appendChild(previewEl);
-                bodyEl.appendChild(metaEl);
-
-                pc.appendChild(timeEl); pc.appendChild(bodyEl);
-                postsDiv.appendChild(pc);
-            });
-            card.appendChild(postsDiv);
-        }
-
-        container.appendChild(card);
-    });
+            pc.appendChild(timeEl); pc.appendChild(bodyEl);
+            container.appendChild(pc);
+        });
+    }
 
     // 同步更新日曆浮動視窗（如果開著）
     if (document.getElementById('cal-overlay').classList.contains('open')) renderCalPopup();
 }
 
-function changeWeek(dir) {
-    weekOffset += dir;
-    renderWeek();
+function changeDay(dir) {
+    const base = selectedDateStr ? new Date(selectedDateStr + 'T00:00:00') : new Date();
+    base.setDate(base.getDate() + dir);
+    selectDate(fmtDate(base));
 }
 
 /* =============================================================
@@ -1075,13 +983,12 @@ function changeWeek(dir) {
 function selectDate(dateStr) {
     selectedDateStr = dateStr;
     currentId = null;
-    expandedDays.add(dateStr); // 選取的日期一律展開，確保使用者能看到該天內容
     showEditor(false);
-    renderWeek();
+    renderDay();
     // 自動選第一則貼文
     const list = [...(db[dateStr] || [])].sort((a, b) => (a.time||'00:00').localeCompare(b.time||'00:00'));
     if (list.length > 0) loadPost(list[0]._id);
-    if (isMobile()) mobileShowPanel('week');
+    if (isMobile()) mobileShowPanel('day');
 }
 
 const _scratch = document.createElement('div');
@@ -1110,7 +1017,7 @@ function loadPost(id) {
     showEditor(true);
     updatePreview();
     updateToolbarState();
-    renderWeek(); // 更新 active 樣式
+    renderDay(); // 更新 active 樣式
     if (isMobile()) setTimeout(() => mobileShowPanel('preview'), 50);
 }
 function updateCurrentPost(field, value) {
@@ -1120,7 +1027,7 @@ function updateCurrentPost(field, value) {
     post[field] = value;
     saveLocal();
     updatePreview();
-    if (field !== 'caption') renderWeek(); // caption 打字時不要每次重繪
+    if (field !== 'caption') renderDay(); // caption 打字時不要每次重繪
 }
 
 /* =============================================================
@@ -1131,14 +1038,13 @@ function createNewPost() {
     if (!db[selectedDateStr]) db[selectedDateStr] = [];
     const newId = 'p_' + Date.now() + '_' + Math.random().toString(36).slice(2, 6);
     db[selectedDateStr].push({ _id: newId, caption: '', time: '09:00', canvaUrl: '', ratio: '1-1' });
-    expandedDays.add(selectedDateStr); // 確保新貼文不會因排序被摺進收合區而看不到
-    saveLocal(); renderWeek(); loadPost(newId);
+    saveLocal(); renderDay(); loadPost(newId);
 }
 async function deletePost() {
     const ok = await showConfirm('確定刪除此貼文？此動作無法復原。');
     if (!ok) return;
     db[selectedDateStr] = db[selectedDateStr].filter(p => p._id !== currentId);
-    currentId = null; saveLocal(); renderWeek(); showEditor(false);
+    currentId = null; saveLocal(); renderDay(); showEditor(false);
 }
 
 /* =============================================================
@@ -1248,13 +1154,13 @@ function updateToolbarState() {
    手機版
 ============================================================= */
 function isMobile() { return window.innerWidth <= 767; }
-let mobileCurrentPanel = 'week';
+let mobileCurrentPanel = 'day';
 function mobileShowPanel(panel) {
     if (!isMobile()) return;
     mobileCurrentPanel = panel;
-    document.getElementById('week-col').classList.toggle('mobile-visible', panel === 'week');
+    document.getElementById('day-col').classList.toggle('mobile-visible', panel === 'day');
     document.getElementById('main-content-area').classList.toggle('mobile-visible', panel === 'preview');
-    ['week','preview'].forEach(k => document.getElementById('mnav-' + k)?.classList.remove('active'));
+    ['day','preview'].forEach(k => document.getElementById('mnav-' + k)?.classList.remove('active'));
     document.getElementById('mnav-' + panel)?.classList.add('active');
 }
 
@@ -1266,12 +1172,12 @@ window.addEventListener('DOMContentLoaded', async () => {
     document.getElementById('gh-repo').value = localStorage.getItem('gh_repo') || '';
     await initDatabase();
     migrateIds();
-    // 跳到今天所在週並選今天
+    // 跳到今天並選取
     const today = new Date();
     const todayStr = fmtDate(today);
     selectDate(todayStr);
-    renderWeek();
-    if (isMobile()) { document.getElementById('week-col').classList.add('mobile-visible'); }
+    renderDay();
+    if (isMobile()) { document.getElementById('day-col').classList.add('mobile-visible'); }
 });
 </script>
 </body>
