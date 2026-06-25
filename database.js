@@ -306,9 +306,9 @@ var externalDB = {
       "time": "20:00",
       "img": [],
       "fbImg": [],
-      "ratio": "1-1",
+      "ratio": "4-5",
       "_id": "p_1782197401079_4ert",
-      "canvaUrl": ""
+      "canvaUrl": "https://www.canva.com/design/DAHK68fXVPM/K5ZNa1mY1ucYa4YypSZL5g/view?utm_content=DAHK68fXVPM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hd973054f8d"
     }
   ],
   "2026-06-01": [
