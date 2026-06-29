@@ -357,9 +357,9 @@ var externalDB = {
     },
     {
       "_id": "p_1782282937286_qk52",
-      "caption": "<span style=\"font-family: &quot;Noto Sans TC&quot;, -apple-system, sans-serif;\">【晚上多讀一點點】</span>",
+      "caption": "<span style=\"font-family: &quot;Noto Sans TC&quot;, -apple-system, sans-serif;\">【晚上多讀一點點】&nbsp;</span><span style=\"color: rgb(8, 8, 9); font-family: &quot;Segoe UI Historic&quot;, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif; font-size: 18.75px; white-space: pre-wrap;\">《最高學習法：12個改變你如何思考、學習與記憶的核心關鍵》</span><div><span style=\"color: rgb(8, 8, 9); font-family: &quot;Segoe UI Historic&quot;, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif; font-size: 18.75px; white-space: pre-wrap;\"><br></span></div><div><p class=\"D05\" style=\"margin: 30px 28px; border-width: 0px; color: rgb(35, 24, 21); font-size: 1.181em; font-variant: normal; font-weight: bold; line-height: 1.34; orphans: 1; break-after: auto; break-before: auto; text-align: justify; widows: 1; font-family: &quot;Times New Roman&quot;;\">「一個人想『學會』某個新概念，必須接觸多少次？」</p><p class=\"D06\" style=\"margin: 30px 0px; border-width: 0px; color: rgb(35, 24, 21); font-size: 0.886em; font-variant: normal; line-height: 1.787; orphans: 1; break-after: auto; break-before: auto; text-align: justify; text-indent: 2em; widows: 1; font-family: &quot;Times New Roman&quot;;\">很可惜，這個問題沒有固定不變的答案。有時候只接觸一次就學得新概念（比如拿起燙手的鐵塊），卻也可能接觸幾十次也學不會（你背得出歐洲所有國家嗎？）再者，人們學習新概念的速度跟他們已知的概念密切相關。舉個例子，如果我要學習新語言，光是弄懂基本規則就需要許多接觸與練習。然而，一旦我累積了基本字彙，學習新詞語就會快速又輕鬆，因為那時我已經有扎實的基礎可以跟新觀念連結。</p><p class=\"D06\" style=\"margin: 30px 0px; border-width: 0px; color: rgb(35, 24, 21); font-size: 0.886em; font-variant: normal; line-height: 1.787; orphans: 1; break-after: auto; break-before: auto; text-align: justify; text-indent: 2em; widows: 1; font-family: &quot;Times New Roman&quot;;\">說到這裡，有個經驗法則：學者可以只憑人們與某個特定概念接觸和互動的次數，預估他們是不是能學得會，準確率大約百分之八十到八十五。只接觸新概念一兩次的人，事後通常回想不起來，而接觸三次或以上的人通常都可以。</p><p class=\"D06\" style=\"margin: 30px 0px; border-width: 0px; color: rgb(35, 24, 21); font-size: 0.886em; font-variant: normal; line-height: 1.787; orphans: 1; break-after: auto; break-before: auto; text-align: justify; text-indent: 2em; widows: 1; font-family: &quot;Times New Roman&quot;;\">你可能在想，我只要複習一個觀念三次，肯定就忘不了。很可惜，事情不是這樣。想想數以百計的電台廣告迅速重複電話號碼三次，我猜那麼多電話號碼你記不住幾個。也就是說，單單重複是不夠的。如果要學會某個概念，每一次接觸都得深思熟慮、清楚明確。如果沒經過有意識的思索和／或互動，恐怕永遠學不會。</p></div>",
       "time": "20:00",
-      "canvaUrl": "",
+      "canvaUrl": "https://www.canva.com/design/DAHI3bxQpn8/2ZcTY2IHoD3XPdD5H2G6Uw/view?utm_content=DAHI3bxQpn8&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hbebd200031",
       "ratio": "1-1"
     },
     {
@@ -387,10 +387,10 @@ var externalDB = {
     },
     {
       "_id": "p_1782356958231_8vkf",
-      "caption": "<span style=\"font-family: &quot;Noto Sans TC&quot;, -apple-system, sans-serif;\">【圖文時間】</span>",
+      "caption": "<span style=\"font-family: &quot;Noto Sans TC&quot;, -apple-system, sans-serif;\">【圖文時間】</span><span class=\"a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none\" style=\"color: rgba(255,49,49,var(--O42jJQ,1)); caret-color: rgb(255, 49, 49); --Ys-XuQ: none; font-kerning: normal;\">《便當實驗室又開張了： 日日&amp;特別日的菜單挑戰記》</span><div><p data-path-to-node=\"2\"><br></p><p data-path-to-node=\"2\">#<span style=\"color: rgb(255, 49, 49); font-family: &quot;Noto Sans TC&quot;, -apple-system, sans-serif; caret-color: rgb(255, 49, 49);\">便當實驗室又開張了</span></p><p data-path-to-node=\"2\"><span style=\"color: rgb(255, 49, 49); font-family: &quot;Noto Sans TC&quot;, -apple-system, sans-serif; caret-color: rgb(255, 49, 49);\">#高木直子</span></p><p data-path-to-node=\"2\"><br></p><p data-path-to-node=\"3\">以前煎玉子燒總是不夠漂亮（女兒甚至吃到抗議⋯😂），直到看了電視教學才發現：原來完美玉子燒的關鍵在於「打蛋與火候」！</p><p data-path-to-node=\"4\">💡 <b data-path-to-node=\"4\" data-index-in-node=\"3\">兩大升級秘訣：</b></p><ol start=\"1\" data-path-to-node=\"5\"><li><p data-path-to-node=\"5,0,0\"><b data-path-to-node=\"5,0,0\" data-index-in-node=\"0\">打蛋不要繞圈</b>：用筷子像切斷蛋白一樣左右攪拌。</p></li><li><p data-path-to-node=\"5,1,0\"><b data-path-to-node=\"5,1,0\" data-index-in-node=\"0\">靈活調整火候</b>：油熱下鍋，煎的時候隨時切換小火，分 3 次倒入蛋液慢慢捲。</p></li></ol><p data-path-to-node=\"6\">改變方法後，煎出來的玉子燒顏色均勻又軟嫩，連挑嘴的女兒也終於點頭答應可以放進便當啦！</p><p data-path-to-node=\"6\"><br></p><p data-path-to-node=\"7\">#料理 #玉子燒 #便當 #廚房 #教學 #大田</p></div>",
       "time": "18:00",
-      "canvaUrl": "",
-      "ratio": "1-1"
+      "canvaUrl": "https://www.canva.com/design/DAHIMkmHMfI/MikX6xKxQ8L1ZYOHWhxvAA/view?utm_content=DAHIMkmHMfI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h4b3ada000b",
+      "ratio": "4-5"
     },
     {
       "_id": "p_1782356958551_kvmr",
