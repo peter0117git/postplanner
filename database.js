@@ -410,9 +410,9 @@ var externalDB = {
     },
     {
       "_id": "p_1782356963221_bfyx",
-      "caption": "<span style=\"font-family: &quot;Noto Sans TC&quot;, -apple-system, sans-serif;\">【圖文時間】</span>",
+      "caption": "<span style=\"font-family: &quot;Noto Sans TC&quot;, -apple-system, sans-serif;\">【圖文時間】</span><b style=\"font-family: &quot;Noto Sans TC&quot;, -apple-system, sans-serif; letter-spacing: 0.5px; text-transform: uppercase;\">《悠悠哉哉一個人生活的好日子》</b><div><span style=\"letter-spacing: 0.5px; text-transform: uppercase;\"><b><br></b></span><div><span style=\"font-family: &quot;Noto Sans TC&quot;, -apple-system, sans-serif; font-weight: 800; letter-spacing: 0.5px; text-transform: uppercase;\">假日的午後時分，將15本左右的漫畫疊在房間中央，從第一冊開始重讀。\n平日晚上6點以後，手裡拿著咖啡歐蕾，一個人去電影院輕鬆地看個電影。</span></div><div><p data-path-to-node=\"2\">天氣變冷時，像「《天才笨蛋伯》裡的爸爸」一樣把腹圍套在衣服上，也沒關係……\n當夜貓子的話，反而會在凌晨4點左右泡澡，一邊浸泡在熱水裡，一邊沐浴著晨光發呆。</p><p data-path-to-node=\"2\"><br></p><p data-path-to-node=\"2\">這就是一個人生活的樂趣吧~</p><p data-path-to-node=\"2\"><br></p><p data-path-to-node=\"2\">#獨居 #樂趣 #<span style=\"font-family: &quot;Noto Sans TC&quot;, -apple-system, sans-serif;\">一個人生活</span></p></div></div>",
       "time": "18:00",
-      "canvaUrl": "",
+      "canvaUrl": "https://www.canva.com/design/DAHN8Aw8IGg/QwWoq9BohYNHVCfag02liQ/view?utm_content=DAHN8Aw8IGg&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h96fbae8010",
       "ratio": "1-1"
     },
     {
