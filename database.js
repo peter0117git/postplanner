@@ -327,9 +327,9 @@ var externalDB = {
   "2026-06-30": [
     {
       "_id": "p_1782206362249_538w",
-      "caption": "<span style=\"font-family: &quot;Noto Sans TC&quot;, -apple-system, sans-serif;\">【早上只讀一點點】 《如何愛你的負面情感》</span>",
+      "caption": "【早上只讀一點點】 《如何愛你的負面情感》<div><br></div><div><div>就算我什麼都不說，<span style=\"font-family: &quot;Noto Sans TC&quot;, -apple-system, sans-serif;\">別人也該明白我的心思。</span></div></div><div><br><div><div>當我們因為處處替他人設想而心力交瘁時，就會開始抱怨：「大家怎麼都不體諒一下，我已經付出得這麼累了。」</div><div><br></div><div>這是我們很容易對家人、情人、好友等關係親密的人產生的情緒。</div><div><br></div><div>「既然住在同一個屋簷下，也好歹要知道你女兒在想些什麼啊。」</div><div><br></div><div>「我們個性、想法這麼相似，所以你一定跟我有相同的感受。」</div><div><br></div><div>「都已經這麼多年的朋友了，就算不明說，你也應該知道我的想法。」</div><div><br></div><div>你是否曾有過類似的想法？</div><div><br></div><div>　</div><div><br></div><div>你是否也曾用關係親密當作藉口，不好好地表達自己的想法，或者，在自己應該主動表達善意時，覺得「對方應該知道我的想法」而省略不說？</div><div><br></div><div>尤其扯上負面情感時，我們往往能逃避就盡量逃避，既不肯說出口，又希望對方能明白我們的心意。</div><div><br></div><div>無論關係再怎麼親密，每個人的心依舊是獨立的個體。而且情感與情緒，都是瞬間的產物。平時若能好好表達自己的感受，真正遇到狀況時，對方才有可能在你什麼也沒說的情況下明白你的心意。</div></div></div><div><br></div><div>摘自p.32~33</div>",
       "time": "08:00",
-      "canvaUrl": "",
+      "canvaUrl": "https://www.canva.com/design/DAHIAn9ZAjc/7o2oh0IVtJHtZZmLgUE2qQ/view?utm_content=DAHIAn9ZAjc&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h25274b2131#1",
       "ratio": "1-1"
     },
     {
