@@ -619,10 +619,10 @@ var externalDB = {
   "2026-07-15": [
     {
       "_id": "p_1783325440004_rh0d",
-      "caption": "<div>【早上只讀一點點】 《下雨的人》</div><div><br></div>",
+      "caption": "<div>【早上只讀一點點】 《和你一起的風景未完待續》</div><div><div>〈 一起掉進泥土 〉</div><div><br></div><div>他要離開你</div><div>也許是一件自然不過的事</div><div>就像葉子到冬季會落下</div><div>雲聚久了會被風吹散</div><div><br></div><div>他也並不是想傷害你</div><div><br></div><div>然而下一次</div><div>不同的雲會相聚</div><div>然後新的緣分萌芽</div><div><br></div><div>可能你會遇見另一朵花</div><div>這一次你們會一起盛開</div><div><br></div><div>一起枯萎一起掉進泥土</div><div>不再孤單</div></div><div><br></div><div>摘自<span style=\"font-family: &quot;Noto Sans TC&quot;, -apple-system, sans-serif;\">《和你一起的風景未完待續》-</span><span style=\"font-family: &quot;Noto Sans TC&quot;, -apple-system, sans-serif;\">〈 一起掉進泥土 〉</span></div><div><span style=\"font-family: &quot;Noto Sans TC&quot;, -apple-system, sans-serif;\"><br></span></div><div><span style=\"font-family: &quot;Noto Sans TC&quot;, -apple-system, sans-serif;\">#原子邦妮 #大田出版 #未完待續</span></div>",
       "time": "08:00",
-      "canvaUrl": "https://www.canva.com/design/DAHNj3c84TM/ZhX2l73oZ6mSB_0cuW6r4w/view?utm_content=DAHNj3c84TM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc7e7ce465d",
-      "ratio": "1-1"
+      "canvaUrl": "https://www.canva.com/design/DAHOmH4dWgM/N_GRztDcktUyD0XA2dufPA/view?utm_content=DAHOmH4dWgM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h7946cd0b0f",
+      "ratio": "4-5"
     },
     {
       "_id": "p_1783325480737_g6jg",
