@@ -569,5 +569,120 @@ var externalDB = {
       "canvaUrl": "https://www.canva.com/design/DAHN72EmEdc/DIxrQR1QxdW9k8TPefl2fg/view?utm_content=DAHN72EmEdc&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h783442ef53",
       "ratio": "4-5"
     }
+  ],
+  "2026-07-13": [
+    {
+      "_id": "p_1783325240256_jh6m",
+      "caption": "<div>【早上只讀一點點】 《現在，就是療癒你的開始》</div><div><br></div>",
+      "time": "08:00",
+      "canvaUrl": "https://www.canva.com/design/DAHI3VFO1r8/fV8B4VHhMvh1kLOm3DJN4w/view?utm_content=DAHI3VFO1r8&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hd12bdfd10d",
+      "ratio": "4-5"
+    },
+    {
+      "_id": "p_1783325319899_z1bi",
+      "caption": "<div>【晚上多讀一點點】 《你的夏天還好嗎?》</div><div><br></div>",
+      "time": "20:00",
+      "canvaUrl": "https://www.canva.com/design/DAHK68fXVPM/K5ZNa1mY1ucYa4YypSZL5g/view?utm_content=DAHK68fXVPM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hd973054f8d",
+      "ratio": "4-5"
+    },
+    {
+      "_id": "p_1783325632756_z8kj",
+      "caption": "<div>【編輯內心戲】 《在一個人的夜晚》</div><div><br></div>",
+      "time": "18:00",
+      "canvaUrl": "https://www.canva.com/design/DAHNd43bpKc/Bs7F9sCy8SvK91RSl3VJ6Q/view?utm_content=DAHNd43bpKc&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hf31ef1f728#1",
+      "ratio": "1-1"
+    }
+  ],
+  "2026-07-14": [
+    {
+      "_id": "p_1783325361192_thhz",
+      "caption": "<div>【早上只讀一點點】 《如何愛你的負面情感》</div><div><br></div>",
+      "time": "08:00",
+      "canvaUrl": "https://www.canva.com/design/DAHIAn9ZAjc/7o2oh0IVtJHtZZmLgUE2qQ/view?utm_content=DAHIAn9ZAjc&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h25274b2131",
+      "ratio": "1-1"
+    },
+    {
+      "_id": "p_1783325380663_1mdu",
+      "caption": "<div>【圖文時間】 《悠悠哉哉一個人生活的好日子》</div><div><br></div>",
+      "time": "18:00",
+      "canvaUrl": "https://www.canva.com/design/DAHM0MXyb9U/x1qIL8AMN1t2g6MJARYKHw/view?utm_content=DAHM0MXyb9U&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hfc046955aa",
+      "ratio": "4-5"
+    },
+    {
+      "_id": "p_1783325401917_sdaj",
+      "caption": "<div>【晚上多讀一點點】 《上帝不眨眼:50堂百萬人瘋傳的人生智慧》</div><div><br></div>",
+      "time": "20:00",
+      "canvaUrl": "https://www.canva.com/design/DAG_stvpZVc/PqemQD79yndJ3NgDMJZE9w/view?utm_content=DAG_stvpZVc&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2e4c9d6404",
+      "ratio": "4-5"
+    }
+  ],
+  "2026-07-15": [
+    {
+      "_id": "p_1783325440004_rh0d",
+      "caption": "<div>【早上只讀一點點】 《下雨的人》</div><div><br></div>",
+      "time": "08:00",
+      "canvaUrl": "https://www.canva.com/design/DAHNj3c84TM/ZhX2l73oZ6mSB_0cuW6r4w/view?utm_content=DAHNj3c84TM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc7e7ce465d",
+      "ratio": "1-1"
+    },
+    {
+      "_id": "p_1783325480737_g6jg",
+      "caption": "<div>【圖文時間】 《宇希時間》</div><div><br></div>",
+      "time": "18:00",
+      "canvaUrl": "https://www.canva.com/design/DAHNdqdK6aI/PiMT2vlLGuDlWm3KmDjn9g/view?utm_content=DAHNdqdK6aI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=ha7005fd718#1",
+      "ratio": "1-1"
+    },
+    {
+      "_id": "p_1783325511147_ehao",
+      "caption": "<div>【晚上多讀一點點】 《最高學習法：12個改變你如何思考、學習與記憶的核心關鍵》</div><div><br></div>",
+      "time": "20:00",
+      "canvaUrl": "https://www.canva.com/design/DAHI3bxQpn8/2ZcTY2IHoD3XPdD5H2G6Uw/view?utm_content=DAHI3bxQpn8&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hbebd200031",
+      "ratio": "4-5"
+    }
+  ],
+  "2026-07-16": [
+    {
+      "_id": "p_1783325531586_514h",
+      "caption": "<div>【早上只讀一點點】 《你就是困住自己的那座山》</div><div><br></div>",
+      "time": "08:00",
+      "canvaUrl": "https://www.canva.com/design/DAHIqi-yONc/65fkKo4j1LRTKFBSvPF2rQ/view?utm_content=DAHIqi-yONc&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h63a83d9e70",
+      "ratio": "4-5"
+    },
+    {
+      "_id": "p_1783325587296_fvys",
+      "caption": "<div>【圖文時間】 《幸福就是吃飯睡覺等待》</div><div><br></div>",
+      "time": "18:00",
+      "canvaUrl": "https://www.canva.com/design/DAHJV0dycls/JLEdF41sggrElNFRAAPNdA/view?utm_content=DAHJV0dycls&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h4a9326beb5",
+      "ratio": "4-5"
+    },
+    {
+      "_id": "p_1783325658432_4g4v",
+      "caption": "<div>【晚上多讀一點點】 《不要再怪自己想太多：精神科醫師寫給總是不安的你》</div><div><br></div>",
+      "time": "20:00",
+      "canvaUrl": "https://www.canva.com/design/DAHN7xDu7lw/TUuELGCo_fNSKNaEF6Sn-Q/view?utm_content=DAHN7xDu7lw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h214f581df7",
+      "ratio": "4-5"
+    }
+  ],
+  "2026-07-17": [
+    {
+      "_id": "p_1783325699717_nu54",
+      "caption": "<div>【早上只讀一點點】 《現在，就是療癒你的開始》</div><div><br></div>",
+      "time": "08:00",
+      "canvaUrl": "https://www.canva.com/design/DAHOIOwRm7s/Lz1TSDvoXLoL1u2SxQ6uTg/view?utm_content=DAHOIOwRm7s&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h16f553c51d",
+      "ratio": "4-5"
+    },
+    {
+      "_id": "p_1783325715965_bu29",
+      "caption": "<div>【圖文時間】 《便當實驗室又開張了： 日日&amp;特別日的菜單挑戰記》</div><div><br></div>",
+      "time": "09:00",
+      "canvaUrl": "https://www.canva.com/design/DAHIMkmHMfI/MikX6xKxQ8L1ZYOHWhxvAA/view?utm_content=DAHIMkmHMfI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h4b3ada000b",
+      "ratio": "4-5"
+    },
+    {
+      "_id": "p_1783325732166_oex2",
+      "caption": "<div>【晚上多讀一點點】 《終止內耗：養出專屬你的心靈持久力》</div><div><br></div>",
+      "time": "20:00",
+      "canvaUrl": "https://www.canva.com/design/DAHN72EmEdc/DIxrQR1QxdW9k8TPefl2fg/view?utm_content=DAHN72EmEdc&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h783442ef53",
+      "ratio": "4-5"
+    }
   ]
 };
