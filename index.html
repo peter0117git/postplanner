@@ -288,6 +288,46 @@
         }
         .form-group input:focus, .form-group select:focus { border-color: var(--red-pen); outline: none; background: var(--paper-raised); }
 
+        /* =====================================================
+           快速新增貼文（模板化）浮動視窗
+        ===================================================== */
+        .quickadd-overlay { position: fixed; inset: 0; z-index: 300; display: none; }
+        .quickadd-overlay.open { display: flex; align-items: center; justify-content: center; }
+        .quickadd-backdrop { position: absolute; inset: 0; background: rgba(28,27,25,0.28); }
+        .quickadd-popup {
+            position: relative; background: var(--paper-raised); border: 1px solid var(--paper-line);
+            border-radius: 12px; box-shadow: 0 24px 64px rgba(0,0,0,0.22), 0 4px 12px rgba(0,0,0,0.08);
+            width: 380px; max-width: calc(100vw - 32px); max-height: calc(100vh - 60px);
+            display: flex; flex-direction: column; animation: popIn 0.15s ease;
+        }
+        .quickadd-header {
+            display: flex; align-items: center; justify-content: space-between;
+            padding: 14px 16px; border-bottom: 1px solid var(--paper-line); flex-shrink: 0;
+        }
+        .quickadd-header h2 { font-family: var(--font-display); font-size: 15px; font-weight: 700; color: var(--ink); }
+        .qa-body { flex: 1; overflow-y: auto; padding: 14px 16px; display: flex; flex-direction: column; gap: 12px; }
+        .qa-combo-row { display: flex; gap: 6px; }
+        .qa-combo-row select { flex: 1; }
+        .qa-body .form-group select, .qa-body .form-group input { width: 100%; }
+        .qa-subtext-input { margin-top: 5px; }
+        .qa-footer {
+            display: flex; align-items: center; justify-content: space-between; gap: 8px;
+            padding: 12px 16px; border-top: 1px solid var(--paper-line); flex-shrink: 0;
+        }
+        .qa-skip-link { font-size: 10.5px; color: var(--ink-faint); background: none; border: none; cursor: pointer; text-decoration: underline; }
+        .qa-skip-link:hover { color: var(--red-pen); }
+        .qa-footer-actions { display: flex; gap: 8px; }
+        .qa-submit-btn {
+            padding: 8px 16px; background: var(--ink); color: var(--paper); border: none; border-radius: 5px;
+            font-weight: 700; cursor: pointer; font-size: 12px; transition: background 0.15s;
+        }
+        .qa-submit-btn:hover { background: var(--red-pen-deep); }
+        .qa-cancel-btn {
+            padding: 8px 14px; background: var(--paper); border: 1px solid var(--paper-line); border-radius: 5px;
+            font-weight: 700; cursor: pointer; font-size: 12px; color: var(--ink-soft);
+        }
+        .qa-cancel-btn:hover { border-color: var(--ink-faint); }
+
         .canva-single-row { display: flex; gap: 6px; align-items: center; margin-top: 4px; }
         .canva-single-row input { flex: 1; padding: 7px 9px; border: 1px solid var(--paper-line); border-radius: 4px; font-size: 12px; color: var(--ink); background: var(--paper); }
         .canva-single-row input:focus { border-color: var(--red-pen); outline: none; background: var(--paper-raised); }
@@ -488,6 +528,66 @@
 </div>
 
 <!-- =====================================================
+     快速新增貼文（模板化）浮動視窗
+===================================================== -->
+<div class="quickadd-overlay" id="quickadd-overlay">
+    <div class="quickadd-backdrop" onclick="closeQuickAdd()"></div>
+    <div class="quickadd-popup">
+        <div class="quickadd-header">
+            <h2>✎ 快速新增貼文</h2>
+            <button class="cal-nav-btn" onclick="closeQuickAdd()">✕</button>
+        </div>
+        <div class="qa-body">
+            <div class="form-group">
+                <label>預計發布時間</label>
+                <div class="qa-combo-row">
+                    <select id="qa-time-select" onchange="onQaTimeSelect(this.value)">
+                        <option value="">— 常用時間 —</option>
+                    </select>
+                    <input type="time" id="qa-time-input" value="09:00" style="max-width:110px;">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>主題【　】</label>
+                <select id="qa-theme-select" onchange="onQaThemeSelect(this.value)">
+                    <option value="">— 選擇常用主題 —</option>
+                </select>
+                <input type="text" id="qa-theme-input" class="qa-subtext-input" placeholder="或直接輸入新主題，例如：編輯內心戲">
+            </div>
+            <div class="form-group">
+                <label>標題《　》</label>
+                <select id="qa-title-select" onchange="onQaTitleSelect(this.value)">
+                    <option value="">— 選擇書籍清單 —</option>
+                </select>
+                <input type="text" id="qa-title-input" class="qa-subtext-input" placeholder="或直接輸入新書名／標題">
+            </div>
+            <div class="form-group">
+                <label>Canva 網址</label>
+                <select id="qa-canva-select" onchange="onQaCanvaSelect(this.value)">
+                    <option value="">— 選擇之前用過的連結 —</option>
+                </select>
+                <input type="text" id="qa-canva-input" class="qa-subtext-input" placeholder="或貼上新的 Canva 分享連結">
+            </div>
+            <div class="form-group">
+                <label>圖片比例</label>
+                <select id="qa-ratio-select">
+                    <option value="4-5">4:5 直式</option>
+                    <option value="1-1">1:1 正方形</option>
+                    <option value="16-9">16:9 橫式</option>
+                </select>
+            </div>
+        </div>
+        <div class="qa-footer">
+            <button class="qa-skip-link" onclick="skipQuickAdd()">略過範本，直接新增空白貼文</button>
+            <div class="qa-footer-actions">
+                <button class="qa-cancel-btn" onclick="closeQuickAdd()">取消</button>
+                <button class="qa-submit-btn" onclick="submitQuickAdd()">＋ 新增貼文</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- =====================================================
      APP BODY
 ===================================================== -->
 <div class="app-body">
@@ -501,7 +601,7 @@
             </div>
             <div class="day-col-right">
                 <span class="day-col-count" id="day-col-count"></span>
-                <button class="day-col-add" onclick="createNewPost()" title="新增貼文">＋</button>
+                <button class="day-col-add" onclick="openQuickAdd()" title="新增貼文">＋</button>
             </div>
         </div>
         <div class="day-list" id="day-list"></div>
@@ -1045,6 +1145,120 @@ async function deletePost() {
     if (!ok) return;
     db[selectedDateStr] = db[selectedDateStr].filter(p => p._id !== currentId);
     currentId = null; saveLocal(); renderDay(); showEditor(false);
+}
+
+/* =============================================================
+   快速新增貼文（模板化小視窗）
+============================================================= */
+const QA_DEFAULT_THEMES = ['早上只讀一點點', '晚上多讀一點點', '圖文時間', '編輯內心戲'];
+const QA_DEFAULT_TIMES = ['08:00', '09:00', '18:00', '20:00'];
+
+function qaEscapeHtml(s) {
+    return String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+}
+function qaExtractTags(regex) {
+    const set = new Set();
+    Object.values(db).forEach(list => {
+        (list || []).forEach(p => {
+            const plain = getPlainText(p.caption || '');
+            const re = new RegExp(regex.source, regex.flags);
+            let m;
+            while ((m = re.exec(plain))) { const v = m[1].trim(); if (v) set.add(v); }
+        });
+    });
+    return Array.from(set);
+}
+function qaGetStored(key) {
+    try { return JSON.parse(localStorage.getItem(key) || '[]'); } catch { return []; }
+}
+function qaAddStored(key, value) {
+    if (!value) return;
+    const list = qaGetStored(key);
+    if (!list.includes(value)) { list.push(value); localStorage.setItem(key, JSON.stringify(list)); }
+}
+function qaLoadThemeOptions() {
+    return Array.from(new Set([...QA_DEFAULT_THEMES, ...qaGetStored('qa_themes'), ...qaExtractTags(/【([^】]+)】/g)]));
+}
+function qaLoadBookOptions() {
+    return Array.from(new Set([...qaGetStored('qa_books'), ...qaExtractTags(/《([^》]+)》/g)])).sort();
+}
+function qaLoadCanvaHistory() {
+    const items = [];
+    Object.keys(db).sort().reverse().forEach(dateStr => {
+        (db[dateStr] || []).forEach(p => {
+            if (!p.canvaUrl) return;
+            const plain = getPlainText(p.caption || '');
+            const themeM = plain.match(/【([^】]+)】/);
+            const titleM = plain.match(/《([^》]+)》/);
+            let label = dateStr.slice(5).replace('-', '/') + ' ';
+            if (themeM) label += `【${themeM[1]}】`;
+            if (titleM) label += `《${titleM[1]}》`;
+            if (!themeM && !titleM) label += (plain.slice(0, 16) || '（無內文）');
+            items.push({ url: p.canvaUrl, label });
+        });
+    });
+    return items.slice(0, 80);
+}
+
+function openQuickAdd() {
+    if (!selectedDateStr) return;
+    const themeSel = document.getElementById('qa-theme-select');
+    themeSel.innerHTML = '<option value="">— 選擇常用主題 —</option>' +
+        qaLoadThemeOptions().map(t => `<option value="${qaEscapeHtml(t)}">${qaEscapeHtml(t)}</option>`).join('');
+    document.getElementById('qa-theme-input').value = '';
+
+    const titleSel = document.getElementById('qa-title-select');
+    const books = qaLoadBookOptions();
+    titleSel.innerHTML = '<option value="">— 選擇書籍清單 —</option>' +
+        books.map(t => `<option value="${qaEscapeHtml(t)}">${qaEscapeHtml(t)}</option>`).join('');
+    document.getElementById('qa-title-input').value = '';
+
+    const timeSel = document.getElementById('qa-time-select');
+    timeSel.innerHTML = '<option value="">— 常用時間 —</option>' +
+        QA_DEFAULT_TIMES.map(t => `<option value="${t}">${t}</option>`).join('');
+    document.getElementById('qa-time-input').value = '09:00';
+
+    const canvaSel = document.getElementById('qa-canva-select');
+    const history = qaLoadCanvaHistory();
+    canvaSel.innerHTML = '<option value="">— 選擇之前用過的連結 —</option>' +
+        history.map(h => `<option value="${qaEscapeHtml(h.url)}">${qaEscapeHtml(h.label)}</option>`).join('');
+    document.getElementById('qa-canva-input').value = '';
+
+    document.getElementById('qa-ratio-select').value = '4-5';
+    document.getElementById('quickadd-overlay').classList.add('open');
+}
+function closeQuickAdd() { document.getElementById('quickadd-overlay').classList.remove('open'); }
+function onQaThemeSelect(v) { if (v) document.getElementById('qa-theme-input').value = v; }
+function onQaTitleSelect(v) { if (v) document.getElementById('qa-title-input').value = v; }
+function onQaTimeSelect(v) { if (v) document.getElementById('qa-time-input').value = v; }
+function onQaCanvaSelect(v) { if (v) document.getElementById('qa-canva-input').value = v; }
+
+function skipQuickAdd() { closeQuickAdd(); createNewPost(); }
+
+function submitQuickAdd() {
+    if (!selectedDateStr) return;
+    const theme = document.getElementById('qa-theme-input').value.trim();
+    const title = document.getElementById('qa-title-input').value.trim();
+    const time = document.getElementById('qa-time-input').value || '09:00';
+    const canvaUrl = document.getElementById('qa-canva-input').value.trim();
+    const ratio = document.getElementById('qa-ratio-select').value || '4-5';
+
+    let opening = '';
+    if (theme) opening += `【${theme}】`;
+    if (title) opening += (theme ? ' ' : '') + `《${title}》`;
+    const caption = opening
+        ? `<div>${qaEscapeHtml(opening)}</div><div><br></div>`
+        : '';
+
+    if (!db[selectedDateStr]) db[selectedDateStr] = [];
+    const newId = 'p_' + Date.now() + '_' + Math.random().toString(36).slice(2, 6);
+    db[selectedDateStr].push({ _id: newId, caption, time, canvaUrl, ratio });
+
+    qaAddStored('qa_themes', theme);
+    qaAddStored('qa_books', title);
+
+    saveLocal(); renderDay(); loadPost(newId);
+    closeQuickAdd();
 }
 
 /* =============================================================
