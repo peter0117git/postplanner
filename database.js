@@ -672,9 +672,9 @@ var externalDB = {
     },
     {
       "_id": "p_1783325715965_bu29",
-      "caption": "<div>【圖文時間】 《便當實驗室又開張了： 日日&amp;特別日的菜單挑戰記》</div><div><br></div>",
+      "caption": "<div>【圖文時間】&nbsp;<span style=\"font-family: &quot;Noto Sans TC&quot;, -apple-system, sans-serif;\">《建築的誕生：15位傳奇大師的生命故事》</span></div><div><br></div><div><p class=\"isSelectedEnd\"><strong>每一座偉大的建築背後，都藏著一段不朽的生命故事。</strong></p><p class=\"isSelectedEnd\"><strong><br></strong></p><p class=\"isSelectedEnd\">歷經超過百年的建造，巴塞隆納的聖家堂（Sagrada Família）於 2026 年迎來重要的歷史里程碑，再次吸引全世界的目光。</p><p class=\"isSelectedEnd\">這座由西班牙建築大師安東尼．高第（Antoni Gaudí）傾注畢生心血的曠世鉅作，自 1882 年動工以來，一磚一瓦堆砌出他對信仰、自然與生命的想像。</p><p class=\"isSelectedEnd\"><br></p><p class=\"isSelectedEnd\">聖家堂不只是一座教堂，更像是高第留給世界的一封浪漫情書。</p><p class=\"isSelectedEnd\"><br></p><p class=\"isSelectedEnd\">每一道立面、每一座尖塔、每一束灑落室內的光線，都蘊含著深刻的象徵與寓意，等待人們細細品味。</p><p class=\"isSelectedEnd\"><br></p><p class=\"isSelectedEnd\">而除了聖家堂之外，高第在巴塞隆納留下的米拉之家、巴特婁之家，同樣展現了令人驚嘆的創造力——彷彿來自大自然的仿生曲線、骨骼般的陽台設計，以及充滿生命力的馬賽克拼貼，共同構築出獨樹一幟的建築語彙。</p><p class=\"isSelectedEnd\"><br></p><p class=\"isSelectedEnd\"><strong>每一座驚豔世界的建築，都是建築大師用一生淬鍊而成的作品。</strong></p><p class=\"isSelectedEnd\"><strong><br></strong></p><p class=\"isSelectedEnd\">如果你也想知道，這些改變世界美學的經典建築背後，究竟藏著哪些動人的人生故事？</p><p class=\"isSelectedEnd\"><br></p><p class=\"isSelectedEnd\">推薦你閱讀金弘澈的《建築的誕生：15位傳奇大師的生命故事》。</p><p class=\"isSelectedEnd\"><br></p><p class=\"isSelectedEnd\">書中透過細膩的手繪插圖、四格漫畫與溫暖的文字，帶領讀者走進高第、安藤忠雄、貝聿銘等 15 位建築大師的生命歷程，重新認識那些改變世界的經典作品。</p><p class=\"isSelectedEnd\"><br></p><p class=\"isSelectedEnd\">當你讀懂建築背後的故事，眼前的每一道風景，也將因此擁有截然不同的意義。✨</p><p class=\"isSelectedEnd\"><br></p><p>#建築的誕生 #高第 #聖家堂 #大田出版 #建築 #安藤忠雄 #貝聿銘</p></div>",
       "time": "09:00",
-      "canvaUrl": "https://www.canva.com/design/DAHIMkmHMfI/MikX6xKxQ8L1ZYOHWhxvAA/view?utm_content=DAHIMkmHMfI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h4b3ada000b",
+      "canvaUrl": "https://www.canva.com/design/DAHOmEitlNQ/e3uTtnzOv2Vy5hqzWQQAGw/view?utm_content=DAHOmEitlNQ&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h1c826af0dd",
       "ratio": "4-5"
     },
     {
