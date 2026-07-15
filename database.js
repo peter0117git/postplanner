@@ -725,5 +725,14 @@ var externalDB = {
       "canvaUrl": "https://www.canva.com/design/DAHOyK_4RGk/q0mU8TYD49to9dskOa9Htw/view?utm_content=DAHOyK_4RGk&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h44eb28f997",
       "ratio": "1-1"
     }
+  ],
+  "2026-07-19": [
+    {
+      "_id": "p_1784108228429_6wd6",
+      "caption": "<div>【有空多學一點點】 《建築的誕生：15位傳奇大師的生命故事》</div><div><br></div><div>#金弘澈</div><div><br></div><div><div>人們都想為自己的生命賦予意義。</div><div>造訪聖家堂的遊客，會在這裡感到平靜。</div><div>若你心中懷抱著疑問、思索我們究竟為何在這裡、該如何活下去，</div><div>聖家堂會幫助你找到答案。</div><div>聖家堂會幫助人們找到自己，</div><div>為心靈帶來平靜與安穩。</div><div>並且讓這份平靜與安穩，能在生命中延續。</div><div>節錄自EBS記錄片《安東尼‧高第》</div></div><div><br></div><div>#大田出版 #高第</div>",
+      "time": "08:00",
+      "canvaUrl": "https://www.canva.com/design/DAHOmEitlNQ/e3uTtnzOv2Vy5hqzWQQAGw/view?utm_content=DAHOmEitlNQ&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h1c826af0dd",
+      "ratio": "4-5"
+    }
   ]
 };
