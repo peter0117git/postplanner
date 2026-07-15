@@ -716,5 +716,14 @@ var externalDB = {
       "canvaUrl": "",
       "ratio": "4-5"
     }
+  ],
+  "2026-07-18": [
+    {
+      "_id": "p_1784106255899_wo4t",
+      "caption": "<div>【早上只讀一點點】 《 #蘇志燮 的路》</div><div><br></div><div><div>開始</div><div>好不容易入睡了，又被工作的電話吵醒。</div><div>要做的事把一整天都塞滿了。</div><div><br></div><div>我必須和人會面，必須笑，還必須試圖講些什麼。</div><div><br></div><div>真希望有個地方，就算我沒洗臉、隨便亂穿一雙拖鞋，<span style=\"font-family: &quot;Noto Sans TC&quot;, -apple-system, sans-serif;\">也不會被人認出來。</span></div><div><br></div><div>嗯，真正的旅行要開始了。</div></div><div><br></div><div>#大田出版 #金特務</div><div><br></div>",
+      "time": "08:00",
+      "canvaUrl": "https://www.canva.com/design/DAHOyK_4RGk/q0mU8TYD49to9dskOa9Htw/view?utm_content=DAHOyK_4RGk&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h44eb28f997",
+      "ratio": "1-1"
+    }
   ]
 };
