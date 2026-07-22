@@ -849,5 +849,23 @@ var externalDB = {
       "canvaUrl": "https://www.canva.com/design/DAHJV0dycls/JLEdF41sggrElNFRAAPNdA/view?utm_content=DAHJV0dycls&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h4a9326beb5",
       "ratio": "4-5"
     }
+  ],
+  "2026-07-25": [
+    {
+      "_id": "p_1784702966394_3dsd",
+      "caption": "<div>【八月等你遇見它】 《一次又一次又一次重新開始》</div><div><br></div>",
+      "time": "12:00",
+      "canvaUrl": "",
+      "ratio": "4-5"
+    }
+  ],
+  "2026-07-26": [
+    {
+      "_id": "p_1784703020220_2j7i",
+      "caption": "<div>【八月等你遇見它】 《尋找蜘蛛：日本暢銷超過36萬冊，西加奈子的生命故事》</div><div><br></div>",
+      "time": "12:00",
+      "canvaUrl": "",
+      "ratio": "4-5"
+    }
   ]
 };
