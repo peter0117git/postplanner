@@ -837,14 +837,14 @@ var externalDB = {
     },
     {
       "_id": "p_1784535230253_8hyg",
-      "caption": "【晚上多讀一點點】&nbsp;《尋找蜘蛛：日本暢銷超過36萬冊，西加奈子的生命故事》<div><span lang=\"EN-US\" style=\"\"><br></span></div><div><span lang=\"EN-US\" style=\"\">#西加奈子</span></div><div><span lang=\"EN-US\" style=\"\">#八月一日上市<br><br></span><div><span lang=\"EN-US\" style=\"\"><div>寫給台灣讀者</div><div><br></div><div>這本書對我而言，是相當私人且重要的記錄，同時也是我唯一會不時重讀的個人作品，其中有些原因。</div><div><br></div><div>自從得知罹癌已經過了好幾年，我意識到自己開始遺忘當時的經歷。當然，大致的經過依然印象清晰，包括彼時的景色、氣味、聲音、痛楚。不過我察覺那時的「感受」正在消褪。我想那一定是為了要讓自己活在「當下」，同時也為了將性命延續到「未來」。人不可能一邊保持所有的記憶，繼續生存下去。然而身體彷彿在抵抗遺忘，並不是心，而是我的身體在吶喊著不願遺忘。</div><div><br></div><div>我在這本書裡寫到，希望「你」能讀到我的故事。希望不知身在何處，未曾謀面的你閱讀這些。這樣的想法至今仍未改變，但有時我感到訝異，未來的我竟存在於「你」的世界。</div><div><br></div><div>我覺得這本書彷彿在靜靜宣告著「你或許會忘記，但是只有此時此刻的我會一直記得這些」，包括疾病怎樣改變了我，治療又如何拯救了我，朋友與家人對我來說有什麼樣的意義，以及我當時的感受。它彷彿在吶喊著：「我絕對不會忘記」，這部作品反映出我的身體。</div><div><br></div><div>我只是一般女性，治療的經驗跟其他患者並沒有太大差異。癌症並不罕見，在這個世界上罹癌的人不計其數，不過我的身體仍是獨一無二的。儘管罹癌的經驗相似，只有我明瞭自己身體的感受，我想為這些留下記錄。</div><div><br></div><div>身在台灣，世界上唯一的你願意讀這本書，令我感到非常光榮。謝謝你願意花費寶貴的時間精力，我由衷感激。<span style=\"font-family: &quot;Noto Sans TC&quot;, -apple-system, sans-serif;\">&nbsp;</span></div><div><br></div><div>二○二六年　於東京</div><div><br></div><div>西　加奈子</div></span></div></div>",
+      "caption": "【晚上多讀一點點】&nbsp;《尋找蜘蛛：日本暢銷超過36萬冊，西加奈子的生命故事》<div><span lang=\"EN-US\" style=\"\"><br></span></div><div><span lang=\"EN-US\" style=\"\">#西加奈子</span></div><div><span lang=\"EN-US\" style=\"\">#八月一日上市<br><br></span><div><span lang=\"EN-US\" style=\"\"><div>寫給台灣讀者</div><div><br></div><div>這本書對我而言，是相當私人且重要的記錄，同時也是我唯一會不時重讀的個人作品，其中有些原因。</div><div><br></div><div>自從得知罹癌已經過了好幾年，我意識到自己開始遺忘當時的經歷。當然，大致的經過依然印象清晰，包括彼時的景色、氣味、聲音、痛楚。不過我察覺那時的「感受」正在消褪。我想那一定是為了要讓自己活在「當下」，同時也為了將性命延續到「未來」。人不可能一邊保持所有的記憶，繼續生存下去。然而身體彷彿在抵抗遺忘，並不是心，而是我的身體在吶喊著不願遺忘。</div><div><br></div><div>我在這本書裡寫到，希望「你」能讀到我的故事。希望不知身在何處，未曾謀面的你閱讀這些。這樣的想法至今仍未改變，但有時我感到訝異，未來的我竟存在於「你」的世界。</div><div><br></div><div>我覺得這本書彷彿在靜靜宣告著「你或許會忘記，但是只有此時此刻的我會一直記得這些」，包括疾病怎樣改變了我，治療又如何拯救了我，朋友與家人對我來說有什麼樣的意義，以及我當時的感受。它彷彿在吶喊著：「我絕對不會忘記」，這部作品反映出我的身體。</div><div><br></div><div>我只是一般女性，治療的經驗跟其他患者並沒有太大差異。癌症並不罕見，在這個世界上罹癌的人不計其數，不過我的身體仍是獨一無二的。儘管罹癌的經驗相似，只有我明瞭自己身體的感受，我想為這些留下記錄。</div><div><br></div><div>身在台灣，世界上唯一的你願意讀這本書，令我感到非常光榮。謝謝你願意花費寶貴的時間精力，我由衷感激。<span style=\"font-family: &quot;Noto Sans TC&quot;, -apple-system, sans-serif;\">&nbsp;</span></div><div><br></div><div>二○二六年　於東京</div><div><br></div><div>西　加奈子</div><div><br></div><div>#大田出版 #新書上市</div></span></div></div>",
       "time": "20:00",
       "canvaUrl": "https://www.canva.com/design/DAHQGJ6si9M/quhJBM-4T2itUE6WW_KxWA/view?utm_content=DAHQGJ6si9M&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hd4a375db1f",
       "ratio": "4-5"
     },
     {
       "_id": "p_1784535336052_01uo",
-      "caption": "<div>【新書搶先看】&nbsp;《一次又一次又一次重新開始》</div><div><br></div><div><div>#八月一日上市</div><div><span style=\"font-family: &quot;Noto Sans TC&quot;, -apple-system, sans-serif;\">#</span><span style=\"font-family: &quot;Noto Sans TC&quot;, -apple-system, sans-serif;\">亞歷珊卓拉歐拉諾</span></div><div><br></div><div>畢業、找到人生第一份工作、辭職、換新工作、</div><div>&nbsp;</div><div>讀研究所、換居住地、失去至親、結識新戀情、失戀……</div><div>&nbsp;</div><div>人生挑戰一直一直來，換個角度想，其實是給我們源源不絕重新開始的機會，</div><div>&nbsp;</div><div>《#會好起來的》系列作者亞歷珊卓拉．歐拉諾帶來的療癒圖文新作，</div><div>&nbsp;</div><div>獻給經歷了一次又一次，勇敢重新開始的你。&nbsp;</div><div><br></div><div>「我創作這本書，獻給所有正在重新開始的人。</div><div>&nbsp;</div><div>獻給所有正在學習如何在人生的循環中安歇的人。</div><div>&nbsp;</div><div>獻給所有需要明白重新開始並非一蹴可幾，生命即是一次又一次地練習。」</div></div><div><br></div><div><span style=\"font-family: &quot;Noto Sans TC&quot;, -apple-system, sans-serif;\">#大田出版 #</span>就算不是現在 #就算慢一點也沒關係</div><span lang=\"EN-US\">\n<!--[if !supportLineBreakNewLine]--><br>\n<!--[endif]--></span><div><br></div>",
+      "caption": "<div>【新書搶先看】&nbsp;《一次又一次又一次重新開始》</div><div><br></div><div><div>#八月一日上市</div><div><span style=\"font-family: &quot;Noto Sans TC&quot;, -apple-system, sans-serif;\">#</span><span style=\"font-family: &quot;Noto Sans TC&quot;, -apple-system, sans-serif;\">亞歷珊卓拉</span><span style=\"font-family: &quot;Noto Sans TC&quot;, -apple-system, sans-serif;\">歐拉諾</span></div><div><br></div><div>畢業、找到人生第一份工作、辭職、換新工作、</div><div>&nbsp;</div><div>讀研究所、換居住地、失去至親、結識新戀情、失戀……</div><div>&nbsp;</div><div>人生挑戰一直一直來，換個角度想，其實是給我們源源不絕重新開始的機會，</div><div>&nbsp;</div><div>《#會好起來的》系列作者亞歷珊卓拉．歐拉諾帶來的療癒圖文新作，</div><div>&nbsp;</div><div>獻給經歷了一次又一次，勇敢重新開始的你。&nbsp;</div><div><br></div><div>「我創作這本書，獻給所有正在重新開始的人。</div><div>&nbsp;</div><div>獻給所有正在學習如何在人生的循環中安歇的人。</div><div>&nbsp;</div><div>獻給所有需要明白重新開始並非一蹴可幾，生命即是一次又一次地練習。」</div></div><div><br></div><div><span style=\"font-family: &quot;Noto Sans TC&quot;, -apple-system, sans-serif;\">#大田出版 #</span>就算不是現在 #就算慢一點也沒關係</div><span lang=\"EN-US\">\n<!--[if !supportLineBreakNewLine]--><br>\n<!--[endif]--></span><div><br></div>",
       "time": "18:00",
       "canvaUrl": "https://www.canva.com/design/DAHQGHvfi-A/aKa_FAH8l28FL0kYu5d3QA/view?utm_content=DAHQGHvfi-A&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h3c68affc26",
       "ratio": "4-5"
@@ -865,6 +865,29 @@ var externalDB = {
       "caption": "<div>【八月等你遇見它】 《尋找蜘蛛：日本暢銷超過36萬冊，西加奈子的生命故事》</div><div><br></div><div>#八月一日上市</div><div>#大田出版</div><div><br></div><div><div>暢銷突破 36 萬冊！</div><div>獲第 75 屆讀賣文學獎（隨筆・遊記類）</div><div>書店店員票選非虛構大賞 All Time Best 2023</div><div>《達文西》雜誌 BOOK OF THE YEAR 第 1 名（非虛構）<span style=\"font-family: &quot;Noto Sans TC&quot;, -apple-system, sans-serif;\">&nbsp;</span></div><div><br></div><div>這是為「你」而寫。__西加奈子</div><div><br></div><div>在異國他鄉，突如其來被宣告患上乳癌。</div><div><br></div><div>語言的隔閡、備受折磨的身心——</div><div><br></div><div>而維繫著生命的是，一雙雙友誼的手、書中的某一行字、流動的音樂，以及彷如祈禱般的「寫作」。</div><div><br></div><div>一邊流淚一邊微笑，一邊微笑一邊向前邁進……</div><div><br></div><div>西加奈子用赤裸、毫無保留的言語寫下的，首部非虛構作品。</div><div><br></div><div>這是一本讓人湧現生存勇氣的靈魂全紀錄。</div><div><br></div><div>&nbsp;</div><div><br></div><div>● 《尋找蜘蛛》感動推薦</div><div><br></div><div>&nbsp;「難能可貴的非虛構作品。」──作家 新井一二三</div><div><br></div><div>「這本書再次教會了我，『事與願違』與『擁有幸福』是可以同時存在的。」 ── 珍・蘇（Jane Su）／專欄作家</div><div><br></div><div>「閱讀時一直感覺快要掉淚，卻又一滴眼淚都沒流。因為書中展現出的精神、肉體與視線是如此筆直堅定，我只是不斷地被那份神聖感所壓倒。光是能與西加奈子活在同一個世界上，我想早在遇見她之前，我就已經被救贖了。」 ── 金原睛／作家</div><div><br></div><div>「文字赤裸卻充滿光澤，讓人感受到生命並非只有被奪走，更多的是被賦予的事物，如此耀眼。書中那些說著關西腔的加拿大人也太棒了。」 ── Hiccorohee／搞笑藝人</div><div><br></div><div>「讀完後靜靜地闔上書，心頭仍泛起陣陣漣漪，久久不能平息。這本書讓人意識到，它絕不僅僅侷限於抗癌紀錄的框架，其探討的終點完全在另一個層次。當我們察覺到那種『身處極致幸福時，恐懼失去的焦慮卻同時存在』的悖論後，便會再次體悟到：無論事情進展順遂與否，人生就是由無數個『能讓自己打從心底釋懷』的瞬間堆疊而成的。 」── 高尾美穗（婦產科醫師）</div></div><div><br></div><div>#西加奈子 #人生</div><div><br></div>",
       "time": "12:00",
       "canvaUrl": "https://www.canva.com/design/DAHQR883PfM/__Xxq1ygcumDN2QjC0hFMQ/view?utm_content=DAHQR883PfM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h5865abf93b",
+      "ratio": "4-5"
+    }
+  ],
+  "2026-07-27": [
+    {
+      "_id": "p_1784877243716_zq1g",
+      "caption": "<div>【早上只讀一點點】 《現在，就是療癒你的開始》</div><div><br></div>",
+      "time": "08:00",
+      "canvaUrl": "https://www.canva.com/design/DAHOIOwRm7s/Lz1TSDvoXLoL1u2SxQ6uTg/view?utm_content=DAHOIOwRm7s&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h16f553c51d",
+      "ratio": "4-5"
+    },
+    {
+      "_id": "p_1784877254689_91sn",
+      "caption": "<div>【圖文時間】 《悠悠哉哉一個人生活的好日子》</div><div><br></div>",
+      "time": "18:00",
+      "canvaUrl": "https://www.canva.com/design/DAHM0MXyb9U/x1qIL8AMN1t2g6MJARYKHw/view?utm_content=DAHM0MXyb9U&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hfc046955aa",
+      "ratio": "4-5"
+    },
+    {
+      "_id": "p_1784877268713_g263",
+      "caption": "<div>【晚上多讀一點點】 《你的夏天還好嗎?》</div><div><br></div>",
+      "time": "20:00",
+      "canvaUrl": "https://www.canva.com/design/DAHK68fXVPM/K5ZNa1mY1ucYa4YypSZL5g/view?utm_content=DAHK68fXVPM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hd973054f8d",
       "ratio": "4-5"
     }
   ]
