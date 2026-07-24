@@ -837,16 +837,16 @@ var externalDB = {
     },
     {
       "_id": "p_1784535230253_8hyg",
-      "caption": "【晚上多讀一點點】&nbsp;《尋找蜘蛛》<span lang=\"EN-US\" style=\"\"><br><br></span>",
+      "caption": "【晚上多讀一點點】&nbsp;《尋找蜘蛛：日本暢銷超過36萬冊，西加奈子的生命故事》<div><span lang=\"EN-US\" style=\"\"><br></span></div><div><span lang=\"EN-US\" style=\"\">#西加奈子</span></div><div><span lang=\"EN-US\" style=\"\">#八月一日上市<br><br></span><div><span lang=\"EN-US\" style=\"\"><div>寫給台灣讀者</div><div><br></div><div>這本書對我而言，是相當私人且重要的記錄，同時也是我唯一會不時重讀的個人作品，其中有些原因。</div><div><br></div><div>自從得知罹癌已經過了好幾年，我意識到自己開始遺忘當時的經歷。當然，大致的經過依然印象清晰，包括彼時的景色、氣味、聲音、痛楚。不過我察覺那時的「感受」正在消褪。我想那一定是為了要讓自己活在「當下」，同時也為了將性命延續到「未來」。人不可能一邊保持所有的記憶，繼續生存下去。然而身體彷彿在抵抗遺忘，並不是心，而是我的身體在吶喊著不願遺忘。</div><div><br></div><div>我在這本書裡寫到，希望「你」能讀到我的故事。希望不知身在何處，未曾謀面的你閱讀這些。這樣的想法至今仍未改變，但有時我感到訝異，未來的我竟存在於「你」的世界。</div><div><br></div><div>我覺得這本書彷彿在靜靜宣告著「你或許會忘記，但是只有此時此刻的我會一直記得這些」，包括疾病怎樣改變了我，治療又如何拯救了我，朋友與家人對我來說有什麼樣的意義，以及我當時的感受。它彷彿在吶喊著：「我絕對不會忘記」，這部作品反映出我的身體。</div><div><br></div><div>我只是一般女性，治療的經驗跟其他患者並沒有太大差異。癌症並不罕見，在這個世界上罹癌的人不計其數，不過我的身體仍是獨一無二的。儘管罹癌的經驗相似，只有我明瞭自己身體的感受，我想為這些留下記錄。</div><div><br></div><div>身在台灣，世界上唯一的你願意讀這本書，令我感到非常光榮。謝謝你願意花費寶貴的時間精力，我由衷感激。<span style=\"font-family: &quot;Noto Sans TC&quot;, -apple-system, sans-serif;\">&nbsp;</span></div><div><br></div><div>二○二六年　於東京</div><div><br></div><div>西　加奈子</div></span></div></div>",
       "time": "20:00",
-      "canvaUrl": "https://www.canva.com/design/DAHI3bxQpn8/2ZcTY2IHoD3XPdD5H2G6Uw/view?utm_content=DAHI3bxQpn8&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hbebd200031",
+      "canvaUrl": "https://www.canva.com/design/DAHQGJ6si9M/quhJBM-4T2itUE6WW_KxWA/view?utm_content=DAHQGJ6si9M&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hd4a375db1f",
       "ratio": "4-5"
     },
     {
       "_id": "p_1784535336052_01uo",
       "caption": "<div>【新書搶先看】&nbsp;《一次又一次又一次重新開始》</div><span lang=\"EN-US\">\n<!--[if !supportLineBreakNewLine]--><br>\n<!--[endif]--></span><div><br></div>",
       "time": "18:00",
-      "canvaUrl": "https://www.canva.com/design/DAHJV0dycls/JLEdF41sggrElNFRAAPNdA/view?utm_content=DAHJV0dycls&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h4a9326beb5",
+      "canvaUrl": "https://www.canva.com/design/DAHQGHvfi-A/aKa_FAH8l28FL0kYu5d3QA/view?utm_content=DAHQGHvfi-A&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h3c68affc26",
       "ratio": "4-5"
     }
   ],
