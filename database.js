@@ -844,7 +844,7 @@ var externalDB = {
     },
     {
       "_id": "p_1784535336052_01uo",
-      "caption": "<div>【新書搶先看】&nbsp;《一次又一次又一次重新開始》</div><span lang=\"EN-US\">\n<!--[if !supportLineBreakNewLine]--><br>\n<!--[endif]--></span><div><br></div>",
+      "caption": "<div>【新書搶先看】&nbsp;《一次又一次又一次重新開始》</div><div><br></div><div><div>#八月一日上市</div><div><span style=\"font-family: &quot;Noto Sans TC&quot;, -apple-system, sans-serif;\">#</span><span style=\"font-family: &quot;Noto Sans TC&quot;, -apple-system, sans-serif;\">亞歷珊卓拉歐拉諾</span></div><div><br></div><div>畢業、找到人生第一份工作、辭職、換新工作、</div><div>&nbsp;</div><div>讀研究所、換居住地、失去至親、結識新戀情、失戀……</div><div>&nbsp;</div><div>人生挑戰一直一直來，換個角度想，其實是給我們源源不絕重新開始的機會，</div><div>&nbsp;</div><div>《#會好起來的》系列作者亞歷珊卓拉．歐拉諾帶來的療癒圖文新作，</div><div>&nbsp;</div><div>獻給經歷了一次又一次，勇敢重新開始的你。&nbsp;</div><div><br></div><div>「我創作這本書，獻給所有正在重新開始的人。</div><div>&nbsp;</div><div>獻給所有正在學習如何在人生的循環中安歇的人。</div><div>&nbsp;</div><div>獻給所有需要明白重新開始並非一蹴可幾，生命即是一次又一次地練習。」</div></div><div><br></div><div><span style=\"font-family: &quot;Noto Sans TC&quot;, -apple-system, sans-serif;\">#大田出版 #</span>就算不是現在 #就算慢一點也沒關係</div><span lang=\"EN-US\">\n<!--[if !supportLineBreakNewLine]--><br>\n<!--[endif]--></span><div><br></div>",
       "time": "18:00",
       "canvaUrl": "https://www.canva.com/design/DAHQGHvfi-A/aKa_FAH8l28FL0kYu5d3QA/view?utm_content=DAHQGHvfi-A&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h3c68affc26",
       "ratio": "4-5"
