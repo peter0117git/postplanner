@@ -853,18 +853,18 @@ var externalDB = {
   "2026-07-25": [
     {
       "_id": "p_1784702966394_3dsd",
-      "caption": "<div>【八月等你遇見它】 《一次又一次又一次重新開始》</div><div><br></div>",
+      "caption": "<div>【八月等你遇見它】 《一次又一次又一次重新開始》</div><div><br></div><div>#八月一日上市</div><div>#大田出版</div><div><br></div><div><div>獻給所有正在重新開始的人。</div><div>獻給所有正在學習如何在人生的循環中安歇的人。</div><div>獻給所有需要明白重新開始並非一蹴可幾，而是一生中無休止境的修行。</div><div><br></div><div>★</div><div><br></div><div>暢銷療癒圖文書《會好起來的，就算不是現在》 作者最新力作！</div><div>在破碎與重建之間，學會一再重新開始。</div><div><br></div><div><br></div><div>這是一本關於人生循環的圖文書——</div><div>關於懷疑、崩解、重新站穩、再次敞開，然後再一次重生。</div><div><br></div><div>藝術家暨作家亞歷珊卓拉．歐拉諾</div><div>在某個凌晨三點醒來，腦中滿是停不下來的問題：</div><div>人生就是這樣了嗎？當一切瓦解時該怎麼辦？當我想關上自己時，如何仍然保持敞開？</div><div><br></div><div>《#一次又一次又一次地重新開始》最初只是她寫給自己的筆記——</div><div>用圖像與文字，試著理解不確定的人生地圖。</div><div>最後變成一本關於「成為人」的節奏之書：</div><div>提問 → 懷疑 → 站穩 → 敞開 → 更新</div><div>人生不斷在這五個循環之中往復。</div><div><br></div><div>水彩插畫與私密文字交織，</div><div>這本書不提供答案，而是提供陪伴。</div><div><br></div><div>它告訴我們——</div><div>不要再等待那個「完成版的自己」，</div><div>改變不是抵達，而是學會與變動一起生活。</div><div><br></div><div>重新開始，不只一次。而是一生都在重新開始。</div><div><br></div><div>★　書評盛讚　★</div><div><br></div><div>「亞歷珊卓拉以圖文將蛻變的痛苦轉化為自我成長的藝術，並且讓讀者覺得直擊靈魂深處。這本書包容過去每個面向的你，也守候千千萬萬個將來的你。」－－《紐約時報》暢銷作家揚．裴布洛</div><div><br></div><div>「歐拉諾以《Begin Again》將讀者帶進她的內心世界，細膩又動人地描述我們每個人內心在覺醒當下的幽微低語。」－－《靜心冥想的練習》作者雪倫．薩爾茲堡</div><div><br></div><div><br></div><div>&nbsp;★　讀者好評　★</div><div><br></div><div>多麼珍貴的禮物。</div><div><br></div><div>這個世界就需要這個：藝術。這本書是慰藉，是指南。這本書帶來陪伴，陪伴我們感受一切、驅散寂寞、陪伴我們沉浸在生命的喜悅中。</div><div>－－讀者 丹尼爾．艾亨</div><div><br></div><div>它很美，引人深思……</div><div><br></div><div>我很喜歡這本書。我試著一次又一次又一次地重讀時，好幾次都哭了（因為感動）。</div><div>－－讀者 哈利和桃特．鮑爾斯</div><div><br></div><div>革命性的蛻變之書！</div><div><br></div><div>希望我們所有人都記得自己可以一次又一次又一次地重新開始。這是一本能帶來革命性蛻變的書，可以送給自己或每一個你深愛的人。</div><div>－－讀者 JZ</div></div><div><br></div><div><span style=\"font-family: &quot;Noto Sans TC&quot;, -apple-system, sans-serif;\">#亞歷珊卓拉歐拉諾 #新書上市</span></div>",
       "time": "12:00",
-      "canvaUrl": "",
+      "canvaUrl": "https://www.canva.com/design/DAHQR64eSK8/NWkWK3kBG5tKMRZD2BdlOw/view?utm_content=DAHQR64eSK8&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h13c49b6a15",
       "ratio": "4-5"
     }
   ],
   "2026-07-26": [
     {
       "_id": "p_1784703020220_2j7i",
-      "caption": "<div>【八月等你遇見它】 《尋找蜘蛛：日本暢銷超過36萬冊，西加奈子的生命故事》</div><div><br></div>",
+      "caption": "<div>【八月等你遇見它】 《尋找蜘蛛：日本暢銷超過36萬冊，西加奈子的生命故事》</div><div><br></div><div>#八月一日上市</div><div>#大田出版</div><div><br></div><div><div>暢銷突破 36 萬冊！</div><div>獲第 75 屆讀賣文學獎（隨筆・遊記類）</div><div>書店店員票選非虛構大賞 All Time Best 2023</div><div>《達文西》雜誌 BOOK OF THE YEAR 第 1 名（非虛構）<span style=\"font-family: &quot;Noto Sans TC&quot;, -apple-system, sans-serif;\">&nbsp;</span></div><div><br></div><div>這是為「你」而寫。__西加奈子</div><div><br></div><div>在異國他鄉，突如其來被宣告患上乳癌。</div><div><br></div><div>語言的隔閡、備受折磨的身心——</div><div><br></div><div>而維繫著生命的是，一雙雙友誼的手、書中的某一行字、流動的音樂，以及彷如祈禱般的「寫作」。</div><div><br></div><div>一邊流淚一邊微笑，一邊微笑一邊向前邁進……</div><div><br></div><div>西加奈子用赤裸、毫無保留的言語寫下的，首部非虛構作品。</div><div><br></div><div>這是一本讓人湧現生存勇氣的靈魂全紀錄。</div><div><br></div><div>&nbsp;</div><div><br></div><div>● 《尋找蜘蛛》感動推薦</div><div><br></div><div>&nbsp;「難能可貴的非虛構作品。」──作家 新井一二三</div><div><br></div><div>「這本書再次教會了我，『事與願違』與『擁有幸福』是可以同時存在的。」 ── 珍・蘇（Jane Su）／專欄作家</div><div><br></div><div>「閱讀時一直感覺快要掉淚，卻又一滴眼淚都沒流。因為書中展現出的精神、肉體與視線是如此筆直堅定，我只是不斷地被那份神聖感所壓倒。光是能與西加奈子活在同一個世界上，我想早在遇見她之前，我就已經被救贖了。」 ── 金原睛／作家</div><div><br></div><div>「文字赤裸卻充滿光澤，讓人感受到生命並非只有被奪走，更多的是被賦予的事物，如此耀眼。書中那些說著關西腔的加拿大人也太棒了。」 ── Hiccorohee／搞笑藝人</div><div><br></div><div>「讀完後靜靜地闔上書，心頭仍泛起陣陣漣漪，久久不能平息。這本書讓人意識到，它絕不僅僅侷限於抗癌紀錄的框架，其探討的終點完全在另一個層次。當我們察覺到那種『身處極致幸福時，恐懼失去的焦慮卻同時存在』的悖論後，便會再次體悟到：無論事情進展順遂與否，人生就是由無數個『能讓自己打從心底釋懷』的瞬間堆疊而成的。 」── 高尾美穗（婦產科醫師）</div></div><div><br></div><div>#西加奈子 #人生</div><div><br></div>",
       "time": "12:00",
-      "canvaUrl": "",
+      "canvaUrl": "https://www.canva.com/design/DAHQR883PfM/__Xxq1ygcumDN2QjC0hFMQ/view?utm_content=DAHQR883PfM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h5865abf93b",
       "ratio": "4-5"
     }
   ]
