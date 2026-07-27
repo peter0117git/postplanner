@@ -917,7 +917,7 @@ var externalDB = {
   "2026-07-29": [
     {
       "_id": "p_1785139507259_e48h",
-      "caption": "<div>【早上只讀一點點】 《和你一起的風景未完待續》</div><div><br></div>",
+      "caption": "<div>【早上只讀一點點】 《和你一起的風景未完待續》</div><div><br></div><div><div>〈 鑽牛角尖 〉</div><div><br></div><div>當牛角尖鑽得越深</div><div>反而是自己傷得越深</div><div><br></div><div>別人的一句話</div><div>也許沒有什麼意思</div><div>你卻煩惱了好幾夜</div><div>覺得自己說錯了話</div><div>一直很在意</div><div>旁人卻根本沒有記住</div><div><br></div><div>學會讓每一個時刻</div><div>過去就過去了</div></div><div><br></div><div><div>才能在下一次見面時</div><div>用一個全新的心情</div><div>去好好珍惜對方</div></div><div><br></div><div>摘自<span style=\"font-family: &quot;Noto Sans TC&quot;, -apple-system, sans-serif;\">《和你一起的風景未完待續》-</span><span style=\"font-family: &quot;Noto Sans TC&quot;, -apple-system, sans-serif;\">〈 鑽牛角尖 〉</span></div><div><span style=\"font-family: &quot;Noto Sans TC&quot;, -apple-system, sans-serif;\"><br></span></div><div><span style=\"font-family: &quot;Noto Sans TC&quot;, -apple-system, sans-serif;\">#大田出版 #</span><span style=\"font-family: &quot;Noto Sans TC&quot;, -apple-system, sans-serif;\">和你一起的風景未完待續 #原子邦尼</span></div>",
       "time": "08:00",
       "canvaUrl": "https://www.canva.com/design/DAHOmH4dWgM/N_GRztDcktUyD0XA2dufPA/view?utm_content=DAHOmH4dWgM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h7946cd0b0f",
       "ratio": "4-5"
