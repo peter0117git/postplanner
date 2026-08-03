@@ -1074,7 +1074,7 @@ var externalDB = {
       "caption": "<div>【圖文時間】 《宇希時間》</div><div><br></div>",
       "time": "18:00",
       "canvaUrl": "https://www.canva.com/design/DAHNdqdK6aI/PiMT2vlLGuDlWm3KmDjn9g/view?utm_content=DAHNdqdK6aI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=ha7005fd718#1",
-      "ratio": "4-5"
+      "ratio": "1-1"
     },
     {
       "_id": "p_1785738836547_bhm7",
