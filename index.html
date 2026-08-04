@@ -974,7 +974,7 @@ async function syncToGitHub() {
             const merged = mergeDatabases(db, remote.db, dbMeta, remote.meta);
             db = merged.db; dbMeta = merged.meta;
             dbMeta.updatedAt = new Date().toISOString();
-            const content = btoa(unescape(encodeURIComponent(serializeDatabaseScript(db, dbMeta))));
+            const content = encodeGitHubContent(serializeDatabaseScript(db, dbMeta));
             const body = { message: `排版更新: ${new Date().toLocaleString()}`, content };
             if (remote.sha) body.sha = remote.sha;
             const response = await fetch(url, {
@@ -1140,17 +1140,37 @@ function serializeDatabaseScript(database = db, meta = dbMeta) {
     return 'var externalDB = ' + JSON.stringify(database, null, 2) + ';\n' +
         'var externalDBMeta = ' + JSON.stringify(meta, null, 2) + ';';
 }
+function parseJsonSafely(text, label) {
+    try { return JSON.parse(text); }
+    catch (err) {
+        const message = err instanceof SyntaxError ? `${label}內容不完整或格式不正確` : err.message;
+        const wrapped = new Error(message); wrapped.cause = err; throw wrapped;
+    }
+}
 function parseDatabaseScript(raw) {
-    const text = String(raw || '').trim();
-    const marker = '\nvar externalDBMeta = ';
-    const markerIndex = text.indexOf(marker);
+    const text = String(raw || '').replace(/^\uFEFF/, '').trim();
+    if (!text) return { db: {}, meta: normalizeMeta({}) };
+
+    // 同時相容純 JSON 備份、舊版 externalDB，以及新版 externalDB + externalDBMeta。
+    if (text.startsWith('{')) {
+        const parsed = parseJsonSafely(text, 'GitHub database.js ');
+        if (parsed.db && typeof parsed.db === 'object') {
+            return { db: normalizeDatabase(parsed.db, { strict: true }), meta: normalizeMeta(parsed.meta || {}) };
+        }
+        return { db: normalizeDatabase(parsed, { strict: true }), meta: normalizeMeta({}) };
+    }
+
+    const metaMarker = text.match(/\r?\n(?:var|let|const)\s+externalDBMeta\s*=\s*/);
+    const markerIndex = metaMarker?.index ?? -1;
     let dbText = markerIndex >= 0 ? text.slice(0, markerIndex) : text;
-    let metaText = markerIndex >= 0 ? text.slice(markerIndex + marker.length) : '';
-    dbText = dbText.replace(/^var\s+externalDB\s*=\s*/, '').replace(/;\s*$/, '');
-    metaText = metaText.replace(/;\s*$/, '');
+    let metaText = markerIndex >= 0 ? text.slice(markerIndex + metaMarker[0].length) : '';
+    const assignmentPattern = /^(?:var|let|const)\s+externalDB\s*=\s*/;
+    if (!assignmentPattern.test(dbText)) throw new Error('GitHub database.js 不是可辨識的排版桌資料格式');
+    dbText = dbText.replace(assignmentPattern, '').replace(/;\s*$/, '').trim();
+    metaText = metaText.replace(/;\s*$/, '').trim();
     return {
-        db: normalizeDatabase(JSON.parse(dbText), { strict: true }),
-        meta: metaText ? normalizeMeta(JSON.parse(metaText)) : normalizeMeta({})
+        db: normalizeDatabase(parseJsonSafely(dbText, 'GitHub database.js '), { strict: true }),
+        meta: metaText ? normalizeMeta(parseJsonSafely(metaText, 'GitHub 同步資訊 ')) : normalizeMeta({})
     };
 }
 function timestampOf(post) { return Date.parse(post?.updatedAt || post?.createdAt || '') || 0; }
@@ -1202,7 +1222,31 @@ function mergeDatabases(localDb, remoteDb, localMeta, remoteMeta) {
     return { db: mergedDb, meta: mergedMeta, stats };
 }
 function decodeGitHubContent(content) {
-    return decodeURIComponent(escape(atob(String(content || '').replace(/\n/g, ''))));
+    const binary = atob(String(content || '').replace(/\s/g, ''));
+    const bytes = new Uint8Array(binary.length);
+    for (let i = 0; i < binary.length; i++) bytes[i] = binary.charCodeAt(i);
+    return new TextDecoder().decode(bytes);
+}
+function encodeGitHubContent(content) {
+    const bytes = new TextEncoder().encode(String(content || ''));
+    let binary = '';
+    const chunkSize = 0x8000;
+    for (let i = 0; i < bytes.length; i += chunkSize) {
+        binary += String.fromCharCode(...bytes.subarray(i, i + chunkSize));
+    }
+    return btoa(binary);
+}
+async function fetchGitBlob(repo, sha, token) {
+    const response = await fetch(`https://api.github.com/repos/${repo}/git/blobs/${sha}`, {
+        headers: { 'Authorization': `Bearer ${token}`, 'Accept': 'application/vnd.github+json' }
+    });
+    if (!response.ok) {
+        const body = await response.json().catch(() => ({}));
+        const error = new Error(body.message || `無法讀取 GitHub 資料（HTTP ${response.status}）`); error.status = response.status; throw error;
+    }
+    const blob = await response.json();
+    if (blob.encoding !== 'base64' || !blob.content) throw new Error('GitHub 未回傳完整的 database.js 內容');
+    return decodeGitHubContent(blob.content);
 }
 async function fetchGitDatabase(repo, token) {
     const url = `https://api.github.com/repos/${repo}/contents/database.js?nocache=${Date.now()}`;
@@ -1213,7 +1257,10 @@ async function fetchGitDatabase(repo, token) {
         const err = new Error(body.message || `HTTP ${res.status}`); err.status = res.status; throw err;
     }
     const fileData = await res.json();
-    const parsed = parseDatabaseScript(decodeGitHubContent(fileData.content));
+    let raw = '';
+    if (fileData.encoding === 'base64' && fileData.content) raw = decodeGitHubContent(fileData.content);
+    else if ((fileData.size || 0) > 0 && fileData.sha) raw = await fetchGitBlob(repo, fileData.sha, token);
+    const parsed = parseDatabaseScript(raw);
     return { sha: fileData.sha, ...parsed };
 }
 function getPostById(id) {
