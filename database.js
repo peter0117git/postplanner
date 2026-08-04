@@ -1088,22 +1088,22 @@ var externalDB = {
     {
       "_id": "p_1785738536499_3drv",
       "caption": "<div>【早上只讀一點點】 《你就是困住自己的那座山》</div><div><br></div>",
-      "time": "08:00",
+      "time": "20:00",
       "canvaUrl": "https://www.canva.com/design/DAHIqi-yONc/65fkKo4j1LRTKFBSvPF2rQ/view?utm_content=DAHIqi-yONc&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h63a83d9e70",
       "ratio": "4-5"
     },
     {
       "_id": "p_1785738915256_56dy",
-      "caption": "<div>【圖文時間】 《希望溫暖你的每一天(精采夜光版)》</div><div><br></div>",
-      "time": "18:00",
+      "caption": "<div>【早上只讀一點點】 《希望溫暖你的每一天(精采夜光版)》</div><div><br></div>",
+      "time": "08:00",
       "canvaUrl": "https://www.canva.com/design/DAHPbqxce5c/KlYPQFMyxFO9ZN5Zx99IkA/view?utm_content=DAHPbqxce5c&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h240e483ba4",
-      "ratio": "4-5"
+      "ratio": "1-1"
     },
     {
-      "_id": "p_1785739006224_oywc",
-      "caption": "<div>【晚上多讀一點點】 《接近無限透明的藍(出版半世紀紀念版)》</div><div><br></div>",
-      "time": "20:00",
-      "canvaUrl": "https://www.canva.com/design/DAHPPgqx7PI/HqL65x617pU0C2BjHtO3KQ/view?utm_content=DAHPPgqx7PI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hfdd57f84a8",
+      "_id": "p_1785824272467_75wv",
+      "caption": "<div>【圖文時間】 《幸福就是吃飯睡覺等待》</div><div><br></div>",
+      "time": "18:00",
+      "canvaUrl": "https://www.canva.com/design/DAHJV0dycls/JLEdF41sggrElNFRAAPNdA/view?utm_content=DAHJV0dycls&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h4a9326beb5",
       "ratio": "4-5"
     }
   ],
@@ -1118,7 +1118,7 @@ var externalDB = {
     {
       "_id": "p_1785739047496_uzj3",
       "caption": "<div>【圖文時間】 《一次又一次又一次地重新開始》</div><div><br></div>",
-      "time": "09:00",
+      "time": "18:00",
       "canvaUrl": "https://www.canva.com/design/DAHQGHvfi-A/aKa_FAH8l28FL0kYu5d3QA/view?utm_content=DAHQGHvfi-A&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h3c68affc26",
       "ratio": "4-5"
     },
