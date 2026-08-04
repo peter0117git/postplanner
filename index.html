@@ -2,7 +2,7 @@
 <html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>排版桌 — IG Post Planner</title>
     <script src="database.js" onerror="console.log('尚未偵測到 database.js')"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -249,6 +249,8 @@
             padding: 1px 5px; border-radius: 2px; border: 1px solid var(--paper-line); color: var(--ink-faint);
         }
         .post-card-tag.has-canva { color: #6B2EC8; border-color: #C9A8F0; background: #F5EFFE; }
+        .post-card-tag.status-ready { color: var(--green-stamp); border-color: #9FC8BC; background: #EEF7F3; }
+        .post-card-tag.status-published { color: #2A4F6B; border-color: #A8C1D3; background: #EFF5F8; }
 
         .day-list-empty {
             padding: 40px 16px; text-align: center;
@@ -264,6 +266,7 @@
             font-family: var(--font-display); text-align: center; line-height: 1.7;
         }
         body.presenting .no-post-msg { display: none !important; }
+        body.presenting .mobile-nav { display: none !important; }
 
         /* 編輯區（右側 sidebar） */
         .editor-container {
@@ -280,6 +283,7 @@
             letter-spacing: 0.5px; margin-bottom: 10px; padding-bottom: 7px; border-bottom: 1px solid var(--paper-line);
         }
         .form-row { display: flex; gap: 8px; }
+        .form-row + .form-row { margin-top: 9px; }
         .form-group { display: flex; flex-direction: column; gap: 4px; flex: 1; }
         .form-group label { font-size: 10px; color: var(--ink-faint); font-weight: 700; }
         .form-group input, .form-group select {
@@ -384,6 +388,19 @@
             box-shadow: 0 8px 28px rgba(0,0,0,0.09);
         }
         body.presenting .ig-card { max-width: 420px; }
+        .present-nav {
+            display: none; width: 100%; max-width: 420px; margin-bottom: 10px;
+            align-items: center; justify-content: center; gap: 10px;
+        }
+        body.presenting .preview-pane { flex-direction: column; align-items: center; }
+        body.presenting .present-nav { display: flex; }
+        .present-nav-btn {
+            width: 34px; height: 30px; border: 1px solid var(--paper-line); border-radius: 5px;
+            background: var(--paper-raised); color: var(--ink-soft); cursor: pointer; font-size: 11px;
+        }
+        .present-nav-btn:hover:not(:disabled) { color: var(--green-stamp); border-color: var(--green-stamp); }
+        .present-nav-btn:disabled { opacity: 0.35; cursor: not-allowed; }
+        .present-nav-label { min-width: 72px; text-align: center; font-family: var(--font-mono); font-size: 10px; color: var(--ink-faint); }
         .ig-topbar { padding: 10px 12px; display: flex; align-items: center; gap: 9px; border-bottom: 1px solid #f0f0f0; }
         .ig-avatar-ring { width: 34px; height: 34px; border-radius: 50%; background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); padding: 2px; flex-shrink: 0; }
         .ig-avatar-inner { width: 100%; height: 100%; border-radius: 50%; background: #e2e8f0; border: 2px solid white; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; color: #475569; }
@@ -426,6 +443,23 @@
         /* 手機專用：桌面隱藏 */
         .mobile-header, .mobile-nav { display: none; }
 
+        /* 平板／小型筆電：收窄固定欄位，避免中央預覽被擠壓 */
+        @media (min-width: 768px) and (max-width: 1100px) {
+            .topbar { padding: 0 14px; gap: 10px; }
+            .brand-sub { display: none; }
+            .day-col { width: 300px; }
+            .editor-container { width: 340px; min-width: 340px; }
+            .preview-pane { padding: 20px 14px; }
+        }
+
+        /* 窄平板編輯時先保留清單與編輯器；簡報時仍顯示完整預覽 */
+        @media (min-width: 768px) and (max-width: 900px) {
+            .preview-pane { display: none !important; }
+            .editor-container { width: auto; min-width: 0; flex: 1; }
+            body.presenting .main-content { display: flex !important; }
+            body.presenting #preview-ui { display: flex !important; }
+        }
+
         /* =====================================================
            手機版
         ===================================================== */
@@ -433,6 +467,11 @@
             body { flex-direction: column; }
             .topbar { padding: 0 14px; gap: 10px; }
             .brand-sub { display: none; }
+            .save-status, .topbar-right .topbar-divider { display: none; }
+            .topbar-right .ghost-github, .topbar-right .present-btn { width: 34px; padding: 6px 4px; font-size: 0; }
+            .topbar-right .ghost-github::before { content: '☁'; font-size: 14px; }
+            .topbar-right .present-btn::before { content: '🖥'; font-size: 14px; }
+            body.presenting .topbar-right .present-btn::before { content: '✕'; }
             .day-range-label { font-size: 12px; }
             .app-body { flex-direction: column; overflow: hidden; }
             .day-col { width: 100%; border-right: none; border-bottom: 1px solid var(--paper-line); height: auto; max-height: 55vh; display: none; }
@@ -441,6 +480,8 @@
             .main-content.mobile-visible { display: flex; }
             #editor-ui { display: none !important; }
             .main-content.mobile-visible #preview-ui { display: flex !important; flex: 1; }
+            body.presenting .main-content { display: flex !important; }
+            body.presenting #preview-ui { display: flex !important; }
             .mobile-header { display: flex; }
             .mobile-nav { display: flex; height: 52px; background: var(--paper-raised); border-top: 1px solid var(--paper-line); flex-shrink: 0; }
             .mobile-nav-btn { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; background: none; border: none; cursor: pointer; font-size: 18px; color: var(--ink-soft); }
@@ -467,12 +508,12 @@
 
     <!-- 日期導覽：點中間標籤開日曆；左右箭頭換天 -->
     <div style="display:flex; align-items:center; gap:4px;">
-        <button class="day-range-nav" onclick="changeDay(-1)" title="前一天">◀</button>
+        <button class="day-range-nav" onclick="changeDay(-1)" title="前一天" aria-label="前一天">◀</button>
         <button class="day-range-btn" onclick="toggleCalOverlay()" id="day-range-btn" title="選擇日期">
             <span class="day-range-cal-icon">📅</span>
             <span class="day-range-label" id="day-range-label">載入中…</span>
         </button>
-        <button class="day-range-nav" onclick="changeDay(1)" title="後一天">▶</button>
+        <button class="day-range-nav" onclick="changeDay(1)" title="後一天" aria-label="後一天">▶</button>
     </div>
 
     <div class="topbar-right">
@@ -488,7 +529,7 @@
 ===================================================== -->
 <div class="cal-overlay" id="cal-overlay">
     <div class="cal-backdrop" onclick="closeCalOverlay()"></div>
-    <div class="cal-popup">
+    <div class="cal-popup" role="dialog" aria-modal="true" aria-labelledby="cal-popup-title">
         <div class="cal-popup-header">
             <button class="cal-nav-btn" onclick="changeCalMonth(-1)">◀</button>
             <h2 id="cal-popup-title"></h2>
@@ -510,12 +551,12 @@
 ===================================================== -->
 <div class="gh-overlay" id="gh-overlay">
     <div class="gh-backdrop" onclick="closeGhOverlay()"></div>
-    <div class="gh-popup">
-        <h3>☁ GitHub 雲端同步</h3>
+    <div class="gh-popup" role="dialog" aria-modal="true" aria-labelledby="gh-popup-title">
+        <h3 id="gh-popup-title">☁ GitHub 雲端同步</h3>
         <div class="config-warning">Token 僅存於本機瀏覽器。請使用僅限該 repo「Contents 讀寫」的 Fine-grained Token。</div>
         <div class="token-input-row">
             <input type="password" id="gh-token" placeholder="GitHub Fine-grained Token" onchange="saveGitConfig()">
-            <button type="button" class="token-toggle-btn" id="token-toggle" onclick="toggleTokenVisibility()">👁</button>
+            <button type="button" class="token-toggle-btn" id="token-toggle" onclick="toggleTokenVisibility()" aria-label="顯示或隱藏 Token">👁</button>
         </div>
         <input type="text" id="gh-repo" placeholder="使用者名稱/儲存庫名稱" onchange="saveGitConfig()">
         <button class="github-sync-btn" id="sync-btn" onclick="syncToGitHub()">儲存並同步到 GitHub</button>
@@ -532,9 +573,9 @@
 ===================================================== -->
 <div class="quickadd-overlay" id="quickadd-overlay">
     <div class="quickadd-backdrop" onclick="closeQuickAdd()"></div>
-    <div class="quickadd-popup">
+    <div class="quickadd-popup" role="dialog" aria-modal="true" aria-labelledby="quickadd-title">
         <div class="quickadd-header">
-            <h2>✎ 快速新增貼文</h2>
+            <h2 id="quickadd-title">✎ 快速新增貼文</h2>
             <button class="cal-nav-btn" onclick="closeQuickAdd()">✕</button>
         </div>
         <div class="qa-body">
@@ -616,6 +657,11 @@
 
         <!-- IG 預覽（置中） -->
         <div class="preview-pane" id="preview-ui" style="display:none">
+            <div class="present-nav" id="present-nav">
+                <button class="present-nav-btn" id="present-prev" onclick="changePresentationPost(-1)" title="上一則貼文">◀</button>
+                <span class="present-nav-label" id="present-nav-label">0 / 0</span>
+                <button class="present-nav-btn" id="present-next" onclick="changePresentationPost(1)" title="下一則貼文">▶</button>
+            </div>
             <div class="ig-card">
                 <div class="ig-topbar">
                     <div class="ig-avatar-ring"><div class="ig-avatar-inner" id="prev-avatar-text">大</div></div>
@@ -660,6 +706,26 @@
                                 <option value="1-1">1:1 正方形</option>
                                 <option value="4-5">4:5 直式</option>
                                 <option value="16-9">16:9 橫式</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>主題</label>
+                            <input type="text" id="edit-theme" placeholder="例如：圖文時間" oninput="updateCurrentPost('theme', this.value)">
+                        </div>
+                        <div class="form-group">
+                            <label>書名／標題</label>
+                            <input type="text" id="edit-title" placeholder="例如：一次又一次地重新開始" oninput="updateCurrentPost('title', this.value)">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>製作狀態</label>
+                            <select id="edit-status" onchange="updateCurrentPost('status', this.value)">
+                                <option value="draft">草稿</option>
+                                <option value="ready">已完成</option>
+                                <option value="published">已發布</option>
                             </select>
                         </div>
                     </div>
@@ -720,7 +786,7 @@
 </div>
 
 <!-- Modal -->
-<div class="modal-overlay" id="confirm-modal">
+<div class="modal-overlay" id="confirm-modal" role="dialog" aria-modal="true" aria-labelledby="confirm-modal-text">
     <div class="modal-box">
         <p id="confirm-modal-text">確定要執行此操作？</p>
         <div class="modal-actions">
@@ -742,12 +808,20 @@
    狀態
 ============================================================= */
 let db = {};
+let dbMeta = { schemaVersion: 2, updatedAt: null, tombstones: {} };
 let selectedDateStr = null;
 let currentId = null;
 let isIGExpanded = false;
 let saveStatusTimer;
+let localSaveTimer;
+let dayRenderTimer;
+let lastRenderedMediaKey = null;
 let pendingConfirmResolve = null;
 let calYear, calMonth;     // 日曆浮動視窗的當前年月
+const DB_SCHEMA_VERSION = 2;
+const VALID_RATIOS = new Set(['1-1', '4-5', '16-9']);
+const VALID_STATUSES = new Set(['draft', 'ready', 'published']);
+const STATUS_LABELS = { draft: '草稿', ready: '已完成', published: '已發布' };
 
 /* =============================================================
    Toast / Modal
@@ -778,7 +852,29 @@ function markSaved() {
     clearTimeout(saveStatusTimer);
     saveStatusTimer = setTimeout(() => { el.innerText = '自動存本機'; el.classList.remove('saved'); }, 2000);
 }
-function saveLocal() { localStorage.setItem('planner_db', JSON.stringify(db)); markSaved(); }
+function persistLocal() {
+    clearTimeout(localSaveTimer); localSaveTimer = null;
+    try {
+        localStorage.setItem('planner_db', JSON.stringify(db));
+        localStorage.setItem('planner_meta', JSON.stringify(dbMeta));
+        markSaved();
+    } catch (err) {
+        showToast('本機儲存失敗，可能已超過瀏覽器容量');
+        console.error(err);
+    }
+}
+function saveLocal({ debounce = false, touchDatabase = true } = {}) {
+    if (touchDatabase) dbMeta.updatedAt = new Date().toISOString();
+    if (!debounce) { persistLocal(); return; }
+    const el = document.getElementById('save-status');
+    el.innerText = '儲存中…'; el.classList.remove('saved');
+    clearTimeout(localSaveTimer);
+    localSaveTimer = setTimeout(persistLocal, 280);
+}
+function scheduleDayRender() {
+    clearTimeout(dayRenderTimer);
+    dayRenderTimer = setTimeout(renderDay, 300);
+}
 
 /* =============================================================
    浮動視窗：日曆
@@ -788,7 +884,7 @@ function toggleCalOverlay() {
     if (overlay.classList.contains('open')) { closeCalOverlay(); return; }
     // 初始化到「選定日期」所在月份
     if (selectedDateStr) {
-        const d = new Date(selectedDateStr);
+        const d = new Date(selectedDateStr + 'T00:00:00');
         calYear = d.getFullYear(); calMonth = d.getMonth();
     } else {
         const now = new Date();
@@ -826,6 +922,7 @@ function renderCalPopup() {
         const dateStr = `${calYear}-${String(calMonth + 1).padStart(2, '0')}-${String(d).padStart(2, '0')}`;
         const div = document.createElement('div');
         div.className = 'cal-day';
+        div.tabIndex = 0; div.setAttribute('role', 'button'); div.setAttribute('aria-label', `${calMonth + 1} 月 ${d} 日`);
         if (dateStr === selectedDateStr) div.classList.add('selected');
         if (dateStr === todayStr) div.classList.add('today');
         const numSpan = document.createElement('span');
@@ -837,6 +934,7 @@ function renderCalPopup() {
             div.appendChild(badge);
         }
         div.onclick = () => { selectDate(dateStr); closeCalOverlay(); };
+        div.onkeydown = e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); div.click(); } };
         container.appendChild(div);
     }
 }
@@ -866,28 +964,38 @@ async function syncToGitHub() {
     const repo = localStorage.getItem('gh_repo');
     const btn = document.getElementById('sync-btn');
     if (!token || !repo) { showToast('請先填寫完整 GitHub 設定'); return; }
+    persistLocal();
     btn.disabled = true; btn.innerText = '同步中…'; btn.style.backgroundColor = 'var(--amber-flag)';
     const url = `https://api.github.com/repos/${repo}/contents/database.js`;
-    const content = btoa(unescape(encodeURIComponent('var externalDB = ' + JSON.stringify(db, null, 2) + ';')));
     try {
-        let sha = null;
-        const g = await fetch(url, { headers: { 'Authorization': `token ${token}`, 'Accept': 'application/vnd.github+json' } });
-        if (g.status === 200) sha = (await g.json()).sha;
-        const p = await fetch(url, {
-            method: 'PUT',
-            headers: { 'Authorization': `token ${token}`, 'Content-Type': 'application/json', 'Accept': 'application/vnd.github+json' },
-            body: JSON.stringify({ message: `排版更新: ${new Date().toLocaleString()}`, content, sha })
-        });
-        if (p.ok) {
-            const pd = await p.json().catch(() => ({}));
-            if (pd.content?.sha) localStorage.setItem('gh_last_sync_sha', pd.content.sha);
+        let completed = false;
+        for (let attempt = 0; attempt < 2 && !completed; attempt++) {
+            const remote = await fetchGitDatabase(repo, token);
+            const merged = mergeDatabases(db, remote.db, dbMeta, remote.meta);
+            db = merged.db; dbMeta = merged.meta;
+            dbMeta.updatedAt = new Date().toISOString();
+            const content = btoa(unescape(encodeURIComponent(serializeDatabaseScript(db, dbMeta))));
+            const body = { message: `排版更新: ${new Date().toLocaleString()}`, content };
+            if (remote.sha) body.sha = remote.sha;
+            const response = await fetch(url, {
+                method: 'PUT',
+                headers: { 'Authorization': `Bearer ${token}`, 'Content-Type': 'application/json', 'Accept': 'application/vnd.github+json' },
+                body: JSON.stringify(body)
+            });
+            if ((response.status === 409 || response.status === 422) && attempt === 0) continue;
+            if (!response.ok) {
+                const errorBody = await response.json().catch(() => ({}));
+                const error = new Error(errorBody.message || `HTTP ${response.status}`); error.status = response.status; throw error;
+            }
+            const result = await response.json().catch(() => ({}));
+            if (result.content?.sha) localStorage.setItem('gh_last_sync_sha', result.content.sha);
             localStorage.setItem('planner_db_saved_at', new Date().toISOString());
-            btn.style.backgroundColor = 'var(--green-stamp)'; btn.innerText = '✓ 同步成功！';
-            setTimeout(() => { btn.disabled = false; btn.style.backgroundColor = 'var(--ink)'; btn.innerText = '儲存並同步到 GitHub'; }, 1500);
-        } else {
-            const e = await p.json().catch(() => ({}));
-            throw new Error(e.message || `HTTP ${p.status}`);
+            persistLocal(); renderDay();
+            if (currentId && getPostById(currentId)) loadPost(currentId);
+            completed = true;
         }
+        btn.style.backgroundColor = 'var(--green-stamp)'; btn.innerText = '✓ 合併並同步成功！';
+        setTimeout(() => { btn.disabled = false; btn.style.backgroundColor = 'var(--ink)'; btn.innerText = '儲存並同步到 GitHub'; }, 1500);
     } catch (err) {
         showToast('同步失敗：' + (err.message || '請確認設定'));
         btn.disabled = false; btn.style.backgroundColor = 'var(--ink)'; btn.innerText = '儲存並同步到 GitHub';
@@ -899,23 +1007,54 @@ async function syncToGitHub() {
 ============================================================= */
 function togglePresenting() {
     document.body.classList.toggle('presenting');
-    const isPresenting = document.body.classList.contains('presenting');
+    let isPresenting = document.body.classList.contains('presenting');
+    if (isPresenting && getSortedDayPosts().length === 0) {
+        document.body.classList.remove('presenting');
+        isPresenting = false;
+        showToast('這一天尚無貼文可供簡報');
+    }
     document.getElementById('present-btn').innerText = isPresenting ? '✕ 結束簡報' : '🖥 簡報';
     if (isPresenting && currentId === null && selectedDateStr) {
-        const list = [...(db[selectedDateStr] || [])].sort((a, b) => (a.time || '00:00').localeCompare(b.time || '00:00'));
+        const list = getSortedDayPosts();
         if (list.length > 0) loadPost(list[0]._id);
     }
+    if (isPresenting && isMobile()) mobileShowPanel('preview');
+    updatePresentationNav();
+}
+function getSortedDayPosts() {
+    return [...(selectedDateStr ? db[selectedDateStr] || [] : [])]
+        .sort((a, b) => (a.time || '00:00').localeCompare(b.time || '00:00'));
+}
+function updatePresentationNav() {
+    const list = getSortedDayPosts();
+    const index = list.findIndex(p => p._id === currentId);
+    document.getElementById('present-nav-label').innerText = list.length ? `${Math.max(index, 0) + 1} / ${list.length}` : '0 / 0';
+    document.getElementById('present-prev').disabled = index <= 0;
+    document.getElementById('present-next').disabled = index < 0 || index >= list.length - 1;
+}
+function changePresentationPost(dir) {
+    const list = getSortedDayPosts();
+    const index = list.findIndex(p => p._id === currentId);
+    const next = list[index + dir];
+    if (next) loadPost(next._id);
 }
 
 /* =============================================================
    備份
 ============================================================= */
 function exportBackup() {
+    persistLocal();
+    const payload = {
+        app: '排版桌', schemaVersion: DB_SCHEMA_VERSION, exportedAt: new Date().toISOString(),
+        db, meta: dbMeta
+    };
+    const backupUrl = URL.createObjectURL(new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' }));
     const a = Object.assign(document.createElement('a'), {
-        href: URL.createObjectURL(new Blob([JSON.stringify(db, null, 2)], { type: 'application/json' })),
+        href: backupUrl,
         download: `planner-backup-${new Date().toISOString().slice(0, 10)}.json`
     });
     document.body.appendChild(a); a.click(); document.body.removeChild(a);
+    setTimeout(() => URL.revokeObjectURL(backupUrl), 1000);
     showToast('已匯出備份'); closeGhOverlay();
 }
 function importBackup(event) {
@@ -924,12 +1063,15 @@ function importBackup(event) {
     reader.onload = async (e) => {
         try {
             const parsed = JSON.parse(e.target.result);
+            const incomingDb = normalizeDatabase(parsed?.db && typeof parsed.db === 'object' ? parsed.db : parsed, { strict: true });
+            const incomingMeta = normalizeMeta(parsed?.meta || {});
             const ok = await showConfirm('匯入備份將覆蓋目前所有本機資料，確定繼續嗎？');
             if (!ok) { event.target.value = ''; return; }
-            db = parsed; migrateIds(); saveLocal(); renderDay();
+            db = incomingDb; dbMeta = incomingMeta; dbMeta.updatedAt = new Date().toISOString();
+            saveLocal(); renderDay();
             if (selectedDateStr) selectDate(selectedDateStr);
             showToast('備份已匯入');
-        } catch { showToast('匯入失敗：格式不正確'); }
+        } catch (err) { console.error(err); showToast('匯入失敗：格式不正確，原資料未變更'); }
         event.target.value = '';
     };
     reader.readAsText(file);
@@ -938,17 +1080,141 @@ function importBackup(event) {
 /* =============================================================
    資料庫
 ============================================================= */
-function migrateIds() {
-    Object.values(db).forEach(arr => {
+function newPostId() { return 'p_' + Date.now() + '_' + Math.random().toString(36).slice(2, 8); }
+function validIso(value) { return typeof value === 'string' && !Number.isNaN(Date.parse(value)) ? value : null; }
+function cloneJson(value) { return JSON.parse(JSON.stringify(value)); }
+function normalizeMeta(value) {
+    const raw = value && typeof value === 'object' && !Array.isArray(value) ? value : {};
+    const tombstones = {};
+    if (raw.tombstones && typeof raw.tombstones === 'object' && !Array.isArray(raw.tombstones)) {
+        Object.entries(raw.tombstones).forEach(([id, time]) => {
+            const validTime = validIso(time);
+            if (id && validTime) tombstones[id] = validTime;
+        });
+    }
+    return {
+        schemaVersion: DB_SCHEMA_VERSION,
+        updatedAt: validIso(raw.updatedAt),
+        tombstones
+    };
+}
+function normalizeDatabase(value, { strict = true } = {}) {
+    if (!value || typeof value !== 'object' || Array.isArray(value)) {
+        if (strict) throw new Error('資料庫必須是以日期分類的物件');
+        return {};
+    }
+    const normalized = {};
+    Object.entries(value).forEach(([dateStr, list]) => {
+        if (!/^\d{4}-\d{2}-\d{2}$/.test(dateStr) || !Array.isArray(list)) {
+            if (strict) throw new Error(`日期 ${dateStr} 的格式不正確`);
+            return;
+        }
+        normalized[dateStr] = list.filter(p => p && typeof p === 'object' && !Array.isArray(p)).map(p => ({ ...cloneJson(p) }));
+    });
+    migrateIds(normalized);
+    return normalized;
+}
+function migrateIds(target = db) {
+    const seenIds = new Set();
+    Object.values(target).forEach(arr => {
         if (!Array.isArray(arr)) return;
         arr.forEach(p => {
-            if (!p._id) p._id = 'p_' + Date.now() + '_' + Math.random().toString(36).slice(2, 6);
-            if (!p.canvaUrl) {
-                if (Array.isArray(p.img) && p.img.length > 0) p.canvaUrl = p.img[0];
-                else p.canvaUrl = '';
+            if (!p._id || seenIds.has(p._id)) p._id = newPostId();
+            seenIds.add(p._id);
+            if (!p.canvaUrl) p.canvaUrl = Array.isArray(p.img) && p.img.length > 0 ? p.img[0] : '';
+            p.time = /^([01]\d|2[0-3]):[0-5]\d$/.test(p.time || '') ? p.time : '09:00';
+            p.ratio = VALID_RATIOS.has(p.ratio) ? p.ratio : '1-1';
+            p.status = VALID_STATUSES.has(p.status) ? p.status : 'draft';
+            p.caption = sanitizeCaptionHtml(p.caption || '');
+            const plain = getPlainText(p.caption);
+            const themeMatch = plain.match(/【([^】]+)】/);
+            const titleMatch = plain.match(/《([^》]+)》/);
+            if (typeof p.theme !== 'string') p.theme = themeMatch ? themeMatch[1].trim() : '';
+            if (typeof p.title !== 'string') p.title = titleMatch ? titleMatch[1].trim() : '';
+            p.createdAt = validIso(p.createdAt);
+            p.updatedAt = validIso(p.updatedAt);
+        });
+    });
+}
+function serializeDatabaseScript(database = db, meta = dbMeta) {
+    return 'var externalDB = ' + JSON.stringify(database, null, 2) + ';\n' +
+        'var externalDBMeta = ' + JSON.stringify(meta, null, 2) + ';';
+}
+function parseDatabaseScript(raw) {
+    const text = String(raw || '').trim();
+    const marker = '\nvar externalDBMeta = ';
+    const markerIndex = text.indexOf(marker);
+    let dbText = markerIndex >= 0 ? text.slice(0, markerIndex) : text;
+    let metaText = markerIndex >= 0 ? text.slice(markerIndex + marker.length) : '';
+    dbText = dbText.replace(/^var\s+externalDB\s*=\s*/, '').replace(/;\s*$/, '');
+    metaText = metaText.replace(/;\s*$/, '');
+    return {
+        db: normalizeDatabase(JSON.parse(dbText), { strict: true }),
+        meta: metaText ? normalizeMeta(JSON.parse(metaText)) : normalizeMeta({})
+    };
+}
+function timestampOf(post) { return Date.parse(post?.updatedAt || post?.createdAt || '') || 0; }
+function mergeDatabases(localDb, remoteDb, localMeta, remoteMeta) {
+    const records = new Map();
+    const stats = { localOnly: 0, remoteOnly: 0, remoteNewer: 0, localNewer: 0 };
+    const add = (source, sourceDb) => Object.entries(sourceDb).forEach(([dateStr, list]) => {
+        list.forEach(post => {
+            const existing = records.get(post._id);
+            if (!existing) {
+                records.set(post._id, { dateStr, post: cloneJson(post), source });
+                stats[source === 'local' ? 'localOnly' : 'remoteOnly']++;
+                return;
+            }
+            if (source === 'remote') {
+                stats.localOnly = Math.max(0, stats.localOnly - 1);
+                const localTime = timestampOf(existing.post);
+                const remoteTime = timestampOf(post);
+                if (remoteTime > localTime) {
+                    records.set(post._id, { dateStr, post: cloneJson(post), source });
+                    stats.remoteNewer++;
+                } else {
+                    stats.localNewer++;
+                }
             }
         });
     });
+    add('local', normalizeDatabase(localDb, { strict: false }));
+    add('remote', normalizeDatabase(remoteDb, { strict: false }));
+
+    const mergedMeta = normalizeMeta(localMeta);
+    const remoteNormalizedMeta = normalizeMeta(remoteMeta);
+    Object.entries(remoteNormalizedMeta.tombstones).forEach(([id, time]) => {
+        if (!mergedMeta.tombstones[id] || Date.parse(time) > Date.parse(mergedMeta.tombstones[id])) mergedMeta.tombstones[id] = time;
+    });
+    records.forEach((record, id) => {
+        const deletedAt = Date.parse(mergedMeta.tombstones[id] || '') || 0;
+        if (deletedAt && deletedAt >= timestampOf(record.post)) records.delete(id);
+        else if (deletedAt) delete mergedMeta.tombstones[id];
+    });
+
+    const mergedDb = {};
+    records.forEach(({ dateStr, post }) => {
+        if (!mergedDb[dateStr]) mergedDb[dateStr] = [];
+        mergedDb[dateStr].push(post);
+    });
+    const latestMetaTime = Math.max(Date.parse(localMeta?.updatedAt || '') || 0, Date.parse(remoteMeta?.updatedAt || '') || 0);
+    mergedMeta.updatedAt = latestMetaTime ? new Date(latestMetaTime).toISOString() : null;
+    return { db: mergedDb, meta: mergedMeta, stats };
+}
+function decodeGitHubContent(content) {
+    return decodeURIComponent(escape(atob(String(content || '').replace(/\n/g, ''))));
+}
+async function fetchGitDatabase(repo, token) {
+    const url = `https://api.github.com/repos/${repo}/contents/database.js?nocache=${Date.now()}`;
+    const res = await fetch(url, { headers: { 'Authorization': `Bearer ${token}`, 'Accept': 'application/vnd.github+json' } });
+    if (res.status === 404) return { sha: null, db: {}, meta: normalizeMeta({}) };
+    if (!res.ok) {
+        const body = await res.json().catch(() => ({}));
+        const err = new Error(body.message || `HTTP ${res.status}`); err.status = res.status; throw err;
+    }
+    const fileData = await res.json();
+    const parsed = parseDatabaseScript(decodeGitHubContent(fileData.content));
+    return { sha: fileData.sha, ...parsed };
 }
 function getPostById(id) {
     if (!selectedDateStr || id === null) return null;
@@ -956,30 +1222,32 @@ function getPostById(id) {
 }
 async function initDatabase() {
     const local = localStorage.getItem('planner_db');
-    if (local) { try { db = JSON.parse(local); } catch { db = {}; } }
-    else if (typeof externalDB !== 'undefined') db = externalDB;
+    const localMeta = localStorage.getItem('planner_meta');
+    if (local) {
+        try { db = normalizeDatabase(JSON.parse(local), { strict: true }); }
+        catch { db = {}; showToast('本機資料格式異常，已先開啟空白資料'); }
+    } else if (typeof externalDB !== 'undefined') {
+        db = normalizeDatabase(externalDB, { strict: false });
+    }
+    try {
+        dbMeta = normalizeMeta(localMeta ? JSON.parse(localMeta) : (typeof externalDBMeta !== 'undefined' ? externalDBMeta : {}));
+    } catch { dbMeta = normalizeMeta({}); }
     const token = localStorage.getItem('gh_token');
     const repo = localStorage.getItem('gh_repo');
     if (!token || !repo) return;
     try {
-        const res = await fetch(`https://api.github.com/repos/${repo}/contents/database.js?nocache=${Date.now()}`, {
-            headers: { 'Authorization': `token ${token}`, 'Accept': 'application/vnd.github+json' }
-        });
-        if (!res.ok) { if (res.status === 401 || res.status === 403) showToast('GitHub Token 無效，已改用本機'); return; }
-        const fd = await res.json();
-        const raw = decodeURIComponent(escape(atob(fd.content.replace(/\n/g, ''))));
-        const remote = JSON.parse(raw.replace(/var\s+externalDB\s*=\s*/, '').replace(/;\s*$/, ''));
+        const remote = await fetchGitDatabase(repo, token);
         const lastSha = localStorage.getItem('gh_last_sync_sha');
-        if (fd.sha === lastSha) { showToast('已是最新資料'); return; }
-        const localKeys = Object.keys(db).length;
-        const remoteKeys = Object.keys(remote).length;
-        const savedAt = localStorage.getItem('planner_db_saved_at');
-        if (savedAt && localKeys > remoteKeys) { showToast('本機有未同步資料，請手動同步'); return; }
-        db = remote; migrateIds();
-        localStorage.setItem('planner_db', JSON.stringify(db));
-        localStorage.setItem('gh_last_sync_sha', fd.sha);
-        showToast('已從 GitHub 載入最新資料');
-    } catch (e) { console.error(e); showToast('連線 GitHub 失敗，已改用本機'); }
+        if (remote.sha === lastSha && Object.keys(db).length > 0) { showToast('已是最新資料'); return; }
+        const merged = mergeDatabases(db, remote.db, dbMeta, remote.meta);
+        db = merged.db; dbMeta = merged.meta;
+        persistLocal();
+        if (remote.sha) localStorage.setItem('gh_last_sync_sha', remote.sha);
+        showToast(merged.stats.remoteOnly + merged.stats.remoteNewer > 0 ? '已合併 GitHub 的新資料' : '已核對 GitHub 資料');
+    } catch (e) {
+        console.error(e);
+        showToast(e.status === 401 || e.status === 403 ? 'GitHub Token 無效，已改用本機' : '連線 GitHub 失敗，已改用本機');
+    }
 }
 
 /* =============================================================
@@ -999,7 +1267,7 @@ function renderDay() {
     const dStr = selectedDateStr;
     const todayStr = fmtDate(new Date());
     const isToday = dStr === todayStr;
-    const posts = [...(db[dStr] || [])].sort((a, b) => (a.time||'00:00').localeCompare(b.time||'00:00'));
+    const posts = getSortedDayPosts();
 
     // topbar 日期標籤
     document.getElementById('day-range-label').innerText =
@@ -1027,7 +1295,9 @@ function renderDay() {
 
             const pc = document.createElement('div');
             pc.className = 'post-card' + (post._id === currentId ? ' active' : '');
+            pc.tabIndex = 0; pc.setAttribute('role', 'button');
             pc.onclick = () => loadPost(post._id);
+            pc.onkeydown = e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); pc.click(); } };
 
             const timeEl = document.createElement('div');
             timeEl.className = 'post-card-time'; timeEl.innerText = post.time || '??:??';
@@ -1037,11 +1307,12 @@ function renderDay() {
 
             const titleEl = document.createElement('div');
             titleEl.className = 'post-card-title';
-            titleEl.innerText = plain.slice(0, 30) || '（無內文）';
+            const structuredTitle = [post.theme ? `【${post.theme}】` : '', post.title ? `《${post.title}》` : ''].filter(Boolean).join(' ');
+            titleEl.innerText = structuredTitle || plain.slice(0, 30) || '（無內文）';
 
             const previewEl = document.createElement('div');
             previewEl.className = 'post-card-preview';
-            previewEl.innerText = plain.length > 30 ? plain.slice(30, 100) : '';
+            previewEl.innerText = structuredTitle ? plain.slice(0, 100) : (plain.length > 30 ? plain.slice(30, 100) : '');
 
             const metaEl = document.createElement('div');
             metaEl.className = 'post-card-meta';
@@ -1051,6 +1322,11 @@ function renderDay() {
             ratioTag.innerText = ratio === '1-1' ? '1:1' : ratio === '4-5' ? '4:5' : '16:9';
             metaEl.appendChild(ratioTag);
 
+            const statusTag = document.createElement('span');
+            statusTag.className = 'post-card-tag' + (post.status === 'ready' ? ' status-ready' : post.status === 'published' ? ' status-published' : '');
+            statusTag.innerText = STATUS_LABELS[post.status] || STATUS_LABELS.draft;
+            metaEl.appendChild(statusTag);
+
             if (hasCanva) {
                 const canvaTag = document.createElement('span');
                 canvaTag.className = 'post-card-tag has-canva';
@@ -1059,7 +1335,7 @@ function renderDay() {
             }
 
             bodyEl.appendChild(titleEl);
-            if (plain.length > 30) bodyEl.appendChild(previewEl);
+            if (previewEl.innerText) bodyEl.appendChild(previewEl);
             bodyEl.appendChild(metaEl);
 
             pc.appendChild(timeEl); pc.appendChild(bodyEl);
@@ -1069,6 +1345,7 @@ function renderDay() {
 
     // 同步更新日曆浮動視窗（如果開著）
     if (document.getElementById('cal-overlay').classList.contains('open')) renderCalPopup();
+    updatePresentationNav();
 }
 
 function changeDay(dir) {
@@ -1088,11 +1365,12 @@ function selectDate(dateStr) {
     // 自動選第一則貼文
     const list = [...(db[dateStr] || [])].sort((a, b) => (a.time||'00:00').localeCompare(b.time||'00:00'));
     if (list.length > 0) loadPost(list[0]._id);
+    else if (document.body.classList.contains('presenting')) togglePresenting();
     if (isMobile()) mobileShowPanel('day');
 }
 
 const _scratch = document.createElement('div');
-function getPlainText(html) { _scratch.innerHTML = html; return _scratch.innerText || ''; }
+function getPlainText(html) { _scratch.innerHTML = sanitizeCaptionHtml(html); return _scratch.innerText || ''; }
 
 /* =============================================================
    編輯器開關
@@ -1112,9 +1390,13 @@ function loadPost(id) {
     if (!post) return;
     document.getElementById('edit-time').value = post.time || '09:00';
     document.getElementById('edit-ratio').value = post.ratio || '1-1';
+    document.getElementById('edit-theme').value = post.theme || '';
+    document.getElementById('edit-title').value = post.title || '';
+    document.getElementById('edit-status').value = post.status || 'draft';
     document.getElementById('canva-url-input').value = post.canvaUrl || '';
     document.getElementById('edit-caption').innerHTML = post.caption || '';
     showEditor(true);
+    lastRenderedMediaKey = null;
     updatePreview();
     updateToolbarState();
     renderDay(); // 更新 active 樣式
@@ -1124,10 +1406,17 @@ function updateCurrentPost(field, value) {
     if (currentId === null) return;
     const post = getPostById(currentId);
     if (!post) return;
+    if (field === 'caption') value = sanitizeCaptionHtml(value);
+    if (field === 'ratio' && !VALID_RATIOS.has(value)) return;
+    if (field === 'status' && !VALID_STATUSES.has(value)) return;
     post[field] = value;
-    saveLocal();
+    const now = new Date().toISOString();
+    post.createdAt = post.createdAt || now;
+    post.updatedAt = now;
+    saveLocal({ debounce: field === 'caption' });
     updatePreview();
-    if (field !== 'caption') renderDay(); // caption 打字時不要每次重繪
+    if (field === 'caption') scheduleDayRender();
+    else renderDay();
 }
 
 /* =============================================================
@@ -1136,22 +1425,27 @@ function updateCurrentPost(field, value) {
 function createNewPost() {
     if (!selectedDateStr) return;
     if (!db[selectedDateStr]) db[selectedDateStr] = [];
-    const newId = 'p_' + Date.now() + '_' + Math.random().toString(36).slice(2, 6);
-    db[selectedDateStr].push({ _id: newId, caption: '', time: '09:00', canvaUrl: '', ratio: '1-1' });
+    const newId = newPostId();
+    const now = new Date().toISOString();
+    db[selectedDateStr].push({ _id: newId, caption: '', time: '09:00', canvaUrl: '', ratio: '1-1', theme: '', title: '', status: 'draft', createdAt: now, updatedAt: now });
     saveLocal(); renderDay(); loadPost(newId);
 }
 async function deletePost() {
     const ok = await showConfirm('確定刪除此貼文？此動作無法復原。');
     if (!ok) return;
+    dbMeta.tombstones[currentId] = new Date().toISOString();
     db[selectedDateStr] = db[selectedDateStr].filter(p => p._id !== currentId);
-    currentId = null; saveLocal(); renderDay(); showEditor(false);
+    currentId = null; saveLocal(); renderDay();
+    const remaining = getSortedDayPosts();
+    if (remaining.length) loadPost(remaining[0]._id);
+    else showEditor(false);
 }
 
 /* =============================================================
    快速新增貼文（模板化小視窗）
 ============================================================= */
 const QA_DEFAULT_THEMES = ['早上只讀一點點', '晚上多讀一點點', '圖文時間', '編輯內心戲'];
-const QA_DEFAULT_TIMES = ['08:00', '09:00', '18:00', '20:00'];
+const QA_DEFAULT_TIMES = ['08:00', '20:00', '23:00'];
 
 function qaEscapeHtml(s) {
     return String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -1177,19 +1471,23 @@ function qaAddStored(key, value) {
     if (!list.includes(value)) { list.push(value); localStorage.setItem(key, JSON.stringify(list)); }
 }
 function qaLoadThemeOptions() {
-    return Array.from(new Set([...QA_DEFAULT_THEMES, ...qaGetStored('qa_themes'), ...qaExtractTags(/【([^】]+)】/g)]));
+    const structured = Object.values(db).flatMap(list => (list || []).map(p => p.theme).filter(Boolean));
+    return Array.from(new Set([...QA_DEFAULT_THEMES, ...qaGetStored('qa_themes'), ...structured, ...qaExtractTags(/【([^】]+)】/g)]));
 }
 function qaLoadBookOptions() {
-    return Array.from(new Set([...qaGetStored('qa_books'), ...qaExtractTags(/《([^》]+)》/g)])).sort();
+    const structured = Object.values(db).flatMap(list => (list || []).map(p => p.title).filter(Boolean));
+    return Array.from(new Set([...qaGetStored('qa_books'), ...structured, ...qaExtractTags(/《([^》]+)》/g)])).sort();
 }
 function qaLoadCanvaHistory() {
     const items = [];
+    const seenUrls = new Set();
     Object.keys(db).sort().reverse().forEach(dateStr => {
         (db[dateStr] || []).forEach(p => {
-            if (!p.canvaUrl) return;
+            if (!p.canvaUrl || seenUrls.has(p.canvaUrl)) return;
+            seenUrls.add(p.canvaUrl);
             const plain = getPlainText(p.caption || '');
-            const themeM = plain.match(/【([^】]+)】/);
-            const titleM = plain.match(/《([^》]+)》/);
+            const themeM = p.theme ? [null, p.theme] : plain.match(/【([^】]+)】/);
+            const titleM = p.title ? [null, p.title] : plain.match(/《([^》]+)》/);
             let label = dateStr.slice(5).replace('-', '/') + ' ';
             if (themeM) label += `【${themeM[1]}】`;
             if (titleM) label += `《${titleM[1]}》`;
@@ -1251,8 +1549,9 @@ function submitQuickAdd() {
         : '';
 
     if (!db[selectedDateStr]) db[selectedDateStr] = [];
-    const newId = 'p_' + Date.now() + '_' + Math.random().toString(36).slice(2, 6);
-    db[selectedDateStr].push({ _id: newId, caption, time, canvaUrl, ratio });
+    const newId = newPostId();
+    const now = new Date().toISOString();
+    db[selectedDateStr].push({ _id: newId, caption, time, canvaUrl, ratio, theme, title, status: 'draft', createdAt: now, updatedAt: now });
 
     qaAddStored('qa_themes', theme);
     qaAddStored('qa_books', title);
@@ -1265,16 +1564,89 @@ function submitQuickAdd() {
    IG 預覽
 ============================================================= */
 function parseCanvaUrl(url) {
-    if (!url || (!url.includes('canva.com') && !url.includes('canva.link'))) return null;
-    const hashMatch = url.match(/#(\d+)\s*$/);
-    const page = hashMatch ? hashMatch[1] : null;
-    let base = url.split('#')[0].trim();
-    if (!/[?&]embed(=|&|$)/.test(base)) base += (base.includes('?') ? '&' : '?') + 'embed';
-    return { embedUrl: page ? `${base}#${page}` : base, page };
+    if (!url) return null;
+    try {
+        const parsed = new URL(url.trim());
+        const host = parsed.hostname.toLowerCase();
+        const isCanvaHost = host === 'canva.com' || host.endsWith('.canva.com') || host === 'canva.link' || host.endsWith('.canva.link');
+        if (parsed.protocol !== 'https:' || !isCanvaHost) return null;
+        const pageMatch = parsed.hash.match(/^#(\d+)$/);
+        const page = pageMatch ? pageMatch[1] : null;
+        parsed.hash = '';
+        let base = parsed.toString();
+        if (!/[?&]embed(?:=|&|$)/.test(base)) base += (base.includes('?') ? '&' : '?') + 'embed';
+        return { embedUrl: page ? `${base}#${page}` : base, page };
+    } catch { return null; }
 }
-function parseHashtags(html) {
-    if (!html) return '';
-    return html.replace(/#([^\s<>&"'，。、！？；：「」,.!?;:()\[\]《》]+)/g, '<span class="hashtag-link">#$1</span>');
+function isSafeColor(value) {
+    return typeof value === 'string' && /^(#[0-9a-f]{3,8}|rgba?\([\d\s.,%]+\)|[a-z]{3,20})$/i.test(value.trim());
+}
+function sanitizeCaptionHtml(html) {
+    const source = document.createElement('div');
+    source.innerHTML = String(html || '');
+    const allowed = new Set(['DIV', 'P', 'BR', 'B', 'STRONG', 'I', 'EM', 'U', 'S', 'STRIKE', 'SPAN', 'FONT']);
+    const forbidden = new Set(['SCRIPT', 'STYLE', 'IFRAME', 'OBJECT', 'EMBED', 'IMG', 'VIDEO', 'AUDIO', 'LINK', 'META', 'FORM', 'INPUT', 'BUTTON']);
+    const cleanNode = node => {
+        if (node.nodeType === Node.TEXT_NODE) return document.createTextNode(node.nodeValue || '');
+        if (node.nodeType !== Node.ELEMENT_NODE) return document.createDocumentFragment();
+        if (forbidden.has(node.tagName)) return document.createDocumentFragment();
+        if (!allowed.has(node.tagName)) {
+            const fragment = document.createDocumentFragment();
+            [...node.childNodes].forEach(child => fragment.appendChild(cleanNode(child)));
+            return fragment;
+        }
+        const clean = document.createElement(node.tagName === 'P' ? 'div' : node.tagName.toLowerCase());
+        if (node.tagName === 'DIV' && ['h1', 'h2', 'quote'].includes(node.getAttribute('data-block'))) {
+            clean.setAttribute('data-block', node.getAttribute('data-block'));
+        }
+        if (node.tagName === 'FONT' && isSafeColor(node.getAttribute('color'))) clean.setAttribute('color', node.getAttribute('color'));
+        if (node.tagName === 'SPAN') {
+            const safeStyles = [];
+            if (isSafeColor(node.style.color)) safeStyles.push(`color:${node.style.color}`);
+            if (isSafeColor(node.style.backgroundColor)) safeStyles.push(`background-color:${node.style.backgroundColor}`);
+            if (/^(normal|italic)$/.test(node.style.fontStyle)) safeStyles.push(`font-style:${node.style.fontStyle}`);
+            if (/^(normal|bold|[1-9]00)$/.test(node.style.fontWeight)) safeStyles.push(`font-weight:${node.style.fontWeight}`);
+            if (/^(none|underline|line-through)(\s+(underline|line-through))?$/.test(node.style.textDecorationLine)) safeStyles.push(`text-decoration-line:${node.style.textDecorationLine}`);
+            if (safeStyles.length) clean.setAttribute('style', safeStyles.join(';'));
+        }
+        [...node.childNodes].forEach(child => clean.appendChild(cleanNode(child)));
+        return clean;
+    };
+    const output = document.createElement('div');
+    [...source.childNodes].forEach(node => output.appendChild(cleanNode(node)));
+    return output.innerHTML;
+}
+function decorateHashtags(root) {
+    const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+    const textNodes = [];
+    while (walker.nextNode()) textNodes.push(walker.currentNode);
+    const pattern = /#([^\s<>&"'，。、！？；：「」,.!?;:()\[\]《》]+)/g;
+    textNodes.forEach(node => {
+        const text = node.nodeValue || '';
+        pattern.lastIndex = 0;
+        if (!pattern.test(text)) return;
+        pattern.lastIndex = 0;
+        const fragment = document.createDocumentFragment();
+        let cursor = 0; let match;
+        while ((match = pattern.exec(text))) {
+            fragment.appendChild(document.createTextNode(text.slice(cursor, match.index)));
+            const span = document.createElement('span'); span.className = 'hashtag-link'; span.textContent = match[0];
+            fragment.appendChild(span); cursor = match.index + match[0].length;
+        }
+        fragment.appendChild(document.createTextNode(text.slice(cursor)));
+        node.replaceWith(fragment);
+    });
+}
+function renderCaptionHtml(container, html) {
+    const safeRoot = document.createElement('span');
+    safeRoot.innerHTML = sanitizeCaptionHtml(html);
+    decorateHashtags(safeRoot);
+    container.replaceChildren(...safeRoot.childNodes);
+}
+function renderCaptionText(container, text) {
+    const root = document.createElement('span'); root.textContent = text;
+    decorateHashtags(root);
+    container.replaceChildren(...root.childNodes);
 }
 function updatePreview() {
     const post = getPostById(currentId);
@@ -1282,31 +1654,38 @@ function updatePreview() {
     document.getElementById('prev-ig-time').innerText = post.time || '09:00';
     document.getElementById('prev-ig-time-label').innerText = formatTimeLabel(post.time);
     const media = document.getElementById('prev-ig-media');
-    media.className = 'ig-media r-' + (post.ratio || '1-1');
-    media.innerHTML = '';
     const canva = parseCanvaUrl(post.canvaUrl || '');
-    if (canva) {
-        const iframe = document.createElement('iframe');
-        iframe.className = 'canva-frame'; iframe.src = canva.embedUrl; iframe.loading = 'lazy';
-        iframe.setAttribute('allowfullscreen', 'allowfullscreen'); iframe.setAttribute('allow', 'fullscreen');
-        media.appendChild(iframe);
-        const badge = document.createElement('div'); badge.className = 'canva-badge';
-        badge.innerText = canva.page ? `Canva · 第 ${canva.page} 頁` : 'Canva';
-        media.appendChild(badge);
-    } else {
-        media.innerHTML = '<div class="ig-media-empty">尚未設定 Canva 連結</div>';
+    const mediaKey = `${post.ratio || '1-1'}|${canva?.embedUrl || ''}|${post.canvaUrl ? 'filled' : 'empty'}`;
+    if (mediaKey !== lastRenderedMediaKey) {
+        lastRenderedMediaKey = mediaKey;
+        media.className = 'ig-media r-' + (post.ratio || '1-1');
+        media.replaceChildren();
+        if (canva) {
+            const iframe = document.createElement('iframe');
+            iframe.className = 'canva-frame'; iframe.src = canva.embedUrl; iframe.loading = 'lazy'; iframe.title = 'Canva 設計預覽';
+            iframe.setAttribute('allowfullscreen', 'allowfullscreen'); iframe.setAttribute('allow', 'fullscreen');
+            iframe.setAttribute('sandbox', 'allow-scripts allow-same-origin allow-forms allow-popups allow-presentation');
+            media.appendChild(iframe);
+            const badge = document.createElement('div'); badge.className = 'canva-badge';
+            badge.innerText = canva.page ? `Canva · 第 ${canva.page} 頁` : 'Canva';
+            media.appendChild(badge);
+        } else {
+            const empty = document.createElement('div'); empty.className = 'ig-media-empty';
+            empty.innerText = post.canvaUrl ? 'Canva 連結格式不正確' : '尚未設定 Canva 連結';
+            media.appendChild(empty);
+        }
     }
     const raw = post.caption || '';
     const plain = getPlainText(raw);
     const captionEl = document.getElementById('prev-ig-caption');
     const moreBtn = document.getElementById('ig-more-trigger');
     if (!isIGExpanded && (plain.length > 80 || raw.includes('\n') || raw.includes('<br'))) {
-        captionEl.innerHTML = parseHashtags(plain.slice(0, 75)) + '…';
+        renderCaptionText(captionEl, plain.slice(0, 75) + '…');
         moreBtn.innerText = '更多'; moreBtn.style.display = 'inline';
     } else if (isIGExpanded) {
-        captionEl.innerHTML = parseHashtags(raw); moreBtn.innerText = '收起'; moreBtn.style.display = 'inline';
+        renderCaptionHtml(captionEl, raw); moreBtn.innerText = '收起'; moreBtn.style.display = 'inline';
     } else {
-        captionEl.innerHTML = parseHashtags(raw); moreBtn.style.display = 'none';
+        renderCaptionHtml(captionEl, raw); moreBtn.style.display = 'none';
     }
 }
 function toggleIGExpand() { isIGExpanded = !isIGExpanded; updatePreview(); }
@@ -1378,6 +1757,23 @@ function mobileShowPanel(panel) {
     document.getElementById('mnav-' + panel)?.classList.add('active');
 }
 
+document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') {
+        if (document.getElementById('confirm-modal').classList.contains('show')) closeConfirmModal(false);
+        else if (document.getElementById('quickadd-overlay').classList.contains('open')) closeQuickAdd();
+        else if (document.getElementById('cal-overlay').classList.contains('open')) closeCalOverlay();
+        else if (document.getElementById('gh-overlay').classList.contains('open')) closeGhOverlay();
+        else if (document.body.classList.contains('presenting')) togglePresenting();
+        return;
+    }
+    if (!document.body.classList.contains('presenting')) return;
+    if (['INPUT', 'SELECT', 'TEXTAREA'].includes(document.activeElement?.tagName) || document.activeElement?.isContentEditable) return;
+    if (e.key === 'ArrowLeft') { e.preventDefault(); changePresentationPost(-1); }
+    if (e.key === 'ArrowRight') { e.preventDefault(); changePresentationPost(1); }
+});
+window.addEventListener('beforeunload', () => { if (localSaveTimer) persistLocal(); });
+document.addEventListener('visibilitychange', () => { if (document.hidden && localSaveTimer) persistLocal(); });
+
 /* =============================================================
    啟動
 ============================================================= */
@@ -1386,6 +1782,7 @@ window.addEventListener('DOMContentLoaded', async () => {
     document.getElementById('gh-repo').value = localStorage.getItem('gh_repo') || '';
     await initDatabase();
     migrateIds();
+    persistLocal();
     // 跳到今天並選取
     const today = new Date();
     const todayStr = fmtDate(today);
