@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>排版桌 — IG Post Planner</title>
+    <title>排版桌 — IG Post Planner v4</title>
     <script src="database.js" onerror="console.log('尚未偵測到 database.js')"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;700;900&family=Noto+Sans+TC:wght@400;500;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
@@ -270,23 +270,24 @@
 
         /* 編輯區（右側 sidebar） */
         .editor-container {
-            width: 380px; min-width: 380px; display: flex; flex-direction: column;
+            width: 420px; min-width: 420px; display: flex; flex-direction: column;
             border-left: 1px solid var(--paper-line); background: var(--paper-raised); height: 100%; overflow: hidden;
         }
         body.presenting #editor-ui { display: none !important; }
         body.presenting #preview-ui { display: flex !important; }
 
-        .editor-scroll { flex: 1; overflow-y: auto; padding: 16px; display: flex; flex-direction: column; gap: 12px; }
-        .editor-card { border: 1px solid var(--paper-line); border-radius: 6px; padding: 13px; background: var(--paper-raised); }
+        .editor-scroll { flex: 1; min-width: 0; overflow-y: auto; overflow-x: hidden; padding: 16px; display: flex; flex-direction: column; gap: 12px; }
+        .editor-card { width: 100%; min-width: 0; overflow: hidden; border: 1px solid var(--paper-line); border-radius: 6px; padding: 13px; background: var(--paper-raised); }
         .editor-card h3 {
             font-size: 10.5px; font-weight: 800; color: var(--ink-soft); text-transform: uppercase;
             letter-spacing: 0.5px; margin-bottom: 10px; padding-bottom: 7px; border-bottom: 1px solid var(--paper-line);
         }
-        .form-row { display: flex; gap: 8px; }
+        .form-row { display: flex; min-width: 0; gap: 8px; }
         .form-row + .form-row { margin-top: 9px; }
-        .form-group { display: flex; flex-direction: column; gap: 4px; flex: 1; }
+        .form-group { display: flex; flex-direction: column; gap: 4px; flex: 1 1 0; min-width: 0; }
         .form-group label { font-size: 10px; color: var(--ink-faint); font-weight: 700; }
         .form-group input, .form-group select {
+            width: 100%; min-width: 0; max-width: 100%;
             padding: 7px 9px; border: 1px solid var(--paper-line); border-radius: 4px;
             font-size: 12px; color: var(--ink); background: var(--paper);
         }
@@ -332,18 +333,38 @@
         }
         .qa-cancel-btn:hover { border-color: var(--ink-faint); }
 
-        .canva-single-row { display: flex; gap: 6px; align-items: center; margin-top: 4px; }
-        .canva-single-row input { flex: 1; padding: 7px 9px; border: 1px solid var(--paper-line); border-radius: 4px; font-size: 12px; color: var(--ink); background: var(--paper); }
+        .canva-single-row { display: grid; grid-template-columns: minmax(0, 1fr) auto auto; gap: 6px; align-items: center; min-width: 0; margin-top: 4px; }
+        .canva-single-row input { width: 100%; min-width: 0; padding: 7px 9px; border: 1px solid var(--paper-line); border-radius: 4px; font-size: 12px; color: var(--ink); background: var(--paper); }
         .canva-single-row input:focus { border-color: var(--red-pen); outline: none; background: var(--paper-raised); }
         .field-hint { font-size: 9.5px; color: var(--ink-faint); margin-top: 4px; line-height: 1.5; }
+        .canva-action-btn {
+            padding: 7px 9px; border: 1px solid var(--paper-line); border-radius: 4px;
+            background: var(--paper); color: var(--ink-soft); font-size: 10.5px; font-weight: 700; cursor: pointer;
+            white-space: nowrap;
+        }
+        .canva-action-btn:hover { color: #6B2EC8; border-color: #C9A8F0; background: #F5EFFE; }
+        .canva-action-btn.download { color: white; border-color: #6B2EC8; background: #6B2EC8; }
+        .canva-action-btn.download:hover { color: white; border-color: #5521A4; background: #5521A4; }
+        .canva-download-note { margin-top: 5px; font-size: 9px; line-height: 1.45; color: var(--ink-faint); }
 
-        .editor-card.caption-card { flex: 1; display: flex; flex-direction: column; min-height: 0; }
-        .caption-card h3 { flex-shrink: 0; }
+        /* 一般模式只讓整個側欄捲動，避免編輯框、卡片與側欄三層捲動互相卡住 */
+        .editor-card.caption-card { flex: 0 0 auto; display: block; min-width: 0; min-height: 0; overflow: hidden; }
+        .caption-card-header {
+            display: flex; align-items: center; justify-content: space-between; gap: 10px;
+            margin-bottom: 10px; padding-bottom: 7px; border-bottom: 1px solid var(--paper-line);
+        }
+        .editor-card .caption-card-header h3 { margin: 0; padding: 0; border: none; }
+        .editor-focus-btn {
+            padding: 4px 9px; border: 1px solid var(--paper-line); border-radius: 4px;
+            background: var(--paper); color: var(--ink-soft); font-size: 10px; font-weight: 700; cursor: pointer;
+        }
+        .editor-focus-btn:hover { border-color: var(--red-pen); color: var(--red-pen); }
         .editor-toolbar {
+            width: 100%; min-width: 0; overflow: hidden;
             flex-shrink: 0; background: #F4F0E6; border: 1px solid var(--paper-line);
             border-radius: 5px; padding: 6px 8px; margin-bottom: 8px; display: flex; flex-direction: column; gap: 5px;
         }
-        .toolbar-row { display: flex; gap: 3px; align-items: center; flex-wrap: wrap; }
+        .toolbar-row { display: flex; width: 100%; min-width: 0; gap: 3px; align-items: center; flex-wrap: wrap; }
         .tb-sep { width: 1px; height: 14px; background: var(--paper-line); margin: 0 3px; flex-shrink: 0; }
         .tb-label { font-size: 9px; font-weight: 800; color: var(--ink-faint); text-transform: uppercase; letter-spacing: 0.3px; }
         .tb-btn {
@@ -357,9 +378,11 @@
         .color-swatch:hover { transform: scale(1.15); }
 
         .rich-editor {
-            flex: 1; min-height: 160px; border: 1px solid var(--paper-line); border-radius: 5px;
+            display: block; width: 100%; min-width: 0; height: 360px; min-height: 240px; max-height: 62vh;
+            border: 1px solid var(--paper-line); border-radius: 5px;
             padding: 11px 13px; font-size: 13.5px; line-height: 1.7; outline: none;
-            background: var(--paper-raised); color: var(--ink); overflow-y: auto; word-break: break-word;
+            background: var(--paper-raised); color: var(--ink); overflow: auto; resize: vertical;
+            overflow-wrap: anywhere; word-break: break-word;
         }
         .rich-editor:focus { border-color: var(--red-pen); box-shadow: 0 0 0 3px rgba(181,72,42,0.07); }
         .rich-editor:empty::before { content: attr(data-placeholder); color: var(--ink-faint); pointer-events: none; }
@@ -414,7 +437,31 @@
         .ig-media.r-16-9 { aspect-ratio: 16/9; }
         .ig-media-empty { display: flex; align-items: center; justify-content: center; height: 200px; color: #c7c7c7; font-size: 12px; }
         .canva-frame { width: 100%; height: 100%; border: none; display: block; }
+        .canva-frame { pointer-events: none; }
+        .ig-media.canva-interactive .canva-frame { pointer-events: auto; }
         .canva-badge { position: absolute; bottom: 8px; left: 8px; background: rgba(100,30,200,0.85); color: white; padding: 3px 8px; border-radius: 10px; font-size: 9.5px; font-weight: 700; }
+        .canva-interaction-btn {
+            position: absolute; z-index: 5; top: 8px; right: 8px; padding: 5px 9px;
+            border: 1px solid rgba(255,255,255,0.7); border-radius: 12px;
+            background: rgba(28,27,25,0.78); color: white; font-size: 9.5px; font-weight: 700; cursor: pointer;
+            backdrop-filter: blur(5px);
+        }
+        .ig-media.canva-interactive .canva-interaction-btn { background: rgba(47,111,94,0.9); }
+
+        /* 專注編輯模式 */
+        .editor-focus-backdrop { display: none; position: fixed; inset: 0; z-index: 240; background: rgba(28,27,25,0.48); }
+        body.editor-focused .editor-focus-backdrop { display: block; }
+        body.editor-focused .editor-container {
+            display: flex !important; position: fixed; z-index: 250; inset: 68px 6vw 24px 6vw;
+            width: auto; min-width: 0; height: auto; border: 1px solid var(--paper-line); border-radius: 10px;
+            box-shadow: 0 24px 70px rgba(0,0,0,0.26); overflow: hidden;
+        }
+        body.editor-focused .editor-scroll { padding: 18px; overflow: hidden; }
+        body.editor-focused .editor-card:not(.caption-card),
+        body.editor-focused .editor-footer { display: none; }
+        body.editor-focused .caption-card { flex: 1; display: flex; flex-direction: column; min-height: 0; }
+        body.editor-focused .editor-toolbar { flex-shrink: 0; }
+        body.editor-focused .rich-editor { flex: 1; width: 100%; height: auto; min-height: 0; max-height: none; overflow-y: auto; resize: none; }
         .ig-actions { padding: 10px 12px 6px; display: flex; align-items: center; gap: 14px; }
         .ig-action-icon { font-size: 22px; cursor: default; }
         .ig-bookmark { margin-left: auto; }
@@ -448,7 +495,7 @@
             .topbar { padding: 0 14px; gap: 10px; }
             .brand-sub { display: none; }
             .day-col { width: 300px; }
-            .editor-container { width: 340px; min-width: 340px; }
+            .editor-container { width: 360px; min-width: 360px; }
             .preview-pane { padding: 20px 14px; }
         }
 
@@ -501,7 +548,7 @@
 <div class="topbar">
     <div class="brand-area">
         <span class="brand-mark">排版桌</span>
-        <span class="brand-sub">IG POST PLANNER</span>
+        <span class="brand-sub">IG POST PLANNER · V4</span>
     </div>
 
     <div class="topbar-divider"></div>
@@ -628,6 +675,9 @@
     </div>
 </div>
 
+<!-- 專注編輯遮罩 -->
+<div class="editor-focus-backdrop" id="editor-focus-backdrop" onclick="toggleEditorFocus(false)"></div>
+
 <!-- =====================================================
      APP BODY
 ===================================================== -->
@@ -735,12 +785,18 @@
                     <h3>Canva 連結</h3>
                     <div class="canva-single-row">
                         <input type="text" id="canva-url-input" placeholder="貼上 Canva 公開分享連結（結尾加 #頁碼 可跳頁）" oninput="updateCurrentPost('canvaUrl', this.value)">
+                        <button class="canva-action-btn" onclick="openCurrentCanva()" title="在 Canva 開啟">↗ 開啟</button>
+                        <button class="canva-action-btn download" onclick="openCanvaDownload()" title="前往 Canva 下載">⬇ 下載</button>
                     </div>
-                    <div class="field-hint">例：https://www.canva.com/design/xxx/view#2　→ 顯示第 2 頁</div>
+                    <div class="field-hint">網址結尾加 #頁碼 可指定預覽頁，例如 #2。</div>
+                    <div class="canva-download-note">公開分享連結無法直接匯出原圖；此按鈕會開啟 Canva 的下載流程。</div>
                 </div>
 
                 <div class="editor-card caption-card">
-                    <h3>貼文內文</h3>
+                    <div class="caption-card-header">
+                        <h3>貼文內文</h3>
+                        <button class="editor-focus-btn" id="editor-focus-btn" onclick="toggleEditorFocus()">⛶ 專注編輯</button>
+                    </div>
                     <div class="editor-toolbar">
                         <div class="toolbar-row">
                             <span class="tb-label">段落</span>
@@ -816,12 +872,19 @@ let saveStatusTimer;
 let localSaveTimer;
 let dayRenderTimer;
 let lastRenderedMediaKey = null;
+let canvaInteractionEnabled = false;
+let plannerStoragePromise = null;
+let storageWriteChain = Promise.resolve();
+let storageErrorShown = false;
 let pendingConfirmResolve = null;
 let calYear, calMonth;     // 日曆浮動視窗的當前年月
 const DB_SCHEMA_VERSION = 2;
 const VALID_RATIOS = new Set(['1-1', '4-5', '16-9']);
 const VALID_STATUSES = new Set(['draft', 'ready', 'published']);
 const STATUS_LABELS = { draft: '草稿', ready: '已完成', published: '已發布' };
+const PLANNER_IDB_NAME = 'ig_post_planner';
+const PLANNER_IDB_STORE = 'state';
+const PLANNER_IDB_KEY = 'current';
 
 /* =============================================================
    Toast / Modal
@@ -852,16 +915,72 @@ function markSaved() {
     clearTimeout(saveStatusTimer);
     saveStatusTimer = setTimeout(() => { el.innerText = '自動存本機'; el.classList.remove('saved'); }, 2000);
 }
+function openPlannerStorage() {
+    if (plannerStoragePromise) return plannerStoragePromise;
+    plannerStoragePromise = new Promise((resolve, reject) => {
+        if (!window.indexedDB) { reject(new Error('此瀏覽器不支援 IndexedDB')); return; }
+        const request = indexedDB.open(PLANNER_IDB_NAME, 1);
+        request.onupgradeneeded = () => {
+            const database = request.result;
+            if (!database.objectStoreNames.contains(PLANNER_IDB_STORE)) database.createObjectStore(PLANNER_IDB_STORE);
+        };
+        request.onsuccess = () => resolve(request.result);
+        request.onerror = () => reject(request.error || new Error('無法開啟瀏覽器資料庫'));
+        request.onblocked = () => reject(new Error('瀏覽器資料庫正在被其他分頁使用'));
+    });
+    return plannerStoragePromise;
+}
+async function readIndexedState() {
+    const database = await openPlannerStorage();
+    return new Promise((resolve, reject) => {
+        const transaction = database.transaction(PLANNER_IDB_STORE, 'readonly');
+        const request = transaction.objectStore(PLANNER_IDB_STORE).get(PLANNER_IDB_KEY);
+        request.onsuccess = () => resolve(request.result || null);
+        request.onerror = () => reject(request.error || new Error('無法讀取瀏覽器資料庫'));
+    });
+}
+async function writeIndexedState(state) {
+    const database = await openPlannerStorage();
+    return new Promise((resolve, reject) => {
+        const transaction = database.transaction(PLANNER_IDB_STORE, 'readwrite');
+        transaction.objectStore(PLANNER_IDB_STORE).put(state, PLANNER_IDB_KEY);
+        transaction.oncomplete = () => resolve();
+        transaction.onerror = () => reject(transaction.error || new Error('無法寫入瀏覽器資料庫'));
+        transaction.onabort = () => reject(transaction.error || new Error('瀏覽器資料庫寫入已中止'));
+    });
+}
 function persistLocal() {
     clearTimeout(localSaveTimer); localSaveTimer = null;
-    try {
-        localStorage.setItem('planner_db', JSON.stringify(db));
-        localStorage.setItem('planner_meta', JSON.stringify(dbMeta));
-        markSaved();
-    } catch (err) {
-        showToast('本機儲存失敗，可能已超過瀏覽器容量');
-        console.error(err);
-    }
+    const snapshot = { db: cloneJson(db), meta: cloneJson(dbMeta), savedAt: new Date().toISOString() };
+    storageWriteChain = storageWriteChain.catch(() => {}).then(async () => {
+        try {
+            await writeIndexedState(snapshot);
+            // IndexedDB 儲存成功後移除舊的大型副本，立即釋放 localStorage 容量。
+            localStorage.removeItem('planner_db');
+            localStorage.removeItem('planner_meta');
+            storageErrorShown = false;
+            markSaved();
+            return true;
+        } catch (indexedError) {
+            console.error('IndexedDB save failed:', indexedError);
+            try {
+                localStorage.setItem('planner_db', JSON.stringify(snapshot.db));
+                localStorage.setItem('planner_meta', JSON.stringify(snapshot.meta));
+                markSaved();
+                return true;
+            } catch (localError) {
+                console.error('localStorage fallback failed:', localError);
+                const el = document.getElementById('save-status');
+                el.innerText = '儲存失敗'; el.classList.remove('saved');
+                if (!storageErrorShown) {
+                    storageErrorShown = true;
+                    showToast('本機儲存失敗，請先匯出備份並重新整理', 4200);
+                }
+                return false;
+            }
+        }
+    });
+    return storageWriteChain;
 }
 function saveLocal({ debounce = false, touchDatabase = true } = {}) {
     if (touchDatabase) dbMeta.updatedAt = new Date().toISOString();
@@ -964,7 +1083,7 @@ async function syncToGitHub() {
     const repo = localStorage.getItem('gh_repo');
     const btn = document.getElementById('sync-btn');
     if (!token || !repo) { showToast('請先填寫完整 GitHub 設定'); return; }
-    persistLocal();
+    await persistLocal();
     btn.disabled = true; btn.innerText = '同步中…'; btn.style.backgroundColor = 'var(--amber-flag)';
     const url = `https://api.github.com/repos/${repo}/contents/database.js`;
     try {
@@ -990,7 +1109,7 @@ async function syncToGitHub() {
             const result = await response.json().catch(() => ({}));
             if (result.content?.sha) localStorage.setItem('gh_last_sync_sha', result.content.sha);
             localStorage.setItem('planner_db_saved_at', new Date().toISOString());
-            persistLocal(); renderDay();
+            await persistLocal(); renderDay();
             if (currentId && getPostById(currentId)) loadPost(currentId);
             completed = true;
         }
@@ -1006,6 +1125,7 @@ async function syncToGitHub() {
    簡報模式
 ============================================================= */
 function togglePresenting() {
+    if (document.body.classList.contains('editor-focused')) toggleEditorFocus(false);
     document.body.classList.toggle('presenting');
     let isPresenting = document.body.classList.contains('presenting');
     if (isPresenting && getSortedDayPosts().length === 0) {
@@ -1042,8 +1162,8 @@ function changePresentationPost(dir) {
 /* =============================================================
    備份
 ============================================================= */
-function exportBackup() {
-    persistLocal();
+async function exportBackup() {
+    await persistLocal();
     const payload = {
         app: '排版桌', schemaVersion: DB_SCHEMA_VERSION, exportedAt: new Date().toISOString(),
         db, meta: dbMeta
@@ -1270,14 +1390,22 @@ function getPostById(id) {
 async function initDatabase() {
     const local = localStorage.getItem('planner_db');
     const localMeta = localStorage.getItem('planner_meta');
-    if (local) {
+    let indexedState = null;
+    try { indexedState = await readIndexedState(); }
+    catch (err) { console.warn('IndexedDB read unavailable, using fallback:', err); }
+
+    if (indexedState?.db) {
+        try { db = normalizeDatabase(indexedState.db, { strict: true }); }
+        catch { db = {}; showToast('本機資料格式異常，已先開啟空白資料'); }
+    } else if (local) {
         try { db = normalizeDatabase(JSON.parse(local), { strict: true }); }
         catch { db = {}; showToast('本機資料格式異常，已先開啟空白資料'); }
     } else if (typeof externalDB !== 'undefined') {
         db = normalizeDatabase(externalDB, { strict: false });
     }
     try {
-        dbMeta = normalizeMeta(localMeta ? JSON.parse(localMeta) : (typeof externalDBMeta !== 'undefined' ? externalDBMeta : {}));
+        if (indexedState?.meta) dbMeta = normalizeMeta(indexedState.meta);
+        else dbMeta = normalizeMeta(localMeta ? JSON.parse(localMeta) : (typeof externalDBMeta !== 'undefined' ? externalDBMeta : {}));
     } catch { dbMeta = normalizeMeta({}); }
     const token = localStorage.getItem('gh_token');
     const repo = localStorage.getItem('gh_repo');
@@ -1288,7 +1416,7 @@ async function initDatabase() {
         if (remote.sha === lastSha && Object.keys(db).length > 0) { showToast('已是最新資料'); return; }
         const merged = mergeDatabases(db, remote.db, dbMeta, remote.meta);
         db = merged.db; dbMeta = merged.meta;
-        persistLocal();
+        await persistLocal();
         if (remote.sha) localStorage.setItem('gh_last_sync_sha', remote.sha);
         showToast(merged.stats.remoteOnly + merged.stats.remoteNewer > 0 ? '已合併 GitHub 的新資料' : '已核對 GitHub 資料');
     } catch (e) {
@@ -1423,16 +1551,27 @@ function getPlainText(html) { _scratch.innerHTML = sanitizeCaptionHtml(html); re
    編輯器開關
 ============================================================= */
 function showEditor(visible) {
+    if (!visible && document.body.classList.contains('editor-focused')) toggleEditorFocus(false);
     document.getElementById('empty-state-msg').style.display = visible ? 'none' : 'flex';
     document.getElementById('editor-ui').style.display = visible ? 'flex' : 'none';
     document.getElementById('preview-ui').style.display = visible ? 'flex' : 'none';
+}
+
+function toggleEditorFocus(force) {
+    if (isMobile()) return;
+    const next = typeof force === 'boolean' ? force : !document.body.classList.contains('editor-focused');
+    document.body.classList.toggle('editor-focused', next);
+    const btn = document.getElementById('editor-focus-btn');
+    btn.innerText = next ? '✕ 結束專注' : '⛶ 專注編輯';
+    btn.setAttribute('aria-pressed', String(next));
+    if (next) setTimeout(() => document.getElementById('edit-caption').focus(), 50);
 }
 
 /* =============================================================
    載入 / 更新貼文
 ============================================================= */
 function loadPost(id) {
-    currentId = id; isIGExpanded = false;
+    currentId = id; isIGExpanded = false; canvaInteractionEnabled = false;
     const post = getPostById(id);
     if (!post) return;
     document.getElementById('edit-time').value = post.time || '09:00';
@@ -1610,6 +1749,21 @@ function submitQuickAdd() {
 /* =============================================================
    IG 預覽
 ============================================================= */
+function openCanvaWindow(url) {
+    const canva = parseCanvaUrl(url || '');
+    if (!canva) { showToast('請先輸入有效的 Canva 公開連結'); return false; }
+    const opened = window.open(url.trim(), '_blank', 'noopener,noreferrer');
+    if (opened) opened.opener = null;
+    return true;
+}
+function openCurrentCanva() {
+    const post = getPostById(currentId);
+    if (post) openCanvaWindow(post.canvaUrl);
+}
+function openCanvaDownload() {
+    const post = getPostById(currentId);
+    if (post && openCanvaWindow(post.canvaUrl)) showToast('已開啟 Canva，請從「分享」選擇「下載」', 3200);
+}
 function parseCanvaUrl(url) {
     if (!url) return null;
     try {
@@ -1624,6 +1778,20 @@ function parseCanvaUrl(url) {
         if (!/[?&]embed(?:=|&|$)/.test(base)) base += (base.includes('?') ? '&' : '?') + 'embed';
         return { embedUrl: page ? `${base}#${page}` : base, page };
     } catch { return null; }
+}
+function applyCanvaInteractionState() {
+    const media = document.getElementById('prev-ig-media');
+    media.classList.toggle('canva-interactive', canvaInteractionEnabled);
+    const button = media.querySelector('.canva-interaction-btn');
+    if (button) {
+        button.innerText = canvaInteractionEnabled ? '✓ 鎖定乾淨預覽' : '操作 Canva';
+        button.setAttribute('aria-pressed', String(canvaInteractionEnabled));
+    }
+}
+function toggleCanvaInteraction(event) {
+    event?.stopPropagation();
+    canvaInteractionEnabled = !canvaInteractionEnabled;
+    applyCanvaInteractionState();
 }
 function isSafeColor(value) {
     return typeof value === 'string' && /^(#[0-9a-f]{3,8}|rgba?\([\d\s.,%]+\)|[a-z]{3,20})$/i.test(value.trim());
@@ -1716,6 +1884,10 @@ function updatePreview() {
             const badge = document.createElement('div'); badge.className = 'canva-badge';
             badge.innerText = canva.page ? `Canva · 第 ${canva.page} 頁` : 'Canva';
             media.appendChild(badge);
+            const interactionBtn = document.createElement('button'); interactionBtn.className = 'canva-interaction-btn';
+            interactionBtn.type = 'button'; interactionBtn.onclick = toggleCanvaInteraction;
+            media.appendChild(interactionBtn);
+            applyCanvaInteractionState();
         } else {
             const empty = document.createElement('div'); empty.className = 'ig-media-empty';
             empty.innerText = post.canvaUrl ? 'Canva 連結格式不正確' : '尚未設定 Canva 連結';
@@ -1806,7 +1978,8 @@ function mobileShowPanel(panel) {
 
 document.addEventListener('keydown', e => {
     if (e.key === 'Escape') {
-        if (document.getElementById('confirm-modal').classList.contains('show')) closeConfirmModal(false);
+        if (document.body.classList.contains('editor-focused')) toggleEditorFocus(false);
+        else if (document.getElementById('confirm-modal').classList.contains('show')) closeConfirmModal(false);
         else if (document.getElementById('quickadd-overlay').classList.contains('open')) closeQuickAdd();
         else if (document.getElementById('cal-overlay').classList.contains('open')) closeCalOverlay();
         else if (document.getElementById('gh-overlay').classList.contains('open')) closeGhOverlay();
@@ -1829,7 +2002,7 @@ window.addEventListener('DOMContentLoaded', async () => {
     document.getElementById('gh-repo').value = localStorage.getItem('gh_repo') || '';
     await initDatabase();
     migrateIds();
-    persistLocal();
+    await persistLocal();
     // 跳到今天並選取
     const today = new Date();
     const todayStr = fmtDate(today);
