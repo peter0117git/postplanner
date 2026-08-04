@@ -1071,7 +1071,7 @@ var externalDB = {
     },
     {
       "_id": "p_1785738820220_4n57",
-      "caption": "<div>【圖文時間】 《宇希時間》</div><div><br></div>",
+      "caption": "<div>【圖文時間】 《宇希時間》</div><div><br></div><div><p class=\"MsoNormal\" style=\"margin-bottom: 0cm; line-height: normal;\">標題：那些無所不在的：夢想截止日<span lang=\"EN-US\"><o:p></o:p></span></p>\n\n<p class=\"MsoNormal\" style=\"margin-bottom: 0cm; line-height: normal;\">是不是每個夢想都有截止日期？<span lang=\"EN-US\"><o:p></o:p></span></p>\n\n<p class=\"MsoNormal\" style=\"margin-bottom: 0cm; line-height: normal;\">好像有些事情，不在某個年紀完成，之後就再也沒有機會了。<span lang=\"EN-US\"><o:p></o:p></span></p>\n\n<p class=\"MsoNormal\" style=\"margin-bottom: 0cm; line-height: normal;\">旅行要趁年輕、學英文要趁年輕、創業要趁年輕、去很遠的地方也要趁年輕。<span lang=\"EN-US\"><o:p></o:p></span></p>\n\n<p class=\"MsoNormal\" style=\"margin-bottom: 0cm; line-height: normal;\">今年<span lang=\"EN-US\">20</span>幾歲，如果四年後結婚有了孩子，是不是代表我現在想去的地方以後就再也去不了了？<span lang=\"EN-US\"><o:p></o:p></span></p>\n\n<p class=\"MsoNormal\" style=\"margin-bottom: 0cm; line-height: normal;\">於是我開始不停地替人生排時間表，今年去加拿大明年去紐西蘭，英文要早點學、品牌要趕快做好，錢也要存得快一點。<span lang=\"EN-US\"><o:p></o:p></span></p>\n\n<p class=\"MsoNormal\" style=\"margin-bottom: 0cm; line-height: normal;\">好像每一個夢想，突然都有了期限。<span lang=\"EN-US\"><o:p></o:p></span></p>\n\n<p class=\"MsoNormal\" style=\"margin-bottom: 0cm; line-height: normal;\">然而，越來越是想完成，我就越是焦慮，每天都覺得自己太慢了。<span lang=\"EN-US\"><o:p></o:p></span></p>\n\n<p class=\"MsoNormal\" style=\"margin-bottom: 0cm; line-height: normal;\">直到有一天，我問自己：我真正害怕的是什麼呢？<span lang=\"EN-US\"><o:p></o:p></span></p>\n\n<p class=\"MsoNormal\" style=\"margin-bottom: 0cm; line-height: normal;\">我害怕的是，有一天我沒有能力選擇。<span lang=\"EN-US\"><o:p></o:p></span></p>\n\n<p class=\"MsoNormal\" style=\"line-height: normal;\">我害怕，有一天我會忘了自己曾經多麼想要成為那樣的人。<span lang=\"EN-US\" style=\"font-family:細明體\"><o:p></o:p></span></p><p class=\"MsoNormal\" style=\"line-height: normal;\"><br></p><p class=\"MsoNormal\" style=\"line-height: normal;\">#宇希的貓 #宇希 #時間 #選擇</p></div>",
       "time": "18:00",
       "canvaUrl": "https://www.canva.com/design/DAHNdqdK6aI/PiMT2vlLGuDlWm3KmDjn9g/view?utm_content=DAHNdqdK6aI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=ha7005fd718#1",
       "ratio": "1-1"
@@ -1081,7 +1081,7 @@ var externalDB = {
       "caption": "<div>【晚上多讀一點點】 《不要再怪自己想太多：精神科醫師寫給總是不安的你》</div><div><br></div>",
       "time": "20:00",
       "canvaUrl": "https://www.canva.com/design/DAHN7xDu7lw/TUuELGCo_fNSKNaEF6Sn-Q/view?utm_content=DAHN7xDu7lw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h214f581df7",
-      "ratio": "4-5"
+      "ratio": "1-1"
     }
   ],
   "2026-08-06": [
