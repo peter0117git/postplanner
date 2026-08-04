@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>排版桌 — IG Post Planner v4</title>
+    <title>排版桌 — IG Post Planner v5</title>
     <script src="database.js" onerror="console.log('尚未偵測到 database.js')"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;700;900&family=Noto+Sans+TC:wght@400;500;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
@@ -276,8 +276,17 @@
         body.presenting #editor-ui { display: none !important; }
         body.presenting #preview-ui { display: flex !important; }
 
-        .editor-scroll { flex: 1; min-width: 0; overflow-y: auto; overflow-x: hidden; padding: 16px; display: flex; flex-direction: column; gap: 12px; }
-        .editor-card { width: 100%; min-width: 0; overflow: hidden; border: 1px solid var(--paper-line); border-radius: 6px; padding: 13px; background: var(--paper-raised); }
+        .editor-scroll {
+            flex: 1 1 auto; min-width: 0; min-height: 0;
+            overflow-y: auto; overflow-x: hidden; overscroll-behavior: contain;
+            padding: 16px; display: flex; flex-direction: column; gap: 12px;
+        }
+        /* 卡片不可在 flex 側欄中被壓扁；高度超出時只捲動 editor-scroll。 */
+        .editor-card {
+            flex: 0 0 auto; width: 100%; min-width: 0; max-width: 100%;
+            overflow: visible; border: 1px solid var(--paper-line); border-radius: 6px;
+            padding: 13px; background: var(--paper-raised);
+        }
         .editor-card h3 {
             font-size: 10.5px; font-weight: 800; color: var(--ink-soft); text-transform: uppercase;
             letter-spacing: 0.5px; margin-bottom: 10px; padding-bottom: 7px; border-bottom: 1px solid var(--paper-line);
@@ -333,22 +342,29 @@
         }
         .qa-cancel-btn:hover { border-color: var(--ink-faint); }
 
-        .canva-single-row { display: grid; grid-template-columns: minmax(0, 1fr) auto auto; gap: 6px; align-items: center; min-width: 0; margin-top: 4px; }
+        .canva-card-header {
+            display: flex; align-items: center; justify-content: space-between; gap: 10px;
+            margin-bottom: 10px; padding-bottom: 7px; border-bottom: 1px solid var(--paper-line);
+        }
+        .editor-card .canva-card-header h3 { margin: 0; padding: 0; border: 0; }
+        .canva-single-row { display: block; width: 100%; min-width: 0; margin-top: 4px; }
         .canva-single-row input { width: 100%; min-width: 0; padding: 7px 9px; border: 1px solid var(--paper-line); border-radius: 4px; font-size: 12px; color: var(--ink); background: var(--paper); }
         .canva-single-row input:focus { border-color: var(--red-pen); outline: none; background: var(--paper-raised); }
+        .canva-action-row { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.45fr); gap: 7px; width: 100%; min-width: 0; margin-top: 8px; }
         .field-hint { font-size: 9.5px; color: var(--ink-faint); margin-top: 4px; line-height: 1.5; }
         .canva-action-btn {
             padding: 7px 9px; border: 1px solid var(--paper-line); border-radius: 4px;
             background: var(--paper); color: var(--ink-soft); font-size: 10.5px; font-weight: 700; cursor: pointer;
-            white-space: nowrap;
+            display: flex; align-items: center; justify-content: center; min-width: 0;
+            white-space: normal; line-height: 1.35; text-align: center;
         }
         .canva-action-btn:hover { color: #6B2EC8; border-color: #C9A8F0; background: #F5EFFE; }
         .canva-action-btn.download { color: white; border-color: #6B2EC8; background: #6B2EC8; }
         .canva-action-btn.download:hover { color: white; border-color: #5521A4; background: #5521A4; }
-        .canva-download-note { margin-top: 5px; font-size: 9px; line-height: 1.45; color: var(--ink-faint); }
+        .canva-download-note { margin-top: 7px; font-size: 9px; line-height: 1.45; color: var(--ink-faint); }
 
         /* 一般模式只讓整個側欄捲動，避免編輯框、卡片與側欄三層捲動互相卡住 */
-        .editor-card.caption-card { flex: 0 0 auto; display: block; min-width: 0; min-height: 0; overflow: hidden; }
+        .editor-card.caption-card { flex: 0 0 auto; display: block; min-width: 0; min-height: 0; overflow: visible; }
         .caption-card-header {
             display: flex; align-items: center; justify-content: space-between; gap: 10px;
             margin-bottom: 10px; padding-bottom: 7px; border-bottom: 1px solid var(--paper-line);
@@ -360,7 +376,7 @@
         }
         .editor-focus-btn:hover { border-color: var(--red-pen); color: var(--red-pen); }
         .editor-toolbar {
-            width: 100%; min-width: 0; overflow: hidden;
+            width: 100%; min-width: 0; max-width: 100%; overflow: visible;
             flex-shrink: 0; background: #F4F0E6; border: 1px solid var(--paper-line);
             border-radius: 5px; padding: 6px 8px; margin-bottom: 8px; display: flex; flex-direction: column; gap: 5px;
         }
@@ -548,7 +564,7 @@
 <div class="topbar">
     <div class="brand-area">
         <span class="brand-mark">排版桌</span>
-        <span class="brand-sub">IG POST PLANNER · V4</span>
+        <span class="brand-sub">IG POST PLANNER · V5</span>
     </div>
 
     <div class="topbar-divider"></div>
@@ -743,6 +759,21 @@
         <!-- 編輯區（右側 sidebar） -->
         <div class="editor-container" id="editor-ui" style="display:none">
             <div class="editor-scroll">
+                <div class="editor-card canva-tool-card">
+                    <div class="canva-card-header">
+                        <h3>Canva 圖片工具</h3>
+                    </div>
+                    <div class="canva-single-row">
+                        <input type="text" id="canva-url-input" placeholder="貼上 Canva 公開分享連結（結尾加 #頁碼 可跳頁）" oninput="updateCurrentPost('canvaUrl', this.value)">
+                        <div class="canva-action-row">
+                            <button class="canva-action-btn" onclick="openCurrentCanva()" title="在 Canva 開啟設計">↗ 開啟設計</button>
+                            <button class="canva-action-btn download" id="canva-download-btn" onclick="openCanvaDownload()" title="前往 Canva 下載圖片">⬇ 在 Canva 下載圖片</button>
+                        </div>
+                    </div>
+                    <div class="field-hint">網址結尾加 #頁碼 可指定預覽頁，例如 #2。</div>
+                    <div class="canva-download-note">點擊紫色按鈕後，在 Canva 選擇「分享 → 下載」。公開分享網址本身不含可直接下載的原圖檔。</div>
+                </div>
+
                 <div class="editor-card">
                     <h3>基本設定</h3>
                     <div class="form-row">
@@ -779,17 +810,6 @@
                             </select>
                         </div>
                     </div>
-                </div>
-
-                <div class="editor-card">
-                    <h3>Canva 連結</h3>
-                    <div class="canva-single-row">
-                        <input type="text" id="canva-url-input" placeholder="貼上 Canva 公開分享連結（結尾加 #頁碼 可跳頁）" oninput="updateCurrentPost('canvaUrl', this.value)">
-                        <button class="canva-action-btn" onclick="openCurrentCanva()" title="在 Canva 開啟">↗ 開啟</button>
-                        <button class="canva-action-btn download" onclick="openCanvaDownload()" title="前往 Canva 下載">⬇ 下載</button>
-                    </div>
-                    <div class="field-hint">網址結尾加 #頁碼 可指定預覽頁，例如 #2。</div>
-                    <div class="canva-download-note">公開分享連結無法直接匯出原圖；此按鈕會開啟 Canva 的下載流程。</div>
                 </div>
 
                 <div class="editor-card caption-card">
