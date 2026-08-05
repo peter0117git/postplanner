@@ -1,6 +1,8 @@
-# 排版桌 IG Post Planner V8.1
+# 排版桌 IG Post Planner V8.2
 
-這是一個不需要建置工具、可直接部署到 GitHub Pages 的貼文規劃器。V8.1 保留原本的 `database.js` 資料格式，並將前端拆成畫面層、瀏覽器儲存、GitHub 同步與 Canva 圖片服務，方便後續維護。
+這是一個不需要建置工具、可直接部署到 GitHub Pages 的貼文規劃器。V8.2 保留原本的 `database.js` 資料格式，並將前端拆成畫面層、瀏覽器儲存、GitHub 同步與 Canva 圖片服務，方便後續維護。
+
+「發布文案」會把【主題】、《書名》與貼文內文組合成可直接貼到其他平台的純文字，避免重複首行，並檢查頁碼、Hashtag、字數及行數。Canva 圖片工具改為獨立視窗，需要時才開啟，不再占用編輯側欄。
 
 ## 目錄
 
@@ -17,7 +19,9 @@
 │           ├── storage.js          # IndexedDB 與本機儲存
 │           ├── github.js           # GitHub Contents API
 │           ├── canva.js            # Canva 前端解析與下載
+│           ├── post-composer.js    # 組合、檢查與複製完整發布文案
 │           └── zip.js              # 將全部頁面打包成單一 ZIP
+├── test/post-composer.test.js      # 發布文案組合器測試
 ├── canva-worker/
 │   ├── src/index.js                # Canva 多頁預覽解析器
 │   ├── test/parser.test.js         # 解析器測試

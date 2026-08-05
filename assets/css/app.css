@@ -180,7 +180,7 @@
            日視圖欄
         ===================================================== */
         .day-col {
-            width: 340px; flex-shrink: 0;
+            width: 286px; flex-shrink: 0;
             background: var(--paper-raised); border-right: 1px solid var(--paper-line);
             display: flex; flex-direction: column; height: 100%; overflow: hidden;
         }
@@ -253,7 +253,7 @@
         /* =====================================================
            主內容：IG 預覽（置中）＋ 編輯區（右側 sidebar）
         ===================================================== */
-        .main-content { flex: 1; display: flex; height: 100%; overflow: hidden; }
+        .main-content { flex: 1; min-width: 0; display: flex; height: 100%; overflow: hidden; }
         .no-post-msg {
             color: var(--ink-faint); margin: auto; font-size: 13px; font-weight: 500;
             font-family: var(--font-display); text-align: center; line-height: 1.7;
@@ -263,7 +263,7 @@
 
         /* 編輯區（右側 sidebar） */
         .editor-container {
-            width: 420px; min-width: 420px; display: flex; flex-direction: column;
+            width: 450px; min-width: 450px; display: flex; flex-direction: column;
             border-left: 1px solid var(--paper-line); background: var(--paper-raised); height: 100%; overflow: hidden;
         }
         body.presenting #editor-ui { display: none !important; }
@@ -272,8 +272,29 @@
         .editor-scroll {
             flex: 1 1 auto; min-width: 0; min-height: 0;
             overflow-y: auto; overflow-x: hidden; overscroll-behavior: contain;
-            padding: 16px; display: flex; flex-direction: column; gap: 12px;
+            padding: 14px; display: flex; flex-direction: column; gap: 10px;
         }
+        .editor-workbar {
+            flex: 0 0 auto; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px;
+            padding: 10px 12px; border-bottom: 1px solid var(--paper-line); background: #F7F3EA;
+        }
+        .editor-workbar-btn {
+            min-width: 0; display: flex; align-items: center; gap: 8px; padding: 8px 10px;
+            border: 1px solid var(--paper-line); border-radius: 7px; background: var(--paper-raised);
+            color: var(--ink-soft); cursor: pointer; text-align: left; transition: border-color 0.15s, background 0.15s;
+        }
+        .editor-workbar-btn:hover { border-color: var(--ink-faint); background: #FFFEFB; }
+        .editor-workbar-btn > span:last-child { min-width: 0; display: flex; flex-direction: column; gap: 1px; }
+        .editor-workbar-btn strong { color: var(--ink); font-size: 11.5px; line-height: 1.25; }
+        .editor-workbar-btn small { overflow: hidden; color: var(--ink-faint); font-size: 8.5px; line-height: 1.3; white-space: nowrap; text-overflow: ellipsis; }
+        .editor-workbar-icon {
+            flex: 0 0 auto; width: 25px; height: 25px; display: grid; place-items: center; border-radius: 6px;
+            background: var(--paper); color: var(--ink-soft); font-size: 15px;
+        }
+        .canva-launcher.linked { border-color: #C9A8F0; background: #FBF8FF; }
+        .canva-launcher.linked .editor-workbar-icon { color: #6B2EC8; background: #F1E8FF; }
+        .publish-launcher { border-color: #A8C7B8; }
+        .publish-launcher .editor-workbar-icon { color: var(--green-stamp); background: #EDF6F1; }
         /* 卡片不可在 flex 側欄中被壓扁；高度超出時只捲動 editor-scroll。 */
         .editor-card {
             flex: 0 0 auto; width: 100%; min-width: 0; max-width: 100%;
@@ -335,6 +356,89 @@
             font-weight: 700; cursor: pointer; font-size: 12px; color: var(--ink-soft);
         }
         .qa-cancel-btn:hover { border-color: var(--ink-faint); }
+
+        .qa-submit-btn:disabled { opacity: 0.48; cursor: not-allowed; }
+
+        /* =====================================================
+           工作視窗：發布文案／Canva
+        ===================================================== */
+        .workspace-modal-overlay {
+            position: fixed; inset: 0; z-index: 320; display: none; align-items: center; justify-content: center;
+            padding: 28px;
+        }
+        .workspace-modal-overlay.open { display: flex; }
+        .workspace-modal-backdrop { position: absolute; inset: 0; background: rgba(28,27,25,0.52); backdrop-filter: blur(2px); }
+        .workspace-modal {
+            position: relative; width: min(920px, calc(100vw - 56px)); max-height: calc(100vh - 56px);
+            display: flex; flex-direction: column; overflow: hidden; border: 1px solid var(--paper-line);
+            border-radius: 14px; background: var(--paper-raised); box-shadow: 0 28px 90px rgba(0,0,0,0.3);
+            animation: workspaceModalIn 0.16s ease-out;
+        }
+        @keyframes workspaceModalIn { from { opacity: 0; transform: translateY(10px) scale(0.985); } to { opacity: 1; transform: none; } }
+        .workspace-modal-header {
+            flex: 0 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 14px;
+            padding: 16px 18px; border-bottom: 1px solid var(--paper-line); background: #FCFBF8;
+        }
+        .workspace-modal-header h2 { margin-top: 2px; font-family: var(--font-display); font-size: 18px; color: var(--ink); }
+        .workspace-modal-kicker { color: var(--green-stamp); font-family: var(--font-mono); font-size: 8px; font-weight: 800; letter-spacing: 1px; }
+        .canva-kicker { color: #6B2EC8; }
+        .workspace-modal-close {
+            flex: 0 0 auto; width: 30px; height: 30px; border: 1px solid var(--paper-line); border-radius: 7px;
+            background: var(--paper); color: var(--ink-soft); cursor: pointer;
+        }
+        .workspace-modal-close:hover { color: var(--red-pen); border-color: var(--red-pen); }
+        .workspace-modal-footer {
+            flex: 0 0 auto; min-height: 58px; display: flex; align-items: center; justify-content: space-between; gap: 10px;
+            padding: 11px 18px; border-top: 1px solid var(--paper-line); background: #FCFBF8;
+        }
+        .workspace-modal-actions { display: flex; align-items: center; gap: 8px; margin-left: auto; }
+        .workspace-secondary-btn, .workspace-primary-btn {
+            padding: 8px 13px; border-radius: 6px; font-size: 11px; font-weight: 800; cursor: pointer; white-space: nowrap;
+        }
+        .workspace-secondary-btn { border: 1px solid var(--paper-line); background: var(--paper-raised); color: var(--ink-soft); }
+        .workspace-secondary-btn:hover { border-color: var(--ink-faint); color: var(--ink); }
+        .workspace-primary-btn { border: 1px solid var(--green-stamp); background: var(--green-stamp); color: white; }
+        .workspace-primary-btn:hover { background: #285F51; }
+
+        .publish-modal { height: min(720px, calc(100vh - 56px)); }
+        .publish-modal-body { flex: 1 1 auto; min-height: 0; overflow: hidden; display: grid; grid-template-columns: minmax(0, 1fr) 258px; }
+        .publish-output-pane { min-width: 0; min-height: 0; display: flex; flex-direction: column; padding: 16px 18px; border-right: 1px solid var(--paper-line); }
+        .publish-output-header { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 7px; }
+        .publish-output-header label { color: var(--ink-soft); font-size: 10.5px; font-weight: 700; }
+        .publish-reset-btn { border: none; background: none; color: var(--green-stamp); font-size: 9.5px; font-weight: 800; cursor: pointer; }
+        .publish-output {
+            flex: 1 1 auto; width: 100%; min-width: 0; min-height: 0; resize: none; overflow: auto;
+            padding: 15px 16px; border: 1px solid var(--paper-line); border-radius: 8px; background: var(--paper);
+            color: var(--ink); font-size: 13.5px; line-height: 1.75; white-space: pre-wrap;
+        }
+        .publish-output:focus { outline: none; border-color: var(--green-stamp); box-shadow: 0 0 0 3px rgba(47,111,94,0.08); background: white; }
+        .publish-edit-note { margin-top: 6px; color: var(--ink-faint); font-size: 9px; }
+        .publish-inspector { min-width: 0; overflow-y: auto; padding: 16px; background: #F7F3EA; }
+        .publish-inspector-section + .publish-inspector-section { margin-top: 18px; }
+        .publish-inspector h3 { margin-bottom: 8px; color: var(--ink-faint); font-size: 9px; font-weight: 900; letter-spacing: 0.7px; text-transform: uppercase; }
+        .publish-meta-list { display: flex; flex-direction: column; gap: 7px; }
+        .publish-meta-list > div { padding-bottom: 7px; border-bottom: 1px solid var(--paper-line); }
+        .publish-meta-list dt { margin-bottom: 2px; color: var(--ink-faint); font-size: 8.5px; font-weight: 800; }
+        .publish-meta-list dd { color: var(--ink-soft); font-size: 10.5px; line-height: 1.5; overflow-wrap: anywhere; }
+        .publish-stat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 5px; }
+        .publish-stat-grid > div { padding: 9px 4px; border: 1px solid var(--paper-line); border-radius: 6px; background: white; text-align: center; }
+        .publish-stat-grid strong { display: block; color: var(--ink); font-family: var(--font-mono); font-size: 14px; }
+        .publish-stat-grid span { color: var(--ink-faint); font-size: 8px; }
+        .publish-check { margin-top: 14px; padding: 9px 10px; border-radius: 6px; background: white; color: var(--ink-soft); font-size: 9.5px; line-height: 1.55; }
+        .publish-check.complete { border: 1px solid #A8C7B8; color: #285942; background: #F1F8F4; }
+        .publish-check.warning { border: 1px solid #E4C98F; color: #8A651F; background: #FFF9EB; }
+
+        .canva-tool-modal { width: min(820px, calc(100vw - 56px)); }
+        .canva-modal-header-actions { display: flex; align-items: center; gap: 9px; }
+        .canva-modal-body { flex: 1 1 auto; min-height: 0; overflow-y: auto; padding: 18px; }
+        .canva-link-block label { display: block; margin-bottom: 5px; color: var(--ink-faint); font-size: 9.5px; font-weight: 800; }
+        .canva-link-block input {
+            width: 100%; min-width: 0; padding: 10px 11px; border: 1px solid var(--paper-line); border-radius: 6px;
+            background: var(--paper); color: var(--ink); font-size: 12.5px;
+        }
+        .canva-link-block input:focus { outline: none; border-color: #6B2EC8; background: white; box-shadow: 0 0 0 3px rgba(107,46,200,0.07); }
+        .canva-command-bar { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 7px; margin-top: 10px; }
+        .canva-footer-status { color: var(--ink-faint); font-size: 9.5px; line-height: 1.4; }
 
         .canva-card-header {
             display: flex; align-items: center; justify-content: space-between; gap: 10px;
@@ -410,6 +514,7 @@
             margin-bottom: 10px; padding-bottom: 7px; border-bottom: 1px solid var(--paper-line);
         }
         .editor-card .caption-card-header h3 { margin: 0; padding: 0; border: none; }
+        .caption-card-actions { display: flex; align-items: center; gap: 5px; min-width: 0; }
         .editor-focus-btn {
             padding: 4px 9px; border: 1px solid var(--paper-line); border-radius: 4px;
             background: var(--paper); color: var(--ink-soft); font-size: 10px; font-weight: 700; cursor: pointer;
@@ -455,20 +560,20 @@
 
         /* IG 預覽（置中） */
         .preview-pane {
-            flex: 1; overflow-y: auto; display: flex; align-items: flex-start; justify-content: center;
-            padding: 28px 24px;
+            flex: 1; min-width: 0; overflow-y: auto; display: flex; align-items: flex-start; justify-content: center;
+            padding: 24px 20px;
             background: var(--paper);
             background-image: radial-gradient(circle at 1px 1px, rgba(0,0,0,0.04) 1px, transparent 0);
             background-size: 14px 14px;
         }
         .ig-card {
             background: white; border: 1px solid #dbdbdb; border-radius: 12px;
-            width: 100%; max-width: 380px; overflow: hidden;
+            width: 100%; max-width: 400px; overflow: hidden;
             box-shadow: 0 8px 28px rgba(0,0,0,0.09);
         }
-        body.presenting .ig-card { max-width: 420px; }
+        body.presenting .ig-card { max-width: 440px; }
         .present-nav {
-            display: none; width: 100%; max-width: 420px; margin-bottom: 10px;
+            display: none; width: 100%; max-width: 440px; margin-bottom: 10px;
             align-items: center; justify-content: center; gap: 10px;
         }
         body.presenting .preview-pane { flex-direction: column; align-items: center; }
@@ -523,6 +628,7 @@
             box-shadow: 0 24px 70px rgba(0,0,0,0.26); overflow: hidden;
         }
         body.editor-focused .editor-scroll { padding: 18px; overflow: hidden; }
+        body.editor-focused .editor-workbar { display: none; }
         body.editor-focused .editor-card:not(.caption-card),
         body.editor-focused .editor-footer { display: none; }
         body.editor-focused .caption-card { flex: 1; display: flex; flex-direction: column; min-height: 0; }
@@ -560,13 +666,14 @@
         @media (min-width: 768px) and (max-width: 1100px) {
             .topbar { padding: 0 14px; gap: 10px; }
             .brand-sub { display: none; }
-            .day-col { width: 300px; }
-            .editor-container { width: 360px; min-width: 360px; }
+            .day-col { width: 250px; }
+            .editor-container { width: 400px; min-width: 400px; }
             .preview-pane { padding: 20px 14px; }
+            .editor-workbar { padding: 8px; gap: 6px; }
         }
 
         /* 窄平板編輯時先保留清單與編輯器；簡報時仍顯示完整預覽 */
-        @media (min-width: 768px) and (max-width: 900px) {
+        @media (min-width: 768px) and (max-width: 1000px) {
             .preview-pane { display: none !important; }
             .editor-container { width: auto; min-width: 0; flex: 1; }
             body.presenting .main-content { display: flex !important; }
@@ -603,6 +710,21 @@
             .mobile-nav-btn.active span { color: var(--red-pen); }
             .cal-popup { width: calc(100vw - 32px); left: 16px; transform: none; }
             .gh-popup { right: 14px; width: calc(100vw - 28px); }
+            .workspace-modal-overlay { padding: 8px; align-items: stretch; }
+            .workspace-modal { width: calc(100vw - 16px); max-height: calc(100vh - 16px); margin: auto; border-radius: 10px; }
+            .workspace-modal-header { padding: 12px 14px; }
+            .workspace-modal-header h2 { font-size: 16px; }
+            .publish-modal-body { display: flex; flex-direction: column; overflow-y: auto; }
+            .publish-output-pane { flex: 0 0 auto; min-height: 420px; padding: 12px; border-right: none; border-bottom: 1px solid var(--paper-line); }
+            .publish-output { min-height: 330px; }
+            .publish-inspector { flex: 0 0 auto; overflow: visible; padding: 12px; }
+            .workspace-modal-footer { padding: 10px 12px; flex-wrap: wrap; }
+            .publish-modal-footer > .workspace-secondary-btn { order: 2; }
+            .workspace-modal-actions { order: 1; width: 100%; }
+            .workspace-modal-actions .workspace-primary-btn { flex: 1; }
+            .canva-modal-body { padding: 12px; }
+            .canva-command-bar { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+            .canva-pages-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
         }
 
         @media (max-width: 420px) {

@@ -22,7 +22,7 @@ let canvaAutoResolveTimer = null;
 let pendingConfirmResolve = null;
 let calYear, calMonth;     // 日曆浮動視窗的當前年月
 const DB_SCHEMA_VERSION = 2;
-const APP_VERSION = '8.1.0';
+const APP_VERSION = '8.2.0';
 const VALID_RATIOS = new Set(['1-1', '4-5', '16-9']);
 const VALID_STATUSES = new Set(['draft', 'ready', 'published']);
 const STATUS_LABELS = { draft: '草稿', ready: '已完成', published: '已發布' };
@@ -655,6 +655,7 @@ function loadPost(id) {
     document.getElementById('edit-status').value = post.status || 'draft';
     document.getElementById('canva-url-input').value = post.canvaUrl || '';
     document.getElementById('edit-caption').innerHTML = post.caption || '';
+    updateCanvaLauncherState(post);
     showEditor(true);
     lastRenderedMediaKey = null;
     updatePreview();
@@ -677,6 +678,7 @@ function updateCurrentPost(field, value) {
     const now = new Date().toISOString();
     post.createdAt = post.createdAt || now;
     post.updatedAt = now;
+    if (field === 'canvaUrl') updateCanvaLauncherState(post);
     saveLocal({ debounce: field === 'caption' });
     updatePreview();
     if (field === 'caption') scheduleDayRender();
@@ -811,6 +813,97 @@ function onQaCanvaSelect(v) { if (v) document.getElementById('qa-canva-input').v
 
 function skipQuickAdd() { closeQuickAdd(); createNewPost(); }
 
+/* =============================================================
+   發布文案：組合結構化欄位並複製到其他平台
+============================================================= */
+function getPublishComposition() {
+    const post = getPostById(currentId);
+    if (!post) return null;
+    return PostComposerService.compose(post, getPlainText(post.caption || ''));
+}
+
+function openPublishComposer() {
+    if (!getPostById(currentId)) {
+        showToast('請先選擇一篇貼文');
+        return;
+    }
+    resetPublishComposer();
+    document.getElementById('publish-overlay').classList.add('open');
+    setTimeout(() => document.getElementById('publish-output')?.focus(), 50);
+}
+
+function closePublishComposer() {
+    document.getElementById('publish-overlay').classList.remove('open');
+}
+
+function resetPublishComposer() {
+    const post = getPostById(currentId);
+    const composition = getPublishComposition();
+    if (!post || !composition) return;
+    document.getElementById('publish-output').value = composition.text;
+    document.getElementById('publish-theme-value').textContent = post.theme || '未設定';
+    document.getElementById('publish-title-value').textContent = post.title || '未設定';
+    updatePublishComposerStats();
+}
+
+function updatePublishComposerStats() {
+    const post = getPostById(currentId);
+    const output = document.getElementById('publish-output');
+    if (!post || !output) return;
+    const stats = PostComposerService.inspect(output.value);
+    document.getElementById('publish-char-count').textContent = String(stats.characterCount);
+    document.getElementById('publish-line-count').textContent = String(stats.lineCount);
+    document.getElementById('publish-tag-count').textContent = String(stats.hashtags.length);
+    document.getElementById('publish-source-value').textContent = stats.sourceLines.join('、') || '未偵測';
+    document.getElementById('publish-hashtag-value').textContent = stats.hashtags.join(' ') || '未偵測';
+    const missing = [];
+    if (!post.theme) missing.push('主題');
+    if (!post.title) missing.push('書名');
+    if (!stats.sourceLines.length) missing.push('頁碼');
+    if (!stats.hashtags.length) missing.push('Hashtag');
+    const check = document.getElementById('publish-check');
+    check.className = `publish-check ${missing.length ? 'warning' : 'complete'}`;
+    check.textContent = missing.length
+        ? `複製前請確認：尚未偵測到${missing.join('、')}。`
+        : '✓ 主題、書名、頁碼與標籤皆已包含。';
+}
+
+async function writeClipboardText(text) {
+    if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(text);
+        return;
+    }
+    const helper = document.createElement('textarea');
+    helper.value = text;
+    helper.setAttribute('readonly', '');
+    helper.style.position = 'fixed';
+    helper.style.opacity = '0';
+    document.body.appendChild(helper);
+    helper.select();
+    const copied = document.execCommand('copy');
+    helper.remove();
+    if (!copied) throw new Error('瀏覽器拒絕存取剪貼簿');
+}
+
+async function copyPublishText(mode = 'full') {
+    const output = document.getElementById('publish-output');
+    if (!output) return;
+    const fullText = PostComposerService.normalizeText(output.value);
+    const text = mode === 'body' ? PostComposerService.stripExistingHeader(fullText) : fullText;
+    if (!text) {
+        showToast('目前沒有可複製的內容');
+        return;
+    }
+    try {
+        await writeClipboardText(text);
+        showToast(mode === 'body' ? '已複製貼文內文' : `已複製完整貼文，共 ${Array.from(text).length} 字`);
+    } catch (error) {
+        console.error('Copy failed:', error);
+        output.focus(); output.select();
+        showToast('自動複製失敗，已選取文字，請按 Ctrl+C', 4200);
+    }
+}
+
 function submitQuickAdd() {
     if (!selectedDateStr) return;
     const theme = document.getElementById('qa-theme-input').value.trim();
@@ -841,6 +934,32 @@ function submitQuickAdd() {
 /* =============================================================
    IG 預覽
 ============================================================= */
+function updateCanvaLauncherState(post = getPostById(currentId)) {
+    const launcher = document.querySelector('.canva-launcher');
+    const state = document.getElementById('canva-launcher-state');
+    const linked = Boolean(post?.canvaUrl?.trim());
+    launcher?.classList.toggle('linked', linked);
+    if (state) state.textContent = linked ? '已連結，可開啟圖片工具' : '尚未連結';
+    const footer = document.getElementById('canva-footer-status');
+    if (footer && !resolvedCanvaPages.length) footer.textContent = linked ? '已連結 Canva，解析後可逐頁下載' : '貼上連結後即可預覽與下載';
+}
+
+function openCanvaTool() {
+    const post = getPostById(currentId);
+    if (!post) {
+        showToast('請先選擇一篇貼文');
+        return;
+    }
+    document.getElementById('canva-url-input').value = post.canvaUrl || '';
+    updateCanvaLauncherState(post);
+    document.getElementById('canva-tool-overlay').classList.add('open');
+    if (!post.canvaUrl) setTimeout(() => document.getElementById('canva-url-input')?.focus(), 50);
+}
+
+function closeCanvaTool() {
+    document.getElementById('canva-tool-overlay').classList.remove('open');
+}
+
 function openCanvaWindow(url) {
     if (!CanvaService.parsePublicUrl(url || '')) {
         showToast('請先輸入有效的 Canva 公開連結');
@@ -900,6 +1019,8 @@ function setCanvaPagesStatus(message) {
     const status = document.getElementById('canva-pages-status');
     if (panel) panel.hidden = !message && resolvedCanvaPages.length === 0;
     if (status) status.innerText = message || '';
+    const footer = document.getElementById('canva-footer-status');
+    if (footer && message) footer.innerText = message;
 }
 function clearResolvedCanvaPages({ keepStatus = false } = {}) {
     resolvedCanvaPages = [];
@@ -1400,6 +1521,8 @@ document.addEventListener('keydown', e => {
     if (e.key === 'Escape') {
         if (document.body.classList.contains('editor-focused')) toggleEditorFocus(false);
         else if (document.getElementById('confirm-modal').classList.contains('show')) closeConfirmModal(false);
+        else if (document.getElementById('publish-overlay').classList.contains('open')) closePublishComposer();
+        else if (document.getElementById('canva-tool-overlay').classList.contains('open')) closeCanvaTool();
         else if (document.getElementById('quickadd-overlay').classList.contains('open')) closeQuickAdd();
         else if (document.getElementById('cal-overlay').classList.contains('open')) closeCalOverlay();
         else if (document.getElementById('gh-overlay').classList.contains('open')) closeGhOverlay();

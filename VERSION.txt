@@ -1,4 +1,4 @@
-IG Post Planner V8.1
+IG Post Planner V8.2
 
-Canva short-link static preview and multi-page Worker parser.
+Compact workspace layout, publish-copy composer, and modal Canva tools.
 Build date: 2026-08-05

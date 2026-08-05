@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>排版桌 — IG Post Planner v8.1</title>
+    <title>排版桌 — IG Post Planner v8.2</title>
     <script src="database.js" onerror="console.log('尚未偵測到 database.js')"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;700;900&family=Noto+Sans+TC:wght@400;500;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/app.css?v=8.1.0">
+    <link rel="stylesheet" href="assets/css/app.css?v=8.2.0">
 </head>
 <body>
 
@@ -18,7 +18,7 @@
 <div class="topbar">
     <div class="brand-area">
         <span class="brand-mark">排版桌</span>
-        <span class="brand-sub">IG POST PLANNER · V8.1</span>
+        <span class="brand-sub">IG POST PLANNER · V8.2</span>
     </div>
 
     <div class="topbar-divider"></div>
@@ -143,6 +143,108 @@
     </div>
 </div>
 
+<!-- =====================================================
+     發布文案視窗
+===================================================== -->
+<div class="workspace-modal-overlay" id="publish-overlay">
+    <div class="workspace-modal-backdrop" onclick="closePublishComposer()"></div>
+    <div class="workspace-modal publish-modal" role="dialog" aria-modal="true" aria-labelledby="publish-modal-title">
+        <div class="workspace-modal-header">
+            <div>
+                <span class="workspace-modal-kicker">READY TO PUBLISH</span>
+                <h2 id="publish-modal-title">完整發布文案</h2>
+            </div>
+            <button class="workspace-modal-close" onclick="closePublishComposer()" aria-label="關閉">✕</button>
+        </div>
+        <div class="publish-modal-body">
+            <section class="publish-output-pane">
+                <div class="publish-output-header">
+                    <label for="publish-output">可直接貼到 Facebook、Instagram、Threads 或其他平台</label>
+                    <button type="button" class="publish-reset-btn" onclick="resetPublishComposer()">↻ 重新產生</button>
+                </div>
+                <textarea id="publish-output" class="publish-output" spellcheck="false" oninput="updatePublishComposerStats()"></textarea>
+                <p class="publish-edit-note">你可以在此做最後調整；這裡的修改不會回寫排版桌資料。</p>
+            </section>
+            <aside class="publish-inspector">
+                <div class="publish-inspector-section">
+                    <h3>內容組成</h3>
+                    <dl class="publish-meta-list">
+                        <div><dt>主題</dt><dd id="publish-theme-value">—</dd></div>
+                        <div><dt>書名</dt><dd id="publish-title-value">—</dd></div>
+                        <div><dt>頁碼</dt><dd id="publish-source-value">未偵測</dd></div>
+                        <div><dt>標籤</dt><dd id="publish-hashtag-value">未偵測</dd></div>
+                    </dl>
+                </div>
+                <div class="publish-inspector-section">
+                    <h3>文字統計</h3>
+                    <div class="publish-stat-grid">
+                        <div><strong id="publish-char-count">0</strong><span>字元</span></div>
+                        <div><strong id="publish-line-count">0</strong><span>行</span></div>
+                        <div><strong id="publish-tag-count">0</strong><span>標籤</span></div>
+                    </div>
+                </div>
+                <div class="publish-check" id="publish-check" role="status" aria-live="polite"></div>
+            </aside>
+        </div>
+        <div class="workspace-modal-footer publish-modal-footer">
+            <button class="workspace-secondary-btn" onclick="copyPublishText('body')">只複製內文</button>
+            <div class="workspace-modal-actions">
+                <button class="workspace-secondary-btn" onclick="closePublishComposer()">關閉</button>
+                <button class="workspace-primary-btn" id="publish-copy-btn" onclick="copyPublishText('full')">⧉ 複製完整貼文</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- =====================================================
+     Canva 工具視窗
+===================================================== -->
+<div class="workspace-modal-overlay" id="canva-tool-overlay">
+    <div class="workspace-modal-backdrop" onclick="closeCanvaTool()"></div>
+    <div class="workspace-modal canva-tool-modal" role="dialog" aria-modal="true" aria-labelledby="canva-tool-title">
+        <div class="workspace-modal-header">
+            <div>
+                <span class="workspace-modal-kicker canva-kicker">MEDIA TOOL</span>
+                <h2 id="canva-tool-title">Canva 圖片工具</h2>
+            </div>
+            <div class="canva-modal-header-actions">
+                <span class="canva-service-badge" id="canva-service-badge">單頁模式</span>
+                <button class="workspace-modal-close" onclick="closeCanvaTool()" aria-label="關閉">✕</button>
+            </div>
+        </div>
+        <div class="canva-modal-body">
+            <div class="canva-link-block">
+                <label for="canva-url-input">Canva 公開分享連結</label>
+                <input type="text" id="canva-url-input" placeholder="貼上 Canva 公開分享連結" oninput="updateCurrentPost('canvaUrl', this.value)">
+            </div>
+            <div class="canva-command-bar">
+                <button type="button" class="canva-action-btn" onclick="openCanvaDownload()">↗ Canva 原圖</button>
+                <button type="button" class="canva-action-btn" id="canva-resolve-btn" onclick="resolveCanvaPages()">▦ 解析頁面</button>
+                <button type="button" class="canva-action-btn download" id="canva-preview-download-btn" onclick="downloadCanvaPublicPreview()">⬇ 下載目前頁</button>
+                <button type="button" class="canva-action-btn download" id="canva-download-all-btn" onclick="downloadAllCanvaPages()" disabled>⬇ 下載全部頁面</button>
+            </div>
+            <div class="canva-pages-panel" id="canva-pages-panel" hidden>
+                <div class="canva-pages-status" id="canva-pages-status" role="status" aria-live="polite"></div>
+                <div class="canva-pages-grid" id="canva-pages-grid"></div>
+            </div>
+            <details class="canva-service-config" id="canva-service-config">
+                <summary>進階設定：多頁下載服務</summary>
+                <label for="canva-worker-url">Cloudflare Worker 網址</label>
+                <div class="canva-service-input-row">
+                    <input type="url" id="canva-worker-url" inputmode="url" autocomplete="off" placeholder="https://你的服務.workers.dev">
+                    <button type="button" class="canva-config-save" onclick="saveCanvaWorkerConfig()">儲存</button>
+                </div>
+                <div class="field-hint">只需設定一次，網址只儲存在這台裝置。</div>
+            </details>
+            <div class="canva-download-note">平時不占用編輯空間；需要處理圖片時再開啟此視窗。原始尺寸仍以「Canva 原圖」為準。</div>
+        </div>
+        <div class="workspace-modal-footer">
+            <span class="canva-footer-status" id="canva-footer-status">貼上連結後即可預覽與下載</span>
+            <button class="workspace-secondary-btn" onclick="closeCanvaTool()">完成</button>
+        </div>
+    </div>
+</div>
+
 <!-- 專注編輯遮罩 -->
 <div class="editor-focus-backdrop" id="editor-focus-backdrop" onclick="toggleEditorFocus(false)"></div>
 
@@ -210,39 +312,17 @@
 
         <!-- 編輯區（右側 sidebar） -->
         <div class="editor-container" id="editor-ui" style="display:none">
+            <div class="editor-workbar">
+                <button type="button" class="editor-workbar-btn canva-launcher" onclick="openCanvaTool()">
+                    <span class="editor-workbar-icon">◫</span>
+                    <span><strong>Canva</strong><small id="canva-launcher-state">尚未連結</small></span>
+                </button>
+                <button type="button" class="editor-workbar-btn publish-launcher" onclick="openPublishComposer()">
+                    <span class="editor-workbar-icon">⧉</span>
+                    <span><strong>發布文案</strong><small>組合並複製完整貼文</small></span>
+                </button>
+            </div>
             <div class="editor-scroll">
-                <div class="editor-card canva-tool-card">
-                    <div class="canva-card-header">
-                        <h3>Canva 圖片工具</h3>
-                        <span class="canva-service-badge" id="canva-service-badge">單頁模式</span>
-                    </div>
-                    <div class="canva-single-row">
-                        <input type="text" id="canva-url-input" placeholder="貼上 Canva 公開分享連結（建議使用長網址）" oninput="updateCurrentPost('canvaUrl', this.value)">
-                        <div class="canva-action-row">
-                            <button type="button" class="canva-action-btn" onclick="openCanvaDownload()" title="前往 Canva 下載原始圖片">↗ Canva 原圖</button>
-                            <button type="button" class="canva-action-btn download" id="canva-preview-download-btn" onclick="downloadCanvaPublicPreview()" title="下載第 1 頁公開預覽 PNG">⬇ 下載第 1 頁</button>
-                        </div>
-                    </div>
-                    <div class="canva-multi-action-row">
-                        <button type="button" class="canva-action-btn" id="canva-resolve-btn" onclick="resolveCanvaPages()">▦ 解析全部頁面</button>
-                        <button type="button" class="canva-action-btn download" id="canva-download-all-btn" onclick="downloadAllCanvaPages()" disabled>⬇ 下載全部頁面</button>
-                    </div>
-                    <details class="canva-service-config" id="canva-service-config">
-                        <summary>多頁下載服務設定</summary>
-                        <label for="canva-worker-url">Cloudflare Worker 網址</label>
-                        <div class="canva-service-input-row">
-                            <input type="url" id="canva-worker-url" inputmode="url" autocomplete="off" placeholder="https://你的服務.workers.dev">
-                            <button type="button" class="canva-config-save" onclick="saveCanvaWorkerConfig()">儲存</button>
-                        </div>
-                        <div class="field-hint">只需設定一次，網址只儲存在這台裝置。部署方式請看專案 README。</div>
-                    </details>
-                    <div class="canva-pages-panel" id="canva-pages-panel" hidden>
-                        <div class="canva-pages-status" id="canva-pages-status" role="status" aria-live="polite"></div>
-                        <div class="canva-pages-grid" id="canva-pages-grid"></div>
-                    </div>
-                    <div class="canva-download-note">Canva 通常只公開第 1 頁高畫質預覽；其餘頁面若未提供高畫質，會使用可取得的公開縮圖。原始尺寸仍需使用「Canva 原圖」。</div>
-                </div>
-
                 <div class="editor-card">
                     <h3>基本設定</h3>
                     <div class="form-row">
@@ -292,7 +372,9 @@
                 <div class="editor-card caption-card">
                     <div class="caption-card-header">
                         <h3>貼文內文</h3>
-                        <button class="editor-focus-btn" id="editor-focus-btn" onclick="toggleEditorFocus()">⛶ 專注編輯</button>
+                        <div class="caption-card-actions">
+                            <button class="editor-focus-btn" id="editor-focus-btn" onclick="toggleEditorFocus()">⛶ 專注編輯</button>
+                        </div>
                     </div>
                     <div class="editor-toolbar">
                         <div class="toolbar-row">
@@ -357,10 +439,11 @@
     <button class="mobile-nav-btn" id="mnav-preview" onclick="mobileShowPanel('preview')">👁<span>預覽</span></button>
 </div>
 
-<script src="assets/js/services/storage.js?v=8.1.0" defer></script>
-<script src="assets/js/services/github.js?v=8.1.0" defer></script>
-<script src="assets/js/services/canva.js?v=8.1.0" defer></script>
-<script src="assets/js/services/zip.js?v=8.1.0" defer></script>
-<script src="assets/js/app.js?v=8.1.0" defer></script>
+<script src="assets/js/services/storage.js?v=8.2.0" defer></script>
+<script src="assets/js/services/github.js?v=8.2.0" defer></script>
+<script src="assets/js/services/canva.js?v=8.2.0" defer></script>
+<script src="assets/js/services/post-composer.js?v=8.2.0" defer></script>
+<script src="assets/js/services/zip.js?v=8.2.0" defer></script>
+<script src="assets/js/app.js?v=8.2.0" defer></script>
 </body>
 </html>
