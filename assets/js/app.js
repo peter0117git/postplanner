@@ -16,10 +16,13 @@ let storageErrorShown = false;
 let resolvedCanvaPages = [];
 let resolvedCanvaSourceUrl = '';
 let resolvedCanvaTitle = '';
+let currentCanvaPreviewIndex = 0;
+let canvaAutoResolveUrl = '';
+let canvaAutoResolveTimer = null;
 let pendingConfirmResolve = null;
 let calYear, calMonth;     // 日曆浮動視窗的當前年月
 const DB_SCHEMA_VERSION = 2;
-const APP_VERSION = '8.0.0';
+const APP_VERSION = '8.1.0';
 const VALID_RATIOS = new Set(['1-1', '4-5', '16-9']);
 const VALID_STATUSES = new Set(['draft', 'ready', 'published']);
 const STATUS_LABELS = { draft: '草稿', ready: '已完成', published: '已發布' };
@@ -640,7 +643,10 @@ function loadPost(id) {
     currentId = id; isIGExpanded = false; canvaInteractionEnabled = false;
     const post = getPostById(id);
     if (!post) return;
-    if (resolvedCanvaSourceUrl !== (post.canvaUrl || '')) clearResolvedCanvaPages();
+    if (resolvedCanvaSourceUrl !== (post.canvaUrl || '')) {
+        canvaAutoResolveUrl = '';
+        clearResolvedCanvaPages();
+    }
     refreshMetadataDatalists();
     document.getElementById('edit-time').value = post.time || '09:00';
     document.getElementById('edit-ratio').value = post.ratio || '1-1';
@@ -663,7 +669,10 @@ function updateCurrentPost(field, value) {
     if (field === 'caption') value = sanitizeCaptionHtml(value);
     if (field === 'ratio' && !VALID_RATIOS.has(value)) return;
     if (field === 'status' && !VALID_STATUSES.has(value)) return;
-    if (field === 'canvaUrl' && value !== resolvedCanvaSourceUrl) clearResolvedCanvaPages();
+    if (field === 'canvaUrl' && value !== resolvedCanvaSourceUrl) {
+        canvaAutoResolveUrl = '';
+        clearResolvedCanvaPages();
+    }
     post[field] = value;
     const now = new Date().toISOString();
     post.createdAt = post.createdAt || now;
@@ -896,6 +905,9 @@ function clearResolvedCanvaPages({ keepStatus = false } = {}) {
     resolvedCanvaPages = [];
     resolvedCanvaSourceUrl = '';
     resolvedCanvaTitle = '';
+    currentCanvaPreviewIndex = 0;
+    clearTimeout(canvaAutoResolveTimer);
+    canvaAutoResolveTimer = null;
     const grid = document.getElementById('canva-pages-grid');
     const panel = document.getElementById('canva-pages-panel');
     const allButton = document.getElementById('canva-download-all-btn');
@@ -914,6 +926,8 @@ function renderCanvaPages(result, sourceUrl) {
     resolvedCanvaPages = result.pages;
     resolvedCanvaSourceUrl = sourceUrl;
     resolvedCanvaTitle = result.title || '';
+    currentCanvaPreviewIndex = 0;
+    canvaAutoResolveUrl = sourceUrl;
     const grid = document.getElementById('canva-pages-grid');
     const panel = document.getElementById('canva-pages-panel');
     const allButton = document.getElementById('canva-download-all-btn');
@@ -927,6 +941,7 @@ function renderCanvaPages(result, sourceUrl) {
         image.className = 'canva-page-thumb';
         image.src = page.url;
         image.alt = `Canva 第 ${page.page} 頁預覽`;
+        image.title = page.quality === 'preview' ? '公開預覽圖' : 'Canva 公開縮圖';
         image.loading = 'lazy';
         image.referrerPolicy = 'no-referrer';
         const footer = document.createElement('div');
@@ -946,7 +961,16 @@ function renderCanvaPages(result, sourceUrl) {
 
     panel.hidden = false;
     if (allButton) allButton.disabled = false;
-    setCanvaPagesStatus(`已找到 ${result.pages.length} 頁公開預覽（約 1024px）`);
+    const previewCount = result.pages.filter(page => page.quality === 'preview').length;
+    const thumbnailCount = result.pages.length - previewCount;
+    const qualityNote = thumbnailCount > 0
+        ? (previewCount > 0
+            ? `；其中 ${previewCount} 頁為高畫質預覽、${thumbnailCount} 頁為 Canva 公開縮圖`
+            : `；全部為 Canva 公開縮圖`)
+        : '（約 1024px）';
+    setCanvaPagesStatus(`已找到 ${result.pages.length} 頁${qualityNote}`);
+    lastRenderedMediaKey = null;
+    updatePreview();
 }
 async function resolveCanvaPages({ quiet = false } = {}) {
     const post = getPostById(currentId);
@@ -954,6 +978,8 @@ async function resolveCanvaPages({ quiet = false } = {}) {
         showToast('請先貼上有效的 Canva 公開分享連結');
         return false;
     }
+    const requestedPostId = currentId;
+    const requestedSourceUrl = post.canvaUrl;
     const workerUrl = getConfiguredCanvaWorker();
     if (!workerUrl) {
         const settings = document.getElementById('canva-service-config');
@@ -965,16 +991,22 @@ async function resolveCanvaPages({ quiet = false } = {}) {
 
     const button = document.getElementById('canva-resolve-btn');
     const originalLabel = button?.innerText || '';
+    clearTimeout(canvaAutoResolveTimer);
+    canvaAutoResolveTimer = null;
+    canvaAutoResolveUrl = requestedSourceUrl;
     if (button) { button.disabled = true; button.innerText = '解析中…'; }
     clearResolvedCanvaPages({ keepStatus: true });
     setCanvaPagesStatus('正在解析 Canva 公開頁面…');
     try {
-        const result = await CanvaService.resolvePages(workerUrl, post.canvaUrl);
+        const result = await CanvaService.resolvePages(workerUrl, requestedSourceUrl);
         if (!result.pages.length) throw new Error('未找到可下載的公開預覽頁面');
-        renderCanvaPages(result, post.canvaUrl);
+        const currentPost = getPostById(requestedPostId);
+        if (currentId !== requestedPostId || currentPost?.canvaUrl !== requestedSourceUrl) return false;
+        renderCanvaPages(result, requestedSourceUrl);
         if (!quiet) showToast(`已解析 Canva 的 ${result.pages.length} 個頁面`);
         return true;
     } catch (error) {
+        canvaAutoResolveUrl = requestedSourceUrl;
         setCanvaPagesStatus(error.message || 'Canva 多頁解析失敗');
         showToast(error.message || 'Canva 多頁解析失敗', 4600);
         return false;
@@ -1097,6 +1129,64 @@ async function downloadCanvaPublicPreview() {
         button.innerText = originalLabel;
     }
 }
+function queueCanvaAutoResolve(post) {
+    if (!post?.canvaUrl || !getConfiguredCanvaWorker() || !CanvaService.parsePublicUrl(post.canvaUrl)) return;
+    if (resolvedCanvaSourceUrl === post.canvaUrl || canvaAutoResolveUrl === post.canvaUrl) return;
+    canvaAutoResolveUrl = post.canvaUrl;
+    clearTimeout(canvaAutoResolveTimer);
+    canvaAutoResolveTimer = setTimeout(() => {
+        canvaAutoResolveTimer = null;
+        const activePost = getPostById(currentId);
+        if (activePost?.canvaUrl === post.canvaUrl && resolvedCanvaSourceUrl !== post.canvaUrl) {
+            resolveCanvaPages({ quiet: true });
+        }
+    }, 260);
+}
+function changeCanvaPreviewPage(event, direction) {
+    event?.stopPropagation();
+    if (resolvedCanvaPages.length < 2) return;
+    currentCanvaPreviewIndex = (currentCanvaPreviewIndex + direction + resolvedCanvaPages.length) % resolvedCanvaPages.length;
+    lastRenderedMediaKey = null;
+    updatePreview();
+}
+function appendResolvedCanvaPreview(media) {
+    const page = resolvedCanvaPages[currentCanvaPreviewIndex] || resolvedCanvaPages[0];
+    if (!page) return;
+    const image = document.createElement('img');
+    image.className = 'canva-static-preview';
+    image.src = page.url;
+    image.alt = `Canva 第 ${page.page} 頁預覽`;
+    image.referrerPolicy = 'no-referrer';
+    media.appendChild(image);
+
+    const badge = document.createElement('div');
+    badge.className = 'canva-badge';
+    badge.innerText = `Canva · ${currentCanvaPreviewIndex + 1}/${resolvedCanvaPages.length}`;
+    media.appendChild(badge);
+
+    const openButton = document.createElement('button');
+    openButton.type = 'button';
+    openButton.className = 'canva-interaction-btn';
+    openButton.innerText = '↗ Canva';
+    openButton.onclick = event => { event.stopPropagation(); openCurrentCanva(); };
+    media.appendChild(openButton);
+
+    if (resolvedCanvaPages.length > 1) {
+        const previous = document.createElement('button');
+        previous.type = 'button';
+        previous.className = 'canva-preview-arrow previous';
+        previous.innerText = '‹';
+        previous.setAttribute('aria-label', '上一張 Canva 預覽');
+        previous.onclick = event => changeCanvaPreviewPage(event, -1);
+        const next = document.createElement('button');
+        next.type = 'button';
+        next.className = 'canva-preview-arrow next';
+        next.innerText = '›';
+        next.setAttribute('aria-label', '下一張 Canva 預覽');
+        next.onclick = event => changeCanvaPreviewPage(event, 1);
+        media.append(previous, next);
+    }
+}
 function applyCanvaInteractionState() {
     const media = document.getElementById('prev-ig-media');
     media.classList.toggle('canva-interactive', canvaInteractionEnabled);
@@ -1187,13 +1277,19 @@ function updatePreview() {
     document.getElementById('prev-ig-time').innerText = post.time || '09:00';
     document.getElementById('prev-ig-time-label').innerText = formatTimeLabel(post.time);
     const media = document.getElementById('prev-ig-media');
+    const publicCanva = CanvaService.parsePublicUrl(post.canvaUrl || '');
     const canva = parseCanvaUrl(post.canvaUrl || '');
-    const mediaKey = `${post.ratio || '1-1'}|${canva?.embedUrl || ''}|${post.canvaUrl ? 'filled' : 'empty'}`;
+    const hasResolvedPreview = resolvedCanvaSourceUrl === post.canvaUrl && resolvedCanvaPages.length > 0;
+    currentCanvaPreviewIndex = Math.min(currentCanvaPreviewIndex, Math.max(0, resolvedCanvaPages.length - 1));
+    const resolvedPage = hasResolvedPreview ? resolvedCanvaPages[currentCanvaPreviewIndex] : null;
+    const mediaKey = `${post.ratio || '1-1'}|${resolvedPage?.url || canva?.embedUrl || ''}|${currentCanvaPreviewIndex}|${post.canvaUrl ? 'filled' : 'empty'}`;
     if (mediaKey !== lastRenderedMediaKey) {
         lastRenderedMediaKey = mediaKey;
         media.className = 'ig-media r-' + (post.ratio || '1-1');
         media.replaceChildren();
-        if (canva) {
+        if (hasResolvedPreview) {
+            appendResolvedCanvaPreview(media);
+        } else if (canva?.embedUrl) {
             const iframe = document.createElement('iframe');
             iframe.className = 'canva-frame'; iframe.src = canva.embedUrl; iframe.loading = 'lazy'; iframe.title = 'Canva 設計預覽';
             iframe.setAttribute('allowfullscreen', 'allowfullscreen'); iframe.setAttribute('allow', 'fullscreen');
@@ -1208,10 +1304,15 @@ function updatePreview() {
             applyCanvaInteractionState();
         } else {
             const empty = document.createElement('div'); empty.className = 'ig-media-empty';
-            empty.innerText = post.canvaUrl ? 'Canva 連結格式不正確' : '尚未設定 Canva 連結';
+            if (publicCanva?.kind === 'short') {
+                empty.innerText = getConfiguredCanvaWorker() ? '正在取得 Canva 短網址預覽…' : '短網址預覽需要先設定多頁服務';
+            } else {
+                empty.innerText = post.canvaUrl ? 'Canva 連結格式不正確' : '尚未設定 Canva 連結';
+            }
             media.appendChild(empty);
         }
     }
+    if (publicCanva && !hasResolvedPreview) queueCanvaAutoResolve(post);
     const raw = post.caption || '';
     const plain = getPlainText(raw);
     const captionEl = document.getElementById('prev-ig-caption');

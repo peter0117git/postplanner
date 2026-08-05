@@ -1,4 +1,4 @@
-# V8 架構說明
+# V8.1 架構說明
 
 ## 設計目標
 
@@ -45,7 +45,7 @@
 
 ### `canva-worker/src/index.js`
 
-只接受 Canva HTTPS 網址，逐次驗證重新導向，限制 HTML 大小，從公開頁面取出 `imageSets.preview.images`。回應只包含 Canva 網域的圖片網址，避免成為任意網址代理。
+只接受 Canva HTTPS 網址，逐次驗證重新導向，限制 HTML 大小，並合併公開頁面的 `imageSets.preview.images` 與 `imageSets.thumbnail.images`。第 1 頁有高畫質預覽、其他頁只有縮圖時仍能完整辨識頁數。回應只包含 Canva 網域的圖片網址，避免成為任意網址代理。
 
 ## 資料流程
 

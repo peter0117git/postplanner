@@ -32,6 +32,7 @@
     function parseEmbedUrl(value) {
         const info = parsePublicUrl(value);
         if (!info) return null;
+        if (info.kind === 'short') return { kind: 'short', embedUrl: null, page: null };
         try {
             const url = new URL(info.sourceUrl);
             const pageMatch = url.hash.match(/^#(\d+)$/);
@@ -39,7 +40,7 @@
             url.hash = '';
             if (!url.searchParams.has('embed')) url.searchParams.set('embed', '');
             const embedUrl = url.toString().replace(/embed=$/, 'embed');
-            return { embedUrl: page ? `${embedUrl}#${page}` : embedUrl, page };
+            return { kind: 'long', embedUrl: page ? `${embedUrl}#${page}` : embedUrl, page };
         } catch {
             return null;
         }
@@ -87,11 +88,14 @@
             title: String(result.title || 'Canva預覽'),
             designId: String(result.designId || ''),
             sourceUrl: String(result.sourceUrl || canvaUrl),
+            pageCount: Number(result.pageCount) || result.pages.length,
+            previewCount: Number(result.previewCount) || 0,
             pages: result.pages.map((page, index) => ({
                 page: Number(page.page) || index + 1,
                 url: String(page.url || ''),
                 width: Number(page.width) || null,
-                height: Number(page.height) || null
+                height: Number(page.height) || null,
+                quality: page.quality === 'preview' ? 'preview' : 'thumbnail'
             })).filter(page => /^https:\/\//i.test(page.url))
         };
     }

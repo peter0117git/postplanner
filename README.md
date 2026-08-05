@@ -1,6 +1,6 @@
-# 排版桌 IG Post Planner V8
+# 排版桌 IG Post Planner V8.1
 
-這是一個不需要建置工具、可直接部署到 GitHub Pages 的貼文規劃器。V8 保留原本的 `database.js` 資料格式，並將前端拆成畫面層、瀏覽器儲存、GitHub 同步與 Canva 圖片服務，方便後續維護。
+這是一個不需要建置工具、可直接部署到 GitHub Pages 的貼文規劃器。V8.1 保留原本的 `database.js` 資料格式，並將前端拆成畫面層、瀏覽器儲存、GitHub 同步與 Canva 圖片服務，方便後續維護。
 
 ## 目錄
 
@@ -70,6 +70,8 @@ Cloudflare 官方目前建議使用[專案內安裝的 Wrangler](https://develop
 
 - 分享權限請使用「知道連結的任何人可查看」，不要使用「可編輯」。
 - 多頁功能下載的是 Canva 公開預覽圖，通常最長邊約 1024px。
+- Canva 部分分享頁只提供第 1 頁高畫質公開預覽；這時其他頁面會使用 Canva 公開的 447px 縮圖補齊，介面會明確標示。
+- 短網址與被 Canva 禁止 iframe 的分享頁，左側會改用 Worker 解析出的圖片輪播，不再直接嵌入 Canva 編輯頁。
 - 要取得印刷或原始解析度，仍需按「Canva 原圖」到 Canva 官方下載。
 - 多頁解析依賴 Canva 公開頁面的資料結構；若 Canva 未來調整頁面格式，只需更新 `canva-worker/src/index.js`，不用重寫整個前端。
 - 「下載全部頁面」會在瀏覽器內打包成單一 ZIP，只觸發一次下載。

@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import worker, { extractPages } from '../src/index.js';
+import worker, { extractPageCount, extractPages } from '../src/index.js';
 
 test('extractPages 取出並排序 Canva 預覽頁面', () => {
     const imageSets = {
@@ -28,6 +28,28 @@ test('extractPages 從多組候選中選擇頁數最多的一組', () => {
     })) } };
     const html = `<script>var a={"imageSets":${JSON.stringify(one)}};var b={"imageSets":${JSON.stringify(four)}};</script>`;
     assert.equal(extractPages(html).length, 4);
+});
+
+test('preview 只有第一頁時，以 thumbnail 補齊其他頁', () => {
+    const imageSets = {
+        preview: {
+            images: [{ page: 1, url: 'https://media.canva.com/preview-1.png', width: 1024, height: 1024 }]
+        },
+        thumbnail: {
+            images: [1, 2, 3, 4, 5].map(page => ({
+                page,
+                url: `https://media.canva.com/thumbnail-${page}.png`,
+                width: 447,
+                height: 447
+            }))
+        }
+    };
+    const html = `<script>window.data={"pageCount":5,"imageSets":${JSON.stringify(imageSets)}};</script>`;
+    const pages = extractPages(html);
+    assert.equal(pages.length, 5);
+    assert.equal(pages[0].quality, 'preview');
+    assert.equal(pages[1].quality, 'thumbnail');
+    assert.equal(extractPageCount(html), 5);
 });
 
 test('Worker health 與無效網址回應 JSON', async () => {

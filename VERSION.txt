@@ -1,0 +1,4 @@
+IG Post Planner V8.1
+
+Canva short-link static preview and multi-page Worker parser.
+Build date: 2026-08-05
