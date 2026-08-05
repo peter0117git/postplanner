@@ -1,8 +1,12 @@
+import puppeteer from '@cloudflare/puppeteer';
+
 const CANVA_HOST = /(^|\.)canva\.com$/i;
 const CANVA_SHORT_HOST = /(^|\.)canva\.link$/i;
 const CANVA_MEDIA_HOST = /(^|\.)canva\.com$/i;
 const MAX_REDIRECTS = 6;
 const MAX_HTML_LENGTH = 5 * 1024 * 1024;
+const MAX_BROWSER_PAGES = 40;
+const BROWSER_WAIT_MS = 720;
 const BROWSER_HEADERS = {
     Accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
     'Accept-Language': 'zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7',
@@ -41,6 +45,10 @@ function jsonResponse(request, env, body, status = 200) {
             'X-Content-Type-Options': 'nosniff'
         }
     });
+}
+
+function errorMessage(error, fallback = 'Canva 解析失敗') {
+    return error instanceof Error && error.message ? error.message : fallback;
 }
 
 function isAllowedCanvaUrl(value) {
@@ -254,39 +262,224 @@ function extractDesignId(finalUrl) {
     }
 }
 
+export function parseDocumentImageUrl(value) {
+    try {
+        const url = new URL(String(value || ''));
+        if (url.protocol !== 'https:' || !CANVA_MEDIA_HOST.test(url.hostname)) return null;
+        if (!/\/document-image\//i.test(url.pathname)) return null;
+        const width = Number(url.pathname.match(/\/width:(\d+)/i)?.[1] || url.searchParams.get('width')) || null;
+        const height = Number(url.pathname.match(/\/height:(\d+)/i)?.[1] || url.searchParams.get('height')) || null;
+        const page = Number(url.searchParams.get('page')) || null;
+        if (!page) return null;
+        return { url: url.toString(), page, width, height };
+    } catch {
+        return null;
+    }
+}
+
+function candidateArea(candidate) {
+    return (Number(candidate?.width) || 0) * (Number(candidate?.height) || 0);
+}
+
+/**
+ * 將 Browser Run 捕捉到的 document-image 與一般解析結果合併。
+ * 每一頁只保留面積最大的瀏覽器候選，找不到時才退回公開 preview/thumbnail。
+ */
+export function selectBrowserPages(candidates, fallbackPages = [], declaredPageCount = 0) {
+    const browserByPage = new Map();
+    for (const rawCandidate of candidates || []) {
+        const parsed = parseDocumentImageUrl(rawCandidate?.url || rawCandidate);
+        if (!parsed) continue;
+        const candidate = {
+            ...parsed,
+            width: Number(rawCandidate?.width) || parsed.width,
+            height: Number(rawCandidate?.height) || parsed.height,
+            quality: 'browser'
+        };
+        const previous = browserByPage.get(candidate.page);
+        if (!previous || candidateArea(candidate) > candidateArea(previous)) browserByPage.set(candidate.page, candidate);
+    }
+
+    const fallbackByPage = new Map((fallbackPages || []).map(page => [Number(page.page), page]));
+    const highestBrowserPage = Math.max(0, ...browserByPage.keys());
+    const highestFallbackPage = Math.max(0, ...fallbackByPage.keys());
+    const pageCount = Math.min(MAX_BROWSER_PAGES, Math.max(Number(declaredPageCount) || 0, highestBrowserPage, highestFallbackPage));
+    const pages = [];
+    for (let pageNumber = 1; pageNumber <= pageCount; pageNumber += 1) {
+        const browserPage = browserByPage.get(pageNumber);
+        const fallbackPage = fallbackByPage.get(pageNumber);
+        const browserLongEdge = Math.max(Number(browserPage?.width) || 0, Number(browserPage?.height) || 0);
+        const meaningfullyLarger = candidateArea(browserPage) > candidateArea(fallbackPage) * 1.2;
+        if (browserPage && (browserLongEdge >= 900 || meaningfullyLarger)) {
+            pages.push(browserPage);
+        } else if (fallbackPage) {
+            pages.push({ ...fallbackPage, quality: fallbackPage.quality || 'thumbnail' });
+        } else if (browserPage) {
+            pages.push({ ...browserPage, quality: 'thumbnail' });
+        }
+    }
+    return pages;
+}
+
+function addBrowserCandidate(candidateMap, rawUrl, dimensions = {}) {
+    const parsed = parseDocumentImageUrl(rawUrl);
+    if (!parsed) return;
+    const candidate = {
+        ...parsed,
+        width: Number(dimensions.width) || parsed.width,
+        height: Number(dimensions.height) || parsed.height
+    };
+    const key = candidate.url;
+    const previous = candidateMap.get(key);
+    if (!previous || candidateArea(candidate) > candidateArea(previous)) candidateMap.set(key, candidate);
+}
+
+async function collectDomImageCandidates(page, candidateMap) {
+    const domImages = await page.evaluate(() => {
+        const candidates = [];
+        for (const image of document.images) {
+            candidates.push({
+                url: image.currentSrc || image.src || '',
+                width: image.naturalWidth || 0,
+                height: image.naturalHeight || 0
+            });
+            const srcset = image.getAttribute('srcset') || '';
+            for (const entry of srcset.split(',')) {
+                const url = entry.trim().split(/\s+/)[0];
+                if (url) candidates.push({ url, width: 0, height: 0 });
+            }
+        }
+        return candidates;
+    });
+    for (const candidate of domImages) addBrowserCandidate(candidateMap, candidate.url, candidate);
+}
+
+async function waitForBrowserActivity(page, timeout = BROWSER_WAIT_MS) {
+    if (typeof page.waitForNetworkIdle === 'function') {
+        try {
+            await page.waitForNetworkIdle({ idleTime: 250, timeout: Math.max(500, timeout) });
+        } catch {
+            // timeout 本身已完成等待；Canva 的背景連線可能不會完全 idle。
+        }
+        return;
+    }
+    await new Promise(resolve => setTimeout(resolve, timeout));
+}
+
+async function collectHighQualityPages(env, finalUrl, fallbackPages, declaredPageCount) {
+    if (!env?.BROWSER) {
+        const error = new Error('此 Worker 尚未啟用 Browser Run 綁定，請重新部署 V8.3 的 canva-worker');
+        error.code = 'BROWSER_NOT_CONFIGURED';
+        throw error;
+    }
+    const pageCount = Math.max(Number(declaredPageCount) || 0, fallbackPages.length, 1);
+    if (pageCount > MAX_BROWSER_PAGES) throw new Error(`此設計超過 Browser Run 單次上限（${MAX_BROWSER_PAGES} 頁）`);
+
+    const browser = await puppeteer.launch(env.BROWSER);
+    const candidateMap = new Map();
+    const startedAt = Date.now();
+    try {
+        const page = await browser.newPage();
+        await page.setViewport({ width: 1920, height: 1800, deviceScaleFactor: 1 });
+        page.on('request', request => addBrowserCandidate(candidateMap, request.url()));
+        page.on('response', response => addBrowserCandidate(candidateMap, response.url()));
+        await page.goto(normalizeDesignViewUrl(finalUrl).toString(), {
+            waitUntil: 'domcontentloaded',
+            timeout: 25_000
+        });
+        await waitForBrowserActivity(page, 1_400);
+        await collectDomImageCandidates(page, candidateMap);
+
+        // Canva 的公開檢視器會在切頁時載入較清晰的 document-image。
+        // 鍵盤切頁不依賴 Canva 經常變動的 CSS class／按鈕 selector。
+        for (let index = 1; index < pageCount; index += 1) {
+            await page.keyboard.press('ArrowRight');
+            await waitForBrowserActivity(page);
+            await collectDomImageCandidates(page, candidateMap);
+        }
+
+        const pages = selectBrowserPages([...candidateMap.values()], fallbackPages, pageCount);
+        const browserPreviewCount = pages.filter(pageInfo => pageInfo.quality === 'browser').length;
+        if (!browserPreviewCount) {
+            throw new Error('Browser Run 已開啟 Canva，但沒有取得較高畫質頁面；請確認連結可由未登入訪客查看');
+        }
+        return {
+            pages,
+            browserPreviewCount,
+            fallbackCount: pages.length - browserPreviewCount,
+            browserMs: Date.now() - startedAt
+        };
+    } finally {
+        await browser.close();
+    }
+}
+
 export default {
     async fetch(request, env) {
         if (request.method === 'OPTIONS') return new Response(null, { status: 204, headers: corsHeaders(request, env) });
         if (request.method !== 'GET') return jsonResponse(request, env, { error: '只支援 GET' }, 405);
 
         const requestUrl = new URL(request.url);
-        if (requestUrl.pathname === '/health') return jsonResponse(request, env, { ok: true, service: 'canva-preview' });
+        if (requestUrl.pathname === '/health') {
+            return jsonResponse(request, env, {
+                ok: true,
+                service: 'canva-preview',
+                version: '1.1.0',
+                browserRun: Boolean(env?.BROWSER)
+            });
+        }
         if (requestUrl.pathname !== '/preview') return jsonResponse(request, env, { error: '找不到此路徑' }, 404);
 
         const source = requestUrl.searchParams.get('url') || '';
         if (!source || source.length > 3000 || !isAllowedCanvaUrl(source)) {
             return jsonResponse(request, env, { error: '請提供有效的 Canva 公開連結' }, 400);
         }
+        const mode = requestUrl.searchParams.get('mode') === 'browser' ? 'browser' : 'standard';
+        if (mode === 'browser' && !env?.BROWSER) {
+            return jsonResponse(request, env, {
+                error: '此 Worker 尚未啟用 Browser Run 綁定，請重新部署 V8.3 的 canva-worker',
+                code: 'BROWSER_NOT_CONFIGURED'
+            }, 503);
+        }
 
         try {
             const { html, finalUrl } = await fetchCanvaPage(source);
-            const pages = extractPages(html);
+            const ordinaryPages = extractPages(html);
             const declaredPageCount = extractPageCount(html);
-            if (!pages.length) {
+            if (!ordinaryPages.length) {
                 return jsonResponse(request, env, {
                     error: '未找到公開預覽圖片。請確認連結權限為「知道連結的任何人可查看」。'
                 }, 422);
+            }
+            if (mode === 'browser') {
+                try {
+                    const browserResult = await collectHighQualityPages(env, finalUrl, ordinaryPages, declaredPageCount);
+                    return jsonResponse(request, env, {
+                        title: extractTitle(html),
+                        designId: extractDesignId(finalUrl),
+                        sourceUrl: finalUrl,
+                        pageCount: Math.max(declaredPageCount, browserResult.pages.length),
+                        previewCount: browserResult.browserPreviewCount,
+                        mode,
+                        ...browserResult
+                    });
+                } catch (error) {
+                    const code = error?.code || 'BROWSER_RUN_FAILED';
+                    const status = code === 'BROWSER_NOT_CONFIGURED' ? 503 : (/limit|quota|rate/i.test(errorMessage(error)) ? 429 : 502);
+                    return jsonResponse(request, env, { error: errorMessage(error, 'Browser Run 解析失敗'), code }, status);
+                }
             }
             return jsonResponse(request, env, {
                 title: extractTitle(html),
                 designId: extractDesignId(finalUrl),
                 sourceUrl: finalUrl,
-                pageCount: Math.max(declaredPageCount, pages.length),
-                previewCount: pages.filter(page => page.quality === 'preview').length,
-                pages
+                pageCount: Math.max(declaredPageCount, ordinaryPages.length),
+                previewCount: ordinaryPages.filter(page => page.quality === 'preview').length,
+                mode,
+                pages: ordinaryPages
             });
         } catch (error) {
-            return jsonResponse(request, env, { error: error instanceof Error ? error.message : 'Canva 解析失敗' }, 502);
+            return jsonResponse(request, env, { error: errorMessage(error) }, 502);
         }
     }
 };

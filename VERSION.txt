@@ -1,4 +1,4 @@
-IG Post Planner V8.2
+IG Post Planner V8.3
 
-Compact workspace layout, publish-copy composer, and modal Canva tools.
+On-demand Cloudflare Browser Run for higher-quality Canva public previews.
 Build date: 2026-08-05

@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>排版桌 — IG Post Planner v8.2</title>
+    <title>排版桌 — IG Post Planner v8.3</title>
     <script src="database.js" onerror="console.log('尚未偵測到 database.js')"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;700;900&family=Noto+Sans+TC:wght@400;500;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/app.css?v=8.2.0">
+    <link rel="stylesheet" href="assets/css/app.css?v=8.3.0">
 </head>
 <body>
 
@@ -18,7 +18,7 @@
 <div class="topbar">
     <div class="brand-area">
         <span class="brand-mark">排版桌</span>
-        <span class="brand-sub">IG POST PLANNER · V8.2</span>
+        <span class="brand-sub">IG POST PLANNER · V8.3</span>
     </div>
 
     <div class="topbar-divider"></div>
@@ -223,12 +223,22 @@
                 <button type="button" class="canva-action-btn download" id="canva-preview-download-btn" onclick="downloadCanvaPublicPreview()">⬇ 下載目前頁</button>
                 <button type="button" class="canva-action-btn download" id="canva-download-all-btn" onclick="downloadAllCanvaPages()" disabled>⬇ 下載全部頁面</button>
             </div>
+            <div class="canva-hd-card">
+                <div class="canva-hd-copy">
+                    <span class="canva-hd-icon" aria-hidden="true">✦</span>
+                    <div>
+                        <strong>Browser Run 高清預覽</strong>
+                        <small>平常不啟動；按下後才開啟雲端瀏覽器逐頁抓取，通常需 8–20 秒。</small>
+                    </div>
+                </div>
+                <button type="button" class="canva-hd-download" id="canva-hd-download-btn" onclick="downloadHighQualityCanvaPages()">抓取並下載高清</button>
+            </div>
             <div class="canva-pages-panel" id="canva-pages-panel" hidden>
                 <div class="canva-pages-status" id="canva-pages-status" role="status" aria-live="polite"></div>
                 <div class="canva-pages-grid" id="canva-pages-grid"></div>
             </div>
             <details class="canva-service-config" id="canva-service-config">
-                <summary>進階設定：多頁下載服務</summary>
+                <summary>進階設定：多頁與 Browser Run 服務</summary>
                 <label for="canva-worker-url">Cloudflare Worker 網址</label>
                 <div class="canva-service-input-row">
                     <input type="url" id="canva-worker-url" inputmode="url" autocomplete="off" placeholder="https://你的服務.workers.dev">
@@ -236,7 +246,7 @@
                 </div>
                 <div class="field-hint">只需設定一次，網址只儲存在這台裝置。</div>
             </details>
-            <div class="canva-download-note">平時不占用編輯空間；需要處理圖片時再開啟此視窗。原始尺寸仍以「Canva 原圖」為準。</div>
+            <div class="canva-download-note">高清預覽以 Canva 公開檢視器實際提供的尺寸為準；要取得設計原始匯出尺寸，仍請使用「Canva 原圖」。</div>
         </div>
         <div class="workspace-modal-footer">
             <span class="canva-footer-status" id="canva-footer-status">貼上連結後即可預覽與下載</span>
@@ -439,11 +449,11 @@
     <button class="mobile-nav-btn" id="mnav-preview" onclick="mobileShowPanel('preview')">👁<span>預覽</span></button>
 </div>
 
-<script src="assets/js/services/storage.js?v=8.2.0" defer></script>
-<script src="assets/js/services/github.js?v=8.2.0" defer></script>
-<script src="assets/js/services/canva.js?v=8.2.0" defer></script>
-<script src="assets/js/services/post-composer.js?v=8.2.0" defer></script>
-<script src="assets/js/services/zip.js?v=8.2.0" defer></script>
-<script src="assets/js/app.js?v=8.2.0" defer></script>
+<script src="assets/js/services/storage.js?v=8.3.0" defer></script>
+<script src="assets/js/services/github.js?v=8.3.0" defer></script>
+<script src="assets/js/services/canva.js?v=8.3.0" defer></script>
+<script src="assets/js/services/post-composer.js?v=8.3.0" defer></script>
+<script src="assets/js/services/zip.js?v=8.3.0" defer></script>
+<script src="assets/js/app.js?v=8.3.0" defer></script>
 </body>
 </html>

@@ -69,12 +69,16 @@
         }
     }
 
-    async function resolvePages(workerUrl, canvaUrl) {
+    async function resolvePages(workerUrl, canvaUrl, options = {}) {
         const service = normalizeWorkerUrl(workerUrl);
         if (!service) throw new Error('請先設定有效的 Canva 多頁服務網址');
         if (!parsePublicUrl(canvaUrl)) throw new Error('請先貼上有效的 Canva 公開分享連結');
+        const mode = options.mode === 'browser' ? 'browser' : 'standard';
+        const endpoint = new URL(`${service}/preview`);
+        endpoint.searchParams.set('url', canvaUrl);
+        if (mode === 'browser') endpoint.searchParams.set('mode', 'browser');
 
-        const response = await fetch(`${service}/preview?url=${encodeURIComponent(canvaUrl)}`, {
+        const response = await fetch(endpoint.toString(), {
             method: 'GET',
             mode: 'cors',
             credentials: 'omit',
@@ -82,7 +86,11 @@
             headers: { Accept: 'application/json' }
         });
         const result = await response.json().catch(() => ({}));
-        if (!response.ok) throw new Error(result.error || `Canva 多頁解析失敗（HTTP ${response.status}）`);
+        if (!response.ok) {
+            const error = new Error(result.error || `Canva 多頁解析失敗（HTTP ${response.status}）`);
+            error.code = String(result.code || 'CANVA_RESOLVE_FAILED');
+            throw error;
+        }
         if (!Array.isArray(result.pages) || result.pages.length === 0) throw new Error('此 Canva 連結未找到可下載的公開預覽頁面');
         return {
             title: String(result.title || 'Canva預覽'),
@@ -90,12 +98,16 @@
             sourceUrl: String(result.sourceUrl || canvaUrl),
             pageCount: Number(result.pageCount) || result.pages.length,
             previewCount: Number(result.previewCount) || 0,
+            browserPreviewCount: Number(result.browserPreviewCount) || 0,
+            fallbackCount: Number(result.fallbackCount) || 0,
+            browserMs: Number(result.browserMs) || 0,
+            mode: result.mode === 'browser' ? 'browser' : 'standard',
             pages: result.pages.map((page, index) => ({
                 page: Number(page.page) || index + 1,
                 url: String(page.url || ''),
                 width: Number(page.width) || null,
                 height: Number(page.height) || null,
-                quality: page.quality === 'preview' ? 'preview' : 'thumbnail'
+                quality: ['browser', 'preview'].includes(page.quality) ? page.quality : 'thumbnail'
             })).filter(page => /^https:\/\//i.test(page.url))
         };
     }

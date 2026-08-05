@@ -1,4 +1,4 @@
-# V8.2 架構說明
+# V8.3 架構說明
 
 ## 設計目標
 
@@ -6,7 +6,7 @@
 2. GitHub Pages 直接部署，不需要前端打包或框架。
 3. 把外部服務與 UI 狀態分離，單一功能失敗時不拖垮整個頁面。
 4. 手機維持「日視圖 + 預覽」，不顯示編輯器。
-5. Canva 多頁解析在伺服器端完成，前端只接收已驗證的公開圖片網址。
+5. Canva 多頁解析在伺服器端完成，前端只接收已驗證的公開圖片網址；Browser Run 僅由明確的高清下載動作觸發。
 6. 發布文案組合器只輸出純文字副本，不回寫貼文，避免使用者為了跨平台貼文而改動原始資料。
 7. Canva 圖片工具以獨立工作視窗呈現，不占用常駐編輯側欄。
 
@@ -52,7 +52,7 @@
 
 ### `canva-worker/src/index.js`
 
-只接受 Canva HTTPS 網址，逐次驗證重新導向，限制 HTML 大小，並合併公開頁面的 `imageSets.preview.images` 與 `imageSets.thumbnail.images`。第 1 頁有高畫質預覽、其他頁只有縮圖時仍能完整辨識頁數。回應只包含 Canva 網域的圖片網址，避免成為任意網址代理。
+只接受 Canva HTTPS 網址，逐次驗證重新導向，限制 HTML 大小，並合併公開頁面的 `imageSets.preview.images` 與 `imageSets.thumbnail.images`。一般模式不啟動瀏覽器；`mode=browser` 才使用 Browser Run 開啟公開檢視器、逐頁切換、監聽 `document-image`，並依頁碼選擇最大尺寸。回應只包含 Canva 網域的圖片網址，避免成為任意網址代理。
 
 ## 資料流程
 
@@ -67,9 +67,10 @@
 
 ```text
 Canva 公開連結
-  → canva.js 呼叫 Cloudflare Worker
-  → Worker 驗證並讀取 Canva 公開頁
-  → 回傳每頁預覽圖片網址
+  → 一般預覽：canva.js 呼叫 Worker /preview
+  → 高清下載：使用者按鈕呼叫 /preview?mode=browser
+  → Worker 驗證公開頁，必要時啟動 BROWSER binding
+  → 依頁碼回傳每頁最佳公開預覽圖片網址
   → canva.js 下載圖片
 ```
 
@@ -80,4 +81,5 @@ Canva 公開連結
 - GitHub 版本衝突：重新讀取一次、合併後重試。
 - Worker 未設定：第 1 頁長網址仍可嘗試下載，多頁按鈕引導設定。
 - Worker 或 Canva 解析失敗：顯示卡片內狀態與 Toast，不影響編輯和同步。
+- Browser binding 未部署：回傳 `BROWSER_NOT_CONFIGURED`，前端提示重新部署 V8.3 Worker。
 - 圖片自動下載被瀏覽器擋下：開啟圖片分頁，讓使用者手動儲存。

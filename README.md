@@ -1,8 +1,8 @@
-# 排版桌 IG Post Planner V8.2
+# 排版桌 IG Post Planner V8.3
 
-這是一個不需要建置工具、可直接部署到 GitHub Pages 的貼文規劃器。V8.2 保留原本的 `database.js` 資料格式，並將前端拆成畫面層、瀏覽器儲存、GitHub 同步與 Canva 圖片服務，方便後續維護。
+這是一個不需要前端建置工具、可直接部署到 GitHub Pages 的貼文規劃器。V8.3 保留原本的 `database.js` 資料格式，並將前端拆成畫面層、瀏覽器儲存、GitHub 同步與 Canva 圖片服務，方便後續維護。
 
-「發布文案」會把【主題】、《書名》與貼文內文組合成可直接貼到其他平台的純文字，避免重複首行，並檢查頁碼、Hashtag、字數及行數。Canva 圖片工具改為獨立視窗，需要時才開啟，不再占用編輯側欄。
+「發布文案」會把【主題】、《書名》與貼文內文組合成可直接貼到其他平台的純文字，避免重複首行，並檢查頁碼、Hashtag、字數及行數。Canva 圖片工具改為獨立視窗；一般解析維持快速、低耗用，只有按下「抓取並下載高清」時才啟動 Cloudflare Browser Run。
 
 ## 目錄
 
@@ -26,9 +26,11 @@
 │   ├── src/index.js                # Canva 多頁預覽解析器
 │   ├── test/parser.test.js         # 解析器測試
 │   ├── package.json
+│   ├── package-lock.json
 │   └── wrangler.jsonc
 └── docs/
     ├── ARCHITECTURE.md
+    ├── BROWSER_RUN.md
     └── TESTING.md
 ```
 
@@ -42,29 +44,23 @@
 
 新 repo 才需要把 `database.example.js` 複製成 `database.js`。
 
-## 啟用 Canva 多頁下載
+## 啟用 Canva 多頁與 Browser Run
 
 前端純 HTML 受到瀏覽器跨網域規則限制，無法直接讀取 Canva 頁面中第 2 頁以後的圖片網址。`canva-worker/` 是一個只讀取公開 Canva 預覽資料的小型 Cloudflare Worker，不需要 Canva API 或 OAuth。
 
-### 最簡單：Cloudflare 網頁介面
-
-1. 登入 Cloudflare，進入 **Workers & Pages**。
-2. 建立一個 Worker。
-3. 將 `canva-worker/src/index.js` 的內容貼到 Worker 編輯器並部署。
-4. 複製產生的 `https://...workers.dev` 網址。
-5. 回到排版桌，展開「多頁下載服務設定」，貼上網址並儲存。
-6. 點「解析全部頁面」，即可逐頁下載或下載全部頁面。
-
-### 使用命令列
+Browser Run 需要套件打包與 `BROWSER` binding，不能只把 `src/index.js` 貼進線上編輯器。請在電腦上用以下方式部署：
 
 ```bash
 cd canva-worker
 npm install
+npx wrangler login
 npm test
 npm run deploy
 ```
 
-Cloudflare 官方目前建議使用[專案內安裝的 Wrangler](https://developers.cloudflare.com/workers/wrangler/install-and-update/)，`npm run deploy` 會部署到 `*.workers.dev`。若要限制只有你的 GitHub Pages 可呼叫，請將 `wrangler.jsonc` 中的 `ALLOWED_ORIGIN` 從 `*` 改成網站完整來源，例如：
+`wrangler.jsonc` 已包含 `BROWSER` binding、`nodejs_compat` 與所需相容日期；`npm run deploy` 會部署到 `*.workers.dev`。部署後，把網址貼進排版桌的「進階設定：多頁與 Browser Run 服務」。若原本已部署同名 Worker，網址通常不變，只要重新部署即可。
+
+若要限制只有你的 GitHub Pages 可呼叫，請將 `wrangler.jsonc` 中的 `ALLOWED_ORIGIN` 從 `*` 改成網站完整來源，例如：
 
 ```json
 "ALLOWED_ORIGIN": "https://你的帳號.github.io"
@@ -73,12 +69,15 @@ Cloudflare 官方目前建議使用[專案內安裝的 Wrangler](https://develop
 ## Canva 注意事項
 
 - 分享權限請使用「知道連結的任何人可查看」，不要使用「可編輯」。
-- 多頁功能下載的是 Canva 公開預覽圖，通常最長邊約 1024px。
+- 「解析頁面」只讀取公開 HTML，不啟動 Browser Run，也不消耗瀏覽器分鐘數。
+- 「抓取並下載高清」才會開啟 Browser Run，逐頁觸發公開檢視器並打包 ZIP；常見等待時間約 8–20 秒，頁數越多越久。
+- Browser Run 取得的是 Canva 公開檢視器載入的較高解析度預覽，不等於 Canva 帳號內的原始匯出檔。
 - Canva 部分分享頁只提供第 1 頁高畫質公開預覽；這時其他頁面會使用 Canva 公開的 447px 縮圖補齊，介面會明確標示。
 - 短網址與被 Canva 禁止 iframe 的分享頁，左側會改用 Worker 解析出的圖片輪播，不再直接嵌入 Canva 編輯頁。
 - 要取得印刷或原始解析度，仍需按「Canva 原圖」到 Canva 官方下載。
 - 多頁解析依賴 Canva 公開頁面的資料結構；若 Canva 未來調整頁面格式，只需更新 `canva-worker/src/index.js`，不用重寫整個前端。
 - 「下載全部頁面」會在瀏覽器內打包成單一 ZIP，只觸發一次下載。
+- Cloudflare 免費方案的 Browser Run 有每日分鐘數與同時執行限制，最新額度以 [Browser Run limits](https://developers.cloudflare.com/browser-run/limits/) 與 [pricing](https://developers.cloudflare.com/browser-run/pricing/) 為準。
 
 ## 資料與安全
 
