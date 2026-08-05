@@ -205,10 +205,10 @@
         <div class="workspace-modal-header">
             <div>
                 <span class="workspace-modal-kicker canva-kicker">MEDIA TOOL</span>
-                <h2 id="canva-tool-title">Canva 圖片工具</h2>
+                <h2 id="canva-tool-title">Canva 預覽工具</h2>
             </div>
             <div class="canva-modal-header-actions">
-                <span class="canva-service-badge" id="canva-service-badge">單頁模式</span>
+                <span class="canva-service-badge" id="canva-service-badge">直接預覽</span>
                 <button class="workspace-modal-close" onclick="closeCanvaTool()" aria-label="關閉">✕</button>
             </div>
         </div>
@@ -218,38 +218,26 @@
                 <input type="text" id="canva-url-input" placeholder="貼上 Canva 公開分享連結" oninput="updateCurrentPost('canvaUrl', this.value)">
             </div>
             <div class="canva-command-bar">
-                <button type="button" class="canva-action-btn" onclick="openCanvaDownload()">↗ Canva 原圖</button>
-                <button type="button" class="canva-action-btn" id="canva-resolve-btn" onclick="resolveCanvaPages()">▦ 解析頁面</button>
-                <button type="button" class="canva-action-btn download" id="canva-preview-download-btn" onclick="downloadCanvaPublicPreview()">⬇ 下載目前頁</button>
-                <button type="button" class="canva-action-btn download" id="canva-download-all-btn" onclick="downloadAllCanvaPages()" disabled>⬇ 下載全部頁面</button>
-            </div>
-            <div class="canva-hd-card">
-                <div class="canva-hd-copy">
-                    <span class="canva-hd-icon" aria-hidden="true">✦</span>
-                    <div>
-                        <strong>Browser Run 高清預覽</strong>
-                        <small>平常不啟動；按下後才開啟雲端瀏覽器逐頁抓取，通常需 8–20 秒。</small>
-                    </div>
-                </div>
-                <button type="button" class="canva-hd-download" id="canva-hd-download-btn" onclick="downloadHighQualityCanvaPages()">抓取並下載高清</button>
+                <button type="button" class="canva-action-btn" onclick="openCurrentCanva()">↗ 在 Canva 開啟</button>
+                <button type="button" class="canva-action-btn" id="canva-resolve-btn" onclick="resolveCanvaPages()">↻ 重新載入預覽</button>
             </div>
             <div class="canva-pages-panel" id="canva-pages-panel" hidden>
                 <div class="canva-pages-status" id="canva-pages-status" role="status" aria-live="polite"></div>
                 <div class="canva-pages-grid" id="canva-pages-grid"></div>
             </div>
             <details class="canva-service-config" id="canva-service-config">
-                <summary>進階設定：多頁與 Browser Run 服務</summary>
+                <summary>進階設定：短網址預覽服務</summary>
                 <label for="canva-worker-url">Cloudflare Worker 網址</label>
                 <div class="canva-service-input-row">
                     <input type="url" id="canva-worker-url" inputmode="url" autocomplete="off" placeholder="https://你的服務.workers.dev">
                     <button type="button" class="canva-config-save" onclick="saveCanvaWorkerConfig()">儲存</button>
                 </div>
-                <div class="field-hint">只需設定一次，網址只儲存在這台裝置。</div>
+                <div class="field-hint">短網址與多頁預覽需要此服務；網址只儲存在這台裝置。</div>
             </details>
-            <div class="canva-download-note">高清預覽以 Canva 公開檢視器實際提供的尺寸為準；要取得設計原始匯出尺寸，仍請使用「Canva 原圖」。</div>
+            <div class="canva-preview-note">此工具只顯示 Canva 公開預覽；原稿操作請前往 Canva 官方頁面。</div>
         </div>
         <div class="workspace-modal-footer">
-            <span class="canva-footer-status" id="canva-footer-status">貼上連結後即可預覽與下載</span>
+            <span class="canva-footer-status" id="canva-footer-status">貼上公開連結後即可預覽</span>
             <button class="workspace-secondary-btn" onclick="closeCanvaTool()">完成</button>
         </div>
     </div>
@@ -453,7 +441,6 @@
 <script src="assets/js/services/github.js?v=8.3.0" defer></script>
 <script src="assets/js/services/canva.js?v=8.3.0" defer></script>
 <script src="assets/js/services/post-composer.js?v=8.3.0" defer></script>
-<script src="assets/js/services/zip.js?v=8.3.0" defer></script>
 <script src="assets/js/app.js?v=8.3.0" defer></script>
 </body>
 </html>

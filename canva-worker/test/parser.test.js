@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import worker, { extractPageCount, extractPages, parseDocumentImageUrl, selectBrowserPages } from '../src/index.js';
+import worker, { extractPageCount, extractPages } from '../src/index.js';
 
 test('extractPages 取出並排序 Canva 預覽頁面', () => {
     const imageSets = {
@@ -55,56 +55,17 @@ test('preview 只有第一頁時，以 thumbnail 補齊其他頁', () => {
 test('Worker health 與無效網址回應 JSON', async () => {
     const health = await worker.fetch(new Request('https://worker.test/health'), { ALLOWED_ORIGIN: '*' });
     assert.equal(health.status, 200);
-    assert.equal((await health.json()).ok, true);
+    const healthResult = await health.json();
+    assert.equal(healthResult.ok, true);
+    assert.equal(healthResult.version, '1.2.0');
+    assert.equal(healthResult.previewOnly, true);
 
     const invalid = await worker.fetch(new Request('https://worker.test/preview?url=https%3A%2F%2Fexample.com'), { ALLOWED_ORIGIN: '*' });
     assert.equal(invalid.status, 400);
     assert.match((await invalid.json()).error, /Canva/);
 });
 
-test('辨識 Browser Run 載入的 Canva document-image 與頁碼尺寸', () => {
-    const parsed = parseDocumentImageUrl('https://media.canva.com/v2/document-image/hash:123/height:1350/id:DESIGN/type:B/width:1080?page=3&version=7');
-    assert.deepEqual(parsed && { page: parsed.page, width: parsed.width, height: parsed.height }, {
-        page: 3,
-        width: 1080,
-        height: 1350
-    });
-    assert.equal(parseDocumentImageUrl('https://static.canva.com/icon.png?page=1'), null);
-});
-
-test('Browser Run 每頁選最大尺寸，缺頁時退回一般預覽', () => {
-    const candidates = [
-        'https://media.canva.com/v2/document-image/hash:a/height:447/id:D/type:B/width:447?page=1',
-        'https://media.canva.com/v2/document-image/hash:b/height:1350/id:D/type:B/width:1080?page=1',
-        'https://media.canva.com/v2/document-image/hash:c/height:1350/id:D/type:B/width:1080?page=2'
-    ];
-    const fallback = [1, 2, 3].map(page => ({
-        page,
-        url: `https://media.canva.com/fallback-${page}.png`,
-        width: 447,
-        height: 447,
-        quality: 'thumbnail'
-    }));
-    const pages = selectBrowserPages(candidates, fallback, 3);
-    assert.equal(pages.length, 3);
-    assert.equal(pages[0].width, 1080);
-    assert.equal(pages[1].quality, 'browser');
-    assert.equal(pages[2].quality, 'thumbnail');
-});
-
-test('Browser Run 的 447px 候選不會被標成高清', () => {
-    const candidate = 'https://media.canva.com/v2/document-image/hash:a/height:447/id:D/type:B/width:447?page=1';
-    const pages = selectBrowserPages([candidate], [{
-        page: 1,
-        url: 'https://media.canva.com/fallback.png',
-        width: 447,
-        height: 447,
-        quality: 'thumbnail'
-    }], 1);
-    assert.equal(pages[0].quality, 'thumbnail');
-});
-
-test('未設定 Browser binding 時回傳可辨識的部署錯誤', async () => {
+test('Worker 回傳標準公開預覽', async () => {
     const originalFetch = globalThis.fetch;
     const imageSets = {
         preview: {
@@ -116,11 +77,12 @@ test('未設定 Browser binding 時回傳可辨識的部署錯誤', async () => 
         headers: { 'Content-Type': 'text/html' }
     });
     try {
-        const request = new Request('https://worker.test/preview?mode=browser&url=https%3A%2F%2Fwww.canva.com%2Fdesign%2FDESIGN%2FTOKEN%2Fview');
+        const request = new Request('https://worker.test/preview?url=https%3A%2F%2Fwww.canva.com%2Fdesign%2FDESIGN%2FTOKEN%2Fview');
         const response = await worker.fetch(request, { ALLOWED_ORIGIN: '*' });
         const result = await response.json();
-        assert.equal(response.status, 503);
-        assert.equal(result.code, 'BROWSER_NOT_CONFIGURED');
+        assert.equal(response.status, 200);
+        assert.equal(result.pages.length, 1);
+        assert.equal(result.pages[0].quality, 'preview');
     } finally {
         globalThis.fetch = originalFetch;
     }

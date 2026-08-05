@@ -1,4 +1,4 @@
-IG Post Planner V8.3
+IG Post Planner V8.3 — Canva Preview Only
 
-On-demand Cloudflare Browser Run for higher-quality Canva public previews.
-Build date: 2026-08-05
+Keeps Canva public-link preview and multi-page thumbnails.
+No Canva image export, ZIP packaging, Puppeteer, or Browser binding.

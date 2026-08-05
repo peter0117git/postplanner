@@ -15,8 +15,6 @@ let storageWriteChain = Promise.resolve();
 let storageErrorShown = false;
 let resolvedCanvaPages = [];
 let resolvedCanvaSourceUrl = '';
-let resolvedCanvaTitle = '';
-let resolvedCanvaMode = 'standard';
 let currentCanvaPreviewIndex = 0;
 let canvaAutoResolveUrl = '';
 let canvaAutoResolveTimer = null;
@@ -940,9 +938,9 @@ function updateCanvaLauncherState(post = getPostById(currentId)) {
     const state = document.getElementById('canva-launcher-state');
     const linked = Boolean(post?.canvaUrl?.trim());
     launcher?.classList.toggle('linked', linked);
-    if (state) state.textContent = linked ? '已連結，可開啟圖片工具' : '尚未連結';
+    if (state) state.textContent = linked ? '已連結，可開啟預覽工具' : '尚未連結';
     const footer = document.getElementById('canva-footer-status');
-    if (footer && !resolvedCanvaPages.length) footer.textContent = linked ? '已連結 Canva，解析後可逐頁下載' : '貼上連結後即可預覽與下載';
+    if (footer && !resolvedCanvaPages.length) footer.textContent = linked ? '已連結 Canva，可重新載入公開預覽' : '貼上公開連結後即可預覽';
 }
 
 function openCanvaTool() {
@@ -973,12 +971,6 @@ function openCanvaWindow(url) {
 function openCurrentCanva() {
     const post = getPostById(currentId);
     if (post) openCanvaWindow(post.canvaUrl);
-}
-function openCanvaDownload() {
-    const post = getPostById(currentId);
-    if (post && openCanvaWindow(post.canvaUrl)) {
-        showToast('已開啟 Canva，請從「分享」選擇「下載」取得原始圖片', 3600);
-    }
 }
 function parseCanvaUrl(url) {
     return CanvaService.parseEmbedUrl(url);
@@ -1026,35 +1018,22 @@ function setCanvaPagesStatus(message) {
 function clearResolvedCanvaPages({ keepStatus = false } = {}) {
     resolvedCanvaPages = [];
     resolvedCanvaSourceUrl = '';
-    resolvedCanvaTitle = '';
-    resolvedCanvaMode = 'standard';
     currentCanvaPreviewIndex = 0;
     clearTimeout(canvaAutoResolveTimer);
     canvaAutoResolveTimer = null;
     const grid = document.getElementById('canva-pages-grid');
     const panel = document.getElementById('canva-pages-panel');
-    const allButton = document.getElementById('canva-download-all-btn');
     if (grid) grid.replaceChildren();
     if (!keepStatus && panel) panel.hidden = true;
     if (!keepStatus) setCanvaPagesStatus('');
-    if (allButton) allButton.disabled = true;
-}
-function canvaDownloadFilename(pageNumber) {
-    const post = getPostById(currentId);
-    const title = CanvaService.safeFilename(post?.title || post?.theme || resolvedCanvaTitle || 'Canva預覽');
-    const date = selectedDateStr || fmtDate(new Date());
-    return `${date}-${title}-第${pageNumber}頁.png`;
 }
 function renderCanvaPages(result, sourceUrl) {
     resolvedCanvaPages = result.pages;
     resolvedCanvaSourceUrl = sourceUrl;
-    resolvedCanvaTitle = result.title || '';
-    resolvedCanvaMode = result.mode === 'browser' ? 'browser' : 'standard';
     currentCanvaPreviewIndex = 0;
     canvaAutoResolveUrl = sourceUrl;
     const grid = document.getElementById('canva-pages-grid');
     const panel = document.getElementById('canva-pages-panel');
-    const allButton = document.getElementById('canva-download-all-btn');
     if (!grid || !panel) return;
     grid.replaceChildren();
 
@@ -1065,9 +1044,7 @@ function renderCanvaPages(result, sourceUrl) {
         image.className = 'canva-page-thumb';
         image.src = page.url;
         image.alt = `Canva 第 ${page.page} 頁預覽`;
-        image.title = page.quality === 'browser'
-            ? 'Browser Run 取得的較高畫質公開預覽'
-            : (page.quality === 'preview' ? '公開預覽圖' : 'Canva 公開縮圖');
+        image.title = page.quality === 'preview' ? 'Canva 公開預覽圖' : 'Canva 公開縮圖';
         image.loading = 'lazy';
         image.referrerPolicy = 'no-referrer';
         const footer = document.createElement('div');
@@ -1075,35 +1052,20 @@ function renderCanvaPages(result, sourceUrl) {
         const number = document.createElement('span');
         number.className = 'canva-page-number';
         number.innerText = `第 ${page.page} 頁`;
-        const button = document.createElement('button');
-        button.type = 'button';
-        button.className = 'canva-page-download';
-        button.innerText = '下載';
-        button.onclick = () => downloadCanvaResolvedPage(page.page, button);
-        footer.append(number, button);
+        footer.append(number);
         card.append(image, footer);
         grid.appendChild(card);
     });
 
     panel.hidden = false;
-    if (allButton) allButton.disabled = false;
-    const browserCount = result.pages.filter(page => page.quality === 'browser').length;
     const previewCount = result.pages.filter(page => page.quality === 'preview').length;
-    const thumbnailCount = result.pages.length - browserCount - previewCount;
-    if (result.mode === 'browser') {
-        const elapsed = result.browserMs ? `，耗時 ${(result.browserMs / 1000).toFixed(1)} 秒` : '';
-        const fallbackNote = result.pages.length > browserCount ? `；另有 ${result.pages.length - browserCount} 頁使用一般公開預覽` : '';
-        setCanvaPagesStatus(`Browser Run 已取得 ${browserCount}/${result.pages.length} 頁較高畫質預覽${fallbackNote}${elapsed}`);
-        lastRenderedMediaKey = null;
-        updatePreview();
-        return;
-    }
+    const thumbnailCount = result.pages.length - previewCount;
     const qualityNote = thumbnailCount > 0
         ? (previewCount > 0
-            ? `；其中 ${previewCount} 頁為高畫質預覽、${thumbnailCount} 頁為 Canva 公開縮圖`
+            ? `；其中 ${previewCount} 頁為公開預覽、${thumbnailCount} 頁為公開縮圖`
             : `；全部為 Canva 公開縮圖`)
         : '（約 1024px）';
-    setCanvaPagesStatus(`已找到 ${result.pages.length} 頁${qualityNote}`);
+    setCanvaPagesStatus(`已載入 ${result.pages.length} 頁${qualityNote}`);
     lastRenderedMediaKey = null;
     updatePreview();
 }
@@ -1120,7 +1082,7 @@ async function resolveCanvaPages({ quiet = false } = {}) {
         const settings = document.getElementById('canva-service-config');
         if (settings) settings.open = true;
         document.getElementById('canva-worker-url')?.focus();
-        showToast('第一次使用多頁下載，請先貼上 Cloudflare Worker 網址', 4200);
+        showToast('短網址與多頁預覽需要先設定 Cloudflare Worker 網址', 4200);
         return false;
     }
 
@@ -1134,11 +1096,11 @@ async function resolveCanvaPages({ quiet = false } = {}) {
     setCanvaPagesStatus('正在解析 Canva 公開頁面…');
     try {
         const result = await CanvaService.resolvePages(workerUrl, requestedSourceUrl);
-        if (!result.pages.length) throw new Error('未找到可下載的公開預覽頁面');
+        if (!result.pages.length) throw new Error('未找到可顯示的公開預覽頁面');
         const currentPost = getPostById(requestedPostId);
         if (currentId !== requestedPostId || currentPost?.canvaUrl !== requestedSourceUrl) return false;
         renderCanvaPages(result, requestedSourceUrl);
-        if (!quiet) showToast(`已解析 Canva 的 ${result.pages.length} 個頁面`);
+        if (!quiet) showToast(`已載入 Canva 的 ${result.pages.length} 個頁面`);
         return true;
     } catch (error) {
         canvaAutoResolveUrl = requestedSourceUrl;
@@ -1147,183 +1109,6 @@ async function resolveCanvaPages({ quiet = false } = {}) {
         return false;
     } finally {
         if (button) { button.disabled = false; button.innerText = originalLabel; }
-    }
-}
-async function downloadCanvaResolvedPage(pageNumber, sourceButton = null) {
-    const page = resolvedCanvaPages.find(item => item.page === Number(pageNumber));
-    if (!page) {
-        showToast('這一頁的預覽網址已失效，請重新解析');
-        return false;
-    }
-    const originalLabel = sourceButton?.innerText || '';
-    if (sourceButton) { sourceButton.disabled = true; sourceButton.innerText = '處理中'; }
-    try {
-        await CanvaService.downloadImage(page.url, canvaDownloadFilename(page.page));
-        showToast(`已下載第 ${page.page} 頁`);
-        return true;
-    } catch (error) {
-        const opened = window.open(page.url, '_blank', 'noopener,noreferrer');
-        showToast(opened ? `第 ${page.page} 頁已開啟，請按 Ctrl+S 儲存` : `第 ${page.page} 頁下載失敗`, 4200);
-        return false;
-    } finally {
-        if (sourceButton) { sourceButton.disabled = false; sourceButton.innerText = originalLabel; }
-    }
-}
-function canvaArchiveFilename(pageCount, highQuality = false) {
-    const post = getPostById(currentId);
-    const title = CanvaService.safeFilename(post?.title || post?.theme || resolvedCanvaTitle || 'Canva預覽');
-    const date = selectedDateStr || fmtDate(new Date());
-    return `${date}-${title}-Canva${highQuality ? '-高清預覽' : ''}-${pageCount}頁.zip`;
-}
-async function downloadCanvaPageCollection(pages, button, { highQuality = false, originalLabel = '' } = {}) {
-    if (!Array.isArray(pages) || pages.length === 0) return false;
-    const restoreLabel = originalLabel || button?.innerText || '';
-    if (button) button.disabled = true;
-    const files = [];
-    let totalBytes = 0;
-    try {
-        for (let index = 0; index < pages.length; index += 1) {
-            const page = pages[index];
-            if (button) button.innerText = `準備 ${index + 1}/${pages.length}`;
-            setCanvaPagesStatus(`正在取得第 ${page.page} 頁（${index + 1}/${pages.length}）…`);
-            try {
-                const blob = await CanvaService.loadImageBlob(page.url);
-                totalBytes += blob.size;
-                if (totalBytes > 250 * 1024 * 1024) throw new Error('圖片總容量超過 250MB，請改用單頁下載');
-                files.push({ name: canvaDownloadFilename(page.page), blob });
-            } catch (error) {
-                console.error(`Canva page ${page.page} download failed:`, error);
-                if (error.message?.includes('250MB')) throw error;
-            }
-        }
-        if (!files.length) throw new Error('所有頁面都下載失敗，請重新解析後再試');
-        if (button) button.innerText = '建立 ZIP…';
-        setCanvaPagesStatus(`正在將 ${files.length} 頁打包成 ZIP…`);
-        const archive = await ZipService.createArchive(files);
-        CanvaService.triggerDownload(archive, canvaArchiveFilename(files.length, highQuality));
-        const browserCount = highQuality ? pages.filter(page => page.quality === 'browser').length : 0;
-        const qualityNote = highQuality ? `（${browserCount} 頁為 Browser Run 較高畫質預覽）` : '';
-        const message = files.length === pages.length
-            ? `已將全部 ${files.length} 頁打包下載${qualityNote}`
-            : `已打包 ${files.length}/${pages.length} 頁，失敗頁面請改用單頁下載${qualityNote}`;
-        setCanvaPagesStatus(message);
-        showToast(message, 4200);
-        return true;
-    } catch (error) {
-        setCanvaPagesStatus(error.message || '建立 Canva ZIP 失敗');
-        showToast(error.message || '建立 Canva ZIP 失敗', 4600);
-        return false;
-    } finally {
-        if (button) {
-            button.disabled = false;
-            button.innerText = restoreLabel;
-        }
-    }
-}
-async function downloadAllCanvaPages() {
-    const post = getPostById(currentId);
-    if (!post) return;
-    if (resolvedCanvaSourceUrl !== post.canvaUrl || resolvedCanvaPages.length === 0) {
-        const ready = await resolveCanvaPages({ quiet: true });
-        if (!ready) return;
-    }
-    const button = document.getElementById('canva-download-all-btn');
-    await downloadCanvaPageCollection([...resolvedCanvaPages], button, {
-        highQuality: resolvedCanvaMode === 'browser',
-        originalLabel: button?.innerText || '⬇ 下載全部頁面'
-    });
-}
-
-async function downloadHighQualityCanvaPages() {
-    const post = getPostById(currentId);
-    if (!post || !CanvaService.parsePublicUrl(post.canvaUrl)) {
-        showToast('請先貼上有效的 Canva 公開分享連結');
-        return false;
-    }
-    const workerUrl = getConfiguredCanvaWorker();
-    if (!workerUrl) {
-        const settings = document.getElementById('canva-service-config');
-        if (settings) settings.open = true;
-        document.getElementById('canva-worker-url')?.focus();
-        showToast('第一次使用 Browser Run，請先設定 V8.3 Worker 網址', 4200);
-        return false;
-    }
-
-    const requestedPostId = currentId;
-    const requestedSourceUrl = post.canvaUrl;
-    const button = document.getElementById('canva-hd-download-btn');
-    const originalLabel = button?.innerText || '抓取並下載高清';
-    if (button) { button.disabled = true; button.innerText = '啟動瀏覽器…'; }
-    setCanvaPagesStatus('正在啟動 Cloudflare Browser Run 並逐頁載入 Canva；通常需 8–20 秒…');
-    let handedToDownloader = false;
-    try {
-        const result = await CanvaService.resolvePages(workerUrl, requestedSourceUrl, { mode: 'browser' });
-        const currentPost = getPostById(requestedPostId);
-        if (currentId !== requestedPostId || currentPost?.canvaUrl !== requestedSourceUrl) return false;
-        const browserCount = result.pages.filter(page => page.quality === 'browser').length;
-        if (!browserCount) throw new Error('Browser Run 沒有取得較高畫質頁面，請確認分享權限後再試');
-        renderCanvaPages(result, requestedSourceUrl);
-        if (button) button.innerText = '準備下載…';
-        handedToDownloader = true;
-        return await downloadCanvaPageCollection([...resolvedCanvaPages], button, {
-            highQuality: true,
-            originalLabel
-        });
-    } catch (error) {
-        const message = error.code === 'BROWSER_NOT_CONFIGURED'
-            ? '目前網址仍是舊版 Worker；請部署壓縮包內 V8.3 的 canva-worker'
-            : (error.message || 'Browser Run 高清解析失敗');
-        setCanvaPagesStatus(message);
-        showToast(message, 5200);
-        return false;
-    } finally {
-        if (!handedToDownloader && button) {
-            button.disabled = false;
-            button.innerText = originalLabel;
-        }
-    }
-}
-async function downloadCanvaPublicPreview() {
-    const post = getPostById(currentId);
-    if (!post) return;
-    const info = CanvaService.firstPagePreview(post.canvaUrl);
-    if (!info) {
-        showToast('請先貼上有效的 Canva 公開分享連結');
-        return;
-    }
-
-    if (resolvedCanvaSourceUrl === post.canvaUrl && resolvedCanvaPages.length > 0) {
-        await downloadCanvaResolvedPage(resolvedCanvaPages[0].page);
-        return;
-    }
-
-    if (getConfiguredCanvaWorker()) {
-        const ready = await resolveCanvaPages({ quiet: true });
-        if (ready) await downloadCanvaResolvedPage(resolvedCanvaPages[0].page);
-        return;
-    }
-
-    if (info.kind === 'short' || !info.screenUrl) {
-        const settings = document.getElementById('canva-service-config');
-        if (settings) settings.open = true;
-        showToast('短網址需要多頁服務解析；請先設定 Worker 網址', 4200);
-        return;
-    }
-
-    const button = document.getElementById('canva-preview-download-btn');
-    const originalLabel = button.innerText;
-    button.disabled = true;
-    button.innerText = '取得預覽中…';
-    try {
-        const blob = await CanvaService.loadImageBlob(info.screenUrl);
-        CanvaService.triggerDownload(blob, canvaDownloadFilename(1));
-        showToast('已下載第 1 頁 Canva 公開預覽圖');
-    } catch (error) {
-        const opened = window.open(info.screenUrl, '_blank', 'noopener,noreferrer');
-        showToast(opened ? '已開啟預覽圖，請按 Ctrl+S 儲存' : '預覽下載失敗，請改用「Canva 原圖」', 4600);
-    } finally {
-        button.disabled = false;
-        button.innerText = originalLabel;
     }
 }
 function queueCanvaAutoResolve(post) {

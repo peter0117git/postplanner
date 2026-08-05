@@ -437,7 +437,7 @@
             background: var(--paper); color: var(--ink); font-size: 12.5px;
         }
         .canva-link-block input:focus { outline: none; border-color: #6B2EC8; background: white; box-shadow: 0 0 0 3px rgba(107,46,200,0.07); }
-        .canva-command-bar { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 7px; margin-top: 10px; }
+        .canva-command-bar { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 7px; margin-top: 10px; }
         .canva-footer-status {
             flex: 1 1 220px; min-width: 0; color: var(--ink-faint); font-size: 9.5px; line-height: 1.4;
             overflow-wrap: anywhere; word-break: break-word;
@@ -468,29 +468,8 @@
             white-space: normal; line-height: 1.35; text-align: center;
         }
         .canva-action-btn:hover { color: #6B2EC8; border-color: #C9A8F0; background: #F5EFFE; }
-        .canva-action-btn.download { color: white; border-color: #6B2EC8; background: #6B2EC8; }
-        .canva-action-btn.download:hover { color: white; border-color: #5521A4; background: #5521A4; }
         .canva-action-btn:disabled { opacity: 0.58; cursor: wait; }
-        .canva-hd-card {
-            display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 12px;
-            width: 100%; min-width: 0; margin-top: 10px; padding: 11px 12px;
-            border: 1px solid #C9A8F0; border-radius: 7px; background: linear-gradient(135deg, #F8F3FF 0%, #F1F8F5 100%);
-        }
-        .canva-hd-copy { display: flex; align-items: center; gap: 9px; min-width: 0; }
-        .canva-hd-icon {
-            display: grid; place-items: center; flex: 0 0 28px; width: 28px; height: 28px;
-            border-radius: 50%; color: white; background: #6B2EC8; font-size: 13px;
-        }
-        .canva-hd-copy div { min-width: 0; }
-        .canva-hd-copy strong { display: block; color: #4B1F91; font-size: 10.5px; line-height: 1.35; }
-        .canva-hd-copy small { display: block; margin-top: 2px; color: var(--ink-faint); font-size: 8.7px; line-height: 1.45; }
-        .canva-hd-download {
-            min-width: 150px; padding: 8px 11px; border: 1px solid #6B2EC8; border-radius: 5px;
-            color: white; background: #6B2EC8; font-size: 10px; font-weight: 800; cursor: pointer; white-space: nowrap;
-        }
-        .canva-hd-download:hover { border-color: #5521A4; background: #5521A4; }
-        .canva-hd-download:disabled { opacity: 0.58; cursor: wait; }
-        .canva-download-note { margin-top: 7px; font-size: 9px; line-height: 1.45; color: var(--ink-faint); }
+        .canva-preview-note { margin-top: 7px; font-size: 9px; line-height: 1.45; color: var(--ink-faint); }
         .canva-service-config {
             width: 100%; min-width: 0; margin-top: 9px; padding: 7px 8px;
             border: 1px dashed var(--paper-line); border-radius: 5px; background: var(--paper);
@@ -520,14 +499,8 @@
             min-width: 0; overflow: hidden; border: 1px solid var(--paper-line); border-radius: 5px; background: var(--paper);
         }
         .canva-page-thumb { display: block; width: 100%; aspect-ratio: 1 / 1; object-fit: cover; background: #EEEAE0; }
-        .canva-page-footer { display: flex; align-items: center; justify-content: space-between; gap: 4px; padding: 5px; }
+        .canva-page-footer { display: flex; align-items: center; justify-content: center; gap: 4px; padding: 5px; }
         .canva-page-number { color: var(--ink-faint); font-family: var(--font-mono); font-size: 8.5px; font-weight: 700; }
-        .canva-page-download {
-            min-width: 0; padding: 3px 5px; border: 1px solid var(--paper-line); border-radius: 3px;
-            color: #6B2EC8; background: var(--paper-raised); font-size: 8.5px; font-weight: 700; cursor: pointer;
-        }
-        .canva-page-download:hover { border-color: #6B2EC8; }
-        .canva-page-download:disabled { opacity: 0.55; cursor: wait; }
 
         /* 一般模式只讓整個側欄捲動，避免編輯框、卡片與側欄三層捲動互相卡住 */
         .editor-card.caption-card { flex: 0 0 auto; display: block; min-width: 0; min-height: 0; overflow: visible; }
@@ -746,8 +719,6 @@
             .workspace-modal-actions .workspace-primary-btn { flex: 1; }
             .canva-modal-body { padding: 12px; }
             .canva-command-bar { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-            .canva-hd-card { grid-template-columns: minmax(0, 1fr); gap: 9px; }
-            .canva-hd-download { width: 100%; min-width: 0; }
             .canva-pages-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
         }
 

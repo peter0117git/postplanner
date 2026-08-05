@@ -1,6 +1,6 @@
 {
   "name": "ig-planner-canva-preview-worker",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "private": true,
   "type": "module",
   "scripts": {
@@ -9,7 +9,6 @@
     "test": "node --test test/*.test.js"
   },
   "devDependencies": {
-    "@cloudflare/puppeteer": "^1.1.0",
     "wrangler": "^4.102.0"
   }
 }

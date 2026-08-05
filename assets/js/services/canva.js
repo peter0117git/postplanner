@@ -46,15 +46,6 @@
         }
     }
 
-    function firstPagePreview(value) {
-        const info = parsePublicUrl(value);
-        if (!info || info.kind === 'short' || !info.designId || !info.shareToken) return info;
-        return {
-            ...info,
-            screenUrl: `https://www.canva.com/design/${encodeURIComponent(info.designId)}/${encodeURIComponent(info.shareToken)}/screen`
-        };
-    }
-
     function normalizeWorkerUrl(value) {
         if (!value) return '';
         try {
@@ -69,15 +60,13 @@
         }
     }
 
-    async function resolvePages(workerUrl, canvaUrl, options = {}) {
+    async function resolvePages(workerUrl, canvaUrl) {
         const service = normalizeWorkerUrl(workerUrl);
-        if (!service) throw new Error('請先設定有效的 Canva 多頁服務網址');
+        if (!service) throw new Error('請先設定有效的 Canva 預覽服務網址');
         if (!parsePublicUrl(canvaUrl)) throw new Error('請先貼上有效的 Canva 公開分享連結');
-        const mode = options.mode === 'browser' ? 'browser' : 'standard';
+
         const endpoint = new URL(`${service}/preview`);
         endpoint.searchParams.set('url', canvaUrl);
-        if (mode === 'browser') endpoint.searchParams.set('mode', 'browser');
-
         const response = await fetch(endpoint.toString(), {
             method: 'GET',
             mode: 'cors',
@@ -87,77 +76,33 @@
         });
         const result = await response.json().catch(() => ({}));
         if (!response.ok) {
-            const error = new Error(result.error || `Canva 多頁解析失敗（HTTP ${response.status}）`);
+            const error = new Error(result.error || `Canva 預覽解析失敗（HTTP ${response.status}）`);
             error.code = String(result.code || 'CANVA_RESOLVE_FAILED');
             throw error;
         }
-        if (!Array.isArray(result.pages) || result.pages.length === 0) throw new Error('此 Canva 連結未找到可下載的公開預覽頁面');
+        if (!Array.isArray(result.pages) || result.pages.length === 0) {
+            throw new Error('此 Canva 連結未找到可顯示的公開預覽頁面');
+        }
         return {
-            title: String(result.title || 'Canva預覽'),
+            title: String(result.title || 'Canva 預覽'),
             designId: String(result.designId || ''),
             sourceUrl: String(result.sourceUrl || canvaUrl),
             pageCount: Number(result.pageCount) || result.pages.length,
             previewCount: Number(result.previewCount) || 0,
-            browserPreviewCount: Number(result.browserPreviewCount) || 0,
-            fallbackCount: Number(result.fallbackCount) || 0,
-            browserMs: Number(result.browserMs) || 0,
-            mode: result.mode === 'browser' ? 'browser' : 'standard',
-            pages: result.pages.map((page, index) => ({
-                page: Number(page.page) || index + 1,
-                url: String(page.url || ''),
-                width: Number(page.width) || null,
-                height: Number(page.height) || null,
-                quality: ['browser', 'preview'].includes(page.quality) ? page.quality : 'thumbnail'
-            })).filter(page => /^https:\/\//i.test(page.url))
+            pages: result.pages.map((pageInfo, index) => ({
+                page: Number(pageInfo.page) || index + 1,
+                url: String(pageInfo.url || ''),
+                width: Number(pageInfo.width) || null,
+                height: Number(pageInfo.height) || null,
+                quality: pageInfo.quality === 'preview' ? 'preview' : 'thumbnail'
+            })).filter(pageInfo => /^https:\/\//i.test(pageInfo.url))
         };
-    }
-
-    function safeFilename(value) {
-        return String(value || '')
-            .replace(/[<>:"/\\|?*\u0000-\u001F]/g, '-')
-            .replace(/\s+/g, ' ')
-            .trim()
-            .slice(0, 70) || 'Canva預覽';
-    }
-
-    function triggerDownload(blob, filename) {
-        const objectUrl = URL.createObjectURL(blob);
-        const link = document.createElement('a');
-        link.href = objectUrl;
-        link.download = filename;
-        document.body.appendChild(link);
-        link.click();
-        link.remove();
-        setTimeout(() => URL.revokeObjectURL(objectUrl), 2500);
-    }
-
-    async function loadImageBlob(url) {
-        const response = await fetch(url, {
-            mode: 'cors',
-            credentials: 'omit',
-            cache: 'no-store',
-            referrerPolicy: 'no-referrer'
-        });
-        if (!response.ok) throw new Error(`圖片下載失敗（HTTP ${response.status}）`);
-        const blob = await response.blob();
-        if (!blob.type.startsWith('image/')) throw new Error('Canva 未回傳圖片格式');
-        return blob;
-    }
-
-    async function downloadImage(url, filename) {
-        const blob = await loadImageBlob(url);
-        triggerDownload(blob, filename);
     }
 
     global.CanvaService = Object.freeze({
         parsePublicUrl,
         parseEmbedUrl,
-        firstPagePreview,
         normalizeWorkerUrl,
-        resolvePages,
-        safeFilename,
-        triggerDownload,
-        loadImageBlob,
-        downloadImage
+        resolvePages
     });
 })(window);
