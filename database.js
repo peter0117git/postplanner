@@ -1637,111 +1637,111 @@ var externalDB = {
       "time": "08:00",
       "canvaUrl": "https://www.canva.com/design/DAHNj3c84TM/ZhX2l73oZ6mSB_0cuW6r4w/view?utm_content=DAHNj3c84TM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc7e7ce465d",
       "ratio": "1-1",
-      "status": "draft",
+      "status": "published",
       "theme": "早上只讀一點點",
       "title": "下雨的人",
-      "createdAt": null,
-      "updatedAt": null
+      "createdAt": "2026-08-05T02:41:46.478Z",
+      "updatedAt": "2026-08-05T02:41:46.478Z"
     },
     {
       "_id": "p_1785738820220_4n57",
       "caption": "<div>【圖文時間】 《宇希時間》</div><div><br></div><div><div>那些無所不在的：夢想截止日<span></span></div><div><br></div>\n\n<div>是不是每個夢想都有截止日期？<span></span></div>\n\n<div>好像有些事情，不在某個年紀完成，之後就再也沒有機會了。<span></span></div><div><br></div>\n\n<div>旅行要趁年輕、學英文要趁年輕、創業要趁年輕、去很遠的地方也要趁年輕。<span></span></div>\n\n<div>今年<span>20</span>幾歲，如果四年後結婚有了孩子，是不是代表我現在想去的地方以後就再也去不了了？<span></span></div><div><br></div>\n\n<div>於是我開始不停地替人生排時間表，今年去加拿大明年去紐西蘭，英文要早點學、品牌要趕快做好，錢也要存得快一點。<span></span></div>\n\n<div>好像每一個夢想，突然都有了期限。<span></span></div>\n\n<div>然而，越來越是想完成，我就越是焦慮，每天都覺得自己太慢了。<span></span></div><div><br></div>\n\n<div>直到有一天，我問自己：我真正害怕的是什麼呢？<span></span></div><div><br></div>\n\n<div>我害怕的是，有一天我沒有能力選擇。<span></span></div><div><br></div>\n\n<div>我害怕，有一天我會忘了自己曾經多麼想要成為那樣的人。<span></span></div><div><br></div><div>#宇希的貓 #宇希 #時間 #選擇</div></div>",
       "time": "18:00",
-      "canvaUrl": "https://www.canva.com/design/DAHNdqdK6aI/PiMT2vlLGuDlWm3KmDjn9g/view?utm_content=DAHNdqdK6aI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=ha7005fd718#1",
+      "canvaUrl": "https://canva.link/9mweojsry54qz6f",
       "ratio": "1-1",
       "status": "draft",
       "theme": "圖文時間",
       "title": "宇希時間",
-      "createdAt": null,
-      "updatedAt": null
+      "createdAt": "2026-08-05T02:42:22.812Z",
+      "updatedAt": "2026-08-05T02:50:52.322Z"
     },
     {
       "_id": "p_1785738836547_bhm7",
       "caption": "<div>其實擁有獨處時間，能解決許多人生問題</div><div>\n<div>生活在現代社會是非常辛苦的事情，需要學習很多東西，還要有諸多考量。雖然我們接收到很多來自外界的刺激，但是大腦卻沒有足夠的時間去消化它們。因此某一刻大腦就會像超載的電腦一樣，運轉速度變慢，思維也變得遲緩。此時判斷力會急劇下降，可能會搞砸重要的決定。同時，創意也會枯竭，只能勉強維持現狀而已。如此一來，即使只是坐在椅子上，工作進展也會變得緩慢，並且成效不彰。即使睡得再多，也難以緩解疲勞，反而徒增壓力。</div><div><br></div>\n<div>此時最需要的正是休息。我們被無數的刺激包圍，在不知不覺中看到、聽到、經歷到很多事情，並且受到影響。若想讓這些蜂擁而入的刺激不只是停留在瞬間的感覺或印象，而是能進一步發展成我們的思維方式，就需要有獨處的時間來思考和整理它們。</div><div><br></div>\n<div>就像吃完食物後需要讓身體稍微休息，才能讓食物得到良好消化，以構成骨骼和肌肉一樣，如果想讓我們接收到的刺激被理解和消化，成為精神結構的一部分，我們就需要有足夠的時間去消化這些刺激。</div><div><br></div>\n<div>當感覺大腦超載時，我們必須停止一切並稍事休息。我們應該阻止更多的刺激進入，讓大腦有時間消化之前接收到的資訊，並將其與現有的資訊整合。</div><div><br></div>\n<div>因此，比爾．蓋茲（Bill Gates）每年會前往位於美國西北部的一座別墅兩次，度過為期一週的「思考週」（Think Week）。在這段時間內，他不會接見公司員工，連家人都謝絕拜訪，完全獨處以進行充電。若說微軟公司的重要事業構想都是在這段時間內產生的也不為過。</div><div><br></div>\n<div>然而，能夠工作時專注於工作、休息時好好休息的人比想像中要少很多。有些人很難接受真正的休息。他們無法忍受放鬆和無所事事的時間。這些人認為，在不工作的時間裡應該做一些更重要和更具生產力的事情，而不是休息。他們在休息時間也難以安靜下來，反而更加持續不停地接收新事物。無法完全隔絕外部的所有刺激，結果讓我們的身心始終處於緊張狀態，大腦最終會因超載而全面崩潰。</div><div><br></div>\n<div>放鬆緊張並休息絕不是浪費時間。不，如果想要活得更好，偶爾必須刻意阻斷所有刺激，享受獨處的時光。關掉手機，待在一個不受任何人干擾的空間裡，保護自己不受外界刺激，讓大腦充分休息。讓筋疲力竭的大腦重新恢復活力，讓思緒得以自由流動。</div><div><br></div>\n<div>如此一來，原本複雜糾結的思緒會變得簡單清晰，疲憊的身體會恢復，心情也會變得輕鬆愉快。擺脫僵化的思維枷鎖，我們就能想到平時未曾思考或嘗試過的事物，並將思維朝更具創造性的方向發展。</div><div><br></div>\n<div>另一方面，經常獨自去海外旅行的人都有一個異口同聲的說法：「旅行，是為了找到回家的路。」雖然在陌生的地方與陌生人相遇，獲得新奇的經歷非常有趣，但隨著時間推移，會莫名其妙地開始想家、嚮往日常生活、懷念起身邊的人。當初出發時無比厭倦的一切，在旅途中卻都變得令人懷念起來。</div><div><br></div>\n<div>此時，我們會再次領悟到身邊的人是多麼珍貴的存在，對於與他們在一起時視為理所當然的一切也會心存感激。在旅途的尾聲，我們會渴望回家，想見到那些人。</div><div><br></div>\n<div>當你疲憊不堪，誰都不想見的時候，就應該傾聽內心的聲音。因為你的心靈在發出訊號，表明需要獨處的時間來思考和整理。此時請停下手邊的工作，暫時將家人或愛人拋在腦後，騰出一段時間來獨處吧！</div><div><br></div><div>摘自p.249~251</div><div><br></div><div>#獨處 #大田出版 #現代生活</div></div><div><br></div>",
       "time": "20:00",
-      "canvaUrl": "https://www.canva.com/design/DAHN7xDu7lw/TUuELGCo_fNSKNaEF6Sn-Q/view?utm_content=DAHN7xDu7lw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h214f581df7",
+      "canvaUrl": "https://canva.link/ajgnslhvh966pcd",
       "ratio": "1-1",
       "status": "draft",
       "theme": "晚上多讀一點點",
       "title": "不要再怪自己想太多：精神科醫師寫給總是不安的你",
       "createdAt": "2026-08-04T09:46:42.603Z",
-      "updatedAt": "2026-08-04T09:46:43.859Z"
+      "updatedAt": "2026-08-05T03:20:30.134Z"
     }
   ],
   "2026-08-06": [
     {
       "_id": "p_1785738536499_3drv",
-      "caption": "<div><span>【晚上多讀一點點】 《尋找蜘蛛：日本暢銷超過36萬冊，西加奈子的生命故事》</span></div>",
+      "caption": "<br>",
       "time": "20:00",
-      "canvaUrl": "https://www.canva.com/design/DAHQkUu_iSE/DrFQws8Bn2DLb78HKZXrSg/view?utm_content=DAHQkUu_iSE&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hdc3f8590f3",
+      "canvaUrl": "https://canva.link/lg0yei06i7q705x",
       "ratio": "4-5",
       "status": "draft",
       "theme": "晚上多讀一點點",
-      "title": "你就是困住自己的那座山",
+      "title": "尋找蜘蛛：日本暢銷超過36萬冊，西加奈子的生命故事",
       "createdAt": "2026-08-04T09:36:32.153Z",
-      "updatedAt": "2026-08-04T09:49:13.054Z"
+      "updatedAt": "2026-08-05T03:22:09.972Z"
     },
     {
       "_id": "p_1785738915256_56dy",
       "caption": "<div>【早上只讀一點點】 《希望溫暖你的每一天(精采夜光版)》</div><div><br></div><div><div><span>#九月十二日上市</span></div><div><span>#精采夜光版</span></div></div><div><br></div><div><div><div>〈我又被拒絕了嗎？〉</div></div><div><div>就算一個人很有自信、有錢，</div><div>或者就算是成熟的大人，這種被拒絕的感覺，</div><div>還是會讓大家難過。</div></div><div><div>人生在世，</div><div>都可能會拒絕別人或被別人拒絕。</div></div><div><div>好好拒絕別人是很重要的事，</div><div>我們也不需要因為被拒絕就感到受傷。</div><div>因為那不會決定你的價值。</div></div><div><div>不過，如果被拒絕的感受依然讓你難過，</div><div>那就去找能理解你的人，試著獲得一些安慰，</div><div>去找那些喜歡你的人，獲得一些自信吧。</div></div><div><div>你一定能充分感受到，</div><div>你可不是活該被拒絕的人。</div></div><div><div>-</div><div><span>#希望溫暖你的每一天</span> <span>#療癒</span> <span>#圖文</span> <span>#大田出版</span></div></div></div><div><br></div>",
       "time": "08:00",
-      "canvaUrl": "https://www.canva.com/design/DAHPbqxce5c/KlYPQFMyxFO9ZN5Zx99IkA/view?utm_content=DAHPbqxce5c&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h240e483ba4",
+      "canvaUrl": "https://canva.link/1wn56aih451txlb",
       "ratio": "1-1",
       "status": "draft",
       "theme": "早上只讀一點點",
       "title": "希望溫暖你的每一天(精采夜光版)",
-      "createdAt": null,
-      "updatedAt": null
+      "createdAt": "2026-08-05T03:21:03.861Z",
+      "updatedAt": "2026-08-05T03:21:03.861Z"
     },
     {
       "_id": "p_1785824272467_75wv",
       "caption": "<div>【圖文時間】 《幸福就是吃飯睡覺等待》</div><div><br></div><div>#幸福就是吃飯睡覺等待</div><div><br></div><div><div>因為身體不適每周只能打工四天的麥卷聰子。<br>\n在心情低落到谷底的某天發現一個小型社區。<br>\n遇見房東鈴媽和「家政夫」阿司，<br>\n找到屬於自己的幸福……。<span></span></div>\n<div>你也是這樣嗎？</div>\n<div>三餐靠超商，完全不知道此刻的當季蔬果是什麼<br>\n身心有無法為外人知的傷痛，有苦說不出<br>\n正值人生換檔期，有點忐忑不安<br>\n腦海裡一直閃過自己孤獨死的畫面</div><div><br></div>\n<div>身心俱疲者必看！<br>\n上班族的救贖良藥！<br>\n能好好過日子就是人生勝利組！</div>\n<div>每天拖著沉重步伐，想要努力維持生活安穩的麥卷小姐，因病辭去工作，許多夢想好像都被迫放棄了……但鈴媽告訴她，不要跟過去的自己比較，要想想今後還有新的自己。</div><div><br></div><div>#大田出版 #療癒</div></div><div><br></div>",
       "time": "18:00",
-      "canvaUrl": "https://www.canva.com/design/DAHRTdSwz9M/sWOY1X2_YbfvW2YS5krmaQ/view?utm_content=DAHRTdSwz9M&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hf668cbf0c6",
+      "canvaUrl": "https://canva.link/7lpz6qw3kv3q2ng",
       "ratio": "1-1",
       "status": "draft",
       "theme": "圖文時間",
       "title": "幸福就是吃飯睡覺等待",
-      "createdAt": null,
-      "updatedAt": null
+      "createdAt": "2026-08-05T03:21:22.200Z",
+      "updatedAt": "2026-08-05T03:21:22.200Z"
     }
   ],
   "2026-08-07": [
     {
       "_id": "p_1785738610965_u6oi",
-      "caption": "<div>【早上只讀一點點】 《昨日，無人接聽》</div><div><br></div><div><div><div>〈度過〉</div></div><div><div>聽見他的消息時</div><div>不能大聲說話</div><div>難以睡去更需要</div><div>望向黑暗</div><div>告別一個人</div><div>是把眼睛慢慢闔上</div><div>不把他縮小。而是讓自己</div><div>看得越來越少</div></div></div><div><br></div><div>摘自《昨日，無人接聽》-<span style=\"color:rgb(8, 8, 9)\">〈度過〉</span></div><div><br></div><div><div><span>#陳繁齊</span></div><div><span>#昨日無人接聽</span></div></div><div>#詩</div>",
+      "caption": "<div>雖然「自我照顧」一詞業已成為一個概括性的術語，通常指的是藉由各種行為來分散人們對當前實際問題的關注，而不是真正採取行動去解決當前的問題，但真正的自我照顧，是在最基礎的層面上，去滿足自身的需求。</div>\n<div>除了自身的基本安全之外，你還需要良好的營養、充足的睡眠、乾淨的生活環境、得體的穿著，以及允許自己在沒有批判、沒有壓抑的情況下，去真切地感受自己的感受。</div>\n<div>自己去找到滿足這些需求的各種方法，是戰勝自我破壞的基礎。</div>\n<div>如果晚上睡得好，你會更願意鍛鍊身體。如果不必坐在那裡忍受持續的背痛，而是尋求專業人士的幫助，來改善自己的姿勢、整脊或按摩，你的工作心情就會好很多。如果你的住家井井有條、富有意義，你就會喜歡在家裡度過時光。如果你花時間精心打扮自己，你每天都會感覺更好。</div>\n<div>這些事都不是小事，而是大事。只是你看不到，因為它們的影響在於你每天都要做。</div>\n<div>了解自己的需求，滿足那些你應當負起責任的需求，然後把該說的話說出口，這樣別人就能去滿足你無法單靠自己滿足的需求。這麼做，將會幫助你終結自我破壞的迴圈，並打造出一個更健康、更平衡、更充實的生活。</div><div><br></div><div>#大田出版 #你就是困住自己的那座山 #自我 #休息</div>",
       "time": "08:00",
-      "canvaUrl": "https://www.canva.com/design/DAHRTzzxuis/pTn9CG_P3bI3sYG5FagkIw/view?utm_content=DAHRTzzxuis&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h5ef7f2e156",
-      "ratio": "1-1",
+      "canvaUrl": "https://canva.link/kqyd3gus0y0uxry",
+      "ratio": "4-5",
       "status": "draft",
       "theme": "早上只讀一點點",
-      "title": "昨日，無人接聽",
-      "createdAt": null,
-      "updatedAt": null
+      "title": "你就是困住自己的那座山",
+      "createdAt": "2026-08-05T03:25:29.406Z",
+      "updatedAt": "2026-08-05T03:28:24.997Z"
     },
     {
       "_id": "p_1785739047496_uzj3",
       "caption": "<div><div>【圖文時間】《一次又一次又一次地重新開始》</div><div><br></div><div>#八月一日上市<br>#大田出版</div><div><br></div><div>小編：「摘了這麼多本書，就這本最漂亮。」</div><div><br></div><div>獻給所有正在重新開始的人。<br>獻給所有正在學習如何在人生循環中安歇的人。<br>獻給所有需要明白——重新開始並非一蹴可幾，而是一生永無止境的修行——的人。</div><div>★</div><div>暢銷療癒圖文書《會好起來的，就算不是現在》作者最新力作！</div><div>在破碎與重建之間，學會一次又一次地重新開始。</div><div>這是一本關於人生循環的圖文書——<br>關於懷疑、崩解、重新站穩、再次敞開，然後再一次重生。</div><div>藝術家暨作家亞歷珊卓拉．歐拉諾，曾在某個凌晨三點醒來，腦中滿是停不下來的問題：</div><div>人生就是這樣了嗎？<br>當一切瓦解時，該怎麼辦？<br>當我想關上自己時，如何仍然保持敞開？</div><div>《#一次又一次又一次地重新開始》最初只是她寫給自己的筆記。她用圖像與文字，試著理解這張充滿不確定的人生地圖，最後寫成了一本關於「成為人」的節奏之書：</div><div>提問 → 懷疑 → 站穩 → 敞開 → 更新</div><div>人生不斷在這五個循環之中往復。</div><div>水彩插畫與私密文字彼此交織。<br>這本書不提供答案，而是提供陪伴。</div><div>它告訴我們——<br>不要再等待那個「完成版的自己」。<br>改變不是抵達某個終點，而是學會與變動一起生活。</div><div>重新開始，不只一次。<br>而是用一生，一次又一次地重新開始。</div><div><br></div><div>#會好起來的 #作者新書 #就算不是現在 #就算慢一點也沒關係</div></div>",
       "time": "18:00",
-      "canvaUrl": "https://www.canva.com/design/DAHQGHvfi-A/aKa_FAH8l28FL0kYu5d3QA/view?utm_content=DAHQGHvfi-A&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h3c68affc26",
+      "canvaUrl": "https://canva.link/m0asa0vyctn8euf",
       "ratio": "4-5",
       "status": "draft",
       "theme": "圖文時間",
       "title": "一次又一次又一次地重新開始",
-      "createdAt": null,
-      "updatedAt": null
+      "createdAt": "2026-08-05T03:24:18.318Z",
+      "updatedAt": "2026-08-05T03:24:18.318Z"
     },
     {
       "_id": "p_1785739168776_j4kt",
       "caption": "<div>【晚上多讀一點點】 《如何愛你的負面情感》</div><div><br></div><div><div><div>改變動機的話，就能停止當老好人</div><div><br></div><div>對周圍的人太過小心翼翼，不敢摘下「老好人面具」的你，請丟掉那壓迫人的面具，更優遊自在地過活吧！  </div></div><div><div>你的一舉一動背後是否經常帶著「不想被同伴排擠」、「不想讓別人失望」的心情？不想被任何人討厭的心情雖然我也能感同身受，但只要你的行動背後帶著懼怕，你就無法在當下的場合中盡歡。  </div></div><div><div>舉例來說，你參加一個公司的飯局。在那個場合中，最重要的不是「別人眼中的自己是什麼樣子」，而是「自己在那個場合有多盡興」。和你一起度過時間的人，不會被凡事看人臉色的你吸引，反而會被主動享受當下的你吸引。  </div></div><div><div>一開始，我改掉了做事情的「動機」。將「我怕事情會變成怎樣怎樣」改成「我怎樣怎樣做的話一定會很開心」。</div></div><div><div>曾經發生過這樣的事。有朋友邀我參加一場「文化人交流會」，我雖然覺得參加宴會真累人，但還是去了。我事先為此行找出了「有趣的動機（目的）」。</div></div><div><div>找出帥哥排行榜和時尚排行榜的前十名。</div></div><div><div>盡情地享用美食，把參加費賺回來。</div></div><div><div>多聽別人說的笑話或工作之道，自己以後也能拿來運用。</div></div><div><div>猜猜有哪些參加者有著和自己相同的心情。</div></div><div><div>像這樣替自己製造愉快的目的，就不會因為一邊陪笑臉一邊擔心他人怎麼看自己，而感到筋疲力竭，反而能度過加倍快樂的時光。</div></div><div><div>請你也積極為自己要做的事，找出有趣的動機吧！</div><div><br></div><div>(p70~71)</div><div><br></div></div><div><div><span>#轉變</span> <span>#心情</span> <span>#成長</span> <span>#負面情感</span> <span>#愛自己</span></div></div></div>",
       "time": "20:00",
-      "canvaUrl": "https://www.canva.com/design/DAHIAn9ZAjc/7o2oh0IVtJHtZZmLgUE2qQ/view?utm_content=DAHIAn9ZAjc&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h25274b2131",
+      "canvaUrl": "https://canva.link/4n7zjyqsvr5h9nl",
       "ratio": "1-1",
       "status": "draft",
       "theme": "晚上多讀一點點",
       "title": "如何愛你的負面情感",
-      "createdAt": null,
-      "updatedAt": null
+      "createdAt": "2026-08-05T03:24:39.273Z",
+      "updatedAt": "2026-08-05T03:24:39.273Z"
     }
   ],
   "2026-08-08": [
@@ -1827,6 +1827,6 @@ var externalDB = {
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-08-04T10:01:40.387Z",
+  "updatedAt": "2026-08-05T03:28:59.629Z",
   "tombstones": {}
 };
