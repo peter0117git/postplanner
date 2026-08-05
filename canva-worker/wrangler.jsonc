@@ -1,0 +1,12 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "ig-planner-canva-preview",
+  "main": "src/index.js",
+  "compatibility_date": "2026-08-05",
+  "observability": {
+    "enabled": true
+  },
+  "vars": {
+    "ALLOWED_ORIGIN": "*"
+  }
+}
