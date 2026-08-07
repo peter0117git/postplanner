@@ -1747,15 +1747,15 @@ var externalDB = {
   "2026-08-08": [
     {
       "_id": "p_1785829731494_109c",
-      "caption": "<div>【影片分享】</div><div><br></div>",
+      "caption": "<div>【影片分享】</div><div>一次又一次影片分享</div>",
       "time": "12:00",
       "canvaUrl": "",
       "ratio": "4-5",
       "status": "draft",
       "theme": "影片分享",
       "title": "",
-      "createdAt": null,
-      "updatedAt": null
+      "createdAt": "2026-08-07T07:10:07.445Z",
+      "updatedAt": "2026-08-07T07:10:14.562Z"
     }
   ],
   "2026-08-10": [
@@ -1799,7 +1799,7 @@ var externalDB = {
   "2026-08-09": [
     {
       "_id": "p_1786070677163_u1refr",
-      "caption": "<div>【影片分享】</div><div><br></div>",
+      "caption": "<div>【影片分享】</div><div>幸福影片分享</div>",
       "time": "00:00",
       "canvaUrl": "",
       "ratio": "4-5",
@@ -1807,7 +1807,7 @@ var externalDB = {
       "title": "",
       "status": "draft",
       "createdAt": "2026-08-07T02:44:37.163Z",
-      "updatedAt": "2026-08-07T02:44:37.163Z"
+      "updatedAt": "2026-08-07T07:10:03.678Z"
     }
   ],
   "2026-08-11": [
@@ -1863,15 +1863,15 @@ var externalDB = {
     },
     {
       "_id": "p_1786077113552_obtxkd",
-      "caption": "<div>【圖文時間】 《宇希時間》</div><div><br></div>",
+      "caption": "<div>【圖文時間】 《宇希時間》</div><div><br></div><div><div>異地戀最難熬的，從來不只是距離。</div><div>而是從無話不談，到小心翼翼地問一句：<br>「你吃飯了嗎？」<br>「今天還好嗎？」<br>「到家了嗎？」</div><div>看著訊息停在已讀，開始反覆猜測——<br>他只是忙，還是已經沒有那麼在意了？</div><div>明明每次見面，他都說還愛著；<br>可回到各自的生活，卻好像只剩自己努力維繫。</div><div>後來才明白，愛不是把一個人牢牢綁在身邊，<br>也不是獨自演完一場兩個人的愛情。</div><div>給彼此自由，也把自己還給自己。<br>如果兩個人最後仍願意走向彼此，<br>那才是彼此真正做出的選擇。</div><div>如果是你，會繼續等待，還是先好好過自己的生活？</div><div><br></div><div>#感情 #愛情 #距離以外 #宇希的貓</div></div>",
       "time": "18:00",
-      "canvaUrl": "https://canva.link/9mweojsry54qz6f",
-      "ratio": "4-5",
+      "canvaUrl": "https://www.canva.com/design/DAHNdqdK6aI/PiMT2vlLGuDlWm3KmDjn9g/view?utm_content=DAHNdqdK6aI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=ha7005fd718",
+      "ratio": "1-1",
       "theme": "圖文時間",
       "title": "宇希時間",
       "status": "draft",
       "createdAt": "2026-08-07T04:31:53.552Z",
-      "updatedAt": "2026-08-07T04:31:53.552Z"
+      "updatedAt": "2026-08-07T07:09:29.623Z"
     },
     {
       "_id": "p_1786077129272_d1p75r",
@@ -1965,7 +1965,7 @@ var externalDB = {
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-08-07T07:03:29.269Z",
+  "updatedAt": "2026-08-07T07:10:23.741Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z"
