@@ -1671,7 +1671,7 @@ var externalDB = {
   "2026-08-06": [
     {
       "_id": "p_1785738536499_3drv",
-      "caption": "<br>",
+      "caption": "<div>這是為「你」而寫。__西加奈子</div><div><br></div><div>在異國他鄉，突如其來被宣告患上乳癌。</div><div><br></div><div>語言的隔閡、備受折磨的身心——</div><div><br></div><div>而維繫著生命的是，一雙雙友誼的手、書中的某一行字、流動的音樂，以及彷如祈禱般的「寫作」。</div><div><br></div><div>一邊流淚一邊微笑，一邊微笑一邊向前邁進……</div><div><br></div><div>西加奈子用赤裸、毫無保留的言語寫下的，首部非虛構作品。</div><div><br></div><div>這是一本讓人湧現生存勇氣的靈魂全紀錄。</div><div><br></div><div>#西加奈子 #尋找蜘蛛 #生命</div>",
       "time": "20:00",
       "canvaUrl": "https://canva.link/lg0yei06i7q705x",
       "ratio": "4-5",
@@ -1679,7 +1679,7 @@ var externalDB = {
       "theme": "晚上多讀一點點",
       "title": "尋找蜘蛛：日本暢銷超過36萬冊，西加奈子的生命故事",
       "createdAt": "2026-08-04T09:36:32.153Z",
-      "updatedAt": "2026-08-05T03:22:09.972Z"
+      "updatedAt": "2026-08-05T05:48:44.508Z"
     },
     {
       "_id": "p_1785738915256_56dy",
@@ -1761,53 +1761,53 @@ var externalDB = {
   "2026-08-10": [
     {
       "_id": "p_1785830402593_y295",
-      "caption": "<div>【早上只讀一點點】 《一次又一次又一次地重新開始》</div><div><br></div>",
+      "caption": "<div>【早上只讀一點點】 《一次又一次又一次地重新開始》</div><div><br></div><div>〈 疑問 〉</div><div><br></div><div><div>　人生就這樣了嗎？重要的事物往往都像這個疑問，不請自來—在你卸下所有心防之際，這個問題便會浮上心頭。四十四歲的我，躺在自己挑的床上，過著親手建構的人生，卻納悶自己過著別人的日子。</div><div>　　我的生活貌似安定，內心深處卻覺得空虛。多年來，我追逐更新的目標，追逐讓我更完整的戀情，追逐證明自我價值的成就，追逐讓我終於感到生命脈動的體驗。結果，不斷勉強自己導致我疲累不堪，而且有個念頭揮之不去，那就是我一路走來似乎錯過某種至關重要的事物。</div><div>　　當時我不知道這個疑問將一次又一次地浮現，每次都逼著我褪去「原本預期成就的自我」。</div></div><div><br></div><div><span>#會好起來的 #作者新書 #就算不是現在 #就算慢一點也沒關係</span></div>",
       "time": "08:00",
       "canvaUrl": "https://www.canva.com/design/DAHQGHvfi-A/aKa_FAH8l28FL0kYu5d3QA/view?utm_content=DAHQGHvfi-A&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h3c68affc26",
       "ratio": "4-5",
       "status": "draft",
       "theme": "早上只讀一點點",
       "title": "一次又一次又一次地重新開始",
-      "createdAt": null,
-      "updatedAt": null
+      "createdAt": "2026-08-07T02:49:22.278Z",
+      "updatedAt": "2026-08-07T02:59:41.261Z"
     },
     {
       "_id": "p_1785830429083_t7c8",
-      "caption": "<div>【圖文時間】 《幸福就是吃飯睡覺等待》</div><div><br></div>",
+      "caption": "<div>【圖文時間】 《幸福就是吃飯睡覺等待》</div><div><br></div><div><div>如果今天很累，就先好好吃一頓飯吧。</div><div>把木耳、蓮藕和舞茸菇放進鍋裡，<br>等待米飯慢慢吸收每一種食材的滋味。</div><div>再準備幾道喜歡的小菜，<br>坐下來，雙手合十，說一聲：「我要開動了。」</div><div>一口一口吃下去，<br>想起曾經陪伴自己的人，<br>也想起那些留在記憶裡，清淡、溫潤、熱呼呼的味道。</div><div>原來，我們能夠好好活下去，<br>不只是因為吃下了一頓飯，<br>也是因為身邊曾經有那麼多人，<br>用各自的方式照顧著我們。</div><div>今天的你，也有好好吃飯嗎？</div><div><br></div><div>《幸福就是吃飯睡覺等待》<br>水凪トリ｜大田出版</div><div><br></div><div>#幸福就是吃飯睡覺等待<br>#水凪トリ #大田出版<br>#圖文 #吃飯 #療癒</div></div>",
       "time": "18:00",
-      "canvaUrl": "https://www.canva.com/design/DAHRTdSwz9M/sWOY1X2_YbfvW2YS5krmaQ/view?utm_content=DAHRTdSwz9M&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hf668cbf0c6",
+      "canvaUrl": "https://www.canva.com/design/DAHRk3aWsJU/PUtMv94uH8-14-I-clQNsA/view?utm_content=DAHRk3aWsJU&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hcf5671cd06",
       "ratio": "1-1",
       "status": "draft",
       "theme": "圖文時間",
       "title": "幸福就是吃飯睡覺等待",
-      "createdAt": null,
-      "updatedAt": null
+      "createdAt": "2026-08-07T03:19:56.607Z",
+      "updatedAt": "2026-08-07T03:36:03.651Z"
     },
     {
       "_id": "p_1785830446460_dv5u",
-      "caption": "<div>【晚上多讀一點點】 《尋找蜘蛛：日本暢銷超過36萬冊，西加奈子的生命故事》</div><div><br></div>",
+      "caption": "<div>【晚上多讀一點點】 《尋找蜘蛛：日本暢銷超過36萬冊，西加奈子的生命故事》</div><div><br></div><div>#大田出版</div><div><br></div><div>之二</div><div><br></div><div><div>手術當天，我在清晨五點醒來，外面的天色彷彿還像半夜。</div><div>​</div><div>因為在早上七點前可以喝水，我喝了沸騰後冷卻的溫水，洗臉換衣服。院方的人告訴我說，手術後我將無法抬起手臂，最好穿開襟的衣服。所以我穿上之前就準備好的棉質白睡衣。那是我在日本的朋友麗莎送的禮物。這時我先生跟S都還在睡，於是我把留言放在桌上。</div><div>​</div><div>「我先出門了！媽媽回來時會變得很酷，煥然一新！」</div><div>​</div><div>我往窗外看，大約正好在五點半的時候，有輛紅色的車出現了，那是真由子來載我。她每天早上四點半起床，洗衣服，做早餐與HANA（譯註）的便當，順便連晚餐也一起準備。如果時間充足的話，她每周會去附近的健身俱樂部二、三次，先游泳三十到四十分鐘後再去上班。</div><div>​</div><div>「早安。」</div><div>​</div><div>我坐進真由子私家車的副駕駛座，想起我們一起去髮廊的夜晚。當車輛奔馳在黑暗的道路，不知道為什麼，我覺得自己彷彿潛藏在真由子體內，而且想繼續躲在那裡不願意出來。不過現在不是晚上，而且就在此刻，天色亮了。</div><div>​</div><div>抵達聖保祿醫院（St. Paul's Hospital）後，我跟真由子一起沿著走廊往前走。</div><div>​</div><div>「HANA就是在這家醫院出生的。」</div><div>​</div><div>真由子告訴我。在六年前的十月，有個名叫HANA，既美麗又堅強的女孩就在這家醫院誕生，而我現在正在裡面，想想真是不可思議。醫院會記得各種活著的瞬間，就像記得死亡的片刻。</div><div>​</div><div>之前醫護人員提醒，陪伴病患的人不能一起待在候診室。但是真由子自然而然地留在我身旁，也沒有人說什麼。</div><div>​</div><div>「果然管得不太嚴格呢。」</div><div>​</div><div>我們這麼說，一起笑了，等候輪到我。淋巴結的針刺活檢大約在十分鐘內完成。針刺很痛，我叫出聲音來（我在日記上寫下『痛得要命』）。我的胸口浮現藍色墨水漬（而且，後來我排出藍色的尿液）。</div><div>​</div><div>接下來由真由子開車，載我去聖若瑟山醫院（Mount Saint Joseph Hospital）。這裡是我跟瑪萊卡醫師與伊斯梅拉達討論病情的場所，也是我先生膽結石疼痛時趕去急診的醫院。在溫哥華有幾家醫院，聽說這一家的急診室病患比較少，所以他特地選擇離家大約三十分鐘車程的這家醫院（但是我先生過了九個小時才回到家）。</div><div>​</div><div>這次我不得不在櫃台向真由子說再見，她給我一個擁抱，好一會兒才放開。我告訴她，要是我發生了什麼事，拜託幫忙照顧S。真由子說：</div><div>​</div><div>「你在說什麼，絕對不會有事的！」</div><div>​</div><div>我們兩人都眼眶泛淚，但是走過來的護理師卻一副無憂無慮的樣子。</div><div>​</div><div>「你是加奈子吧？早安～！跟我來這邊～！」</div><div>​</div><div>外科門診部有很多跟我一樣來做當日手術的病患。其中也包括拎著一個紙袋隨意出現的老先生，幾個小時後他的眼睛裹著繃帶，精神飽滿地回家。距離手術時間還早，令我有些煩悶，不過也因此見到形形色色的人。</div><div>​</div><div>護士帶我去的地方不是房間，而是用簾幕圍起來的空間。裡面擺著床，也可以直接當成擔架使用。病患在這個空間換上開口在後的病人服，等待手術。我已經很習慣這種病人服。大家都沒把後面的綁帶打結，只是垂下來，因此有很多人連內衣都露出來了。</div><div>​</div><div>總之我先試著躺在床上，不過距離手術大概還有五個小時。我取出手機，反覆看著同一段影片。</div><div>​</div><div>我在日本的朋友Ryo、Chie、Kunihiko為我祈禱，希望手術順利。Ryo拍攝並寄來了大家祈禱時的情景，以及每個人為我祝福的訊息。</div><div>​</div><div>我第一次看這段影片時坐在海邊的長椅。我邊看著這段影片，被他們的話逗笑好幾次，接著哭了。一旁還很小的孩子，不可思議地看著我又哭又笑的樣子。</div><div>​</div><div>我在手術當天前，反覆地看著這段影片。</div><div>​</div><div>有時候我有種奇異的感覺。這是大家給我的訊息，我明明知道，不知道為什麼，有時候卻覺得那是傳給「西加奈子」那個被愛的人的訊息。而我現在看著這些，彷彿另一個人悄悄觸碰著這些愛。</div><div>​</div><div>當我被告知罹癌，持續接受治療，我對於「自己」的存在產生不可思議的感覺。</div><div>​</div><div>當治療令人痛苦，我覺得最痛苦的是自己的心。在為治療而努力時，努力的是自己的身體。我撫慰自己的心，感謝自己的身體。但我在無意間卻意識到，所謂的我究竟在哪裡？我的心並不是我，而我的身體在別處。當有什麼發生在「我」身上，這件事與我總是保持一定的距離。</div><div>​</div><div>就連因為難受而哭泣，或是想乞求「拜託饒了我吧」的時候，我彷彿置身在別處旁觀，覺得自己「很可憐」。我就像觀照著「西加奈子」的某人，一直在那裡。</div><div>​</div><div>在化療注射前，護理師每次都會問我姓名與出生年月日，因為絕對不能出錯。除了負責注射的護士，為了謹慎起見，其他的護理師也會幫忙確認。所以我會複誦好幾次自己的姓名與出生年月日。</div><div>​</div><div>「我是出生在1977年5月7日的西加奈子。」</div><div>​</div><div>反覆說出自己的生日與姓名，彷彿自己的存在也跟著解體。喔？我是出生在1977年5月7日嗎？我的名字是西加奈子呢！在藥物引起的強烈睏倦中，有時我會陷入奇異的夢境，彷彿自己分裂成數百個化身。</div><div>​</div><div>我究竟在哪裡。​</div><div>​</div><div>譯註：HANA除了日文的「花」，希伯來文（Hannah）也有「恩惠」、「恩典」的意思。</div></div><div><br></div><div><span style=\"color:rgb(8, 8, 9)\">#西加奈子</span><span style=\"color:rgb(8, 8, 9)\"> </span><span style=\"color:rgb(8, 8, 9)\">#尋找蜘蛛</span><span style=\"color:rgb(8, 8, 9)\"> </span><span style=\"color:rgb(8, 8, 9)\">#生命</span><span style=\"color:rgb(8, 8, 9)\"> </span></div><div><br></div>",
       "time": "20:00",
       "canvaUrl": "https://www.canva.com/design/DAHQkUu_iSE/DrFQws8Bn2DLb78HKZXrSg/view?utm_content=DAHQkUu_iSE&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hdc3f8590f3",
       "ratio": "4-5",
       "status": "draft",
       "theme": "晚上多讀一點點",
       "title": "尋找蜘蛛：日本暢銷超過36萬冊，西加奈子的生命故事",
-      "createdAt": null,
-      "updatedAt": null
+      "createdAt": "2026-08-07T03:51:05.636Z",
+      "updatedAt": "2026-08-07T04:28:30.075Z"
     }
   ],
   "2026-08-09": [
     {
-      "_id": "p_1785830088136_6sci",
-      "caption": "<div>【圖文時間】 《＃看看你有多了解自己》</div><div><div><br></div><div><div>以數字測量一切的世界，我們該如何了解自己？<span></span></div><div><br></div><div>#權廷玟</div><div><br></div><div><span>◎</span>大田行銷企劃 張采軒<span></span></div><div><span>&nbsp;</span></div><div><span>&nbsp;</span></div><div>這是一本太可愛也太殘酷的書。<span></span></div><div><span>&nbsp;</span></div><div>一開始，書中的貓咪們穿著人類的衣服，接受各式各樣的測量：身高、體重、視力、然後是……花色？「這對你未來的一生有重大的影響。」<span></span></div><div><span>&nbsp;</span></div><div>貓咪的花色會影響什麼呢？我知道橘貓易胖、玳瑁親人、賓士是貓界二哈，但這只是人類身為飼主，趣味性的分類吧？花色對貓咪的影響力，會像人類因為膚色與種族，衍生出複雜的歧視與暴行嗎？<span></span></div><div><span>&nbsp;</span></div><div>下一頁，十幾張神態各異的貓咪臉孔，如證件照般並置，讓我想到護照、身分與認同。<span></span></div><div><span>&nbsp;</span></div><div>《看看你有多了解自己》，原文書名叫做《<span>당신을</span><span> </span><span>측정해</span><span> </span><span>드립니다</span>》（直譯為：讓我們為您測量），是<span>Korea Democracy Foundation</span>與出版社合作推出的「民主與人權系列繪本」之一。如何讓平等存在於多元之中，這本書提出了深刻的提問，用可愛的畫風點出當代社會難解的議題：貧富差距、階級複製、性別不平等、消費主義的盛行、社交媒體對自我認同產生的影響……。<span></span></div><div><span>&nbsp;</span></div><div>書桌前，熬夜苦讀的白貓有媽媽悉心準備的宵夜。虎斑累倒了，牆上掛著超商的制服背心。<span></span></div><div><span>&nbsp;</span></div><div>客廳裡，賓士貓在打掃，橘貓在吃零食，咚咚咚，三隻混血的小貓跑來，纏著賓士貓，橘貓倒頭呼呼大睡。<span></span></div><div><span>&nbsp;</span></div><div>飛機上，經濟艙裡的四隻米克斯立直椅背在打盹。頭等艙裡的波斯貓躺得好舒適，品葡萄酒，滑手機。<span></span></div><div><span>&nbsp;</span></div><div>我特別喜歡這一頁，每隻貓咪都奮力爬著同一座梯子，有人的梯子生鏽了，有人的梯距好遠，有人，不，有一隻貓，坐在繩索上，穿著護具，輕鬆且驕傲地往上升。畫面裡看不到是誰把他拉上去的，卻讓我想到生命中幾個欽羨他人的時刻。<span></span></div><div><span>&nbsp;</span></div><div>「來，現在動用所有你知道的手段與方法往上爬吧。」<span></span></div><div><span>&nbsp;</span></div><div>這本書還有另一個有趣的地方：每隻貓咪之間的關係，幾乎都是競爭、比較與評斷彼此，沒有友情、愛情，或僅因同物種而生的同理與憐憫。甚至在最後幾頁，一隻隻貓咪兀自滑著手機，滿臉鬱卒地窺探他人的生活，擁有相似的基因成為最殘忍的魔咒：我們明明這麼像，為什麼卻活得這麼不同？<span></span></div><div><span>&nbsp;</span></div><div>如果我是那隻從梯子上意外落下的貓，我有能力重新站起來嗎？<span></span></div><div><span>&nbsp;</span></div><div>我想起在《她物誌》一書中寫道，美國人類學家<span>Margaret Mead</span>被問及最能標誌出人類文明的物品是什麼？她回答：「一段癒合的大腿骨。」<span></span></div><div><span>&nbsp;</span></div><div>她說，在自然界中，動物如果大腿骨折，根本不可能活下來。他會有好幾周無法尋找水源或打獵，很可能死於飢餓或被其他動物獵殺。一段癒合的大腿骨代表他受傷時，有人照顧、保護、陪伴他。<span></span></div><div><span>&nbsp;</span></div><div></div><div>下次，當我們因比較（或被比較）而沮喪憤怒時，當我們輕易論斷他人而心生輕蔑時，請想想這本貓咪的測量之書。願我們的世界除了比較和競爭，還有更多仁慈與關愛，願我們一起在平等中迎向自由。<span></span></div><div><br></div><div>#大田出版&nbsp;</div></div></div><div><br></div>",
-      "time": "12:00",
-      "canvaUrl": "https://www.canva.com/design/DAHPn0AZyzs/Y5zbfA5xVzjRh-iC0nVjhg/view?utm_content=DAHPn0AZyzs&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h606f6ec5cb",
-      "ratio": "1-1",
+      "_id": "p_1786070677163_u1refr",
+      "caption": "<div>【影片分享】</div><div><br></div>",
+      "time": "00:00",
+      "canvaUrl": "",
+      "ratio": "4-5",
+      "theme": "影片分享",
+      "title": "",
       "status": "draft",
-      "theme": "圖文時間",
-      "title": "＃看看你有多了解自己",
-      "createdAt": null,
-      "updatedAt": null
+      "createdAt": "2026-08-07T02:44:37.163Z",
+      "updatedAt": "2026-08-07T02:44:37.163Z"
     }
   ],
   "2026-08-11": [
@@ -1827,6 +1827,8 @@ var externalDB = {
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-08-05T03:28:59.629Z",
-  "tombstones": {}
+  "updatedAt": "2026-08-07T04:28:49.183Z",
+  "tombstones": {
+    "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z"
+  }
 };
