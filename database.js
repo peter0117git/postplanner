@@ -1813,19 +1813,19 @@ var externalDB = {
   "2026-08-11": [
     {
       "_id": "p_1786076982889_op9u27",
-      "caption": "<div>【早上只讀一點點】 《你就是困住自己的那座山》</div><div><br></div>",
+      "caption": "<div>【早上只讀一點點】 《你就是困住自己的那座山》</div><div><br></div><div><div>誠然，我們生活中的很多東西，都是由與我們共度時光的人所塑造的。而你選擇同伴的心態裡面，就經常藏著人們自我破壞的方法。</div>\n<div>你肯定能想到，生活中有這麼一些人，他們讓你倍感壓力、缺乏安全感，卻又讓你欲罷不能。這些人際關係的毒性較輕，但仍會讓你自食其果。</div>\n<div>如果你發現自己所投身的某種友誼或情感關係，會讓你幾乎沉迷於「不如別人」或「嫉妒別人」的感覺，那麼你需要一步步擺脫這段關係。你不需要刻薄、粗魯，甚至不需要把任何人從你的生活中剔除。</div>\n<div>但是，你必須明白，與你相處時間最長的人，將不可避免地塑造你的未來，因此你的選擇一定要明智。</div><div><br></div><div>摘自p63~64</div><div><br></div><div>#人生 #大田出版 #你就是困住自己的那座山 #感情</div></div>",
       "time": "08:00",
-      "canvaUrl": "https://canva.link/kqyd3gus0y0uxry",
+      "canvaUrl": "https://www.canva.com/design/DAHIqi-yONc/65fkKo4j1LRTKFBSvPF2rQ/view?utm_content=DAHIqi-yONc&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h63a83d9e70",
       "ratio": "4-5",
       "theme": "早上只讀一點點",
       "title": "你就是困住自己的那座山",
       "status": "draft",
       "createdAt": "2026-08-07T04:29:42.889Z",
-      "updatedAt": "2026-08-07T04:29:42.889Z"
+      "updatedAt": "2026-08-07T06:52:38.450Z"
     },
     {
       "_id": "p_1786077019196_qqjcy3",
-      "caption": "<div>【圖文時間】 《便當實驗室又開張了： 日日&amp;特別日的菜單挑戰記》</div><div><br></div>",
+      "caption": "<div>【圖文時間】 《便當實驗室又開張了： 日日&amp;特別日的菜單挑戰記》</div><div><br></div><div><div><div><span>#高木直子便當實驗室又開張了</span></div></div><div><span><br></span></div><div><div>一如往常的清晨，匆匆忙忙地接送小米去幼稚園， 一句「今天是幼稚園最後一次送便當了啊...」 才猛然驚覺，原來日子是在一個又一個的便當裡，被小米悄悄吃掉的。</div><div>放學後，高木直子接過那個小米吃得乾乾淨淨的便當盒，沒想到，這些每天重複、甚至覺得有點累人的日子，竟然就這樣平平淡淡地過完了。</div></div><div><br></div><div><div><span>#便當</span> <span>#高木直子</span> <span>#大田出版</span></div></div></div>",
       "time": "18:00",
       "canvaUrl": "https://www.canva.com/design/DAHIMkmHMfI/MikX6xKxQ8L1ZYOHWhxvAA/view?utm_content=DAHIMkmHMfI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h4b3ada000b",
       "ratio": "4-5",
@@ -1833,33 +1833,33 @@ var externalDB = {
       "title": "便當實驗室又開張了： 日日&特別日的菜單挑戰記",
       "status": "draft",
       "createdAt": "2026-08-07T04:30:19.196Z",
-      "updatedAt": "2026-08-07T04:30:19.196Z"
+      "updatedAt": "2026-08-07T07:00:16.095Z"
     },
     {
       "_id": "p_1786077062905_mpogzb",
-      "caption": "<div>【晚上多讀一點點】 《不要再怪自己想太多：精神科醫師寫給總是不安的你》</div><div><br></div>",
+      "caption": "<div>【晚上多讀一點點】 《不要再怪自己想太多：精神科醫師寫給總是不安的你》</div><div><br></div><div><div>「在努力的過程中突然變得懶惰，忍著忍著變得急躁，充滿希望後陷入絕望的事情再次反覆出現。但是繼續努力的話，應該能更好地理解水彩畫吧！如果這是一件容易的事情，就不會從中得到任何快樂，所以我要繼續畫畫。」</div><div><br></div><div>這是在《梵谷書信選》（Selected Letters of Vincent van Gogh）記載的眾多信件中，梵谷給弟弟西奧的信的部分內容。我特別喜歡其中「要繼續畫畫」的這一句。接受精神治療的患者在病情好轉後再次惡化，即使盡了最大努力事情還是不順利時，想起那段話就能感到安慰。即便是天才畫家梵谷也有難以提筆繪畫的時候，所以我也產生了「做著做著，總有一天會好起來的」想法。而且神奇的是，如果繼續這樣下去，難解的問題就會逐漸豁然開朗，患者們的狀態也會好轉。當然，那時的喜悅是言語難以形容的。</div><div><br></div><div>但是看到最近年輕人吐露苦惱說「不知道我到底想要什麼」時，有點讓我驚訝。他們認為只要做自己想做的事情，就不會厭倦，會一直很快樂。也就是說，如果做某事感到厭煩和倦怠，就不是自己想要做的事情。</div><div><br></div><div>世界上沒有不會讓人感到厭倦的事情，因為我們的心一旦熟悉了，就會失去興趣，也會忘記這件事情的珍貴。對所愛的人的熱情也會隨著時間流逝而冷卻，更何況是工作呢！抱持著「只要是真正想要的事情，就應該一直開心」幻想的人們，在工作過程中如果厭倦了，就會變得戰戰兢兢。想著「這好像也不是我想要的，我真正想要做的事情是什麼呢？如果再這樣下去永遠找不到怎麼辦？」再加上因為著急，又只重視可見的結果，情況就會更加惡化。如果等到成果或答案出來為止需要很長的時間，就會因無法忍受而中途受挫。</div><div><br></div><div>有一點要記住，你正在做的是工作。就像世界上學業成績再好的人也不會只強調學習很容易、很快樂一樣，工作也是如此。所有的工作基本上都很辛苦，即使這是你所希望的事情，也不會只是像去遊樂園一樣快樂有趣。我們應該放棄只要做自己想做的事情，就會一直開心有趣的幻想，快樂和成就感是在忍受了厭倦和艱難的過程後才會到來。</div><div><br></div><div>儘管如此，還是有特別不想做的事情。每當做那種事情時，無論再怎麼讓內心冷靜，進度都還是停滯不前，即使努力苦撐著，也總是在原地踏步。隨著時間的推移，增加的只有煩躁、不滿和壓力。這時有些人會說「躲不開就享受吧」，但是我不同意這句話。怎麼可能享受不願意做的事情呢？那等於是叫你去喜歡自己討厭的人一樣。想要享受討厭的事情本身就會感到壓力。</div><div><br></div><div>我也遇過類似的情況，但我是越討厭的事會越早做完。我有過很多次越是累積和推遲，就越被強烈的厭倦支配自己，引發不必要壓力的經驗。所以我抱著「看看誰贏」的心態，就像準備當天的複習考一樣，努力在最短時間內完成那件事。</div><div><br></div><div>而快速做完討厭的事情，會感受到快感，那是一種勝利感和成就感。心理學將其稱為「勝利者效應」，其理論是如果取得勝利，誘導支配行動的荷爾蒙—睪固酮的分泌就會變得旺盛，從而獲得乘勝追擊的積極能量。</div><div><br></div><div>無論什麼事情，只要取得一次勝利，就會對之前沒有經歷的事情睜開眼睛。從「我不行」的失敗主義中擺脫出來，獲得「這樣做就對了」的積極能量。無論大小，體驗一次勝利是非常重要的。越是平時認為無事可做的人，其效果就越大。如果遇到不想做的事情，就下定決心在最短的時間內完成吧！完成這些事情後，就會產生戰勝自己的自豪感，累積這樣的勝利經驗，不知不覺間就會獲得無論什麼都能做好的自信。</div></div><div><br></div><div>摘自p167~169</div><div><br></div><div>#耐心 #人生 #能量 #大田出版</div>",
       "time": "20:00",
-      "canvaUrl": "https://canva.link/ajgnslhvh966pcd",
-      "ratio": "4-5",
+      "canvaUrl": "https://www.canva.com/design/DAHN7xDu7lw/TUuELGCo_fNSKNaEF6Sn-Q/view?utm_content=DAHN7xDu7lw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h214f581df7",
+      "ratio": "1-1",
       "theme": "晚上多讀一點點",
       "title": "不要再怪自己想太多：精神科醫師寫給總是不安的你",
       "status": "draft",
       "createdAt": "2026-08-07T04:31:02.905Z",
-      "updatedAt": "2026-08-07T04:31:02.905Z"
+      "updatedAt": "2026-08-07T06:58:13.457Z"
     }
   ],
   "2026-08-12": [
     {
       "_id": "p_1786077099363_j0sd7t",
-      "caption": "<div>【早上只讀一點點】 《昨日，無人接聽》</div><div><br></div>",
+      "caption": "<div>【早上只讀一點點】 《昨日，無人接聽》</div><div><br></div><div>#陳繁齊</div><div><div><div>〈 度過 〉</div></div><div><div>聽見他的消息時</div><div>不能大聲說話</div><div>難以睡去更需要</div><div>望向黑暗</div><div>告別一個人</div><div>是把眼睛慢慢闔上</div><div>不把他縮小。而是讓自己</div><div>看得越來越少</div></div><div><div>-</div><div>摘自《昨日，無人接聽》-〈度過〉</div><div><br></div><div><span>#詩集</span>  <span>#大田出版</span></div></div></div>",
       "time": "08:00",
-      "canvaUrl": "",
-      "ratio": "4-5",
+      "canvaUrl": "https://www.canva.com/design/DAHRTzzxuis/pTn9CG_P3bI3sYG5FagkIw/view?utm_content=DAHRTzzxuis&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h5ef7f2e156",
+      "ratio": "1-1",
       "theme": "早上只讀一點點",
       "title": "昨日，無人接聽",
       "status": "draft",
       "createdAt": "2026-08-07T04:31:39.363Z",
-      "updatedAt": "2026-08-07T04:31:39.363Z"
+      "updatedAt": "2026-08-07T07:03:19.602Z"
     },
     {
       "_id": "p_1786077113552_obtxkd",
@@ -1965,7 +1965,7 @@ var externalDB = {
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-08-07T04:34:33.331Z",
+  "updatedAt": "2026-08-07T07:03:29.269Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z"
