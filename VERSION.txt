@@ -1,4 +1,5 @@
-IG Post Planner V8.3 — Canva Preview Only
+IG Post Planner V8.3.2 — Canva Public Carousel
 
-Keeps Canva public-link preview and multi-page thumbnails.
-No Canva image export, ZIP packaging, Puppeteer, or Browser binding.
+All public Canva links use a static multi-page carousel.
+Worker V1.2.1 supports both imageSets and images/document-image page data.
+No Canva iframe interaction, image export, ZIP, Puppeteer, or Browser binding.

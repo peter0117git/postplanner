@@ -29,23 +29,6 @@
         }
     }
 
-    function parseEmbedUrl(value) {
-        const info = parsePublicUrl(value);
-        if (!info) return null;
-        if (info.kind === 'short') return { kind: 'short', embedUrl: null, page: null };
-        try {
-            const url = new URL(info.sourceUrl);
-            const pageMatch = url.hash.match(/^#(\d+)$/);
-            const page = pageMatch ? pageMatch[1] : null;
-            url.hash = '';
-            if (!url.searchParams.has('embed')) url.searchParams.set('embed', '');
-            const embedUrl = url.toString().replace(/embed=$/, 'embed');
-            return { kind: 'long', embedUrl: page ? `${embedUrl}#${page}` : embedUrl, page };
-        } catch {
-            return null;
-        }
-    }
-
     function normalizeWorkerUrl(value) {
         if (!value) return '';
         try {
@@ -101,7 +84,6 @@
 
     global.CanvaService = Object.freeze({
         parsePublicUrl,
-        parseEmbedUrl,
         normalizeWorkerUrl,
         resolvePages
     });

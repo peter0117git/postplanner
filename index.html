@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;700;900&family=Noto+Sans+TC:wght@400;500;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/app.css?v=8.3.0">
+    <link rel="stylesheet" href="assets/css/app.css?v=8.3.2">
 </head>
 <body>
 
@@ -226,13 +226,13 @@
                 <div class="canva-pages-grid" id="canva-pages-grid"></div>
             </div>
             <details class="canva-service-config" id="canva-service-config">
-                <summary>進階設定：短網址預覽服務</summary>
+                <summary>進階設定：公開輪播服務</summary>
                 <label for="canva-worker-url">Cloudflare Worker 網址</label>
                 <div class="canva-service-input-row">
                     <input type="url" id="canva-worker-url" inputmode="url" autocomplete="off" placeholder="https://你的服務.workers.dev">
                     <button type="button" class="canva-config-save" onclick="saveCanvaWorkerConfig()">儲存</button>
                 </div>
-                <div class="field-hint">短網址與多頁預覽需要此服務；網址只儲存在這台裝置。</div>
+                <div class="field-hint">已內建預設服務，通常不需調整；自訂網址只儲存在這台裝置。</div>
             </details>
             <div class="canva-preview-note">此工具只顯示 Canva 公開預覽；原稿操作請前往 Canva 官方頁面。</div>
         </div>
@@ -437,10 +437,10 @@
     <button class="mobile-nav-btn" id="mnav-preview" onclick="mobileShowPanel('preview')">👁<span>預覽</span></button>
 </div>
 
-<script src="assets/js/services/storage.js?v=8.3.0" defer></script>
-<script src="assets/js/services/github.js?v=8.3.0" defer></script>
-<script src="assets/js/services/canva.js?v=8.3.0" defer></script>
-<script src="assets/js/services/post-composer.js?v=8.3.0" defer></script>
-<script src="assets/js/app.js?v=8.3.0" defer></script>
+<script src="assets/js/services/storage.js?v=8.3.2" defer></script>
+<script src="assets/js/services/github.js?v=8.3.2" defer></script>
+<script src="assets/js/services/canva.js?v=8.3.2" defer></script>
+<script src="assets/js/services/post-composer.js?v=8.3.2" defer></script>
+<script src="assets/js/app.js?v=8.3.2" defer></script>
 </body>
 </html>

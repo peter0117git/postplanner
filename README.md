@@ -2,7 +2,9 @@
 
 這是一個不需要前端建置工具、可直接部署到 GitHub Pages 的貼文規劃器。此版本保留 V8.3 的資料格式、GitHub 同步、發布文案、可搜尋主題／書名、桌面編輯與手機預覽，Canva 部分只負責顯示公開連結。
 
-Canva 工具不包含圖片擷取、ZIP、高清處理或雲端瀏覽器。長網址可直接嵌入；短網址與多頁公開預覽可透過附帶的輕量 Cloudflare Worker 解析。
+Canva 工具不包含圖片擷取、ZIP、高清處理、雲端瀏覽器或可操作 iframe。所有長短網址都透過輕量 Cloudflare Worker 讀取公開預覽，左側統一顯示乾淨的靜態輪播。
+
+V8.3.2 內含 Worker V1.2.1，可同時解析 Canva 舊版 `imageSets` 與新版 `images/document-image` 公開頁面資料；第一頁會優先使用公開頁面的較清晰 `og:image`。
 
 ## 目錄
 
@@ -53,7 +55,16 @@ npm test
 npm run deploy
 ```
 
-部署後，把 `*.workers.dev` 網址貼進 Canva 預覽工具的「進階設定：短網址預覽服務」。原本已部署的 Worker 仍可供此版使用；若希望雲端端也完全精簡，可用這個資料夾重新部署同名 Worker，網址通常不變。
+若這台電腦先前已完成 `wrangler login`，本次更新只需在新版 `canva-worker` 資料夾執行：
+
+```bash
+npm install
+npm run deploy
+```
+
+部署後開啟 `https://ig-planner-canva-preview.p0118tw.workers.dev/health`，看到 `"version":"1.2.1"` 即代表新版已生效。Worker 名稱未變，因此正式網址不需要重新填入排版桌。
+
+此版已內建目前的公開預覽服務網址，新裝置開啟即可使用。部署自己的 Worker 後，也能在 Canva 預覽工具的「進階設定：公開輪播服務」更換網址。原本已部署的 Worker 仍可供此版使用。
 
 若要限制只有你的 GitHub Pages 可呼叫，請把 `wrangler.jsonc` 的 `ALLOWED_ORIGIN` 改成網站來源，例如：
 
@@ -65,7 +76,9 @@ npm run deploy
 
 - 分享權限請使用「知道連結的任何人可查看」。
 - 公開頁面可能只提供第 1 頁較大的預覽，其餘頁面會使用 Canva 公開縮圖。
-- 短網址解析完成後，左側使用圖片輪播；長網址在可嵌入時使用 Canva iframe。
+- 長網址與 `canva.link` 短網址都使用相同的靜態輪播，不載入 Canva 內建操作介面。
+- 輪播支援畫面左右按鈕、鍵盤方向鍵，以及手機左右滑動。
+- 右上角「↗ Canva」只負責在新分頁開啟公開原稿。
 - 若 Canva 未來調整公開頁面格式，只需更新 `canva-worker/src/index.js`。
 
 ## 資料與安全
