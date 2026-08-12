@@ -1915,13 +1915,13 @@ var externalDB = {
       "_id": "p_1786077196029_5zoco9",
       "caption": "<div>【晚上多讀一點點】 《接近無限透明的藍(出版半世紀紀念版)》</div><div><br></div>",
       "time": "20:00",
-      "canvaUrl": "https://www.canva.com/design/DAHSDz2Dd-s/KwgwLPEvFC2lz1NSKM1ElA/view?utm_content=DAHSDz2Dd-s&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h7de4ba4409",
+      "canvaUrl": "https://www.canva.com/design/DAHPPgqx7PI/HqL65x617pU0C2BjHtO3KQ/view?utm_content=DAHPPgqx7PI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hfdd57f84a8",
       "ratio": "4-5",
       "theme": "晚上多讀一點點",
       "title": "接近無限透明的藍(出版半世紀紀念版)",
       "status": "draft",
       "createdAt": "2026-08-07T04:33:16.029Z",
-      "updatedAt": "2026-08-12T07:50:30.029Z"
+      "updatedAt": "2026-08-12T07:53:30.942Z"
     }
   ],
   "2026-08-14": [
@@ -1930,12 +1930,12 @@ var externalDB = {
       "caption": "<div>【早上只讀一點點】 《如何愛你的負面情感》</div><div><br></div>",
       "time": "08:00",
       "canvaUrl": "https://www.canva.com/design/DAHIAn9ZAjc/7o2oh0IVtJHtZZmLgUE2qQ/view?utm_content=DAHIAn9ZAjc&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h25274b2131",
-      "ratio": "4-5",
+      "ratio": "1-1",
       "theme": "早上只讀一點點",
       "title": "如何愛你的負面情感",
       "status": "draft",
       "createdAt": "2026-08-07T04:33:37.891Z",
-      "updatedAt": "2026-08-07T04:33:37.891Z"
+      "updatedAt": "2026-08-12T07:55:39.690Z"
     },
     {
       "_id": "p_1786077244553_dunyei",
@@ -1965,7 +1965,7 @@ var externalDB = {
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-08-12T07:51:11.820Z",
+  "updatedAt": "2026-08-12T07:59:58.384Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z"
