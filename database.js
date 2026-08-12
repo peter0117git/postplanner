@@ -1875,15 +1875,15 @@ var externalDB = {
     },
     {
       "_id": "p_1786077129272_d1p75r",
-      "caption": "<div>【晚上多讀一點點】 《你的夏天還好嗎?》</div><div><br></div>",
+      "caption": "<div>【晚上多讀一點點】 《你的夏天還好嗎?》</div><div><br></div><div>#金愛爛</div><div><br></div><div><div>你的夏天還好嗎？</div><div>年輕的心，我想這樣問候你，</div><div>謝謝你記得我，謝謝你對我說謝謝，</div><div>雖然有點遲到了，但我想我做得很好，</div><div>只要撐過這個夏天，我就再也不會徬徨或孤獨了……</div><div><br></div><div>★人氣韓團CORTIS成員Juhoon金主訓也在讀她的作品！★</div><div>★ 最擅長寫痛的天才小說家金愛爛，是你現在開始要記得的名字 ★</div><div><br></div><div>渴望被愛，甘願被利用的人；</div><div><br></div><div>想要過上精緻的生活，卻不知道會犧牲什麼的人；</div><div><br></div><div>孤苦無依的人、離鄉背井的人、眾叛親離的人，</div><div><br></div><div>在這個粗魯的時代，金愛爛正在長久且直白地凝視著我們……</div><div><br></div><div>被譽為「現代社會生態觀察員」的韓國作家金愛爛，在第三部短篇小說集《你的夏天還好嗎？》裡，深度刻畫了渴望美好生活的煎熬姿態。</div><div>即使現在的生活充滿苦澀，我也不想露出失敗者的表情，我相信屬於我的幸福，一定就在不遠的前方——</div><div><br></div><div><br></div><div>★跨越國界的共鳴，全世界的讀者們齊聲吶喊——</div><div><br></div><div>「這是一本你推薦給誰，誰都會說好看的書。」 ——台灣讀者E</div><div><br></div><div>「主角們的故事，就像我自己的故事，就像我身邊那些被稱為『88萬韓元世代』的人們的故事。沒有人像我一樣喜歡金愛爛！」——韓國讀者이정진</div><div><br></div><div>「感謝金愛爛，讓我時隔二十年重新愛上了文學。它們無比真實，卻又讓我心痛不已，潸然淚下。書中的人物彷彿仍鮮活地存在於某個地方。」——韓國讀者s********9</div><div><br></div><div>「金愛爛或許是我的精神媽咪，我在她的文字搖籃裡感到十分安心和安慰。看她的書需要一點勇氣。」——中國讀者吧啦咘吧</div><div><br></div><div>「她太擅長寫痛了。還擅長寫受辱的自尊，寫都市的貧困。邊緣的人，畸零的愛，破銅爛鐵的生活裡也有一閃而過的金色幻影。」——中國讀者曼仔</div></div><div><br></div><div>#大田出版</div>",
       "time": "20:00",
-      "canvaUrl": "https://www.canva.com/design/DAHK68fXVPM/K5ZNa1mY1ucYa4YypSZL5g/view?utm_content=DAHK68fXVPM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hd973054f8d",
+      "canvaUrl": "https://www.canva.com/design/DAHSEIpOZO4/S3ebA9rkkZnEQ0SrMFOxOQ/view?utm_content=DAHSEIpOZO4&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h6a18bbd2e6",
       "ratio": "4-5",
       "theme": "晚上多讀一點點",
       "title": "你的夏天還好嗎?",
       "status": "draft",
       "createdAt": "2026-08-07T04:32:09.272Z",
-      "updatedAt": "2026-08-07T04:32:09.272Z"
+      "updatedAt": "2026-08-12T08:24:22.097Z"
     }
   ],
   "2026-08-13": [
@@ -1901,7 +1901,7 @@ var externalDB = {
     },
     {
       "_id": "p_1786077170296_y48n2l",
-      "caption": "<div><div><div>【圖文時間】《希望溫暖你的每一天(精采夜光版)》</div></div><div><div><span>#九月十二日上市</span></div><div><span>#精采夜光版</span></div></div><div><div>〈拿出被討厭的勇氣，對我來說真的很難〉</div></div><div><div>我們之所以無法鼓起被討厭的勇氣，</div><div>是因為如果想那麼做，</div><div>就必須放棄一直以來我們所認同、所習慣的生活方式。</div><div>與人為善、不引發衝突，</div><div>要把事情做好以贏得稱讚才能放心，</div><div>都是一種以特定條件為前提的放心。</div><div>所以類似「你很自私」「你無能」「你很爛」「你很醜」</div><div>這些小小的批評，都會讓我們大大地動搖。</div><div>以後別再被動搖了。</div><div>你不需要這種有前提的認同。</div><div>光是你的存在，就已經值得大家好好對待你。</div><div>以後你要對自己說：</div><div>「對，我確實會害怕別人討厭我，</div><div>但偶爾自私、偶爾被討厭也沒關係。</div><div>最了解我的人就是我自己，</div><div>至少我得認同自己。」</div></div><div><div>-</div><div><span>#希望溫暖你的每一天</span> <span>#療癒</span> <span>#圖文</span> <span>#大田出版</span></div></div></div>",
+      "caption": "<div><div><div>【圖文時間】《希望溫暖你的每一天(精采夜光版)》</div></div><div><br></div><div><div><span>#九月十二日上市</span></div><div><span>#精采夜光版</span></div></div><div><span><br></span></div><div><div>〈拿出被討厭的勇氣，對我來說真的很難〉</div></div><div><div>我們之所以無法鼓起被討厭的勇氣，</div><div>是因為如果想那麼做，</div><div>就必須放棄一直以來我們所認同、所習慣的生活方式。</div><div>與人為善、不引發衝突，</div><div>要把事情做好以贏得稱讚才能放心，</div><div>都是一種以特定條件為前提的放心。</div><div>所以類似「你很自私」「你無能」「你很爛」「你很醜」</div><div>這些小小的批評，都會讓我們大大地動搖。</div><div>以後別再被動搖了。</div><div>你不需要這種有前提的認同。</div><div>光是你的存在，就已經值得大家好好對待你。</div><div>以後你要對自己說：</div><div>「對，我確實會害怕別人討厭我，</div><div>但偶爾自私、偶爾被討厭也沒關係。</div><div>最了解我的人就是我自己，</div><div>至少我得認同自己。」</div></div><div><div>-</div><div><span>摘自《希望溫暖你的每一天》-</span>〈拿出被討厭的勇氣，對我來說真的很難〉</div><div><br></div><div><span>#希望溫暖你的每一天</span> <span>#療癒</span> <span>#圖文</span> <span>#大田出版</span></div></div></div>",
       "time": "18:00",
       "canvaUrl": "https://www.canva.com/design/DAHPbqxce5c/KlYPQFMyxFO9ZN5Zx99IkA/view?utm_content=DAHPbqxce5c&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h240e483ba4",
       "ratio": "1-1",
@@ -1909,7 +1909,7 @@ var externalDB = {
       "title": "希望溫暖你的每一天(精采夜光版)",
       "status": "draft",
       "createdAt": "2026-08-07T04:32:50.296Z",
-      "updatedAt": "2026-08-12T07:48:45.309Z"
+      "updatedAt": "2026-08-12T08:25:04.153Z"
     },
     {
       "_id": "p_1786077196029_5zoco9",
@@ -1927,7 +1927,7 @@ var externalDB = {
   "2026-08-14": [
     {
       "_id": "p_1786077217891_me4f9n",
-      "caption": "<div><div><div>【早上只讀一點點】《如何愛你的負面情感(愛自己新裝版)》</div></div><div><div>真實感受的所在</div><div>你對自己有多認識？</div><div>聽到這個問題，或許你會歪著頭，心想：「突然這樣問，要我怎麼回答……」</div><div>那麼，你覺得光是用數字表示的身高、體重、出生年月日，外表看得見的髮型、服裝、走路方式，就能代表真實的你嗎？</div><div>應該不能吧。身高、頭髮的長度、穿衣的品味、走路的方式，這些和真實的你毫無關係。</div><div>你這個人「有什麼感受，有什麼想法，對未來有什麼想像」……這些才造就出了「你」。</div></div><div><div>如果，你老是陷在負面情感裡，心裡想著：「要是能讓負面情感都消失就好了。」就證明了你對自己不夠認識。</div><div>如果你對自己有足夠認識的話，負面情感就會成為助力，幫助你大大成長，因此照理來說你根本不會希望它消失，反而是樂在其中，對未來也充滿了美好的想像。</div><div>「想像」是「創造」的開始。</div><div>「認識自己，創造美好的未來。」請把這句話當成前進的目標吧！</div><div>現在請先記住以下三點：</div></div><div><div>‧<span>#負面情感不是你的敵人</span>。</div><div>‧不要抹煞負面情感，要讓它成為助力。</div><div>‧只要不怕負面情感，人際關係就會變得輕鬆自在。</div></div><div><div>負面情感不是你的敵人。正因必要，才會存在每個人心中。</div><div>然而，當負面情感湧出時，會令我們感到心痛，而我們為了逃避傷痛，就會對負面情感視而不見，結果錯失了讓負面情感成為助力的機會。</div><div>你過去所經歷的傷痛，和你今後將承受的傷痛，都是讓你了解真實的自己而不可或缺的原料。</div><div>舉例來說，你是否有過像這樣的經驗：</div><div>原本你覺得：「這個人可以信賴。這個人能夠#理解我。」後來發現事與願違時，你因大受打擊而將心門關起來……</div><div>我也經歷過這樣的遭遇，當時我悲傷得不能自已，用一語不發來抗拒這一切。</div><div>接著，我開始感到不甘心，不由自主地怪罪對方、激怒對方。但這些根本就不是我的本意……</div></div><div><div>如果你也有類似的經驗，請你試著回想當時你有什麼樣的#負面情感。</div><div>當時你最想讓對方知道的是什麼感受？</div><div>為什麼經過了這麼久，心中的傷痛依舊沒有消失？</div><div>你真正的感受，其實就藏在那樣的傷痛之下。</div><div>有時我們之所以會搞不清楚自己，是因為當負面情感湧出時，我們就會自動關上心門，把我們的「<span>#真心</span>」鎖死在裡面。</div><div>(摘自P.20-P.23)</div></div><div><div><span>#大田出版</span></div></div></div>",
+      "caption": "<div><div><div>【早上只讀一點點】《如何愛你的負面情感(愛自己新裝版)》</div></div><div><br></div><div><div>真實感受的所在</div><div>你對自己有多認識？</div><div><br></div><div>聽到這個問題，或許你會歪著頭，心想：「突然這樣問，要我怎麼回答……」</div><div>那麼，你覺得光是用數字表示的身高、體重、出生年月日，外表看得見的髮型、服裝、走路方式，就能代表真實的你嗎？</div><div>應該不能吧。身高、頭髮的長度、穿衣的品味、走路的方式，這些和真實的你毫無關係。</div><div>你這個人「有什麼感受，有什麼想法，對未來有什麼想像」……這些才造就出了「你」。</div></div><div><div>如果，你老是陷在負面情感裡，心裡想著：「要是能讓負面情感都消失就好了。」就證明了你對自己不夠認識。</div><div>如果你對自己有足夠認識的話，負面情感就會成為助力，幫助你大大成長，因此照理來說你根本不會希望它消失，反而是樂在其中，對未來也充滿了美好的想像。</div><div>「想像」是「創造」的開始。</div><div>「認識自己，創造美好的未來。」請把這句話當成前進的目標吧！</div><div><br></div><div>現在請先記住以下三點：</div></div><div><div>‧<span>#負面情感不是你的敵人</span>。</div><div>‧不要抹煞負面情感，要讓它成為助力。</div><div>‧只要不怕負面情感，人際關係就會變得輕鬆自在。</div></div><div><div>負面情感不是你的敵人。正因必要，才會存在每個人心中。</div><div>然而，當負面情感湧出時，會令我們感到心痛，而我們為了逃避傷痛，就會對負面情感視而不見，結果錯失了讓負面情感成為助力的機會。</div><div>你過去所經歷的傷痛，和你今後將承受的傷痛，都是讓你了解真實的自己而不可或缺的原料。</div><div><br></div><div>舉例來說，你是否有過像這樣的經驗：</div><div>原本你覺得：「這個人可以信賴。這個人能夠#理解我。」後來發現事與願違時，你因大受打擊而將心門關起來……</div><div>我也經歷過這樣的遭遇，當時我悲傷得不能自已，用一語不發來抗拒這一切。</div><div>接著，我開始感到不甘心，不由自主地怪罪對方、激怒對方。但這些根本就不是我的本意……</div></div><div><div>如果你也有類似的經驗，請你試著回想當時你有什麼樣的#負面情感。</div><div><br></div><div>當時你最想讓對方知道的是什麼感受？</div><div>為什麼經過了這麼久，心中的傷痛依舊沒有消失？</div><div>你真正的感受，其實就藏在那樣的傷痛之下。</div><div>有時我們之所以會搞不清楚自己，是因為當負面情感湧出時，我們就會自動關上心門，把我們的「<span>#真心</span>」鎖死在裡面。</div><div><br></div><div>(摘自P.20-P.23)</div></div><div><br></div><div><div><span>#大田出版</span></div></div></div>",
       "time": "08:00",
       "canvaUrl": "https://www.canva.com/design/DAHIAn9ZAjc/7o2oh0IVtJHtZZmLgUE2qQ/view?utm_content=DAHIAn9ZAjc&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h25274b2131",
       "ratio": "1-1",
@@ -1935,11 +1935,11 @@ var externalDB = {
       "title": "如何愛你的負面情感",
       "status": "draft",
       "createdAt": "2026-08-07T04:33:37.891Z",
-      "updatedAt": "2026-08-12T08:08:55.244Z"
+      "updatedAt": "2026-08-12T08:25:26.602Z"
     },
     {
       "_id": "p_1786077244553_dunyei",
-      "caption": "<div>【圖文時間】 《悠悠哉哉一個人生活的好日子》</div><div><br></div>",
+      "caption": "<div><span style=\"color:rgb(12, 16, 20)\">【圖文時間】《悠悠哉哉一個人生活的好日子》</span><br><br><span style=\"color:rgb(12, 16, 20)\">假日的午後時分，將15本左右的漫畫疊在房間中央，從第一冊開始重讀。 平日晚上6點以後，手裡拿著咖啡歐蕾，一個人去電影院輕鬆地看個電影。</span><br><br><span style=\"color:rgb(12, 16, 20)\">天氣變冷時，像「《天才笨蛋伯》裡的爸爸」一樣把腹圍套在衣服上，也沒關係…… 當夜貓子的話，反而會在凌晨4點左右泡澡，一邊浸泡在熱水裡，一邊沐浴著晨光發呆。</span><br><br><span style=\"color:rgb(12, 16, 20)\">這就是一個人生活的樂趣吧~</span><br><br><span>#獨居</span><span style=\"color:rgb(12, 16, 20)\"> </span><span>#樂趣</span><span style=\"color:rgb(12, 16, 20)\"> </span><span>#一個人生活</span></div>",
       "time": "18:00",
       "canvaUrl": "https://www.canva.com/design/DAHM0MXyb9U/x1qIL8AMN1t2g6MJARYKHw/view?utm_content=DAHM0MXyb9U&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hfc046955aa",
       "ratio": "4-5",
@@ -1947,25 +1947,67 @@ var externalDB = {
       "title": "悠悠哉哉一個人生活的好日子",
       "status": "draft",
       "createdAt": "2026-08-07T04:34:04.553Z",
-      "updatedAt": "2026-08-07T04:34:04.553Z"
+      "updatedAt": "2026-08-12T08:17:59.769Z"
     },
     {
       "_id": "p_1786077262073_tb0oor",
-      "caption": "<div>【晚上多讀一點點】 《台灣紀行：Team Taiwan必讀版》</div><div><br></div>",
+      "caption": "<div><div><div>【晚上多讀一點點】《上帝不眨眼(精心時刻版)》</div></div><div><div>我們身上最重要的性器官是大腦</div></div><div><div>我成年之後都花時間討好男人，或是揣測男人會喜歡的事情，但我從來沒想過自己喜歡什麼。</div></div><div><div>我的朋友雪兒想介紹我認識她的一位朋友。</div></div><div><div>我告訴她，我不要別人幫我安排相親。</div></div><div><div>雪兒說，只是個派對而已。</div></div><div><div>她沒有太深入介紹她要安排給我的對象是什麼樣的人。我只知道他蓄鬍、離過婚，並在公關產業工作，僅此而已。</div></div><div><div>如果雪兒多告訴我一點資訊，像是這位男士會抽菸，他是個熱愛爵士樂、壽司和大城市生活的不可知論者，他是處女座而且老愛在外遊蕩，我絕對不會給他任何機會。我不抽菸、我是天主教徒又是素食主義者，還是雙子座，我熱愛鄉村音樂和小鎮生活，而且大多數的晚上喜歡窩在家裡。理論上我們一點也不配。</div></div><div><div>那年是一九九二年，我在最後決定去參加那場派對。雪兒把我介紹給布魯斯，我們一見如故，聊得停不下來。我們在沙發上坐了好幾小時，他熱愛自己的工作，對於改變世界充滿熱情。他擁有一雙讓我感到安全，但又充滿蓬勃生機的暖棕色眼睛，眼神充滿豐沛的情感和思緒。</div></div><div><div>他隔天打了通電話給我，我們聊了三小時。從對話中我知道他在洗澡時會唱歌，看電影時會哭，但我很小心，因為我對男人沒有信心已經一段時間了，而我也單身了整整兩年。我接受了多年密集的諮商，以處理童年經驗遺留的創傷，希望可以打破我總是吸引非單身男人的循環，別再招惹那些在親密關係和承諾之間舉棋不定的人。我希望有人可以愛我，而且是長長久久地愛我。就像每個受過傷的女人，我希望可以遇到永遠不會傷害我、讓我失望、拒絕或遺棄我的人。這基本上是個不可能的要求。</div></div><div><div>我不知道該怎麼面對布魯斯，所以在我們真正的初次約會中，我給了他三個選項：我們可以看電影、外出共進晚餐或是開車到他成長的城鎮，去看看他住過的家、就讀過的學校還有喜愛的地點，讓我可以更瞭解他。但他卻反過來建議我們去參觀我的家鄉。</div></div><div><div>我們開車周遊人口數一萬兩千人的拉韋納市，開車經過我就讀的中小學、國中、高中、我工作過的地方、我的老家還有我的教會，最後來到我祖父母長眠的墓園。我們坐在車裡，看著一彎弦月在緋紅的天空和光禿的樹木間緩緩上升。他告訴我與我在一起的這一刻跟性愛一樣美好。他和我交往過的所有男人截然不同。</div></div><div><div>當天稍晚，我們坐在一家餐廳內談論彼此在尋找怎麼樣的對象。他會再婚嗎？我有可能結婚嗎？而我們不約而同地認為：如果我們要結婚，我們不會選擇找一位丈夫或妻子，而是要找能當最佳好友的終身伴侶。</div></div><div><div>在那天晚上我開始相信自己能夠愛一個男人。布魯斯機智風趣而且誠實。我得知他是猶太人，但十二月時喜歡在咖啡店外面唱聖誕頌歌；他會對著小孩子比電影《一窩小屁蛋》（The Little Rascals）的招牌招呼手勢；他的客廳裡有一大堆書還有他願意為了對的人戒菸。</div></div><div><div>他喜歡我的狂野捲髮、細瘦的鼻子、雙手和雀斑。他給我看了他母親、祖母、兒子和手足的照片。他甚至拿出了手機並關機，告訴我：「我從沒這麼做過。」他寄給我一卷錄音帶，一面錄了情歌和爵士樂；另一面則錄了他最愛的聖誕歌曲。他說他寄這卷錄音帶是為了引發我的「性趣」，而這確實奏效了。</div></div><div><div>他溫柔的言行舉止讓我感到安全。他就像個孩子，看到我就很快樂。他會牽著我的手，而我們就這樣坐在沙發上好幾小時，我感覺這就像到最好的朋友家過夜一樣，布魯斯成了我最要好的夥伴。……</div></div><div><div>(摘自P.57-P.60)</div></div><div><div><span>#改變</span> <span>#內耗</span> <span>#勵志</span> <span>#大田出版</span></div></div></div>",
       "time": "20:00",
-      "canvaUrl": "https://www.canva.com/design/DAHOxOGf8AI/L8SBculmr__vfDzoLH1pqQ/view?utm_content=DAHOxOGf8AI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=ha306b68c8a",
+      "canvaUrl": "https://www.canva.com/design/DAHN8Zb0McU/MsxVlDldfEWL2QqmrVsF_w/view?utm_content=DAHN8Zb0McU&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h63c79f6842",
       "ratio": "4-5",
       "theme": "晚上多讀一點點",
-      "title": "台灣紀行：Team Taiwan必讀版",
+      "title": "上帝不眨眼：50堂百萬人瘋傳的人生智慧",
       "status": "draft",
       "createdAt": "2026-08-07T04:34:22.073Z",
-      "updatedAt": "2026-08-07T04:34:22.073Z"
+      "updatedAt": "2026-08-12T08:34:47.541Z"
+    }
+  ],
+  "2026-08-15": [
+    {
+      "_id": "p_1786523728612_9x6ckl",
+      "caption": "一次又一次影片分享",
+      "time": "09:00",
+      "canvaUrl": "",
+      "ratio": "4-5",
+      "theme": "",
+      "title": "",
+      "status": "draft",
+      "createdAt": "2026-08-12T08:35:28.612Z",
+      "updatedAt": "2026-08-12T08:35:46.868Z"
+    }
+  ],
+  "2026-08-16": [
+    {
+      "_id": "p_1786523752739_2k82c0",
+      "caption": "<span>幸福影片分享</span>",
+      "time": "09:00",
+      "canvaUrl": "",
+      "ratio": "4-5",
+      "theme": "",
+      "title": "",
+      "status": "draft",
+      "createdAt": "2026-08-12T08:35:52.739Z",
+      "updatedAt": "2026-08-12T08:35:55.889Z"
+    }
+  ],
+  "2026-08-17": [
+    {
+      "_id": "p_1786523797671_6htr6n",
+      "caption": "<div>【早上只讀一點點】 《一次又一次又一次地重新開始》</div><div><br></div>",
+      "time": "09:00",
+      "canvaUrl": "https://www.canva.com/design/DAHQGHvfi-A/aKa_FAH8l28FL0kYu5d3QA/view?utm_content=DAHQGHvfi-A&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h3c68affc26",
+      "ratio": "4-5",
+      "theme": "早上只讀一點點",
+      "title": "一次又一次又一次地重新開始",
+      "status": "draft",
+      "createdAt": "2026-08-12T08:36:37.671Z",
+      "updatedAt": "2026-08-12T08:36:37.671Z"
     }
   ]
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-08-12T08:14:50.274Z",
+  "updatedAt": "2026-08-12T08:37:20.846Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z"
