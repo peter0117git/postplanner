@@ -1889,7 +1889,7 @@ var externalDB = {
   "2026-08-13": [
     {
       "_id": "p_1786077149859_93df0r",
-      "caption": "<div>【早上只讀一點點】 《現在，就是療癒你的開始》</div><div><br></div>",
+      "caption": "<div><div><div>【早上只讀一點點】 《現在，就是療癒你的開始》</div></div><div><div>在人生一事上，並不存在進度落後這種說法，而生命的開展方式，也並非只有一種</div></div><div><div>接下來，你會讀到一句話，這句話要麼會顛覆你的世界觀，要麼會為你帶來解放，也或許兩者兼而有之：每個人都在經歷他們現在需要經歷的事情。</div></div><div><div>我們很難去接受，看著周圍的人在他們的人生中，犯下我們認為極其嚴重的錯誤。</div></div><div><div>我們很難去接受，目睹所愛的人在苦苦掙扎，而我們會想要為他們指出一條明路。</div></div><div><div>我們很難去接受，我們因為自己沒有變得更好、走得更遠、變得與眾不同，而忍不住不斷地批評和懲罰自己。</div></div><div><div>年幼時，在真正地擁有自主意識之前，我們的生活是由一個過程、一個特定的順序所支配的。</div></div><div><div>我們知道，要先學會爬，才能學會走。</div></div><div><div>我們知道，要學會繫鞋帶和穿外套。</div></div><div><div>我們知道，二年級畢業後會升上三年級。</div></div><div><div>我們的生活裡，內建了一個逐漸增強其力道的成長系統。</div></div><div><div>我們的同儕、家庭、成績，都在強化我們的觀念。</div></div><div><div>我們知道，自己的目標是畢業、求職或求學、結婚、生子。</div></div><div><div>然後，當然，真實的人生出現了。</div></div><div><div>我們發現，這個生存公式其實只是一個建議，一個引導我們走向成長茁壯，而非自我毀滅的建議。</div></div><div><div>我們並不常被教導如何獲得滿足感。</div></div><div><div>鮮少有人告訴我們，發生下面的情況時，該怎麼辦：如果別人都做到了，只有我們沒有完全做到，該怎麼辦？如果我們的人生里程碑只是一次接著一次的失望，該怎麼辦？或者最常見的是，如果我們做到了夢想清單上的每一件事，卻依然覺得內心空虛，該怎麼辦？</div></div><div><div>人生進度落後，只是一種錯覺。</div></div><div><div>這種事情並不存在。</div></div><div><div>人生開展的方式，不會只有一種。</div></div><div><div>有時候，我們是不得不走回頭路，因為漫長的道路能讓我們學會需要知道的東西。</div></div><div><div>有時候，我們會在自己的痛苦中煎熬多年，然後才開始覺醒，並調整自己的行為。</div></div><div><div>有時候，相較於融入群眾，當一個與眾不同的人，能讓我們學會更重要的事情。</div></div><div><div>有時候，我們最偉大的成功，是幾十年後才能取得的。</div></div><div><div>有時候，我們確實很早就能達到人生的巔峰。</div></div><div><div>有時候，我們需要多年的成長和自我發現，才能決定自己接下來需要做什麼。有時候，人生旅程的意義，在於獲得各種不同的體驗；而不僅僅是反覆地經歷一連串類似的體驗，直到我們決定了自己會永遠想要去做的那一件事。</div></div><div><div>一旦相信自己的人生有可能進度落後時，我們就為人生設下了限制。</div></div><div><div>我們之所以會相信自己的人生有可能進度落後，那是因為認為生命的意義只是不斷去趕一個又一個的進度……至死方休。</div></div><div><div>畢業、找工作、付帳單、稍稍討厭自己、結婚、與配偶爭吵、生孩子、與孩子爭吵、變老、退休……然後試著去享受剩下的一切。</div></div><div><div>如果你真的擔心自己的人生進度比同儕落後，那麼請問問自己，到底認為自己在哪些方面落後了。</div></div><div><div>有那麼多人都達到了他們應該達到的每一個人生里程碑，卻並沒有因此而變得更加快樂。</div></div><div><div>這是因為人生不只是虛應故事。</div></div><div><div>人生就是該好好去活。</div></div><div><div>人生就是該好好去經驗。</div></div><div><div>摘自p.171~173</div></div><div><div><span>#人生</span> <span>#大田出版</span></div></div></div>",
       "time": "08:00",
       "canvaUrl": "https://www.canva.com/design/DAHOIOwRm7s/Lz1TSDvoXLoL1u2SxQ6uTg/view?utm_content=DAHOIOwRm7s&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h16f553c51d",
       "ratio": "4-5",
@@ -1897,31 +1897,31 @@ var externalDB = {
       "title": "現在，就是療癒你的開始",
       "status": "draft",
       "createdAt": "2026-08-07T04:32:29.859Z",
-      "updatedAt": "2026-08-07T04:32:29.859Z"
+      "updatedAt": "2026-08-12T07:28:12.144Z"
     },
     {
       "_id": "p_1786077170296_y48n2l",
-      "caption": "<div>【圖文時間】 《希望溫暖你的每一天(精采夜光版)》</div><div><br></div>",
+      "caption": "<div><div><div>【圖文時間】《希望溫暖你的每一天(精采夜光版)》</div></div><div><div><span>#九月十二日上市</span></div><div><span>#精采夜光版</span></div></div><div><div>〈拿出被討厭的勇氣，對我來說真的很難〉</div></div><div><div>我們之所以無法鼓起被討厭的勇氣，</div><div>是因為如果想那麼做，</div><div>就必須放棄一直以來我們所認同、所習慣的生活方式。</div><div>與人為善、不引發衝突，</div><div>要把事情做好以贏得稱讚才能放心，</div><div>都是一種以特定條件為前提的放心。</div><div>所以類似「你很自私」「你無能」「你很爛」「你很醜」</div><div>這些小小的批評，都會讓我們大大地動搖。</div><div>以後別再被動搖了。</div><div>你不需要這種有前提的認同。</div><div>光是你的存在，就已經值得大家好好對待你。</div><div>以後你要對自己說：</div><div>「對，我確實會害怕別人討厭我，</div><div>但偶爾自私、偶爾被討厭也沒關係。</div><div>最了解我的人就是我自己，</div><div>至少我得認同自己。」</div></div><div><div>-</div><div><span>#希望溫暖你的每一天</span> <span>#療癒</span> <span>#圖文</span> <span>#大田出版</span></div></div></div>",
       "time": "18:00",
       "canvaUrl": "https://www.canva.com/design/DAHPbqxce5c/KlYPQFMyxFO9ZN5Zx99IkA/view?utm_content=DAHPbqxce5c&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h240e483ba4",
-      "ratio": "4-5",
+      "ratio": "1-1",
       "theme": "圖文時間",
       "title": "希望溫暖你的每一天(精采夜光版)",
       "status": "draft",
       "createdAt": "2026-08-07T04:32:50.296Z",
-      "updatedAt": "2026-08-07T04:32:50.296Z"
+      "updatedAt": "2026-08-12T07:48:45.309Z"
     },
     {
       "_id": "p_1786077196029_5zoco9",
       "caption": "<div>【晚上多讀一點點】 《接近無限透明的藍(出版半世紀紀念版)》</div><div><br></div>",
       "time": "20:00",
-      "canvaUrl": "https://www.canva.com/design/DAHPPgqx7PI/HqL65x617pU0C2BjHtO3KQ/view?utm_content=DAHPPgqx7PI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hfdd57f84a8",
+      "canvaUrl": "https://www.canva.com/design/DAHSDz2Dd-s/KwgwLPEvFC2lz1NSKM1ElA/view?utm_content=DAHSDz2Dd-s&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h7de4ba4409",
       "ratio": "4-5",
       "theme": "晚上多讀一點點",
       "title": "接近無限透明的藍(出版半世紀紀念版)",
       "status": "draft",
       "createdAt": "2026-08-07T04:33:16.029Z",
-      "updatedAt": "2026-08-07T04:33:16.029Z"
+      "updatedAt": "2026-08-12T07:50:30.029Z"
     }
   ],
   "2026-08-14": [
@@ -1965,7 +1965,7 @@ var externalDB = {
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-08-07T08:26:43.721Z",
+  "updatedAt": "2026-08-12T07:51:11.820Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z"
