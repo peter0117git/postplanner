@@ -8,13 +8,6 @@
 node --test test/*.test.js
 ```
 
-Worker 執行：
-
-```bash
-cd canva-worker
-npm test
-```
-
 ## 桌面版
 
 - 日期切換、日曆與回到今天正常。
@@ -23,20 +16,21 @@ npm test
 - 發布文案能組合【主題】、《書名》、內文、頁碼與 Hashtag。
 - 編輯器、專注編輯、GitHub 同步與 JSON 備份正常。
 - Canva 預覽工具只在工作列入口開啟，不占用編輯側欄。
-- Canva 工具只有「在 Canva 開啟」與「重新載入預覽」。
+- Canva 工具只保留完整連結欄位與「在 Canva 開啟」。
 
 ## Canva 預覽
 
-- 長網址可辨識並在允許時嵌入。
-- `canva.link` 短網址透過 Worker 解析。
-- 多頁縮圖與頁碼順序正確。
-- 解析完成後左側可用上一張／下一張切換。
-- 未設定 Worker 時會展開設定欄並清楚提示。
-- 失效或非公開連結不會破壞其他功能。
+- 完整 `canva.com/design/.../.../view` 網址會建立 `?embed` 網址。
+- UTM 等追蹤參數不會帶入 iframe。
+- iframe 可直接操作，沒有「操作 Canva」鎖定層。
+- 翻頁、縮放與全螢幕使用 Canva 官方控制項。
+- `canva.link` 短網址會提示改貼完整分享連結。
+- 非 Canva 網址不會被載入 iframe。
+- 專案不包含 Worker、圖片解析或下載程式。
 
 ## 手機版
 
 - 只顯示日視圖與預覽兩個分頁。
 - 不顯示編輯器。
 - 頁面沒有水平溢出。
-- Canva iframe 預設鎖定，不攔截上下捲動。
+- Canva iframe 的操作不影響其他貼文資料。

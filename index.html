@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>排版桌 — IG Post Planner v8.3</title>
+    <title>排版桌 — IG Post Planner v8.3.3</title>
     <script src="database.js" onerror="console.log('尚未偵測到 database.js')"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;700;900&family=Noto+Sans+TC:wght@400;500;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/app.css?v=8.3.2">
+    <link rel="stylesheet" href="assets/css/app.css?v=8.3.3">
 </head>
 <body>
 
@@ -18,7 +18,7 @@
 <div class="topbar">
     <div class="brand-area">
         <span class="brand-mark">排版桌</span>
-        <span class="brand-sub">IG POST PLANNER · V8.3</span>
+        <span class="brand-sub">IG POST PLANNER · V8.3.3</span>
     </div>
 
     <div class="topbar-divider"></div>
@@ -205,39 +205,25 @@
         <div class="workspace-modal-header">
             <div>
                 <span class="workspace-modal-kicker canva-kicker">MEDIA TOOL</span>
-                <h2 id="canva-tool-title">Canva 預覽工具</h2>
+                <h2 id="canva-tool-title">Canva 官方預覽</h2>
             </div>
             <div class="canva-modal-header-actions">
-                <span class="canva-service-badge" id="canva-service-badge">直接預覽</span>
+                <span class="canva-service-badge ready">官方嵌入</span>
                 <button class="workspace-modal-close" onclick="closeCanvaTool()" aria-label="關閉">✕</button>
             </div>
         </div>
         <div class="canva-modal-body">
             <div class="canva-link-block">
                 <label for="canva-url-input">Canva 公開分享連結</label>
-                <input type="text" id="canva-url-input" placeholder="貼上 Canva 公開分享連結" oninput="updateCurrentPost('canvaUrl', this.value)">
+                <input type="url" id="canva-url-input" inputmode="url" autocomplete="off" placeholder="https://www.canva.com/design/…/…/view" oninput="updateCurrentPost('canvaUrl', this.value)">
             </div>
             <div class="canva-command-bar">
                 <button type="button" class="canva-action-btn" onclick="openCurrentCanva()">↗ 在 Canva 開啟</button>
-                <button type="button" class="canva-action-btn" id="canva-resolve-btn" onclick="resolveCanvaPages()">↻ 重新載入預覽</button>
             </div>
-            <div class="canva-pages-panel" id="canva-pages-panel" hidden>
-                <div class="canva-pages-status" id="canva-pages-status" role="status" aria-live="polite"></div>
-                <div class="canva-pages-grid" id="canva-pages-grid"></div>
-            </div>
-            <details class="canva-service-config" id="canva-service-config">
-                <summary>進階設定：公開輪播服務</summary>
-                <label for="canva-worker-url">Cloudflare Worker 網址</label>
-                <div class="canva-service-input-row">
-                    <input type="url" id="canva-worker-url" inputmode="url" autocomplete="off" placeholder="https://你的服務.workers.dev">
-                    <button type="button" class="canva-config-save" onclick="saveCanvaWorkerConfig()">儲存</button>
-                </div>
-                <div class="field-hint">已內建預設服務，通常不需調整；自訂網址只儲存在這台裝置。</div>
-            </details>
-            <div class="canva-preview-note">此工具只顯示 Canva 公開預覽；原稿操作請前往 Canva 官方頁面。</div>
+            <div class="canva-preview-note">左側使用 Canva 官方內嵌檢視器，翻頁、縮放與全螢幕皆由 Canva 提供。請使用完整的 <code>/design/…/view</code> 分享連結。</div>
         </div>
         <div class="workspace-modal-footer">
-            <span class="canva-footer-status" id="canva-footer-status">貼上公開連結後即可預覽</span>
+            <span class="canva-footer-status" id="canva-footer-status">貼上完整分享連結後即可預覽</span>
             <button class="workspace-secondary-btn" onclick="closeCanvaTool()">完成</button>
         </div>
     </div>
@@ -437,10 +423,10 @@
     <button class="mobile-nav-btn" id="mnav-preview" onclick="mobileShowPanel('preview')">👁<span>預覽</span></button>
 </div>
 
-<script src="assets/js/services/storage.js?v=8.3.2" defer></script>
-<script src="assets/js/services/github.js?v=8.3.2" defer></script>
-<script src="assets/js/services/canva.js?v=8.3.2" defer></script>
-<script src="assets/js/services/post-composer.js?v=8.3.2" defer></script>
-<script src="assets/js/app.js?v=8.3.2" defer></script>
+<script src="assets/js/services/storage.js?v=8.3.3" defer></script>
+<script src="assets/js/services/github.js?v=8.3.3" defer></script>
+<script src="assets/js/services/canva.js?v=8.3.3" defer></script>
+<script src="assets/js/services/post-composer.js?v=8.3.3" defer></script>
+<script src="assets/js/app.js?v=8.3.3" defer></script>
 </body>
 </html>

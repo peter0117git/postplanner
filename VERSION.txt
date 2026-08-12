@@ -1,5 +1,5 @@
-IG Post Planner V8.3.2 — Canva Public Carousel
+IG Post Planner V8.3.3 — Canva Official Embed
 
-All public Canva links use a static multi-page carousel.
-Worker V1.2.1 supports both imageSets and images/document-image page data.
-No Canva iframe interaction, image export, ZIP, Puppeteer, or Browser binding.
+Canva previews use the official /view?embed viewer.
+No Worker, image parsing, downloads, Canva API, Puppeteer, or Browser binding.
+Full canva.com /design/.../view share URLs are required for embedded preview.
