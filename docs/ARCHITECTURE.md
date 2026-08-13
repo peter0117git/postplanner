@@ -1,4 +1,4 @@
-# V8.3.3 官方嵌入版架構
+# V8.3.4 公開資料自動更新版架構
 
 ## 設計目標
 
@@ -28,6 +28,14 @@
 ```
 
 ```text
+網站啟動
+  → 讀取 IndexedDB 本機資料
+  → 使用 cache: no-store 與一次性查詢參數讀取公開 database.js
+  → 合併公開資料與本機資料（時間相同時以公開版本為準）
+  → 有 GitHub Token 時，再直接核對 GitHub Contents API
+```
+
+```text
 Canva 完整 /design/.../view 分享網址
   → canva.js 驗證 canva.com 與網址結構
   → 建立 canonical /view?embed 網址
@@ -39,6 +47,7 @@ Canva 完整 /design/.../view 分享網址
 
 - IndexedDB 失敗：改用 localStorage。
 - GitHub 連線失敗：保留本機資料。
+- 公開 `database.js` 暫時無法讀取：顯示提示並保留本機資料。
 - GitHub 版本衝突：重新讀取、合併後重試。
 - Canva 短網址：提示改貼完整分享連結，其他功能不受影響。
 - Canva 官方頁面無法載入：仍可用「在 Canva 開啟」前往原稿。

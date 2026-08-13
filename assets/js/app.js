@@ -15,7 +15,7 @@ let storageErrorShown = false;
 let pendingConfirmResolve = null;
 let calYear, calMonth;     // 日曆浮動視窗的當前年月
 const DB_SCHEMA_VERSION = 2;
-const APP_VERSION = '8.3.3';
+const APP_VERSION = '8.3.4';
 const VALID_RATIOS = new Set(['1-1', '4-5', '16-9']);
 const VALID_STATUSES = new Set(['draft', 'ready', 'published']);
 const STATUS_LABELS = { draft: '草稿', ready: '已完成', published: '已發布' };
@@ -408,7 +408,8 @@ function mergeDatabases(localDb, remoteDb, localMeta, remoteMeta) {
                 stats.localOnly = Math.max(0, stats.localOnly - 1);
                 const localTime = timestampOf(existing.post);
                 const remoteTime = timestampOf(post);
-                if (remoteTime > localTime) {
+                // 時間相同時也採用遠端版本，避免舊瀏覽器資料遮住已發布內容。
+                if (remoteTime >= localTime) {
                     records.set(post._id, { dateStr, post: cloneJson(post), source });
                     stats.remoteNewer++;
                 } else {
@@ -445,6 +446,26 @@ async function fetchGitDatabase(repo, token) {
     if (!file.text) return { sha: file.sha, db: {}, meta: normalizeMeta({}) };
     return { sha: file.sha, ...parseDatabaseScript(file.text) };
 }
+async function fetchPublishedDatabase() {
+    if (location.protocol === 'file:') return null;
+    const url = new URL('database.js', location.href);
+    url.search = '';
+    url.hash = '';
+    url.searchParams.set('_fresh', `${Date.now()}-${Math.random().toString(36).slice(2)}`);
+    const response = await fetch(url.toString(), {
+        method: 'GET',
+        cache: 'no-store',
+        credentials: 'same-origin',
+        headers: { Accept: 'text/javascript, application/javascript, text/plain;q=0.9' }
+    });
+    if (!response.ok) {
+        if (response.status === 404) return null;
+        throw new Error(`公開資料讀取失敗（HTTP ${response.status}）`);
+    }
+    const text = await response.text();
+    if (!text.trim()) return null;
+    return parseDatabaseScript(text);
+}
 function getPostById(id) {
     if (!selectedDateStr || id === null) return null;
     return (db[selectedDateStr] || []).find(p => p._id === id) || null;
@@ -469,6 +490,22 @@ async function initDatabase() {
         if (indexedState?.meta) dbMeta = normalizeMeta(indexedState.meta);
         else dbMeta = normalizeMeta(localMeta ? JSON.parse(localMeta) : (typeof externalDBMeta !== 'undefined' ? externalDBMeta : {}));
     } catch { dbMeta = normalizeMeta({}); }
+
+    // 每次啟動都繞過瀏覽器快取讀取網站上的 database.js。
+    // 因此僅需查看資料的同事不必設定 GitHub Token，也不必使用無痕模式。
+    try {
+        const published = await fetchPublishedDatabase();
+        if (published) {
+            const merged = mergeDatabases(db, published.db, dbMeta, published.meta);
+            db = merged.db;
+            dbMeta = merged.meta;
+            await persistLocal();
+        }
+    } catch (err) {
+        console.warn('Published database unavailable, using local data:', err);
+        showToast('最新公開資料暫時無法讀取，已使用本機資料');
+    }
+
     const token = localStorage.getItem('gh_token');
     const repo = localStorage.getItem('gh_repo');
     if (!token || !repo) return;

@@ -18,6 +18,14 @@ node --test test/*.test.js
 - Canva 預覽工具只在工作列入口開啟，不占用編輯側欄。
 - Canva 工具只保留完整連結欄位與「在 Canva 開啟」。
 
+## 多裝置公開資料
+
+- 一般瀏覽器已有舊 IndexedDB 時，重新開啟仍會讀取最新公開 `database.js`。
+- 沒有 GitHub Token 時也會執行公開資料更新。
+- `database.js` 請求使用 `cache: no-store` 並帶一次性查詢參數。
+- 公開資料與本機資料時間相同時，以公開版本為準。
+- 公開資料暫時讀取失敗時，仍可使用本機資料。
+
 ## Canva 預覽
 
 - 完整 `canva.com/design/.../.../view` 網址會建立 `?embed` 網址。

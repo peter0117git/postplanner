@@ -1,5 +1,5 @@
-IG Post Planner V8.3.3 — Canva Official Embed
+IG Post Planner V8.3.4 — Fresh Shared Data
 
-Canva previews use the official /view?embed viewer.
-No Worker, image parsing, downloads, Canva API, Puppeteer, or Browser binding.
-Full canva.com /design/.../view share URLs are required for embedded preview.
+Every launch fetches public database.js with cache disabled before GitHub credentials are checked.
+Read-only coworkers receive published updates without a token or private browsing.
+Canva previews continue to use the official /view?embed viewer.

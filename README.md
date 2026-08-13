@@ -1,8 +1,10 @@
-# 排版桌 IG Post Planner V8.3.3（Canva 官方嵌入版）
+# 排版桌 IG Post Planner V8.3.4（公開資料自動更新版）
 
 這是一個不需要前端建置工具、可直接部署到 GitHub Pages 的貼文規劃器。此版本保留 V8.3 的資料格式、GitHub 同步、發布文案、可搜尋主題／書名、桌面編輯與手機預覽。
 
 Canva 預覽改用官方 `?embed` 檢視器。專案不包含圖片擷取、下載、Cloudflare Worker、Canva API、OAuth、Puppeteer 或 Browser binding。
+
+V8.3.4 每次開啟網站都會以不使用快取的方式重新讀取公開 `database.js`，再與本機內容合併。僅查看資料的同事不需要 GitHub Token，也不需要使用無痕模式。
 
 ## 目錄
 
@@ -47,6 +49,7 @@ Canva 預覽改用官方 `?embed` 檢視器。專案不包含圖片擷取、下�
 ## 資料與安全
 
 - GitHub Token 與 repo 名稱只儲存在目前瀏覽器。
+- 未設定 Token 的裝置仍會在每次啟動時讀取最新公開資料；Token 只用於同步寫回 GitHub。
 - Token 建議使用 Fine-grained Token，僅授權該 repo 的 **Contents: Read and write**。
 - 本機資料主要存於 IndexedDB；若不可用才退回 localStorage。
 - GitHub 同步會合併本機與遠端資料，並保留刪除紀錄避免舊資料復活。
