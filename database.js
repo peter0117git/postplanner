@@ -1901,7 +1901,7 @@ var externalDB = {
     },
     {
       "_id": "p_1786077170296_y48n2l",
-      "caption": "<div><div><div>【圖文時間】《希望溫暖你的每一天(精采夜光版)》</div></div><div><br></div><div><div><span>#九月十二日上市</span></div><div><span>#精采夜光版</span></div></div><div><span><br></span></div><div><div>〈拿出被討厭的勇氣，對我來說真的很難〉</div></div><div><div>我們之所以無法鼓起被討厭的勇氣，</div><div>是因為如果想那麼做，</div><div>就必須放棄一直以來我們所認同、所習慣的生活方式。</div><div>與人為善、不引發衝突，</div><div>要把事情做好以贏得稱讚才能放心，</div><div>都是一種以特定條件為前提的放心。</div><div>所以類似「你很自私」「你無能」「你很爛」「你很醜」</div><div>這些小小的批評，都會讓我們大大地動搖。</div><div>以後別再被動搖了。</div><div>你不需要這種有前提的認同。</div><div>光是你的存在，就已經值得大家好好對待你。</div><div>以後你要對自己說：</div><div>「對，我確實會害怕別人討厭我，</div><div>但偶爾自私、偶爾被討厭也沒關係。</div><div>最了解我的人就是我自己，</div><div>至少我得認同自己。」</div></div><div><div>-</div><div><span>摘自《希望溫暖你的每一天》-</span>〈拿出被討厭的勇氣，對我來說真的很難〉</div><div><br></div><div><span>#希望溫暖你的每一天</span> <span>#療癒</span> <span>#圖文</span> <span>#大田出版</span></div></div></div>",
+      "caption": "<div><div>【圖文時間】《希望溫暖你的每一天(精采夜光版)》</div></div><div><br></div><div><div><span>#九月十二日上市</span></div><div><span>#精采夜光版</span></div></div><div><span><br></span></div><div><div>〈 給為了完美表現而疲憊的你 〉</div></div><div><br></div><div><div>我珍貴的朋友啊，</div><div>想要變完美也沒關係。</div><div>最重要的是，</div><div>希望你能先理解那顆想要完美的心。</div><div>「原來你是這麼想把事情做好。</div><div>你很努力，結果卻不如預期，肯定很難過吧。</div><div>但我在這個地方有所成長，明天的我肯定會更好。你真的辛苦了。」</div><div>試著這樣鼓勵自己，</div><div>抬頭挺胸往下個階段邁進吧。</div><div>我會時時刻刻都為你加油。</div></div><div><div>-</div><div><span>摘自《希望溫暖你的每一天》-</span>〈 給為了完美表現而疲憊的你 〉</div><div><br></div><div><span>#希望溫暖你的每一天</span> <span>#療癒</span> <span>#圖文</span> <span>#大田出版</span></div></div>",
       "time": "18:00",
       "canvaUrl": "https://www.canva.com/design/DAHPbqxce5c/KlYPQFMyxFO9ZN5Zx99IkA/view?utm_content=DAHPbqxce5c&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h240e483ba4",
       "ratio": "1-1",
@@ -1909,7 +1909,7 @@ var externalDB = {
       "title": "希望溫暖你的每一天(精采夜光版)",
       "status": "draft",
       "createdAt": "2026-08-07T04:32:50.296Z",
-      "updatedAt": "2026-08-12T08:25:04.153Z"
+      "updatedAt": "2026-08-13T06:30:53.630Z"
     },
     {
       "_id": "p_1786077196029_5zoco9",
@@ -1927,15 +1927,15 @@ var externalDB = {
   "2026-08-14": [
     {
       "_id": "p_1786077217891_me4f9n",
-      "caption": "<div><div><div>【早上只讀一點點】《如何愛你的負面情感(愛自己新裝版)》</div></div><div><br></div><div><div>真實感受的所在</div><div>你對自己有多認識？</div><div><br></div><div>聽到這個問題，或許你會歪著頭，心想：「突然這樣問，要我怎麼回答……」</div><div>那麼，你覺得光是用數字表示的身高、體重、出生年月日，外表看得見的髮型、服裝、走路方式，就能代表真實的你嗎？</div><div>應該不能吧。身高、頭髮的長度、穿衣的品味、走路的方式，這些和真實的你毫無關係。</div><div>你這個人「有什麼感受，有什麼想法，對未來有什麼想像」……這些才造就出了「你」。</div></div><div><div>如果，你老是陷在負面情感裡，心裡想著：「要是能讓負面情感都消失就好了。」就證明了你對自己不夠認識。</div><div>如果你對自己有足夠認識的話，負面情感就會成為助力，幫助你大大成長，因此照理來說你根本不會希望它消失，反而是樂在其中，對未來也充滿了美好的想像。</div><div>「想像」是「創造」的開始。</div><div>「認識自己，創造美好的未來。」請把這句話當成前進的目標吧！</div><div><br></div><div>現在請先記住以下三點：</div></div><div><div>‧<span>#負面情感不是你的敵人</span>。</div><div>‧不要抹煞負面情感，要讓它成為助力。</div><div>‧只要不怕負面情感，人際關係就會變得輕鬆自在。</div></div><div><div>負面情感不是你的敵人。正因必要，才會存在每個人心中。</div><div>然而，當負面情感湧出時，會令我們感到心痛，而我們為了逃避傷痛，就會對負面情感視而不見，結果錯失了讓負面情感成為助力的機會。</div><div>你過去所經歷的傷痛，和你今後將承受的傷痛，都是讓你了解真實的自己而不可或缺的原料。</div><div><br></div><div>舉例來說，你是否有過像這樣的經驗：</div><div>原本你覺得：「這個人可以信賴。這個人能夠#理解我。」後來發現事與願違時，你因大受打擊而將心門關起來……</div><div>我也經歷過這樣的遭遇，當時我悲傷得不能自已，用一語不發來抗拒這一切。</div><div>接著，我開始感到不甘心，不由自主地怪罪對方、激怒對方。但這些根本就不是我的本意……</div></div><div><div>如果你也有類似的經驗，請你試著回想當時你有什麼樣的#負面情感。</div><div><br></div><div>當時你最想讓對方知道的是什麼感受？</div><div>為什麼經過了這麼久，心中的傷痛依舊沒有消失？</div><div>你真正的感受，其實就藏在那樣的傷痛之下。</div><div>有時我們之所以會搞不清楚自己，是因為當負面情感湧出時，我們就會自動關上心門，把我們的「<span>#真心</span>」鎖死在裡面。</div><div><br></div><div>(摘自P.20-P.23)</div></div><div><br></div><div><div><span>#大田出版</span></div></div></div>",
+      "caption": "<div><span>「獻給所有正在重新開始的人。</span><br><span>獻給所有正在學習如何在人生的循環中安歇的人。</span><br><span>獻給所有需要明白重新開始並非一蹴可幾，而是一生中無休止境的修行。」</span></div><div><br></div><div>–亞歷珊卓拉．歐拉諾</div><div><br></div><div><div>暢銷療癒圖文書《#會好起來的，就算不是現在》 作者最新力作！</div><div>在破碎與重建之間，學會一再重新開始。</div><div><br></div><div><br></div><div>這是一本關於人生循環的圖文書——</div><div>關於懷疑、崩解、重新站穩、再次敞開，然後再一次重生。</div><div><br></div><div>藝術家暨作家亞歷珊卓拉．歐拉諾</div><div>在某個凌晨三點醒來，腦中滿是停不下來的問題：</div><div>人生就是這樣了嗎？當一切瓦解時該怎麼辦？當我想關上自己時，如何仍然保持敞開？</div><div><br></div><div>《一次又一次又一次地重新開始》最初只是她寫給自己的筆記——</div><div>用圖像與文字，試著理解不確定的人生地圖。</div><div>最後變成一本關於「成為人」的節奏之書：</div><div>提問 → 懷疑 → 站穩 → 敞開 → 更新</div><div>人生不斷在這五個循環之中往復。</div><div><br></div><div>水彩插畫與私密文字交織，</div><div>這本書不提供答案，而是提供陪伴。</div><div><br></div><div>它告訴我們——</div><div>不要再等待那個「完成版的自己」，</div><div>改變不是抵達，而是學會與變動一起生活。</div><div><br></div><div>重新開始，不只一次。而是一生都在重新開始。</div></div><div><br></div><div><div><span>#大田出版</span></div></div>",
       "time": "08:00",
-      "canvaUrl": "https://www.canva.com/design/DAHIAn9ZAjc/7o2oh0IVtJHtZZmLgUE2qQ/view?utm_content=DAHIAn9ZAjc&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h25274b2131",
-      "ratio": "1-1",
+      "canvaUrl": "https://www.canva.com/design/DAHQGHvfi-A/aKa_FAH8l28FL0kYu5d3QA/view?utm_content=DAHQGHvfi-A&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h3c68affc26",
+      "ratio": "4-5",
       "theme": "早上只讀一點點",
-      "title": "如何愛你的負面情感",
+      "title": "一次又一次又一次地重新開始",
       "status": "draft",
       "createdAt": "2026-08-07T04:33:37.891Z",
-      "updatedAt": "2026-08-12T08:25:26.602Z"
+      "updatedAt": "2026-08-13T06:52:43.994Z"
     },
     {
       "_id": "p_1786077244553_dunyei",
@@ -2007,7 +2007,7 @@ var externalDB = {
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-08-12T09:59:40.978Z",
+  "updatedAt": "2026-08-13T06:53:07.274Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z"
