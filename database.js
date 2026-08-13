@@ -1951,7 +1951,7 @@ var externalDB = {
     },
     {
       "_id": "p_1786077262073_tb0oor",
-      "caption": "<div><div><span>“There is no courage without vulnerability.”\n沒有脆弱，就沒有勇氣。</span></div><div><span>很久以前聽過這句話。那時不知道是誰說的，只覺得自己好像懂了。</span></div><div><span>直到讀《尋找蜘蛛》，它忽然從記憶某個安靜的角落浮上來。</span></div><div><span>一開始，我以為這是一本與癌症對抗的書。</span></div><div><span>關於堅強、戰勝，以及一個人如何從命運手中奪回自己。</span></div><div><span>「我並不覺得自己勇敢。</span></div><div><span>也不是我自己選擇這樣的遭遇。」</span></div><div><span>她接受化療、自己打針、切除雙側乳房。\n不是因為她站在恐懼之外，而是因為太想活下去，只能帶著恐懼繼續往前。\n我們很常對生病的人說：</span></div><div><span>「你真的很勇敢。」</span></div><div><span>那是祝福，也是心疼。</span></div><div><span>可當所有人都說你勇敢，你還能不能承認自己很害怕？</span></div><div><span>如果哭了、累了，甚至說不想再撐了，會不會就辜負了那句「勇敢」？</span></div><div><span>《尋找蜘蛛》沒有趕走恐懼。</span></div><div><span>它只是讓恐懼留下，讓軟弱有一張椅子坐下，也讓一雙雙伸來的手，有機會接住她。</span></div><div><span>而讀完這本書，我才知道</span></div><div><span>勇氣從來不是恐懼的反面。</span></div><div><span>它是我們帶著恐懼，\n仍願意把自己交給明天。</span></div></div><div><br></div><div><div><span>#大田出版</span></div><div><span>#西加奈子<br>#親簽</span></div></div>",
+      "caption": "<div><div><span>“There is no courage without vulnerability.”\n沒有脆弱，就沒有勇氣。</span></div><div><span>很久以前聽過這句話。那時不知道是誰說的，只覺得自己好像懂了。</span></div><div><span>直到讀《#尋找蜘蛛》，它忽然從記憶某個安靜的角落浮上來。</span></div><div><span>一開始，我以為這是一本與癌症對抗的書。</span></div><div><span>關於堅強、戰勝，以及一個人如何從命運手中奪回自己。</span></div><div><span>「我並不覺得自己勇敢。</span></div><div><span>也不是我自己選擇這樣的遭遇。」</span></div><div><span>她接受化療、自己打針、切除雙側乳房。\n不是因為她站在恐懼之外，而是因為太想活下去，只能帶著恐懼繼續往前。\n我們很常對生病的人說：</span></div><div><span>「你真的很勇敢。」</span></div><div><span>那是祝福，也是心疼。</span></div><div><span>可當所有人都說你勇敢，你還能不能承認自己很害怕？</span></div><div><span>如果哭了、累了，甚至說不想再撐了，會不會就辜負了那句「勇敢」？</span></div><div><span>《尋找蜘蛛》沒有趕走恐懼。</span></div><div><span>它只是讓恐懼留下，讓軟弱有一張椅子坐下，也讓一雙雙伸來的手，有機會接住她。</span></div><div><span>而讀完這本書，我才知道</span></div><div><span>勇氣從來不是恐懼的反面。</span></div><div><span>它是我們帶著恐懼，\n仍願意把自己交給明天。</span></div></div><div><br></div><div><div><span>#大田出版</span></div><div><span>#西加奈子<br>#親簽</span></div></div>",
       "time": "20:00",
       "canvaUrl": "https://www.canva.com/design/DAHQR883PfM/__Xxq1ygcumDN2QjC0hFMQ/view?utm_content=DAHQR883PfM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h5865abf93b",
       "ratio": "4-5",
@@ -1959,7 +1959,7 @@ var externalDB = {
       "title": "尋找蜘蛛：日本暢銷超過36萬冊，西加奈子的生命故事vmp65l3",
       "status": "draft",
       "createdAt": "2026-08-07T04:34:22.073Z",
-      "updatedAt": "2026-08-13T08:33:04.099Z"
+      "updatedAt": "2026-08-13T08:34:30.117Z"
     }
   ],
   "2026-08-15": [
@@ -2002,12 +2002,36 @@ var externalDB = {
       "status": "draft",
       "createdAt": "2026-08-12T08:36:37.671Z",
       "updatedAt": "2026-08-12T08:36:37.671Z"
+    },
+    {
+      "_id": "p_1786610271151_ulwtjj",
+      "caption": "<div>【圖文時間】 《幸福就是吃飯睡覺等待vol.2》</div><div><br></div>",
+      "time": "18:00",
+      "canvaUrl": "https://www.canva.com/design/DAHRk3aWsJU/PUtMv94uH8-14-I-clQNsA/view?utm_content=DAHRk3aWsJU&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hcf5671cd06",
+      "ratio": "1-1",
+      "theme": "圖文時間",
+      "title": "幸福就是吃飯睡覺等待vol.2",
+      "status": "draft",
+      "createdAt": "2026-08-13T08:37:51.151Z",
+      "updatedAt": "2026-08-13T08:37:56.079Z"
+    },
+    {
+      "_id": "p_1786610297611_6sb6ta",
+      "caption": "<div>【晚上多讀一點點】 《尋找蜘蛛：日本暢銷超過36萬冊，西加奈子的生命故事》</div><div><br></div><div><div>有一天，我發現Eki沒吃東西。<span></span></div><div><br></div>\n<div>雖然牠常常整天都在睡，不過我看這次也躺太久了。而且本來牠一到吃飯時間精神就來了，現在竟然變得毫無食慾，實在很反常。因為沒吃東西，所以也沒有排便。</div>\n<div>我打電話詢問常去的動物醫院，得到的答覆是：「先開促進排便的處方藥餵牠，要是三天內都沒有排便再送急診。」</div>\n<div>結果Eki還是沒排便。我們等不及，在第二天就準備送牠去急診。這時Eki已經很明顯毫無氣力。平常把牠放進貓籠時都會激烈抵抗，這時卻變得很溫馴。</div>\n<div>在急診部抽血檢查後，發現肝指數異常，於是Eki緊急住院。我目送著被護士帶走的Eki，待在車子裡好一段時間。我幾乎無法發動引擎。</div>\n<div>最近發生太多事，我們沒有心力去注意Eki。牠恐怕在更早之前就已經不對勁了。據說貓就算生病了，也會瞞著飼主。要是我早點發現就好了。</div>\n<div>我握著方向盤的手，指甲已經發黑。這也是抗癌藥物的副作用。</div>\n<div>我是在十二年前的夏天遇到Eki。那時候我在新宿，正好有朋友聯絡我。</div>\n<div>「K死了。聽說他開著車衝進海裡。」</div>\n<div>K是位比我年長的朋友，原先在大阪從事服飾業，離婚後他獨自搬到南方的島嶼。我跟朋友曾經拜訪他家好幾次。他在南方的島嶼似乎過得很幸福。</div>\n<div>這個人本來就很喜歡島嶼，像自由潛水可以潛到很深的地方。所以聽到他死在海裡，我感到無法置信。他選在颱風來襲的日子，不踩剎車直接衝進海裡。那不是事故，而是自己選擇的死亡。</div>\n<div>當時我正走向新宿站準備回家。結束通話後，我忽然不想搭電車，走了大約一個半小時回到家。那天雖然有雲遮蔽太陽，天氣還是很熱。汗水不斷從我的額頭滑落。</div>\n<div>在離家步行約二十分鐘的地方，我聽見貓叫聲。雖然是車流量相當大的街道，但是我的確聽到了，所以叫聲其實還蠻響亮。</div>\n<div>「喵嗚嗚嗚嗚嗚嗚，喵嗚嗚嗚嗚嗚嗚！」</div>\n<div>我很快就找到聲音的由來。在天橋下，由柵欄圍起來的空間內長著草叢。有位稍微有點年紀的婦女正在看著裡面，她回頭說：</div>\n<div>「那裡有小貓。該怎麼辦呢？」</div>\n<div>我請她幫忙看著小貓，自己跑進對面的居家生活用品店，買了水跟貓食。我回來時，她有點驚慌地跟我說：</div>\n<div>「才一伸手牠就跑掉了。」</div>\n<div>她說牠逃到天橋旁丸之內線的車庫裡。我想如果是像車庫那麼寬廣的空間，會不會找不到呢？才這麼想，就聽到了貓叫聲。牠好像逃到車庫併設的員工宿舍外圍了。</div>\n<div>我按下對講機，說明原委走進宿舍外圍。貓明明是逃走的，卻彷彿在宣告這塊地的主權，大聲叫著：</div>\n<div>「喵嗚嗚嗚嗚嗚嗚，喵嗚嗚嗚嗚嗚嗚！」</div>\n<div>牠一定是在叫母貓吧。想到這裡，我就覺得胸口緊縮。</div>\n<div>貓逃到位於宿舍外的置物處底下。我利用手機螢幕的光照亮，一隻橘色的虎斑貓盯著我看。一伸手牠又逃走了，這次逃到宿舍裡面。</div>\n<div>我取得員工的同意進入，這時剛洗完澡的住宿生身上裹著毛巾，一起跟我追著貓。最後，我們在放置掃除工具的角落逮到小貓。小貓拼命地用爪子抓我。就在我把牠放進自己帶的環保袋時，牠也拼命叫個不停。</div>\n<div>「喵嗚嗚嗚嗚嗚嗚，喵嗚嗚嗚嗚嗚嗚！」</div>\n<div>我帶牠回家後，組起瓦楞紙箱。我把小貓放進去，觀察牠的狀況。牠果然一直在叫。看到我之後，就齜牙咧嘴威嚇。雖然瘦巴巴，又渾身沾滿糞便，牠依然鬥志昂揚地面對我，充滿戰鬥與生存的精力。</div>\n<div>我把小貓帶到動物醫院，給牠施打營養點滴。牠遭到大量的跳蚤攻擊，一撫摸牠，掌心就沾上黏黏的黑色跳蚤糞便。獸醫說要每天持續打點滴，直到牠可以自己進食。</div>\n<div>我沒有幫牠取名字。一邊想著這隻貓或許會死吧，邊照顧著牠。我還告訴牠：</div>\n<div>「如果你一定要死，就死在溫暖的地方吧。」</div>\n<div>不過牠活下來了。</div>\n<div>點滴發揮作用，稍微長出一點肉，除掉跳蚤，血液的數值也漸漸安定下來。牠的糞便一直是液狀，不過牠可以直接舔我的手指，攝取醫生開的處方奶粉。</div>\n<div>牠不再對我虛張聲勢，在我離開牠，而不是接近時發出貓叫。如果我抱牠，牠的喉嚨會發出咕嚕咕嚕的聲音。</div>\n<div>儘管如此，我還是沒給牠取名字。</div>\n<div>以前我曾經跟其他的貓一起生活。因為牠白色的身軀彷彿有燒焦似的斑點，因此我取名為年糕。後來年糕因為心肌症而死，直到去世為止一直很痛苦。那時候牠才三歲。</div>\n<div>想到當時悲傷的心情，我覺得自己恐怕無法再跟別的貓一起生活。跟貓一起度過的時光越幸福，就越無法忍受離別的痛苦。</div><div><br></div><div>#西加奈子</div><div>#大田出版</div><div>#寵物</div><div>#貓</div><div>#死亡</div></div>",
+      "time": "20:00",
+      "canvaUrl": "https://www.canva.com/design/DAHQkUu_iSE/DrFQws8Bn2DLb78HKZXrSg/view?utm_content=DAHQkUu_iSE&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hdc3f8590f3",
+      "ratio": "4-5",
+      "theme": "晚上多讀一點點",
+      "title": "尋找蜘蛛：日本暢銷超過36萬冊，西加奈子的生命故事vmp65l3",
+      "status": "draft",
+      "createdAt": "2026-08-13T08:38:17.611Z",
+      "updatedAt": "2026-08-13T08:48:52.364Z"
     }
   ]
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-08-13T08:33:52.269Z",
+  "updatedAt": "2026-08-13T08:54:39.802Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z"
