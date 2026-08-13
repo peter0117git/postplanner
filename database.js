@@ -1993,15 +1993,15 @@ var externalDB = {
   "2026-08-17": [
     {
       "_id": "p_1786523797671_6htr6n",
-      "caption": "<div>【早上只讀一點點】 《一次又一次又一次地重新開始》</div><div><br></div>",
+      "caption": "<div>【早上只讀一點點】 《一次又一次又一次地重新開始》</div><div><br></div><div><div>孩童看到麻雀。在他懂得「麻雀」這兩個字之前，只有純然的專注，那專注完整、鮮明、毫無疑問。</div>\n<div>我們已經失去這種目光。我們為萬物命名，為它們分門別類。每個定義都在我們肩上添加些許負擔，影響下一刻所見。</div>\n<div>如果我們能用全新的角度再看一次呢？正如英國作家赫胥黎所說：「輕輕地，孩子，輕輕地。」讓我們更輕柔地擁抱自己的覺知。</div>\n<div>看見之後不急著定義，躍然欲動的生命力就等著你。</div><div><br></div><div>#大田出版</div><div>#會好起來的</div><div><br></div></div>",
       "time": "09:00",
-      "canvaUrl": "https://www.canva.com/design/DAHQGHvfi-A/aKa_FAH8l28FL0kYu5d3QA/view?utm_content=DAHQGHvfi-A&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h3c68affc26",
+      "canvaUrl": "https://www.canva.com/design/DAHSKSY_YvY/J-v4e8drMxkO_n9hnt5SNg/view?utm_content=DAHSKSY_YvY&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h3f40555dbb",
       "ratio": "4-5",
       "theme": "早上只讀一點點",
       "title": "一次又一次又一次地重新開始",
       "status": "draft",
       "createdAt": "2026-08-12T08:36:37.671Z",
-      "updatedAt": "2026-08-12T08:36:37.671Z"
+      "updatedAt": "2026-08-13T09:41:05.116Z"
     },
     {
       "_id": "p_1786610271151_ulwtjj",
@@ -2031,7 +2031,7 @@ var externalDB = {
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-08-13T08:54:39.802Z",
+  "updatedAt": "2026-08-13T09:41:33.511Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z"
