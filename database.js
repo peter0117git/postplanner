@@ -1951,21 +1951,21 @@ var externalDB = {
     },
     {
       "_id": "p_1786077262073_tb0oor",
-      "caption": "<div><div>關於閱讀，維吉尼亞．吳爾芙是這麼說的：<span></span></div><div><br></div>\n<div>「彷彿進入黑暗的房間，手上提著一盞燈。光線照亮了原有的東西。」</div><div><br></div>\n<div>威廉．福克納也曾說過類似的話：</div><div><br></div>\n<div>「文學就像半夜在荒原擦亮火柴。雖然一根火柴無法照亮四周，但是卻能讓我們注意到附近有多幽暗。」</div><div><br></div>\n<div>讀後，我也意識到所謂的黑暗。故事本身的光無疑拯救了我們，不過，意識到自己身處黑暗之中，也為我帶來全新的、某種堅定的救贖。</div><div><br></div>\n<div>這種黑暗的感覺一定很熟悉，因為它一直伴隨著我。儘管如此，在彷彿新發現的黑暗中，我們也能觀察到新的自己。</div>\n<div>我在這裡做什麼？我在這裡想什麼？我究竟是誰，或是什麼？</div><div><br></div>\n<div>這有一部分跟冥想很像。</div><div><br></div>\n<div>在紀子的推薦下，我一直保持冥想的習慣。</div><div><br></div>\n<div>晚上睡覺前，就算只有十分鐘或五分鐘也好，空出時間深呼吸，凝視自己。如果就這樣直接睡著也很好。</div><div><br></div>\n<div>讓我比較困擾的，是以後非做不可的事，或不愉快的記憶盤旋在腦海中，無法集中精神的時候。不過，有一天，甚至對這種「無法集中精神」的感覺，也會產生不同的覺察。</div><div><br></div>\n<div>就像：「我現在可以集中精神呢。」「啊，我又感到新的不安。」接下來是：「你好像很不安呢。」大概就像這樣。</div><div><br></div>\n<div>我所觀照的，大概是自己內在的恐懼，它出現得真的很頻繁。譬如某天我為一件事生氣，如果正視背後的感情，並試著加以剖析，最後看見的是恐懼。</div><div><br></div>\n<div>憤怒與焦慮等情感，乍看之下跟恐懼並不相同，但幾乎可說都源自於恐懼。</div><div><br></div>\n<div>恐懼沒有具體的樣貌。它像沒有具體形影的幽靈附身於我。有時候，恐懼本身似乎也在畏怯著什麼，我甚至開始憐憫恐懼。</div><div><br></div>\n<div>長久寄居在我體內，成為我各種情感源頭的恐懼，是我自己形成的。我是恐懼的母親，也是父親，同時也是朋友。</div>\n<div>我緊緊擁抱著恐懼。</div><div><br></div>\n<div>我所製造、長久以來使我受苦的恐懼，現在我必須把它視為自己的、僅屬於我一個人的東西，緊緊抱著。</div></div><div><br></div><div><div>(摘自P.139-P.141)</div></div><div><br></div><div><div><span>#改變</span> <span>#內耗</span> <span>#恐懼</span>&nbsp;<span>#大田出版</span></div></div>",
+      "caption": "<div><div><span>“There is no courage without vulnerability.”\n沒有脆弱，就沒有勇氣。</span></div><div><span>很久以前聽過這句話。那時不知道是誰說的，只覺得自己好像懂了。</span></div><div><span>直到讀《尋找蜘蛛》，它忽然從記憶某個安靜的角落浮上來。</span></div><div><span>一開始，我以為這是一本與癌症對抗的書。</span></div><div><span>關於堅強、戰勝，以及一個人如何從命運手中奪回自己。</span></div><div><span>「我並不覺得自己勇敢。</span></div><div><span>也不是我自己選擇這樣的遭遇。」</span></div><div><span>她接受化療、自己打針、切除雙側乳房。\n不是因為她站在恐懼之外，而是因為太想活下去，只能帶著恐懼繼續往前。\n我們很常對生病的人說：</span></div><div><span>「你真的很勇敢。」</span></div><div><span>那是祝福，也是心疼。</span></div><div><span>可當所有人都說你勇敢，你還能不能承認自己很害怕？</span></div><div><span>如果哭了、累了，甚至說不想再撐了，會不會就辜負了那句「勇敢」？</span></div><div><span>《尋找蜘蛛》沒有趕走恐懼。</span></div><div><span>它只是讓恐懼留下，讓軟弱有一張椅子坐下，也讓一雙雙伸來的手，有機會接住她。</span></div><div><span>而讀完這本書，我才知道</span></div><div><span>勇氣從來不是恐懼的反面。</span></div><div><span>它是我們帶著恐懼，\n仍願意把自己交給明天。</span></div></div><div><br></div><div><div><span>#大田出版</span></div><div><span>#西加奈子<br>#親簽</span></div></div>",
       "time": "20:00",
-      "canvaUrl": "https://www.canva.com/design/DAHQkUu_iSE/DrFQws8Bn2DLb78HKZXrSg/view?utm_content=DAHQkUu_iSE&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hdc3f8590f3",
+      "canvaUrl": "https://www.canva.com/design/DAHQR883PfM/__Xxq1ygcumDN2QjC0hFMQ/view?utm_content=DAHQR883PfM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h5865abf93b",
       "ratio": "4-5",
       "theme": "晚上多讀一點點",
-      "title": "台灣紀行：Team Taiwan必讀版",
+      "title": "尋找蜘蛛：日本暢銷超過36萬冊，西加奈子的生命故事vmp65l3",
       "status": "draft",
       "createdAt": "2026-08-07T04:34:22.073Z",
-      "updatedAt": "2026-08-12T09:41:00.061Z"
+      "updatedAt": "2026-08-13T08:33:04.099Z"
     }
   ],
   "2026-08-15": [
     {
       "_id": "p_1786523728612_9x6ckl",
-      "caption": "一次又一次影片分享",
+      "caption": "一次又一次影片分享<div>協作luckylulu</div>",
       "time": "09:00",
       "canvaUrl": "",
       "ratio": "4-5",
@@ -1973,7 +1973,7 @@ var externalDB = {
       "title": "",
       "status": "draft",
       "createdAt": "2026-08-12T08:35:28.612Z",
-      "updatedAt": "2026-08-12T08:35:46.868Z"
+      "updatedAt": "2026-08-13T08:33:24.238Z"
     }
   ],
   "2026-08-16": [
@@ -2007,7 +2007,7 @@ var externalDB = {
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-08-13T06:53:07.274Z",
+  "updatedAt": "2026-08-13T08:33:52.269Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z"
