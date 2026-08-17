@@ -1993,27 +1993,27 @@ var externalDB = {
   "2026-08-17": [
     {
       "_id": "p_1786523797671_6htr6n",
-      "caption": "<div>【早上只讀一點點】 《一次又一次又一次地重新開始》</div><div><br></div><div><div>孩童看到麻雀。在他懂得「麻雀」這兩個字之前，只有純然的專注，那專注完整、鮮明、毫無疑問。</div>\n<div>我們已經失去這種目光。我們為萬物命名，為它們分門別類。每個定義都在我們肩上添加些許負擔，影響下一刻所見。</div>\n<div>如果我們能用全新的角度再看一次呢？正如英國作家赫胥黎所說：「輕輕地，孩子，輕輕地。」讓我們更輕柔地擁抱自己的覺知。</div>\n<div>看見之後不急著定義，躍然欲動的生命力就等著你。</div><div><br></div><div>#大田出版</div><div>#會好起來的</div><div><br></div></div>",
+      "caption": "<div>【早上只讀一點點】 《你就是困住自己的那座山》<br><br>我們有多常因為害怕立刻失敗或落人口實，而連踏出一步去嘗試都不敢？<br>失敗有兩種。第一種失敗，是因為你嘗試了一些新的、大膽的東西。第二種失敗，是因為你沒有面對、沒有動手，或者沒有對自己的行為負責。而這兩種失敗是不一樣的。<br><br>這兩種經驗截然不同，你應該在自己的腦海中將之區別開來。<br><br>在做某一件事情時，雖然一開始就表現不佳，甚至可能還會遭受損失的情況或許很可怕，但從不嘗試或總是自我設限，更是糟糕。失敗是無法避免的，但你必須要確保的是，自己的失敗是合情合理的。<br><br>因為疏忽而導致的失敗，會使我們往後退一步；因為勇於嘗試新方法而導致的失敗，則會讓我們離成功更近一步。<br><br>摘自p.56~57<br><br>#大田出版 #失敗 #你就是困住自己的那座山 #成功</div>",
       "time": "09:00",
-      "canvaUrl": "https://www.canva.com/design/DAHSKSY_YvY/J-v4e8drMxkO_n9hnt5SNg/view?utm_content=DAHSKSY_YvY&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h3f40555dbb",
+      "canvaUrl": "https://www.canva.com/design/DAHIqi-yONc/65fkKo4j1LRTKFBSvPF2rQ/view?utm_content=DAHIqi-yONc&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h63a83d9e70",
       "ratio": "4-5",
       "theme": "早上只讀一點點",
       "title": "一次又一次又一次地重新開始",
       "status": "draft",
       "createdAt": "2026-08-12T08:36:37.671Z",
-      "updatedAt": "2026-08-13T09:41:05.116Z"
+      "updatedAt": "2026-08-17T04:02:12.148Z"
     },
     {
       "_id": "p_1786610271151_ulwtjj",
       "caption": "<div>【圖文時間】 《幸福就是吃飯睡覺等待vol.2》</div><div><br></div>",
       "time": "18:00",
-      "canvaUrl": "https://www.canva.com/design/DAHRk3aWsJU/PUtMv94uH8-14-I-clQNsA/view?utm_content=DAHRk3aWsJU&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hcf5671cd06",
+      "canvaUrl": "https://www.canva.com/design/DAHSgj9IS7I/5KhQjA2ecvGb2PWURBAdKw/view?utm_content=DAHSgj9IS7I&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=ha81dc57c2f",
       "ratio": "1-1",
       "theme": "圖文時間",
       "title": "幸福就是吃飯睡覺等待vol.2",
       "status": "draft",
       "createdAt": "2026-08-13T08:37:51.151Z",
-      "updatedAt": "2026-08-13T08:37:56.079Z"
+      "updatedAt": "2026-08-17T03:50:40.630Z"
     },
     {
       "_id": "p_1786610297611_6sb6ta",
@@ -2027,11 +2027,25 @@ var externalDB = {
       "createdAt": "2026-08-13T08:38:17.611Z",
       "updatedAt": "2026-08-13T08:48:52.364Z"
     }
+  ],
+  "2026-08-18": [
+    {
+      "_id": "p_1786939168481_i6fpn2",
+      "caption": "<div>【早上只讀一點點】 《一次又一次又一次地重新開始》</div><div><div><br></div><div><div>孩童看到麻雀。在他懂得「麻雀」這兩個字之前，只有純然的專注，那專注完整、鮮明、毫無疑問。</div><div>我們已經失去這種目光。我們為萬物命名，為它們分門別類。每個定義都在我們肩上添加些許負擔，影響下一刻所見。</div><div>如果我們能用全新的角度再看一次呢？正如英國作家赫胥黎所說：「輕輕地，孩子，輕輕地。」讓我們更輕柔地擁抱自己的覺知。</div><div>看見之後不急著定義，躍然欲動的生命力就等著你。</div><div><br></div><div>#大田出版</div><div>#會好起來的</div><div><br></div></div></div>",
+      "time": "08:00",
+      "canvaUrl": "https://www.canva.com/design/DAHSKSY_YvY/J-v4e8drMxkO_n9hnt5SNg/view?utm_content=DAHSKSY_YvY&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h3f40555dbb",
+      "ratio": "4-5",
+      "theme": "早上只讀一點點",
+      "title": "一次又一次又一次地重新開始",
+      "status": "draft",
+      "createdAt": "2026-08-17T03:59:28.481Z",
+      "updatedAt": "2026-08-17T03:59:39.480Z"
+    }
   ]
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-08-13T09:41:33.511Z",
+  "updatedAt": "2026-08-17T04:02:28.268Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z"
