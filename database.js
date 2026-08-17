@@ -2005,7 +2005,7 @@ var externalDB = {
     },
     {
       "_id": "p_1786610271151_ulwtjj",
-      "caption": "<div>【圖文時間】 《幸福就是吃飯睡覺等待vol.2》</div><div><br></div>",
+      "caption": "<div>【圖文時間】 《 #幸福就是吃飯睡覺等待 vol.2》</div><div><br></div><div><div>「不然你們覺得，我負責的是什麼樂器？」</div><div>大家幾乎沒有猶豫，<br>異口同聲地回答——</div><div>「貝斯。」</div><div><br></div><div>唐老大一臉疑惑：<br>「你們怎麼知道的？」</div><div><br></div><div>也說不上為什麼，</div><div>但那個氣質，好像一眼就能讀懂。</div><div><br></div><div>有些事情，<br>就是同事之間才懂的默契～</div><div><br></div><div>你身邊也有這種「不用問，就知道答案」的同事嗎？</div><div><br></div><div>#默契 #職場日常 #圖文 #大田出版</div></div><div><br></div><div>對這本書有興趣的朋友，<br>可以點擊個人主頁的連結，查看各通路購書資訊喔！</div>",
       "time": "18:00",
       "canvaUrl": "https://www.canva.com/design/DAHSgj9IS7I/5KhQjA2ecvGb2PWURBAdKw/view?utm_content=DAHSgj9IS7I&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=ha81dc57c2f",
       "ratio": "1-1",
@@ -2013,11 +2013,11 @@ var externalDB = {
       "title": "幸福就是吃飯睡覺等待vol.2",
       "status": "draft",
       "createdAt": "2026-08-13T08:37:51.151Z",
-      "updatedAt": "2026-08-17T03:50:40.630Z"
+      "updatedAt": "2026-08-17T04:09:45.056Z"
     },
     {
       "_id": "p_1786610297611_6sb6ta",
-      "caption": "<div>【晚上多讀一點點】 《尋找蜘蛛：日本暢銷超過36萬冊，西加奈子的生命故事》</div><div><br></div><div><div>有一天，我發現Eki沒吃東西。<span></span></div><div><br></div>\n<div>雖然牠常常整天都在睡，不過我看這次也躺太久了。而且本來牠一到吃飯時間精神就來了，現在竟然變得毫無食慾，實在很反常。因為沒吃東西，所以也沒有排便。</div>\n<div>我打電話詢問常去的動物醫院，得到的答覆是：「先開促進排便的處方藥餵牠，要是三天內都沒有排便再送急診。」</div>\n<div>結果Eki還是沒排便。我們等不及，在第二天就準備送牠去急診。這時Eki已經很明顯毫無氣力。平常把牠放進貓籠時都會激烈抵抗，這時卻變得很溫馴。</div>\n<div>在急診部抽血檢查後，發現肝指數異常，於是Eki緊急住院。我目送著被護士帶走的Eki，待在車子裡好一段時間。我幾乎無法發動引擎。</div>\n<div>最近發生太多事，我們沒有心力去注意Eki。牠恐怕在更早之前就已經不對勁了。據說貓就算生病了，也會瞞著飼主。要是我早點發現就好了。</div>\n<div>我握著方向盤的手，指甲已經發黑。這也是抗癌藥物的副作用。</div>\n<div>我是在十二年前的夏天遇到Eki。那時候我在新宿，正好有朋友聯絡我。</div>\n<div>「K死了。聽說他開著車衝進海裡。」</div>\n<div>K是位比我年長的朋友，原先在大阪從事服飾業，離婚後他獨自搬到南方的島嶼。我跟朋友曾經拜訪他家好幾次。他在南方的島嶼似乎過得很幸福。</div>\n<div>這個人本來就很喜歡島嶼，像自由潛水可以潛到很深的地方。所以聽到他死在海裡，我感到無法置信。他選在颱風來襲的日子，不踩剎車直接衝進海裡。那不是事故，而是自己選擇的死亡。</div>\n<div>當時我正走向新宿站準備回家。結束通話後，我忽然不想搭電車，走了大約一個半小時回到家。那天雖然有雲遮蔽太陽，天氣還是很熱。汗水不斷從我的額頭滑落。</div>\n<div>在離家步行約二十分鐘的地方，我聽見貓叫聲。雖然是車流量相當大的街道，但是我的確聽到了，所以叫聲其實還蠻響亮。</div>\n<div>「喵嗚嗚嗚嗚嗚嗚，喵嗚嗚嗚嗚嗚嗚！」</div>\n<div>我很快就找到聲音的由來。在天橋下，由柵欄圍起來的空間內長著草叢。有位稍微有點年紀的婦女正在看著裡面，她回頭說：</div>\n<div>「那裡有小貓。該怎麼辦呢？」</div>\n<div>我請她幫忙看著小貓，自己跑進對面的居家生活用品店，買了水跟貓食。我回來時，她有點驚慌地跟我說：</div>\n<div>「才一伸手牠就跑掉了。」</div>\n<div>她說牠逃到天橋旁丸之內線的車庫裡。我想如果是像車庫那麼寬廣的空間，會不會找不到呢？才這麼想，就聽到了貓叫聲。牠好像逃到車庫併設的員工宿舍外圍了。</div>\n<div>我按下對講機，說明原委走進宿舍外圍。貓明明是逃走的，卻彷彿在宣告這塊地的主權，大聲叫著：</div>\n<div>「喵嗚嗚嗚嗚嗚嗚，喵嗚嗚嗚嗚嗚嗚！」</div>\n<div>牠一定是在叫母貓吧。想到這裡，我就覺得胸口緊縮。</div>\n<div>貓逃到位於宿舍外的置物處底下。我利用手機螢幕的光照亮，一隻橘色的虎斑貓盯著我看。一伸手牠又逃走了，這次逃到宿舍裡面。</div>\n<div>我取得員工的同意進入，這時剛洗完澡的住宿生身上裹著毛巾，一起跟我追著貓。最後，我們在放置掃除工具的角落逮到小貓。小貓拼命地用爪子抓我。就在我把牠放進自己帶的環保袋時，牠也拼命叫個不停。</div>\n<div>「喵嗚嗚嗚嗚嗚嗚，喵嗚嗚嗚嗚嗚嗚！」</div>\n<div>我帶牠回家後，組起瓦楞紙箱。我把小貓放進去，觀察牠的狀況。牠果然一直在叫。看到我之後，就齜牙咧嘴威嚇。雖然瘦巴巴，又渾身沾滿糞便，牠依然鬥志昂揚地面對我，充滿戰鬥與生存的精力。</div>\n<div>我把小貓帶到動物醫院，給牠施打營養點滴。牠遭到大量的跳蚤攻擊，一撫摸牠，掌心就沾上黏黏的黑色跳蚤糞便。獸醫說要每天持續打點滴，直到牠可以自己進食。</div>\n<div>我沒有幫牠取名字。一邊想著這隻貓或許會死吧，邊照顧著牠。我還告訴牠：</div>\n<div>「如果你一定要死，就死在溫暖的地方吧。」</div>\n<div>不過牠活下來了。</div>\n<div>點滴發揮作用，稍微長出一點肉，除掉跳蚤，血液的數值也漸漸安定下來。牠的糞便一直是液狀，不過牠可以直接舔我的手指，攝取醫生開的處方奶粉。</div>\n<div>牠不再對我虛張聲勢，在我離開牠，而不是接近時發出貓叫。如果我抱牠，牠的喉嚨會發出咕嚕咕嚕的聲音。</div>\n<div>儘管如此，我還是沒給牠取名字。</div>\n<div>以前我曾經跟其他的貓一起生活。因為牠白色的身軀彷彿有燒焦似的斑點，因此我取名為年糕。後來年糕因為心肌症而死，直到去世為止一直很痛苦。那時候牠才三歲。</div>\n<div>想到當時悲傷的心情，我覺得自己恐怕無法再跟別的貓一起生活。跟貓一起度過的時光越幸福，就越無法忍受離別的痛苦。</div><div><br></div><div>#西加奈子</div><div>#大田出版</div><div>#寵物</div><div>#貓</div><div>#死亡</div></div>",
+      "caption": "<div>【晚上多讀一點點】 《尋找蜘蛛：日本暢銷超過36萬冊，西加奈子的生命故事》</div><div><br></div><div><div><div>啊，我自己一個人什麼都做不到，好弱。每天我都這麼想。這既不可恥，也不須逃避，純粹是事實。</div><div><br></div>\n<div>我很弱。</div><div><br></div>\n<div>我，很弱。</div><div><br></div>\n<div>每天抱持著這樣的自覺，漸漸地，自己的輪廓變得簡單。雖然感到不安，但同時也覺得很清爽。</div><div><br></div>\n<div>因此，我對柔術感到著迷。雖然我從來沒學過武術，反應也很慢，很容易陷入驚慌，一不留神，呼吸就停止了。</div><div><br></div>\n<div>我弱得很徹底。不管跟誰對練，都會被擊敗。有時候，我就維持躺著，無法動彈，一直維持到下一堂課開始。我躺成大字形，望著運動館的天花板。</div><div><br></div>\n<div>心裡想著：「我好弱呀。」</div><div><br></div>\n<div>我當然覺得難為情，不過，就在坦然接受這種心情時，似乎也觸及到什麼。</div><div><br></div>\n<div>原來，自己與軟弱共存於這個身體內。我訝異地正視這個事實。</div><div><br></div><div>-</div>\n<div><b>因為我終於明白了，現在終於知道了。我漸漸地瞭解到——如果有人在最後崩潰，說了或做了可怕的事，又不得不耗費極大的心力去照顧別人，那又如何呢？有什麼了不起？</b></div>\n<div><b>說出奇妙的話，做了令人匪夷所思的事，看起來怪異或醜陋，又有什麼錯？腳上沾到屎再洗掉，有什麼不對嗎？</b></div>\n<div><b>（中略）</b></div>\n<div><b>即使是現在，還是覺得可怕。但是我明白，其中也蘊含著點點滴滴的美好事物。</b></div>\n<div><b>我是這樣想的——其中一定有些許幸福的、美好的牽絆，超越了這些。而那些美好的牽絆，不論在過去或未來，都不是我能擅自保持距離的。</b></div>\n<div><b>（日文版註：其實是「拒絕」。因為他漸漸失去語言能力而這麼說。）</b></div>\n<div><b>——喬治．桑德斯《十二月十日》</b></div></div><div><br></div><div>摘自(p.68~70)</div><div><br></div><div>#西加奈子</div><div>#大田出版</div><div>#軟弱</div></div>",
       "time": "20:00",
       "canvaUrl": "https://www.canva.com/design/DAHQkUu_iSE/DrFQws8Bn2DLb78HKZXrSg/view?utm_content=DAHQkUu_iSE&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hdc3f8590f3",
       "ratio": "4-5",
@@ -2025,7 +2025,7 @@ var externalDB = {
       "title": "尋找蜘蛛：日本暢銷超過36萬冊，西加奈子的生命故事vmp65l3",
       "status": "draft",
       "createdAt": "2026-08-13T08:38:17.611Z",
-      "updatedAt": "2026-08-13T08:48:52.364Z"
+      "updatedAt": "2026-08-17T04:19:01.618Z"
     }
   ],
   "2026-08-18": [
@@ -2040,12 +2040,112 @@ var externalDB = {
       "status": "draft",
       "createdAt": "2026-08-17T03:59:28.481Z",
       "updatedAt": "2026-08-17T03:59:39.480Z"
+    },
+    {
+      "_id": "p_1786944928979_hyoz4l",
+      "caption": "<div>【圖文時間】 《希望溫暖你的每一天(精采夜光版)》</div><div><br></div><div><div><span>#九月十二日上市</span></div><div><span>#精采夜光版</span></div></div><div><br></div><div>〈 直到能接受自己原來的樣子 〉</div><div><br></div><div><div>當有人對你品頭論足，</div><div>評價你的時候，</div><div>你不要被影響，</div><div>你不要被動搖，</div><div>你不要消沉，</div><div>你要穩住自己。</div><div>試著對自己說：</div><div><br></div><div>「讓他們去說吧，我維持這樣就可以了。」</div></div><div><br></div><div>摘自《希望溫暖你的每一天》-〈 直到能接受自己原來的樣子 〉</div><div><br></div><div>#內核穩定</div><div>#做自己</div><div>#大田出版</div>",
+      "time": "18:00",
+      "canvaUrl": "https://www.canva.com/design/DAHPbqxce5c/KlYPQFMyxFO9ZN5Zx99IkA/view?utm_content=DAHPbqxce5c&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h240e483ba4",
+      "ratio": "1-1",
+      "theme": "圖文時間",
+      "title": "希望溫暖你的每一天(精采夜光版)",
+      "status": "draft",
+      "createdAt": "2026-08-17T05:35:28.979Z",
+      "updatedAt": "2026-08-17T06:32:52.749Z"
+    },
+    {
+      "_id": "p_1786945012296_txwler",
+      "caption": "<div>【晚上多讀一點點】 《上帝不眨眼：50堂百萬人瘋傳的人生智慧》</div><div><br></div>",
+      "time": "20:00",
+      "canvaUrl": "https://www.canva.com/design/DAHN8Zb0McU/MsxVlDldfEWL2QqmrVsF_w/view?utm_content=DAHN8Zb0McU&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h63c79f6842",
+      "ratio": "4-5",
+      "theme": "晚上多讀一點點",
+      "title": "上帝不眨眼：50堂百萬人瘋傳的人生智慧",
+      "status": "draft",
+      "createdAt": "2026-08-17T05:36:52.296Z",
+      "updatedAt": "2026-08-17T05:36:52.296Z"
+    }
+  ],
+  "2026-08-19": [
+    {
+      "_id": "p_1786945042011_ihxrf1",
+      "caption": "<div>【早上只讀一點點】 《脆弱練習》</div><div><br></div><div>#陳繁齊<span style=\"color:rgb(12, 16, 20)\"> </span></div><div>#你在很遠的地方</div><div><br></div><div>〈 你在很遠的地方 〉</div><div><br><span style=\"color:rgb(12, 16, 20)\">我不知道怎麼接近</span><br><span style=\"color:rgb(12, 16, 20)\">夜裡蜷曲的姿勢捉不到你</span><br><span style=\"color:rgb(12, 16, 20)\">趴在書桌上</span><br><span style=\"color:rgb(12, 16, 20)\">也碰不到</span><br><br><span style=\"color:rgb(12, 16, 20)\">你在很遠的地方</span><br><span style=\"color:rgb(12, 16, 20)\">沒有字可以待在你身邊</span><br><span style=\"color:rgb(12, 16, 20)\">就連寫詩給你</span><br><span style=\"color:rgb(12, 16, 20)\">也需要理由</span><br><br><span style=\"color:rgb(12, 16, 20)\">但你知道嗎，即使</span><br><span style=\"color:rgb(12, 16, 20)\">你是最邊界的那片烏雲</span><br><span style=\"color:rgb(12, 16, 20)\">這裡整場雨的傷心</span><br><span style=\"color:rgb(12, 16, 20)\">仍然和你有關</span><br><br>摘自<span>《脆弱練習》-</span><span>〈 你在很遠的地方 〉</span><br><br>#脆弱練習<span style=\"color:rgb(12, 16, 20)\"> </span><br>#詩集</div><div>#詩</div><div><br></div>",
+      "time": "08:00",
+      "canvaUrl": "https://www.canva.com/design/DAHP6BZ35_Y/9mQErVNe9ahMARs353bZuA/view?utm_content=DAHP6BZ35_Y&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h452db7f493",
+      "ratio": "4-5",
+      "theme": "早上只讀一點點",
+      "title": "脆弱練習",
+      "status": "draft",
+      "createdAt": "2026-08-17T05:37:22.011Z",
+      "updatedAt": "2026-08-17T06:14:00.363Z"
+    },
+    {
+      "_id": "p_1786945068928_oucu00",
+      "caption": "<div>【圖文時間】 《宇希時間》</div><div><br></div><div><div>有些成長，不是變得更會撐，<br>而是終於願意承認：我也會累。</div><div><br></div><div>你不必永遠當那個不讓人失望的好孩子。<br>偶爾停下來，讓別人拉你一把，當個對自己好的孩子，也沒關係。</div><div><br></div><div>#宇希的貓 #宇希 #求助</div><div><br></div><div><br></div></div>",
+      "time": "18:00",
+      "canvaUrl": "https://www.canva.com/design/DAHNdqdK6aI/PiMT2vlLGuDlWm3KmDjn9g/view?utm_content=DAHNdqdK6aI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=ha7005fd718",
+      "ratio": "1-1",
+      "theme": "圖文時間",
+      "title": "宇希時間",
+      "status": "draft",
+      "createdAt": "2026-08-17T05:37:48.928Z",
+      "updatedAt": "2026-08-17T06:23:01.508Z"
+    },
+    {
+      "_id": "p_1786945105670_5r17eq",
+      "caption": "<div>【晚上多讀一點點】 《尋找蜘蛛：日本暢銷超過36萬冊，西加奈子的生命故事》</div><div><br></div>",
+      "time": "20:00",
+      "canvaUrl": "https://www.canva.com/design/DAHShSQbS3c/YcbUv8x7y509GONJQl3wyw/view?utm_content=DAHShSQbS3c&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h6bd2aecc54",
+      "ratio": "4-5",
+      "theme": "晚上多讀一點點",
+      "title": "尋找蜘蛛：日本暢銷超過36萬冊，西加奈子的生命故事",
+      "status": "draft",
+      "createdAt": "2026-08-17T05:38:25.670Z",
+      "updatedAt": "2026-08-17T05:56:11.166Z"
+    }
+  ],
+  "2026-08-20": [
+    {
+      "_id": "p_1786946250105_015qg5",
+      "caption": "<div>【早上只讀一點點】 《如何愛你的負面情感》</div><div><br></div>",
+      "time": "08:00",
+      "canvaUrl": "https://www.canva.com/design/DAHIAn9ZAjc/7o2oh0IVtJHtZZmLgUE2qQ/view?utm_content=DAHIAn9ZAjc&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h25274b2131",
+      "ratio": "1-1",
+      "theme": "早上只讀一點點",
+      "title": "如何愛你的負面情感",
+      "status": "draft",
+      "createdAt": "2026-08-17T05:57:30.105Z",
+      "updatedAt": "2026-08-17T05:57:54.550Z"
+    },
+    {
+      "_id": "p_1786946302558_xeptw1",
+      "caption": "<div>【圖文時間】 《一次又一次又一次地重新開始》</div><div><br></div>",
+      "time": "18:00",
+      "canvaUrl": "https://www.canva.com/design/DAHQR64eSK8/NWkWK3kBG5tKMRZD2BdlOw/view?utm_content=DAHQR64eSK8&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h13c49b6a15",
+      "ratio": "4-5",
+      "theme": "圖文時間",
+      "title": "一次又一次又一次地重新開始",
+      "status": "draft",
+      "createdAt": "2026-08-17T05:58:22.558Z",
+      "updatedAt": "2026-08-17T05:58:22.558Z"
+    },
+    {
+      "_id": "p_1786946351554_k75tg5",
+      "caption": "<div>【晚上多讀一點點】 《台灣紀行：Team Taiwan必讀版》</div><div><br></div>",
+      "time": "20:00",
+      "canvaUrl": "https://www.canva.com/design/DAHOxOGf8AI/L8SBculmr__vfDzoLH1pqQ/view?utm_content=DAHOxOGf8AI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=ha306b68c8a",
+      "ratio": "4-5",
+      "theme": "晚上多讀一點點",
+      "title": "台灣紀行：Team Taiwan必讀版",
+      "status": "draft",
+      "createdAt": "2026-08-17T05:59:11.554Z",
+      "updatedAt": "2026-08-17T05:59:11.554Z"
     }
   ]
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-08-17T04:02:28.268Z",
+  "updatedAt": "2026-08-17T06:33:06.165Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z"
