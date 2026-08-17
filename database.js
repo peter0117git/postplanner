@@ -2055,7 +2055,7 @@ var externalDB = {
     },
     {
       "_id": "p_1786945012296_txwler",
-      "caption": "<div>【晚上多讀一點點】 《上帝不眨眼：50堂百萬人瘋傳的人生智慧》</div><div><br></div>",
+      "caption": "<div>【晚上多讀一點點】 《上帝不眨眼：50堂百萬人瘋傳的人生智慧》</div><div><br></div><div><div>你是否曾經歷過那樣的日子，一切原本都很順利，但你的心情卻突然糟透了？</div><div><br></div>\n<div>外在的環境完全不變，但你心中一切驟變。一些無以名狀的事情發生了，讓你突然發現自己置身在內心深處的幽谷。</div><div><br></div>\n<div>你很難形容感到低落的原因是什麼。可能是噪音、氣味或是別人的一句話。一件微不足道的小事，就讓你回到自己黑暗、恐懼和絕望的角落。一切發生得如此之快，你甚至都不知道這是怎麼發生的。或者有時候，你會覺得自己正在以慢動作向下墜落，卻停不下來。</div><div><br></div>\n<div>每個人的導火線可能不盡相同。對那些童年曾遭受虐待，又或是受到某種形式忽略的人來說，更是如此。</div><div><br></div>\n<div>對我來說，粉筆又或是牛奶盒的氣味等微不足道的小事，就能讓我陷入低谷。看到那些一年級時會坐的小摺疊椅、商店內哭泣的孩童、憤怒的父母在停車場裡拖著哭泣的幼童，還有暴力電影裡肉體碰撞的聲音，都能產生一樣的效果。</div><div><br></div>\n<div>在某些日子，上述任一項事物，就可以讓我掉進絕望的黑洞。我會突然感到恐懼、寂寞且孤獨。我稱呼這為「童年恐慌症」發作。</div><div><br></div>\n<div>我一瞬間就不再是一個可以正常生活的成人；我會突然變得脆弱、感到恐懼，而且不瞭解為什麼自己會變成這樣。</div>\n<div>有位過去曾為越戰老兵諮商的治療師告訴我，童年曾被虐待或被忽視的成人，可能會患有「創傷後壓力症候群」（post-traumatic stress）。童年時期的傷害會潛藏在我們身上許多年，就像是卡在身體裡的彈片一樣，不斷在我們身上發揮影響力。</div><div><br></div>\n<div>我過去要花上好幾天，才能掙脫這個黑洞。同時，我還是會去上班、準備晚餐、跟孩子玩，試著正常生活，但內心卻感覺在情緒崩潰的邊緣。只要有人再多刺激我一下，就會全盤瓦解。</div><div><br></div><div></div><div></div><div></div><div><div><div><div><div><div><div><div><div>學會如何讓自己擺脫這樣的困境。首先，你得先意識到自己被困住了。<span></span></div><div><br></div>\n<div>對我來說，只要發現我的情緒和剛剛發生的情況毫無關聯，就是個警訊。我學會了停住當下那一刻，就像看電影的時候按下暫停，然後問我自己：</div><div><br></div>\n<div>「等等，你是因為現在發生的事情而有這樣的反應嗎？還是因為過去的經驗？」</div><div><br></div>\n<div>我無法改變過去，但藉由改變我對過往經驗的反應，我可以改變現在。</div></div></div></div></div><div></div><div><div></div></div></div><div><div></div></div></div></div></div></div><div><br></div>",
       "time": "20:00",
       "canvaUrl": "https://www.canva.com/design/DAHN8Zb0McU/MsxVlDldfEWL2QqmrVsF_w/view?utm_content=DAHN8Zb0McU&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h63c79f6842",
       "ratio": "4-5",
@@ -2063,7 +2063,7 @@ var externalDB = {
       "title": "上帝不眨眼：50堂百萬人瘋傳的人生智慧",
       "status": "draft",
       "createdAt": "2026-08-17T05:36:52.296Z",
-      "updatedAt": "2026-08-17T05:36:52.296Z"
+      "updatedAt": "2026-08-17T07:01:31.744Z"
     }
   ],
   "2026-08-19": [
@@ -2093,7 +2093,7 @@ var externalDB = {
     },
     {
       "_id": "p_1786945105670_5r17eq",
-      "caption": "<div>【晚上多讀一點點】 《尋找蜘蛛：日本暢銷超過36萬冊，西加奈子的生命故事》</div><div><br></div>",
+      "caption": "<div>【晚上多讀一點點】 《#尋找蜘蛛：日本暢銷超過36萬冊，西加奈子的生命故事》</div><div><br></div><div><div>我的生命會就這麼結束嗎？<br>\n將來有沒有什麼可怕的事在等著我？<span></span></div><div><br></div>\n<div>我免不了這樣想。而且這樣的想法，很容易在我覺得最幸福的瞬間浮現。我不敢相信自己擁有這份幸運，正因為這樣，我害怕失去一切。</div><div><br></div>\n<div>我不禁思索，這究竟是種什麼樣的心情？不過這沒什麼特別，只是一種普通的情感。我們會百分之百受到情緒影響而感到幸福，也會因為同樣的情緒而畏懼失去。</div><div><br></div>\n<div>「這樣太幸福了，令人害怕。」究竟誰是第一位說出這句話的人呢？</div><div><br></div>\n<div>事實很簡單，我已經完全恢復正常生活了。縱使隱藏在恐懼下，我絕對不想放棄這種美好的日常。而且這種日常已經不可能跟以前一樣。我過著蘊含著未知恐懼的「新的日常」。</div>\n<div>蘇萊卡的伴侶喬恩‧巴蒂斯特，在二○二一年葛萊美獎獲得十一項提名，是史上第二，僅次於麥可‧傑克森與娃娃臉（Kenneth Brian Edmonds）。</div><div><br></div>\n<div>蘇萊卡在同年十一月經診斷癌症復發，而且這次的癌症比上次更棘手。就在喬恩‧巴蒂斯特入圍當天，蘇萊卡展開第二次化療。而就在接受第二次骨髓移植的前一天，她跟喬恩結婚了。</div><div><br></div>\n<div>喬恩‧巴蒂斯特在接受CBS採訪時表示：</div>\n<div>「這就像黑暗試圖將你吞噬。不過你只要朝向光明，專注於光亮，緊緊抓住光。」</div><div><br></div>\n<div>他的音樂實際上也洋溢著光。他的話本身也帶來光明，具體體現了光本身的力量。</div><div><br></div>\n<div>我想，專注於光並不等於消除黑暗。所謂光明因黑暗而存在，這幾乎是連說都不好意思的陳腔濫調，卻也是無法否認的事實。只要我們希望獲得幸福，又恐懼失去幸福，光明與黑暗就一直共存。</div><div><br></div>\n<div>人總有一天會死。</div><div><br></div>\n<div>我非常恐懼死亡，即使每個人都終將面對。我不想死。我覺得自己不會有感到「已經可以死了」的那天。這種不爭氣的恐懼，將會一直持續到死亡的瞬間，最後的最後吧。</div></div><div><br></div><div>#西加奈子 #生命 #死亡</div>",
       "time": "20:00",
       "canvaUrl": "https://www.canva.com/design/DAHShSQbS3c/YcbUv8x7y509GONJQl3wyw/view?utm_content=DAHShSQbS3c&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h6bd2aecc54",
       "ratio": "4-5",
@@ -2101,13 +2101,13 @@ var externalDB = {
       "title": "尋找蜘蛛：日本暢銷超過36萬冊，西加奈子的生命故事",
       "status": "draft",
       "createdAt": "2026-08-17T05:38:25.670Z",
-      "updatedAt": "2026-08-17T05:56:11.166Z"
+      "updatedAt": "2026-08-17T08:09:57.015Z"
     }
   ],
   "2026-08-20": [
     {
       "_id": "p_1786946250105_015qg5",
-      "caption": "<div>【早上只讀一點點】 《如何愛你的負面情感》</div><div><br></div>",
+      "caption": "<div>【早上只讀一點點】 《如何愛你的負面情感》</div><div><br></div><div><div>只要「拚命為自己以外的人加油」，就算外在的世界不會改變，內在的世界也會起變化。<span></span></div><div><br></div>\n<div>加油的對象不限於運動員和藝人，更包括家人、朋友。只要拚命地為其他人加油，就能讓心靈充滿生氣，人生瞬間變得豐盈。</div><div><br></div>\n<div>當我們找不到自己的立足之地時，往往會一股腦兒地想著「誰來救救我吧」，結果只是陷入愈來愈深的孤獨感之中。</div><div><br></div>\n<div>所謂孤獨，就是感覺不到與他人之間聯繫的狀態。感覺不到聯繫時，就是自己內在的愛變得無處可去的時候。</div><div><br></div>\n<div>所以，真心為自己以外的人加油，就能讓愛開始流動，進而從寂寞之中解放。</div><div><br></div>\n<div>現在請你回想一下。</div><div><br></div>\n<div>你是否有過這樣的經驗：當你一心一意支持的運動員有出色表現，並贏得勝利時，你也忍不住做出勝利姿勢，大喊：「贏了！」而且，你是否也從中得到了勇氣呢？</div><div><br></div>\n<div>當你最喜歡的藝人展現精湛的表演，或者贏得光榮的大獎時，你是否曾感到與有榮焉？</div><div><br></div>\n<div>當我們打從心底為他人加油時，就不會感到孤獨。這是因為我們內心傳遞出去的愛的連線，可以聯繫到對方身上。</div><div><br></div>\n<div>自你的內在盈溢而出的愛，就是具有這麼大的力量。</div><div><br></div><div>#負面情感 #愛 #大田出版</div></div><div><br></div>",
       "time": "08:00",
       "canvaUrl": "https://www.canva.com/design/DAHIAn9ZAjc/7o2oh0IVtJHtZZmLgUE2qQ/view?utm_content=DAHIAn9ZAjc&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h25274b2131",
       "ratio": "1-1",
@@ -2115,19 +2115,19 @@ var externalDB = {
       "title": "如何愛你的負面情感",
       "status": "draft",
       "createdAt": "2026-08-17T05:57:30.105Z",
-      "updatedAt": "2026-08-17T05:57:54.550Z"
+      "updatedAt": "2026-08-17T08:14:23.789Z"
     },
     {
       "_id": "p_1786946302558_xeptw1",
       "caption": "<div>【圖文時間】 《一次又一次又一次地重新開始》</div><div><br></div>",
       "time": "18:00",
       "canvaUrl": "https://www.canva.com/design/DAHQR64eSK8/NWkWK3kBG5tKMRZD2BdlOw/view?utm_content=DAHQR64eSK8&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h13c49b6a15",
-      "ratio": "4-5",
+      "ratio": "1-1",
       "theme": "圖文時間",
       "title": "一次又一次又一次地重新開始",
       "status": "draft",
       "createdAt": "2026-08-17T05:58:22.558Z",
-      "updatedAt": "2026-08-17T05:58:22.558Z"
+      "updatedAt": "2026-08-17T08:42:58.972Z"
     },
     {
       "_id": "p_1786946351554_k75tg5",
@@ -2145,7 +2145,7 @@ var externalDB = {
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-08-17T06:33:06.165Z",
+  "updatedAt": "2026-08-17T08:44:02.612Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z"
