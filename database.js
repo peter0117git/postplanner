@@ -2031,7 +2031,7 @@ var externalDB = {
   "2026-08-18": [
     {
       "_id": "p_1786939168481_i6fpn2",
-      "caption": "<div>【早上只讀一點點】 《一次又一次又一次地重新開始》</div><div><div><br></div><div><div>孩童看到麻雀。在他懂得「麻雀」這兩個字之前，只有純然的專注，那專注完整、鮮明、毫無疑問。</div><div>我們已經失去這種目光。我們為萬物命名，為它們分門別類。每個定義都在我們肩上添加些許負擔，影響下一刻所見。</div><div>如果我們能用全新的角度再看一次呢？正如英國作家赫胥黎所說：「輕輕地，孩子，輕輕地。」讓我們更輕柔地擁抱自己的覺知。</div><div>看見之後不急著定義，躍然欲動的生命力就等著你。</div><div><br></div><div>#大田出版</div><div>#會好起來的</div><div><br></div></div></div>",
+      "caption": "<div>【早上只讀一點點】 《#一次又一次又一次地重新開始》</div><div><br></div><div><div><div>我能掌控的</div><div>是我的觀點、</div><div>我的態度、希望、渴望、</div><div>如何消磨閒暇時光，</div><div>是我要閱讀哪些書、</div><div>我吃什麼、喝什麼，</div><div>我與誰共度時光。</div><div>無可掌控的</div><div>是其餘萬事萬物⋯⋯</div><div>我的原生家族、我的高矮胖瘦，</div><div>天候變化、世界局勢，</div><div>別人對我的看法，</div><div>人生重大事件的轉折變化。</div><div>我致力於我所能掌控之事：</div><div>好比我對形勢處境的看法、</div><div>如何因應，</div><div>又該採取哪些措施。</div></div><div><div><br></div><div>#大田出版</div><div>#會好起來的</div><div><br></div></div></div>",
       "time": "08:00",
       "canvaUrl": "https://www.canva.com/design/DAHSKSY_YvY/J-v4e8drMxkO_n9hnt5SNg/view?utm_content=DAHSKSY_YvY&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h3f40555dbb",
       "ratio": "4-5",
@@ -2039,7 +2039,7 @@ var externalDB = {
       "title": "一次又一次又一次地重新開始",
       "status": "draft",
       "createdAt": "2026-08-17T03:59:28.481Z",
-      "updatedAt": "2026-08-17T03:59:39.480Z"
+      "updatedAt": "2026-08-17T09:58:50.070Z"
     },
     {
       "_id": "p_1786944928979_hyoz4l",
@@ -2145,7 +2145,7 @@ var externalDB = {
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-08-17T08:44:02.612Z",
+  "updatedAt": "2026-08-17T10:00:19.298Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z"
