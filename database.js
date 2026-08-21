@@ -2212,20 +2212,32 @@ var externalDB = {
     {
       "_id": "p_1787213098519_aq7qv5",
       "caption": "<div><div>【圖文時間】《會好起來的，就算不是現在》</div></div><div><br></div><div><div>人生有時不必非理出個道理不可。</div><div>（有時就是毫無道理可言）</div></div><div><br></div><div><div><span style=\"background-color:rgba(232, 196, 84, 0.5)\">小編：像是人為什麼要上班</span><span></span></div><div>．．．．．</div></div><div><div>比起振作，我更需要接受現狀。這本書帶我從低潮中復原</div><div>__迷誠品推薦．長踞誠品外文書排行榜</div></div><div><br></div><div><div>★讓譯者、美術設計與編輯都愛不釋手的動人作品</div><div>★特別邀請IG 人氣圖文作家luckylulu中文手寫字</div></div><div><br></div><div><div>圖文作家亞歷珊卓拉‧歐拉諾示範「在哪裡跌倒，就在那裡休息一下」哲學，她用圖文為自己寫了一封特別的情書，告訴自己，不必躲藏悲傷，不必急著好起來，不開心的那一天，也就是開始改變的那一天。</div><div>-</div><div><span>#luckylulu</span>  <span>#療癒圖文</span>  <span>#大田出版 #上班</span></div></div>",
-      "time": "08:00",
+      "time": "18:00",
       "canvaUrl": "https://www.canva.com/design/DAHS5Sym27Q/cOSkFGLNkhWsN6Wcbpt5RA/view?utm_content=DAHS5Sym27Q&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hab83e077ce",
       "ratio": "4-5",
       "theme": "圖文時間",
       "title": "一次又一次又一次地重新開始",
       "status": "draft",
       "createdAt": "2026-08-20T08:04:58.519Z",
-      "updatedAt": "2026-08-21T06:24:24.930Z"
+      "updatedAt": "2026-08-21T06:26:48.578Z"
+    },
+    {
+      "_id": "p_1787293600141_a81vo5",
+      "caption": "<div>【早上只讀一點點】 《最強提問力：問更好的問題，獲得更棒的答案》</div><div><br></div><div>#最強提問力</div><div><br></div><div><div><div>練習：不要表達贊同或不贊同</div><div><br></div></div><div><div>下次你聽人交談的時候，想辦法用「自己的想法完全不重要」的心態去聽。去聽對方用了哪些詞語，觀察他們自相矛盾的地方，把注意力放在他們反駁時的邏輯，留意所有可疑的推論。聽出他們在描述事物的時候是怎麼說的，其中有什麼問題，找出他們掩蓋的元素，還有那些感覺毫無根據或者廢話連篇的論點。試著不要去煩惱內容，不要去想自己到底認不認同。</div><div><br></div></div><div><div>在你把自己從對話中像這樣抽離、把自己的意見放到一邊去的時候，就能從對方的思緒中找到很多收穫。只要耐心等待，對話中肯定會出現一個能讓你說出「你的想法」、解釋你的觀點的時機。不過，隨著你越來越擅長這樣的聆聽方式，你會越來越覺得不需要分享自己的看法。</div><div>---</div><div>《最強提問力》</div><div><span>#埃爾克</span>維斯<span>&nbsp;</span>#大田出版</div><div>購書連結請見留言~</div></div></div><div><br></div>",
+      "time": "08:00",
+      "canvaUrl": "https://www.canva.com/design/DAHS5oSzmIk/v1RRU0cBwIaE-_vZ8rbQJw/view?utm_content=DAHS5oSzmIk&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hbb21de1954",
+      "ratio": "4-5",
+      "theme": "早上只讀一點點",
+      "title": "最強提問力：問更好的問題，獲得更棒的答案",
+      "status": "draft",
+      "createdAt": "2026-08-21T06:26:40.141Z",
+      "updatedAt": "2026-08-21T06:34:47.472Z"
     }
   ]
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-08-21T06:24:33.867Z",
+  "updatedAt": "2026-08-21T06:41:40.840Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z"
