@@ -2232,12 +2232,24 @@ var externalDB = {
       "status": "draft",
       "createdAt": "2026-08-21T06:26:40.141Z",
       "updatedAt": "2026-08-21T06:34:47.472Z"
+    },
+    {
+      "_id": "p_1787294524622_hb1iw7",
+      "caption": "<div>【晚上多讀一點點】 《#尋找蜘蛛：日本暢銷超過36萬冊，西加奈子的生命故事》</div><div><br></div>",
+      "time": "20:00",
+      "canvaUrl": "https://www.canva.com/design/DAHShSQbS3c/YcbUv8x7y509GONJQl3wyw/view?utm_content=DAHShSQbS3c&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h6bd2aecc54",
+      "ratio": "4-5",
+      "theme": "晚上多讀一點點",
+      "title": "#尋找蜘蛛：日本暢銷超過36萬冊，西加奈子的生命故事",
+      "status": "draft",
+      "createdAt": "2026-08-21T06:42:04.622Z",
+      "updatedAt": "2026-08-21T06:42:04.622Z"
     }
   ]
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-08-21T06:41:40.840Z",
+  "updatedAt": "2026-08-21T06:48:41.082Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z"
