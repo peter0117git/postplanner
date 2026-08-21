@@ -2119,7 +2119,7 @@ var externalDB = {
     },
     {
       "_id": "p_1786946302558_xeptw1",
-      "caption": "<div>【圖文時間】 《一次又一次又一次地重新開始》</div><div><br></div><div><div>　曾幾何時，我總在心裡默念「我做不到」。這不是吹鑼打鼓昭告世人的自我懷疑，而是每天在牆角的喃喃自語：我太老、太遲，不是他們要的人。</div><div>　　自我懷疑來自過去的創傷，在失敗、遭到批評，或被比較的時候刻進我們的靈魂裡；是外界的期待，加上自己擔心無法達標所造成的陰影。年少時轉瞬即逝的念頭隨著歲月鈣化，成為我們審視自身能力與潛力的濾鏡。</div><div>　　這些無意識的念頭更像背景音樂，是日子過得謹小慎微的配樂。我把這些自我設限當成舊毛衣，因為熟悉、舒服，總是不自覺地穿上，以致我視而不見，非得等人問起為何在七月還穿著羊毛衫。</div></div><div><br></div><div>#大田出版 #懷疑 #想法</div>",
+      "caption": "<div>【圖文時間】 《#一次又一次又一次地重新開始》</div><div><br></div><div><div>　曾幾何時，我總在心裡默念「我做不到」。這不是吹鑼打鼓昭告世人的自我懷疑，而是每天在牆角的喃喃自語：我太老、太遲，不是他們要的人。</div><div>　　自我懷疑來自過去的創傷，在失敗、遭到批評，或被比較的時候刻進我們的靈魂裡；是外界的期待，加上自己擔心無法達標所造成的陰影。年少時轉瞬即逝的念頭隨著歲月鈣化，成為我們審視自身能力與潛力的濾鏡。</div><div>　　這些無意識的念頭更像背景音樂，是日子過得謹小慎微的配樂。我把這些自我設限當成舊毛衣，因為熟悉、舒服，總是不自覺地穿上，以致我視而不見，非得等人問起為何在七月還穿著羊毛衫。</div></div><div><br></div><div>#大田出版 #懷疑 #想法 #會好起來的</div>",
       "time": "18:00",
       "canvaUrl": "https://www.canva.com/design/DAHSKSY_YvY/J-v4e8drMxkO_n9hnt5SNg/view?utm_content=DAHSKSY_YvY&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h3f40555dbb",
       "ratio": "4-5",
@@ -2127,7 +2127,7 @@ var externalDB = {
       "title": "一次又一次又一次地重新開始",
       "status": "draft",
       "createdAt": "2026-08-17T05:58:22.558Z",
-      "updatedAt": "2026-08-20T06:59:00.805Z"
+      "updatedAt": "2026-08-20T09:27:12.725Z"
     },
     {
       "_id": "p_1786946351554_k75tg5",
@@ -2145,7 +2145,7 @@ var externalDB = {
   "2026-08-21": [
     {
       "_id": "p_1787207515362_cryjm9",
-      "caption": "<div>【圖文時間】 《幸福就是吃飯睡覺等待 vol.3 #搶先讀》</div><div><br></div><div><div>有時候，不想接電話、不想說話，<br>只是想安靜地待著。</div><div>不是冷漠，也不是逃避，<br>只是開始更在意自己的感受，<br>知道什麼時候該停下來、什麼時候該休息。</div><div>順著自己的意思，<br>好好照顧自己的情緒，<br>也是重新重視自己的一種方式。</div><div><br></div><div>《幸福就是吃飯睡覺等待 vol.3》<br>9月1日，全台上市。</div><div><br></div><div>#幸福就是吃飯睡覺等待 #水凪トリ #大田出版 #療癒 #漫畫</div></div>",
+      "caption": "<div>【圖文時間】 《幸福就是吃飯睡覺等待 vol.3 #搶先讀》</div><div><br></div><div><div>有時候，不想接電話、不想說話，<br>只是想安靜地待著。</div><div>不是冷漠，也不是逃避，<br>只是開始更在意自己的感受，<br>知道什麼時候該停下來、什麼時候該休息。</div><div>順著自己的意思，</div><div>好好照顧自己的情緒，<br>也是重新重視自己的一種方式。</div><div><br></div><div>《幸福就是吃飯睡覺等待 vol.3》<br>9月1日，全台上市。</div><div><br></div><div>#幸福就是吃飯睡覺等待 #水凪トリ #大田出版 #療癒 #漫畫</div></div>",
       "time": "18:00",
       "canvaUrl": "https://www.canva.com/design/DAHSzB4HqsA/yYi2a6HFRv8VTjC7_wuZ8A/view?utm_content=DAHSzB4HqsA&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h70d6b7631b",
       "ratio": "1-1",
@@ -2153,11 +2153,11 @@ var externalDB = {
       "title": "幸福就是吃飯睡覺等待 vol.3搶先讀",
       "status": "draft",
       "createdAt": "2026-08-20T06:31:55.362Z",
-      "updatedAt": "2026-08-20T07:31:12.366Z"
+      "updatedAt": "2026-08-20T09:38:52.678Z"
     },
     {
       "_id": "p_1787211322568_7qz25x",
-      "caption": "<div>【早上只讀一點點】 《現在，就是療癒你的開始》</div><div><br></div><div><div>在你感覺自己永遠無法度過這個季節、這個時期、這個過渡期的日子裡，請記住你曾經翻越過的所有高山。請記住那些你堅信焦慮永遠不會消失、自己永遠無法逃離此刻處境的每一個夜晚。</div><div><br></div><div>無論你是否有意識到，那些日子已經過去了。你甚至什麼事都不用做，快樂就會自然而然地從日常生活中湧現。有那麼一天，一件小事讓你感覺到些許的輕鬆，然後又再輕鬆了一些。你等待著。意識到一切總會好起來的，即便還是有些覺得不那麼好的時候。你任憑海浪洶湧而上，然後任憑海浪退去。</div><div><br></div><div>無論你是否有意識到，你都找到了勇氣。你做到一些你曾經不相信自己能夠做到的事情，哪怕只是些小事，例如醒來面對每一個日子。你感受過無法承擔的糟糕感覺，你承受過無法預先想像得到的損失。現實喚醒了你，而現實有時是冷酷的，有時是艱難的，有時是殘酷而不公的。</div><div><br></div><div>但有時也甜蜜得令你無法想像。因為在你哀悼悲傷之事時，也發現了生命裡的柔軟。你發現去愛最親近的人有多麼重要，他們是多麼珍貴。你開始重視以前根本沒有看到的東西。你開始知道自己無所欠缺，因為決定自身是否有所欠缺的選擇權，就握在你的手上。</div><div><br></div><div>無論你是否有意識到，你都變得有彈性。你探索了自己的心所能容納的極限，以及它所能處理的程度。你發現自己的力量是無限的，只是不知道如果沒有經過測試，它是否還能如此強大。</div><div><br></div><div>隨著時間過去，曾經的不可能變得輕而易舉。</div><div><br></div><div>你如今的生活，是你過去的夢想。你現在能做的事情，是你過去期盼能夠做的。你生活裡的那些人，是你過去曾經透過窗戶凝望多年的對象。以前的你總是想著，他們會進入我的生命嗎？你的生命中，會出現這麼一個能讓你感覺獲得深深理解的人嗎？</div><div><br></div><div>你不一定要擁有一切，才能把任何事情做到最好，因為美好是我們選擇看到的。它並不總是能夠實現或找到的。</div><div><br></div><div>因此，如果有一天，你覺得自己永遠也脫離不了當下的處境時，請記住你已經走了多少路途、經歷了多少難題。</div></div><div><br></div><div>#努力 #大田出版</div>",
+      "caption": "<div>【早上只讀一點點】 《現在，就是療癒你的開始》</div><div><br></div><div><div>在你感覺自己永遠無法度過這個季節、這個時期、這個過渡期的日子裡，請記住你曾經翻越過的所有高山。請記住那些你堅信焦慮永遠不會消失、自己永遠無法逃離此刻處境的每一個夜晚。</div><div><br></div><div>無論你是否有意識到，那些日子已經過去了。你甚至什麼事都不用做，快樂就會自然而然地從日常生活中湧現。有那麼一天，一件小事讓你感覺到些許的輕鬆，然後又再輕鬆了一些。你等待著。意識到一切總會好起來的，即便還是有些覺得不那麼好的時候。你任憑海浪洶湧而上，然後任憑海浪退去。</div><div><br></div><div>無論你是否有意識到，你都找到了勇氣。你做到一些你曾經不相信自己能夠做到的事情，哪怕只是些小事，例如醒來面對每一個日子。你感受過無法承擔的糟糕感覺，你承受過無法預先想像得到的損失。現實喚醒了你，而現實有時是冷酷的，有時是艱難的，有時是殘酷而不公的。</div><div><br></div><div>但有時也甜蜜得令你無法想像。因為在你哀悼悲傷之事時，也發現了生命裡的柔軟。你發現去愛最親近的人有多麼重要，他們是多麼珍貴。你開始重視以前根本沒有看到的東西。你開始知道自己無所欠缺，因為決定自身是否有所欠缺的選擇權，就握在你的手上。</div><div><br></div><div>無論你是否有意識到，你都變得有彈性。你探索了自己的心所能容納的極限，以及它所能處理的程度。你發現自己的力量是無限的，只是不知道如果沒有經過測試，它是否還能如此強大。</div><div><br></div><div>隨著時間過去，曾經的不可能變得輕而易舉。</div><div><br></div><div>你如今的生活，是你過去的夢想。你現在能做的事情，是你過去期盼能夠做的。你生活裡的那些人，是你過去曾經透過窗戶凝望多年的對象。以前的你總是想著，他們會進入我的生命嗎？你的生命中，會出現這麼一個能讓你感覺獲得深深理解的人嗎？</div><div><br></div><div>你不一定要擁有一切，才能把任何事情做到最好，因為美好是我們選擇看到的。它並不總是能夠實現或找到的。</div><div><br></div><div>因此，如果有一天，你覺得自己永遠也脫離不了當下的處境時，請記住你已經走了多少路途、經歷了多少難題。</div></div><div><br></div><div>摘自p.161~162</div><div><br></div><div>#努力 #大田出版</div>",
       "time": "08:00",
       "canvaUrl": "https://www.canva.com/design/DAHOIOwRm7s/Lz1TSDvoXLoL1u2SxQ6uTg/view?utm_content=DAHOIOwRm7s&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h16f553c51d",
       "ratio": "4-5",
@@ -2165,11 +2165,11 @@ var externalDB = {
       "title": "現在，就是療癒你的開始",
       "status": "draft",
       "createdAt": "2026-08-20T07:35:22.568Z",
-      "updatedAt": "2026-08-20T07:44:36.579Z"
+      "updatedAt": "2026-08-20T09:37:07.702Z"
     },
     {
       "_id": "p_1787211996645_61cph4",
-      "caption": "<div>【晚上多讀一點點】 《外面是夏天》新書預告</div><div><br></div><div>#九月一號上市</div><div>#金愛爛</div><div><br></div><div><div>外面是夏天，但我的靈魂正在下雪。</div><div><br></div><div>某部分的我消失了，而且找不到挽回的辦法，</div><div><br></div><div>該怎麼從失去摯愛的傷痛中康復，該怎麼嚥下自己的脆弱與無知，</div><div><br></div><div>我想要往外面走去，往那豐饒耀眼的夏天走去，</div><div><br></div><div>我願意交換一切，只求時間能快點蛻去我痛苦的皮。</div><div><br></div><div>&nbsp;</div><div><br></div><div>喪子的夫妻、初嘗虛榮的貧窮少年、替前輩揹鍋的年輕助教，</div><div><br></div><div>正要綻放的生命突然襲來寒冬……。</div><div><br></div><div>七個關於蛻變的故事，獻給所有與社會有時間差的生命們。</div><div><br></div><div>&nbsp;</div><div><br></div><div>第四十八屆東仁文學獎得獎作品《外面是夏天》，是韓國作家金愛爛的第四部短篇小說集，她以＜沉默的未來＞成為李箱文學獎最年輕的得主，又以＜您想去哪裡呢？＞榮獲第八屆青年作家獎。本書在韓國銷量更是突破二十五萬冊，是金愛爛叫好又叫座的一部經典作品。</div><div><br></div><div><br></div><div>金愛爛是你遇見之後，就會愛上的小說家</div><div><br></div><div>她的文字，連金泰梨都愛不釋手！</div><div><br></div><div>「她最擅長描繪難以啟齒卻又無法迴避的情感。」——韓國百想視后 金泰梨</div><div><br></div><div>「一位值得等待的作家。」－－韓國讀者Geulwolmaya</div><div><br></div><div>「讀完之後，我感覺全身都濕透了。」－－韓國讀者Oktaeng</div><div><br></div><div>「我喜歡把《外面是夏天》比作一個傷心失去博物館，博物館裡陳列的七個短篇，講述了生活中無法避免的失去。」－－中國讀者 樹上的兔女爵</div><div><br></div><div>「讀完第一篇故事後，我立刻起了雞皮疙瘩……每一個字句都讓我發出『哇』的讚嘆|，我不知道該如何形容這種感覺。我很難過，因為我覺得生活中一定也有人經歷過類似的痛苦。」－－韓國讀者 d**********0</div><div><br></div><div>「看完《你的夏天還好嗎？》緊接著看《外面是夏天》，作家本人的成長特别明顯。上一本充滿各種各樣的氣息，更敏感；這本就有那種『慢性心绞痛』的感覺，你看著看著就覺得怎麼回事？心口流血了。」－－中國讀者 廿姨太</div></div><div><br></div><div>#大田出版</div>",
+      "caption": "<div>【晚上多讀一點點】 《外面是夏天》新書預告</div><div><br></div><div>#九月一號上市</div><div>#金愛爛</div><div><br></div><div><div>外面是夏天，但我的靈魂正在下雪。</div><div><br></div><div>某部分的我消失了，而且找不到挽回的辦法，</div><div><br></div><div>該怎麼從失去摯愛的傷痛中康復，該怎麼嚥下自己的脆弱與無知，</div><div><br></div><div>我想要往外面走去，往那豐饒耀眼的夏天走去，</div><div><br></div><div>我願意交換一切，只求時間能快點蛻去我痛苦的皮。</div><div><br></div><div>&nbsp;</div><div><br></div><div>喪子的夫妻、初嘗虛榮的貧窮少年、替前輩揹鍋的年輕助教，</div><div><br></div><div>正要綻放的生命突然襲來寒冬……。</div><div><br></div><div>七個關於蛻變的故事，獻給所有與社會有時間差的生命們。</div><div><br></div><div>&nbsp;</div><div><br></div><div>第四十八屆東仁文學獎得獎作品《外面是夏天》，是韓國作家金愛爛的第四部短篇小說集，她以＜沉默的未來＞成為李箱文學獎最年輕的得主，又以＜您想去哪裡呢？＞榮獲第八屆青年作家獎。本書在韓國銷量更是突破二十五萬冊，是金愛爛叫好又叫座的一部經典作品。</div><div><br></div><div><br></div><div>金愛爛是你遇見之後，就會愛上的小說家</div><div><br></div><div>她的文字，連金泰梨都愛不釋手！</div><div><br></div><div>「她最擅長描繪難以啟齒卻又無法迴避的情感。」——韓國百想視后 金泰梨</div><div><br></div><div>「一位值得等待的作家。」－－韓國讀者Geulwolmaya</div><div><br></div><div>「讀完之後，我感覺全身都濕透了。」－－韓國讀者Oktaeng</div><div><br></div><div>「我喜歡把《外面是夏天》比作一個傷心失去博物館，博物館裡陳列的七個短篇，講述了生活中無法避免的失去。」－－中國讀者 樹上的兔女爵</div><div><br></div><div>「讀完第一篇故事後，我立刻起了雞皮疙瘩……每一個字句都讓我發出『哇』的讚嘆|，我不知道該如何形容這種感覺。我很難過，因為我覺得生活中一定也有人經歷過類似的痛苦。」－－韓國讀者 d**********0</div><div><br></div><div>「看完《你的夏天還好嗎？》緊接著看《外面是夏天》，作家本人的成長特别明顯。上一本充滿各種各樣的氣息，更敏感；這本就有那種『慢性心绞痛』的感覺，你看著看著就覺得怎麼回事？心口流血了。」－－中國讀者 廿姨太</div></div><div><br></div><div>#大田出版 #你的夏天還好嗎</div>",
       "time": "20:00",
       "canvaUrl": "https://www.canva.com/design/DAHSz8hxrUI/cA3ubBQXY76F2KFkNL9CDA/view?utm_content=DAHSz8hxrUI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h9e71af940d",
       "ratio": "4-5",
@@ -2177,7 +2177,7 @@ var externalDB = {
       "title": "外面是夏天",
       "status": "draft",
       "createdAt": "2026-08-20T07:46:36.645Z",
-      "updatedAt": "2026-08-20T08:32:48.630Z"
+      "updatedAt": "2026-08-20T08:48:19.418Z"
     }
   ],
   "2026-08-22": [
@@ -2211,21 +2211,21 @@ var externalDB = {
   "2026-08-24": [
     {
       "_id": "p_1787213098519_aq7qv5",
-      "caption": "<div>【早上只讀一點點】 《一次又一次又一次地重新開始》</div><div><br></div><div><div>真理永遠知道在何處落腳，</div><div>一定往下，一定深入。</div><div>我不再害怕這些深淵。</div><div>只怕太輕浮，</div><div>無法沉到最底。</div><div>有些重擔值得背負。</div><div>有些深淵值得探尋。</div></div><div><br></div><div>#大田出版</div>",
+      "caption": "<div><div>【圖文時間】《會好起來的，就算不是現在》</div></div><div><br></div><div><div>人生有時不必非理出個道理不可。</div><div>（有時就是毫無道理可言）</div></div><div><br></div><div><div><span style=\"background-color:rgba(232, 196, 84, 0.5)\">小編：像是人為什麼要上班</span><span></span></div><div>．．．．．</div></div><div><div>比起振作，我更需要接受現狀。這本書帶我從低潮中復原</div><div>__迷誠品推薦．長踞誠品外文書排行榜</div></div><div><br></div><div><div>★讓譯者、美術設計與編輯都愛不釋手的動人作品</div><div>★特別邀請IG 人氣圖文作家luckylulu中文手寫字</div></div><div><br></div><div><div>圖文作家亞歷珊卓拉‧歐拉諾示範「在哪裡跌倒，就在那裡休息一下」哲學，她用圖文為自己寫了一封特別的情書，告訴自己，不必躲藏悲傷，不必急著好起來，不開心的那一天，也就是開始改變的那一天。</div><div>-</div><div><span>#luckylulu</span>  <span>#療癒圖文</span>  <span>#大田出版 #上班</span></div></div>",
       "time": "08:00",
-      "canvaUrl": "https://www.canva.com/design/DAHS0HyXbHk/-VKNdUiPVrkh-y4xHLJmsA/view?utm_content=DAHS0HyXbHk&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h753fc61a3b",
+      "canvaUrl": "https://www.canva.com/design/DAHS5Sym27Q/cOSkFGLNkhWsN6Wcbpt5RA/view?utm_content=DAHS5Sym27Q&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hab83e077ce",
       "ratio": "4-5",
-      "theme": "早上只讀一點點",
+      "theme": "圖文時間",
       "title": "一次又一次又一次地重新開始",
       "status": "draft",
       "createdAt": "2026-08-20T08:04:58.519Z",
-      "updatedAt": "2026-08-20T08:14:59.868Z"
+      "updatedAt": "2026-08-21T06:24:24.930Z"
     }
   ]
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-08-20T08:41:11.401Z",
+  "updatedAt": "2026-08-21T06:24:33.867Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z"
