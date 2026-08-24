@@ -2235,7 +2235,7 @@ var externalDB = {
     },
     {
       "_id": "p_1787294524622_hb1iw7",
-      "caption": "<div>【晚上多讀一點點】 《#尋找蜘蛛：日本暢銷超過36萬冊，西加奈子的生命故事》</div><div><br></div>",
+      "caption": "<div>【晚上多讀一點點】 《 #尋找蜘蛛：日本暢銷超過36萬冊，西加奈子的生命故事》內文摘錄｜之一</div><div><br></div><div><div>如果注視著一個水滴，它會緩緩地，彷彿播放慢動作般墜落。不過，如果轉而觀察整體，像波浪移動之快，之前的緩慢將令人難以置信。<span></span></div><div><br></div>\n<div>浪花在瞬間變成閃亮的白色，又像水滴一樣，立刻融入藍色的海洋。不過雖說是藍色也有各種樣貌，有時看起來幾乎像綠色，也有些部分是混濁的褐色，但是當我轉而望向整體時，那就是我所熟悉的海水的藍。</div><div><br></div>\n<div>我每天都會來到離家十分鐘遠的海灘，幾乎每天都來。大海在天氣好的時候會波光粼粼，在雨天會適切地保持平靜。我有時會拍攝海洋的影片寄給朋友，有時坐在擱在海灘的原木上，靜靜眺望海洋。</div><div><br></div>\n<div>在海的另一頭，可看見高樓大廈林立的市區。在更遠的前方，則是頂端有積雪的群山。</div><div><br></div>\n<div>在溫哥華，城市與自然共存。不過雖說是城市，其實規模很迷你。如果來溫哥華觀光，大概只要一天就可以遊覽完。</div><div><br></div>\n<div>我是在二○一九年十二月來到這座城市。稍早在五月時，我跟先生帶著才兩歲的S來旅行。當時我們已經在考慮移民溫哥華，因此趁著旅行時順便來看看。</div><div><br></div>\n<div>在出發前，我們就聽說這個城市對兒童很友善，而實際上也的確如此。S根本無法保持安靜，在電車裡哭鬧，在餐廳裡興奮地發出聲音，但是沒有人露出嫌惡的表情。</div><div><br></div>\n<div>嬰兒車能夠很輕鬆地推上公車，上車後也一定會有人讓座。走在街上時，路過的人會對S打招呼說：「嗨，老兄！」</div>\n<div>當時對龜派氣功正著迷的S攤開雙手，迎面走過的兩位年輕女性，很配合地發出「啊啊啊啊！」的聲音，假裝被擊敗了。</div><div><br></div>\n<div>在那次旅行時，我也曾來到這座海灘，那天的風很強。也就在同一天，我第一次遇到紀子。</div><div><br></div>\n<div>紀子當時告訴我，空是她的養子，能夠跟這麼好的孩子成為一家人，自己真的很幸運。空是個敏銳易感的孩子，他能夠清楚地察覺自己不擅長什麼，以及喜歡什麼，不會隨波逐流。</div><div><br></div>\n<div>有時候她試著從空的角度去看世界，似乎會有所不同。這讓她重新意識到，原來我們生存在一個相當可怕卻又美麗的世界。</div><div><br></div>\n<div>我跟紀子，以及她所介紹的真希，在海灘旁的遊樂場看著孩子們玩耍。置身在遊樂場裡的家長，都稍微隔著一段距離留意小孩。</div><div><br></div>\n<div>即使孩子們發生爭吵，家長也幾乎不會互相道歉。在兒童的世界，也有自己的人格與規則，所以父母不會過度介入，不加以干涉。</div><div><br></div>\n<div>的確，除非孩子的年紀還很小，否則有很多人會像對待大人似地跟他們說話。或許正因為這樣，加拿大的孩子不論幾歲，談話對象的年齡有多大，都會明確地表達自己的想法。</div><div><br></div>\n<div>因為這裡的說話方式讓他們相信，自己的意見會受到尊重。</div></div><div><br></div><div>摘自p.57~59</div><div><br></div><div>#大田出版 #生存 #西加奈子</div>",
       "time": "20:00",
       "canvaUrl": "https://www.canva.com/design/DAHShSQbS3c/YcbUv8x7y509GONJQl3wyw/view?utm_content=DAHShSQbS3c&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h6bd2aecc54",
       "ratio": "4-5",
@@ -2243,45 +2243,45 @@ var externalDB = {
       "title": "#尋找蜘蛛：日本暢銷超過36萬冊，西加奈子的生命故事",
       "status": "draft",
       "createdAt": "2026-08-21T06:42:04.622Z",
-      "updatedAt": "2026-08-21T06:42:04.622Z"
+      "updatedAt": "2026-08-24T08:06:36.554Z"
     }
   ],
   "2026-08-25": [
     {
       "_id": "p_1787553475238_h0byww",
-      "caption": "<div>【早上只讀一點點】 《一次又一次又一次重新開始》</div><div><br></div>",
+      "caption": "<div>【早上只讀一點點】 《#一次又一次又一次重新開始》</div><div><br></div><div><div>很多時候，<br>我們以為人生只是剛好走到這裡。</div><div>但其實，每一個選擇、每一次行動，<br>都在慢慢把我們帶向不同的方向。</div><div><br></div><div>人生的點滴不是巧合，<br>而是回應你一路以來的所作所為。</div><div><br></div><div>小編:「就跟體重一樣...」</div><div><br></div><div>#大田出版 #會好起來的</div></div>",
       "time": "08:00",
-      "canvaUrl": "https://www.canva.com/design/DAHIqi-yONc/65fkKo4j1LRTKFBSvPF2rQ/view?utm_content=DAHIqi-yONc&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h63a83d9e70",
-      "ratio": "4-5",
+      "canvaUrl": "https://www.canva.com/design/DAHSKSY_YvY/J-v4e8drMxkO_n9hnt5SNg/view?utm_content=DAHSKSY_YvY&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h3f40555dbb",
+      "ratio": "1-1",
       "theme": "早上只讀一點點",
       "title": "一次又一次又一次重新開始",
       "status": "draft",
       "createdAt": "2026-08-24T06:37:55.238Z",
-      "updatedAt": "2026-08-24T06:37:55.238Z"
+      "updatedAt": "2026-08-24T08:21:33.789Z"
     },
     {
       "_id": "p_1787553519315_8yvowe",
-      "caption": "<div>【圖文時間】 《幸福就是吃飯睡覺等待 vol.3》</div><div><br></div>",
+      "caption": "<div>【圖文時間】 《幸福就是吃飯睡覺等待 vol.3 #搶先讀》</div><div><br></div><div><div>「好想請假……」</div><div>想休息、想喘口氣，<br>卻又忍不住先算了一下生活費。</div><div>有時候不是不想停下來，<br>只是「休息」也需要一點勇氣。</div><div><br></div><div>《幸福就是吃飯睡覺等待 vol.3》<br>9月1日全台上市！</div><div><br></div><div>#大田出版 #水凪トリ</div></div><div><br></div>",
       "time": "18:00",
       "canvaUrl": "https://www.canva.com/design/DAHSzB4HqsA/yYi2a6HFRv8VTjC7_wuZ8A/view?utm_content=DAHSzB4HqsA&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h70d6b7631b",
-      "ratio": "4-5",
+      "ratio": "1-1",
       "theme": "圖文時間",
       "title": "幸福就是吃飯睡覺等待 vol.3",
       "status": "draft",
       "createdAt": "2026-08-24T06:38:39.315Z",
-      "updatedAt": "2026-08-24T06:38:39.315Z"
+      "updatedAt": "2026-08-24T08:31:54.749Z"
     },
     {
       "_id": "p_1787553540831_11uqeg",
-      "caption": "<div>【晚上多讀一點點】 《不要再怪自己想太多：精神科醫師寫給總是不安的你》</div><div><br></div>",
+      "caption": "<div>【晚上多讀一點點】 《不要再怪自己想太多：精神科醫師寫給總是不安的你》</div><div><br></div><div>〈 「大人」之名的分量 〉</div><div><br></div><div><div>坦白說，十幾歲的時候，我非常討厭長大。二十歲對我來說，就像人生結束了一般，光想都覺得毛骨悚然。<span></span></div><div><br></div>\n<div>然而，曾經那麼害怕二十歲的我，現在已經六十多歲了。小時候覺得上了年紀就像走入人生的墳墓一樣，但現在反而覺得上了年紀的感覺更輕鬆、更美好。</div><div><br></div>\n<div>即使能重新回到年輕的時候，我也不願意再回去。因為我不想再經歷像針尖一樣敏感、徬徨及困惑的感覺。我喜歡現在這種稍微麻木、遲鈍的感覺，這讓我更加從容。</div><div><br></div>\n<div>但是，有時「大人」這個名詞，會讓我困擾。</div><div><br></div>\n<div>這是兒子上小學時的事情。有一天，他匆匆忙忙跑來問了我一個問題。但是我回答說：「嗯，我也不知道呢。」</div>\n<div>結果兒子說：「媽媽妳是大人，怎麼連這個都不知道呢？」然後轉身跑開了。</div><div><br></div>\n<div>我回說：「不知道很正常啊！怎麼可能什麼都知道。」</div>\n<div>雖然嘴巴上這麼說，但另一方面心裡卻很尷尬。其實，我也曾有過「大人就該什麼都知道」的想法。</div>\n<div>這樣看來，一旦我們年紀增長到一定程度後，這個世界就會像要我們付飯錢一樣，督促著我們要有與年齡相應的行為。</div>\n<div>跟弟弟妹妹吵架的時候，經常會被指責說：「身為姐姐，就要有姐姐的樣子，像個大人一樣。」如果想跟小時候一樣開玩笑的話，就會被罵說：「真不懂事。什麼時候才會有大人的樣子？」</div><div><br></div>\n<div>我又不是因為想要變老才變老的，也不是懇求別人讓我成為「大人」的，歲月它恣意地進入我的身體內，現在反而要我付出代價來償還。</div><div><br></div>\n<div>不僅如此，曾經養育我、照顧我的父母，以我已經長大為由，要求我必須要有相應的適齡行為，催促著我前進。</div>\n<div>所謂的適齡行為，就是達到那個年紀應該要有的樣子和行為標準。根據偏離這個期待的程度，我們可能被認為是「未達年齡要求的人」，或者是「已達年齡要求的人」。</div><div><br></div>\n<div>適齡行為與我所需承擔的責任和義務成正比。人們常說：「孩子要有孩子的樣子，大人要有大人的樣子。」</div><div><br></div>\n<div>區分這兩者的最大標準是行為方式是以自我為中心，還是以現實為中心。換句話說，按照快樂原則行動的就是孩子，按照現實原則行事的就是大人。</div>\n<div>如果孩子忍耐著想做的事情，過於考慮現實的種種，就會被稱為「小大人」；相反地，如果大人不顧現實，只做自己想做的事情，就會被稱為「不懂事的大人」。</div>\n<div>因此，孩子們認為大人很俗氣，是既沒有夢想也沒有浪漫，只關心現實的無趣的人。大人則被壓在自己必須符合的年齡行為標準下，感到困惑和壓力。</div><div><br></div>\n<div>如果不順應現實，就會被責罵為沒有達到符合年齡的要求；如果現實地行動，又會被譏諷為市儈。像這樣，對大人的適齡行為期待值就變得非常沉重。</div><div><br></div>\n<div>成為大人的那一刻起，「大人應該這樣」的命題，就成為一個沉重的負擔。</div>\n<div>我們對大人有很多期待。大人應該要找到一份好工作，好好賺錢，讓家人過得舒適，還應該要結婚，這樣才算成為真正的大人。</div><div><br></div>\n<div>另外，大人還要懂得如何成功。長大成人後，也應該能掌握一切，懂得如何好好地過日子。</div><div><br></div><div>摘自p59~61</div><div><br></div>\n<div>#大田出版 #成長 #大人 #小孩 #金惠男</div></div>",
       "time": "20:00",
-      "canvaUrl": "https://canva.link/ajgnslhvh966pcd",
-      "ratio": "4-5",
+      "canvaUrl": "https://www.canva.com/design/DAHN7xDu7lw/TUuELGCo_fNSKNaEF6Sn-Q/view?utm_content=DAHN7xDu7lw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h214f581df7",
+      "ratio": "1-1",
       "theme": "晚上多讀一點點",
       "title": "不要再怪自己想太多：精神科醫師寫給總是不安的你",
       "status": "draft",
       "createdAt": "2026-08-24T06:39:00.831Z",
-      "updatedAt": "2026-08-24T06:39:00.831Z"
+      "updatedAt": "2026-08-24T08:06:20.805Z"
     }
   ],
   "2026-08-26": [
@@ -2299,15 +2299,15 @@ var externalDB = {
     },
     {
       "_id": "p_1787553694820_pg88gw",
-      "caption": "<div>【圖文時間】 《宇希時間》</div><div><br></div>",
+      "caption": "<div>【圖文時間】 《宇希時間》</div><div><br></div><div><div>有些情緒不是消失了，<br>只是被我們藏得太久。</div><div>累了、難過了，也沒關係。<br>別再急著責怪自己，<br>你其實已經很努力了。</div></div><div><br></div><div>#宇希的貓 #宇希</div>",
       "time": "18:00",
       "canvaUrl": "https://www.canva.com/design/DAHNdqdK6aI/PiMT2vlLGuDlWm3KmDjn9g/view?utm_content=DAHNdqdK6aI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=ha7005fd718",
-      "ratio": "4-5",
+      "ratio": "1-1",
       "theme": "圖文時間",
       "title": "宇希時間",
       "status": "draft",
       "createdAt": "2026-08-24T06:41:34.820Z",
-      "updatedAt": "2026-08-24T06:41:34.820Z"
+      "updatedAt": "2026-08-24T07:44:49.108Z"
     },
     {
       "_id": "p_1787553723019_ajji0d",
@@ -2339,7 +2339,7 @@ var externalDB = {
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-08-24T07:27:37.015Z",
+  "updatedAt": "2026-08-24T08:32:11.018Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z"
