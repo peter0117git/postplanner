@@ -2325,7 +2325,7 @@ var externalDB = {
   "2026-08-27": [
     {
       "_id": "p_1787553827403_agzqv3",
-      "caption": "<div>【早上只讀一點點】 《會好起來的，就算不是現在》</div><div><br></div>",
+      "caption": "<div>【早上只讀一點點】 《會好起來的，就算不是現在》</div><div><br></div><div><div><div>逃避雖可恥但有用。</div></div><div><div>太常告訴自己要振作、要努力、要積極。</div><div>尤其年輕時當業務的時候，</div><div>有負面能量還會責怪自己怎麼那麼沒用</div><div>山不轉路不轉時你以為轉的要是自己</div><div>沒有啊，你可以停下來或先回頭</div><div>誰說流乾血往前衝才是正解。</div><div>長大的好處之一是可以說停先停</div><div>「嗨，全世界，我馬上回來唷！」</div><div>靈魂登出身體</div><div>你要趴著躺著買醉著都沒關係的</div><div>「我躺一下下就好」</div><div>沒有什麼煩惱不是睡一覺不能釋懷</div><div>如果有，就睡兩趟吧。</div><div>不要一味要自己加油，</div><div>有時候的當下就是先按下暫停鍵</div></div><div><div>然後，只要從一丁點，一咪咪的正面思考開始</div><div>例如：坐起來，呼吸，收拾情緒</div><div>「不必一次搞定所有事」</div><div>從願意好好吃飯開始</div><div>從出門曬曬太陽開始</div><div>從聽一首喜歡的音樂開始</div><div>用自己的步調走自己的路</div></div><div><div>如果你一直慣性討好別人</div><div>你會忘了怎麼討好自己</div></div><div><div>會好起來的，就算不是現在。</div><div>-</div><div><br></div><div><span>#luckylulu</span>  <span>#療癒圖文</span>  <span>#大田出版</span></div></div></div>",
       "time": "08:00",
       "canvaUrl": "https://www.canva.com/design/DAHS5Sym27Q/cOSkFGLNkhWsN6Wcbpt5RA/view?utm_content=DAHS5Sym27Q&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hab83e077ce",
       "ratio": "4-5",
@@ -2333,13 +2333,25 @@ var externalDB = {
       "title": "會好起來的，就算不是現在",
       "status": "draft",
       "createdAt": "2026-08-24T06:43:47.403Z",
-      "updatedAt": "2026-08-24T06:43:47.403Z"
+      "updatedAt": "2026-08-24T08:45:24.145Z"
+    },
+    {
+      "_id": "p_1787561149090_v50u6r",
+      "caption": "",
+      "time": "09:00",
+      "canvaUrl": "https://www.canva.com/design/DAHSgxPEeDA/22MNZkMNlTvcga9ObODjuQ/view?utm_content=DAHSgxPEeDA&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hcce0228735",
+      "ratio": "4-5",
+      "theme": "目前只排到這裡",
+      "title": "",
+      "status": "draft",
+      "createdAt": "2026-08-24T08:45:49.090Z",
+      "updatedAt": "2026-08-24T08:46:48.878Z"
     }
   ]
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-08-24T08:41:24.803Z",
+  "updatedAt": "2026-08-24T08:46:59.989Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z"
