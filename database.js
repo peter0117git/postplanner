@@ -2311,15 +2311,15 @@ var externalDB = {
     },
     {
       "_id": "p_1787553723019_ajji0d",
-      "caption": "<div>【晚上多讀一點點】 《尋找蜘蛛：日本暢銷超過36萬冊，西加奈子的生命故事》</div><div><br></div>",
+      "caption": "<div>【晚上多讀一點點】 《尋找蜘蛛：日本暢銷超過36萬冊，西加奈子的生命故事》內文摘錄｜之二</div><div><br></div><div><div>即使到現在，我有時仍不敢置信自己正在溫哥華。<span></span></div><div><br></div>\n<div>過去我曾在不同國家旅行，在現場想像著「如果住在這裡是什麼感覺」。這種想像完全不必負責任，所以很輕鬆愉快，也沒有盡頭。現在這種想像轉變為現實。我現在正在溫哥華，我在溫哥華生活。就算只居住一段時期，實際居住的收穫的確超出想像。</div><div><br></div>\n<div>搬到這裡一陣子以後，我發現自己不會受到某種無形的壓力。這座城市很平靜。這不只表示沒有聲音，也包括看不到有威脅性的廣告、帶有色情意味的圖像或照片，因而散發寧靜的感覺。</div><div><br></div>\n<div>在東京時，我曾住在通往新宿的電車沿線旁。除了新宿本身的喧囂，在電車車廂內或是街上，會看到成人漫畫雜誌煽情的照片，或是像「拒絕發胖」、「不要變老」、「別讓多餘的毛生長」各種突兀的廣告忽然冒出來。光是看到這些，就像聽到噪音般感到不舒服。</div><div><br></div>\n<div>還在東京的時候，我並不覺得特別奇怪。無論訴諸聽覺或視覺，嘈雜都是街道附帶的一部分，而這種嘈雜會帶來某種程度的刺激。不過來到溫哥華後，感受到城市的寧靜，才意識到那其實會造成壓力。</div><div><br></div>\n<div>我很喜歡東京，非常喜歡。直到現在依然想念，好想回去。但我並不願意在街上看到這類宣傳，也不希望孩子在街上遇到跟性有關的事物。</div><div><br></div>\n<div>就算未必是明顯的色情，也很容易出現帶有性暗示的內容，而且慾望的對象總是年輕（甚至包括年紀還很小的）女性。</div>\n<div>溫哥華當然也有廣告。化妝品廣告有美麗的女性登場，內衣店前有穿著內衣的女性招牌，但是不會造成女性是「性的客體」的印象。</div><div><br></div>\n<div>尤其是在內衣店的照片裡各種各樣體型的女性，感覺鼓勵接受並熱愛自己的身體，絕非被動地作為被消費的對象。正因為如此，也不會造成威脅的效果。</div><div><br></div>\n<div>不需要讓人感覺「應該這樣」、「一定要怎樣」，至少我不覺得要避免讓Ｓ看到。</div><div><br></div>\n<div>這甚至讓我思考，女性該取回自己身體的主權。</div><div><br></div>\n<div>目前為止我受到各種各樣的影響，並且內化。結果對於自己本來的面貌，究竟喜歡什麼、討厭什麼，反而漸漸失去主見，多多少少會覺得「不想變老」、「如果不處理體毛會很邋遢」。</div><div><br></div>\n<div>倒不是說應該排斥這一切，事實上我並沒有徹底拒絕。不過我放棄流行服飾，不再刻意處理體毛，停止上粉底，或許是為了取回什麼。</div><div><br></div>\n<div>至少對於現在的我而言，溫哥華的寧靜是必要的。</div></div><div><br></div><div>摘自p.59~61</div><div><br></div><div>#大田出版 #女性 #西加奈子 #主權</div>",
       "time": "20:00",
-      "canvaUrl": "https://www.canva.com/design/DAHShSQbS3c/YcbUv8x7y509GONJQl3wyw/view?utm_content=DAHShSQbS3c&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h6bd2aecc54",
-      "ratio": "4-5",
+      "canvaUrl": "https://www.canva.com/design/DAHQkUu_iSE/DrFQws8Bn2DLb78HKZXrSg/view?utm_content=DAHQkUu_iSE&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hdc3f8590f3",
+      "ratio": "1-1",
       "theme": "晚上多讀一點點",
       "title": "尋找蜘蛛：日本暢銷超過36萬冊，西加奈子的生命故事",
       "status": "draft",
       "createdAt": "2026-08-24T06:42:03.019Z",
-      "updatedAt": "2026-08-24T06:42:03.019Z"
+      "updatedAt": "2026-08-24T08:41:15.402Z"
     }
   ],
   "2026-08-27": [
@@ -2339,7 +2339,7 @@ var externalDB = {
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-08-24T08:32:11.018Z",
+  "updatedAt": "2026-08-24T08:41:24.803Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z"
