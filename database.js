@@ -2213,13 +2213,13 @@ var externalDB = {
       "_id": "p_1787213098519_aq7qv5",
       "caption": "<div><div>【圖文時間】《會好起來的，就算不是現在》</div></div><div><br></div><div><div>人生有時不必非理出個道理不可。</div><div>（有時就是毫無道理可言）</div></div><div><br></div><div><div><span style=\"background-color:rgba(232, 196, 84, 0.5)\">小編：像是人為什麼要上班</span><span></span></div><div>．．．．．</div></div><div><div>比起振作，我更需要接受現狀。這本書帶我從低潮中復原</div><div>__迷誠品推薦．長踞誠品外文書排行榜</div></div><div><br></div><div><div>★讓譯者、美術設計與編輯都愛不釋手的動人作品</div><div>★特別邀請IG 人氣圖文作家luckylulu中文手寫字</div></div><div><br></div><div><div>圖文作家亞歷珊卓拉‧歐拉諾示範「在哪裡跌倒，就在那裡休息一下」哲學，她用圖文為自己寫了一封特別的情書，告訴自己，不必躲藏悲傷，不必急著好起來，不開心的那一天，也就是開始改變的那一天。</div><div>-</div><div><span>#luckylulu</span>  <span>#療癒圖文</span>  <span>#大田出版 #上班</span></div></div>",
       "time": "18:00",
-      "canvaUrl": "https://www.canva.com/design/DAHS5Sym27Q/cOSkFGLNkhWsN6Wcbpt5RA/view?utm_content=DAHS5Sym27Q&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hab83e077ce",
+      "canvaUrl": "https://www.canva.com/design/DAHTMOMcqb4/_FLsts4ym4AbmJ7xCCFFbA/view?utm_content=DAHTMOMcqb4&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h911ad5a8d6",
       "ratio": "4-5",
       "theme": "圖文時間",
       "title": "一次又一次又一次地重新開始",
       "status": "draft",
       "createdAt": "2026-08-20T08:04:58.519Z",
-      "updatedAt": "2026-08-21T06:26:48.578Z"
+      "updatedAt": "2026-08-24T08:48:56.293Z"
     },
     {
       "_id": "p_1787293600141_a81vo5",
@@ -2261,7 +2261,7 @@ var externalDB = {
     },
     {
       "_id": "p_1787553519315_8yvowe",
-      "caption": "<div>【圖文時間】 《幸福就是吃飯睡覺等待 vol.3 #搶先讀》</div><div><br></div><div><div>「好想請假……」</div><div>想休息、想喘口氣，<br>卻又忍不住先算了一下生活費。</div><div>有時候不是不想停下來，<br>只是「休息」也需要一點勇氣。</div><div><br></div><div>《幸福就是吃飯睡覺等待 vol.3》<br>9月1日全台上市！</div><div><br></div><div>#大田出版 #水凪トリ</div></div><div><br></div>",
+      "caption": "<div>【圖文時間】 《幸福就是吃飯睡覺等待 vol.3 #搶先讀》</div><div><br></div><div><span>#9月1日全台上市</span></div><div><br></div><div><div>「好想請假……」</div><div>想休息、想喘口氣，<br>卻又忍不住先算了一下生活費。</div><div>有時候不是不想停下來，<br>只是「休息」也需要一點勇氣。</div><div><br></div><div>《幸福就是吃飯睡覺等待 vol.3》<br>9月1日全台上市！</div><div><br></div><div>#大田出版 #水凪トリ</div></div><div><br></div>",
       "time": "18:00",
       "canvaUrl": "https://www.canva.com/design/DAHSzB4HqsA/yYi2a6HFRv8VTjC7_wuZ8A/view?utm_content=DAHSzB4HqsA&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h70d6b7631b",
       "ratio": "1-1",
@@ -2269,7 +2269,7 @@ var externalDB = {
       "title": "幸福就是吃飯睡覺等待 vol.3",
       "status": "draft",
       "createdAt": "2026-08-24T06:38:39.315Z",
-      "updatedAt": "2026-08-24T08:31:54.749Z"
+      "updatedAt": "2026-08-24T08:59:05.992Z"
     },
     {
       "_id": "p_1787553540831_11uqeg",
@@ -2311,7 +2311,7 @@ var externalDB = {
     },
     {
       "_id": "p_1787553723019_ajji0d",
-      "caption": "<div>【晚上多讀一點點】 《尋找蜘蛛：日本暢銷超過36萬冊，西加奈子的生命故事》內文摘錄｜之二</div><div><br></div><div><div>即使到現在，我有時仍不敢置信自己正在溫哥華。<span></span></div><div><br></div>\n<div>過去我曾在不同國家旅行，在現場想像著「如果住在這裡是什麼感覺」。這種想像完全不必負責任，所以很輕鬆愉快，也沒有盡頭。現在這種想像轉變為現實。我現在正在溫哥華，我在溫哥華生活。就算只居住一段時期，實際居住的收穫的確超出想像。</div><div><br></div>\n<div>搬到這裡一陣子以後，我發現自己不會受到某種無形的壓力。這座城市很平靜。這不只表示沒有聲音，也包括看不到有威脅性的廣告、帶有色情意味的圖像或照片，因而散發寧靜的感覺。</div><div><br></div>\n<div>在東京時，我曾住在通往新宿的電車沿線旁。除了新宿本身的喧囂，在電車車廂內或是街上，會看到成人漫畫雜誌煽情的照片，或是像「拒絕發胖」、「不要變老」、「別讓多餘的毛生長」各種突兀的廣告忽然冒出來。光是看到這些，就像聽到噪音般感到不舒服。</div><div><br></div>\n<div>還在東京的時候，我並不覺得特別奇怪。無論訴諸聽覺或視覺，嘈雜都是街道附帶的一部分，而這種嘈雜會帶來某種程度的刺激。不過來到溫哥華後，感受到城市的寧靜，才意識到那其實會造成壓力。</div><div><br></div>\n<div>我很喜歡東京，非常喜歡。直到現在依然想念，好想回去。但我並不願意在街上看到這類宣傳，也不希望孩子在街上遇到跟性有關的事物。</div><div><br></div>\n<div>就算未必是明顯的色情，也很容易出現帶有性暗示的內容，而且慾望的對象總是年輕（甚至包括年紀還很小的）女性。</div>\n<div>溫哥華當然也有廣告。化妝品廣告有美麗的女性登場，內衣店前有穿著內衣的女性招牌，但是不會造成女性是「性的客體」的印象。</div><div><br></div>\n<div>尤其是在內衣店的照片裡各種各樣體型的女性，感覺鼓勵接受並熱愛自己的身體，絕非被動地作為被消費的對象。正因為如此，也不會造成威脅的效果。</div><div><br></div>\n<div>不需要讓人感覺「應該這樣」、「一定要怎樣」，至少我不覺得要避免讓Ｓ看到。</div><div><br></div>\n<div>這甚至讓我思考，女性該取回自己身體的主權。</div><div><br></div>\n<div>目前為止我受到各種各樣的影響，並且內化。結果對於自己本來的面貌，究竟喜歡什麼、討厭什麼，反而漸漸失去主見，多多少少會覺得「不想變老」、「如果不處理體毛會很邋遢」。</div><div><br></div>\n<div>倒不是說應該排斥這一切，事實上我並沒有徹底拒絕。不過我放棄流行服飾，不再刻意處理體毛，停止上粉底，或許是為了取回什麼。</div><div><br></div>\n<div>至少對於現在的我而言，溫哥華的寧靜是必要的。</div></div><div><br></div><div>摘自p.59~61</div><div><br></div><div>#大田出版 #女性 #西加奈子 #主權</div>",
+      "caption": "<div>【晚上多讀一點點】 《尋找蜘蛛：日本暢銷超過36萬冊，西加奈子的生命故事》內文摘錄｜之二</div><div><br></div><div><div>即使到現在，我有時仍不敢置信自己正在溫哥華。<span></span></div><div><br></div>\n<div>過去我曾在不同國家旅行，在現場想像著「如果住在這裡是什麼感覺」。這種想像完全不必負責任，所以很輕鬆愉快，也沒有盡頭。現在這種想像轉變為現實。我現在正在溫哥華，我在溫哥華生活。就算只居住一段時期，實際居住的收穫的確超出想像。</div><div><br></div>\n<div>搬到這裡一陣子以後，我發現自己不會受到某種無形的壓力。這座城市很平靜。這不只表示沒有聲音，也包括看不到有威脅性的廣告、帶有色情意味的圖像或照片，因而散發寧靜的感覺。</div><div><br></div>\n<div>在東京時，我曾住在通往新宿的電車沿線旁。除了新宿本身的喧囂，在電車車廂內或是街上，會看到成人漫畫雜誌煽情的照片，或是像「拒絕發胖」、「不要變老」、「別讓多餘的毛生長」各種突兀的廣告忽然冒出來。光是看到這些，就像聽到噪音般感到不舒服。</div><div><br></div>\n<div>還在東京的時候，我並不覺得特別奇怪。無論訴諸聽覺或視覺，嘈雜都是街道附帶的一部分，而這種嘈雜會帶來某種程度的刺激。不過來到溫哥華後，感受到城市的寧靜，才意識到那其實會造成壓力。</div><div><br></div>\n<div>我很喜歡東京，非常喜歡。直到現在依然想念，好想回去。但我並不願意在街上看到這類宣傳，也不希望孩子在街上遇到跟性有關的事物。</div><div><br></div>\n<div>就算未必是明顯的色情，也很容易出現帶有性暗示的內容，而且慾望的對象總是年輕（甚至包括年紀還很小的）女性。</div>\n<div>溫哥華當然也有廣告。化妝品廣告有美麗的女性登場，內衣店前有穿著內衣的女性招牌，但是不會造成女性是「性的客體」的印象。</div><div><br></div>\n<div>尤其是在內衣店的照片裡各種各樣體型的女性，感覺鼓勵接受並熱愛自己的身體，絕非被動地作為被消費的對象。正因為如此，也不會造成威脅的效果。</div><div><br></div>\n<div>不需要讓人感覺「應該這樣」、「一定要怎樣」，至少我不覺得要避免讓Ｓ看到。</div><div><br></div>\n<div>這甚至讓我思考，女性該取回自己身體的主權。</div><div><br></div>\n<div>目前為止我受到各種各樣的影響，並且內化。結果對於自己本來的面貌，究竟喜歡什麼、討厭什麼，反而漸漸失去主見，多多少少會覺得「不想變老」、「如果不處理體毛會很邋遢」。</div><div><br></div>\n<div>倒不是說應該排斥這一切，事實上我並沒有徹底拒絕。不過我放棄流行服飾，不再刻意處理體毛，停止上粉底，或許是為了取回什麼。</div><div><br></div>\n<div>至少對於現在的我而言，溫哥華的寧靜是必要的。</div></div><div><br></div><div>摘自p.59~61</div><div><br></div><div>#大田出版 #女性 #西加奈子</div>",
       "time": "20:00",
       "canvaUrl": "https://www.canva.com/design/DAHQkUu_iSE/DrFQws8Bn2DLb78HKZXrSg/view?utm_content=DAHQkUu_iSE&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hdc3f8590f3",
       "ratio": "1-1",
@@ -2319,13 +2319,13 @@ var externalDB = {
       "title": "尋找蜘蛛：日本暢銷超過36萬冊，西加奈子的生命故事",
       "status": "draft",
       "createdAt": "2026-08-24T06:42:03.019Z",
-      "updatedAt": "2026-08-24T08:41:15.402Z"
+      "updatedAt": "2026-08-24T09:27:38.387Z"
     }
   ],
   "2026-08-27": [
     {
       "_id": "p_1787553827403_agzqv3",
-      "caption": "<div>【早上只讀一點點】 《會好起來的，就算不是現在》</div><div><br></div><div><div><div>逃避雖可恥但有用。</div></div><div><div>太常告訴自己要振作、要努力、要積極。</div><div>尤其年輕時當業務的時候，</div><div>有負面能量還會責怪自己怎麼那麼沒用</div><div>山不轉路不轉時你以為轉的要是自己</div><div>沒有啊，你可以停下來或先回頭</div><div>誰說流乾血往前衝才是正解。</div><div>長大的好處之一是可以說停先停</div><div>「嗨，全世界，我馬上回來唷！」</div><div>靈魂登出身體</div><div>你要趴著躺著買醉著都沒關係的</div><div>「我躺一下下就好」</div><div>沒有什麼煩惱不是睡一覺不能釋懷</div><div>如果有，就睡兩趟吧。</div><div>不要一味要自己加油，</div><div>有時候的當下就是先按下暫停鍵</div></div><div><div>然後，只要從一丁點，一咪咪的正面思考開始</div><div>例如：坐起來，呼吸，收拾情緒</div><div>「不必一次搞定所有事」</div><div>從願意好好吃飯開始</div><div>從出門曬曬太陽開始</div><div>從聽一首喜歡的音樂開始</div><div>用自己的步調走自己的路</div></div><div><div>如果你一直慣性討好別人</div><div>你會忘了怎麼討好自己</div></div><div><div>會好起來的，就算不是現在。</div><div>-</div><div><br></div><div><span>#luckylulu</span>  <span>#療癒圖文</span>  <span>#大田出版</span></div></div></div>",
+      "caption": "<div>【早上只讀一點點】 《會好起來的，就算不是現在》</div><div><br></div><div><div><div>比起振作，我更需要接受現狀。這本書帶我從低潮中復原</div><div>__迷誠品推薦．長踞誠品外文書排行榜</div></div><div><div>★讓譯者、美術設計與編輯都愛不釋手的動人作品</div><div>★特別邀請IG 人氣圖文作家luckylulu中文手寫字</div></div><div><div>．．．．．</div></div><div><div>親愛的痛苦，</div><div>謝謝你阻擋我繼續前進，告訴我什麼最重要。</div><div>真的好有教育意義喔，但是你現在可以閃邊去了。 </div></div><div><div>生活原本要按照計畫走，但走著走著卻開始跳針——</div><div>想要逃避現實，假裝一切都好，但根本不可能；</div><div>想要堅強振作，活在當下，但其實只想好好睡一覺……</div></div><div><div>圖文作家亞歷珊卓拉‧歐拉諾示範「在哪裡跌倒，就在那裡休息一下」哲學，</div><div>她用圖文為自己寫了一封特別的情書，</div><div>告訴自己，不必躲藏悲傷，不必急著好起來，</div></div><div><div>不開心的那一天，也就是開始改變的那一天。</div><div>-</div><div><div><div><span>同場推薦｜作者最新力作《</span><span style=\"background-color:rgba(24, 119, 242, 0.2)\"><span>#一次又一次又一次地重新開始</span></span><span>》</span></div></div><div><div><span><br></span></div></div><div><div><span>獻給所有正在重新開始的人。</span></div></div><div><div><span>獻給所有正在學習如何在人生的循環中安歇的人。</span></div></div><div><div><span>獻給所有需要明白重新開始並非一蹴可幾，而是一生中無休止境的修行。</span></div></div><div><div><span><br></span></div></div><div><div><span>★</span></div></div><div><div><span><br></span></div></div><div><div><span>暢銷療癒圖文書《會好起來的，就算不是現在》 作者最新力作！</span></div></div><div><div><span>在破碎與重建之間，學會一再重新開始。</span></div></div><div></div></div><div><span>#luckylulu</span>  <span>#療癒圖文</span>  <span>#大田出版</span></div></div></div>",
       "time": "08:00",
       "canvaUrl": "https://www.canva.com/design/DAHS5Sym27Q/cOSkFGLNkhWsN6Wcbpt5RA/view?utm_content=DAHS5Sym27Q&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hab83e077ce",
       "ratio": "4-5",
@@ -2333,7 +2333,7 @@ var externalDB = {
       "title": "會好起來的，就算不是現在",
       "status": "draft",
       "createdAt": "2026-08-24T06:43:47.403Z",
-      "updatedAt": "2026-08-24T08:45:24.145Z"
+      "updatedAt": "2026-08-24T09:18:41.577Z"
     },
     {
       "_id": "p_1787561149090_v50u6r",
@@ -2351,7 +2351,7 @@ var externalDB = {
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-08-24T08:46:59.989Z",
+  "updatedAt": "2026-08-24T09:30:57.604Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z"
