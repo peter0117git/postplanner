@@ -2337,23 +2337,128 @@ var externalDB = {
     },
     {
       "_id": "p_1787561149090_v50u6r",
-      "caption": "",
-      "time": "09:00",
-      "canvaUrl": "https://www.canva.com/design/DAHSgxPEeDA/22MNZkMNlTvcga9ObODjuQ/view?utm_content=DAHSgxPEeDA&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hcce0228735",
-      "ratio": "4-5",
-      "theme": "目前只排到這裡",
-      "title": "",
+      "caption": "<div><div><div><div>【圖文時間】 《悠悠哉哉一個人生活的好日子》</div></div><div></div></div><div><span>#悠悠哉哉一個人的好生活</span></div><div><span><br></span></div><div><span>這些毫不起眼、平平凡凡的日常，雖然只是走路而已，只是發呆而已，</span></div></div><div><div>但都是按照自己的步調緩步前進，</div></div><div><div>即使偶爾繞了一點路，也能夠悠悠哉哉，</div></div><div><div>一個人生活的好日子，不誇張，自己可以創造。 </div><div><br></div></div><div><div><span>#大田出版</span> <span>#小津萬里子</span> <span>#一個人生活</span> <span>#生活</span> <span>#獨居</span></div></div>",
+      "time": "18:00",
+      "canvaUrl": "https://www.canva.com/design/DAHN8Aw8IGg/QwWoq9BohYNHVCfag02liQ/view?utm_content=DAHN8Aw8IGg&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h96fbae8010",
+      "ratio": "1-1",
+      "theme": "圖文時間",
+      "title": "悠悠哉哉一個人生活的好日子",
       "status": "draft",
       "createdAt": "2026-08-24T08:45:49.090Z",
-      "updatedAt": "2026-08-24T08:46:48.878Z"
+      "updatedAt": "2026-08-26T05:43:10.937Z"
+    },
+    {
+      "_id": "p_1787723023942_nrrrxw",
+      "caption": "<div>【晚上多讀一點點】 《上帝不眨眼：50堂百萬人瘋傳的人生智慧》</div><div><br></div>",
+      "time": "20:00",
+      "canvaUrl": "https://www.canva.com/design/DAHN8Zb0McU/MsxVlDldfEWL2QqmrVsF_w/view?utm_content=DAHN8Zb0McU&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h63c79f6842",
+      "ratio": "4-5",
+      "theme": "晚上多讀一點點",
+      "title": "上帝不眨眼：50堂百萬人瘋傳的人生智慧",
+      "status": "draft",
+      "createdAt": "2026-08-26T05:43:43.942Z",
+      "updatedAt": "2026-08-26T05:43:43.942Z"
+    }
+  ],
+  "2026-08-28": [
+    {
+      "_id": "p_1787723134513_3x8uhi",
+      "caption": "<div>【早上只讀一點點】 《最強提問力：問更好的問題，獲得更棒的答案》</div><div><br></div>",
+      "time": "08:00",
+      "canvaUrl": "https://www.canva.com/design/DAHS5oSzmIk/v1RRU0cBwIaE-_vZ8rbQJw/view?utm_content=DAHS5oSzmIk&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hbb21de1954",
+      "ratio": "1-1",
+      "theme": "早上只讀一點點",
+      "title": "最強提問力：問更好的問題，獲得更棒的答案",
+      "status": "draft",
+      "createdAt": "2026-08-26T05:45:34.513Z",
+      "updatedAt": "2026-08-26T05:45:34.513Z"
+    },
+    {
+      "_id": "p_1787723161055_9qn365",
+      "caption": "<div>【圖文時間】 《希望溫暖你的每一天(精采夜光版)》</div><div><br></div>",
+      "time": "18:00",
+      "canvaUrl": "https://www.canva.com/design/DAHPbqxce5c/KlYPQFMyxFO9ZN5Zx99IkA/view?utm_content=DAHPbqxce5c&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h240e483ba4",
+      "ratio": "1-1",
+      "theme": "圖文時間",
+      "title": "希望溫暖你的每一天(精采夜光版)",
+      "status": "draft",
+      "createdAt": "2026-08-26T05:46:01.055Z",
+      "updatedAt": "2026-08-26T05:46:04.108Z"
+    },
+    {
+      "_id": "p_1787723199507_iyypk3",
+      "caption": "<div>【晚上多讀一點點】 《尋找蜘蛛：日本暢銷超過36萬冊，西加奈子的生命故事》</div><div><br></div>",
+      "time": "20:00",
+      "canvaUrl": "https://www.canva.com/design/DAHShSQbS3c/YcbUv8x7y509GONJQl3wyw/view?utm_content=DAHShSQbS3c&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h6bd2aecc54",
+      "ratio": "4-5",
+      "theme": "晚上多讀一點點",
+      "title": "尋找蜘蛛：日本暢銷超過36萬冊，西加奈子的生命故事",
+      "status": "draft",
+      "createdAt": "2026-08-26T05:46:39.507Z",
+      "updatedAt": "2026-08-26T05:46:39.507Z"
+    }
+  ],
+  "2026-08-29": [
+    {
+      "_id": "p_1787723245677_4722uh",
+      "caption": "<div>【大田布告欄】 《大田九月新書》</div><div><br></div>",
+      "time": "12:00",
+      "canvaUrl": "",
+      "ratio": "4-5",
+      "theme": "大田布告欄",
+      "title": "大田九月新書",
+      "status": "draft",
+      "createdAt": "2026-08-26T05:47:25.677Z",
+      "updatedAt": "2026-08-26T05:47:46.841Z"
+    }
+  ],
+  "2026-08-30": [
+    {
+      "_id": "p_1787723260068_c0iguj",
+      "caption": "<div>【大田布告欄】 《大田九月新書》</div><div><br></div>",
+      "time": "12:00",
+      "canvaUrl": "",
+      "ratio": "4-5",
+      "theme": "大田布告欄",
+      "title": "大田九月新書",
+      "status": "draft",
+      "createdAt": "2026-08-26T05:47:40.068Z",
+      "updatedAt": "2026-08-26T05:47:50.763Z"
+    }
+  ],
+  "2026-08-31": [
+    {
+      "_id": "p_1787723308427_34cwi0",
+      "caption": "<div>【早上只讀一點點】 《一次又一次又一次地重新開始》</div><div><br></div>",
+      "time": "08:00",
+      "canvaUrl": "https://www.canva.com/design/DAHSKSY_YvY/J-v4e8drMxkO_n9hnt5SNg/view?utm_content=DAHSKSY_YvY&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h3f40555dbb",
+      "ratio": "1-1",
+      "theme": "早上只讀一點點",
+      "title": "一次又一次又一次地重新開始",
+      "status": "draft",
+      "createdAt": "2026-08-26T05:48:28.427Z",
+      "updatedAt": "2026-08-26T05:48:31.586Z"
+    },
+    {
+      "_id": "p_1787723361084_3mtwzw",
+      "caption": "<div>【圖文時間】 《希望溫暖你的每一天(精采夜光版)》</div><div><br></div>",
+      "time": "18:00",
+      "canvaUrl": "https://www.canva.com/design/DAHPbqxce5c/KlYPQFMyxFO9ZN5Zx99IkA/view?utm_content=DAHPbqxce5c&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h240e483ba4",
+      "ratio": "1-1",
+      "theme": "圖文時間",
+      "title": "希望溫暖你的每一天(精采夜光版)",
+      "status": "draft",
+      "createdAt": "2026-08-26T05:49:21.084Z",
+      "updatedAt": "2026-08-26T05:49:21.084Z"
     }
   ]
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-08-24T09:31:16.538Z",
+  "updatedAt": "2026-08-26T05:49:40.233Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
-    "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z"
+    "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
+    "p_1787723287241_bmj85x": "2026-08-26T05:48:18.760Z"
   }
 };
