@@ -2371,11 +2371,11 @@ var externalDB = {
       "title": "最強提問力：問更好的問題，獲得更棒的答案",
       "status": "draft",
       "createdAt": "2026-08-26T05:45:34.513Z",
-      "updatedAt": "2026-08-26T07:17:04.162Z"
+      "updatedAt": "2026-08-26T09:04:30.441Z"
     },
     {
       "_id": "p_1787723161055_9qn365",
-      "caption": "<div>【圖文時間】 《希望溫暖你的每一天(精采夜光版)》</div><div><br></div>",
+      "caption": "<div>【圖文時間】 《希望溫暖你的每一天(精采夜光版)》</div><div><br></div><div><div><span>#九月十二日上市</span></div><div><span>#精采夜光版</span></div></div><div><br></div><div>〈 睡一覺起來就會好很多 〉</div><div><br></div><div><div>有些日子，就是會覺得特別累、特別無力。</div><div>沒關係，今天先好好休息。<br>把明天的事，交給明天的自己吧 ☁️</div><div>說不定睡一覺醒來，勇氣和力氣就又回來了一點。</div><div><br></div><div><span style=\"color:rgb(8, 8, 9)\">摘自《希望溫暖你的每一天》-</span>〈 睡一覺起來就會好很多 〉</div><div><br></div><div>#大田出版</div></div>",
       "time": "18:00",
       "canvaUrl": "https://www.canva.com/design/DAHPbqxce5c/KlYPQFMyxFO9ZN5Zx99IkA/view?utm_content=DAHPbqxce5c&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h240e483ba4",
       "ratio": "1-1",
@@ -2383,11 +2383,11 @@ var externalDB = {
       "title": "希望溫暖你的每一天(精采夜光版)",
       "status": "draft",
       "createdAt": "2026-08-26T05:46:01.055Z",
-      "updatedAt": "2026-08-26T05:46:04.108Z"
+      "updatedAt": "2026-08-26T09:06:49.306Z"
     },
     {
       "_id": "p_1787723199507_iyypk3",
-      "caption": "<div>【晚上多讀一點點】 《尋找蜘蛛：日本暢銷超過36萬冊，西加奈子的生命故事》</div><div><br></div>",
+      "caption": "<div>【晚上多讀一點點】 《尋找蜘蛛：日本暢銷超過36萬冊，西加奈子的生命故事》內文摘錄｜之三</div><div><br></div><div><div>我現在坐在海邊的長椅，眺望著海洋。</div><div>在夏季，沙灘上滿是打沙灘排球與做日光浴的人，而且形形色色。有像雕刻般練出健美肌肉的年輕男子，牽著狗的年輕女性，來撿貝殼的阿姨，繫著救生圈試著游向遠處的大叔，坐在輪椅上看海的一群老太太，真是形形色色的人都有。</div><div>即使已經進入冬季，天氣好的時候，還是會有人來打沙灘排球。那些人並不是吸引目光的年輕女性，而是一些上了年紀的婦女。她們在膝蓋上套著護膝，為了避免被球打傷，用綁帶纏起手指。大聲喊叫，邊追逐著滿是沙的球。她們其實美得炫目。</div><div>在二十幾歲時，我曾經害怕變老。認為年輕就是一切，變成歐巴桑以後就完了。我們這個世代被灌輸這樣的觀念（遺憾的是，現在日本仍有這樣的風氣）。也就是說，我們的確受到威脅。</div><div>不過，當自己年齡增長成為中年婦女，現在究竟害怕什麼呢？究竟是誰在要脅我們呢？就算變成歐巴桑，也不必為自己的快樂設限。</div><div>隨著年長，應該祝福自己的人生。我在過去四十四年間，藉由這副身軀活到現在。當然，我會感覺到身體的衰退，而且我罹患三陰性乳癌。但是我不應該失去喜悅。</div></div><div><br></div><div>摘自p61~62</div><div><br></div><div>#大田出版 #西加奈子</div>",
       "time": "20:00",
       "canvaUrl": "https://www.canva.com/design/DAHShSQbS3c/YcbUv8x7y509GONJQl3wyw/view?utm_content=DAHShSQbS3c&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h6bd2aecc54",
       "ratio": "4-5",
@@ -2395,41 +2395,41 @@ var externalDB = {
       "title": "尋找蜘蛛：日本暢銷超過36萬冊，西加奈子的生命故事",
       "status": "draft",
       "createdAt": "2026-08-26T05:46:39.507Z",
-      "updatedAt": "2026-08-26T05:46:39.507Z"
+      "updatedAt": "2026-08-26T09:04:56.155Z"
     }
   ],
   "2026-08-29": [
     {
       "_id": "p_1787723245677_4722uh",
-      "caption": "<div>【大田布告欄】 《大田九月新書》</div><div><br></div>",
+      "caption": "<div><div>【大田布告欄】📢《大田九月新書》</div><div><br></div><div>《#外面是夏天》｜金愛爛</div><div><br></div><div>#九月一日上市</div><div>#金愛爛</div><div><br></div><div><strong>外面是夏天，但我的靈魂正在下雪。</strong></div><div>某部分的我消失了，而且找不到挽回的辦法。<br>該怎麼從失去摯愛的傷痛中康復？<br>又該怎麼嚥下自己的脆弱與無知？</div><div>喪子的夫妻、初嘗虛榮的貧窮少年、替前輩揹鍋的年輕助教……</div><div><br>正要綻放的生命，卻突然迎來寒冬。</div><div>七個關於失去、傷痛與蛻變的故事，<br>獻給所有與這個世界有著一點時間差的生命。</div><div><br></div><div>🏆 第48屆東仁文學獎得獎作品<br>📚 韓國銷量突破25萬冊</div><div><br></div><div><strong>金愛爛，是你遇見之後，就會愛上的小說家。</strong></div><div>「她最擅長描繪難以啟齒卻又無法迴避的情感。」<br>——韓國百想視后 金泰梨</div><div><br></div><div>我想要往外面走去，<br>往那豐饒耀眼的夏天走去。</div><div><br></div><div>#大田出版#外面是夏天 #金愛爛 #韓國文學#新書推薦</div></div>",
       "time": "12:00",
-      "canvaUrl": "",
-      "ratio": "4-5",
+      "canvaUrl": "https://www.canva.com/design/DAHTYYjhUbE/ys4wn5N1sZUoaWBdMHk_0w/view?utm_content=DAHTYYjhUbE&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h906ad04213",
+      "ratio": "1-1",
       "theme": "大田布告欄",
       "title": "大田九月新書",
       "status": "draft",
       "createdAt": "2026-08-26T05:47:25.677Z",
-      "updatedAt": "2026-08-26T05:47:46.841Z"
+      "updatedAt": "2026-08-26T09:21:11.189Z"
     }
   ],
   "2026-08-30": [
     {
       "_id": "p_1787723260068_c0iguj",
-      "caption": "<div>【大田布告欄】 《大田九月新書》</div><div><br></div>",
+      "caption": "<div>【大田布告欄】📢《大田九月新書》</div><div><br></div><div>#九月一日上市</div><div><br></div><div>《#幸福就是吃飯睡覺等待 vol.3》<br><strong>台灣限定・蒐集3號・日日好日 書籤特典版</strong></div><div><strong><br></strong></div><div><strong>我總算，變成開始重視自己的人了。</strong></div><div>如果每天都能過著<br>心頭熱呼呼的日子，多好。</div><div>由於生病，每週只能打工四天維持生活的麥卷聰子，<br>在房東鈴媽和「家政夫」阿司的陪伴下，<br>好好吃飯、好好睡覺，<br>也在與社區居民的交流中，慢慢找回自己的生活節奏。</div><div>只是某一天早上，<br>聰子卻目擊了阿司帶著大大的行李出門……？</div><div><br></div><div>🍚 系列日本銷售突破100萬冊<br>⭐ 亞馬遜五星好評<br>📖 博客來選書</div><div>🎁【隨書贈送】<br><strong>台灣限定・蒐集3號・日日好日 書籤特典</strong><br>120mm × 70mm</div><div><br></div><div>Comic 名作復活／龍貓大王通信／雪奈日劇部屋／凱莉的廢話練習簿 暖心推薦！</div><div>好好吃飯、好好睡覺，<br>不用急著成為更好的人，<br>慢慢學會重視現在的自己，也已經很好。</div><div><br></div><div>#大田出版#幸福就是吃飯睡覺等待#水凪トリ #療癒漫畫 #新書推薦</div>",
       "time": "12:00",
-      "canvaUrl": "",
-      "ratio": "4-5",
+      "canvaUrl": "https://www.canva.com/design/DAHTYdKVM7E/IrulOiKwPo0JoDOczdviIw/view?utm_content=DAHTYdKVM7E&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hee7cd676fa",
+      "ratio": "1-1",
       "theme": "大田布告欄",
       "title": "大田九月新書",
       "status": "draft",
       "createdAt": "2026-08-26T05:47:40.068Z",
-      "updatedAt": "2026-08-26T05:47:50.763Z"
+      "updatedAt": "2026-08-26T09:18:47.725Z"
     }
   ],
   "2026-08-31": [
     {
       "_id": "p_1787723308427_34cwi0",
-      "caption": "<div>【早上只讀一點點】 《一次又一次又一次地重新開始》</div><div><br></div>",
+      "caption": "<div>【早上只讀一點點】 《一次又一次又一次地重新開始》</div><div><br></div><div><div>有時前路茫茫，<br>\n我們依舊得繼續挺進。<span></span></div><div><br></div>\n<div>「Let everything happen to you: beauty and terror. Just keep going. No feeling is final.」</div></div><div>——Rainer Maria Rilke</div><div><br></div><div>#大田出版 #</div>",
       "time": "08:00",
       "canvaUrl": "https://www.canva.com/design/DAHSKSY_YvY/J-v4e8drMxkO_n9hnt5SNg/view?utm_content=DAHSKSY_YvY&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h3f40555dbb",
       "ratio": "1-1",
@@ -2437,28 +2437,17 @@ var externalDB = {
       "title": "一次又一次又一次地重新開始",
       "status": "draft",
       "createdAt": "2026-08-26T05:48:28.427Z",
-      "updatedAt": "2026-08-26T05:48:31.586Z"
-    },
-    {
-      "_id": "p_1787723361084_3mtwzw",
-      "caption": "<div>【圖文時間】 《希望溫暖你的每一天(精采夜光版)》</div><div><br></div>",
-      "time": "18:00",
-      "canvaUrl": "https://www.canva.com/design/DAHPbqxce5c/KlYPQFMyxFO9ZN5Zx99IkA/view?utm_content=DAHPbqxce5c&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h240e483ba4",
-      "ratio": "1-1",
-      "theme": "圖文時間",
-      "title": "希望溫暖你的每一天(精采夜光版)",
-      "status": "draft",
-      "createdAt": "2026-08-26T05:49:21.084Z",
-      "updatedAt": "2026-08-26T05:49:21.084Z"
+      "updatedAt": "2026-08-26T09:30:02.285Z"
     }
   ]
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-08-26T07:17:20.933Z",
+  "updatedAt": "2026-08-26T09:30:14.165Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
-    "p_1787723287241_bmj85x": "2026-08-26T05:48:18.760Z"
+    "p_1787723287241_bmj85x": "2026-08-26T05:48:18.760Z",
+    "p_1787723361084_3mtwzw": "2026-08-26T09:21:23.495Z"
   }
 };
