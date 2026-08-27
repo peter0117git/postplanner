@@ -2429,7 +2429,7 @@ var externalDB = {
   "2026-08-31": [
     {
       "_id": "p_1787723308427_34cwi0",
-      "caption": "<div>【早上只讀一點點】 《一次又一次又一次地重新開始》</div><div><br></div><div><div>有時前路茫茫，<br>\n我們依舊得繼續挺進。<span></span></div><div><br></div>\n<div>「Let everything happen to you: beauty and terror. Just keep going. No feeling is final.」</div></div><div>——Rainer Maria Rilke</div><div><br></div><div>#大田出版 #</div>",
+      "caption": "<div>【早上只讀一點點】 《一次又一次又一次地重新開始》</div><div><br></div><div>#會好起來的 作者最新力作!</div><div><span>#一次又一次又一次地重新開始</span></div><div><span><br></span></div><div>有時前路茫茫，&nbsp;</div><div>我們依舊得繼續挺進。&nbsp;&nbsp;</div><div><br></div><div>#大田出版 #重新開始</div>",
       "time": "08:00",
       "canvaUrl": "https://www.canva.com/design/DAHSKSY_YvY/J-v4e8drMxkO_n9hnt5SNg/view?utm_content=DAHSKSY_YvY&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h3f40555dbb",
       "ratio": "1-1",
@@ -2437,13 +2437,13 @@ var externalDB = {
       "title": "一次又一次又一次地重新開始",
       "status": "draft",
       "createdAt": "2026-08-26T05:48:28.427Z",
-      "updatedAt": "2026-08-26T09:30:02.285Z"
+      "updatedAt": "2026-08-27T07:20:24.212Z"
     }
   ]
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-08-27T05:43:17.654Z",
+  "updatedAt": "2026-08-27T07:20:34.216Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
