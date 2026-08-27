@@ -1,4 +1,4 @@
-# V8.3.4 公開資料自動更新版架構
+# V8.4 效能優化版架構
 
 ## 設計目標
 
@@ -16,6 +16,7 @@
 - `assets/js/services/github.js`：GitHub Contents API。
 - `assets/js/services/canva.js`：Canva 網址驗證與官方 embed 網址建立。
 - `assets/js/services/post-composer.js`：組合與檢查完整發布文案。
+- `assets/js/services/performance.js`：公開資料指紋與主題／書名索引。
 
 ## 資料流程
 
@@ -30,9 +31,17 @@
 ```text
 網站啟動
   → 讀取 IndexedDB 本機資料
-  → 使用 cache: no-store 與一次性查詢參數讀取公開 database.js
-  → 合併公開資料與本機資料（時間相同時以公開版本為準）
-  → 有 GitHub Token 時，再直接核對 GitHub Contents API
+  → 以 ETag 重新驗證公開 database.js
+  → 未變更：直接使用本機資料，不解析、不合併、不寫入
+  → 已變更：解析並合併公開資料與本機資料（時間相同時以公開版本為準）
+  → 公開資料無法取得且有 Token 時，才以 GitHub Contents API 備援
+```
+
+```text
+使用者連續輸入
+  → 立即更新記憶體資料
+  → 預覽與日視圖分別延遲局部更新
+  → 停止輸入 550ms 後合併為一次 IndexedDB 寫入
 ```
 
 ```text

@@ -1,10 +1,21 @@
-# 排版桌 IG Post Planner V8.3.4（公開資料自動更新版）
+# 排版桌 IG Post Planner V8.4（效能優化版）
 
 這是一個不需要前端建置工具、可直接部署到 GitHub Pages 的貼文規劃器。此版本保留 V8.3 的資料格式、GitHub 同步、發布文案、可搜尋主題／書名、桌面編輯與手機預覽。
 
 Canva 預覽改用官方 `?embed` 檢視器。專案不包含圖片擷取、下載、Cloudflare Worker、Canva API、OAuth、Puppeteer 或 Browser binding。
 
-V8.3.4 每次開啟網站都會以不使用快取的方式重新讀取公開 `database.js`，再與本機內容合併。僅查看資料的同事不需要 GitHub Token，也不需要使用無痕模式。
+V8.4 保留原本的畫面與操作方式，重整資料啟動、合併、儲存與畫面更新流程。網站仍會在一般瀏覽器模式確認最新公開 `database.js`；內容沒有更新時，不再重新解析、合併或寫入整份資料庫。僅查看資料的同事不需要 GitHub Token，也不需要使用無痕模式。
+
+## V8.4 效能調整
+
+- 移除 HTML 對 `database.js` 的重複載入，啟動時只重新驗證一次公開資料。
+- 以 ETag 與內容指紋辨識未變更資料；未更新時不解析、不合併、不寫入 IndexedDB。
+- 公開資料正常時，不再因本機存在 GitHub Token 而重複下載同一份內容。
+- 多次文字輸入合併為一次存檔，停止輸入 550ms 後才寫入。
+- IndexedDB 直接使用 structured clone，不再先以 JSON 複製整座資料庫。
+- 切換貼文只更新選取狀態，不重建整個日視圖。
+- 主題與書名選單改為單次索引並快取，不再於每次切換貼文時掃描全部歷史內文。
+- 啟動階段移除重複 migration、存檔與日視圖渲染。
 
 ## 目錄
 
@@ -20,7 +31,8 @@ V8.3.4 每次開啟網站都會以不使用快取的方式重新讀取公開 `da
 │           ├── storage.js
 │           ├── github.js
 │           ├── canva.js
-│           └── post-composer.js
+│           ├── post-composer.js
+│           └── performance.js
 ├── test/
 └── docs/
     ├── ARCHITECTURE.md
@@ -33,7 +45,7 @@ V8.3.4 每次開啟網站都會以不使用快取的方式重新讀取公開 `da
 2. 保留 repo 現有的 `database.js`。
 3. 上傳本專案的 `index.html`、`assets/`、`docs/`、`test/`、`README.md`、`VERSION.txt` 與 `.gitignore`。
 4. 不要用 `database.example.js` 覆蓋現有的 `database.js`。
-5. GitHub Pages 若已設定為 `main / root`，上傳後強制重新整理頁面即可。
+5. GitHub Pages 若已設定為 `main / root`，上傳後第一次按 `Ctrl + F5`；之後一般開啟即可。
 
 新 repo 才需要把 `database.example.js` 複製成 `database.js`。
 
@@ -66,3 +78,5 @@ python3 -m http.server 8080
 ```bash
 node --test test/*.test.js
 ```
+
+測試包含 4,000 則模擬貼文的兩次啟動情境，確認第二次不重傳資料本體，也不重寫 IndexedDB。

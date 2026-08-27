@@ -22,7 +22,10 @@ node --test test/*.test.js
 
 - 一般瀏覽器已有舊 IndexedDB 時，重新開啟仍會讀取最新公開 `database.js`。
 - 沒有 GitHub Token 時也會執行公開資料更新。
-- `database.js` 請求使用 `cache: no-store` 並帶一次性查詢參數。
+- `database.js` 每次啟動只請求一次，並帶入前次 ETag 重新驗證。
+- 4,000 則模擬貼文首次載入只寫入一次 IndexedDB。
+- 第二次啟動收到 304 時不重傳資料本體、不合併、不重寫 IndexedDB。
+- 連續文字輸入會合併存檔，切換貼文不重建整個日視圖。
 - 公開資料與本機資料時間相同時，以公開版本為準。
 - 公開資料暫時讀取失敗時，仍可使用本機資料。
 

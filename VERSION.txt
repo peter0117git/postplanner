@@ -1,5 +1,5 @@
-IG Post Planner V8.3.4 — Fresh Shared Data
+IG Post Planner V8.4.0 — Performance Update
 
-Every launch fetches public database.js with cache disabled before GitHub credentials are checked.
-Read-only coworkers receive published updates without a token or private browsing.
-Canva previews continue to use the official /view?embed viewer.
+Public database.js is revalidated once per launch with ETag and content fingerprints.
+Unchanged data is not reparsed, merged, or rewritten to IndexedDB.
+Text edits are batched, post switching uses partial UI updates, and metadata options are indexed once.

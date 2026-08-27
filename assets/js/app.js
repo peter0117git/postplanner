@@ -9,13 +9,22 @@ let isIGExpanded = false;
 let saveStatusTimer;
 let localSaveTimer;
 let dayRenderTimer;
+let previewRenderTimer;
 let lastRenderedMediaKey = null;
 let storageWriteChain = Promise.resolve();
 let storageErrorShown = false;
 let pendingConfirmResolve = null;
+let dataRevision = 0;
+let persistedRevision = 0;
+let metadataIndexDirty = true;
+let metadataIndexCache = { themes: [], books: [] };
 let calYear, calMonth;     // 日曆浮動視窗的當前年月
 const DB_SCHEMA_VERSION = 2;
-const APP_VERSION = '8.3.4';
+const APP_VERSION = '8.4.0';
+const PERSIST_DEBOUNCE_MS = 550;
+const DAY_RENDER_DEBOUNCE_MS = 320;
+const PREVIEW_RENDER_DEBOUNCE_MS = 80;
+const TEXT_INPUT_FIELDS = new Set(['caption', 'theme', 'title', 'canvaUrl']);
 const VALID_RATIOS = new Set(['1-1', '4-5', '16-9']);
 const VALID_STATUSES = new Set(['draft', 'ready', 'published']);
 const STATUS_LABELS = { draft: '草稿', ready: '已完成', published: '已發布' };
@@ -49,24 +58,35 @@ function markSaved() {
     clearTimeout(saveStatusTimer);
     saveStatusTimer = setTimeout(() => { el.innerText = '自動存本機'; el.classList.remove('saved'); }, 2000);
 }
-function persistLocal() {
+function markDataDirty({ metadata = false } = {}) {
+    dataRevision += 1;
+    if (metadata) metadataIndexDirty = true;
+}
+function persistLocal({ force = false } = {}) {
     clearTimeout(localSaveTimer); localSaveTimer = null;
-    const snapshot = { db: cloneJson(db), meta: cloneJson(dbMeta), savedAt: new Date().toISOString() };
     storageWriteChain = storageWriteChain.catch(() => {}).then(async () => {
+        if (!force && persistedRevision >= dataRevision) return true;
+        const revisionToWrite = dataRevision;
+        // IndexedDB 的 put() 會自行做 structured clone，不必先複製整座資料庫。
+        const snapshot = { db, meta: dbMeta, savedAt: new Date().toISOString() };
         try {
             await PlannerStorage.writeState(snapshot);
+            persistedRevision = Math.max(persistedRevision, revisionToWrite);
             // IndexedDB 儲存成功後移除舊的大型副本，立即釋放 localStorage 容量。
             localStorage.removeItem('planner_db');
             localStorage.removeItem('planner_meta');
             storageErrorShown = false;
             markSaved();
+            if (dataRevision > persistedRevision) void persistLocal();
             return true;
         } catch (indexedError) {
             console.error('IndexedDB save failed:', indexedError);
             try {
                 localStorage.setItem('planner_db', JSON.stringify(snapshot.db));
                 localStorage.setItem('planner_meta', JSON.stringify(snapshot.meta));
+                persistedRevision = Math.max(persistedRevision, revisionToWrite);
                 markSaved();
+                if (dataRevision > persistedRevision) void persistLocal();
                 return true;
             } catch (localError) {
                 console.error('localStorage fallback failed:', localError);
@@ -82,17 +102,24 @@ function persistLocal() {
     });
     return storageWriteChain;
 }
-function saveLocal({ debounce = false, touchDatabase = true } = {}) {
-    if (touchDatabase) dbMeta.updatedAt = new Date().toISOString();
+function saveLocal({ debounce = false, touchDatabase = true, metadata = false } = {}) {
+    if (touchDatabase) {
+        dbMeta.updatedAt = new Date().toISOString();
+        markDataDirty({ metadata });
+    }
     if (!debounce) { persistLocal(); return; }
     const el = document.getElementById('save-status');
     el.innerText = '儲存中…'; el.classList.remove('saved');
     clearTimeout(localSaveTimer);
-    localSaveTimer = setTimeout(persistLocal, 280);
+    localSaveTimer = setTimeout(persistLocal, PERSIST_DEBOUNCE_MS);
 }
 function scheduleDayRender() {
     clearTimeout(dayRenderTimer);
-    dayRenderTimer = setTimeout(renderDay, 300);
+    dayRenderTimer = setTimeout(renderDay, DAY_RENDER_DEBOUNCE_MS);
+}
+function schedulePreviewRender(delay = PREVIEW_RENDER_DEBOUNCE_MS) {
+    clearTimeout(previewRenderTimer);
+    previewRenderTimer = setTimeout(updatePreview, delay);
 }
 
 /* =============================================================
@@ -192,6 +219,7 @@ async function syncToGitHub() {
             const merged = mergeDatabases(db, remote.db, dbMeta, remote.meta);
             db = merged.db; dbMeta = merged.meta;
             dbMeta.updatedAt = new Date().toISOString();
+            markDataDirty({ metadata: true });
             let result;
             try {
                 result = await GitHubService.writeFile({
@@ -287,7 +315,7 @@ function importBackup(event) {
             const ok = await showConfirm('匯入備份將覆蓋目前所有本機資料，確定繼續嗎？');
             if (!ok) { event.target.value = ''; return; }
             db = incomingDb; dbMeta = incomingMeta; dbMeta.updatedAt = new Date().toISOString();
-            saveLocal(); renderDay();
+            saveLocal({ metadata: true }); renderDay();
             if (selectedDateStr) selectDate(selectedDateStr);
             showToast('備份已匯入');
         } catch (err) { console.error(err); showToast('匯入失敗：格式不正確，原資料未變更'); }
@@ -302,6 +330,16 @@ function importBackup(event) {
 function newPostId() { return 'p_' + Date.now() + '_' + Math.random().toString(36).slice(2, 8); }
 function validIso(value) { return typeof value === 'string' && !Number.isNaN(Date.parse(value)) ? value : null; }
 function cloneJson(value) { return JSON.parse(JSON.stringify(value)); }
+function isCurrentStoredDatabase(state) {
+    const value = state?.db;
+    if (Number(state?.meta?.schemaVersion || 0) < DB_SCHEMA_VERSION) return false;
+    if (!value || typeof value !== 'object' || Array.isArray(value)) return false;
+    return Object.entries(value).every(([dateStr, list]) =>
+        /^\d{4}-\d{2}-\d{2}$/.test(dateStr) &&
+        Array.isArray(list) &&
+        list.every(post => post && typeof post === 'object' && !Array.isArray(post) && typeof post._id === 'string')
+    );
+}
 function normalizeMeta(value) {
     const raw = value && typeof value === 'object' && !Array.isArray(value) ? value : {};
     const tombstones = {};
@@ -396,11 +434,14 @@ function timestampOf(post) { return Date.parse(post?.updatedAt || post?.createdA
 function mergeDatabases(localDb, remoteDb, localMeta, remoteMeta) {
     const records = new Map();
     const stats = { localOnly: 0, remoteOnly: 0, remoteNewer: 0, localNewer: 0 };
-    const add = (source, sourceDb) => Object.entries(sourceDb).forEach(([dateStr, list]) => {
+    // 兩端資料在載入時已完成 normalize；合併階段不再重複清理、複製整座資料庫。
+    const add = (source, sourceDb) => Object.entries(sourceDb || {}).forEach(([dateStr, list]) => {
+        if (!Array.isArray(list)) return;
         list.forEach(post => {
+            if (!post?._id) return;
             const existing = records.get(post._id);
             if (!existing) {
-                records.set(post._id, { dateStr, post: cloneJson(post), source });
+                records.set(post._id, { dateStr, post, source });
                 stats[source === 'local' ? 'localOnly' : 'remoteOnly']++;
                 return;
             }
@@ -410,7 +451,7 @@ function mergeDatabases(localDb, remoteDb, localMeta, remoteMeta) {
                 const remoteTime = timestampOf(post);
                 // 時間相同時也採用遠端版本，避免舊瀏覽器資料遮住已發布內容。
                 if (remoteTime >= localTime) {
-                    records.set(post._id, { dateStr, post: cloneJson(post), source });
+                    records.set(post._id, { dateStr, post, source });
                     stats.remoteNewer++;
                 } else {
                     stats.localNewer++;
@@ -418,8 +459,8 @@ function mergeDatabases(localDb, remoteDb, localMeta, remoteMeta) {
             }
         });
     });
-    add('local', normalizeDatabase(localDb, { strict: false }));
-    add('remote', normalizeDatabase(remoteDb, { strict: false }));
+    add('local', localDb);
+    add('remote', remoteDb);
 
     const mergedMeta = normalizeMeta(localMeta);
     const remoteNormalizedMeta = normalizeMeta(remoteMeta);
@@ -446,25 +487,36 @@ async function fetchGitDatabase(repo, token) {
     if (!file.text) return { sha: file.sha, db: {}, meta: normalizeMeta({}) };
     return { sha: file.sha, ...parseDatabaseScript(file.text) };
 }
-async function fetchPublishedDatabase() {
+async function fetchPublishedDatabase({ allowNotModified = true } = {}) {
     if (location.protocol === 'file:') return null;
     const url = new URL('database.js', location.href);
     url.search = '';
     url.hash = '';
-    url.searchParams.set('_fresh', `${Date.now()}-${Math.random().toString(36).slice(2)}`);
+    const cachedEtag = allowNotModified ? localStorage.getItem('planner_public_etag') : '';
+    const headers = { Accept: 'text/javascript, application/javascript, text/plain;q=0.9' };
+    if (cachedEtag) headers['If-None-Match'] = cachedEtag;
     const response = await fetch(url.toString(), {
         method: 'GET',
         cache: 'no-store',
         credentials: 'same-origin',
-        headers: { Accept: 'text/javascript, application/javascript, text/plain;q=0.9' }
+        headers
     });
+    if (response.status === 304) return { notModified: true };
     if (!response.ok) {
         if (response.status === 404) return null;
         throw new Error(`公開資料讀取失敗（HTTP ${response.status}）`);
     }
     const text = await response.text();
     if (!text.trim()) return null;
-    return parseDatabaseScript(text);
+    const fingerprint = PlannerPerformance.fingerprintText(text);
+    if (allowNotModified && fingerprint === localStorage.getItem('planner_public_fingerprint')) {
+        const etag = response.headers.get('etag');
+        if (etag) localStorage.setItem('planner_public_etag', etag);
+        return { notModified: true };
+    }
+    const parsed = parseDatabaseScript(text);
+    const etag = response.headers.get('etag');
+    return { ...parsed, notModified: false, fingerprint, etag };
 }
 function getPostById(id) {
     if (!selectedDateStr || id === null) return null;
@@ -474,15 +526,25 @@ async function initDatabase() {
     const local = localStorage.getItem('planner_db');
     const localMeta = localStorage.getItem('planner_meta');
     let indexedState = null;
+    let loadedLegacyStorage = false;
+    let publishedAvailable = false;
+    let pendingPublishedFingerprint = '';
+    let pendingPublishedEtag = '';
     try { indexedState = await PlannerStorage.readState(); }
     catch (err) { console.warn('IndexedDB read unavailable, using fallback:', err); }
 
     if (indexedState?.db) {
-        try { db = normalizeDatabase(indexedState.db, { strict: true }); }
+        try {
+            // 自己先前寫入且 schema 未變的 IndexedDB 已是乾淨資料，直接採用即可。
+            db = isCurrentStoredDatabase(indexedState)
+                ? indexedState.db
+                : normalizeDatabase(indexedState.db, { strict: true });
+        }
         catch { db = {}; showToast('本機資料格式異常，已先開啟空白資料'); }
     } else if (local) {
         try { db = normalizeDatabase(JSON.parse(local), { strict: true }); }
         catch { db = {}; showToast('本機資料格式異常，已先開啟空白資料'); }
+        loadedLegacyStorage = true;
     } else if (typeof externalDB !== 'undefined') {
         db = normalizeDatabase(externalDB, { strict: false });
     }
@@ -491,36 +553,54 @@ async function initDatabase() {
         else dbMeta = normalizeMeta(localMeta ? JSON.parse(localMeta) : (typeof externalDBMeta !== 'undefined' ? externalDBMeta : {}));
     } catch { dbMeta = normalizeMeta({}); }
 
-    // 每次啟動都繞過瀏覽器快取讀取網站上的 database.js。
+    let sourceSchemaVersion = Number(indexedState?.meta?.schemaVersion || 0);
+    if (!sourceSchemaVersion && localMeta) {
+        try { sourceSchemaVersion = Number(JSON.parse(localMeta)?.schemaVersion || 0); }
+        catch { sourceSchemaVersion = 0; }
+    }
+    if (loadedLegacyStorage || sourceSchemaVersion < DB_SCHEMA_VERSION) markDataDirty({ metadata: true });
+
+    // 每次啟動都向網站重新驗證 database.js；內容未變時不解析、不合併、不寫入。
     // 因此僅需查看資料的同事不必設定 GitHub Token，也不必使用無痕模式。
     try {
-        const published = await fetchPublishedDatabase();
-        if (published) {
+        const published = await fetchPublishedDatabase({ allowNotModified: Boolean(indexedState?.db || local) });
+        publishedAvailable = Boolean(published);
+        if (published && !published.notModified) {
             const merged = mergeDatabases(db, published.db, dbMeta, published.meta);
             db = merged.db;
             dbMeta = merged.meta;
-            await persistLocal();
+            markDataDirty({ metadata: true });
+            pendingPublishedFingerprint = published.fingerprint || '';
+            pendingPublishedEtag = published.etag || '';
         }
     } catch (err) {
         console.warn('Published database unavailable, using local data:', err);
         showToast('最新公開資料暫時無法讀取，已使用本機資料');
     }
 
+    // 公開版本可用時不再為有 Token 的電腦重複下載同一份 GitHub 內容。
+    // 只有公開檔案無法取得時，才以 GitHub API 作為備援。
     const token = localStorage.getItem('gh_token');
     const repo = localStorage.getItem('gh_repo');
-    if (!token || !repo) return;
-    try {
-        const remote = await fetchGitDatabase(repo, token);
-        const lastSha = localStorage.getItem('gh_last_sync_sha');
-        if (remote.sha === lastSha && Object.keys(db).length > 0) { showToast('已是最新資料'); return; }
-        const merged = mergeDatabases(db, remote.db, dbMeta, remote.meta);
-        db = merged.db; dbMeta = merged.meta;
-        await persistLocal();
-        if (remote.sha) localStorage.setItem('gh_last_sync_sha', remote.sha);
-        showToast(merged.stats.remoteOnly + merged.stats.remoteNewer > 0 ? '已合併 GitHub 的新資料' : '已核對 GitHub 資料');
-    } catch (e) {
-        console.error(e);
-        showToast(e.status === 401 || e.status === 403 ? 'GitHub Token 無效，已改用本機' : '連線 GitHub 失敗，已改用本機');
+    if (!publishedAvailable && token && repo) {
+        try {
+            const remote = await fetchGitDatabase(repo, token);
+            const merged = mergeDatabases(db, remote.db, dbMeta, remote.meta);
+            db = merged.db; dbMeta = merged.meta;
+            markDataDirty({ metadata: true });
+            if (remote.sha) localStorage.setItem('gh_last_sync_sha', remote.sha);
+            showToast(merged.stats.remoteOnly + merged.stats.remoteNewer > 0 ? '已合併 GitHub 的新資料' : '已核對 GitHub 資料');
+        } catch (e) {
+            console.error(e);
+            showToast(e.status === 401 || e.status === 403 ? 'GitHub Token 無效，已改用本機' : '連線 GitHub 失敗，已改用本機');
+        }
+    }
+    if (dataRevision > persistedRevision) {
+        const saved = await persistLocal();
+        if (saved && pendingPublishedFingerprint) {
+            localStorage.setItem('planner_public_fingerprint', pendingPublishedFingerprint);
+            if (pendingPublishedEtag) localStorage.setItem('planner_public_etag', pendingPublishedEtag);
+        }
     }
 }
 
@@ -569,6 +649,7 @@ function renderDay() {
 
             const pc = document.createElement('div');
             pc.className = 'post-card' + (post._id === currentId ? ' active' : '');
+            pc.dataset.postId = post._id;
             pc.tabIndex = 0; pc.setAttribute('role', 'button');
             pc.onclick = () => loadPost(post._id);
             pc.onkeydown = e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); pc.click(); } };
@@ -656,6 +737,13 @@ function showEditor(visible) {
     document.getElementById('preview-ui').style.display = visible ? 'flex' : 'none';
 }
 
+function setActivePostCard(id) {
+    document.querySelectorAll('.post-card.active').forEach(card => card.classList.remove('active'));
+    const card = [...document.querySelectorAll('.post-card')].find(item => item.dataset.postId === String(id));
+    card?.classList.add('active');
+    updatePresentationNav();
+}
+
 function toggleEditorFocus(force) {
     if (isMobile()) return;
     const next = typeof force === 'boolean' ? force : !document.body.classList.contains('editor-focused');
@@ -673,7 +761,6 @@ function loadPost(id) {
     currentId = id; isIGExpanded = false;
     const post = getPostById(id);
     if (!post) return;
-    refreshMetadataDatalists();
     document.getElementById('edit-time').value = post.time || '09:00';
     document.getElementById('edit-ratio').value = post.ratio || '1-1';
     document.getElementById('edit-theme').value = post.theme || '';
@@ -686,7 +773,7 @@ function loadPost(id) {
     lastRenderedMediaKey = null;
     updatePreview();
     updateToolbarState();
-    renderDay(); // 更新 active 樣式
+    setActivePostCard(id);
     if (isMobile()) setTimeout(() => mobileShowPanel('preview'), 50);
 }
 function updateCurrentPost(field, value) {
@@ -696,14 +783,21 @@ function updateCurrentPost(field, value) {
     if (field === 'caption') value = sanitizeCaptionHtml(value);
     if (field === 'ratio' && !VALID_RATIOS.has(value)) return;
     if (field === 'status' && !VALID_STATUSES.has(value)) return;
+    if (post[field] === value) return;
     post[field] = value;
     const now = new Date().toISOString();
     post.createdAt = post.createdAt || now;
     post.updatedAt = now;
     if (field === 'canvaUrl') updateCanvaLauncherState(post);
-    saveLocal({ debounce: field === 'caption' });
-    updatePreview();
-    if (field === 'caption') scheduleDayRender();
+    const isTextInput = TEXT_INPUT_FIELDS.has(field);
+    const affectsMetadata = field === 'caption' || field === 'theme' || field === 'title';
+    saveLocal({ debounce: isTextInput, metadata: affectsMetadata });
+
+    if (field === 'caption') schedulePreviewRender();
+    else if (field === 'canvaUrl') schedulePreviewRender(360);
+    else if (field === 'time' || field === 'ratio') updatePreview();
+
+    if (isTextInput) scheduleDayRender();
     else renderDay();
 }
 
@@ -716,14 +810,14 @@ function createNewPost() {
     const newId = newPostId();
     const now = new Date().toISOString();
     db[selectedDateStr].push({ _id: newId, caption: '', time: '09:00', canvaUrl: '', ratio: '1-1', theme: '', title: '', status: 'draft', createdAt: now, updatedAt: now });
-    saveLocal(); renderDay(); loadPost(newId);
+    saveLocal({ metadata: true }); renderDay(); loadPost(newId);
 }
 async function deletePost() {
     const ok = await showConfirm('確定刪除此貼文？此動作無法復原。');
     if (!ok) return;
     dbMeta.tombstones[currentId] = new Date().toISOString();
     db[selectedDateStr] = db[selectedDateStr].filter(p => p._id !== currentId);
-    currentId = null; saveLocal(); renderDay();
+    currentId = null; saveLocal({ metadata: true }); renderDay();
     const remaining = getSortedDayPosts();
     if (remaining.length) loadPost(remaining[0]._id);
     else showEditor(false);
@@ -738,33 +832,28 @@ const QA_DEFAULT_TIMES = ['08:00', '20:00', '23:00'];
 function qaEscapeHtml(s) {
     return String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 }
-function qaExtractTags(regex) {
-    const set = new Set();
-    Object.values(db).forEach(list => {
-        (list || []).forEach(p => {
-            const plain = getPlainText(p.caption || '');
-            const re = new RegExp(regex.source, regex.flags);
-            let m;
-            while ((m = re.exec(plain))) { const v = m[1].trim(); if (v) set.add(v); }
-        });
-    });
-    return Array.from(set);
-}
 function qaGetStored(key) {
     try { return JSON.parse(localStorage.getItem(key) || '[]'); } catch { return []; }
 }
 function qaAddStored(key, value) {
     if (!value) return;
     const list = qaGetStored(key);
-    if (!list.includes(value)) { list.push(value); localStorage.setItem(key, JSON.stringify(list)); }
+    if (!list.includes(value)) {
+        list.push(value);
+        localStorage.setItem(key, JSON.stringify(list));
+        metadataIndexDirty = true;
+    }
 }
-function qaLoadThemeOptions() {
-    const structured = Object.values(db).flatMap(list => (list || []).map(p => p.theme).filter(Boolean));
-    return Array.from(new Set([...QA_DEFAULT_THEMES, ...qaGetStored('qa_themes'), ...structured, ...qaExtractTags(/【([^】]+)】/g)]));
-}
-function qaLoadBookOptions() {
-    const structured = Object.values(db).flatMap(list => (list || []).map(p => p.title).filter(Boolean));
-    return Array.from(new Set([...qaGetStored('qa_books'), ...structured, ...qaExtractTags(/《([^》]+)》/g)])).sort();
+function getMetadataIndex() {
+    if (!metadataIndexDirty) return metadataIndexCache;
+    metadataIndexCache = PlannerPerformance.collectMetadata(db, {
+        defaultThemes: QA_DEFAULT_THEMES,
+        storedThemes: qaGetStored('qa_themes'),
+        storedBooks: qaGetStored('qa_books'),
+        getPlainText
+    });
+    metadataIndexDirty = false;
+    return metadataIndexCache;
 }
 function fillMetadataDatalist(id, values) {
     const datalist = document.getElementById(id);
@@ -777,8 +866,9 @@ function fillMetadataDatalist(id, values) {
     }));
 }
 function refreshMetadataDatalists() {
-    fillMetadataDatalist('theme-options', qaLoadThemeOptions());
-    fillMetadataDatalist('book-options', qaLoadBookOptions());
+    const index = getMetadataIndex();
+    fillMetadataDatalist('theme-options', index.themes);
+    fillMetadataDatalist('book-options', index.books);
 }
 function commitMetadataOption(field, value) {
     const cleaned = String(value || '').trim();
@@ -949,7 +1039,7 @@ function submitQuickAdd() {
     qaAddStored('qa_themes', theme);
     qaAddStored('qa_books', title);
 
-    saveLocal(); renderDay(); loadPost(newId);
+    saveLocal({ metadata: true }); renderDay(); loadPost(newId);
     closeQuickAdd();
 }
 
@@ -1216,13 +1306,10 @@ window.addEventListener('DOMContentLoaded', async () => {
     document.getElementById('gh-token').value = localStorage.getItem('gh_token') || '';
     document.getElementById('gh-repo').value = localStorage.getItem('gh_repo') || '';
     await initDatabase();
-    migrateIds();
-    await persistLocal();
     refreshMetadataDatalists();
     // 跳到今天並選取
     const today = new Date();
     const todayStr = fmtDate(today);
     selectDate(todayStr);
-    renderDay();
     if (isMobile()) { document.getElementById('day-col').classList.add('mobile-visible'); }
 });
