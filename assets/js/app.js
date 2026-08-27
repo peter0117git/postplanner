@@ -11,6 +11,7 @@ let saveStatusTimer;
 let localSaveTimer;
 let dayRenderTimer;
 let previewRenderTimer;
+let previewScrollEndTimer;
 let lastRenderedMediaKeys = { instagram: null, facebook: null };
 let storageWriteChain = Promise.resolve();
 let storageErrorShown = false;
@@ -21,7 +22,7 @@ let metadataIndexDirty = true;
 let metadataIndexCache = { themes: [], books: [] };
 let calYear, calMonth;     // 日曆浮動視窗的當前年月
 const DB_SCHEMA_VERSION = 2;
-const APP_VERSION = '8.4.3';
+const APP_VERSION = '8.4.4';
 const PAGE_PARAMS = new URLSearchParams(location.search);
 const IS_BOSS_PREVIEW = PAGE_PARAMS.get('preview') === 'boss';
 const PERSIST_DEBOUNCE_MS = 550;
@@ -1215,10 +1216,19 @@ function canvaSlideUrl(embedUrl, pageNumber) {
     url.hash = String(pageNumber);
     return url.toString();
 }
-function createCanvaFrame(embedUrl, title, { pageNumber = null, staticPreview = false } = {}) {
+function assignFrameSource(frame, source, deferMs = 0) {
+    if (!deferMs) { frame.src = source; return; }
+    frame.src = 'about:blank';
+    setTimeout(() => {
+        const load = () => { if (frame.isConnected) frame.src = source; };
+        if ('requestIdleCallback' in window) window.requestIdleCallback(load, { timeout: 900 });
+        else load();
+    }, deferMs);
+}
+function createCanvaFrame(embedUrl, title, { pageNumber = null, staticPreview = false, deferMs = 0 } = {}) {
     const frame = document.createElement('iframe');
     frame.className = 'canva-frame';
-    frame.src = pageNumber ? canvaSlideUrl(embedUrl, pageNumber) : embedUrl;
+    assignFrameSource(frame, pageNumber ? canvaSlideUrl(embedUrl, pageNumber) : embedUrl, deferMs);
     frame.title = title;
     frame.loading = 'lazy';
     frame.allow = 'fullscreen';
@@ -1229,6 +1239,12 @@ function createCanvaFrame(embedUrl, title, { pageNumber = null, staticPreview = 
         frame.tabIndex = -1;
     }
     return frame;
+}
+function appendIGScrollShield(container) {
+    const shield = document.createElement('div');
+    shield.className = 'ig-scroll-shield';
+    shield.setAttribute('aria-hidden', 'true');
+    container.appendChild(shield);
 }
 function appendStaticShield(container) {
     const shield = document.createElement('div');
@@ -1245,7 +1261,11 @@ function renderCanvaMedia(container, { ratio, embedUrl, publicCanva, sourceUrl, 
             for (let pageNumber = 1; pageNumber <= 4; pageNumber += 1) {
                 const tile = document.createElement('div');
                 tile.className = 'fb-gallery-tile';
-                tile.appendChild(createCanvaFrame(embedUrl, `${title}｜第 ${pageNumber} 張`, { pageNumber, staticPreview: true }));
+                tile.appendChild(createCanvaFrame(embedUrl, `${title}｜第 ${pageNumber} 張`, {
+                    pageNumber,
+                    staticPreview: true,
+                    deferMs: pageNumber === 1 ? 0 : 300 + ((pageNumber - 2) * 450)
+                }));
                 appendStaticShield(tile);
                 container.appendChild(tile);
             }
@@ -1254,6 +1274,7 @@ function renderCanvaMedia(container, { ratio, embedUrl, publicCanva, sourceUrl, 
         const frame = createCanvaFrame(embedUrl, title, { pageNumber: firstCardOnly ? 1 : null, staticPreview: firstCardOnly });
         container.appendChild(frame);
         if (firstCardOnly) appendStaticShield(container);
+        else if (baseClass === 'ig-media') appendIGScrollShield(container);
         return;
     }
     const empty = document.createElement('div');
@@ -1333,6 +1354,21 @@ function updatePreview() {
 }
 function toggleIGExpand() { isIGExpanded = !isIGExpanded; updatePreview(); }
 function toggleFBExpand() { isFBExpanded = !isFBExpanded; updatePreview(); }
+function setupPreviewScrollPerformance() {
+    const pane = document.getElementById('preview-ui');
+    if (!pane) return;
+    const finish = () => {
+        clearTimeout(previewScrollEndTimer);
+        previewScrollEndTimer = null;
+        document.body.classList.remove('preview-scrolling');
+    };
+    pane.addEventListener('scroll', () => {
+        if (!document.body.classList.contains('preview-scrolling')) document.body.classList.add('preview-scrolling');
+        clearTimeout(previewScrollEndTimer);
+        previewScrollEndTimer = setTimeout(finish, 120);
+    }, { passive: true });
+    if ('onscrollend' in window) pane.addEventListener('scrollend', finish, { passive: true });
+}
 function formatTimeLabel(time) {
     if (!time) return '剛剛';
     const [h, m] = time.split(':').map(Number);
@@ -1427,6 +1463,7 @@ document.addEventListener('visibilitychange', () => { if (document.hidden && loc
 ============================================================= */
 window.addEventListener('DOMContentLoaded', async () => {
     enableBossPreviewMode();
+    setupPreviewScrollPerformance();
     document.getElementById('gh-token').value = localStorage.getItem('gh_token') || '';
     document.getElementById('gh-repo').value = localStorage.getItem('gh_repo') || '';
     await initDatabase();

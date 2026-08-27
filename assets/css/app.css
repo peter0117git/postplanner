@@ -535,6 +535,7 @@
             background: var(--paper);
             background-image: radial-gradient(circle at 1px 1px, rgba(0,0,0,0.04) 1px, transparent 0);
             background-size: 14px 14px;
+            overscroll-behavior: contain; scrollbar-gutter: stable;
         }
         .ig-card {
             background: white; border: 1px solid #dbdbdb; border-radius: 12px;
@@ -577,6 +578,9 @@
         body.presenting .preview-pane { flex-direction: column; align-items: center; }
         body.presenting .present-nav { display: flex; }
         body.boss-preview .boss-preview-badge { display: inline-flex; }
+        body.boss-preview .preview-pane {
+            background: #F4F6F8; background-image: none; will-change: scroll-position;
+        }
         body.boss-preview .save-status,
         body.boss-preview .topbar-right .topbar-divider,
         body.boss-preview .boss-preview-entry,
@@ -608,8 +612,16 @@
         .ig-media.r-1-1 { aspect-ratio: 1; }
         .ig-media.r-4-5 { aspect-ratio: 4/5; }
         .ig-media.r-16-9 { aspect-ratio: 16/9; }
+        .ig-media, .fb-media {
+            contain: layout paint style; content-visibility: auto; isolation: isolate;
+        }
         .ig-media-empty { display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; min-height: 200px; padding: 24px; color: #9b9b9b; font-size: 12px; text-align: center; }
-        .canva-frame { display: block; width: 100%; height: 100%; border: 0; background: #f4f4f4; }
+        .canva-frame {
+            display: block; width: 100%; height: 100%; border: 0; background: #f4f4f4;
+            backface-visibility: hidden; transform: translateZ(0);
+        }
+        .ig-scroll-shield { display: none; position: absolute; inset: 0 0 76px; z-index: 2; background: transparent; }
+        body.boss-preview .ig-scroll-shield { display: block; }
 
         /* Facebook 貼文預覽 */
         .fb-card {
@@ -655,6 +667,9 @@
             border-top: 1px solid #CED0D4; color: #65676B; font-size: 12px; font-weight: 700; text-align: center;
         }
         .fb-actions span { padding: 6px; }
+        body.preview-scrolling .platform-preview-panel,
+        body.preview-scrolling .ig-card,
+        body.preview-scrolling .fb-card { box-shadow: none; }
 
         /* 專注編輯模式 */
         .editor-focus-backdrop { display: none; position: fixed; inset: 0; z-index: 240; background: rgba(28,27,25,0.48); }

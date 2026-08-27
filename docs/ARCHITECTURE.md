@@ -1,4 +1,4 @@
-# V8.4.3 真實雙平台預覽版架構
+# V8.4.4 流暢雙平台預覽版架構
 
 ## 設計目標
 
@@ -11,6 +11,8 @@
 7. Instagram 與 Facebook 同時預覽，並限制為接近實際動態消息的 420px／500px 區塊寬度。
 8. Facebook 長文預設收合；一般主題只呈現首圖，「圖文時間」以 2×2 四圖格呈現。
 9. Facebook 的 Canva iframe 以加高並置中的方式裁掉底部控制列，並以透明層阻止誤觸。
+10. 老闆模式的 Instagram 圖面區以透明捲動層將滾輪交還外層，只保留底部 Canva 翻頁列可操作。
+11. 預覽媒體使用 paint containment 與 content visibility；四圖 iframe 採閒置時分批載入。
 
 ## 元件責任
 

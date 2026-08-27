@@ -76,3 +76,20 @@ test('Facebook 一般貼文鎖定第一張，圖文時間使用四圖排列', ()
     assert.match(cssSource, /grid-template-columns: repeat\(2, 1fr\)/);
     assert.match(cssSource, /height: calc\(100% \+ 220px\); transform: translateY\(-50%\)/);
 });
+
+test('老闆預覽的 Canva 圖面不攔截垂直滾動且保留底部翻頁區', () => {
+    assert.match(appSource, /function appendIGScrollShield\(container\)/);
+    assert.match(appSource, /shield\.className = 'ig-scroll-shield'/);
+    assert.match(cssSource, /\.ig-scroll-shield \{ display: none; position: absolute; inset: 0 0 76px/);
+    assert.match(cssSource, /body\.boss-preview \.ig-scroll-shield \{ display: block; \}/);
+});
+
+test('預覽捲動採用合成與分批載入降低重繪', () => {
+    assert.match(cssSource, /contain: layout paint style; content-visibility: auto/);
+    assert.match(cssSource, /body\.boss-preview \.preview-pane[\s\S]+background-image: none/);
+    assert.match(cssSource, /body\.preview-scrolling \.platform-preview-panel/);
+    assert.match(appSource, /function setupPreviewScrollPerformance\(\)/);
+    assert.match(appSource, /\{ passive: true \}/);
+    assert.match(appSource, /requestIdleCallback\(load/);
+    assert.match(appSource, /deferMs: pageNumber === 1 \? 0 : 300/);
+});

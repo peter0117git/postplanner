@@ -1,4 +1,4 @@
-IG Post Planner V8.4.3 — Realistic Instagram and Facebook Preview
+IG Post Planner V8.4.4 — Smooth Instagram and Facebook Preview
 
 Public database.js is revalidated once per launch with ETag and content fingerprints.
 Unchanged data is not reparsed, merged, or rewritten to IndexedDB.
@@ -9,3 +9,5 @@ Single-card Facebook previews crop the Canva controls outside the visible frame.
 Boss preview uses normal feed widths instead of stretching cards to the viewport.
 Long Facebook captions start collapsed with a Show More control.
 Regular Facebook posts show the first card; 圖文時間 uses a locked 2-by-2 four-image layout.
+Boss-mode wheel scrolling bypasses Canva's canvas while its bottom page controls remain available.
+Preview paint containment, offscreen rendering skips, reduced scroll shadows, and staggered gallery loading lower frame drops.
