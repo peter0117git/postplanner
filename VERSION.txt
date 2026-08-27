@@ -1,7 +1,11 @@
-IG Post Planner V8.4.1 — Dual Platform Boss Preview
+IG Post Planner V8.4.3 — Realistic Instagram and Facebook Preview
 
 Public database.js is revalidated once per launch with ETag and content fingerprints.
 Unchanged data is not reparsed, merged, or rewritten to IndexedDB.
 Text edits are batched, post switching uses partial UI updates, and metadata options are indexed once.
 Boss preview is read-only and shows Instagram and Facebook simultaneously.
 Facebook uses only the first Canva card except for the 圖文時間 theme.
+Single-card Facebook previews crop the Canva controls outside the visible frame.
+Boss preview uses normal feed widths instead of stretching cards to the viewport.
+Long Facebook captions start collapsed with a Show More control.
+Regular Facebook posts show the first card; 圖文時間 uses a locked 2-by-2 four-image layout.

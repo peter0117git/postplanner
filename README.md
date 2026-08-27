@@ -1,4 +1,4 @@
-# 排版桌 IG Post Planner V8.4.1（雙平台老闆預覽版）
+# 排版桌 IG Post Planner V8.4.3（真實雙平台預覽版）
 
 這是一個不需要前端建置工具、可直接部署到 GitHub Pages 的貼文規劃器。此版本保留 V8.3 的資料格式、GitHub 同步、發布文案、可搜尋主題／書名、桌面編輯與手機預覽。
 
@@ -21,6 +21,21 @@ https://你的排版桌網址/?preview=boss&date=2026-08-27&post=貼文ID
 - Instagram 顯示完整輪播；Facebook 一般貼文固定第一張字卡。
 - 主題為「圖文時間」時，Facebook 才顯示完整圖組。
 - 窄螢幕與手機會自動改成上下排列，不需要切換平台。
+
+## V8.4.2 Facebook 純淨預覽
+
+- Facebook 一般貼文的 Canva iframe 會向上下延伸並置中裁切。
+- Canva 底部的進度列、翻頁、縮放與全螢幕控制會落在可視區域之外。
+- 字卡仍維持原比例並置中呈現，不直接用遮罩蓋住圖片底部。
+- 主題為「圖文時間」時不裁切控制列，保留完整圖組的翻頁操作。
+
+## V8.4.3 真實社群比例
+
+- 老闆預覽不再隨視窗無限放大：Instagram 區塊固定約 420px，Facebook 區塊固定約 500px。
+- Facebook 長文預設只顯示前段並提供「顯示更多」，圖片會直接出現在首屏可視範圍。
+- 一般 Facebook 貼文維持單張首圖，主題為「圖文時間」時改用 2×2 四圖排列。
+- Facebook 圖片維持唯讀，Canva 的進度、翻頁、縮放與全螢幕操作列不會顯示。
+- 小螢幕仍會自動改成上下排列，卡片寬度不超出裝置。
 
 ## V8.4 效能調整
 
@@ -70,7 +85,7 @@ https://你的排版桌網址/?preview=boss&date=2026-08-27&post=貼文ID
 1. 在 Canva 將分享權限設為「知道連結的任何人可查看」。
 2. 複製完整分享網址，例如 `https://www.canva.com/design/.../.../view?...`。
 3. 貼到排版桌的 Canva 欄位。
-4. 預覽區會同時呈現 Instagram 與 Facebook；Instagram 可完整翻頁，Facebook 依主題套用單張或完整圖組規則。
+4. 預覽區會同時呈現 Instagram 與 Facebook；Instagram 可完整翻頁，Facebook 一般貼文顯示首圖，「圖文時間」顯示四圖排列。
 
 `https://canva.link/...` 短網址無法由純前端安全地展開，因此不直接嵌入。遇到短網址時，請改貼 Canva 的完整 `/design/.../view` 分享網址。
 

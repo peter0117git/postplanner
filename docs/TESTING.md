@@ -29,7 +29,10 @@ node --test test/*.test.js
 - `?preview=boss` 隱藏所有修改、同步與工具入口。
 - 老闆網址保留目前日期與貼文。
 - Instagram 與 Facebook 同時呈現並具有明顯不同的區域色彩。
-- Facebook 一般貼文鎖定第 1 張；「圖文時間」保留完整圖組。
+- 寬螢幕的 Instagram／Facebook 區塊維持約 420px／500px，不隨剩餘空間過度放大。
+- Facebook 長文預設出現「顯示更多」，展開後可按「收合」。
+- Facebook 一般貼文鎖定第 1 張；「圖文時間」顯示前 4 張的 2×2 排列。
+- Facebook 單張模式套用 `fb-static-frame` 裁切，將 Canva 控制列移出可視範圍。
 - 公開資料與本機資料時間相同時，以公開版本為準。
 - 公開資料暫時讀取失敗時，仍可使用本機資料。
 

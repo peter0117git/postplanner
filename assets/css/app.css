@@ -542,13 +542,15 @@
             box-shadow: 0 8px 28px rgba(0,0,0,0.09);
         }
         .dual-platform-preview {
-            width: 100%; max-width: 1080px; display: grid;
-            grid-template-columns: repeat(2, minmax(300px, 1fr)); gap: 18px; align-items: start;
+            width: 100%; max-width: 938px; display: grid;
+            grid-template-columns: minmax(0, 420px) minmax(0, 500px); gap: 18px; align-items: start; justify-content: center;
         }
         .platform-preview-panel {
             min-width: 0; padding: 10px; border: 2px solid transparent; border-radius: 14px;
             box-shadow: 0 8px 24px rgba(0,0,0,0.06);
         }
+        .instagram-preview-panel { width: 420px; max-width: 100%; }
+        .facebook-preview-panel { width: 500px; max-width: 100%; }
         .instagram-preview-panel { border-color: #DD6B92; background: #FFF1F5; }
         .facebook-preview-panel { border-color: #1877F2; background: #EEF5FF; }
         .platform-preview-heading {
@@ -587,7 +589,7 @@
         body.boss-preview #publish-overlay,
         body.boss-preview #canva-tool-overlay { display: none !important; }
         body.boss-preview.has-preview #preview-ui { display: flex !important; flex-direction: column; align-items: center; }
-        body.boss-preview .present-nav { display: flex; max-width: 1080px; }
+        body.boss-preview .present-nav { display: flex; max-width: 938px; }
         .present-nav-btn {
             width: 34px; height: 30px; border: 1px solid var(--paper-line); border-radius: 5px;
             background: var(--paper-raised); color: var(--ink-soft); cursor: pointer; font-size: 11px;
@@ -624,7 +626,11 @@
         .fb-post-time { color: #65676B; font-size: 11px; margin-top: 2px; }
         .fb-more { color: #65676B; font-size: 16px; letter-spacing: 1px; }
         .fb-caption { padding: 2px 14px 12px; color: #050505; font-size: 14px; line-height: 1.52; white-space: normal; overflow-wrap: anywhere; }
-        .fb-caption:empty { display: none; }
+        .fb-more-btn {
+            display: inline; margin-left: 4px; padding: 0; border: 0; background: transparent;
+            color: #65676B; font: inherit; font-weight: 700; cursor: pointer;
+        }
+        .fb-more-btn:hover { text-decoration: underline; }
         .fb-media-rule {
             padding: 6px 12px; border-top: 1px solid #E4E6EB; background: #F0F2F5;
             color: #65676B; font-size: 10px; font-weight: 700; text-align: center;
@@ -633,6 +639,15 @@
         .fb-media.r-1-1 { aspect-ratio: 1; }
         .fb-media.r-4-5 { aspect-ratio: 4/5; }
         .fb-media.r-16-9 { aspect-ratio: 16/9; }
+        .fb-media.fb-gallery-grid {
+            aspect-ratio: 1; display: grid; grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr); gap: 2px; background: #FFFFFF;
+        }
+        .fb-gallery-tile { position: relative; min-width: 0; min-height: 0; overflow: hidden; background: #F0F2F5; }
+        .fb-media .canva-frame.fb-static-frame {
+            position: absolute; top: 50%; left: 0; width: 100%;
+            height: calc(100% + 220px); transform: translateY(-50%);
+        }
         .fb-media-shield { position: absolute; inset: 0; z-index: 2; background: transparent; cursor: default; }
         .fb-engagement { display: flex; justify-content: space-between; padding: 8px 14px; color: #65676B; font-size: 11px; }
         .fb-actions {
@@ -695,11 +710,11 @@
         }
 
         @media (max-width: 1400px) {
-            body:not(.boss-preview) .dual-platform-preview { grid-template-columns: 1fr; max-width: 560px; }
+            body:not(.boss-preview) .dual-platform-preview { grid-template-columns: minmax(0, 500px); max-width: 500px; }
         }
 
         @media (max-width: 1050px) {
-            .dual-platform-preview { grid-template-columns: 1fr; max-width: 560px; }
+            .dual-platform-preview { grid-template-columns: minmax(0, 500px); max-width: 500px; }
         }
 
         /* 窄平板編輯時先保留清單與編輯器；簡報時仍顯示完整預覽 */
@@ -755,7 +770,8 @@
             .canva-modal-body { padding: 12px; }
             .canva-command-bar { grid-template-columns: 1fr; }
             .preview-pane { padding: 12px 10px; }
-            .dual-platform-preview { grid-template-columns: 1fr; gap: 14px; }
+            .dual-platform-preview { grid-template-columns: minmax(0, 500px); gap: 14px; }
+            .instagram-preview-panel, .facebook-preview-panel { width: 100%; }
             .platform-preview-panel { padding: 7px; border-radius: 11px; }
             .platform-preview-heading { margin: -7px -7px 7px; border-radius: 8px 8px 0 0; }
         }

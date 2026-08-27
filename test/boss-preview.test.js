@@ -49,10 +49,30 @@ test('Instagram 與 Facebook 使用明顯不同的區域色彩', () => {
     assert.match(cssSource, /\.facebook-heading \{ background: #1877F2; \}/);
 });
 
-test('Facebook 一般貼文鎖定第一張，圖文時間才保留完整圖組', () => {
+test('雙平台使用接近實際動態消息的固定尺寸', () => {
+    assert.match(cssSource, /grid-template-columns: minmax\(0, 420px\) minmax\(0, 500px\)/);
+    assert.match(cssSource, /\.instagram-preview-panel \{ width: 420px; max-width: 100%; \}/);
+    assert.match(cssSource, /\.facebook-preview-panel \{ width: 500px; max-width: 100%; \}/);
+});
+
+test('Facebook 長文預設收起並提供顯示更多', () => {
+    assert.match(htmlSource, /id="fb-more-trigger"[^>]+onclick="toggleFBExpand\(\)"/);
+    assert.match(appSource, /let isFBExpanded = false/);
+    assert.match(appSource, /plain\.slice\(0, 180\)/);
+    assert.match(appSource, /fbMoreBtn\.innerText = '顯示更多'/);
+    assert.match(appSource, /fbMoreBtn\.innerText = '收合'/);
+    assert.match(appSource, /function toggleFBExpand\(\)/);
+});
+
+test('Facebook 一般貼文鎖定第一張，圖文時間使用四圖排列', () => {
     assert.match(appSource, /=== '圖文時間'/);
     assert.match(appSource, /firstCardOnly: !isFacebookGallery/);
-    assert.match(appSource, /canvaSlideUrl\(embedUrl, 1\)/);
+    assert.match(appSource, /facebookGallery: isFacebookGallery/);
+    assert.match(appSource, /pageNumber <= 4/);
     assert.match(appSource, /實際發文僅使用第一張字卡/);
-    assert.match(appSource, /「圖文時間」使用完整圖組/);
+    assert.match(appSource, /「圖文時間」使用四圖排列/);
+    assert.match(appSource, /frame\.classList\.add\('fb-static-frame'\)/);
+    assert.match(cssSource, /\.fb-media\.fb-gallery-grid/);
+    assert.match(cssSource, /grid-template-columns: repeat\(2, 1fr\)/);
+    assert.match(cssSource, /height: calc\(100% \+ 220px\); transform: translateY\(-50%\)/);
 });

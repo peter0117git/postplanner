@@ -6,6 +6,7 @@ let dbMeta = { schemaVersion: 2, updatedAt: null, tombstones: {} };
 let selectedDateStr = null;
 let currentId = null;
 let isIGExpanded = false;
+let isFBExpanded = false;
 let saveStatusTimer;
 let localSaveTimer;
 let dayRenderTimer;
@@ -20,7 +21,7 @@ let metadataIndexDirty = true;
 let metadataIndexCache = { themes: [], books: [] };
 let calYear, calMonth;     // 日曆浮動視窗的當前年月
 const DB_SCHEMA_VERSION = 2;
-const APP_VERSION = '8.4.1';
+const APP_VERSION = '8.4.3';
 const PAGE_PARAMS = new URLSearchParams(location.search);
 const IS_BOSS_PREVIEW = PAGE_PARAMS.get('preview') === 'boss';
 const PERSIST_DEBOUNCE_MS = 550;
@@ -796,7 +797,7 @@ function toggleEditorFocus(force) {
    載入 / 更新貼文
 ============================================================= */
 function loadPost(id) {
-    currentId = id; isIGExpanded = false;
+    currentId = id; isIGExpanded = false; isFBExpanded = false;
     const post = getPostById(id);
     if (!post) return;
     document.getElementById('edit-time').value = post.time || '09:00';
@@ -1214,28 +1215,45 @@ function canvaSlideUrl(embedUrl, pageNumber) {
     url.hash = String(pageNumber);
     return url.toString();
 }
-function renderCanvaMedia(container, { ratio, embedUrl, publicCanva, sourceUrl, title, firstCardOnly = false }) {
-    container.className = `${container.id === 'prev-fb-media' ? 'fb-media' : 'ig-media'} r-${ratio}`;
+function createCanvaFrame(embedUrl, title, { pageNumber = null, staticPreview = false } = {}) {
+    const frame = document.createElement('iframe');
+    frame.className = 'canva-frame';
+    frame.src = pageNumber ? canvaSlideUrl(embedUrl, pageNumber) : embedUrl;
+    frame.title = title;
+    frame.loading = 'lazy';
+    frame.allow = 'fullscreen';
+    frame.setAttribute('allowfullscreen', '');
+    if (staticPreview) {
+        frame.classList.add('fb-static-frame');
+        frame.style.pointerEvents = 'none';
+        frame.tabIndex = -1;
+    }
+    return frame;
+}
+function appendStaticShield(container) {
+    const shield = document.createElement('div');
+    shield.className = 'fb-media-shield';
+    shield.setAttribute('aria-hidden', 'true');
+    container.appendChild(shield);
+}
+function renderCanvaMedia(container, { ratio, embedUrl, publicCanva, sourceUrl, title, firstCardOnly = false, facebookGallery = false }) {
+    const baseClass = container.id === 'prev-fb-media' ? 'fb-media' : 'ig-media';
+    container.className = facebookGallery ? 'fb-media fb-gallery-grid' : `${baseClass} r-${ratio}`;
     container.replaceChildren();
     if (embedUrl) {
-        const frame = document.createElement('iframe');
-        frame.className = 'canva-frame';
-        frame.src = firstCardOnly ? canvaSlideUrl(embedUrl, 1) : embedUrl;
-        frame.title = title;
-        frame.loading = 'lazy';
-        frame.allow = 'fullscreen';
-        frame.setAttribute('allowfullscreen', '');
-        if (firstCardOnly) {
-            frame.style.pointerEvents = 'none';
-            frame.tabIndex = -1;
+        if (facebookGallery) {
+            for (let pageNumber = 1; pageNumber <= 4; pageNumber += 1) {
+                const tile = document.createElement('div');
+                tile.className = 'fb-gallery-tile';
+                tile.appendChild(createCanvaFrame(embedUrl, `${title}｜第 ${pageNumber} 張`, { pageNumber, staticPreview: true }));
+                appendStaticShield(tile);
+                container.appendChild(tile);
+            }
+            return;
         }
+        const frame = createCanvaFrame(embedUrl, title, { pageNumber: firstCardOnly ? 1 : null, staticPreview: firstCardOnly });
         container.appendChild(frame);
-        if (firstCardOnly) {
-            const shield = document.createElement('div');
-            shield.className = 'fb-media-shield';
-            shield.setAttribute('aria-hidden', 'true');
-            container.appendChild(shield);
-        }
+        if (firstCardOnly) appendStaticShield(container);
         return;
     }
     const empty = document.createElement('div');
@@ -1278,14 +1296,15 @@ function updatePreview() {
             publicCanva,
             sourceUrl: post.canvaUrl,
             title: isFacebookGallery ? 'Facebook 圖文時間完整圖組預覽' : 'Facebook 第一張字卡預覽',
-            firstCardOnly: !isFacebookGallery
+            firstCardOnly: !isFacebookGallery,
+            facebookGallery: isFacebookGallery
         });
     }
     document.getElementById('fb-media-rule').innerText = isFacebookGallery
-        ? 'Facebook 預覽｜「圖文時間」使用完整圖組'
+        ? 'Facebook 預覽｜「圖文時間」使用四圖排列'
         : 'Facebook 預覽｜實際發文僅使用第一張字卡';
     document.getElementById('facebook-preview-summary').innerText = isFacebookGallery
-        ? '圖文時間 · 完整圖組'
+        ? '圖文時間 · 四圖排列'
         : '一般貼文 · 僅第一張字卡';
     const raw = post.caption || '';
     const plain = getPlainText(raw);
@@ -1299,9 +1318,21 @@ function updatePreview() {
     } else {
         renderCaptionHtml(captionEl, raw); moreBtn.style.display = 'none';
     }
-    renderCaptionHtml(document.getElementById('prev-fb-caption'), raw);
+    const fbCaptionEl = document.getElementById('prev-fb-caption');
+    const fbMoreBtn = document.getElementById('fb-more-trigger');
+    const shouldCollapseFB = plain.length > 180 || plain.split(/\r?\n/).length > 6;
+    if (!isFBExpanded && shouldCollapseFB) {
+        renderCaptionText(fbCaptionEl, plain.slice(0, 180).trimEnd() + '…');
+        fbMoreBtn.innerText = '顯示更多'; fbMoreBtn.style.display = 'inline';
+    } else if (isFBExpanded && shouldCollapseFB) {
+        renderCaptionHtml(fbCaptionEl, raw);
+        fbMoreBtn.innerText = '收合'; fbMoreBtn.style.display = 'inline';
+    } else {
+        renderCaptionHtml(fbCaptionEl, raw); fbMoreBtn.style.display = 'none';
+    }
 }
 function toggleIGExpand() { isIGExpanded = !isIGExpanded; updatePreview(); }
+function toggleFBExpand() { isFBExpanded = !isFBExpanded; updatePreview(); }
 function formatTimeLabel(time) {
     if (!time) return '剛剛';
     const [h, m] = time.split(':').map(Number);
