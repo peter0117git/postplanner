@@ -10,7 +10,7 @@ let saveStatusTimer;
 let localSaveTimer;
 let dayRenderTimer;
 let previewRenderTimer;
-let lastRenderedMediaKey = null;
+let lastRenderedMediaKeys = { instagram: null, facebook: null };
 let storageWriteChain = Promise.resolve();
 let storageErrorShown = false;
 let pendingConfirmResolve = null;
@@ -20,7 +20,9 @@ let metadataIndexDirty = true;
 let metadataIndexCache = { themes: [], books: [] };
 let calYear, calMonth;     // 日曆浮動視窗的當前年月
 const DB_SCHEMA_VERSION = 2;
-const APP_VERSION = '8.4.0';
+const APP_VERSION = '8.4.1';
+const PAGE_PARAMS = new URLSearchParams(location.search);
+const IS_BOSS_PREVIEW = PAGE_PARAMS.get('preview') === 'boss';
 const PERSIST_DEBOUNCE_MS = 550;
 const DAY_RENDER_DEBOUNCE_MS = 320;
 const PREVIEW_RENDER_DEBOUNCE_MS = 80;
@@ -206,6 +208,7 @@ function saveGitConfig() {
     localStorage.setItem('gh_repo', document.getElementById('gh-repo').value.trim());
 }
 async function syncToGitHub() {
+    if (IS_BOSS_PREVIEW) { showToast('老闆預覽為唯讀模式'); return; }
     const token = localStorage.getItem('gh_token');
     const repo = localStorage.getItem('gh_repo');
     const btn = document.getElementById('sync-btn');
@@ -305,6 +308,7 @@ async function exportBackup() {
     showToast('已匯出備份'); closeGhOverlay();
 }
 function importBackup(event) {
+    if (IS_BOSS_PREVIEW) { event.target.value = ''; return; }
     const file = event.target.files[0]; if (!file) return;
     const reader = new FileReader();
     reader.onload = async (e) => {
@@ -612,6 +616,36 @@ function fmtDate(d) {
 }
 const DOW_LABELS = ['日','一','二','三','四','五','六'];
 
+function isValidDateParam(value) {
+    return /^\d{4}-\d{2}-\d{2}$/.test(value || '') && !Number.isNaN(Date.parse(`${value}T00:00:00`));
+}
+function buildBossPreviewUrl(dateStr = selectedDateStr, postId = currentId) {
+    const url = new URL(location.href);
+    url.search = '';
+    url.hash = '';
+    url.searchParams.set('preview', 'boss');
+    if (isValidDateParam(dateStr)) url.searchParams.set('date', dateStr);
+    if (postId) url.searchParams.set('post', postId);
+    return url.toString();
+}
+function openBossPreview() {
+    const opened = window.open(buildBossPreviewUrl(), '_blank', 'noopener,noreferrer');
+    if (opened) opened.opener = null;
+}
+function syncBossPreviewUrl() {
+    if (!IS_BOSS_PREVIEW) return;
+    history.replaceState(null, '', buildBossPreviewUrl(selectedDateStr, currentId));
+}
+function enableBossPreviewMode() {
+    if (!IS_BOSS_PREVIEW) return;
+    document.body.classList.add('boss-preview');
+    document.title = '大田出版｜貼文預覽';
+    const brandSub = document.querySelector('.brand-sub');
+    if (brandSub) brandSub.textContent = 'BOSS PREVIEW · 唯讀';
+    const empty = document.getElementById('empty-state-msg');
+    if (empty) empty.innerHTML = '這一天尚無可預覽的貼文';
+}
+
 /* =============================================================
    日視圖
 ============================================================= */
@@ -720,7 +754,10 @@ function selectDate(dateStr) {
     // 自動選第一則貼文
     const list = [...(db[dateStr] || [])].sort((a, b) => (a.time||'00:00').localeCompare(b.time||'00:00'));
     if (list.length > 0) loadPost(list[0]._id);
-    else if (document.body.classList.contains('presenting')) togglePresenting();
+    else {
+        syncBossPreviewUrl();
+        if (document.body.classList.contains('presenting')) togglePresenting();
+    }
     if (isMobile()) mobileShowPanel('day');
 }
 
@@ -732,8 +769,9 @@ function getPlainText(html) { _scratch.innerHTML = sanitizeCaptionHtml(html); re
 ============================================================= */
 function showEditor(visible) {
     if (!visible && document.body.classList.contains('editor-focused')) toggleEditorFocus(false);
+    document.body.classList.toggle('has-preview', visible);
     document.getElementById('empty-state-msg').style.display = visible ? 'none' : 'flex';
-    document.getElementById('editor-ui').style.display = visible ? 'flex' : 'none';
+    document.getElementById('editor-ui').style.display = visible && !IS_BOSS_PREVIEW ? 'flex' : 'none';
     document.getElementById('preview-ui').style.display = visible ? 'flex' : 'none';
 }
 
@@ -770,13 +808,15 @@ function loadPost(id) {
     document.getElementById('edit-caption').innerHTML = post.caption || '';
     updateCanvaLauncherState(post);
     showEditor(true);
-    lastRenderedMediaKey = null;
+    lastRenderedMediaKeys = { instagram: null, facebook: null };
     updatePreview();
     updateToolbarState();
     setActivePostCard(id);
+    syncBossPreviewUrl();
     if (isMobile()) setTimeout(() => mobileShowPanel('preview'), 50);
 }
 function updateCurrentPost(field, value) {
+    if (IS_BOSS_PREVIEW) return;
     if (currentId === null) return;
     const post = getPostById(currentId);
     if (!post) return;
@@ -795,6 +835,7 @@ function updateCurrentPost(field, value) {
 
     if (field === 'caption') schedulePreviewRender();
     else if (field === 'canvaUrl') schedulePreviewRender(360);
+    else if (field === 'theme') schedulePreviewRender(240);
     else if (field === 'time' || field === 'ratio') updatePreview();
 
     if (isTextInput) scheduleDayRender();
@@ -805,6 +846,7 @@ function updateCurrentPost(field, value) {
    新增 / 刪除
 ============================================================= */
 function createNewPost() {
+    if (IS_BOSS_PREVIEW) return;
     if (!selectedDateStr) return;
     if (!db[selectedDateStr]) db[selectedDateStr] = [];
     const newId = newPostId();
@@ -813,6 +855,7 @@ function createNewPost() {
     saveLocal({ metadata: true }); renderDay(); loadPost(newId);
 }
 async function deletePost() {
+    if (IS_BOSS_PREVIEW) return;
     const ok = await showConfirm('確定刪除此貼文？此動作無法復原。');
     if (!ok) return;
     dbMeta.tombstones[currentId] = new Date().toISOString();
@@ -900,6 +943,7 @@ function qaLoadCanvaHistory() {
 }
 
 function openQuickAdd() {
+    if (IS_BOSS_PREVIEW) return;
     if (!selectedDateStr) return;
     refreshMetadataDatalists();
     document.getElementById('qa-theme-input').value = '';
@@ -1017,6 +1061,7 @@ async function copyPublishText(mode = 'full') {
 }
 
 function submitQuickAdd() {
+    if (IS_BOSS_PREVIEW) return;
     if (!selectedDateStr) return;
     const theme = document.getElementById('qa-theme-input').value.trim();
     const title = document.getElementById('qa-title-input').value.trim();
@@ -1164,38 +1209,84 @@ function renderCaptionText(container, text) {
     decorateHashtags(root);
     container.replaceChildren(...root.childNodes);
 }
+function canvaSlideUrl(embedUrl, pageNumber) {
+    const url = new URL(embedUrl);
+    url.hash = String(pageNumber);
+    return url.toString();
+}
+function renderCanvaMedia(container, { ratio, embedUrl, publicCanva, sourceUrl, title, firstCardOnly = false }) {
+    container.className = `${container.id === 'prev-fb-media' ? 'fb-media' : 'ig-media'} r-${ratio}`;
+    container.replaceChildren();
+    if (embedUrl) {
+        const frame = document.createElement('iframe');
+        frame.className = 'canva-frame';
+        frame.src = firstCardOnly ? canvaSlideUrl(embedUrl, 1) : embedUrl;
+        frame.title = title;
+        frame.loading = 'lazy';
+        frame.allow = 'fullscreen';
+        frame.setAttribute('allowfullscreen', '');
+        if (firstCardOnly) {
+            frame.style.pointerEvents = 'none';
+            frame.tabIndex = -1;
+        }
+        container.appendChild(frame);
+        if (firstCardOnly) {
+            const shield = document.createElement('div');
+            shield.className = 'fb-media-shield';
+            shield.setAttribute('aria-hidden', 'true');
+            container.appendChild(shield);
+        }
+        return;
+    }
+    const empty = document.createElement('div');
+    empty.className = 'ig-media-empty';
+    if (publicCanva?.kind === 'short') {
+        empty.innerText = 'Canva 短網址無法直接嵌入。請改貼完整的 /design/…/view 分享連結。';
+    } else {
+        empty.innerText = sourceUrl ? 'Canva 連結格式不正確' : '尚未設定 Canva 連結';
+    }
+    container.appendChild(empty);
+}
 function updatePreview() {
     const post = getPostById(currentId);
     if (!post) return;
     document.getElementById('prev-ig-time').innerText = post.time || '09:00';
     document.getElementById('prev-ig-time-label').innerText = formatTimeLabel(post.time);
-    const media = document.getElementById('prev-ig-media');
+    document.getElementById('prev-fb-time').innerText = `${formatTimeLabel(post.time)} · 🌐`;
     const publicCanva = CanvaService.parsePublicUrl(post.canvaUrl || '');
     const canvaEmbed = CanvaService.parseEmbedUrl(post.canvaUrl || '');
-    const mediaKey = `${post.ratio || '1-1'}|${canvaEmbed?.embedUrl || publicCanva?.sourceUrl || ''}`;
-    if (mediaKey !== lastRenderedMediaKey) {
-        lastRenderedMediaKey = mediaKey;
-        media.className = 'ig-media r-' + (post.ratio || '1-1');
-        media.replaceChildren();
-        if (canvaEmbed?.embedUrl) {
-            const frame = document.createElement('iframe');
-            frame.className = 'canva-frame';
-            frame.src = canvaEmbed.embedUrl;
-            frame.title = 'Canva 官方預覽';
-            frame.loading = 'lazy';
-            frame.allow = 'fullscreen';
-            frame.setAttribute('allowfullscreen', '');
-            media.appendChild(frame);
-        } else {
-            const empty = document.createElement('div'); empty.className = 'ig-media-empty';
-            if (publicCanva?.kind === 'short') {
-                empty.innerText = 'Canva 短網址無法直接嵌入。請在 Canva 複製完整的 /design/…/view 分享連結。';
-            } else {
-                empty.innerText = post.canvaUrl ? 'Canva 連結格式不正確' : '尚未設定 Canva 連結';
-            }
-            media.appendChild(empty);
-        }
+    const ratio = post.ratio || '1-1';
+    const isFacebookGallery = String(post.theme || '').trim() === '圖文時間';
+    const baseMediaKey = `${ratio}|${canvaEmbed?.embedUrl || publicCanva?.sourceUrl || ''}`;
+    const instagramKey = `instagram|${baseMediaKey}`;
+    const facebookKey = `facebook|${baseMediaKey}|${isFacebookGallery ? 'gallery' : 'first'}`;
+    if (instagramKey !== lastRenderedMediaKeys.instagram) {
+        lastRenderedMediaKeys.instagram = instagramKey;
+        renderCanvaMedia(document.getElementById('prev-ig-media'), {
+            ratio,
+            embedUrl: canvaEmbed?.embedUrl,
+            publicCanva,
+            sourceUrl: post.canvaUrl,
+            title: 'Instagram Canva 完整輪播預覽'
+        });
     }
+    if (facebookKey !== lastRenderedMediaKeys.facebook) {
+        lastRenderedMediaKeys.facebook = facebookKey;
+        renderCanvaMedia(document.getElementById('prev-fb-media'), {
+            ratio,
+            embedUrl: canvaEmbed?.embedUrl,
+            publicCanva,
+            sourceUrl: post.canvaUrl,
+            title: isFacebookGallery ? 'Facebook 圖文時間完整圖組預覽' : 'Facebook 第一張字卡預覽',
+            firstCardOnly: !isFacebookGallery
+        });
+    }
+    document.getElementById('fb-media-rule').innerText = isFacebookGallery
+        ? 'Facebook 預覽｜「圖文時間」使用完整圖組'
+        : 'Facebook 預覽｜實際發文僅使用第一張字卡';
+    document.getElementById('facebook-preview-summary').innerText = isFacebookGallery
+        ? '圖文時間 · 完整圖組'
+        : '一般貼文 · 僅第一張字卡';
     const raw = post.caption || '';
     const plain = getPlainText(raw);
     const captionEl = document.getElementById('prev-ig-caption');
@@ -1208,6 +1299,7 @@ function updatePreview() {
     } else {
         renderCaptionHtml(captionEl, raw); moreBtn.style.display = 'none';
     }
+    renderCaptionHtml(document.getElementById('prev-fb-caption'), raw);
 }
 function toggleIGExpand() { isIGExpanded = !isIGExpanded; updatePreview(); }
 function formatTimeLabel(time) {
@@ -1303,6 +1395,7 @@ document.addEventListener('visibilitychange', () => { if (document.hidden && loc
    啟動
 ============================================================= */
 window.addEventListener('DOMContentLoaded', async () => {
+    enableBossPreviewMode();
     document.getElementById('gh-token').value = localStorage.getItem('gh_token') || '';
     document.getElementById('gh-repo').value = localStorage.getItem('gh_repo') || '';
     await initDatabase();
@@ -1310,6 +1403,9 @@ window.addEventListener('DOMContentLoaded', async () => {
     // 跳到今天並選取
     const today = new Date();
     const todayStr = fmtDate(today);
-    selectDate(todayStr);
+    const requestedDate = isValidDateParam(PAGE_PARAMS.get('date')) ? PAGE_PARAMS.get('date') : todayStr;
+    const requestedPost = PAGE_PARAMS.get('post');
+    selectDate(requestedDate);
+    if (requestedPost && (db[requestedDate] || []).some(post => post._id === requestedPost)) loadPost(requestedPost);
     if (isMobile()) { document.getElementById('day-col').classList.add('mobile-visible'); }
 });

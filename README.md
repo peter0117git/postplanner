@@ -1,10 +1,26 @@
-# 排版桌 IG Post Planner V8.4（效能優化版）
+# 排版桌 IG Post Planner V8.4.1（雙平台老闆預覽版）
 
 這是一個不需要前端建置工具、可直接部署到 GitHub Pages 的貼文規劃器。此版本保留 V8.3 的資料格式、GitHub 同步、發布文案、可搜尋主題／書名、桌面編輯與手機預覽。
 
 Canva 預覽改用官方 `?embed` 檢視器。專案不包含圖片擷取、下載、Cloudflare Worker、Canva API、OAuth、Puppeteer 或 Browser binding。
 
 V8.4 保留原本的畫面與操作方式，重整資料啟動、合併、儲存與畫面更新流程。網站仍會在一般瀏覽器模式確認最新公開 `database.js`；內容沒有更新時，不再重新解析、合併或寫入整份資料庫。僅查看資料的同事不需要 GitHub Token，也不需要使用無痕模式。
+
+## V8.4.1 老闆預覽
+
+一般操作頁右上角新增「👁 老闆預覽」。點擊後會以新分頁開啟目前日期與貼文的唯讀網址：
+
+```text
+https://你的排版桌網址/?preview=boss&date=2026-08-27&post=貼文ID
+```
+
+- 隱藏新增、編輯、刪除、同步、Token、發布文案與 Canva 工具。
+- 保留日期切換、貼文清單、上一則／下一則及公開 Canva 預覽。
+- 網址會跟著目前日期與貼文更新，可直接複製分享。
+- Instagram 與 Facebook 同時呈現，使用紫紅／橘與藍色區塊明確區分。
+- Instagram 顯示完整輪播；Facebook 一般貼文固定第一張字卡。
+- 主題為「圖文時間」時，Facebook 才顯示完整圖組。
+- 窄螢幕與手機會自動改成上下排列，不需要切換平台。
 
 ## V8.4 效能調整
 
@@ -54,7 +70,7 @@ V8.4 保留原本的畫面與操作方式，重整資料啟動、合併、儲存
 1. 在 Canva 將分享權限設為「知道連結的任何人可查看」。
 2. 複製完整分享網址，例如 `https://www.canva.com/design/.../.../view?...`。
 3. 貼到排版桌的 Canva 欄位。
-4. 左側會載入 Canva 官方內嵌檢視器；翻頁、縮放與全螢幕由 Canva 提供。
+4. 預覽區會同時呈現 Instagram 與 Facebook；Instagram 可完整翻頁，Facebook 依主題套用單張或完整圖組規則。
 
 `https://canva.link/...` 短網址無法由純前端安全地展開，因此不直接嵌入。遇到短網址時，請改貼 Canva 的完整 `/design/.../view` 分享網址。
 
@@ -79,4 +95,4 @@ python3 -m http.server 8080
 node --test test/*.test.js
 ```
 
-測試包含 4,000 則模擬貼文的兩次啟動情境，確認第二次不重傳資料本體，也不重寫 IndexedDB。
+測試包含 4,000 則模擬貼文、雙平台規則與老闆唯讀模式。

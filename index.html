@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>排版桌 — IG Post Planner v8.4</title>
+    <title>排版桌 — IG Post Planner v8.4.1</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;700;900&family=Noto+Sans+TC:wght@400;500;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/app.css?v=8.4.0">
+    <link rel="stylesheet" href="assets/css/app.css?v=8.4.1">
 </head>
 <body>
 
@@ -17,7 +17,7 @@
 <div class="topbar">
     <div class="brand-area">
         <span class="brand-mark">排版桌</span>
-        <span class="brand-sub">IG POST PLANNER · V8.4</span>
+        <span class="brand-sub">IG POST PLANNER · V8.4.1</span>
     </div>
 
     <div class="topbar-divider"></div>
@@ -34,7 +34,9 @@
 
     <div class="topbar-right">
         <span class="save-status" id="save-status">已載入</span>
+        <span class="boss-preview-badge" id="boss-preview-badge">唯讀預覽</span>
         <div class="topbar-divider"></div>
+        <button class="topbar-btn boss-preview-entry" id="boss-preview-btn" onclick="openBossPreview()" title="以唯讀模式開啟目前貼文">👁 老闆預覽</button>
         <button class="topbar-btn ghost-github" onclick="toggleGhOverlay()">☁ 同步</button>
         <button class="topbar-btn present-btn" id="present-btn" onclick="togglePresenting()">🖥 簡報</button>
     </div>
@@ -258,14 +260,20 @@
             <span style="font-size:11px; color:var(--ink-faint);">或點擊日期旁的 ＋ 新增</span>
         </div>
 
-        <!-- IG 預覽（置中） -->
+        <!-- Instagram / Facebook 同步預覽 -->
         <div class="preview-pane" id="preview-ui" style="display:none">
             <div class="present-nav" id="present-nav">
                 <button class="present-nav-btn" id="present-prev" onclick="changePresentationPost(-1)" title="上一則貼文">◀</button>
                 <span class="present-nav-label" id="present-nav-label">0 / 0</span>
                 <button class="present-nav-btn" id="present-next" onclick="changePresentationPost(1)" title="下一則貼文">▶</button>
             </div>
-            <div class="ig-card">
+            <div class="dual-platform-preview">
+            <section class="platform-preview-panel instagram-preview-panel" aria-labelledby="instagram-preview-title">
+                <div class="platform-preview-heading instagram-heading">
+                    <span class="platform-preview-logo">◎</span>
+                    <span><strong id="instagram-preview-title">Instagram</strong><small>完整輪播貼文</small></span>
+                </div>
+                <div class="ig-card" id="ig-preview-card">
                 <div class="ig-topbar">
                     <div class="ig-avatar-ring"><div class="ig-avatar-inner" id="prev-avatar-text">大</div></div>
                     <div class="ig-meta">
@@ -290,6 +298,36 @@
                     </div>
                     <div class="ig-time" id="prev-ig-time-label">剛剛</div>
                 </div>
+                </div>
+            </section>
+
+            <section class="platform-preview-panel facebook-preview-panel" aria-labelledby="facebook-preview-title">
+                <div class="platform-preview-heading facebook-heading">
+                    <span class="platform-preview-logo fb">f</span>
+                    <span><strong id="facebook-preview-title">Facebook</strong><small id="facebook-preview-summary">一般貼文僅第一張字卡</small></span>
+                </div>
+                <div class="fb-card" id="fb-preview-card">
+                <div class="fb-header">
+                    <div class="fb-avatar">大</div>
+                    <div class="fb-meta">
+                        <div class="fb-page-name">大田出版</div>
+                        <div class="fb-post-time" id="prev-fb-time">剛剛 · 🌐</div>
+                    </div>
+                    <div class="fb-more">•••</div>
+                </div>
+                <div class="fb-caption" id="prev-fb-caption"></div>
+                <div class="fb-media-rule" id="fb-media-rule">Facebook 預覽｜僅使用第一張字卡</div>
+                <div class="fb-media r-1-1" id="prev-fb-media">
+                    <div class="ig-media-empty">尚未設定 Canva 連結</div>
+                </div>
+                <div class="fb-engagement">
+                    <span>👍 ❤️</span><span>留言 · 分享</span>
+                </div>
+                <div class="fb-actions">
+                    <span>讚</span><span>留言</span><span>分享</span>
+                </div>
+                </div>
+            </section>
             </div>
         </div>
 
@@ -422,11 +460,11 @@
     <button class="mobile-nav-btn" id="mnav-preview" onclick="mobileShowPanel('preview')">👁<span>預覽</span></button>
 </div>
 
-<script src="assets/js/services/storage.js?v=8.4.0" defer></script>
-<script src="assets/js/services/github.js?v=8.4.0" defer></script>
-<script src="assets/js/services/canva.js?v=8.4.0" defer></script>
-<script src="assets/js/services/post-composer.js?v=8.4.0" defer></script>
-<script src="assets/js/services/performance.js?v=8.4.0" defer></script>
-<script src="assets/js/app.js?v=8.4.0" defer></script>
+<script src="assets/js/services/storage.js?v=8.4.1" defer></script>
+<script src="assets/js/services/github.js?v=8.4.1" defer></script>
+<script src="assets/js/services/canva.js?v=8.4.1" defer></script>
+<script src="assets/js/services/post-composer.js?v=8.4.1" defer></script>
+<script src="assets/js/services/performance.js?v=8.4.1" defer></script>
+<script src="assets/js/app.js?v=8.4.1" defer></script>
 </body>
 </html>

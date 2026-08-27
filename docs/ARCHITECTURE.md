@@ -1,4 +1,4 @@
-# V8.4 效能優化版架構
+# V8.4.1 雙平台老闆預覽版架構
 
 ## 設計目標
 
@@ -7,6 +7,8 @@
 3. 手機維持日視圖與預覽，不提供編輯器。
 4. 發布文案組合器只產生副本，不修改原始貼文。
 5. Canva 使用官方嵌入檢視器，不解析或下載圖片。
+6. `?preview=boss` 使用同一份資料與畫面程式，但關閉所有資料修改入口。
+7. Instagram 與 Facebook 同時預覽；Facebook 僅「圖文時間」允許完整圖組。
 
 ## 元件責任
 
@@ -50,6 +52,14 @@ Canva 完整 /design/.../view 分享網址
   → 建立 canonical /view?embed 網址
   → app.js 以 iframe 載入 Canva 官方檢視器
   → 翻頁、縮放與全螢幕由 Canva 處理
+```
+
+```text
+一般模式點擊「老闆預覽」
+  → 建立 preview=boss + date + post 網址
+  → 老闆頁隱藏所有修改與同步操作
+  → 同時呈現 Instagram 完整輪播與 Facebook 發文樣貌
+  → Facebook 一般主題鎖定第 1 張；圖文時間保留完整圖組
 ```
 
 ## 故障隔離

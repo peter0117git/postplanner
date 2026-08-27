@@ -1,5 +1,7 @@
-IG Post Planner V8.4.0 — Performance Update
+IG Post Planner V8.4.1 — Dual Platform Boss Preview
 
 Public database.js is revalidated once per launch with ETag and content fingerprints.
 Unchanged data is not reparsed, merged, or rewritten to IndexedDB.
 Text edits are batched, post switching uses partial UI updates, and metadata options are indexed once.
+Boss preview is read-only and shows Instagram and Facebook simultaneously.
+Facebook uses only the first Canva card except for the 圖文時間 theme.
