@@ -2483,11 +2483,11 @@ var externalDB = {
       "time": "18:00",
       "canvaUrl": "https://www.canva.com/design/DAHSzB4HqsA/yYi2a6HFRv8VTjC7_wuZ8A/view?utm_content=DAHSzB4HqsA&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h70d6b7631b",
       "ratio": "1-1",
-      "theme": "影片",
+      "theme": "圖文時間",
       "title": "幸福就是吃飯睡覺等待 vol.3",
       "status": "draft",
       "createdAt": "2026-08-31T02:56:32.980Z",
-      "updatedAt": "2026-08-31T06:56:19.985Z"
+      "updatedAt": "2026-08-31T07:31:18.314Z"
     },
     {
       "_id": "p_1788145011070_xj14x4",
@@ -2593,7 +2593,7 @@ var externalDB = {
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-08-31T07:30:37.240Z",
+  "updatedAt": "2026-08-31T07:31:25.842Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
