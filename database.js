@@ -2441,15 +2441,15 @@ var externalDB = {
     },
     {
       "_id": "p_1788144753538_2a8uuj",
-      "caption": "<div>【圖文時間】 《希望溫暖你的每一天(精采夜光版)》</div><div><br></div><div><div><div><span>#九月十二日上市</span></div><div><span>#精采夜光版</span></div><div><span><br></span></div><div><span>〈 星期一好可憐 〉</span><span></span></div></div></div><div><br></div><div><div>每到星期天晚上，都會讓人祈禱明天不要來，</div><div>即使在家也讓人想回家，</div><div>所有的疲憊跟煩躁都一次湧上來。</div><div>這樣難過的時刻，一年竟然要忍受五十二次，</div><div>我真的是太了不起了。</div></div><div><br></div><div><div><span style=\"color:rgb(8, 8, 9)\">摘自《希望溫暖你的每一天》-</span>〈 星期一好可憐 〉</div><div><br></div><div>#大田出版</div></div>",
+      "caption": "<div>【影片分享】《幸福就是吃飯睡覺等待 vol.3》</div><div><br></div><div>&nbsp;🥭#幸福就是吃飯睡覺等待 vol 3 ✦&nbsp;</div><div><br></div><div><div><strong>我總算，變成開始重視自己的人了。</strong></div><div>如果每天都能過著<br>心頭熱呼呼的日子，多好。</div><div>由於生病，每週只能打工四天維持生活的麥卷聰子，<br>在房東鈴媽和「家政夫」阿司的陪伴下，<br>好好吃飯、好好睡覺，<br>也在與社區居民的交流中，慢慢找回自己的生活節奏。</div><div>只是某一天早上，<br>聰子卻目擊了阿司帶著大大的行李出門……？</div><div><br></div><div>🍚 系列日本銷售突破100萬冊<br>⭐ 亞馬遜五星好評<br>📖 博客來選書</div><div>🎁【隨書贈送】</div></div><div><br></div><div>👉暖心又暖胃的療癒漫畫，他們都說好好看：&nbsp;</div><div><br></div><div>&nbsp;「這部作品想告訴你的，不是你一定要變得更好，而是只要學會帶著身上的這些缺口，繼續好好活下去，這樣就已經足夠了。」 ——Comic 名作復活&nbsp;</div><div><br></div><div>&nbsp;「這部漫畫給人一種溫暖的支撐感，好好地吃，好好地睡，把生活步調放慢，也許是緩解壓力的最好方式。」－－龍貓大王通信&nbsp;</div><div><br></div><div>&nbsp;「這是一部可以溫柔陪伴你度過低潮的漫畫。」－－雪奈日劇部屋&nbsp;</div><div><br></div><div>&nbsp;「看過日劇、喜歡日劇版的朋友們，真的請不要錯過收藏原著作品。」－－凱莉的廢話練習簿&nbsp;</div><div><br></div><div>&nbsp;👉【隨書贈送】 \n台灣限定 • 蒐集3號 • 日日好日 書籤特典</div><div><div><br></div><div><span>#大田出版 #幸福就是吃飯睡覺等待 #水凪トリ #療癒漫畫 #新書推薦</span></div></div>",
       "time": "18:00",
-      "canvaUrl": "https://www.canva.com/design/DAHPbqxce5c/KlYPQFMyxFO9ZN5Zx99IkA/view?utm_content=DAHPbqxce5c&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h240e483ba4",
+      "canvaUrl": "",
       "ratio": "1-1",
-      "theme": "圖文時間",
-      "title": "希望溫暖你的每一天(精采夜光版)",
+      "theme": "影片分享",
+      "title": "幸福就是吃飯睡覺等待 vol.3",
       "status": "draft",
       "createdAt": "2026-08-31T02:52:33.538Z",
-      "updatedAt": "2026-08-31T04:22:28.171Z"
+      "updatedAt": "2026-08-31T07:00:31.965Z"
     },
     {
       "_id": "p_1788144819880_4lgxgn",
@@ -2483,11 +2483,11 @@ var externalDB = {
       "time": "18:00",
       "canvaUrl": "https://www.canva.com/design/DAHSzB4HqsA/yYi2a6HFRv8VTjC7_wuZ8A/view?utm_content=DAHSzB4HqsA&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h70d6b7631b",
       "ratio": "1-1",
-      "theme": "圖文時間",
+      "theme": "影片",
       "title": "幸福就是吃飯睡覺等待 vol.3",
       "status": "draft",
       "createdAt": "2026-08-31T02:56:32.980Z",
-      "updatedAt": "2026-08-31T02:56:32.980Z"
+      "updatedAt": "2026-08-31T06:56:19.985Z"
     },
     {
       "_id": "p_1788145011070_xj14x4",
@@ -2503,7 +2503,7 @@ var externalDB = {
     },
     {
       "_id": "p_1788157756108_p3fc1q",
-      "caption": "<div><div>【大田布告欄】📢《大田九月新書》</div><div><br></div><div>#九月一日上市</div><div><br></div><div>《#幸福就是吃飯睡覺等待 vol.3》<br><strong>台灣限定・蒐集3號・日日好日 書籤特典版</strong></div><div><strong><br></strong></div><div><strong>我總算，變成開始重視自己的人了。</strong></div><div>如果每天都能過著<br>心頭熱呼呼的日子，多好。</div><div>由於生病，每週只能打工四天維持生活的麥卷聰子，<br>在房東鈴媽和「家政夫」阿司的陪伴下，<br>好好吃飯、好好睡覺，<br>也在與社區居民的交流中，慢慢找回自己的生活節奏。</div><div>只是某一天早上，<br>聰子卻目擊了阿司帶著大大的行李出門……？</div><div><br></div><div>🍚 系列日本銷售突破100萬冊<br>⭐ 亞馬遜五星好評<br>📖 博客來選書</div><div>🎁【隨書贈送】<br><strong>台灣限定・蒐集3號・日日好日 書籤特典</strong><br>120mm × 70mm</div><div><br></div><div>Comic 名作復活／龍貓大王通信／雪奈日劇部屋／凱莉的廢話練習簿 暖心推薦！</div><div>好好吃飯、好好睡覺，<br>不用急著成為更好的人，<br>慢慢學會重視現在的自己，也已經很好。</div><div><br></div><div>#大田出版#幸福就是吃飯睡覺等待#水凪トリ #療癒漫畫 #新書推薦</div></div>",
+      "caption": "<div>【大田布告欄】📢《大田九月新書》</div><div><br></div><div>#九月一日上市</div><div><br></div><div>《#幸福就是吃飯睡覺等待 vol.3》<br><strong>台灣限定・蒐集3號・日日好日 書籤特典版</strong></div><div><strong><br></strong></div><div><strong>我總算，變成開始重視自己的人了。</strong></div><div>如果每天都能過著<br>心頭熱呼呼的日子，多好。</div><div>由於生病，每週只能打工四天維持生活的麥卷聰子，<br>在房東鈴媽和「家政夫」阿司的陪伴下，<br>好好吃飯、好好睡覺，<br>也在與社區居民的交流中，慢慢找回自己的生活節奏。</div><div>只是某一天早上，<br>聰子卻目擊了阿司帶著大大的行李出門……？</div><div><br></div><div>🍚 系列日本銷售突破100萬冊<br>⭐ 亞馬遜五星好評<br>📖 博客來選書</div><div>🎁【隨書贈送】<br><strong>台灣限定・蒐集3號・日日好日 書籤特典</strong><br>120mm × 70mm</div><div><br></div><div>Comic 名作復活／龍貓大王通信／雪奈日劇部屋／凱莉的廢話練習簿 暖心推薦！</div><div>好好吃飯、好好睡覺，<br>不用急著成為更好的人，<br>慢慢學會重視現在的自己，也已經很好。</div><div><br></div><div><span>#大田出版 #幸福就是吃飯睡覺等待 #水凪トリ #療癒漫畫 #新書推薦</span></div>",
       "time": "12:00",
       "canvaUrl": "https://www.canva.com/design/DAHTYdKVM7E/IrulOiKwPo0JoDOczdviIw/view?utm_content=DAHTYdKVM7E&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hee7cd676fa",
       "ratio": "1-1",
@@ -2511,11 +2511,11 @@ var externalDB = {
       "title": "幸福就是吃飯睡覺等待 vol.3",
       "status": "draft",
       "createdAt": "2026-08-31T06:29:16.108Z",
-      "updatedAt": "2026-08-31T06:37:23.106Z"
+      "updatedAt": "2026-08-31T07:00:17.056Z"
     },
     {
       "_id": "p_1788157779366_e7n0vo",
-      "caption": "<div><div>【大田布告欄】📢《大田九月新書》</div><div><br></div><div>《#外面是夏天》｜金愛爛</div><div><br></div><div>#九月一日上市</div><div>#金愛爛</div><div><br></div><div><strong>外面是夏天，但我的靈魂正在下雪。</strong></div><div>某部分的我消失了，而且找不到挽回的辦法。<br>該怎麼從失去摯愛的傷痛中康復？<br>又該怎麼嚥下自己的脆弱與無知？</div><div>喪子的夫妻、初嘗虛榮的貧窮少年、替前輩揹鍋的年輕助教……</div><div><br>正要綻放的生命，卻突然迎來寒冬。</div><div>七個關於失去、傷痛與蛻變的故事，<br>獻給所有與這個世界有著一點時間差的生命。</div><div><br></div><div>🏆 第48屆東仁文學獎得獎作品<br>📚 韓國銷量突破25萬冊</div><div><br></div><div><strong>金愛爛，是你遇見之後，就會愛上的小說家。</strong></div><div>「她最擅長描繪難以啟齒卻又無法迴避的情感。」<br>——韓國百想視后 金泰梨</div><div><br></div><div>我想要往外面走去，<br>往那豐饒耀眼的夏天走去。</div><div><br></div><div>#大田出版#外面是夏天 #金愛爛 #韓國文學#新書推薦</div></div>",
+      "caption": "<div><div>【大田布告欄】📢《大田九月新書》</div><div><br></div><div>《#外面是夏天》｜金愛爛</div><div><br></div><div>#九月一日上市</div><div>#金愛爛</div><div><br></div><div><strong>外面是夏天，但我的靈魂正在下雪。</strong></div><div>某部分的我消失了，而且找不到挽回的辦法。<br>該怎麼從失去摯愛的傷痛中康復？<br>又該怎麼嚥下自己的脆弱與無知？</div><div>喪子的夫妻、初嘗虛榮的貧窮少年、替前輩揹鍋的年輕助教……</div><div><br>正要綻放的生命，卻突然迎來寒冬。</div><div>七個關於失去、傷痛與蛻變的故事，<br>獻給所有與這個世界有著一點時間差的生命。</div><div><br></div><div>🏆 第48屆東仁文學獎得獎作品<br>📚 韓國銷量突破25萬冊</div><div><br></div><div><strong>金愛爛，是你遇見之後，就會愛上的小說家。</strong></div><div>「她最擅長描繪難以啟齒卻又無法迴避的情感。」<br>——韓國百想視后 金泰梨</div><div><br></div><div>我想要往外面走去，<br>往那豐饒耀眼的夏天走去。</div><div><br></div><div>#大田出版 #外面是夏天 #金愛爛 #韓國文學 #新書推薦</div></div>",
       "time": "12:00",
       "canvaUrl": "https://www.canva.com/design/DAHTYYjhUbE/ys4wn5N1sZUoaWBdMHk_0w/view?utm_content=DAHTYYjhUbE&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h906ad04213",
       "ratio": "1-1",
@@ -2523,7 +2523,7 @@ var externalDB = {
       "title": "外面是夏天",
       "status": "draft",
       "createdAt": "2026-08-31T06:29:39.366Z",
-      "updatedAt": "2026-08-31T06:37:35.380Z"
+      "updatedAt": "2026-08-31T07:00:22.177Z"
     }
   ],
   "2026-09-02": [
@@ -2576,12 +2576,24 @@ var externalDB = {
       "status": "draft",
       "createdAt": "2026-08-31T03:08:02.872Z",
       "updatedAt": "2026-08-31T03:08:05.349Z"
+    },
+    {
+      "_id": "p_1788159457407_0v9we1",
+      "caption": "<div><div>【圖文時間】 《希望溫暖你的每一天(精采夜光版)》</div><div><br></div><div><div><div><span>#九月十二日上市</span></div><div><span>#精采夜光版</span></div><div><span><br></span></div><div><span>〈 星期一好可憐 〉</span><span></span></div></div></div><div><br></div><div><div>每到星期天晚上，都會讓人祈禱明天不要來，</div><div>即使在家也讓人想回家，</div><div>所有的疲憊跟煩躁都一次湧上來。</div><div>這樣難過的時刻，一年竟然要忍受五十二次，</div><div>我真的是太了不起了。</div></div><div><br></div><div><div><span style=\"color:rgb(8, 8, 9)\">摘自《希望溫暖你的每一天》-</span>〈 星期一好可憐 〉</div><div><br></div><div>#大田出版</div></div></div>",
+      "time": "18:00",
+      "canvaUrl": "https://www.canva.com/design/DAHPbqxce5c/KlYPQFMyxFO9ZN5Zx99IkA/view?utm_content=DAHPbqxce5c&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h240e483ba4",
+      "ratio": "1-1",
+      "theme": "圖文時間",
+      "title": "希望溫暖你的每一天(精采夜光版)",
+      "status": "draft",
+      "createdAt": "2026-08-31T06:57:37.407Z",
+      "updatedAt": "2026-08-31T06:57:42.540Z"
     }
   ]
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-08-31T06:40:23.722Z",
+  "updatedAt": "2026-08-31T07:00:42.271Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
