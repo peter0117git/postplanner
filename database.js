@@ -2438,12 +2438,126 @@ var externalDB = {
       "status": "draft",
       "createdAt": "2026-08-26T05:48:28.427Z",
       "updatedAt": "2026-08-27T07:20:24.212Z"
+    },
+    {
+      "_id": "p_1788144753538_2a8uuj",
+      "caption": "<div>【圖文時間】 《希望溫暖你的每一天(精采夜光版)》</div><div><br></div><div><div><div><span>#九月十二日上市</span></div><div><span>#精采夜光版</span></div><div><span><br></span></div><div><span>〈 星期一好可憐 〉</span><span></span></div></div></div><div><br></div><div><div>每到星期天晚上，都會讓人祈禱明天不要來，</div><div>即使在家也讓人想回家，</div><div>所有的疲憊跟煩躁都一次湧上來。</div><div>這樣難過的時刻，一年竟然要忍受五十二次，</div><div>我真的是太了不起了。</div></div><div><br></div><div><div><span style=\"color:rgb(8, 8, 9)\">摘自《希望溫暖你的每一天》-</span>〈 星期一好可憐 〉</div><div><br></div><div>#大田出版</div></div>",
+      "time": "18:00",
+      "canvaUrl": "https://www.canva.com/design/DAHPbqxce5c/KlYPQFMyxFO9ZN5Zx99IkA/view?utm_content=DAHPbqxce5c&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h240e483ba4",
+      "ratio": "1-1",
+      "theme": "圖文時間",
+      "title": "希望溫暖你的每一天(精采夜光版)",
+      "status": "draft",
+      "createdAt": "2026-08-31T02:52:33.538Z",
+      "updatedAt": "2026-08-31T04:22:28.171Z"
+    },
+    {
+      "_id": "p_1788144819880_4lgxgn",
+      "caption": "<div>【晚上多讀一點點】 《台灣紀行：Team Taiwan必讀版》</div><div><br></div><div><div>台日歷史上的金字塔</div><div>作家／新井一二三</div></div><div><div>司馬遼太郎寫的《台灣紀行》，是第二次世界大戰後，日本出版的台灣專書中最重要的一本。</div><div>一九九三年，著名作家司馬遼太郎（一九二三~一九九六）在旅日台裔作家陳舜臣的推薦下去台灣，分兩次完成了環島。他從一九七〇年代開始，長期在《週刊朝日》雜誌上連載題為《街道漫步》的系列紀行。《台灣紀行》則從同年七月到第二年三月花九個月刊登出來。然後，九四年五月，司馬跟李登輝總統的對談「生在台灣的悲哀」又分兩次在同一份週刊上發表。十一月出版的單行本亦收錄對談，成為《街道漫步》系列的第四十本。</div><div>當時，台灣解嚴、李登輝當上總統後才五年多。廣大日本社會對台灣發生的巨大變化還沒有真正注意到。以博覽強記聞名的歷史小說家司馬遼太郎對台灣現狀的認識都相當有限。他自己在書中就寫道：為《街道漫步》系列採訪，除了日本各地以外，還去了蒙古、中國、葡萄牙、愛爾蘭、荷蘭等地，但是從來沒有請當地日本記者幫忙；《台灣紀行》是唯一的例外，從一開始就由產經新聞駐台北的吉田特派員協助。否則他會心不踏實的。</div><div>第一次去台灣回來後，司馬集中閱讀一大堆關於台灣的書，其中包括史明寫的《台灣人四百年史》。之前跟李登輝見面時，他還驕傲地說過：「本人住在日本（世界上屈指可數的書籍文化大國）」所以不會缺少資料。然而，當年日本，就是沒有多少書詳細介紹一九四五年以後，白色恐怖時期的台灣社會到底處於什麼樣的狀態，以及後來如何轉變成民主體制的。本書開頭一直談古早歷史，遲遲不進入紀行的原因就在這兒。</div><div>再說，在《台灣紀行》的旅途上，司馬遼太郎接觸到的台灣人，除了一批研究生以外，幾乎清一色是受過日本教育，仍會說日語的台灣本省老一輩以及原住民族。至於說中國話的外省人，在整本《台灣紀行》中，似乎不曾出現。</div><div>儘管如此，這本《台灣紀行》後來成為二戰後台日歷史上最重要的一本書，是因為收錄了跟李登輝總統的對談「生在台灣的悲哀」。據李登輝說，這題目是他夫人提出來的。兩位都在日本統治下的台灣出生長大受教育，後來在國民黨治下熬過了漫長的白色恐怖時期，還好能在民主自由的台灣度過晚年，可是回顧自己過來的人生道路，不能不感到生為台灣人的悲哀。</div><div>這次大田出版社要重新刊行《台灣紀行》，我相隔約三十年從頭到尾再看一遍，就發現後來在日台之間的互相交流上，經常出現的幾個議題，都在這本書中已經被指出來：灣生、「嘉農」、八田與一、霧社事件。直到《台灣紀行》問世，戰後一代日本人都沒有聽說過這些的。畢竟，日本是在太平洋戰爭中失敗而失去了海外領土的，在戰後的語境裡，殖民統治就是犯罪、是前科，原統治者沒有資格公然提及被奪去的原殖民地台灣。</div><div>司馬遼太郎第二次去台灣的時候，在台東訪問了原「嘉農」選手上松耕一（陳耕元）的遺孀和遺子，即後來的台東縣長陳建年。在訪談中，陳夫人用端正的日語問司馬：日本為何放棄了台灣？司馬寫：對方是美女，看似心中有怨忿，叫人無意間心悸。當時七十歲的日本作家不知道該怎麼回答才是，於是保持沉默。陳夫人雙眼盯住他再問：日本為什麼放棄了台灣？對於那一道問題的答案，我們得等到十五年後的二〇〇八年，在魏德聖導演拍的《海角七號》中，日本歌手中孝介飾演的日治時代老師在航往日本的遣返船甲板上寫給台灣女子說：不是放棄的，而是哭著離別的。</div><div>《台灣紀行》問世後不到兩年，司馬遼太郎在寫《街道漫步》第四十三部《濃尾參州記》時忽然吐血，因腹部大動脈瘤破裂去世，享年七十二。他在「生在台灣的悲哀」的前言中，把李登輝形容為「全世界最有教養，對名利最淡泊的元首」。日本人俗稱「國民作家」的司馬遼太郎，給予台灣總統無比高的評價，毫無疑問為二十一世紀的台日關係定下了調子。光因為這一點，《台灣紀行》就有足夠的理由被後人一代一代地看下去吧。</div><div><br></div><div>-新井一二三</div><div><br></div><div>#台灣 #政治 #大田出版</div></div>",
+      "time": "20:00",
+      "canvaUrl": "https://www.canva.com/design/DAHOxOGf8AI/L8SBculmr__vfDzoLH1pqQ/view?utm_content=DAHOxOGf8AI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=ha306b68c8a",
+      "ratio": "4-5",
+      "theme": "晚上多讀一點點",
+      "title": "台灣紀行：Team Taiwan必讀版",
+      "status": "draft",
+      "createdAt": "2026-08-31T02:53:39.880Z",
+      "updatedAt": "2026-08-31T06:16:32.688Z"
+    }
+  ],
+  "2026-09-01": [
+    {
+      "_id": "p_1788144871076_62xkss",
+      "caption": "<div>【早上只讀一點點】 《你就是困住自己的那座山》</div><div><br></div>",
+      "time": "08:00",
+      "canvaUrl": "https://www.canva.com/design/DAHIqi-yONc/65fkKo4j1LRTKFBSvPF2rQ/view?utm_content=DAHIqi-yONc&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h63a83d9e70",
+      "ratio": "4-5",
+      "theme": "早上只讀一點點",
+      "title": "你就是困住自己的那座山",
+      "status": "draft",
+      "createdAt": "2026-08-31T02:54:31.076Z",
+      "updatedAt": "2026-08-31T02:55:26.655Z"
+    },
+    {
+      "_id": "p_1788144992980_zzljmd",
+      "caption": "<div>【圖文時間】 《幸福就是吃飯睡覺等待 vol.3》</div><div><br></div>",
+      "time": "18:00",
+      "canvaUrl": "https://www.canva.com/design/DAHSzB4HqsA/yYi2a6HFRv8VTjC7_wuZ8A/view?utm_content=DAHSzB4HqsA&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h70d6b7631b",
+      "ratio": "1-1",
+      "theme": "圖文時間",
+      "title": "幸福就是吃飯睡覺等待 vol.3",
+      "status": "draft",
+      "createdAt": "2026-08-31T02:56:32.980Z",
+      "updatedAt": "2026-08-31T02:56:32.980Z"
+    },
+    {
+      "_id": "p_1788145011070_xj14x4",
+      "caption": "<div>【晚上多讀一點點】 《外面是夏天》</div><div><br></div>",
+      "time": "20:00",
+      "canvaUrl": "https://www.canva.com/design/DAHSz8hxrUI/cA3ubBQXY76F2KFkNL9CDA/view?utm_content=DAHSz8hxrUI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h9e71af940d",
+      "ratio": "4-5",
+      "theme": "晚上多讀一點點",
+      "title": "外面是夏天",
+      "status": "draft",
+      "createdAt": "2026-08-31T02:56:51.070Z",
+      "updatedAt": "2026-08-31T02:56:51.070Z"
+    }
+  ],
+  "2026-09-02": [
+    {
+      "_id": "p_1788145612418_zcoplw",
+      "caption": "<div>【早上只讀一點點】 《脆弱練習》</div><div><br></div>",
+      "time": "08:00",
+      "canvaUrl": "https://www.canva.com/design/DAHP6BZ35_Y/9mQErVNe9ahMARs353bZuA/view?utm_content=DAHP6BZ35_Y&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h452db7f493",
+      "ratio": "4-5",
+      "theme": "早上只讀一點點",
+      "title": "脆弱練習",
+      "status": "draft",
+      "createdAt": "2026-08-31T03:06:52.418Z",
+      "updatedAt": "2026-08-31T03:06:52.418Z"
+    },
+    {
+      "_id": "p_1788145638825_62fhvh",
+      "caption": "<div>【圖文時間】 《宇希時間》</div><div><br></div>",
+      "time": "18:00",
+      "canvaUrl": "https://www.canva.com/design/DAHNdqdK6aI/PiMT2vlLGuDlWm3KmDjn9g/view?utm_content=DAHNdqdK6aI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=ha7005fd718",
+      "ratio": "1-1",
+      "theme": "圖文時間",
+      "title": "宇希時間",
+      "status": "draft",
+      "createdAt": "2026-08-31T03:07:18.825Z",
+      "updatedAt": "2026-08-31T03:07:18.825Z"
+    },
+    {
+      "_id": "p_1788145666717_nhf4w4",
+      "caption": "<div>【晚上多讀一點點】 《外面是夏天》</div><div><br></div>",
+      "time": "20:00",
+      "canvaUrl": "https://www.canva.com/design/DAHSz8hxrUI/cA3ubBQXY76F2KFkNL9CDA/view?utm_content=DAHSz8hxrUI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h9e71af940d",
+      "ratio": "4-5",
+      "theme": "晚上多讀一點點",
+      "title": "外面是夏天",
+      "status": "draft",
+      "createdAt": "2026-08-31T03:07:46.717Z",
+      "updatedAt": "2026-08-31T03:07:46.717Z"
+    }
+  ],
+  "2026-09-03": [
+    {
+      "_id": "p_1788145682872_k0mo9d",
+      "caption": "<div>【早上只讀一點點】 《一次又一次又一次地重新開始》</div><div><br></div>",
+      "time": "08:00",
+      "canvaUrl": "https://www.canva.com/design/DAHSKSY_YvY/J-v4e8drMxkO_n9hnt5SNg/view?utm_content=DAHSKSY_YvY&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h3f40555dbb",
+      "ratio": "1-1",
+      "theme": "早上只讀一點點",
+      "title": "一次又一次又一次地重新開始",
+      "status": "draft",
+      "createdAt": "2026-08-31T03:08:02.872Z",
+      "updatedAt": "2026-08-31T03:08:05.349Z"
     }
   ]
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-08-27T07:20:34.216Z",
+  "updatedAt": "2026-08-31T06:16:48.898Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
