@@ -2467,7 +2467,7 @@ var externalDB = {
   "2026-09-01": [
     {
       "_id": "p_1788144871076_62xkss",
-      "caption": "<div>【早上只讀一點點】 《你就是困住自己的那座山》</div><div><br></div>",
+      "caption": "<div>【早上只讀一點點】 《你就是困住自己的那座山》</div><div><br></div><div><span>║改變的道路，此刻就在你的眼前║</span></div><div><br></div><div><div>如果你知道需要在生活中做出改變，那麼即使你離最終目標還很遠，或者還無法想像要如何去實踐，也沒關係。</div><div>如果你只是剛起步，那也沒關係。</div><div>如果你正處於谷底，並且還看不到出路，那也沒關係。</div><div>如果你還站在自己那座山的山腳下，而且每一次的翻越行動都失敗了，那也沒關係。</div><div>谷底往往是療癒之旅的起點。這不是因為我們突然看到了光明，不是因為那些最糟糕的日子魔法般地轉變成某種頓悟，也不是因為有人把我們從自身的瘋狂中拯救出來。谷底之所以能成為一個轉捩點，是因為唯有在那個時候，大多數人的心底才會想：<span>我再也不想要經歷這樣的感受了</span>。</div><div><br></div><div>這個想法不單單是一個想法。這是一份宣言，也是一項決議。在你所經歷的事情當中，這是數一數二最能讓你決心改變人生的事情。它將成為你構建其他一切的基礎。</div></div><div><br></div><div>摘自p.25~26</div><div><br></div><div>#大田出版</div><div><br></div>",
       "time": "08:00",
       "canvaUrl": "https://www.canva.com/design/DAHIqi-yONc/65fkKo4j1LRTKFBSvPF2rQ/view?utm_content=DAHIqi-yONc&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h63a83d9e70",
       "ratio": "4-5",
@@ -2475,7 +2475,7 @@ var externalDB = {
       "title": "你就是困住自己的那座山",
       "status": "draft",
       "createdAt": "2026-08-31T02:54:31.076Z",
-      "updatedAt": "2026-08-31T02:55:26.655Z"
+      "updatedAt": "2026-08-31T06:37:01.129Z"
     },
     {
       "_id": "p_1788144992980_zzljmd",
@@ -2500,6 +2500,30 @@ var externalDB = {
       "status": "draft",
       "createdAt": "2026-08-31T02:56:51.070Z",
       "updatedAt": "2026-08-31T02:56:51.070Z"
+    },
+    {
+      "_id": "p_1788157756108_p3fc1q",
+      "caption": "<div><div>【大田布告欄】📢《大田九月新書》</div><div><br></div><div>#九月一日上市</div><div><br></div><div>《#幸福就是吃飯睡覺等待 vol.3》<br><strong>台灣限定・蒐集3號・日日好日 書籤特典版</strong></div><div><strong><br></strong></div><div><strong>我總算，變成開始重視自己的人了。</strong></div><div>如果每天都能過著<br>心頭熱呼呼的日子，多好。</div><div>由於生病，每週只能打工四天維持生活的麥卷聰子，<br>在房東鈴媽和「家政夫」阿司的陪伴下，<br>好好吃飯、好好睡覺，<br>也在與社區居民的交流中，慢慢找回自己的生活節奏。</div><div>只是某一天早上，<br>聰子卻目擊了阿司帶著大大的行李出門……？</div><div><br></div><div>🍚 系列日本銷售突破100萬冊<br>⭐ 亞馬遜五星好評<br>📖 博客來選書</div><div>🎁【隨書贈送】<br><strong>台灣限定・蒐集3號・日日好日 書籤特典</strong><br>120mm × 70mm</div><div><br></div><div>Comic 名作復活／龍貓大王通信／雪奈日劇部屋／凱莉的廢話練習簿 暖心推薦！</div><div>好好吃飯、好好睡覺，<br>不用急著成為更好的人，<br>慢慢學會重視現在的自己，也已經很好。</div><div><br></div><div>#大田出版#幸福就是吃飯睡覺等待#水凪トリ #療癒漫畫 #新書推薦</div></div>",
+      "time": "12:00",
+      "canvaUrl": "https://www.canva.com/design/DAHTYdKVM7E/IrulOiKwPo0JoDOczdviIw/view?utm_content=DAHTYdKVM7E&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hee7cd676fa",
+      "ratio": "1-1",
+      "theme": "大田布告欄",
+      "title": "幸福就是吃飯睡覺等待 vol.3",
+      "status": "draft",
+      "createdAt": "2026-08-31T06:29:16.108Z",
+      "updatedAt": "2026-08-31T06:37:23.106Z"
+    },
+    {
+      "_id": "p_1788157779366_e7n0vo",
+      "caption": "<div><div>【大田布告欄】📢《大田九月新書》</div><div><br></div><div>《#外面是夏天》｜金愛爛</div><div><br></div><div>#九月一日上市</div><div>#金愛爛</div><div><br></div><div><strong>外面是夏天，但我的靈魂正在下雪。</strong></div><div>某部分的我消失了，而且找不到挽回的辦法。<br>該怎麼從失去摯愛的傷痛中康復？<br>又該怎麼嚥下自己的脆弱與無知？</div><div>喪子的夫妻、初嘗虛榮的貧窮少年、替前輩揹鍋的年輕助教……</div><div><br>正要綻放的生命，卻突然迎來寒冬。</div><div>七個關於失去、傷痛與蛻變的故事，<br>獻給所有與這個世界有著一點時間差的生命。</div><div><br></div><div>🏆 第48屆東仁文學獎得獎作品<br>📚 韓國銷量突破25萬冊</div><div><br></div><div><strong>金愛爛，是你遇見之後，就會愛上的小說家。</strong></div><div>「她最擅長描繪難以啟齒卻又無法迴避的情感。」<br>——韓國百想視后 金泰梨</div><div><br></div><div>我想要往外面走去，<br>往那豐饒耀眼的夏天走去。</div><div><br></div><div>#大田出版#外面是夏天 #金愛爛 #韓國文學#新書推薦</div></div>",
+      "time": "12:00",
+      "canvaUrl": "https://www.canva.com/design/DAHTYYjhUbE/ys4wn5N1sZUoaWBdMHk_0w/view?utm_content=DAHTYYjhUbE&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h906ad04213",
+      "ratio": "1-1",
+      "theme": "大田布告欄",
+      "title": "外面是夏天",
+      "status": "draft",
+      "createdAt": "2026-08-31T06:29:39.366Z",
+      "updatedAt": "2026-08-31T06:37:35.380Z"
     }
   ],
   "2026-09-02": [
@@ -2557,7 +2581,7 @@ var externalDB = {
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-08-31T06:16:48.898Z",
+  "updatedAt": "2026-08-31T06:40:23.722Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
