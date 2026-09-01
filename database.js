@@ -2479,7 +2479,7 @@ var externalDB = {
     },
     {
       "_id": "p_1788144992980_zzljmd",
-      "caption": "<div>【圖文時間】 《幸福就是吃飯睡覺等待 vol.3》</div><div><br></div>",
+      "caption": "<div>【圖文時間】 《幸福就是吃飯睡覺等待 vol.3》</div><div><br></div><div><div>年紀一到，身體好像就會默默多出一些「新設定」……<br>藥一顆一顆地吞，保健品也不知不覺越吃越多，這種小小的在意也太真實了😂<span></span></div><div><br></div><div>\n那些關於身體、年齡與生活的煩惱，就用自己的步調慢慢面對吧。</div><div><br></div>\n<div>#幸福就是吃飯睡覺等待 #水凪トリ #大田出版 #漫畫推薦 #漫畫 #療癒</div></div>",
       "time": "18:00",
       "canvaUrl": "https://www.canva.com/design/DAHSzB4HqsA/yYi2a6HFRv8VTjC7_wuZ8A/view?utm_content=DAHSzB4HqsA&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h70d6b7631b",
       "ratio": "1-1",
@@ -2487,7 +2487,7 @@ var externalDB = {
       "title": "幸福就是吃飯睡覺等待 vol.3",
       "status": "draft",
       "createdAt": "2026-08-31T02:56:32.980Z",
-      "updatedAt": "2026-08-31T07:31:18.314Z"
+      "updatedAt": "2026-09-01T07:32:38.405Z"
     },
     {
       "_id": "p_1788145011070_xj14x4",
@@ -2529,7 +2529,7 @@ var externalDB = {
   "2026-09-02": [
     {
       "_id": "p_1788145612418_zcoplw",
-      "caption": "<div>【早上只讀一點點】 《脆弱練習》</div><div><br></div>",
+      "caption": "<div>【早上只讀一點點】 《#脆弱練習》</div><div><div><br></div><div>#陳繁齊</div><div><br></div><div>〈&nbsp;<span>脆弱</span>&nbsp;〉</div><div><br></div><div><div>後來你習慣讓時間的尾端</div><div>多出一個刻度</div><div>蜷縮在裡面</div><div>揣測蛹的寂寞</div><div>即使自己無法羽化</div><div><br></div><div>日子其實緊迫</div><div>你卻更緩慢</div><div>或許毀滅與復原</div><div>是同時發生的</div><div><br></div><div>或許將來</div><div>流星會來得更慢一些</div><div><br></div><div>那都不要緊</div><div><br></div><div>在心裡持續療養</div><div>小小的願望</div><div>直到有天</div><div>不再需要實現</div></div><div><br></div><div>摘自《<span>脆弱練習</span>》-〈&nbsp;<span>脆弱</span>&nbsp;〉</div><div><br></div><div>#大田出版 #詩集</div></div>",
       "time": "08:00",
       "canvaUrl": "https://www.canva.com/design/DAHP6BZ35_Y/9mQErVNe9ahMARs353bZuA/view?utm_content=DAHP6BZ35_Y&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h452db7f493",
       "ratio": "4-5",
@@ -2537,11 +2537,11 @@ var externalDB = {
       "title": "脆弱練習",
       "status": "draft",
       "createdAt": "2026-08-31T03:06:52.418Z",
-      "updatedAt": "2026-08-31T03:06:52.418Z"
+      "updatedAt": "2026-09-01T07:06:59.016Z"
     },
     {
       "_id": "p_1788145638825_62fhvh",
-      "caption": "<div>【圖文時間】 《宇希時間》</div><div><br></div>",
+      "caption": "<div>【圖文時間】 《宇希時間》</div><div><br></div><div><div>有時候，不是太脆弱，<br>\n只是感受得比別人更深一些。<span></span></div>\n<div>那些說不清楚的情緒、反覆出現的不安，<br>\n也許都在提醒我們：<br>\n可以試著更溫柔地理解自己。</div><div><br></div>\n<div>#高敏感 #情緒 #療癒 #好好照顧自己 #宇希的貓</div></div>",
       "time": "18:00",
       "canvaUrl": "https://www.canva.com/design/DAHNdqdK6aI/PiMT2vlLGuDlWm3KmDjn9g/view?utm_content=DAHNdqdK6aI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=ha7005fd718",
       "ratio": "1-1",
@@ -2549,7 +2549,7 @@ var externalDB = {
       "title": "宇希時間",
       "status": "draft",
       "createdAt": "2026-08-31T03:07:18.825Z",
-      "updatedAt": "2026-08-31T03:07:18.825Z"
+      "updatedAt": "2026-09-01T07:12:10.118Z"
     },
     {
       "_id": "p_1788145666717_nhf4w4",
@@ -2593,7 +2593,7 @@ var externalDB = {
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-08-31T07:31:25.842Z",
+  "updatedAt": "2026-09-01T07:33:14.094Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
