@@ -2588,12 +2588,24 @@ var externalDB = {
       "status": "draft",
       "createdAt": "2026-08-31T06:57:37.407Z",
       "updatedAt": "2026-08-31T06:57:42.540Z"
+    },
+    {
+      "_id": "p_1788249438720_o0sauy",
+      "caption": "<div>【晚上多讀一點點】 《外面是夏天》</div><div><br></div><div><div>外面是夏天，但我的靈魂正在下雪。</div><div><br></div><div>某部分的我消失了，而且找不到挽回的辦法，</div><div><br></div><div>該怎麼從失去摯愛的傷痛中康復，該怎麼嚥下自己的脆弱與無知，</div><div><br></div><div>我想要往外面走去，往那豐饒耀眼的夏天走去，</div><div><br></div><div>我願意交換一切，只求時間能快點蛻去我痛苦的皮。</div><div><br></div><div>&nbsp;</div><div><br></div><div>喪子的夫妻、初嘗虛榮的貧窮少年、替前輩揹鍋的年輕助教，</div><div><br></div><div>正要綻放的生命突然襲來寒冬……。</div><div><br></div><div>七個關於蛻變的故事，獻給所有與社會有時間差的生命們。</div><div><br></div><div>&nbsp;</div><div><br></div><div>第四十八屆東仁文學獎得獎作品《外面是夏天》，是韓國作家金愛爛的第四部短篇小說集，她以＜沉默的未來＞成為李箱文學獎最年輕的得主，又以＜您想去哪裡呢？＞榮獲第八屆青年作家獎。本書在韓國銷量更是突破二十五萬冊，是金愛爛叫好又叫座的一部經典作品。</div><div><br></div><div><br></div><div>#金愛爛 是你遇見之後，就會愛上的小說家</div><div><br></div><div>她的文字，連金泰梨都愛不釋手！</div><div><br></div><div>「她最擅長描繪難以啟齒卻又無法迴避的情感。」——韓國百想視后 金泰梨</div><div><br></div><div>「一位值得等待的作家。」－－韓國讀者Geulwolmaya</div><div><br></div><div>「讀完之後，我感覺全身都濕透了。」－－韓國讀者Oktaeng</div><div><br></div><div>「我喜歡把《#外面是夏天》比作一個傷心失去博物館，博物館裡陳列的七個短篇，講述了生活中無法避免的失去。」－－中國讀者 樹上的兔女爵</div><div><br></div><div>「讀完第一篇故事後，我立刻起了雞皮疙瘩……每一個字句都讓我發出『哇』的讚嘆|，我不知道該如何形容這種感覺。我很難過，因為我覺得生活中一定也有人經歷過類似的痛苦。」－－韓國讀者 d**********0</div><div><br></div><div>「看完《#你的夏天還好嗎？》緊接著看《外面是夏天》，作家本人的成長特别明顯。上一本充滿各種各樣的氣息，更敏感；這本就有那種『慢性心绞痛』的感覺，你看著看著就覺得怎麼回事？心口流血了。」－－中國讀者 廿姨太</div></div><div><br></div><div><span>#大田出版 #韓國文學</span></div>",
+      "time": "20:00",
+      "canvaUrl": "https://www.canva.com/design/DAHT7072-BY/lGnqV0GbUHeZ75iVTVt_Sg/view?utm_content=DAHT7072-BY&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h9f6a2c1da9",
+      "ratio": "4-5",
+      "theme": "晚上多讀一點點",
+      "title": "外面是夏天",
+      "status": "draft",
+      "createdAt": "2026-09-01T07:57:18.720Z",
+      "updatedAt": "2026-09-01T08:01:40.786Z"
     }
   ]
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-01T07:52:49.719Z",
+  "updatedAt": "2026-09-01T08:02:01.928Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
