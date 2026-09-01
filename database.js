@@ -2601,11 +2601,49 @@ var externalDB = {
       "createdAt": "2026-09-01T07:57:18.720Z",
       "updatedAt": "2026-09-01T08:01:40.786Z"
     }
+  ],
+  "2026-09-04": [
+    {
+      "_id": "p_1788249770874_0jzqys",
+      "caption": "<div>【早上只讀一點點】 《會好起來的，就算不是現在》</div><div><br></div>",
+      "time": "08:00",
+      "canvaUrl": "https://www.canva.com/design/DAHS5Sym27Q/cOSkFGLNkhWsN6Wcbpt5RA/view?utm_content=DAHS5Sym27Q&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hab83e077ce",
+      "ratio": "4-5",
+      "theme": "早上只讀一點點",
+      "title": "會好起來的，就算不是現在",
+      "status": "draft",
+      "createdAt": "2026-09-01T08:02:50.874Z",
+      "updatedAt": "2026-09-01T08:02:50.874Z"
+    },
+    {
+      "_id": "p_1788249803221_hpt1do",
+      "caption": "<div>【圖文時間】 《#幸福就是吃飯睡覺等待 vol.3》</div><div><br></div><div>有時候，真的不用想那麼多</div><div>不用成為誰，也不用急著證明什麼<br>\n你只是你<br>就這樣而已</div><div><br></div><div>#大田出版</div><div><br></div>",
+      "time": "18:00",
+      "canvaUrl": "https://www.canva.com/design/DAHT8E8zx90/tpm279u1TbMJ9P_MhgNgPw/view?utm_content=DAHT8E8zx90&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hba65b8bd0e",
+      "ratio": "1-1",
+      "theme": "圖文時間",
+      "title": "幸福就是吃飯睡覺等待 vol.3",
+      "status": "draft",
+      "createdAt": "2026-09-01T08:03:23.221Z",
+      "updatedAt": "2026-09-01T08:26:45.436Z"
+    },
+    {
+      "_id": "p_1788249838627_ta2pn1",
+      "caption": "<div>【晚上多讀一點點】 《你的夏天還好嗎?》</div><div><br></div><div><div>她放了一句問候在我們心中《你的夏天還好嗎？》韓國作家金愛爛最棒的作品</div><div><br></div><div>#大田出版</div><div>#你的夏天還好嗎</div><div><br></div><div>◎張采軒（大田執行編輯）</div><div><br></div><div>我自認熱愛閱讀，但若不是因為這次做書，我很可能會錯過金愛爛。這部寫於2012年的作品多年前曾在台灣出版過（當時的書名為《飛機雲》），如她的其他部作品，在台灣已絕版。收到社內今年的新書計畫表時，總編一句「妳一定會喜歡」燃起我的好奇心，逼得我四處挖她的書來讀。閱畢，四個字，驚為天人。</div><div><br></div><div>雖然有點晚，但我想我在最好的時機遇上了她最棒的作品。如果要抓出這部短篇小說集的主題，我覺得是「年輕」，雖然主角們不一定都是年輕人。與歲數無關，年輕也許更是一種特質，一種源源不絕的活動力——別停下來，別望向空無一人的四周，即使現在的生活充滿苦澀，我也不想露出失敗者的表情，我相信屬於我的幸福，一定就在不遠的前方。</div><div><br></div><div>「痛苦的不是因為不幸……而是厭倦了等待幸福的過程。」</div><div>——摘自短篇小說＜NEAK TA飯店＞，收錄於《你的夏天還好嗎？》金愛爛著</div><div><br></div><div>同場推薦《#外面是夏天》</div><div><br></div><div><div>外面是夏天，但我的靈魂正在下雪。</div><div>某部分的我消失了，而且找不到挽回的辦法，</div><div>該怎麼從失去摯愛的傷痛中康復，該怎麼嚥下自己的脆弱與無知，</div><div>我想要往外面走去，往那豐饒耀眼的夏天走去，</div><div>我願意交換一切，只求時間能快點蛻去我痛苦的皮。</div></div><div><br></div><div><br></div><div>#金愛爛</div><div>#感情</div><div>#痛</div></div><div><br></div>",
+      "time": "20:00",
+      "canvaUrl": "https://www.canva.com/design/DAHSEIpOZO4/S3ebA9rkkZnEQ0SrMFOxOQ/view?utm_content=DAHSEIpOZO4&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h6a18bbd2e6",
+      "ratio": "4-5",
+      "theme": "晚上多讀一點點",
+      "title": "你的夏天還好嗎?",
+      "status": "draft",
+      "createdAt": "2026-09-01T08:03:58.627Z",
+      "updatedAt": "2026-09-01T08:27:11.677Z"
+    }
   ]
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-01T08:02:01.928Z",
+  "updatedAt": "2026-09-01T08:27:43.687Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
