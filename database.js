@@ -2491,15 +2491,15 @@ var externalDB = {
     },
     {
       "_id": "p_1788145011070_xj14x4",
-      "caption": "<div>【晚上多讀一點點】 《外面是夏天》</div><div><br></div>",
+      "caption": "<div>【晚上多讀一點點】 《外面是夏天》</div><div><br></div><div><span>#金愛爛</span></div><div><br></div><div><div>人們所謂的「時間」，就像「快轉」的膠捲擦肩而過，除了我們，風景、季節、世界都在轉動，漸漸地縮小了範圍，形成漩渦，像要把我們一家人吞噬一樣。花開、風起、雪融、發芽，似乎都是因為這個原因。時間似乎比較偏袒某些人。<span></span></div>\n<div>——《外面是夏天》-〈立冬〉</div><div><br></div><div>此刻的你身在什麼季節？&nbsp;</div><div><br></div><div>臺灣的讀者，大家好。</div><div><br></div><div>現在的首爾正值夏天，四周籠罩著茂密的綠。雖然不是第一次，但每到夏天，我總會被大自然這種巨大的繁殖力震撼。看著雨後變得更豐盈的樹林，感到安心的同時，也帶點恐懼。這或許是因為我們都是走向冬天，而非只活在夏天的存在。</div><div><br></div><div>在《#外面是夏天》中出現的人物也是如此。在這本書中描繪的並非活在夏天的中心，而是徘徊在裡頭或對面的人，是正在失去某種珍貴的事物，或正錯過什麼的人。</div><div><br></div><div>這是身而為人難免都會經歷的事，或許不管換上哪一個國家人民的臉孔，也不會覺得有違和感。&nbsp;</div><div><br></div><div>我將自己擁有的部分季節，分享給在人生中經歷過許多季節後，驟然變得寡言，時而眼睛愈發深邃的各位。</div><div><br></div><div>希望在那裡面有「春天」，偶爾也有「光」能駐足停留。</div><div><br></div><div>謝謝。</div><div>&nbsp;</div><div><br></div><div>二〇二六年夏，首爾</div><div><br></div><div>金愛爛</div><div><br></div><div>#大田出版 #外面是夏天 #你的夏天還好嗎 #韓國文學</div></div>",
       "time": "20:00",
-      "canvaUrl": "https://www.canva.com/design/DAHSz8hxrUI/cA3ubBQXY76F2KFkNL9CDA/view?utm_content=DAHSz8hxrUI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h9e71af940d",
+      "canvaUrl": "https://www.canva.com/design/DAHT0_QMCgs/srxFAODukC4xAHuzRlpTKA/view?utm_content=DAHT0_QMCgs&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=he46ff7aa9a",
       "ratio": "4-5",
       "theme": "晚上多讀一點點",
       "title": "外面是夏天",
       "status": "draft",
       "createdAt": "2026-08-31T02:56:51.070Z",
-      "updatedAt": "2026-08-31T02:56:51.070Z"
+      "updatedAt": "2026-09-01T07:47:38.740Z"
     },
     {
       "_id": "p_1788157756108_p3fc1q",
@@ -2567,7 +2567,7 @@ var externalDB = {
   "2026-09-03": [
     {
       "_id": "p_1788145682872_k0mo9d",
-      "caption": "<div>【早上只讀一點點】 《一次又一次又一次地重新開始》</div><div><br></div>",
+      "caption": "<div>【早上只讀一點點】 《#一次又一次又一次地重新開始》</div><div><br></div><div><div>有些人是窗戶，</div><div>不是映出影像的鏡子。</div><div>他們讓光線照進來，</div><div>照亮你靈魂深處一隅。</div><div>找到那些不常見的靈魂，</div><div>因為他們不會剪斷你的羽翼，</div><div>反而教你看出</div><div>飛翔的真正面貌。</div></div><div><br></div><div>#大田出版 #會好起來的 #療癒</div>",
       "time": "08:00",
       "canvaUrl": "https://www.canva.com/design/DAHSKSY_YvY/J-v4e8drMxkO_n9hnt5SNg/view?utm_content=DAHSKSY_YvY&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h3f40555dbb",
       "ratio": "1-1",
@@ -2575,7 +2575,7 @@ var externalDB = {
       "title": "一次又一次又一次地重新開始",
       "status": "draft",
       "createdAt": "2026-08-31T03:08:02.872Z",
-      "updatedAt": "2026-08-31T03:08:05.349Z"
+      "updatedAt": "2026-09-01T07:52:06.862Z"
     },
     {
       "_id": "p_1788159457407_0v9we1",
@@ -2593,7 +2593,7 @@ var externalDB = {
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-01T07:33:14.094Z",
+  "updatedAt": "2026-09-01T07:52:19.718Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
