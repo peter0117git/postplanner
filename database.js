@@ -2643,7 +2643,7 @@ var externalDB = {
   "2026-09-07": [
     {
       "_id": "p_1788759330617_xm7k63",
-      "caption": "<div>【圖文時間】 《幸福就是吃飯睡覺等待 vol.3》</div><div><br></div><div><div>自己的風格到底是什麼呢？<span></span></div>\n<div>也許不是刻意與眾不同，</div><div><br>\n而是在一次次選擇裡，不經意都慢慢留下屬於自己的樣子。</div><div><br></div>\n<div>「一旦擁有自己的風格，就會變強哦！」</div><div><br></div>\n<div>《幸福就是吃飯睡覺等待 vol.3》<br>\n台灣限定「蒐集3號 日日好日」書籤特典版 🌿</div><div><br></div>\n<div>#幸福就是吃飯睡覺等待 #水凪トリ #漫畫&nbsp; #療癒 #生活 #大田出版</div></div>",
+      "caption": "<div>【圖文時間】 《幸福就是吃飯睡覺等待 vol.3》</div><div><br></div><div><div>自己的風格到底是什麼呢？<span></span></div>\n<div>也許不是刻意與眾不同，</div><div><br>在一次次選擇裡，不經意都慢慢留下屬於自己的樣子。</div><div><br></div>\n<div>「一旦擁有自己的風格，就會變強哦！」</div><div><br></div>\n<div>《幸福就是吃飯睡覺等待 vol.3》<br>\n台灣限定「蒐集3號 日日好日」書籤特典版&nbsp;</div><div><br></div>\n<div>#幸福就是吃飯睡覺等待 #水凪トリ #漫畫&nbsp; #療癒 #生活 #大田出版</div></div>",
       "time": "18:00",
       "canvaUrl": "https://www.canva.com/design/DAHUfFhvwQk/eIKPXlMvaFSk_VxIIPB_9Q/view?utm_content=DAHUfFhvwQk&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hfdd0ad021d",
       "ratio": "1-1",
@@ -2651,11 +2651,11 @@ var externalDB = {
       "title": "幸福就是吃飯睡覺等待 vol.3",
       "status": "draft",
       "createdAt": "2026-09-07T05:35:30.617Z",
-      "updatedAt": "2026-09-07T06:02:01.582Z"
+      "updatedAt": "2026-09-07T07:47:23.805Z"
     },
     {
       "_id": "p_1788759355450_4il8c4",
-      "caption": "<div>【晚上多讀一點點】 《外面是夏天》</div><div><br></div>",
+      "caption": "<div>【晚上多讀一點點】 《外面是夏天》</div><div><br></div><div>#金愛爛</div><div><br></div><div><div>人們所謂的「時間」，</div><div>就像快轉的膠捲擦肩而過。</div><div>除了我們，風景、季節、世界都在轉動，</div><div>漸漸縮小了範圍，形成漩渦，</div><div>像要把我們一家人吞噬一樣。</div><div>花開、風起、雪融、發芽，</div><div>似乎都是因為這個原因。</div><div>時間似乎比較偏袒某些人。</div></div><div>摘自《外面是夏天》-〈立冬〉</div><div><br></div><div><div>外面是夏天，但我的靈魂正在下雪。</div><div>某部分的我消失了，而且找不到挽回的辦法，</div><div>該怎麼從失去摯愛的傷痛中康復，該怎麼嚥下自己的脆弱與無知，</div><div>我想要往外面走去，往那豐饒耀眼的夏天走去，</div><div>我願意交換一切，只求時間能快點蛻去我痛苦的皮。</div><div>喪子的夫妻、初嘗虛榮的貧窮少年、替前輩揹鍋的年輕助教，</div><div>正要綻放的生命突然襲來寒冬……。</div><div>七個關於蛻變的故事，獻給所有與社會有時間差的生命們。</div><div><br></div><div>&nbsp;第四十八屆東仁文學獎得獎作品《外面是夏天》，是韓國作家金愛爛的第四部短篇小說集，她以＜沉默的未來＞成為李箱文學獎最年輕的得主，又以＜您想去哪裡呢？＞榮獲第八屆青年作家獎。本書在韓國銷量更是突破二十五萬冊，是金愛爛叫好又叫座的一部經典作品。</div><div><br></div><div><br></div><div>#金愛爛 是你遇見之後，就會愛上的小說家</div><div>她的文字，連金泰梨都愛不釋手！</div></div><div><br></div><div>#你的夏天還好嗎 #大田出版</div>",
       "time": "20:00",
       "canvaUrl": "https://www.canva.com/design/DAHUfCfsUp8/4l77GqQz8ls3dkGUzAELkg/view?utm_content=DAHUfCfsUp8&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc3391f98c7",
       "ratio": "4-5",
@@ -2663,7 +2663,7 @@ var externalDB = {
       "title": "外面是夏天",
       "status": "draft",
       "createdAt": "2026-09-07T05:35:55.450Z",
-      "updatedAt": "2026-09-07T07:15:55.648Z"
+      "updatedAt": "2026-09-07T08:16:20.195Z"
     }
   ],
   "2026-09-08": [
@@ -2671,17 +2671,17 @@ var externalDB = {
       "_id": "p_1788759432578_35ojzg",
       "caption": "<div>【早上只讀一點點】 《一次又一次又一次重新開始》</div><div><br></div><div><div>完美是沉重的字眼，</div><div>更是費力的負擔。</div><div>我背負多年，</div><div>壓在肩頭，烙在心中，盤踞眼底。</div><div><br></div><div>它壓得我喘不過氣，縮成一團，充滿疑慮。</div><div>某一天，我放下它，</div><div>只為了喘口氣。</div><div><br></div><div>相信嗎？我竟然覺得輕盈、挺拔、勇敢？</div><div>我清楚看到那個重擔，</div><div>認清它的本質只是一團幻影。</div><div><br></div><div>我轉身離去。</div><div>不完美。</div><div>又如此完美。</div><div><br></div><div>或許這就是恩典的意義—</div><div>野花從不為自己的繽紛道歉，</div><div>月亮也不為盈缺傷悲。</div><div>或許就是你的不完美，</div><div>才能讓天光照進來。</div></div><div><br></div><div>摘自《#一次又一次又一次重新開始》p.51</div><div><br></div><div>#大田出版 #會好起來的 #就算不是現在 #療癒</div>",
       "time": "08:00",
-      "canvaUrl": "https://www.canva.com/design/DAHUflzVL1E/ABGpakQvNtHH9rwxgbpVAg/view?utm_content=DAHUflzVL1E&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2875923195",
+      "canvaUrl": "https://www.canva.com/design/DAHUfg9VL0U/m0OSBgwe_8j6Zw-9PT2PZw/view?utm_content=DAHUfg9VL0U&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h34b3805d55",
       "ratio": "4-5",
       "theme": "早上只讀一點點",
       "title": "一次又一次又一次重新開始",
       "status": "draft",
       "createdAt": "2026-09-07T05:37:12.578Z",
-      "updatedAt": "2026-09-07T07:16:40.524Z"
+      "updatedAt": "2026-09-07T08:00:14.784Z"
     },
     {
       "_id": "p_1788762114988_l4nwvx",
-      "caption": "<div>【圖文時間】 《希望溫暖你的每一天(精采夜光版)》</div><div><br></div>",
+      "caption": "<div>【圖文時間】 《希望溫暖你的每一天(精采夜光版)》</div><div><br></div><div><div><span>#九月十二日上市</span></div><div><span>#精采夜光版</span></div></div><div><br></div><div><span>〈 人生講究裝備 〉</span></div><div><br></div><div><div>人生講究裝備。</div><div>將讓人受傷的比較與懷疑換成確信，</div><div>將讓你變渺小的後悔變成反省，</div><div>將無止境的無力換成小小的成就，</div><div>過度的不安會毒害你，請別喝下去。</div><div>拋開那些牽絆你的裝備，</div><div>用全新的裝備，</div><div>用最好的裝備打造你自己。</div></div><div><br></div><div>摘自《希望溫暖你的每一天》-〈 人生講究裝備 〉</div><div><br></div><div>#大田出版</div>",
       "time": "18:00",
       "canvaUrl": "https://www.canva.com/design/DAHPbqxce5c/KlYPQFMyxFO9ZN5Zx99IkA/view?utm_content=DAHPbqxce5c&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h240e483ba4",
       "ratio": "1-1",
@@ -2689,37 +2689,37 @@ var externalDB = {
       "title": "希望溫暖你的每一天(精采夜光版)",
       "status": "draft",
       "createdAt": "2026-09-07T06:21:54.988Z",
-      "updatedAt": "2026-09-07T06:21:59.640Z"
+      "updatedAt": "2026-09-07T07:49:57.613Z"
     },
     {
       "_id": "p_1788762145346_k9czww",
-      "caption": "<div>【晚上多讀一點點】 《尋找蜘蛛：日本暢銷超過36萬冊，西加奈子的生命故事》</div><div><br></div><div><div>暢銷突破 36 萬冊！</div><div>獲第 75 屆讀賣文學獎（隨筆・遊記類）</div><div>書店店員票選非虛構大賞 All Time Best 2023</div><div>《達文西》雜誌 BOOK OF THE YEAR 第 1 名（非虛構）</div><div><br></div><div>&nbsp;<b>這是為「你」而寫。__西加奈子</b></div><div><br></div><div>在異國他鄉，突如其來被宣告患上乳癌。</div><div><br></div><div>語言的隔閡、備受折磨的身心——</div><div><br></div><div>而維繫著生命的是，一雙雙友誼的手、書中的某一行字、流動的音樂，以及彷如祈禱般的「寫作」。</div><div><br></div><div>一邊流淚一邊微笑，一邊微笑一邊向前邁進……</div><div><br></div><div>西加奈子用赤裸、毫無保留的言語寫下的，首部非虛構作品。</div><div><br></div><div>這是一本讓人湧現生存勇氣的靈魂全紀錄。</div></div><div><br></div><div>#大田出版 #癌症 #女性</div>",
+      "caption": "<div>【晚上多讀一點點】 《#尋找蜘蛛：日本暢銷超過36萬冊，西加奈子的生命故事》</div><div><br></div><div><div>這是為「你」而寫。<span></span></div><div><br></div>\n<div>不知身在何處的你，我不知道什麼會讓你快樂，<br>\n帶來情緒起伏，也不曉得什麼會讓你悲傷或恐<br>\n懼，雖然我們未曾謀面，但你的確就在我身旁。</div><div><br></div>\n<div>你有時過得很好，有時不太好。有時健康，有時<br>\n身體狀況不佳。你有時為活著本身而感到痛苦，<br>\n有時在平凡的日常感受到無比的喜悅。</div><div><br></div>\n<div>我想讓你讀這些文章。</div><div><br></div>\n<div>——西加奈子</div></div><div><br></div><div><div>暢銷突破 36 萬冊！</div><div>獲第 75 屆讀賣文學獎（隨筆・遊記類）</div><div>書店店員票選非虛構大賞 All Time Best 2023</div><div>《達文西》雜誌 BOOK OF THE YEAR 第 1 名（非虛構）</div><div><br></div><div>&nbsp;<b>這是為「你」而寫。__西加奈子</b></div><div><br></div><div>在異國他鄉，突如其來被宣告患上乳癌。</div><div><br></div><div>語言的隔閡、備受折磨的身心——</div><div><br></div><div>而維繫著生命的是，一雙雙友誼的手、書中的某一行字、流動的音樂，以及彷如祈禱般的「寫作」。</div><div><br></div><div>一邊流淚一邊微笑，一邊微笑一邊向前邁進……</div><div><br></div><div>西加奈子用赤裸、毫無保留的言語寫下的，首部非虛構作品。</div><div><br></div><div>這是一本讓人湧現生存勇氣的靈魂全紀錄。</div></div><div><br></div><div><div>&nbsp;「難能可貴的非虛構作品。」──作家 新井一二三</div><div><br></div><div>「這本書再次教會了我，『事與願違』與『擁有幸福』是可以同時存在的。」 ── 珍・蘇（Jane Su）／專欄作家</div><div><br></div><div>「閱讀時一直感覺快要掉淚，卻又一滴眼淚都沒流。因為書中展現出的精神、肉體與視線是如此筆直堅定，我只是不斷地被那份神聖感所壓倒。光是能與西加奈子活在同一個世界上，我想早在遇見她之前，我就已經被救贖了。」 ── 金原睛／作家</div><div><br></div><div>「文字赤裸卻充滿光澤，讓人感受到生命並非只有被奪走，更多的是被賦予的事物，如此耀眼。書中那些說著關西腔的加拿大人也太棒了。」 ── Hiccorohee／搞笑藝人</div><div><br></div><div>「讀完後靜靜地闔上書，心頭仍泛起陣陣漣漪，久久不能平息。這本書讓人意識到，它絕不僅僅侷限於抗癌紀錄的框架，其探討的終點完全在另一個層次。當我們察覺到那種『身處極致幸福時，恐懼失去的焦慮卻同時存在』的悖論後，便會再次體悟到：無論事情進展順遂與否，人生就是由無數個『能讓自己打從心底釋懷』的瞬間堆疊而成的。 」── 高尾美穗（婦產科醫師）</div></div><div><br></div><div>#大田出版 #癌症 #女性</div>",
       "time": "20:00",
-      "canvaUrl": "https://www.canva.com/design/DAHUfg9VL0U/m0OSBgwe_8j6Zw-9PT2PZw/view?utm_content=DAHUfg9VL0U&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h34b3805d55",
+      "canvaUrl": "https://www.canva.com/design/DAHUflzVL1E/ABGpakQvNtHH9rwxgbpVAg/view?utm_content=DAHUflzVL1E&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2875923195",
       "ratio": "4-5",
       "theme": "晚上多讀一點點",
       "title": "尋找蜘蛛：日本暢銷超過36萬冊，西加奈子的生命故事",
       "status": "draft",
       "createdAt": "2026-09-07T06:22:25.346Z",
-      "updatedAt": "2026-09-07T07:28:52.130Z"
+      "updatedAt": "2026-09-07T08:00:20.864Z"
     }
   ],
   "2026-09-09": [
     {
       "_id": "p_1788762195003_yqzd6y",
-      "caption": "<div>【早上只讀一點點】 《下雨的人》</div><div><br></div>",
+      "caption": "<div>【早上只讀一點點】 《脆弱練習》</div><div><br></div><div>#陳繁齊</div><div><br></div><div>〈傷人的話〉</div><div><br></div><div><div>傷人的話</div><div>沒能交給他</div><div>收在懷裡，每天</div><div>用剃刀削去一些</div><div>沖茶的水多了</div><div>就浸著它</div><div>放軟</div><div>多年以後發現</div><div>憤怒的內裡</div><div>那麼疼痛</div><div>那麼接近愛</div><div>那些被削去的碎片</div><div>後來拼成自己的樣子</div></div><div><br></div><div>摘自《#脆弱練習》-〈傷人的話〉</div><div><br></div><div>#大田出版 #詩 #詩集</div>",
       "time": "08:00",
-      "canvaUrl": "https://www.canva.com/design/DAHNj3c84TM/ZhX2l73oZ6mSB_0cuW6r4w/view?utm_content=DAHNj3c84TM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc7e7ce465d",
+      "canvaUrl": "https://www.canva.com/design/DAHP6BZ35_Y/9mQErVNe9ahMARs353bZuA/view?utm_content=DAHP6BZ35_Y&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h452db7f493",
       "ratio": "4-5",
       "theme": "早上只讀一點點",
-      "title": "下雨的人",
+      "title": "脆弱練習",
       "status": "draft",
       "createdAt": "2026-09-07T06:23:15.003Z",
-      "updatedAt": "2026-09-07T06:23:15.003Z"
+      "updatedAt": "2026-09-07T08:10:31.328Z"
     },
     {
       "_id": "p_1788762214884_j6tyct",
-      "caption": "<div>【圖文時間】 《宇希時間》</div><div><br></div>",
+      "caption": "<div>【圖文時間】 《宇希時間》</div><div><br></div><div><div>有些遺憾，總會讓人反覆想著——<br>\n如果當時再早一點、再多做一點，結局會不會不一樣？<span></span></div>\n<div>把故事說出來，也許不能改變過去，<br>\n卻能讓一直困在心裡的情緒，慢慢找到出口。</div><div><br></div>\n<div>#宇希的貓 #遺憾 #失去 #感情</div></div><div><br></div>",
       "time": "18:00",
       "canvaUrl": "https://www.canva.com/design/DAHNdqdK6aI/PiMT2vlLGuDlWm3KmDjn9g/view?utm_content=DAHNdqdK6aI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=ha7005fd718",
       "ratio": "1-1",
@@ -2727,7 +2727,7 @@ var externalDB = {
       "title": "宇希時間",
       "status": "draft",
       "createdAt": "2026-09-07T06:23:34.884Z",
-      "updatedAt": "2026-09-07T06:23:34.884Z"
+      "updatedAt": "2026-09-07T08:12:43.212Z"
     },
     {
       "_id": "p_1788762243993_hner7o",
@@ -2745,7 +2745,7 @@ var externalDB = {
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-07T07:40:34.063Z",
+  "updatedAt": "2026-09-07T08:17:02.230Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
