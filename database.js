@@ -2639,15 +2639,118 @@ var externalDB = {
       "createdAt": "2026-09-01T08:03:58.627Z",
       "updatedAt": "2026-09-01T08:27:11.677Z"
     }
+  ],
+  "2026-09-07": [
+    {
+      "_id": "p_1788759330617_xm7k63",
+      "caption": "<div>【圖文時間】 《幸福就是吃飯睡覺等待 vol.3》</div><div><br></div><div><div>自己的風格到底是什麼呢？<span></span></div>\n<div>也許不是刻意與眾不同，</div><div><br>\n而是在一次次選擇裡，不經意都慢慢留下屬於自己的樣子。</div><div><br></div>\n<div>「一旦擁有自己的風格，就會變強哦！」</div><div><br></div>\n<div>《幸福就是吃飯睡覺等待 vol.3》<br>\n台灣限定「蒐集3號 日日好日」書籤特典版 🌿</div><div><br></div>\n<div>#幸福就是吃飯睡覺等待 #水凪トリ #漫畫&nbsp; #療癒 #生活 #大田出版</div></div>",
+      "time": "18:00",
+      "canvaUrl": "https://www.canva.com/design/DAHUfFhvwQk/eIKPXlMvaFSk_VxIIPB_9Q/view?utm_content=DAHUfFhvwQk&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hfdd0ad021d",
+      "ratio": "1-1",
+      "theme": "圖文時間",
+      "title": "幸福就是吃飯睡覺等待 vol.3",
+      "status": "draft",
+      "createdAt": "2026-09-07T05:35:30.617Z",
+      "updatedAt": "2026-09-07T06:02:01.582Z"
+    },
+    {
+      "_id": "p_1788759355450_4il8c4",
+      "caption": "<div>【晚上多讀一點點】 《外面是夏天》</div><div><br></div>",
+      "time": "20:00",
+      "canvaUrl": "https://www.canva.com/design/DAHUfEPKR4o/SSt8_BDo8PxWCUGQo-gjag/view?utm_content=DAHUfEPKR4o&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hb1286cdfa7",
+      "ratio": "4-5",
+      "theme": "晚上多讀一點點",
+      "title": "外面是夏天",
+      "status": "draft",
+      "createdAt": "2026-09-07T05:35:55.450Z",
+      "updatedAt": "2026-09-07T06:13:36.959Z"
+    }
+  ],
+  "2026-09-08": [
+    {
+      "_id": "p_1788759432578_35ojzg",
+      "caption": "<div>【早上只讀一點點】 《一次又一次又一次重新開始》</div><div><br></div><div><div>完美是沉重的字眼，</div><div>更是費力的負擔。</div><div>我背負多年，</div><div>壓在肩頭，烙在心中，盤踞眼底。</div><div><br></div><div>它壓得我喘不過氣，縮成一團，充滿疑慮。</div><div>某一天，我放下它，</div><div>只為了喘口氣。</div><div><br></div><div>相信嗎？我竟然覺得輕盈、挺拔、勇敢？</div><div>我清楚看到那個重擔，</div><div>認清它的本質只是一團幻影。</div><div><br></div><div>我轉身離去。</div><div>不完美。</div><div>又如此完美。</div><div><br></div><div>或許這就是恩典的意義—</div><div>野花從不為自己的繽紛道歉，</div><div>月亮也不為盈缺傷悲。</div><div>或許就是你的不完美，</div><div>才能讓天光照進來。</div></div><div><br></div><div>摘自《#一次又一次又一次重新開始》p.51</div><div><br></div><div>#大田出版 #會好起來的 #就算不是現在 #療癒</div>",
+      "time": "08:00",
+      "canvaUrl": "https://www.canva.com/design/DAHUfCfsUp8/4l77GqQz8ls3dkGUzAELkg/view?utm_content=DAHUfCfsUp8&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc3391f98c7",
+      "ratio": "4-5",
+      "theme": "早上只讀一點點",
+      "title": "一次又一次又一次重新開始",
+      "status": "draft",
+      "createdAt": "2026-09-07T05:37:12.578Z",
+      "updatedAt": "2026-09-07T06:00:57.131Z"
+    },
+    {
+      "_id": "p_1788762114988_l4nwvx",
+      "caption": "<div>【圖文時間】 《希望溫暖你的每一天(精采夜光版)》</div><div><br></div>",
+      "time": "18:00",
+      "canvaUrl": "https://www.canva.com/design/DAHPbqxce5c/KlYPQFMyxFO9ZN5Zx99IkA/view?utm_content=DAHPbqxce5c&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h240e483ba4",
+      "ratio": "1-1",
+      "theme": "圖文時間",
+      "title": "希望溫暖你的每一天(精采夜光版)",
+      "status": "draft",
+      "createdAt": "2026-09-07T06:21:54.988Z",
+      "updatedAt": "2026-09-07T06:21:59.640Z"
+    },
+    {
+      "_id": "p_1788762145346_k9czww",
+      "caption": "<div>【晚上多讀一點點】 《尋找蜘蛛：日本暢銷超過36萬冊，西加奈子的生命故事》</div><div><br></div>",
+      "time": "20:00",
+      "canvaUrl": "",
+      "ratio": "4-5",
+      "theme": "晚上多讀一點點",
+      "title": "尋找蜘蛛：日本暢銷超過36萬冊，西加奈子的生命故事",
+      "status": "draft",
+      "createdAt": "2026-09-07T06:22:25.346Z",
+      "updatedAt": "2026-09-07T06:22:25.346Z"
+    }
+  ],
+  "2026-09-09": [
+    {
+      "_id": "p_1788762195003_yqzd6y",
+      "caption": "<div>【早上只讀一點點】 《下雨的人》</div><div><br></div>",
+      "time": "08:00",
+      "canvaUrl": "https://www.canva.com/design/DAHNj3c84TM/ZhX2l73oZ6mSB_0cuW6r4w/view?utm_content=DAHNj3c84TM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc7e7ce465d",
+      "ratio": "4-5",
+      "theme": "早上只讀一點點",
+      "title": "下雨的人",
+      "status": "draft",
+      "createdAt": "2026-09-07T06:23:15.003Z",
+      "updatedAt": "2026-09-07T06:23:15.003Z"
+    },
+    {
+      "_id": "p_1788762214884_j6tyct",
+      "caption": "<div>【圖文時間】 《宇希時間》</div><div><br></div>",
+      "time": "18:00",
+      "canvaUrl": "https://www.canva.com/design/DAHNdqdK6aI/PiMT2vlLGuDlWm3KmDjn9g/view?utm_content=DAHNdqdK6aI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=ha7005fd718",
+      "ratio": "1-1",
+      "theme": "圖文時間",
+      "title": "宇希時間",
+      "status": "draft",
+      "createdAt": "2026-09-07T06:23:34.884Z",
+      "updatedAt": "2026-09-07T06:23:34.884Z"
+    },
+    {
+      "_id": "p_1788762243993_hner7o",
+      "caption": "<div>【晚上多讀一點點】 《你的夏天還好嗎?》</div><div><br></div>",
+      "time": "20:00",
+      "canvaUrl": "",
+      "ratio": "4-5",
+      "theme": "晚上多讀一點點",
+      "title": "你的夏天還好嗎?",
+      "status": "draft",
+      "createdAt": "2026-09-07T06:24:03.993Z",
+      "updatedAt": "2026-09-07T06:24:03.993Z"
+    }
   ]
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-01T09:46:58.326Z",
+  "updatedAt": "2026-09-07T06:24:22.499Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
     "p_1787723287241_bmj85x": "2026-08-26T05:48:18.760Z",
-    "p_1787723361084_3mtwzw": "2026-08-26T09:21:23.495Z"
+    "p_1787723361084_3mtwzw": "2026-08-26T09:21:23.495Z",
+    "p_1788759306678_724hl2": "2026-09-07T06:19:45.697Z"
   }
 };
