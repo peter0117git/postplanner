@@ -2657,13 +2657,13 @@ var externalDB = {
       "_id": "p_1788759355450_4il8c4",
       "caption": "<div>【晚上多讀一點點】 《外面是夏天》</div><div><br></div>",
       "time": "20:00",
-      "canvaUrl": "https://www.canva.com/design/DAHUfEPKR4o/SSt8_BDo8PxWCUGQo-gjag/view?utm_content=DAHUfEPKR4o&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hb1286cdfa7",
+      "canvaUrl": "https://www.canva.com/design/DAHUfCfsUp8/4l77GqQz8ls3dkGUzAELkg/view?utm_content=DAHUfCfsUp8&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc3391f98c7",
       "ratio": "4-5",
       "theme": "晚上多讀一點點",
       "title": "外面是夏天",
       "status": "draft",
       "createdAt": "2026-09-07T05:35:55.450Z",
-      "updatedAt": "2026-09-07T06:13:36.959Z"
+      "updatedAt": "2026-09-07T07:15:55.648Z"
     }
   ],
   "2026-09-08": [
@@ -2671,13 +2671,13 @@ var externalDB = {
       "_id": "p_1788759432578_35ojzg",
       "caption": "<div>【早上只讀一點點】 《一次又一次又一次重新開始》</div><div><br></div><div><div>完美是沉重的字眼，</div><div>更是費力的負擔。</div><div>我背負多年，</div><div>壓在肩頭，烙在心中，盤踞眼底。</div><div><br></div><div>它壓得我喘不過氣，縮成一團，充滿疑慮。</div><div>某一天，我放下它，</div><div>只為了喘口氣。</div><div><br></div><div>相信嗎？我竟然覺得輕盈、挺拔、勇敢？</div><div>我清楚看到那個重擔，</div><div>認清它的本質只是一團幻影。</div><div><br></div><div>我轉身離去。</div><div>不完美。</div><div>又如此完美。</div><div><br></div><div>或許這就是恩典的意義—</div><div>野花從不為自己的繽紛道歉，</div><div>月亮也不為盈缺傷悲。</div><div>或許就是你的不完美，</div><div>才能讓天光照進來。</div></div><div><br></div><div>摘自《#一次又一次又一次重新開始》p.51</div><div><br></div><div>#大田出版 #會好起來的 #就算不是現在 #療癒</div>",
       "time": "08:00",
-      "canvaUrl": "https://www.canva.com/design/DAHUfCfsUp8/4l77GqQz8ls3dkGUzAELkg/view?utm_content=DAHUfCfsUp8&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc3391f98c7",
+      "canvaUrl": "https://www.canva.com/design/DAHUflzVL1E/ABGpakQvNtHH9rwxgbpVAg/view?utm_content=DAHUflzVL1E&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2875923195",
       "ratio": "4-5",
       "theme": "早上只讀一點點",
       "title": "一次又一次又一次重新開始",
       "status": "draft",
       "createdAt": "2026-09-07T05:37:12.578Z",
-      "updatedAt": "2026-09-07T06:00:57.131Z"
+      "updatedAt": "2026-09-07T07:16:40.524Z"
     },
     {
       "_id": "p_1788762114988_l4nwvx",
@@ -2693,15 +2693,15 @@ var externalDB = {
     },
     {
       "_id": "p_1788762145346_k9czww",
-      "caption": "<div>【晚上多讀一點點】 《尋找蜘蛛：日本暢銷超過36萬冊，西加奈子的生命故事》</div><div><br></div>",
+      "caption": "<div>【晚上多讀一點點】 《尋找蜘蛛：日本暢銷超過36萬冊，西加奈子的生命故事》</div><div><br></div><div><div>暢銷突破 36 萬冊！</div><div>獲第 75 屆讀賣文學獎（隨筆・遊記類）</div><div>書店店員票選非虛構大賞 All Time Best 2023</div><div>《達文西》雜誌 BOOK OF THE YEAR 第 1 名（非虛構）</div><div><br></div><div>&nbsp;<b>這是為「你」而寫。__西加奈子</b></div><div><br></div><div>在異國他鄉，突如其來被宣告患上乳癌。</div><div><br></div><div>語言的隔閡、備受折磨的身心——</div><div><br></div><div>而維繫著生命的是，一雙雙友誼的手、書中的某一行字、流動的音樂，以及彷如祈禱般的「寫作」。</div><div><br></div><div>一邊流淚一邊微笑，一邊微笑一邊向前邁進……</div><div><br></div><div>西加奈子用赤裸、毫無保留的言語寫下的，首部非虛構作品。</div><div><br></div><div>這是一本讓人湧現生存勇氣的靈魂全紀錄。</div></div><div><br></div><div>#大田出版 #癌症 #女性</div>",
       "time": "20:00",
-      "canvaUrl": "",
+      "canvaUrl": "https://www.canva.com/design/DAHUfg9VL0U/m0OSBgwe_8j6Zw-9PT2PZw/view?utm_content=DAHUfg9VL0U&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h34b3805d55",
       "ratio": "4-5",
       "theme": "晚上多讀一點點",
       "title": "尋找蜘蛛：日本暢銷超過36萬冊，西加奈子的生命故事",
       "status": "draft",
       "createdAt": "2026-09-07T06:22:25.346Z",
-      "updatedAt": "2026-09-07T06:22:25.346Z"
+      "updatedAt": "2026-09-07T07:28:52.130Z"
     }
   ],
   "2026-09-09": [
@@ -2731,21 +2731,21 @@ var externalDB = {
     },
     {
       "_id": "p_1788762243993_hner7o",
-      "caption": "<div>【晚上多讀一點點】 《你的夏天還好嗎?》</div><div><br></div>",
+      "caption": "<div>【晚上多讀一點點】 《你的夏天還好嗎?》</div><div><br></div><div><div>我在過去十年間搬了六次家，做過十幾份兼職工作，交往過兩三個男朋友，就只有這樣而已。真的就只是這樣，但青春歲月就這樣過去了，讓我感到很心慌。</div><div><br></div><div>問我這段期間有什麼變化嗎？好像就是開銷變大了，不再信任別人，眼光變高了，怕自己變成差勁的人而感到不安。</div><div><br></div><div>二十幾歲時的我，不管做什麼都覺得那只是個過程；但現在呢，一切似乎都是結果，讓人很焦慮。&nbsp;</div></div><div><br></div><div><div>摘自《你的夏天還好嗎?》-〈三十〉</div><div><br></div><div>渴望被愛，甘願被利用的人；</div><div>想要過上精緻的生活，卻不知道會犧牲什麼的人；</div><div>孤苦無依的人、離鄉背井的人、眾叛親離的人，</div><div>在這個粗魯的時代，金愛爛正在長久且直白地凝視著我們……</div><div><br></div><div>被譽為「現代社會生態觀察員」的韓國作家金愛爛，在第三部短篇小說集《你的夏天還好嗎？》裡，深度刻畫了渴望美好生活的煎熬姿態。</div><div>即使現在的生活充滿苦澀，我也不想露出失敗者的表情，我相信屬於我的幸福，一定就在不遠的前方——</div><div><br></div><div><br></div><div>★跨越國界的共鳴，全世界的讀者們齊聲吶喊——</div><div><br></div><div>「這是一本你推薦給誰，誰都會說好看的書。」 ——台灣讀者E</div><div><br></div><div>「主角們的故事，就像我自己的故事，就像我身邊那些被稱為『88萬韓元世代』的人們的故事。沒有人像我一樣喜歡金愛爛！」——韓國讀者이정진</div><div><br></div><div>「感謝金愛爛，讓我時隔二十年重新愛上了文學。它們無比真實，卻又讓我心痛不已，潸然淚下。書中的人物彷彿仍鮮活地存在於某個地方。」——韓國讀者s********9</div><div><br></div><div>「金愛爛或許是我的精神媽咪，我在她的文字搖籃裡感到十分安心和安慰。看她的書需要一點勇氣。」——中國讀者吧啦咘吧</div><div><br></div><div>「她太擅長寫痛了。還擅長寫受辱的自尊，寫都市的貧困。邊緣的人，畸零的愛，破銅爛鐵的生活裡也有一閃而過的金色幻影。」——中國讀者曼仔</div></div>",
       "time": "20:00",
-      "canvaUrl": "",
+      "canvaUrl": "https://www.canva.com/design/DAHUfj-Jpfo/YzTX5cVymrNektvCj6qo6Q/view?utm_content=DAHUfj-Jpfo&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hf24202c62e",
       "ratio": "4-5",
       "theme": "晚上多讀一點點",
       "title": "你的夏天還好嗎?",
       "status": "draft",
       "createdAt": "2026-09-07T06:24:03.993Z",
-      "updatedAt": "2026-09-07T06:24:03.993Z"
+      "updatedAt": "2026-09-07T07:40:21.616Z"
     }
   ]
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-07T06:24:22.499Z",
+  "updatedAt": "2026-09-07T07:40:34.063Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
