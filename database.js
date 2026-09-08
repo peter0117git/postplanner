@@ -2741,11 +2741,75 @@ var externalDB = {
       "createdAt": "2026-09-07T06:24:03.993Z",
       "updatedAt": "2026-09-07T07:40:21.616Z"
     }
+  ],
+  "2026-09-10": [
+    {
+      "_id": "p_1788845915192_6e9phg",
+      "caption": "<div>【早上只讀一點點】 《一次又一次又一次重新開始》</div><div><br></div><div><div><span>今日綻放的花朵，</span>曾經也只是一顆相信明天的種子。</div><div><br></div><div>#大田出版 #會好起來的 #一次又一次又一次重新開始</div></div>",
+      "time": "08:00",
+      "canvaUrl": "https://www.canva.com/design/DAHUfg9VL0U/m0OSBgwe_8j6Zw-9PT2PZw/view?utm_content=DAHUfg9VL0U&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h34b3805d55",
+      "ratio": "4-5",
+      "theme": "早上只讀一點點",
+      "title": "一次又一次又一次重新開始",
+      "status": "draft",
+      "createdAt": "2026-09-08T05:38:35.192Z",
+      "updatedAt": "2026-09-08T05:48:35.885Z"
+    },
+    {
+      "_id": "p_1788846541993_uik6k7",
+      "caption": "<div><div>【圖文時間】 《幸福就是吃飯睡覺等待 vol.3》</div><div><br></div></div><div><div>有時候，不想接電話、不想說話，</div><div>只是想安靜地待著。</div><div>不是冷漠，也不是逃避，</div><div>只是開始更在意自己的感受，</div><div>知道什麼時候該停下來、什麼時候該休息。</div><div>順著自己的意思，</div><div>好好照顧自己的情緒，</div><div>也是重新重視自己的一種方式。</div><div><br></div></div><div><div><span>#幸福就是吃飯睡覺等待</span> <span>#水凪トリ</span> <span>#大田出版</span> <span>#療癒</span> <span>#漫畫</span></div></div>",
+      "time": "18:00",
+      "canvaUrl": "https://www.canva.com/design/DAHUfFhvwQk/eIKPXlMvaFSk_VxIIPB_9Q/view?utm_content=DAHUfFhvwQk&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hfdd0ad021d",
+      "ratio": "1-1",
+      "theme": "圖文時間",
+      "title": "幸福就是吃飯睡覺等待 vol.3",
+      "status": "draft",
+      "createdAt": "2026-09-08T05:49:01.993Z",
+      "updatedAt": "2026-09-08T06:12:46.058Z"
+    },
+    {
+      "_id": "p_1788846588710_5f91jr",
+      "caption": "<div>【晚上多讀一點點】 《外面是夏天》</div><div><div><div><span>#金愛爛</span></div></div><div><div>外面是夏天，但我的靈魂正在下雪。</div></div><div><div>某部分的我消失了，而且找不到挽回的辦法，</div></div><div><div>該怎麼從失去摯愛的傷痛中康復，該怎麼嚥下自己的脆弱與無知，</div></div><div><div>我想要往外面走去，往那豐饒耀眼的夏天走去，</div></div><div><div>我願意交換一切，只求時間能快點蛻去我痛苦的皮。</div></div><div><div>喪子的夫妻、初嘗虛榮的貧窮少年、替前輩揹鍋的年輕助教，</div></div><div><div>正要綻放的生命突然襲來寒冬……。</div></div><div><div>七個關於蛻變的故事，獻給所有與社會有時間差的生命們。</div></div><div><div>第四十八屆東仁文學獎得獎作品《外面是夏天》，是韓國作家金愛爛的第四部短篇小說集，她以＜沉默的未來＞成為李箱文學獎最年輕的得主，又以＜您想去哪裡呢？＞榮獲第八屆青年作家獎。本書在韓國銷量更是突破二十五萬冊，是金愛爛叫好又叫座的一部經典作品。</div></div><div><div>金愛爛是你遇見之後，就會愛上的小說家</div></div><div><div>她的文字，連金泰梨都愛不釋手！</div></div><div><div>「她最擅長描繪難以啟齒卻又無法迴避的情感。」——韓國百想視后 金泰梨</div></div><div><div>「一位值得等待的作家。」－－韓國讀者Geulwolmaya</div></div><div><div>「讀完之後，我感覺全身都濕透了。」－－韓國讀者Oktaeng</div></div><div><div>「我喜歡把《外面是夏天》比作一個傷心失去博物館，博物館裡陳列的七個短篇，講述了生活中無法避免的失去。」－－中國讀者 樹上的兔女爵</div></div><div><div>「讀完第一篇故事後，我立刻起了雞皮疙瘩……每一個字句都讓我發出『哇』的讚嘆|，我不知道該如何形容這種感覺。我很難過，因為我覺得生活中一定也有人經歷過類似的痛苦。」－－韓國讀者 d**********0</div></div><div><div>「看完《你的夏天還好嗎？》緊接著看《外面是夏天》，作家本人的成長特别明顯。上一本充滿各種各樣的氣息，更敏感；這本就有那種『慢性心绞痛』的感覺，你看著看著就覺得怎麼回事？心口流血了。」－－中國讀者 廿姨太</div></div><div><div><span>#大田出版</span> <span>#你的夏天還好嗎</span></div></div></div>",
+      "time": "20:00",
+      "canvaUrl": "https://www.canva.com/design/DAHUfCfsUp8/4l77GqQz8ls3dkGUzAELkg/view?utm_content=DAHUfCfsUp8&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc3391f98c7",
+      "ratio": "4-5",
+      "theme": "晚上多讀一點點",
+      "title": "外面是夏天",
+      "status": "draft",
+      "createdAt": "2026-09-08T05:49:48.710Z",
+      "updatedAt": "2026-09-08T06:14:53.823Z"
+    }
+  ],
+  "2026-09-11": [
+    {
+      "_id": "p_1788849172958_zz8d34",
+      "caption": "<div>【早上只讀一點點】 《<span>現在，就是療癒你的開始</span>》</div><div><br></div><div><span>讓那些還沒準備好愛你的人離開吧</span></div><div><span><br></span></div><div><div>把愛留給準備好的人</div><div>最困難也最重要的事，<br>是停止把愛給予<br>那些還沒準備好愛你的人。</div><div>守護自己有限的精力，<br>只讓真正願意關心、聆聽與愛你的人，<br>走進你的生命。</div><div><br></div><div>#大田出版 #</div></div>",
+      "time": "08:00",
+      "canvaUrl": "https://www.canva.com/design/DAHUlqyCYUQ/oyEGcO6qMToMQUSmtsf-5Q/view?utm_content=DAHUlqyCYUQ&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hcb44575df7",
+      "ratio": "1-1",
+      "theme": "早上只讀一點點",
+      "title": "現在，就是療癒你的開始",
+      "status": "draft",
+      "createdAt": "2026-09-08T06:32:52.958Z",
+      "updatedAt": "2026-09-08T06:42:35.095Z"
+    },
+    {
+      "_id": "p_1788849197332_4gr63m",
+      "caption": "<div>【圖文時間】 《希望溫暖你的每一天(精采夜光版)》</div><div><br></div>",
+      "time": "18:00",
+      "canvaUrl": "https://www.canva.com/design/DAHPbqxce5c/KlYPQFMyxFO9ZN5Zx99IkA/view?utm_content=DAHPbqxce5c&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h240e483ba4",
+      "ratio": "1-1",
+      "theme": "圖文時間",
+      "title": "希望溫暖你的每一天(精采夜光版)",
+      "status": "draft",
+      "createdAt": "2026-09-08T06:33:17.332Z",
+      "updatedAt": "2026-09-08T06:33:21.332Z"
+    }
   ]
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-07T08:20:02.739Z",
+  "updatedAt": "2026-09-08T06:42:48.003Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
