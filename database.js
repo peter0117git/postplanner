@@ -2873,7 +2873,7 @@ var externalDB = {
     },
     {
       "_id": "p_1789020046163_dyy2u3",
-      "caption": "<div>【圖文時間】 《希望溫暖你的每一天(精采夜光版)》</div><div><br></div><div><div>我們不需要一直都很正向積極，</div><div>你可以悲傷、生氣，也可以感覺到模糊的不安。</div><div>真的都沒關係。</div><div>所謂的正向積極，並不是不會感覺到負面情緒。</div><div>而是可以接受所有的情緒，</div><div>在現實中去做自己能做的事、</div><div>去看自己所擁有的一切。</div><div>這就是正向的真正意義。</div></div><div><br></div><div>#大田出版 #正向 #療癒</div><div><br></div>",
+      "caption": "<div>【圖文時間】 《希望溫暖你的每一天(精采夜光版)》</div><div><br></div><div><div>有點笨拙也沒關係，</div><div>有點彆扭也沒關係，不夠熟練也沒關係。</div><div>因為重要的是你為了發揮同理心所做的努力。</div><div>你不是忽視對方的心情，勉強對方要有好心情，</div><div>或是嘗試提出解決之道，</div><div>而是懷抱一顆理解的心，去傾聽、陪伴。</div><div>只要一個眼神就夠了。</div><div>只要有這樣的心就夠了。</div></div><div><br></div><div>#大田出版 #同理 #療癒 #直男 #直女 #情侶</div><div><br></div>",
       "time": "18:00",
       "canvaUrl": "https://www.canva.com/design/DAHPbqxce5c/KlYPQFMyxFO9ZN5Zx99IkA/view?utm_content=DAHPbqxce5c&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h240e483ba4",
       "ratio": "1-1",
@@ -2881,13 +2881,13 @@ var externalDB = {
       "title": "希望溫暖你的每一天(精采夜光版)",
       "status": "draft",
       "createdAt": "2026-09-10T06:00:46.163Z",
-      "updatedAt": "2026-09-10T07:46:41.787Z"
+      "updatedAt": "2026-09-14T03:08:06.304Z"
     }
   ]
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-11T07:17:50.434Z",
+  "updatedAt": "2026-09-14T03:08:25.466Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
