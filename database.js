@@ -2911,15 +2911,15 @@ var externalDB = {
     },
     {
       "_id": "p_1789366003153_ug569e",
-      "caption": "<div>【圖文時間】 《便當實驗室又開張了： 日日&amp;特別日的菜單挑戰記》</div><div><br></div><div><div>#高木直子便當實驗室又開張了<br><br><span style=\"color:rgb(12, 16, 20)\">要準備全家人的便當，</span><br><span style=\"color:rgb(12, 16, 20)\">每個人的口味和食量都不一樣，</span><br><span style=\"color:rgb(12, 16, 20)\">其實有點傷腦筋……</span><br><span style=\"color:rgb(12, 16, 20)\">高木直子忙碌的早上時光，一切為了便當！</span><br><br>#大田出版 #高木直子 #最新作品<span style=\"color:rgb(12, 16, 20)\"> </span>#便當<span style=\"color:rgb(12, 16, 20)\"> </span>#玉子燒<span style=\"color:rgb(12, 16, 20)\"> </span>#可樂餅 #便當</div></div>",
+      "caption": "<div>【圖文時間】 《幸福就是吃飯睡覺等待 vol.3》</div><div><br></div><div><div>有些話一說出口，<br>\n就會開始忍不住反覆回想——<span></span></div>\n<div>「我剛剛怎麼會那樣說……」<br>\n「是不是乾脆不要講比較好……」</div>\n<div>想著想著，還是先睡飽再說吧。<br>\n偶爾覺得懊惱、覺得自己說錯話，也是很平常的事。</div><div><br></div>\n<div>#幸福就是吃飯睡覺等待 #水凪トリ #大田出版 #漫畫 #日常</div></div>",
       "time": "18:00",
-      "canvaUrl": "https://www.canva.com/design/DAHVJgRVSX4/RabGAHcMPAqUPubqDrJmpA/view?utm_content=DAHVJgRVSX4&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hd509d5f558",
-      "ratio": "4-5",
+      "canvaUrl": "https://www.canva.com/design/DAHSzB4HqsA/yYi2a6HFRv8VTjC7_wuZ8A/view?utm_content=DAHSzB4HqsA&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h70d6b7631b",
+      "ratio": "1-1",
       "theme": "圖文時間",
-      "title": "便當實驗室又開張了： 日日&特別日的菜單挑戰記",
+      "title": "幸福就是吃飯睡覺等待 vol.3",
       "status": "draft",
       "createdAt": "2026-09-14T06:06:43.153Z",
-      "updatedAt": "2026-09-14T06:17:57.210Z"
+      "updatedAt": "2026-09-14T08:58:15.751Z"
     },
     {
       "_id": "p_1789367992098_605k0r",
@@ -2946,30 +2946,19 @@ var externalDB = {
       "status": "draft",
       "createdAt": "2026-09-14T06:40:21.430Z",
       "updatedAt": "2026-09-14T08:29:45.647Z"
-    },
-    {
-      "_id": "p_1789368039751_yd8uir",
-      "caption": "<div>【圖文時間】 《宇希時間》</div><div><br></div>",
-      "time": "18:00",
-      "canvaUrl": "https://www.canva.com/design/DAHNdqdK6aI/PiMT2vlLGuDlWm3KmDjn9g/view?utm_content=DAHNdqdK6aI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=ha7005fd718",
-      "ratio": "1-1",
-      "theme": "圖文時間",
-      "title": "宇希時間",
-      "status": "draft",
-      "createdAt": "2026-09-14T06:40:39.751Z",
-      "updatedAt": "2026-09-14T06:40:39.751Z"
     }
   ]
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-14T08:30:02.495Z",
+  "updatedAt": "2026-09-14T09:48:00.139Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
     "p_1787723287241_bmj85x": "2026-08-26T05:48:18.760Z",
     "p_1787723361084_3mtwzw": "2026-08-26T09:21:23.495Z",
     "p_1788759306678_724hl2": "2026-09-07T06:19:45.697Z",
-    "p_1789019547728_9mhp5o": "2026-09-10T05:52:52.371Z"
+    "p_1789019547728_9mhp5o": "2026-09-10T05:52:52.371Z",
+    "p_1789368039751_yd8uir": "2026-09-14T09:47:43.191Z"
   }
 };
