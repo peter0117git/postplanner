@@ -2885,21 +2885,21 @@ var externalDB = {
     },
     {
       "_id": "p_1789357724818_3l25eh",
-      "caption": "<div>【晚上多讀一點點】 《外面是夏天》</div><div><br></div><div>作家的話</div><div><br></div><div><div>迎接夏天。</div><div><br></div><div>像我的朋友們一樣</div><div>依舊緊握著某人的手又鬆開</div><div>有的事變了，有的依然如昔</div><div>度過夏天。</div><div><br></div><div>沒說出口的話和無法說出口的話</div><div>不該說的話和必須說的話</div><div>某天，也會以人物的形態出現。</div><div><br></div><div>人物為了成為人</div><div><br></div><div>苦思需要什麼話</div><div>遇到更需要語言之外的其他東西時</div><div>就不時停下來。</div><div><br></div><div>雖然很久前就完成小說</div><div>有時仍感覺他們一副不知何去何從的臉</div><div>好像在看著某處。</div><div><br></div><div>他們都是從哪裡來的？</div><div>現在又想去哪裡呢？</div><div><br></div><div>我很好奇筆下的人一直看著的地方</div><div>有時也會轉頭往他們的方向看過去。</div><div><br></div><div>2017.夏</div><div>金愛爛</div></div><div><br></div><div><div>第四十八屆東仁文學獎得獎作品《外面是夏天》，是韓國作家金愛爛的第四部短篇小說集，她以＜沉默的未來＞成為李箱文學獎最年輕的得主，又以＜您想去哪裡呢？＞榮獲第八屆青年作家獎。本書在韓國銷量更是突破二十五萬冊，是金愛爛叫好又叫座的一部經典作品。</div><div><br></div><div>金愛爛是你遇見之後，就會愛上的小說家</div><div><br></div><div>她的文字，連金泰梨都愛不釋手！</div></div><div><br></div><div>#外面是夏天 #大田出版 #韓國文學 #金愛爛 #你的夏天還好嗎</div>",
+      "caption": "<div>【晚上多讀一點點】 《外面是夏天》</div><div><br></div><div>作家的話</div><div><br></div><div><div>迎接夏天。</div><div><br></div><div>像我的朋友們一樣</div><div>依舊緊握著某人的手又鬆開</div><div>有的事變了，有的依然如昔</div><div>度過夏天。</div><div><br></div><div>沒說出口的話和無法說出口的話</div><div>不該說的話和必須說的話</div><div>某天，也會以人物的形態出現。</div><div><br></div><div>人物為了成為人</div><div>苦思需要什麼話</div><div>遇到更需要語言之外的其他東西時</div><div>就不時停下來。</div><div><br></div><div>雖然很久前就完成小說</div><div>有時仍感覺他們一副不知何去何從的臉</div><div>好像在看著某處。</div><div><br></div><div>他們都是從哪裡來的？</div><div>現在又想去哪裡呢？</div><div><br></div><div>我很好奇筆下的人一直看著的地方</div><div>有時也會轉頭往他們的方向看過去。</div><div><br></div><div>2017.夏</div><div>金愛爛</div></div><div><br></div><div><div>第四十八屆東仁文學獎得獎作品《外面是夏天》，是韓國作家金愛爛的第四部短篇小說集，她以＜沉默的未來＞成為李箱文學獎最年輕的得主，又以＜您想去哪裡呢？＞榮獲第八屆青年作家獎。本書在韓國銷量更是突破二十五萬冊，是金愛爛叫好又叫座的一部經典作品。</div><div><br></div><div>金愛爛是你遇見之後，就會愛上的小說家</div><div><br></div><div>她的文字，連金泰梨都愛不釋手！</div></div><div><br></div><div>#外面是夏天 #大田出版 #韓國文學 #金愛爛 #你的夏天還好嗎</div>",
       "time": "20:00",
       "canvaUrl": "https://www.canva.com/design/DAHUfCfsUp8/4l77GqQz8ls3dkGUzAELkg/view?utm_content=DAHUfCfsUp8&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc3391f98c7",
-      "ratio": "4-5",
+      "ratio": "1-1",
       "theme": "晚上多讀一點點",
       "title": "外面是夏天",
       "status": "draft",
       "createdAt": "2026-09-14T03:48:44.818Z",
-      "updatedAt": "2026-09-14T04:33:24.436Z"
+      "updatedAt": "2026-09-14T05:53:29.251Z"
     }
   ]
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-14T04:33:34.779Z",
+  "updatedAt": "2026-09-14T05:53:42.944Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
