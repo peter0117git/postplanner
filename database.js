@@ -2937,7 +2937,7 @@ var externalDB = {
   "2026-09-16": [
     {
       "_id": "p_1789368021430_b37392",
-      "caption": "<div>【早上只讀一點點】 《<span style=\"color:rgb(12, 16, 20)\">張天捷在台北繞了一年都沒遇到蔡依林</span>》</div><div><br></div><div><div>〈 幸福 〉</div><div><br></div><div>我親眼看過年輕，</div><div>我親眼看過夢想，</div><div>我親眼看過愛情。</div><div>但是，</div><div>我就是沒看見時間太快。</div></div><div><br></div><div><span style=\"color:rgb(12, 16, 20)\">— 摘錄自張天捷《張天捷在台北繞了一年都沒遇到蔡依林》</span>〈 幸福 〉</div><div><br></div><div>#詩集 #大田出版</div>",
+      "caption": "<div>【早上只讀一點點】 《<span style=\"color:rgb(12, 16, 20)\">張天捷在台北繞了一年都沒遇到蔡依林</span>》</div><div><br></div><div><div>〈 幸福 〉</div><div><br></div><div>我親眼看過年輕，</div><div>我親眼看過夢想，</div><div>我親眼看過愛情。</div><div>但是，</div><div>我就是沒看見時間太快。</div></div><div><br></div><div><span style=\"color:rgb(12, 16, 20)\">— 摘自張天捷《張天捷在台北繞了一年都沒遇到蔡依林》</span>〈 幸福 〉</div><div><br></div><div>#詩集 #大田出版</div>",
       "time": "08:00",
       "canvaUrl": "https://www.canva.com/design/DAHVJwmIVbI/1O5q9xMbPjgQGfeYhcfkMQ/view?utm_content=DAHVJwmIVbI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hbd84e0051d",
       "ratio": "4-5",
@@ -2945,7 +2945,7 @@ var externalDB = {
       "title": "張天捷在台北繞了一年都沒遇到蔡依林",
       "status": "draft",
       "createdAt": "2026-09-14T06:40:21.430Z",
-      "updatedAt": "2026-09-14T07:35:37.979Z"
+      "updatedAt": "2026-09-14T08:29:45.647Z"
     },
     {
       "_id": "p_1789368039751_yd8uir",
@@ -2963,7 +2963,7 @@ var externalDB = {
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-14T07:40:46.045Z",
+  "updatedAt": "2026-09-14T08:30:02.495Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
