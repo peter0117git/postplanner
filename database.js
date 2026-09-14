@@ -2920,12 +2920,50 @@ var externalDB = {
       "status": "draft",
       "createdAt": "2026-09-14T06:06:43.153Z",
       "updatedAt": "2026-09-14T06:17:57.210Z"
+    },
+    {
+      "_id": "p_1789367992098_605k0r",
+      "caption": "<div>【晚上多讀一點點】 《你就是困住自己的那座山》</div><div><br></div><div><div><div>〈 執著於並不想要的事物 〉</div><div><br></div></div><div><div>有時候你對人生抱持的夢想，其實源自他人的喜好。在其他的情況下，你會決定好自己現在想要的是什麼，然後拋棄掉過往的陳舊渴望。</div></div><div><div>有時候我們會無止境地把心力耗費在逼迫自己去想要一些其實並不想要的事物上，但這種行為總是在事後讓我們覺得很空虛，因為那並非我們真心的渴望。這跟缺乏動力或遇到阻力不同。我們之所以沒有辦法好好表現，並非因為恐懼或缺乏能力，而是因為打從心底知道，我們並沒有想在自己的生活中擁有這樣事物，而且我們可能會感到迷失，或沒有辦法改變自己的行徑。</div></div><div><div>一旦發現自己因為某件事情而陷入苦苦掙扎的局面時，必須捫心自問：我是真心地想要這麼做嗎？你是真的想要這份工作，抑或只是想要這個頭銜？你是真的愛這個人，抑或只是喜歡這段關係帶給你的感覺？曾經為自己的人生立下終極願景的你，是否意識到那個願景早已過時，但你卻仍緊抓不放？如果真是如此，那麼選擇坦然放手，又會讓你的人生呈現什麼樣的風景呢？</div></div><div><div>到頭來，自我破壞有時候能讓我們看到自己還沒有走上正確的道路，而我們需要重新評估，以確定什麼選擇對生命來說是最好的，哪怕這也意味著我們會讓一些人感到失望，甚至包括過往年輕的自己。</div></div><div><div>我們沒有必要把餘生的時間都耗費在企圖完成某種年輕時所認定的完美成就上。當時的我們還太年輕，當時的我們甚至都還不了解自己。我們唯一該做的事情，是為此時此刻的我們做出正確的抉擇。</div></div><div><div>—如何解決—</div></div><div><div>坦然地接受事實吧，也許你所謂的「成功故事」其實並非自己曾經想像的那樣。</div></div><div><div>也許你真心渴望的成功，是每一天都能感到平靜，或者讓你的生命中充滿旅行，而不是工作。也許你的成功是擁有不斷擴大的交友圈或一段幸福的關係。也許你十年前進入的這個行業，並不是一個你想要走一輩子的行業。也許你曾認為自己會喜歡的工作，做起來並沒有自己原先想的那麼容易。</div></div><div><div>如果能夠放棄不適合自己的事物，就可以創造出空間，來找到什麼是適合自己的。然而，這麼做需要極大的勇氣。我們需要放下自尊，看清事物的本來面目。</div></div><div><div>（摘自P49-51）</div><div>－</div><div><span><br></span></div><div><span>#改變</span> <span>#焦慮</span> <span>#大田出版</span></div></div></div>",
+      "time": "20:00",
+      "canvaUrl": "https://www.canva.com/design/DAHUxWiOlXU/z3tAn2O-2XfIKm1cn23p_g/view?utm_content=DAHUxWiOlXU&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h21f78da663",
+      "ratio": "1-1",
+      "theme": "晚上多讀一點點",
+      "title": "你就是困住自己的那座山",
+      "status": "draft",
+      "createdAt": "2026-09-14T06:39:52.098Z",
+      "updatedAt": "2026-09-14T06:43:00.934Z"
+    }
+  ],
+  "2026-09-16": [
+    {
+      "_id": "p_1789368021430_b37392",
+      "caption": "<div>【早上只讀一點點】 《<span style=\"color:rgb(12, 16, 20)\">張天捷在台北繞了一年都沒遇到蔡依林</span>》</div><div><br></div><div><div>〈 幸福 〉</div><div><br></div><div>我親眼看過年輕，</div><div>我親眼看過夢想，</div><div>我親眼看過愛情。</div><div>但是，</div><div>我就是沒看見時間太快。</div></div><div><br></div><div><span style=\"color:rgb(12, 16, 20)\">— 摘錄自張天捷《張天捷在台北繞了一年都沒遇到蔡依林》</span>〈 幸福 〉</div><div><br></div><div>#詩集 #大田出版</div>",
+      "time": "08:00",
+      "canvaUrl": "https://www.canva.com/design/DAHVJwmIVbI/1O5q9xMbPjgQGfeYhcfkMQ/view?utm_content=DAHVJwmIVbI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hbd84e0051d",
+      "ratio": "4-5",
+      "theme": "早上只讀一點點",
+      "title": "張天捷在台北繞了一年都沒遇到蔡依林",
+      "status": "draft",
+      "createdAt": "2026-09-14T06:40:21.430Z",
+      "updatedAt": "2026-09-14T07:35:37.979Z"
+    },
+    {
+      "_id": "p_1789368039751_yd8uir",
+      "caption": "<div>【圖文時間】 《宇希時間》</div><div><br></div>",
+      "time": "18:00",
+      "canvaUrl": "https://www.canva.com/design/DAHNdqdK6aI/PiMT2vlLGuDlWm3KmDjn9g/view?utm_content=DAHNdqdK6aI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=ha7005fd718",
+      "ratio": "1-1",
+      "theme": "圖文時間",
+      "title": "宇希時間",
+      "status": "draft",
+      "createdAt": "2026-09-14T06:40:39.751Z",
+      "updatedAt": "2026-09-14T06:40:39.751Z"
     }
   ]
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-14T06:27:35.404Z",
+  "updatedAt": "2026-09-14T07:40:46.045Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
