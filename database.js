@@ -2975,7 +2975,7 @@ var externalDB = {
   "2026-09-17": [
     {
       "_id": "p_1789455232897_wo8ppt",
-      "caption": "<div>【早上只讀一點點】 《一次又一次又一次地重新開始》</div><div><br></div><div><div>今天，我不必成為</div><div>任何人的燈塔。</div><div>沒有我看守，</div><div>世界依舊繼續運轉。</div><div>時光悠然流淌，</div><div>漫無目的，</div><div>如此簡單，</div><div>如此圓滿。</div><div>這就是人生：</div><div>擁抱當下的輕柔低鳴，</div><div>不向誰</div><div>索求一絲半分。</div></div><div><br></div><div>#大田出版 #自己 #會好起來的</div>",
+      "caption": "<div>【早上只讀一點點】 《一次又一次又一次地重新開始》</div><div><br></div><div><div>今天，我不必成為</div><div>任何人的燈塔。</div><div>沒有我看守，</div><div>世界依舊繼續運轉。</div><div><br></div><div>時光悠然流淌，</div><div>漫無目的，</div><div>如此簡單，</div><div>如此圓滿。</div><div><br></div><div>這就是人生：</div><div>擁抱當下的輕柔低鳴，</div><div>不向誰</div><div>索求一絲半分。</div></div><div><br></div><div>#大田出版 #自己 #會好起來的</div>",
       "time": "09:00",
       "canvaUrl": "https://www.canva.com/design/DAHUx0ERHjc/XkMUHP9AzrsvMDqWj3FH3Q/view?utm_content=DAHUx0ERHjc&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc8ddfee9f3",
       "ratio": "1-1",
@@ -2983,7 +2983,7 @@ var externalDB = {
       "title": "一次又一次又一次地重新開始",
       "status": "draft",
       "createdAt": "2026-09-15T06:53:52.897Z",
-      "updatedAt": "2026-09-15T07:41:46.482Z"
+      "updatedAt": "2026-09-15T07:42:18.617Z"
     },
     {
       "_id": "p_1789455254219_ah3cyv",
@@ -3051,7 +3051,7 @@ var externalDB = {
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-15T07:41:56.319Z",
+  "updatedAt": "2026-09-15T07:42:27.101Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
