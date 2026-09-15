@@ -2958,12 +2958,100 @@ var externalDB = {
       "status": "draft",
       "createdAt": "2026-09-15T02:04:01.172Z",
       "updatedAt": "2026-09-15T02:04:47.194Z"
+    },
+    {
+      "_id": "p_1789455215190_kug9jv",
+      "caption": "<div>【晚上多讀一點點】 《外面是夏天》</div><div><br></div>",
+      "time": "20:00",
+      "canvaUrl": "https://www.canva.com/design/DAHUfCfsUp8/4l77GqQz8ls3dkGUzAELkg/view?utm_content=DAHUfCfsUp8&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc3391f98c7",
+      "ratio": "1-1",
+      "theme": "晚上多讀一點點",
+      "title": "外面是夏天",
+      "status": "draft",
+      "createdAt": "2026-09-15T06:53:35.190Z",
+      "updatedAt": "2026-09-15T06:53:38.785Z"
+    }
+  ],
+  "2026-09-17": [
+    {
+      "_id": "p_1789455232897_wo8ppt",
+      "caption": "<div>【早上只讀一點點】 《一次又一次又一次地重新開始》</div><div><br></div><div><div>今天，我不必成為</div><div>任何人的燈塔。</div><div>沒有我看守，</div><div>世界依舊繼續運轉。</div><div>時光悠然流淌，</div><div>漫無目的，</div><div>如此簡單，</div><div>如此圓滿。</div><div>這就是人生：</div><div>擁抱當下的輕柔低鳴，</div><div>不向誰</div><div>索求一絲半分。</div></div><div><br></div><div>#大田出版 #自己 #會好起來的</div>",
+      "time": "09:00",
+      "canvaUrl": "https://www.canva.com/design/DAHUx0ERHjc/XkMUHP9AzrsvMDqWj3FH3Q/view?utm_content=DAHUx0ERHjc&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc8ddfee9f3",
+      "ratio": "1-1",
+      "theme": "早上只讀一點點",
+      "title": "一次又一次又一次地重新開始",
+      "status": "draft",
+      "createdAt": "2026-09-15T06:53:52.897Z",
+      "updatedAt": "2026-09-15T07:41:46.482Z"
+    },
+    {
+      "_id": "p_1789455254219_ah3cyv",
+      "caption": "<div>【圖文時間】 《幸福就是吃飯睡覺等待 vol.3》</div><div><br></div>",
+      "time": "18:00",
+      "canvaUrl": "https://www.canva.com/design/DAHUfFhvwQk/eIKPXlMvaFSk_VxIIPB_9Q/view?utm_content=DAHUfFhvwQk&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hfdd0ad021d",
+      "ratio": "1-1",
+      "theme": "圖文時間",
+      "title": "幸福就是吃飯睡覺等待 vol.3",
+      "status": "draft",
+      "createdAt": "2026-09-15T06:54:14.219Z",
+      "updatedAt": "2026-09-15T07:35:29.767Z"
+    },
+    {
+      "_id": "p_1789455299759_7sb8y5",
+      "caption": "<div>【晚上多讀一點點】 《上帝不眨眼：50堂百萬人瘋傳的人生智慧》</div><div><br></div>",
+      "time": "20:00",
+      "canvaUrl": "",
+      "ratio": "1-1",
+      "theme": "晚上多讀一點點",
+      "title": "上帝不眨眼：50堂百萬人瘋傳的人生智慧",
+      "status": "draft",
+      "createdAt": "2026-09-15T06:54:59.759Z",
+      "updatedAt": "2026-09-15T06:54:59.759Z"
+    }
+  ],
+  "2026-09-18": [
+    {
+      "_id": "p_1789455331859_lqazio",
+      "caption": "<div>【早上只讀一點點】 《最強提問力：問更好的問題，獲得更棒的答案》</div><div><br></div>",
+      "time": "08:00",
+      "canvaUrl": "",
+      "ratio": "1-1",
+      "theme": "早上只讀一點點",
+      "title": "最強提問力：問更好的問題，獲得更棒的答案",
+      "status": "draft",
+      "createdAt": "2026-09-15T06:55:31.859Z",
+      "updatedAt": "2026-09-15T06:55:31.859Z"
+    },
+    {
+      "_id": "p_1789455349836_asmuml",
+      "caption": "<div>【圖文時間】 《希望溫暖你的每一天(精采夜光版)》</div><div><br></div>",
+      "time": "18:00",
+      "canvaUrl": "https://www.canva.com/design/DAHPbqxce5c/KlYPQFMyxFO9ZN5Zx99IkA/view?utm_content=DAHPbqxce5c&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h240e483ba4",
+      "ratio": "1-1",
+      "theme": "圖文時間",
+      "title": "希望溫暖你的每一天(精采夜光版)",
+      "status": "draft",
+      "createdAt": "2026-09-15T06:55:49.836Z",
+      "updatedAt": "2026-09-15T06:55:49.836Z"
+    },
+    {
+      "_id": "p_1789455366471_p84irw",
+      "caption": "<div>【晚上多讀一點點】 《外面是夏天》</div><div><br></div>",
+      "time": "20:00",
+      "canvaUrl": "",
+      "ratio": "1-1",
+      "theme": "晚上多讀一點點",
+      "title": "外面是夏天",
+      "status": "draft",
+      "createdAt": "2026-09-15T06:56:06.471Z",
+      "updatedAt": "2026-09-15T06:56:06.471Z"
     }
   ]
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-15T02:05:44.729Z",
+  "updatedAt": "2026-09-15T07:41:56.319Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
