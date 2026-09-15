@@ -2987,7 +2987,7 @@ var externalDB = {
     },
     {
       "_id": "p_1789455254219_ah3cyv",
-      "caption": "<div>【圖文時間】 《幸福就是吃飯睡覺等待 vol.3》</div><div><br></div>",
+      "caption": "<div>【圖文時間】 《幸福就是吃飯睡覺等待 vol.3》</div><div><br></div><div><div>每個人都有自己的步調，<br>\n不用急著追上誰。</div>\n<div>一步一腳印，慢慢嘗試、慢慢摸索，<br>\n找到最適合自己的幸福軌道。</div><div><br></div>\n<div>#一步一腳印 #步調 #<span>幸福就是吃飯睡覺等待&nbsp;</span>&nbsp;#生活 #大田出版</div></div>",
       "time": "18:00",
       "canvaUrl": "https://www.canva.com/design/DAHUfFhvwQk/eIKPXlMvaFSk_VxIIPB_9Q/view?utm_content=DAHUfFhvwQk&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hfdd0ad021d",
       "ratio": "1-1",
@@ -2995,7 +2995,7 @@ var externalDB = {
       "title": "幸福就是吃飯睡覺等待 vol.3",
       "status": "draft",
       "createdAt": "2026-09-15T06:54:14.219Z",
-      "updatedAt": "2026-09-15T07:35:29.767Z"
+      "updatedAt": "2026-09-15T07:47:16.767Z"
     },
     {
       "_id": "p_1789455299759_7sb8y5",
@@ -3051,7 +3051,7 @@ var externalDB = {
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-15T07:42:27.101Z",
+  "updatedAt": "2026-09-15T07:47:30.565Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
