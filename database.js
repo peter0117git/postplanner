@@ -3025,7 +3025,7 @@ var externalDB = {
     },
     {
       "_id": "p_1789455349836_asmuml",
-      "caption": "<div>【圖文時間】 《希望溫暖你的每一天(精采夜光版)》</div><div><br></div>",
+      "caption": "<div>【圖文時間】 《希望溫暖你的每一天(精采夜光版)》</div><div><br></div><div><div>如果你今天也對自己沒有信心，那就聽聽我的話吧。</div><div>重要的不是速度，而是前進的方向。</div><div>所謂的成功，不是只有完成的那一瞬間，</div><div>也包括了實現目標的每個過程。</div><div>所以一直以來，</div><div>你所受的苦、你付出的每一刻，</div><div>沒有任何一點浪費。</div></div><div><br></div><div>#大田出版 #信心</div>",
       "time": "18:00",
       "canvaUrl": "https://www.canva.com/design/DAHPbqxce5c/KlYPQFMyxFO9ZN5Zx99IkA/view?utm_content=DAHPbqxce5c&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h240e483ba4",
       "ratio": "1-1",
@@ -3033,7 +3033,7 @@ var externalDB = {
       "title": "希望溫暖你的每一天(精采夜光版)",
       "status": "draft",
       "createdAt": "2026-09-15T06:55:49.836Z",
-      "updatedAt": "2026-09-15T06:55:49.836Z"
+      "updatedAt": "2026-09-16T05:43:11.524Z"
     },
     {
       "_id": "p_1789455366471_p84irw",
@@ -3051,7 +3051,7 @@ var externalDB = {
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-16T04:10:10.949Z",
+  "updatedAt": "2026-09-16T05:52:30.155Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
