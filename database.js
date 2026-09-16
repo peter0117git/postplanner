@@ -3091,7 +3091,7 @@ var externalDB = {
     },
     {
       "_id": "p_1789546260428_8ey6wr",
-      "caption": "<div>【圖文時間】 《幸福就是吃飯睡覺等待》</div><div><br></div><div><strong>人物介紹｜麥卷聰子</strong></div><div><strong><br></strong></div><div><div>她離開了原本的工作，<br>\n也開始重新學習一件以前從沒想過的事——<span></span></div><div><br></div>\n<div><strong>不再勉強自己。</strong></div><div><strong><br></strong></div>\n<div>不是努力回到從前，<br>\n而是慢慢找到現在的自己，<br>\n也能好好生活下去的方法。</div><div><br></div>\n<div><br></div>\n<div>#幸福就是吃飯睡覺等待 #水凪トリ #漫畫 #療癒 #人物介紹 #麥卷聰子</div></div>",
+      "caption": "<div>【圖文時間】 《幸福就是吃飯睡覺等待》</div><div><br></div><div><strong>人物介紹｜麥卷聰子</strong></div><div><strong><br></strong></div><div><div>她離開了原本的工作，<br>\n也開始重新學習一件以前從沒想過的事——<span></span></div><div><br></div>\n<div><strong>不再勉強自己。</strong></div><div><strong><br></strong></div>\n<div>不是努力回到從前，<br>\n而是慢慢找到現在的自己，<br>\n也能好好生活下去的方法。</div><div><br></div>\n<div>#幸福就是吃飯睡覺等待 #水凪トリ #漫畫 #療癒 #人物介紹 #麥卷聰子</div></div>",
       "time": "18:00",
       "canvaUrl": "https://www.canva.com/design/DAHVVu1HQrM/MocqoJIJOp5eA5JwZrYc1A/view?utm_content=DAHVVu1HQrM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h9a95226dae",
       "ratio": "1-1",
@@ -3099,7 +3099,7 @@ var externalDB = {
       "title": "幸福就是吃飯睡覺等待",
       "status": "draft",
       "createdAt": "2026-09-16T08:11:00.428Z",
-      "updatedAt": "2026-09-16T08:44:04.256Z"
+      "updatedAt": "2026-09-16T08:46:28.363Z"
     },
     {
       "_id": "p_1789546356088_448vnh",
@@ -3117,7 +3117,7 @@ var externalDB = {
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-16T08:45:26.693Z",
+  "updatedAt": "2026-09-16T08:46:48.285Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
