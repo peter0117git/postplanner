@@ -3013,15 +3013,15 @@ var externalDB = {
   "2026-09-18": [
     {
       "_id": "p_1789455331859_lqazio",
-      "caption": "<div>【早上只讀一點點】 《最強提問力：問更好的問題，獲得更棒的答案》</div><div><br></div>",
+      "caption": "<div data-block=\"h1\">【早上只讀一點點】 《最強提問力：問更好的問題，獲得更棒的答案》</div><div><br></div><div><div><div><div><div>我們常各說各話，沒有對話</div></div><div><div>有時候對方話都還沒說完，你已經在想自己要說什麼了。</div></div><div><div>「我想先從他們說的那點下手，因為我不太同意那一點，我自己針對這方面有幾個想法一定要提出來，以免忘記，因為大家都應該要知道我在這個議題上的立場是什麼。」</div></div><div><div>這就是另一個例子，顯示你已經閃神，頂多就只有一半心力在聽對方說話。你忙著想自己，而不是與他人互動。不是只有你會這樣！我們常常只聽對方講了兩句，思緒就開始瘋狂運轉，想要找到自己的意見、經驗和想法。</div></div><div><div>安娜：我今天辭職了。過程非常緊繃，但是我覺得自己能這麼勇敢，還滿厲害的。我花了幾天時間鼓起勇氣，最後大步走進主管辦公室對她說出口。</div><div>瓦特：你接下來已經都計畫好了嗎？</div><div>安娜：沒，還沒有，可是……</div><div>瓦特：要問我的話，我覺得這樣做不是很明智。我覺得何苦讓自己在下一步都不知道在哪裡的情況下就這樣拋開手中的一切。我實在覺得這樣不是很聰明，特別是現在這時候，狀況這麼不明。</div><div>安娜：也沒那麼糟啦。我先把優劣都比較過才下決定，而且也花了一點時間好好想想什麼東西對我來說比較重要。</div></div><div><div>就坦白說吧，這段過程根本沒有真正的對話。很多對話講到最後都變得只是在兩個獨白之間切換罷了。而且，兩個獨白之間切換不能算是對話。不算。</div></div><div><div>──埃爾克‧維斯《最強提問力》p51~53</div></div></div></div></div><div><br></div><div>#大田出版 #提問 #想法</div>",
       "time": "08:00",
-      "canvaUrl": "",
+      "canvaUrl": "https://www.canva.com/design/DAHVU4Leh1E/cdzNEjFDADK0x8ecobnpiA/view?utm_content=DAHVU4Leh1E&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hde69919ec1",
       "ratio": "1-1",
       "theme": "早上只讀一點點",
       "title": "最強提問力：問更好的問題，獲得更棒的答案",
       "status": "draft",
       "createdAt": "2026-09-15T06:55:31.859Z",
-      "updatedAt": "2026-09-15T06:55:31.859Z"
+      "updatedAt": "2026-09-16T04:09:57.712Z"
     },
     {
       "_id": "p_1789455349836_asmuml",
@@ -3051,7 +3051,7 @@ var externalDB = {
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-16T03:51:29.008Z",
+  "updatedAt": "2026-09-16T04:10:10.949Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
