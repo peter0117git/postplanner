@@ -3229,29 +3229,29 @@ var externalDB = {
     },
     {
       "_id": "p_1789971768269_55j73t",
-      "caption": "<div>【晚上多讀一點點】 《如何愛你的負面情感》</div><div><br></div>",
+      "caption": "<div>【晚上多讀一點點】 《如何愛你的負面情感》</div><div><br></div><div><div>所謂「表達」就是「表現自我」。</div><div><br></div><div>有人說，「人是為了表現自我特質而來到世上的」，因此表現自我本來就該是一件令人興奮雀躍的事。</div><div>聽我這麼說，你可能會搖著頭回答：「我還是無法樂在其中。」你之所以會這麼想，應該是因為在你腦中有著一個根深蒂固的概念——「表現自我很困難」。</div><div>「為了讓人理解你而飽受艱辛，無法得到理解時你就陷入負面情感，於是變得無法表現自己。」在這之前，你一直處在這樣的惡性循環中。</div><div>但在心靈重整好的那個時點，你就已選擇了另一種生存之道——「解放被壓抑的情感，與人分享情感，且樂於表達自己真正的心情」。</div><div>為了表現自我而必須飽受艱辛的，是過去的你。</div><div>現在的你已經不同了。</div><div>對於自己能不能得到他人理解，你還是感到將信將疑嗎？</div><div>就算將信將疑，也請你別讓自己陷入疑慮之中。因為你若陷入疑慮的話，就會變得戰戰兢兢、提心吊膽、裹足不前，而無法展現出自我。</div><div>只有表達出真正的心情，才能與他人心意相通。</div><div>身為一個血肉之軀的人，就要讓自己正大光明地表現出喜怒哀樂，這是人生中的重要大事。</div><div><br></div><div>摘自p.132~133</div><div><br></div><div>#大田出版 #表現 #自我 #懷疑 #理解</div></div>",
       "time": "20:00",
-      "canvaUrl": "",
+      "canvaUrl": "https://www.canva.com/design/DAHVP5eObP0/dO_khCIOMRfuJg6VA4C45A/view?utm_content=DAHVP5eObP0&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h9b0d5b0c64",
       "ratio": "1-1",
       "theme": "晚上多讀一點點",
       "title": "如何愛你的負面情感",
       "status": "draft",
       "createdAt": "2026-09-21T06:22:48.269Z",
-      "updatedAt": "2026-09-21T06:22:48.269Z"
+      "updatedAt": "2026-09-21T08:22:53.601Z"
     }
   ],
   "2026-09-25": [
     {
       "_id": "p_1789971786742_gz6y5y",
-      "caption": "<div>【早上只讀一點點】 《一次又一次又一次地重新開始》</div><div><br></div>",
+      "caption": "<div><div>【早上只讀一點點】《會好起來的，就算慢一點也沒關係》</div></div><div><br></div><div><div>谷底是，重新出發的好起點。</div><div>不用急著好起來也沒關係，允許自己與悲傷共存。</div><div><br></div></div><div><div><span>#會好起來的</span>&nbsp;<span>#圖文</span> <span>#大田出版</span></div></div>",
       "time": "08:00",
-      "canvaUrl": "",
-      "ratio": "1-1",
+      "canvaUrl": "https://www.canva.com/design/DAHV0NUBB0A/Ddnr4Vab4uPKBZcm-3mdpQ/view?utm_content=DAHV0NUBB0A&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h738c17ca01",
+      "ratio": "4-5",
       "theme": "早上只讀一點點",
-      "title": "一次又一次又一次地重新開始",
+      "title": "會好起來的，就算慢一點也沒關係",
       "status": "draft",
       "createdAt": "2026-09-21T06:23:06.742Z",
-      "updatedAt": "2026-09-21T06:23:06.742Z"
+      "updatedAt": "2026-09-21T08:16:46.219Z"
     },
     {
       "_id": "p_1789971831808_d36rdr",
@@ -3267,15 +3267,15 @@ var externalDB = {
     },
     {
       "_id": "p_1789971919745_uo0sle",
-      "caption": "<div>【晚上多讀一點點】 《尋找蜘蛛：日本暢銷超過36萬冊，西加奈子的生命故事》</div><div><br></div>",
+      "caption": "<div>【晚上多讀一點點】 《尋找蜘蛛：日本暢銷超過36萬冊，西加奈子的生命故事》</div><div><br></div><div><div><div>晚上睡覺前，就算只有十分鐘或五分鐘也好，空出時間深呼吸，凝視自己。</div></div><div><div>如果就這樣直接睡著晚上睡覺前，就算只有十分鐘或五分鐘也好，空出時間深呼吸，凝視自己。如果就這樣直接睡著也很好。</div></div><div><div>讓我比較困擾的，是以後非做不可的事，或不愉快的記憶盤旋在腦海中，無法集中精神的時候。不過，有一天，甚至對這種「無法集中精神」的感覺，也會產生不同的覺察。</div></div><div><div>就像：「我現在可以集中精神呢。」「啊，我又感到新的不安。」接下來是：「你好像很不安呢。」大概就像這樣。</div></div><div><div>我所觀照的，大概是自己內在的恐懼，它出現得真的很頻繁。譬如某天我為一件事生氣，如果正視背後的感情，並試著加以剖析，最後看見的是恐懼。</div></div><div><div>憤怒與焦慮等情感，乍看之下跟恐懼並不相同，但幾乎可說都源自於恐懼。</div></div><div><div>恐懼沒有具體的樣貌。它像沒有具體形影的幽靈附身於我。有時候，恐懼本身似乎也在畏怯著什麼，我甚至開始憐憫恐懼。</div></div><div><div>長久寄居在我體內，成為我各種情感源頭的恐懼，是我自己形成的。我是恐懼的母親，也是父親，同時也是朋友。我緊緊擁抱著恐懼。</div></div><div><div>我所製造、長久以來使我受苦的恐懼，現在我必須把它視為自己的、僅屬於我一個人的東西，緊緊抱著。</div></div><div><br></div><div><div>(摘自P.140)</div></div><div><br></div><div><div>這是為「你」而寫。__西加奈子</div></div><div><div>在異國他鄉，突如其來被宣告患上乳癌。</div></div><div><div>語言的隔閡、備受折磨的身心——</div></div><div><div>而維繫著生命的是，一雙雙友誼的手、書中的某一行字、</div><div>流動的音樂，以及彷如祈禱般的「寫作」。</div></div><div><div>一邊流淚一邊微笑，一邊微笑一邊向前邁進……</div></div><div><div>西加奈子用赤裸、毫無保留的言語寫下的，首部非虛構作</div><div>品。</div></div><div><div>這是一本讓人湧現生存勇氣的靈魂全紀錄。</div></div><div><div><span>#恐懼</span> <span>#大田出版</span></div></div></div>",
       "time": "20:00",
-      "canvaUrl": "",
+      "canvaUrl": "https://www.canva.com/design/DAHV0GJCZIE/pr4a1KAlSRQi6oQOp-v3Fw/view?utm_content=DAHV0GJCZIE&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h950640da17",
       "ratio": "1-1",
       "theme": "晚上多讀一點點",
       "title": "尋找蜘蛛：日本暢銷超過36萬冊，西加奈子的生命故事",
       "status": "draft",
       "createdAt": "2026-09-21T06:25:19.745Z",
-      "updatedAt": "2026-09-21T07:28:00.879Z"
+      "updatedAt": "2026-09-21T08:29:47.370Z"
     }
   ],
   "2026-09-26": [
@@ -3309,7 +3309,7 @@ var externalDB = {
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-21T08:07:14.281Z",
+  "updatedAt": "2026-09-21T08:30:02.086Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
