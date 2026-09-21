@@ -3290,6 +3290,18 @@ var externalDB = {
       "status": "draft",
       "createdAt": "2026-09-21T06:26:25.121Z",
       "updatedAt": "2026-09-21T06:26:25.121Z"
+    },
+    {
+      "_id": "p_1789982575874_99x1op",
+      "caption": "<div>【大田布告欄】一本書裡的一篇小說，走上了金鐘獎。</div><div><br></div><div>\n<div>改編自鍾文音《溝：故事未了，黃昏已來》同名短篇，客家電視電影《小包袱》一舉入圍第61屆金鐘獎五項大獎：</div><div><br></div>\n<div>🏆 電視電影獎<span>《小包袱》</span><br>\n🏆 迷你劇集（電視電影）導演獎<span>——</span><span>徐麗雯</span></div><div>\n🏆 迷你劇集（電視電影）編劇獎<span>——</span><span>林佳慧、徐麗雯</span></div><div>\n🏆 迷你劇集（電視電影）女主角獎——吳奕蓉<br>\n🏆 迷你劇集（電視電影）女配角獎——陸弈靜</div><div><br></div><div>#溝 #小包袱 #金鐘獎</div></div>",
+      "time": "09:00",
+      "canvaUrl": "https://www.canva.com/design/DAHV0cjaWpE/Q3iiWh3nhBivAYhtrTTZng/view?utm_content=DAHV0cjaWpE&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h967d1ac1e8",
+      "ratio": "1-1",
+      "theme": "大田布告欄",
+      "title": "",
+      "status": "draft",
+      "createdAt": "2026-09-21T09:22:55.874Z",
+      "updatedAt": "2026-09-21T09:34:30.587Z"
     }
   ],
   "2026-09-27": [
@@ -3323,7 +3335,7 @@ var externalDB = {
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-21T08:35:09.052Z",
+  "updatedAt": "2026-09-21T09:35:19.438Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
