@@ -2783,7 +2783,7 @@ var externalDB = {
   "2026-09-11": [
     {
       "_id": "p_1788849172958_zz8d34",
-      "caption": "<div>【早上只讀一點點】 《<span>現在，就是療癒你的開始</span>》</div><div><br></div><div><span>讓那些還沒準備好愛你的人離開吧</span></div><div><span><br></span></div><div><div>把愛留給準備好的人</div><div>最困難也最重要的事，<br>是停止把愛給予<br>那些還沒準備好愛你的人。</div><div>守護自己有限的精力，<br>只讓真正願意關心、聆聽與愛你的人，<br>走進你的生命。</div><div><br></div><div>#大田出版 #</div></div>",
+      "caption": "<div>【早上只讀一點點】 《<span>現在，就是療癒你的開始</span>》</div><div><br></div><div><span>讓那些還沒準備好愛你的人離開吧</span></div><div><span><br></span></div><div><div>把愛留給準備好的人</div><div>最困難也最重要的事，<br>是停止把愛給予<br>那些還沒準備好愛你的人。</div><div>守護自己有限的精力，<br>只讓真正願意關心、聆聽與愛你的人，<br>走進你的生命。</div><div><br></div><div>#大田出版</div></div>",
       "time": "08:00",
       "canvaUrl": "https://www.canva.com/design/DAHUlqyCYUQ/oyEGcO6qMToMQUSmtsf-5Q/view?utm_content=DAHUlqyCYUQ&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hcb44575df7",
       "ratio": "1-1",
@@ -2791,7 +2791,7 @@ var externalDB = {
       "title": "現在，就是療癒你的開始",
       "status": "draft",
       "createdAt": "2026-09-08T06:32:52.958Z",
-      "updatedAt": "2026-09-08T06:42:35.095Z"
+      "updatedAt": "2026-09-17T08:32:19.839Z"
     },
     {
       "_id": "p_1788849197332_4gr63m",
@@ -3125,11 +3125,191 @@ var externalDB = {
       "createdAt": "2026-09-16T08:12:36.088Z",
       "updatedAt": "2026-09-17T03:43:17.840Z"
     }
+  ],
+  "2026-09-22": [
+    {
+      "_id": "p_1789970983294_naipmq",
+      "caption": "<div>【早上只讀一點點】 《一次又一次又一次重新開始》</div><div><br></div><div><div>我難以接受的是</div><div>無法在播種的那天</div><div>就品嚐果實</div></div><div><br></div><div>但值得擁有的一切</div><div>都需要時間淬鍊。</div><div><br></div><div>#大田出版 #會好起來的 #療癒 #圖文</div>",
+      "time": "08:00",
+      "canvaUrl": "https://www.canva.com/design/DAHUfg9VL0U/m0OSBgwe_8j6Zw-9PT2PZw/view?utm_content=DAHUfg9VL0U&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h34b3805d55",
+      "ratio": "1-1",
+      "theme": "早上只讀一點點",
+      "title": "一次又一次又一次重新開始",
+      "status": "draft",
+      "createdAt": "2026-09-21T06:09:43.294Z",
+      "updatedAt": "2026-09-21T06:50:14.941Z"
+    },
+    {
+      "_id": "p_1789971031113_k7q3ef",
+      "caption": "<div>【圖文時間】 《幸福就是吃飯睡覺等待 vol.1》</div><div><br></div><div><div>屋齡45年，月租5萬日圓｡</div><div><br></div><div>偶爾附贈美味可口的餐點｡&nbsp;</div><div><br></div><div>因為身體不適每周只能打工四天的麥卷聰子｡</div><div><br></div><div>在心情低落到谷底的某天發現一個小型社區｡</div><div><br></div><div>遇見房東鈴姐和「家政夫」阿司，</div><div><br></div><div>找到屬於自己的幸福……</div></div><div><br></div><div>#大田出版 #幸福就是吃飯睡覺等待</div>",
+      "time": "20:00",
+      "canvaUrl": "https://www.canva.com/design/DAHUyOgMJsw/16Gs7tHpO6mwnynLHAjxqg/view?utm_content=DAHUyOgMJsw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h615aa45a20",
+      "ratio": "1-1",
+      "theme": "圖文時間",
+      "title": "幸福就是吃飯睡覺等待 vol.3",
+      "status": "draft",
+      "createdAt": "2026-09-21T06:10:31.113Z",
+      "updatedAt": "2026-09-21T07:20:49.737Z"
+    },
+    {
+      "_id": "p_1789971051429_p44j5k",
+      "caption": "<div><div>【晚上多讀一點點】 《外面是夏天》</div><div><br></div><div><div><div><span><span>#金愛爛</span></span></div><div><span><span><br></span></span></div></div><div><div>外面是夏天，但我的靈魂正在下雪。</div></div><div><div>某部分的我消失了，而且找不到挽回的辦法，</div></div><div><div>該怎麼從失去摯愛的傷痛中康復，該怎麼嚥下自己的脆弱與無知，</div></div><div><div>我想要往外面走去，往那豐饒耀眼的夏天走去，</div></div><div><div>我願意交換一切，只求時間能快點蛻去我痛苦的皮。</div></div><div><div>喪子的夫妻、初嘗虛榮的貧窮少年、替前輩揹鍋的年輕助教，</div></div><div><div>正要綻放的生命突然襲來寒冬……。</div></div><div><div>七個關於蛻變的故事，獻給所有與社會有時間差的生命們。</div></div><div><div>第四十八屆東仁文學獎得獎作品《外面是夏天》，是韓國作家金愛爛的第四部短篇小說集，她以＜沉默的未來＞成為李箱文學獎最年輕的得主，又以＜您想去哪裡呢？＞榮獲第八屆青年作家獎。本書在韓國銷量更是突破二十五萬冊，是金愛爛叫好又叫座的一部經典作品。</div></div><div><div>金愛爛是你遇見之後，就會愛上的小說家</div></div><div><div>她的文字，連金泰梨都愛不釋手！</div></div><div><div>「她最擅長描繪難以啟齒卻又無法迴避的情感。」——韓國百想視后 金泰梨</div></div><div><div>「一位值得等待的作家。」－－韓國讀者Geulwolmaya</div></div><div><div>「讀完之後，我感覺全身都濕透了。」－－韓國讀者Oktaeng</div></div><div><div>「我喜歡把《外面是夏天》比作一個傷心失去博物館，博物館裡陳列的七個短篇，講述了生活中無法避免的失去。」－－中國讀者 樹上的兔女爵</div></div><div><div>「讀完第一篇故事後，我立刻起了雞皮疙瘩……每一個字句都讓我發出『哇』的讚嘆|，我不知道該如何形容這種感覺。我很難過，因為我覺得生活中一定也有人經歷過類似的痛苦。」－－韓國讀者 d**********0</div></div><div><div>「看完《你的夏天還好嗎？》緊接著看《外面是夏天》，作家本人的成長特别明顯。上一本充滿各種各樣的氣息，更敏感；這本就有那種『慢性心绞痛』的感覺，你看著看著就覺得怎麼回事？心口流血了。」－－中國讀者 廿姨太</div><div><br></div></div><div><div><span><span>#大田出版</span></span> <span><span>#你的夏天還好嗎</span></span></div></div></div></div>",
+      "time": "20:00",
+      "canvaUrl": "https://www.canva.com/design/DAHUfCfsUp8/4l77GqQz8ls3dkGUzAELkg/view?utm_content=DAHUfCfsUp8&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc3391f98c7",
+      "ratio": "1-1",
+      "theme": "晚上多讀一點點",
+      "title": "外面是夏天",
+      "status": "draft",
+      "createdAt": "2026-09-21T06:10:51.429Z",
+      "updatedAt": "2026-09-21T07:23:09.365Z"
+    }
+  ],
+  "2026-09-23": [
+    {
+      "_id": "p_1789971067232_9zk2pl",
+      "caption": "<div><div>【早上只讀一點點】《下雨的人》</div><div>#陳繁齊</div></div><div><div>〈如果你決定要來〉</div></div><div><div>如果你想知道我</div><div>你要細細聆聽</div><div>我的溫柔很安靜</div><div>我的愛情很薄</div><div>很容易被城市的紛擾沒收</div><div>很容易在你不意疏遠時</div><div>跌在追上你的路途中</div><div>慢慢死亡</div><div><br></div></div><div><div>如果你決定要來了</div><div>請記得不斷猜測命運</div><div><br></div></div><div><div>不要由它</div><div>來給你答案</div><div>如果你決定要來找我了</div><div>就請你帶著</div><div>足夠愛我的容器</div><div>好讓我把餘生的溫柔</div><div>都盛給你</div><div><br></div><div>《下雨的人》-<span>〈如果你決定要來〉</span></div></div><div><div><br></div><div><span>#詩</span> <span>#浪漫</span> <span>#下雨的人</span> <span>#大田出版<br></span></div></div>",
+      "time": "08:00",
+      "canvaUrl": "https://www.canva.com/design/DAHNj3c84TM/ZhX2l73oZ6mSB_0cuW6r4w/view?utm_content=DAHNj3c84TM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc7e7ce465d",
+      "ratio": "4-5",
+      "theme": "早上只讀一點點",
+      "title": "下雨的人",
+      "status": "draft",
+      "createdAt": "2026-09-21T06:11:07.232Z",
+      "updatedAt": "2026-09-21T06:43:49.255Z"
+    },
+    {
+      "_id": "p_1789971277756_66nqkd",
+      "caption": "<div>【圖文時間】 《宇希時間》</div><div><br></div><div><div>有時候，不是沒有人愛你，<br>而是曾經受過的傷，讓你不敢相信——<br>自己也值得被好好愛。</div><div><br></div><div>不需要向誰證明，你本來就很好。</div><div><br></div><div>#好好被愛 #宇希的貓 #自我療癒 #大田出版</div></div>",
+      "time": "08:00",
+      "canvaUrl": "https://www.canva.com/design/DAHNdqdK6aI/PiMT2vlLGuDlWm3KmDjn9g/view?utm_content=DAHNdqdK6aI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=ha7005fd718",
+      "ratio": "1-1",
+      "theme": "圖文時間",
+      "title": "宇希時間",
+      "status": "draft",
+      "createdAt": "2026-09-21T06:14:37.756Z",
+      "updatedAt": "2026-09-21T06:49:52.774Z"
+    },
+    {
+      "_id": "p_1789971659746_mfis73",
+      "caption": "<div><div>【晚上多讀一點點】 《外面是夏天》</div><div><br></div><div>#金愛爛</div><div><br></div><div><div>人們所謂的「時間」，</div><div>就像快轉的膠捲擦肩而過。</div><div>除了我們，風景、季節、世界都在轉動，</div><div>漸漸縮小了範圍，形成漩渦，</div><div>像要把我們一家人吞噬一樣。</div><div>花開、風起、雪融、發芽，</div><div>似乎都是因為這個原因。</div><div>時間似乎比較偏袒某些人。</div></div><div>摘自《外面是夏天》-〈立冬〉</div><div><br></div><div><div>外面是夏天，但我的靈魂正在下雪。</div><div>某部分的我消失了，而且找不到挽回的辦法，</div><div>該怎麼從失去摯愛的傷痛中康復，該怎麼嚥下自己的脆弱與無知，</div><div>我想要往外面走去，往那豐饒耀眼的夏天走去，</div><div>我願意交換一切，只求時間能快點蛻去我痛苦的皮。</div><div>喪子的夫妻、初嘗虛榮的貧窮少年、替前輩揹鍋的年輕助教，</div><div>正要綻放的生命突然襲來寒冬……。</div><div>七個關於蛻變的故事，獻給所有與社會有時間差的生命們。</div><div><br></div><div>&nbsp;第四十八屆東仁文學獎得獎作品《外面是夏天》，是韓國作家金愛爛的第四部短篇小說集，她以＜沉默的未來＞成為李箱文學獎最年輕的得主，又以＜您想去哪裡呢？＞榮獲第八屆青年作家獎。本書在韓國銷量更是突破二十五萬冊，是金愛爛叫好又叫座的一部經典作品。</div><div><br></div><div><br></div><div>#金愛爛 是你遇見之後，就會愛上的小說家</div><div>她的文字，連金泰梨都愛不釋手！</div></div><div><br></div><div>#你的夏天還好嗎 #大田出版</div></div>",
+      "time": "20:00",
+      "canvaUrl": "https://www.canva.com/design/DAHVVobo1jY/86g46PDXHeC2M7U3PUS2Qw/view?utm_content=DAHVVobo1jY&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h48497cff90",
+      "ratio": "1-1",
+      "theme": "晚上多讀一點點",
+      "title": "外面是夏天",
+      "status": "draft",
+      "createdAt": "2026-09-21T06:20:59.746Z",
+      "updatedAt": "2026-09-21T07:27:11.623Z"
+    }
+  ],
+  "2026-09-24": [
+    {
+      "_id": "p_1789971689115_yq7w3h",
+      "caption": "<div><div>【早上只讀一點點】《你就是困住自己的那座山：終結自我破壞，實現自我控制》&nbsp;</div><div><br></div><div>〈完美主義〉&nbsp;</div><div><br></div><div>一旦期望自己的工作成果在第一次嘗試時就必須盡善盡美，那麼我們就陷入了追求完美主義的循環中。&nbsp;</div><div><br></div><div>完美主義所追求的，其實並非一切都正確無誤。這不是什麼好事。事實上，這麼做反而會帶來阻礙，因為完美主義會讓我們對自己的能力或日常中大小事的後果，產生不切實際的期望。&nbsp;</div><div><br></div><div>完美主義會阻礙我們展現自己和勇於嘗試，或是妨礙我們去做那些生命中十分重要的事情。之所以會發生這種情況是因為一旦我們害怕失敗、一旦覺得自己不堪一擊，一旦覺得自己的表現不如預期，沒辦法達到我們希望成為的、他人眼中的自己時，我們就會逃避那些能讓自己變得更好的努力。&nbsp;</div><div><br></div><div>完美主義所破壞的是我們做自己的意願，是我們什麼也不想，先動手再說的意願。但也唯有一次、一次、又一次地反覆去做同一件事情，我們最終才能把那件事情做到最好。&nbsp;</div><div><br></div><div>—如何解決—&nbsp;</div><div><br></div><div>不要擔心自己做得好不好，去做就對了。&nbsp;</div><div>不要擔心自己寫的書能不能暢銷，去寫就對了。不要擔心自己的音樂創作能不能得葛萊美獎，去創作就對了。不要擔心失敗，只要繼續做自己，繼續嘗試就好了。首先最重要的是，要去做你真正想做的事。接下來你可以從錯誤中學習，並隨著時間過去，進入你真正想要達到的境界。&nbsp;</div><div><br></div><div>事實上，如果只擔心自己做的事情能不能夠驚豔四座並且改變世界，那麼實際上，我們不會有辦法完成任何偉大的成就。想要完成偉大的成就，我們只要做自己，並且允許自己創造出一些對我們來說既有意義又重要的東西，那就可以了。&nbsp;</div><div><br></div><div>專注於進步，而不是完美。與其想著要把某件事情做到完美，不如把注意力放在將之完成。有了這樣的心態後，就可以進行後續的編修、建構、灌溉和開發，使其與自己的想望完全相符。但如果不踏出第一步，永遠也到不了目的地。</div><div><br></div><div>&nbsp;摘自P42~44</div><div><br></div><div>#大田出版 #進步 #完美</div></div>",
+      "time": "08:00",
+      "canvaUrl": "https://www.canva.com/design/DAHUxWiOlXU/z3tAn2O-2XfIKm1cn23p_g/view?utm_content=DAHUxWiOlXU&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h21f78da663",
+      "ratio": "1-1",
+      "theme": "早上只讀一點點",
+      "title": "你就是困住自己的那座山",
+      "status": "draft",
+      "createdAt": "2026-09-21T06:21:29.115Z",
+      "updatedAt": "2026-09-21T07:32:22.751Z"
+    },
+    {
+      "_id": "p_1789971713542_6s9zk3",
+      "caption": "<div>【圖文時間】 《希望溫暖你的每一天(精采夜光版)》</div><div><br></div><div><div>生活要有多難過，才會感到氣餒呢？</div><div>生活要有多痛苦，才會連眼淚都流乾了呢？</div><div>現在讓我在你身邊安慰你，</div><div>讓你那些痛苦的回憶都變模糊。</div><div>你能被愛的理由只有一個，</div><div>那就是因為你是你。</div></div><div><br></div><div>#大田出版 #治癒 #被愛</div>",
+      "time": "18:00",
+      "canvaUrl": "https://www.canva.com/design/DAHPbqxce5c/KlYPQFMyxFO9ZN5Zx99IkA/view?utm_content=DAHPbqxce5c&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h240e483ba4",
+      "ratio": "1-1",
+      "theme": "圖文時間",
+      "title": "希望溫暖你的每一天(精采夜光版)",
+      "status": "draft",
+      "createdAt": "2026-09-21T06:21:53.542Z",
+      "updatedAt": "2026-09-21T07:36:58.072Z"
+    },
+    {
+      "_id": "p_1789971768269_55j73t",
+      "caption": "<div>【晚上多讀一點點】 《如何愛你的負面情感》</div><div><br></div>",
+      "time": "20:00",
+      "canvaUrl": "",
+      "ratio": "1-1",
+      "theme": "晚上多讀一點點",
+      "title": "如何愛你的負面情感",
+      "status": "draft",
+      "createdAt": "2026-09-21T06:22:48.269Z",
+      "updatedAt": "2026-09-21T06:22:48.269Z"
+    }
+  ],
+  "2026-09-25": [
+    {
+      "_id": "p_1789971786742_gz6y5y",
+      "caption": "<div>【早上只讀一點點】 《一次又一次又一次地重新開始》</div><div><br></div>",
+      "time": "08:00",
+      "canvaUrl": "",
+      "ratio": "1-1",
+      "theme": "早上只讀一點點",
+      "title": "一次又一次又一次地重新開始",
+      "status": "draft",
+      "createdAt": "2026-09-21T06:23:06.742Z",
+      "updatedAt": "2026-09-21T06:23:06.742Z"
+    },
+    {
+      "_id": "p_1789971831808_d36rdr",
+      "caption": "<div>【圖文時間】 《一次又一次又一次地重新開始》</div><div><br></div><div><div>獻給每一個正在重新開始的人~</div><div>暢銷療癒圖文書《會好起來的，就算不是現在》作者最新力作！</div><div>在破碎與重建之間，學會一次又一次地重新開始。</div><div>這是一本描繪人生循環的療癒圖文書——<br>關於懷疑、崩解、重新站穩、再次敞開心扉，然後迎來又一次重生。</div><div><br></div><div>🏷️ 抽獎辦法</div><div>追蹤「大田出版」粉絲專頁</div><div>留言告訴我們：哪一張圖片最觸動你？或它帶給你什麼樣的心情？</div><div>🎁 抽獎送出《一次又一次又一次重新開始》</div><div>⏰ 不限留言次數，活動至 9/30 24:00 截止。</div></div><div><br></div><div>#一次又一次又一次地重新開始</div><div>#抽書 #贈品 #大田出版 #抽獎</div>",
+      "time": "18:00",
+      "canvaUrl": "https://www.canva.com/design/DAHVzwmkQ5Q/PCJ7g-mC3byJtk96a-e36Q/view?utm_content=DAHVzwmkQ5Q&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h7095328567",
+      "ratio": "1-1",
+      "theme": "圖文時間",
+      "title": "一次又一次又一次地重新開始",
+      "status": "draft",
+      "createdAt": "2026-09-21T06:23:51.808Z",
+      "updatedAt": "2026-09-21T08:07:04.216Z"
+    },
+    {
+      "_id": "p_1789971919745_uo0sle",
+      "caption": "<div>【晚上多讀一點點】 《尋找蜘蛛：日本暢銷超過36萬冊，西加奈子的生命故事》</div><div><br></div>",
+      "time": "20:00",
+      "canvaUrl": "",
+      "ratio": "1-1",
+      "theme": "晚上多讀一點點",
+      "title": "尋找蜘蛛：日本暢銷超過36萬冊，西加奈子的生命故事",
+      "status": "draft",
+      "createdAt": "2026-09-21T06:25:19.745Z",
+      "updatedAt": "2026-09-21T07:28:00.879Z"
+    }
+  ],
+  "2026-09-26": [
+    {
+      "_id": "p_1789971985121_5cfc71",
+      "caption": "<div>【影片分享】 《幸福就是吃飯睡覺等待 vol.3》</div><div><br></div>",
+      "time": "09:00",
+      "canvaUrl": "",
+      "ratio": "4-5",
+      "theme": "影片分享",
+      "title": "幸福就是吃飯睡覺等待 vol.3",
+      "status": "draft",
+      "createdAt": "2026-09-21T06:26:25.121Z",
+      "updatedAt": "2026-09-21T06:26:25.121Z"
+    }
+  ],
+  "2026-09-27": [
+    {
+      "_id": "p_1789972001868_8pylf7",
+      "caption": "<div>【影片分享】 《希望溫暖你的每一天(精采夜光版)》</div><div><br></div>",
+      "time": "09:00",
+      "canvaUrl": "",
+      "ratio": "1-1",
+      "theme": "影片分享",
+      "title": "希望溫暖你的每一天(精采夜光版)",
+      "status": "draft",
+      "createdAt": "2026-09-21T06:26:41.868Z",
+      "updatedAt": "2026-09-21T06:26:41.868Z"
+    }
   ]
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-17T04:14:29.457Z",
+  "updatedAt": "2026-09-21T08:07:14.281Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
