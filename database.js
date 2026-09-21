@@ -3305,11 +3305,25 @@ var externalDB = {
       "createdAt": "2026-09-21T06:26:41.868Z",
       "updatedAt": "2026-09-21T06:26:41.868Z"
     }
+  ],
+  "2026-09-28": [
+    {
+      "_id": "p_1789979450758_fys8qy",
+      "caption": "<div>【早上只讀一點點】 《一次又一次又一次地重新開始》</div><div><br></div><div><div>　擔心人生不夠充實的恐懼往往來自我們習於壓抑感受，尤其那些難以面對的情緒。但情緒是手握地圖的信差，而地圖上描繪著我們需要前往的地點。</div><div><br></div><div>　　傾聽你的憤怒，如果有人跨越你該捍衛的界線，它都知道。留意你的挫敗感，它指引你該在哪裡深入探索、又該在哪裡轉換方向。就連無聊也有話要說，它低語著你的格局已經更大，需要往新方向拓展。</div><div><br></div><div>　　與其逃避，如果我們轉身面對這些感受呢？如果我們提問：你怎麼會出現？你想表達什麼？</div><div><br></div><div>　　當我們滑手機，用喧囂聲浪、忙碌狀態麻痺自己，就會迷失方向。我們壓抑那些引導我們的聲音，然而覺察情緒可以指引方向，指出哪些事情才有意義。</div><div><br></div><div>　　全面的覺察才能活出完整的人生。真相令人難以接受，然而痛苦與人生意義就是走在同一條路上的孿生旅人。</div><div><br></div><div>　　覺察你的情緒，它們知道方向。</div></div><div><br></div><div>#大田出版 #察覺 #情緒</div>",
+      "time": "08:00",
+      "canvaUrl": "https://www.canva.com/design/DAHV0L5nE7o/rkSjYxxY7ALq1MufQzcQ3g/view?utm_content=DAHV0L5nE7o&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h611ce4e794",
+      "ratio": "1-1",
+      "theme": "早上只讀一點點",
+      "title": "一次又一次又一次地重新開始",
+      "status": "draft",
+      "createdAt": "2026-09-21T08:30:50.758Z",
+      "updatedAt": "2026-09-21T08:34:45.272Z"
+    }
   ]
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-21T08:30:02.086Z",
+  "updatedAt": "2026-09-21T08:35:09.052Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
