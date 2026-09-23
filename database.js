@@ -3349,17 +3349,29 @@ var externalDB = {
       "time": "18:00",
       "canvaUrl": "https://www.canva.com/design/DAHV-5SXpro/exQtKHBTkDzgTs2UxobE4A/view?utm_content=DAHV-5SXpro&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h62bd937ed8",
       "ratio": "1-1",
-      "theme": "圖文時間",
+      "theme": "",
       "title": "幸福就是吃飯睡覺等待 vol.4",
       "status": "draft",
       "createdAt": "2026-09-23T04:17:03.429Z",
-      "updatedAt": "2026-09-23T04:19:24.583Z"
+      "updatedAt": "2026-09-23T05:55:18.812Z"
+    },
+    {
+      "_id": "p_1790142861371_6zee6l",
+      "caption": "<div>【晚上多讀一點點】 《慢慢寄出去的心》新書上市預告！</div><div><br></div><div><div>#新書預告</div><div>#十月一日全台上市</div></div><div><br></div><div><div>以輕鬆笑談與幽默感驅散悲傷</div><div>尹成姬式小說的溫暖使人相信人性的良善</div></div><div><br></div><div><div>把心弄傷了。</div><div><br></div><div>但是心，大概是在什麼地方呢？</div><div><br></div><div>只願今天能夠幸福。寫小說時，我總會不知不覺許下這樣的願望。__作者 尹成姬</div><div><br></div><div><br></div><div>輕輕一笑，好像悲傷就沒有那麼悲傷？</div><div><br></div><div>還是，笑著笑著就流出眼淚……</div><div><br></div><div>這裡的每一個人，總是若無其事說出：「今天是我的生日。」</div><div><br></div><div>有假的生日，也有真正的生日，沒有人知道。</div><div>離家出走的少年，瘋狂尋找時光膠囊的準高中生，</div><div>想進入夢境為媽媽唱搖籃曲的亡魂，</div><div>每天都會拍一張雲朵照片的高樓油漆工……</div><div>&nbsp;</div><div><br></div><div>生日與死亡，有遺憾，有灑脫，有喜悅，交織過去，願望未來。</div><div>&nbsp;</div><div><br></div><div>在「尹成姬式」的小說裡，幸福與不幸總是輪流著來，</div><div>不幸也有可愛的不幸呢。上一秒與下一秒，</div><div>不說安慰，卻被安慰了；不說同理，卻溫柔理解了。</div></div><div><br></div><div>#大田出版 #尹成姬 #溫柔 #小說</div>",
+      "time": "20:00",
+      "canvaUrl": "https://www.canva.com/design/DAHV_KumUpU/m0-OzJLd01DDXnh86bg2Vw/view?utm_content=DAHV_KumUpU&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hea4fa7fff4",
+      "ratio": "1-1",
+      "theme": "晚上多讀一點點",
+      "title": "慢慢寄出去的心",
+      "status": "draft",
+      "createdAt": "2026-09-23T05:54:21.371Z",
+      "updatedAt": "2026-09-23T05:57:45.062Z"
     }
   ]
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-23T04:19:38.422Z",
+  "updatedAt": "2026-09-23T05:58:20.612Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
