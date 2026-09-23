@@ -3367,11 +3367,75 @@ var externalDB = {
       "createdAt": "2026-09-23T05:54:21.371Z",
       "updatedAt": "2026-09-23T05:57:45.062Z"
     }
+  ],
+  "2026-09-29": [
+    {
+      "_id": "p_1790143315954_5v2szm",
+      "caption": "<div>【早上只讀一點點】 《如何愛你的負面情感》</div><div><br></div><div><div><div>目標別放在「完美」，</div><div>要放在「全力以赴」與「心滿意足」</div></div><div><div>人生的正確答案絕非只有一種。</div></div><div><div>事物都會不斷改變。你自己也正以肉眼看不到的速度，隨著年齡而逐漸變化。當你的心靈愈成長茁壯，你就會活得愈幸福。</div></div><div><div>因此，重要的是要在每一個「當下」全力以赴地活著。</div></div><div><div>所謂「全力以赴地活著」，不是勉強自己追求完美，也不是責怪自己沒有達到完美。</div></div><div><div>所謂「全力以赴地活著」，是指「此刻能做到的就徹底去做，絕不含糊」。</div></div><div><div>今後，無論你在做任何事時，不妨放下對「完美」的追求，改將「全力以赴」當成你的正確答案吧！</div></div><div><div>這樣就能輕輕鬆鬆地解決掉「嫌麻煩而拖延」的惡習唷。</div></div><div><div>我為了對抗自己老是愛嫌麻煩的毛病，而重新調整了自己的目標。</div></div><div><div>——我骨子裡就是個懶惰蟲，當我看到奮發向上的人時，雖然會覺得自己也要看齊，但下一秒又會開始自我厭惡起來，因為我知道我不可能變得像對方一樣。都是因為自己的完美主義，才陷入這麼負面的情緒中，所以我不需要這種完美主義！我要設定更適合自己的目標。</div></div><div><div>在這之前，無論對任何事我都會眼高手低地立定遠大的目標，結果因為跨越不了重重障礙，而變得鬱鬱寡歡。</div></div><div><div>於是，我將過去的這些目標，全都重新設定成符合自己能力的目標。具體例子如下：</div></div><div><div>‧家中的打掃</div><div>我決定不打算在一天之內完成，改成「今天把廚房和廁所打掃乾淨」或「今天只擦拭玻璃」等等。絕不多做其他部分。</div><div>這麼一來，我就能得到小小的成就感，和過去結束打掃時那種「今天又半途而廢了……」的感覺，完全不同。</div><div><br></div><div>（<span></span>摘自《如何愛你的負面情感》P63）</div><div><br></div></div><div><div><span>#情緒</span> <span>#保護傘</span> <span>#新計畫</span> <span>#重建自我</span> <span>#被討厭的勇氣</span></div></div></div>",
+      "time": "08:00",
+      "canvaUrl": "https://www.canva.com/design/DAHVP5eObP0/dO_khCIOMRfuJg6VA4C45A/view?utm_content=DAHVP5eObP0&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h9b0d5b0c64",
+      "ratio": "1-1",
+      "theme": "早上只讀一點點",
+      "title": "如何愛你的負面情感",
+      "status": "draft",
+      "createdAt": "2026-09-23T06:01:55.954Z",
+      "updatedAt": "2026-09-23T06:10:25.778Z"
+    },
+    {
+      "_id": "p_1790143330660_kf5xza",
+      "caption": "<div>【圖文時間】 《希望溫暖你的每一天(精采夜光版)》</div><div><br></div>",
+      "time": "18:00",
+      "canvaUrl": "",
+      "ratio": "1-1",
+      "theme": "圖文時間",
+      "title": "希望溫暖你的每一天(精采夜光版)",
+      "status": "draft",
+      "createdAt": "2026-09-23T06:02:10.660Z",
+      "updatedAt": "2026-09-23T06:02:10.660Z"
+    },
+    {
+      "_id": "p_1790143379710_54izba",
+      "caption": "<div>【晚上多讀一點點】 《你的夏天還好嗎？》</div><div><br></div>",
+      "time": "20:00",
+      "canvaUrl": "",
+      "ratio": "1-1",
+      "theme": "晚上多讀一點點",
+      "title": "你的夏天還好嗎？",
+      "status": "draft",
+      "createdAt": "2026-09-23T06:02:59.710Z",
+      "updatedAt": "2026-09-23T06:02:59.710Z"
+    }
+  ],
+  "2026-09-30": [
+    {
+      "_id": "p_1790143429668_hfyg4c",
+      "caption": "<div>【早上只讀一點點】 《下雨》</div><div><br></div>",
+      "time": "08:00",
+      "canvaUrl": "https://www.canva.com/design/DAHNj3c84TM/ZhX2l73oZ6mSB_0cuW6r4w/view?utm_content=DAHNj3c84TM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc7e7ce465d",
+      "ratio": "4-5",
+      "theme": "早上只讀一點點",
+      "title": "下雨",
+      "status": "draft",
+      "createdAt": "2026-09-23T06:03:49.668Z",
+      "updatedAt": "2026-09-23T06:03:49.668Z"
+    },
+    {
+      "_id": "p_1790143449519_igpksp",
+      "caption": "<div>【圖文時間】 《宇希時間》</div><div><br></div>",
+      "time": "09:00",
+      "canvaUrl": "https://www.canva.com/design/DAHNdqdK6aI/PiMT2vlLGuDlWm3KmDjn9g/view?utm_content=DAHNdqdK6aI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=ha7005fd718",
+      "ratio": "1-1",
+      "theme": "圖文時間",
+      "title": "宇希時間",
+      "status": "draft",
+      "createdAt": "2026-09-23T06:04:09.519Z",
+      "updatedAt": "2026-09-23T06:04:09.519Z"
+    }
   ]
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-23T05:58:20.612Z",
+  "updatedAt": "2026-09-23T06:10:41.054Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
