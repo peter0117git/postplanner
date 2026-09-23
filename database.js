@@ -3280,40 +3280,16 @@ var externalDB = {
   ],
   "2026-09-26": [
     {
-      "_id": "p_1789971985121_5cfc71",
-      "caption": "<div>【影片分享】 《幸福就是吃飯睡覺等待 vol.3》</div><div><br></div>",
-      "time": "09:00",
-      "canvaUrl": "",
-      "ratio": "4-5",
-      "theme": "影片分享",
-      "title": "幸福就是吃飯睡覺等待 vol.3",
-      "status": "draft",
-      "createdAt": "2026-09-21T06:26:25.121Z",
-      "updatedAt": "2026-09-21T06:26:25.121Z"
-    },
-    {
-      "_id": "p_1789982575874_99x1op",
-      "caption": "<div>【大田好消息】<span></span></div><div><br></div>\n\n<div>恭喜鍾文音《溝：故事未了，黃昏已來》書中的（小包袱），改編成同名的電視電影《小包袱》，一舉入圍第<span>61</span>屆金鐘獎五項大獎。<span></span></div>\n\n<div><span>&nbsp;</span></div>\n\n<div>恭賀入圍：<span></span></div>\n\n<div><span>🏆</span><span> </span>電視電影獎《小包袱》<span><br>\n</span><span>🏆</span><span> </span>迷你劇集（電視電影）導演獎——徐麗雯<span></span></div>\n\n<div><span>🏆</span><span> </span>迷你劇集（電視電影）編劇獎——林佳慧、徐麗雯<span></span></div>\n\n<div><span>🏆</span><span> </span>迷你劇集（電視電影）女主角獎——吳奕蓉<span><br>\n</span><span>🏆</span><span> </span>迷你劇集（電視電影）女配角獎——陸弈靜<span></span></div><div><br></div><div>《溝：故事未了，黃昏已來》</div><div><br></div>\n\n<div>是先行者的告白；是老年的地獄圖；是生命的幽默；是高齡求生記。</div><div>老了學會哭泣，卻已經沒有眼淚……</div><div><br></div><div>在K歌坊，在公園，在老人院，在醫院，在網路，在群組……</div><div>少男少女都老了，洪荒人世，汲汲營營為生計拚命的身影，</div><div>有的變得張牙舞爪，有的寂涼承受，有的豁出去了。</div><div><br></div><div>鍾文音以光陰之筆，鑿刻黃昏之齡的驚悸與無奈，</div><div>三十三則短篇小說，把時間的皺褶一一掰開來，</div><div>旺盛的生之慾望與衰敗，矛盾衝撞，</div><div>代與代，人與人，自我的，家庭的，社會的， 記憶的……溝，</div><div>堆積淚水，滋潤生命。</div><div><br></div><div><br></div><div>專序推薦:</div><div><br></div><div>一如青春時對愛情真相的勇於索問，如今她對病老死的辯證，對獨身的反思，展現了同</div><div>樣的義無反顧。__作家郭強生</div><div><br></div><div><br></div><div>寫盡了各式各樣的「老」，可悲、可笑、可憐又復可恨之處，推翻了老年書寫一貫充斥</div><div>著養生慢活的陳腔濫調。__作家郝譽翔</div><div><br></div><div>短文推薦:</div><div><br></div><div>透過鍾文音老師筆下曾經年輕過的男女故事，</div><div>回到每個你真心為自己著想的那一刻。__作家少女老王</div><div><br></div><div>讀者推薦:</div><div><br></div><div>在20、30、40的分齡閱讀中，</div><div>找到相同的內心觸動—</div><div><br></div><div><br></div><div>時間是溝、皺紋是溝，臉與假面之間有溝，人與人之隙更有無法通聯的溝。</div><div>__Danny，研究生，22歲</div><div><br></div><div>一個人的買一送一，剩空氣能分享；</div><div>一個走又一個走了，曾經充滿青少的地方，早已離開……__雨衣，保護性社工師，24歲</div><div><br></div><div>隨著故事展開，人情冷暖竟有如黏液般包圍網住自己……__阿笑，咖啡店店主， 30歲</div><div><br></div><div>讀著這本書，很容易讓你想到那些過去的自己，那些已經是回頭才能看見的有些愚蠢有些可愛的自己。</div><div>__Amily，大學老師，35歲</div><div><br></div><div>鍾文音以冷酷而精準的筆觸，展現出現代人聆聽輓歌時的精神世界。__杏子老師，43歲</div><div>閱讀他們的人生，頓時想起這些長輩是如此動人。__陳甯，大學生，22歲</div><div><br></div><div>語句中透露著時間推移和現在生活的差異，感受到對生活的沉悶憂鬱。__小波，補習班老師，22歲</div><div><br></div><div>書中有不同長者對生活的態度，看的過程中，</div><div>也會好奇自己以後會不會這樣，但不管是否認同，都是一種借鏡。__Nancy，幼教老師，24歲</div><div><br></div><div>溝，也像是月台上的檻，三十歲的我要跨上五十歲的列車……__Eating，舞台劇演員，30歲</div><div><br></div>\n\n<div><span>#</span>溝<span> #</span>小包袱<span> #</span>金鐘獎<span></span></div>\n\n<div><br></div><div>劇照版權<span></span></div>\n\n<div>客家電視<span>\nHakkaTV</span></div>\n\n<div>青睞影視<span>&nbsp;&nbsp;<font color=\"#ff0000\"><span></span></font></span></div>",
-      "time": "09:00",
-      "canvaUrl": "https://www.canva.com/design/DAHV0cjaWpE/Q3iiWh3nhBivAYhtrTTZng/view?utm_content=DAHV0cjaWpE&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h967d1ac1e8",
-      "ratio": "1-1",
-      "theme": "大田布告欄",
-      "title": "",
-      "status": "draft",
-      "createdAt": "2026-09-21T09:22:55.874Z",
-      "updatedAt": "2026-09-21T09:59:36.273Z"
-    },
-    {
       "_id": "p_1790060590512_ql3zzm",
       "caption": "<div>【大田好消息】</div><div><br></div><div><span style=\"color:rgb(0, 0, 0)\">《在一個人的夜晚，想對你說的10件事》</span>榮獲「115年好書大家讀」第90梯次文學讀物B組-好書推薦✨</div><div><br></div><div><span>《#在一個人的夜晚想對你說的10件事》</span></div><div><br></div><div><div>與我仰望著同一片星空的你，</div><div>這是我想對你說的十件事——</div><div><br></div><div>愉悅的夜晚，是晶瑩剔透的寶物，</div><div>只要懷想那些璀璨光影，就能在今後的日子繼續活下去。</div><div><br></div><div>悲傷的夜晚，適合揣想遠方，</div><div>如鯨魚的屍骨，如銀河中的一粒星，如神明眨眼間的欣慰與無奈。</div><div><br></div><div>浮躁的夜晚，要睡在跟平常不一樣的地方，</div><div>廚房、壁櫥與陽台，思考著穴居的人類，以及明天的早餐。</div><div><br></div><div>晚安，不知道姓名的你，明天一定會是美好的一天。&nbsp;</div><div><br></div><div><br></div><div>以靜謐優美的插畫和漫畫而聞名的柏井 Kashiwai，</div><div><br></div><div>將夜晚鋪滿了海藍色，為莫名的憂愁留白，</div><div><br></div><div>翻開這本書，把不成眠的日子灑進銀河裡，</div><div><br></div><div>在天亮之前，作一場詩意的夢。</div></div><div><br></div><div>#大田出版 #好書大家讀 #柏井 Kashiwai</div>",
       "time": "09:00",
-      "canvaUrl": "",
+      "canvaUrl": "https://www.canva.com/design/DAHV5s794_w/4RwFGlOmul8-F1428gIg9A/view?utm_content=DAHV5s794_w&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h0020e1d1d6",
       "ratio": "1-1",
       "theme": "大田好消息",
       "title": "",
       "status": "draft",
       "createdAt": "2026-09-22T07:03:10.512Z",
-      "updatedAt": "2026-09-22T07:07:46.118Z"
+      "updatedAt": "2026-09-23T06:34:19.779Z"
     }
   ],
   "2026-09-27": [
@@ -3409,7 +3385,7 @@ var externalDB = {
   "2026-09-30": [
     {
       "_id": "p_1790143429668_hfyg4c",
-      "caption": "<div>【早上只讀一點點】 《下雨》</div><div><br></div>",
+      "caption": "<div>【早上只讀一點點】 《下雨的人》</div><div><br></div><div><div>〈你並不冷〉</div><div><br></div><div>愛過荒漠也曾</div><div>迷上一片花園</div><div>擁過風景</div><div>成為別人的風景</div><div>你的溫度與身體</div><div>在來的路上丟了許多</div><div><br></div><div>知道你仍想做一個溫暖的人</div><div>手中唯一的燈可能已經</div><div>留給一雙怕黑的眼睛</div><div>依舊燃了燭火偎著光</div><div>想要熱，想讓影子會顫抖</div><div><br></div><div>希望冷漠也會</div><div>希望麻木是孱弱的</div><div>你常說</div><div>樂園的入場券</div><div>早就被以前的自己騙走了</div><div>現在只好獨自打造一座</div><div>讓重要的人住進來</div><div>不需要承認自己的流浪</div><div><br></div><div>你一直督促自己</div><div>成為愛人的太陽</div><div>卻不曾發現</div><div>月亮也有光亮</div><div>也沒發現</div><div>自己其實更適合</div><div>在看星星的時候</div><div>一起被看見</div></div><div><br></div><div>摘自《下雨的人》-〈你並不冷〉</div><div><br></div><div>#大田出版 #書籍</div>",
       "time": "08:00",
       "canvaUrl": "https://www.canva.com/design/DAHNj3c84TM/ZhX2l73oZ6mSB_0cuW6r4w/view?utm_content=DAHNj3c84TM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc7e7ce465d",
       "ratio": "4-5",
@@ -3417,11 +3393,11 @@ var externalDB = {
       "title": "下雨",
       "status": "draft",
       "createdAt": "2026-09-23T06:03:49.668Z",
-      "updatedAt": "2026-09-23T06:03:49.668Z"
+      "updatedAt": "2026-09-23T06:31:04.587Z"
     },
     {
       "_id": "p_1790143449519_igpksp",
-      "caption": "<div>【圖文時間】 《宇希時間》</div><div><br></div>",
+      "caption": "<div>【圖文時間】 《宇希時間》</div><div><br></div><div><div>曾經以為，能一直陪在彼此身邊的人，就會一直都在。</div><div>但有些關係，不是誰做錯了什麼，只是慢慢走向了不同的地方。</div><div>從最好的朋友，變成普通朋友。<br>最難的或許不是失去，而是重新學會把心打開。</div><div><br></div><div>#宇希的貓#友情 #普通朋友 #關係 #成長</div></div>",
       "time": "09:00",
       "canvaUrl": "https://www.canva.com/design/DAHNdqdK6aI/PiMT2vlLGuDlWm3KmDjn9g/view?utm_content=DAHNdqdK6aI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=ha7005fd718",
       "ratio": "1-1",
@@ -3429,13 +3405,13 @@ var externalDB = {
       "title": "宇希時間",
       "status": "draft",
       "createdAt": "2026-09-23T06:04:09.519Z",
-      "updatedAt": "2026-09-23T06:04:09.519Z"
+      "updatedAt": "2026-09-23T06:35:47.309Z"
     }
   ]
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-23T06:26:20.859Z",
+  "updatedAt": "2026-09-23T06:35:54.998Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
@@ -3444,6 +3420,8 @@ var externalDBMeta = {
     "p_1788759306678_724hl2": "2026-09-07T06:19:45.697Z",
     "p_1789019547728_9mhp5o": "2026-09-10T05:52:52.371Z",
     "p_1789368039751_yd8uir": "2026-09-14T09:47:43.191Z",
-    "p_1789455366471_p84irw": "2026-09-16T07:13:00.684Z"
+    "p_1789455366471_p84irw": "2026-09-16T07:13:00.684Z",
+    "p_1789971985121_5cfc71": "2026-09-23T06:33:48.521Z",
+    "p_1789982575874_99x1op": "2026-09-23T06:33:52.353Z"
   }
 };
