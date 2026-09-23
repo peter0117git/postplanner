@@ -3383,27 +3383,27 @@ var externalDB = {
     },
     {
       "_id": "p_1790143330660_kf5xza",
-      "caption": "<div>【圖文時間】 《希望溫暖你的每一天(精采夜光版)》</div><div><br></div>",
+      "caption": "<div>【圖文時間】 《希望溫暖你的每一天(精采夜光版)》</div><div><br></div><div><div><div>〈別擔心，好好保護自己〉</div><div><br></div></div><div><div>如果有些人把你的好意跟親切視為理所當然，</div><div>如果有些人認為你好欺負、不尊重你，</div><div>你可以不必忍耐，也不用努力去理解對方。</div><div>你可以把該說的話說出來，不要害怕衝突。</div><div>好好把自己想說的話說出來，這不是什麼不對的事。</div><div>你要有勇氣拒絕無理的要求，表達自己的想法。</div><div>那樣的勇氣，會讓明天的你煥然一新。</div><div>-</div><div><span>#希望溫暖你的每一天</span> <span>#療癒</span> <span>#圖文</span> <span>#大田出版</span></div></div></div>",
       "time": "18:00",
-      "canvaUrl": "",
+      "canvaUrl": "https://www.canva.com/design/DAHV_smqQOY/vYG3mwknHTAF5L3CIAUCTA/view?utm_content=DAHV_smqQOY&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h62db24fd48",
       "ratio": "1-1",
-      "theme": "圖文時間",
+      "theme": "",
       "title": "希望溫暖你的每一天(精采夜光版)",
       "status": "draft",
       "createdAt": "2026-09-23T06:02:10.660Z",
-      "updatedAt": "2026-09-23T06:02:10.660Z"
+      "updatedAt": "2026-09-23T06:13:20.891Z"
     },
     {
       "_id": "p_1790143379710_54izba",
-      "caption": "<div>【晚上多讀一點點】 《你的夏天還好嗎？》</div><div><br></div>",
+      "caption": "<div>【晚上多讀一點點】 《你的夏天還好嗎？》</div><div><br></div><div><div><div>她放了一句問候在我們心中《你的夏天還好嗎？》韓國作家金愛爛最棒的作品</div></div><div><br></div><div><div><span>#大田出版</span> </div><div><span>#你的夏天還好嗎</span></div></div><div><span><br></span></div><div><div>◎張采軒（大田執行編輯）</div></div><div><div>我自認熱愛閱讀，但若不是因為這次做書，我很可能會錯過金愛爛。這部寫於2012年的作品多年前曾在台灣出版過（當時的書名為《飛機雲》），如她的其他部作品，在台灣已絕版。收到社內今年的新書計畫表時，總編一句「妳一定會喜歡」燃起我的好奇心，逼得我四處挖她的書來讀。閱畢，四個字，驚為天人。</div></div><div><div>雖然有點晚，但我想我在最好的時機遇上了她最棒的作品。如果要抓出這部短篇小說集的主題，我覺得是「年輕」，雖然主角們不一定都是年輕人。與歲數無關，年輕也許更是一種特質，一種源源不絕的活動力——別停下來，別望向空無一人的四周，即使現在的生活充滿苦澀，我也不想露出失敗者的表情，我相信屬於我的幸福，一定就在不遠的前方。</div></div><div><div>「痛苦的不是因為不幸……而是厭倦了等待幸福的過程。」</div><div>——摘自短篇小說＜NEAK TA飯店＞，收錄於《你的夏天還好嗎？》金愛爛著</div><div><br></div><div>同場推薦《#外面是夏天》</div><div><br></div><div><div>外面是夏天，但我的靈魂正在下雪。</div><div>某部分的我消失了，而且找不到挽回的辦法，</div><div>該怎麼從失去摯愛的傷痛中康復，該怎麼嚥下自己的脆弱與無知，</div><div>我想要往外面走去，往那豐饒耀眼的夏天走去，</div><div>我願意交換一切，只求時間能快點蛻去我痛苦的皮。</div><div><br></div><div>喪子的夫妻、初嘗虛榮的貧窮少年、替前輩揹鍋的年輕助教，正要綻放的生命突然襲來寒冬……。</div><div>七個關於蛻變的故事，獻給所有與社會有時間差的生命們。</div></div><div><br></div></div><div><div><span>#金愛爛</span></div><div>#你的夏天還好嗎</div><div><span>#感情</span></div><div><span>#痛</span></div></div></div>",
       "time": "20:00",
-      "canvaUrl": "",
+      "canvaUrl": "https://www.canva.com/design/DAHV_sQWkPo/wixMzq9gUphBgGjElcezNw/view?utm_content=DAHV_sQWkPo&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h8b3414e5c7",
       "ratio": "1-1",
       "theme": "晚上多讀一點點",
       "title": "你的夏天還好嗎？",
       "status": "draft",
       "createdAt": "2026-09-23T06:02:59.710Z",
-      "updatedAt": "2026-09-23T06:02:59.710Z"
+      "updatedAt": "2026-09-23T06:25:56.817Z"
     }
   ],
   "2026-09-30": [
@@ -3435,7 +3435,7 @@ var externalDB = {
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-23T06:10:41.054Z",
+  "updatedAt": "2026-09-23T06:26:20.859Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
