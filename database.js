@@ -3167,7 +3167,7 @@ var externalDB = {
   "2026-09-23": [
     {
       "_id": "p_1789971067232_9zk2pl",
-      "caption": "<div><div>【早上只讀一點點】《下雨的人》</div><div>#陳繁齊</div></div><div><div>〈如果你決定要來〉</div></div><div><div>如果你想知道我</div><div>你要細細聆聽</div><div>我的溫柔很安靜</div><div>我的愛情很薄</div><div>很容易被城市的紛擾沒收</div><div>很容易在你不意疏遠時</div><div>跌在追上你的路途中</div><div>慢慢死亡</div><div><br></div></div><div><div>如果你決定要來了</div><div>請記得不斷猜測命運</div><div><br></div></div><div><div>不要由它</div><div>來給你答案</div><div>如果你決定要來找我了</div><div>就請你帶著</div><div>足夠愛我的容器</div><div>好讓我把餘生的溫柔</div><div>都盛給你</div><div><br></div><div>《下雨的人》-<span>〈如果你決定要來〉</span></div></div><div><div><br></div><div><span>#詩</span> <span>#浪漫</span> <span>#下雨的人</span> <span>#大田出版<br></span></div></div>",
+      "caption": "<div><div>【早上只讀一點點】《下雨的人》</div><div><br></div><div>#陳繁齊</div></div><div><br></div><div><div>〈如果你決定要來〉</div></div><div><br></div><div><div>如果你想知道我</div><div>你要細細聆聽</div><div>我的溫柔很安靜</div><div>我的愛情很薄</div><div>很容易被城市的紛擾沒收</div><div>很容易在你不意疏遠時</div><div>跌在追上你的路途中</div><div>慢慢死亡</div><div><br></div></div><div><div>如果你決定要來了</div><div>請記得不斷猜測命運</div><div><br></div></div><div><div>不要由它</div><div>來給你答案</div><div>如果你決定要來找我了</div><div>就請你帶著</div><div>足夠愛我的容器</div><div>好讓我把餘生的溫柔</div><div>都盛給你</div><div><br></div><div>《下雨的人》-<span>〈如果你決定要來〉</span></div></div><div><div><br></div><div><span>#詩</span> <span>#浪漫</span> <span>#下雨的人</span> <span>#大田出版<br></span></div></div>",
       "time": "08:00",
       "canvaUrl": "https://www.canva.com/design/DAHNj3c84TM/ZhX2l73oZ6mSB_0cuW6r4w/view?utm_content=DAHNj3c84TM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc7e7ce465d",
       "ratio": "4-5",
@@ -3175,7 +3175,7 @@ var externalDB = {
       "title": "下雨的人",
       "status": "draft",
       "createdAt": "2026-09-21T06:11:07.232Z",
-      "updatedAt": "2026-09-21T06:43:49.255Z"
+      "updatedAt": "2026-09-22T02:24:32.725Z"
     },
     {
       "_id": "p_1789971277756_66nqkd",
@@ -3293,7 +3293,7 @@ var externalDB = {
     },
     {
       "_id": "p_1789982575874_99x1op",
-      "caption": "<div>【大田布告欄】一本書裡的一篇小說，走上了金鐘獎。</div><div><br></div><div>\n<div>改編自鍾文音《溝：故事未了，黃昏已來》同名短篇，客家電視電影《小包袱》一舉入圍第61屆金鐘獎五項大獎：</div><div><br></div>\n<div>🏆 電視電影獎<span>《小包袱》</span><br>\n🏆 迷你劇集（電視電影）導演獎<span>——</span><span>徐麗雯</span></div><div>\n🏆 迷你劇集（電視電影）編劇獎<span>——</span><span>林佳慧、徐麗雯</span></div><div>\n🏆 迷你劇集（電視電影）女主角獎——吳奕蓉<br>\n🏆 迷你劇集（電視電影）女配角獎——陸弈靜</div><div><br></div><div>#溝 #小包袱 #金鐘獎</div></div>",
+      "caption": "<div>【大田好消息】<span></span></div><div><br></div>\n\n<div>恭喜鍾文音《溝：故事未了，黃昏已來》書中的（小包袱），改編成同名的電視電影《小包袱》，一舉入圍第<span>61</span>屆金鐘獎五項大獎。<span></span></div>\n\n<div><span>&nbsp;</span></div>\n\n<div>恭賀入圍：<span></span></div>\n\n<div><span>🏆</span><span> </span>電視電影獎《小包袱》<span><br>\n</span><span>🏆</span><span> </span>迷你劇集（電視電影）導演獎——徐麗雯<span></span></div>\n\n<div><span>🏆</span><span> </span>迷你劇集（電視電影）編劇獎——林佳慧、徐麗雯<span></span></div>\n\n<div><span>🏆</span><span> </span>迷你劇集（電視電影）女主角獎——吳奕蓉<span><br>\n</span><span>🏆</span><span> </span>迷你劇集（電視電影）女配角獎——陸弈靜<span></span></div><div><br></div><div>《溝：故事未了，黃昏已來》</div><div><br></div>\n\n<div>是先行者的告白；是老年的地獄圖；是生命的幽默；是高齡求生記。</div><div>老了學會哭泣，卻已經沒有眼淚……</div><div><br></div><div>在K歌坊，在公園，在老人院，在醫院，在網路，在群組……</div><div>少男少女都老了，洪荒人世，汲汲營營為生計拚命的身影，</div><div>有的變得張牙舞爪，有的寂涼承受，有的豁出去了。</div><div><br></div><div>鍾文音以光陰之筆，鑿刻黃昏之齡的驚悸與無奈，</div><div>三十三則短篇小說，把時間的皺褶一一掰開來，</div><div>旺盛的生之慾望與衰敗，矛盾衝撞，</div><div>代與代，人與人，自我的，家庭的，社會的， 記憶的……溝，</div><div>堆積淚水，滋潤生命。</div><div><br></div><div><br></div><div>專序推薦:</div><div><br></div><div>一如青春時對愛情真相的勇於索問，如今她對病老死的辯證，對獨身的反思，展現了同</div><div>樣的義無反顧。__作家郭強生</div><div><br></div><div><br></div><div>寫盡了各式各樣的「老」，可悲、可笑、可憐又復可恨之處，推翻了老年書寫一貫充斥</div><div>著養生慢活的陳腔濫調。__作家郝譽翔</div><div><br></div><div>短文推薦:</div><div><br></div><div>透過鍾文音老師筆下曾經年輕過的男女故事，</div><div>回到每個你真心為自己著想的那一刻。__作家少女老王</div><div><br></div><div>讀者推薦:</div><div><br></div><div>在20、30、40的分齡閱讀中，</div><div>找到相同的內心觸動—</div><div><br></div><div><br></div><div>時間是溝、皺紋是溝，臉與假面之間有溝，人與人之隙更有無法通聯的溝。</div><div>__Danny，研究生，22歲</div><div><br></div><div>一個人的買一送一，剩空氣能分享；</div><div>一個走又一個走了，曾經充滿青少的地方，早已離開……__雨衣，保護性社工師，24歲</div><div><br></div><div>隨著故事展開，人情冷暖竟有如黏液般包圍網住自己……__阿笑，咖啡店店主， 30歲</div><div><br></div><div>讀著這本書，很容易讓你想到那些過去的自己，那些已經是回頭才能看見的有些愚蠢有些可愛的自己。</div><div>__Amily，大學老師，35歲</div><div><br></div><div>鍾文音以冷酷而精準的筆觸，展現出現代人聆聽輓歌時的精神世界。__杏子老師，43歲</div><div>閱讀他們的人生，頓時想起這些長輩是如此動人。__陳甯，大學生，22歲</div><div><br></div><div>語句中透露著時間推移和現在生活的差異，感受到對生活的沉悶憂鬱。__小波，補習班老師，22歲</div><div><br></div><div>書中有不同長者對生活的態度，看的過程中，</div><div>也會好奇自己以後會不會這樣，但不管是否認同，都是一種借鏡。__Nancy，幼教老師，24歲</div><div><br></div><div>溝，也像是月台上的檻，三十歲的我要跨上五十歲的列車……__Eating，舞台劇演員，30歲</div><div><br></div>\n\n<div><span>#</span>溝<span> #</span>小包袱<span> #</span>金鐘獎<span></span></div>\n\n<div><br></div><div>劇照版權<span></span></div>\n\n<div>客家電視<span>\nHakkaTV</span></div>\n\n<div>青睞影視<span>&nbsp;&nbsp;<font color=\"#ff0000\"><span></span></font></span></div>",
       "time": "09:00",
       "canvaUrl": "https://www.canva.com/design/DAHV0cjaWpE/Q3iiWh3nhBivAYhtrTTZng/view?utm_content=DAHV0cjaWpE&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h967d1ac1e8",
       "ratio": "1-1",
@@ -3301,7 +3301,19 @@ var externalDB = {
       "title": "",
       "status": "draft",
       "createdAt": "2026-09-21T09:22:55.874Z",
-      "updatedAt": "2026-09-21T09:34:30.587Z"
+      "updatedAt": "2026-09-21T09:59:36.273Z"
+    },
+    {
+      "_id": "p_1790060590512_ql3zzm",
+      "caption": "<div>【大田好消息】</div><div><br></div><div><span style=\"color:rgb(0, 0, 0)\">《在一個人的夜晚，想對你說的10件事》</span>榮獲「115年好書大家讀」第90梯次文學讀物B組-好書推薦✨</div><div><br></div><div><span>《#在一個人的夜晚想對你說的10件事》</span></div><div><br></div><div><div>與我仰望著同一片星空的你，</div><div>這是我想對你說的十件事——</div><div><br></div><div>愉悅的夜晚，是晶瑩剔透的寶物，</div><div>只要懷想那些璀璨光影，就能在今後的日子繼續活下去。</div><div><br></div><div>悲傷的夜晚，適合揣想遠方，</div><div>如鯨魚的屍骨，如銀河中的一粒星，如神明眨眼間的欣慰與無奈。</div><div><br></div><div>浮躁的夜晚，要睡在跟平常不一樣的地方，</div><div>廚房、壁櫥與陽台，思考著穴居的人類，以及明天的早餐。</div><div><br></div><div>晚安，不知道姓名的你，明天一定會是美好的一天。&nbsp;</div><div><br></div><div><br></div><div>以靜謐優美的插畫和漫畫而聞名的柏井 Kashiwai，</div><div><br></div><div>將夜晚鋪滿了海藍色，為莫名的憂愁留白，</div><div><br></div><div>翻開這本書，把不成眠的日子灑進銀河裡，</div><div><br></div><div>在天亮之前，作一場詩意的夢。</div></div><div><br></div><div>#大田出版 #好書大家讀 #柏井 Kashiwai</div>",
+      "time": "09:00",
+      "canvaUrl": "",
+      "ratio": "1-1",
+      "theme": "大田好消息",
+      "title": "",
+      "status": "draft",
+      "createdAt": "2026-09-22T07:03:10.512Z",
+      "updatedAt": "2026-09-22T07:07:46.118Z"
     }
   ],
   "2026-09-27": [
@@ -3330,12 +3342,24 @@ var externalDB = {
       "status": "draft",
       "createdAt": "2026-09-21T08:30:50.758Z",
       "updatedAt": "2026-09-21T08:34:45.272Z"
+    },
+    {
+      "_id": "p_1790137023429_qdsol2",
+      "caption": "<div>【圖文時間】 《幸福就是吃飯睡覺等待 vol.4》新書上市預告！</div><div><br></div><div>#新書預告</div><div>#十月一日全台上市</div><div>#重磅推薦</div><div><br></div><div><span>台灣讀者全面好評，一集又一集，停不下來！</span></div><div><br></div><div><div>接受自己目前做不到</div><div>不等於放棄希望</div><div><br></div><div>每個人都有自己的速度與契機</div><div>在幸福來臨前，要好好吃飯睡覺，並耐心等待</div><div><br></div><div>★2022 年「這本漫畫真厲害！」女生部漫畫 第8名</div><div>★2025年NHK改編電視劇</div><div>★系列在日銷售突破100萬冊</div><div>★亞馬遜五星好評</div><div>★博客來選書</div><div><br></div><div>【隨書贈送】台灣限定 • 蒐集4號 • 日日好日 書籤特典（120mm × 70mm）</div><div><br></div><div><div>我終於變得</div><div><br></div><div>能夠好好看重自己了｡</div><div><br></div><div>由於生病每周只能打工四天維持生計的麥卷聰子。</div><div><br></div><div>遇見社區房東鈴媽和阿司，逐漸拓展出屬於自己的幸福。</div><div><br></div><div>透過好吃的藥膳飲食、登山健行，</div><div><br></div><div>考慮在自然之中調整體質……？</div></div><div><br></div><div>#大田出版 #幸福就是吃飯睡覺等待 #吃飯 #幸福</div><div><br></div></div>",
+      "time": "18:00",
+      "canvaUrl": "https://www.canva.com/design/DAHV-5SXpro/exQtKHBTkDzgTs2UxobE4A/view?utm_content=DAHV-5SXpro&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h62bd937ed8",
+      "ratio": "1-1",
+      "theme": "圖文時間",
+      "title": "幸福就是吃飯睡覺等待 vol.4",
+      "status": "draft",
+      "createdAt": "2026-09-23T04:17:03.429Z",
+      "updatedAt": "2026-09-23T04:19:24.583Z"
     }
   ]
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-21T09:35:19.438Z",
+  "updatedAt": "2026-09-23T04:19:38.422Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
