@@ -3255,7 +3255,7 @@ var externalDB = {
     },
     {
       "_id": "p_1789971831808_d36rdr",
-      "caption": "<div>【票選X抽書活動】&nbsp;</div><div><br></div><div>《一次又一次又一次地重新開始》</div><div><br></div><div><div>獻給每一個正在重新開始的人~</div><div>暢銷療癒圖文書《會好起來的，就算不是現在》作者最新力作！</div><div>在破碎與重建之間，學會一次又一次地重新開始。</div><div>這是一本描繪人生循環的療癒圖文書——<br>關於懷疑、崩解、重新站穩、再次敞開心扉，然後迎來又一次重生。</div><div><br></div><div>🏷️ 抽獎辦法</div><div>追蹤「大田出版」粉絲專頁</div><div>留言告訴我們：哪一張圖片你最喜歡、最有感覺?</div><div>🎁 抽獎送出《一次又一次又一次重新開始》乙本</div><div>⏰ 活動至 9/30 24:00 截止。</div></div><div><br></div><div>#一次又一次又一次地重新開始</div><div>#抽書 #大田出版 #抽獎</div>",
+      "caption": "<div>【票選X抽書活動】&nbsp;</div><div><br></div><div>《一次又一次又一次地重新開始》</div><div><br></div><div><div>獻給每一個正在重新開始的人~</div><div>暢銷療癒圖文書《會好起來的，就算不是現在》作者最新力作！</div><div>在破碎與重建之間，學會一次又一次地重新開始。</div><div>這是一本描繪人生循環的療癒圖文書——<br>關於懷疑、崩解、重新站穩、再次敞開心扉，然後迎來又一次重生。</div><div><br></div><div>🏷️ 抽獎辦法</div><div>追蹤「大田出版」粉絲專頁</div><div>留言告訴我們：哪一張圖片你最喜歡、最有感覺?</div><div>🎁 於留言區抽獎送出《一次又一次又一次重新開始》乙本</div><div>⏰ 活動至 9/30 24:00 截止。</div></div><div><br></div><div>#一次又一次又一次地重新開始</div><div>#抽書 #大田出版 #抽獎</div>",
       "time": "18:00",
       "canvaUrl": "https://www.canva.com/design/DAHVzwmkQ5Q/PCJ7g-mC3byJtk96a-e36Q/view?utm_content=DAHVzwmkQ5Q&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h7095328567",
       "ratio": "1-1",
@@ -3263,7 +3263,7 @@ var externalDB = {
       "title": "一次又一次又一次地重新開始",
       "status": "draft",
       "createdAt": "2026-09-21T06:23:51.808Z",
-      "updatedAt": "2026-09-23T07:06:19.626Z"
+      "updatedAt": "2026-09-23T08:15:09.964Z"
     },
     {
       "_id": "p_1789971919745_uo0sle",
@@ -3411,7 +3411,7 @@ var externalDB = {
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-23T07:06:46.730Z",
+  "updatedAt": "2026-09-23T08:15:28.418Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
