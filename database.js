@@ -3255,7 +3255,7 @@ var externalDB = {
     },
     {
       "_id": "p_1789971831808_d36rdr",
-      "caption": "<div>【票選X抽書活動】&nbsp;</div><div><br></div><div>《一次又一次又一次地重新開始》</div><div><br></div><div><div>獻給每一個正在重新開始的人~</div><div>暢銷療癒圖文書《會好起來的，就算不是現在》作者最新力作！</div><div>在破碎與重建之間，學會一次又一次地重新開始。</div><div>這是一本描繪人生循環的療癒圖文書——<br>關於懷疑、崩解、重新站穩、再次敞開心扉，然後迎來又一次重生。</div><div><br></div><div>🏷️ 抽獎辦法</div><div>追蹤「大田出版」粉絲專頁</div><div>留言告訴我們：哪一張圖片你最喜歡、最有感覺?</div><div>🎁 於留言區抽獎送出《一次又一次又一次重新開始》乙本</div><div>⏰ 活動至 9/30 24:00 截止。</div></div><div><br></div><div>#一次又一次又一次地重新開始</div><div>#抽書 #大田出版 #抽獎</div>",
+      "caption": "<div><span style=\"color:red\">【</span><span style=\"color:red\">哪一張你最有感</span><span style=\"color:red\">？】</span><span style=\"color:red\">留言抽書活動</span><span style=\"color:red\"></span></div>\n\n<div><span>&nbsp;</span></div>\n\n<div><span>&nbsp;</span><span>《一次又一次又一次地重新開始》<span></span></span></div>\n\n<div><span style=\"color:red\">是一本</span><span>獻給每一個正在重新開始的人<span style=\"color:rgb(31, 73, 125)\">〜</span><span></span></span></div>\n\n<div><span style=\"color:rgb(31, 73, 125)\">也是</span><span>暢銷療癒圖文書《會好起來的，就算不是現在》作者最新力作！<span></span></span></div>\n\n<div><span style=\"color:red\">讓人</span><span>在破碎與重建之間，學會一次又一次地重新開始。<span></span></span></div>\n\n<div><span style=\"color:red\">也是</span><span>描繪人生循環的療癒圖文書——<span><br>\n</span>關於懷疑、崩解、重新站穩、再次敞開心扉，然後迎來又一次重生。<span></span></span></div>\n\n<div><span style=\"color:red\">很想知道，我們分享的圖文中，哪一張是你最有感？最觸動你的？<span></span></span></div>\n\n<div><span style=\"color:red\">寫下圖文編號與書名，就有機會獲得這本書。</span><span style=\"color:red\"></span></div>\n\n<div><span style=\"color:red\">🏷️</span><span style=\"color:red\">活動</span><span style=\"color:red\">辦法：<span></span></span></div>\n\n<div><span>追蹤「大田出版」粉絲專頁<span></span></span></div>\n\n<div><span>留言告訴我們：哪一張圖片你最喜歡、最有感覺<span>?</span></span><span style=\"color:red\">寫下編號與書名。</span><span></span></div>\n\n<div><span>🎁</span><span> </span><span style=\"color:red\">我們將</span><span>於留言區抽獎送出《一次又一次又一次</span><span style=\"color:red\">地</span><span>重新開始》乙本<span></span></span></div>\n\n<div><span>⏰</span><span> </span><span>活動至<span> 9/30 24:00 </span>截止。<span></span></span></div>\n\n<div><span>&nbsp;</span></div>\n\n<div><span style=\"color:rgb(0, 112, 192)\">#</span><span style=\"color:rgb(0, 112, 192)\">一次又一次又一次地重新開始<span></span></span></div>\n\n<div><span style=\"color:rgb(0, 112, 192)\">#</span><span style=\"color:rgb(0, 112, 192)\">抽書<span> #</span>大田出版<span> #</span>抽獎<span></span></span></div>",
       "time": "18:00",
       "canvaUrl": "https://www.canva.com/design/DAHVzwmkQ5Q/PCJ7g-mC3byJtk96a-e36Q/view?utm_content=DAHVzwmkQ5Q&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h7095328567",
       "ratio": "1-1",
@@ -3263,7 +3263,7 @@ var externalDB = {
       "title": "一次又一次又一次地重新開始",
       "status": "draft",
       "createdAt": "2026-09-21T06:23:51.808Z",
-      "updatedAt": "2026-09-23T08:15:09.964Z"
+      "updatedAt": "2026-09-23T09:21:51.667Z"
     },
     {
       "_id": "p_1789971919745_uo0sle",
@@ -3406,12 +3406,88 @@ var externalDB = {
       "status": "draft",
       "createdAt": "2026-09-23T06:04:09.519Z",
       "updatedAt": "2026-09-23T06:58:09.375Z"
+    },
+    {
+      "_id": "p_1790667338235_soyfgw",
+      "caption": "<div><div>【晚上多讀一點點】 《慢慢寄出去的心》</div><div><br></div><div><div>#新書預告</div><div>#十月一日全台上市</div></div><div><br></div><div><div>以輕鬆笑談與幽默感驅散悲傷</div><div>尹成姬式小說的溫暖使人相信人性的良善</div></div><div><br></div><div><div>把心弄傷了。</div><div><br></div><div>但是心，大概是在什麼地方呢？</div><div><br></div><div>只願今天能夠幸福。寫小說時，我總會不知不覺許下這樣的願望。__作者 尹成姬</div><div><br></div><div><br></div><div>輕輕一笑，好像悲傷就沒有那麼悲傷？</div><div><br></div><div>還是，笑著笑著就流出眼淚……</div><div><br></div><div>這裡的每一個人，總是若無其事說出：「今天是我的生日。」</div><div><br></div><div>有假的生日，也有真正的生日，沒有人知道。</div><div>離家出走的少年，瘋狂尋找時光膠囊的準高中生，</div><div>想進入夢境為媽媽唱搖籃曲的亡魂，</div><div>每天都會拍一張雲朵照片的高樓油漆工……</div><div>&nbsp;</div><div><br></div><div>生日與死亡，有遺憾，有灑脫，有喜悅，交織過去，願望未來。</div><div>&nbsp;</div><div><br></div><div>在「尹成姬式」的小說裡，幸福與不幸總是輪流著來，</div><div>不幸也有可愛的不幸呢。上一秒與下一秒，</div><div>不說安慰，卻被安慰了；不說同理，卻溫柔理解了。</div></div><div><br></div><div>#大田出版 #尹成姬 #溫柔 #小說</div></div>",
+      "time": "20:00",
+      "canvaUrl": "https://www.canva.com/design/DAHV_KumUpU/m0-OzJLd01DDXnh86bg2Vw/view?utm_content=DAHV_KumUpU&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hea4fa7fff4",
+      "ratio": "1-1",
+      "theme": "晚上多讀一點點",
+      "title": "慢慢寄出去的心",
+      "status": "draft",
+      "createdAt": "2026-09-29T07:35:38.235Z",
+      "updatedAt": "2026-09-29T07:37:14.686Z"
+    }
+  ],
+  "2026-10-01": [
+    {
+      "_id": "p_1790667180010_fdg945",
+      "caption": "<div>【早上只讀一點點】 《一次又一次又一次地重新開始》</div><div><br></div><div>花朵不擔心開得晚，</div><div>只待時機成熟自會盛開綻放。</div><div><br></div><div>#大田出版</div>",
+      "time": "08:00",
+      "canvaUrl": "https://www.canva.com/design/DAHV0L5nE7o/rkSjYxxY7ALq1MufQzcQ3g/view?utm_content=DAHV0L5nE7o&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h611ce4e794",
+      "ratio": "1-1",
+      "theme": "早上只讀一點點",
+      "title": "一次又一次又一次地重新開始",
+      "status": "draft",
+      "createdAt": "2026-09-29T07:33:00.010Z",
+      "updatedAt": "2026-09-29T07:42:02.971Z"
+    },
+    {
+      "_id": "p_1790667192993_mjqleg",
+      "caption": "<div><span>【圖文時間】 《幸福就是吃飯睡覺等待 vol.4》</span></div><div><span><br></span></div><div><span>「普通地生活著，時而熱血燃燒。」</span></div><div><br></div><div>有些人的生活，看起來平平淡淡，<br>卻總藏著意想不到的故事。</div><div><br></div><div>音樂、溫泉，還有偶然聊起的人生——</div><div><br>原來幸福，也許就是好好生活，<br>然後耐心等待那些突然出現的驚喜。</div><div><br></div><div>《幸福就是吃飯睡覺等待 vol.4》</div><div>水凪トリ Mizunagi Tori｜大田出版</div><div><br></div><div>#幸福就是吃飯睡覺等待 #水凪トリ #漫畫 #大田出版 #日常 #樂器</div>",
+      "time": "18:00",
+      "canvaUrl": "https://www.canva.com/design/DAHWj00GzhM/bOErjV0CgmGoQ7iylD5QUA/view?utm_content=DAHWj00GzhM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h3a8596578d",
+      "ratio": "1-1",
+      "theme": "圖文時間",
+      "title": "幸福就是吃飯睡覺等待 vol.4",
+      "status": "draft",
+      "createdAt": "2026-09-29T07:33:12.993Z",
+      "updatedAt": "2026-09-29T07:56:20.072Z"
+    },
+    {
+      "_id": "p_1790667393096_gpbzmj",
+      "caption": "<div>【晚上多讀一點點】 《慢慢寄出去的心》</div><div><br></div>",
+      "time": "20:00",
+      "canvaUrl": "",
+      "ratio": "1-1",
+      "theme": "晚上多讀一點點",
+      "title": "慢慢寄出去的心",
+      "status": "draft",
+      "createdAt": "2026-09-29T07:36:33.096Z",
+      "updatedAt": "2026-09-29T07:36:33.096Z"
+    },
+    {
+      "_id": "p_1790668631348_bwgo1o",
+      "caption": "【大田布告欄】大田十月新書上市！<div><br></div><div><br></div>",
+      "time": "12:00",
+      "canvaUrl": "",
+      "ratio": "4-5",
+      "theme": "大田布告欄",
+      "title": "大田十月新書上市！",
+      "status": "draft",
+      "createdAt": "2026-09-29T07:57:11.348Z",
+      "updatedAt": "2026-09-29T07:58:02.963Z"
+    }
+  ],
+  "2026-10-02": [
+    {
+      "_id": "p_1790667413511_zwnb0g",
+      "caption": "<div>【早上只讀一點點】 《你就是困住自己的那座山》</div><div><br></div>",
+      "time": "08:00",
+      "canvaUrl": "https://www.canva.com/design/DAHUxWiOlXU/z3tAn2O-2XfIKm1cn23p_g/view?utm_content=DAHUxWiOlXU&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h21f78da663",
+      "ratio": "1-1",
+      "theme": "早上只讀一點點",
+      "title": "你就是困住自己的那座山",
+      "status": "draft",
+      "createdAt": "2026-09-29T07:36:53.511Z",
+      "updatedAt": "2026-09-29T07:36:56.828Z"
     }
   ]
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-23T08:15:28.418Z",
+  "updatedAt": "2026-09-29T07:58:26.381Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
@@ -3422,6 +3498,7 @@ var externalDBMeta = {
     "p_1789368039751_yd8uir": "2026-09-14T09:47:43.191Z",
     "p_1789455366471_p84irw": "2026-09-16T07:13:00.684Z",
     "p_1789971985121_5cfc71": "2026-09-23T06:33:48.521Z",
-    "p_1789982575874_99x1op": "2026-09-23T06:33:52.353Z"
+    "p_1789982575874_99x1op": "2026-09-23T06:33:52.353Z",
+    "p_1790667151616_jsv0k5": "2026-09-29T07:35:22.666Z"
   }
 };
