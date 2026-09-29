@@ -3485,7 +3485,7 @@ var externalDB = {
   "2026-10-02": [
     {
       "_id": "p_1790667413511_zwnb0g",
-      "caption": "<div>【早上只讀一點點】 《你就是困住自己的那座山》</div><div><br></div>",
+      "caption": "<div>【早上只讀一點點】 《你就是困住自己的那座山》</div><div><br></div><div><div><div><div><div>〈願意被人討厭〉</div><div><br></div></div><div><div>強大的人並不是最受歡迎的人。</div></div><div><div>重點是，強大的人也不會去爭奪他人的認同。</div></div><div><div>想要成為一個真正強大的人，就必須甘願被人討厭。這並不是說你的行為帶有任何的惡意，而是說無論你做什麼，別人都會批評你。強大的人都知道這件事。人生中沒有哪一條道路是你可以完全躲過他人反對的，因此重要的是，你不僅要接受不受歡迎這件事，還必須明白這件事一定會發生，但你還是不去理睬，依然做你想做的事。</div><div><br></div></div><div><div>（摘自P191）</div><div><span>#改變</span> <span>#焦慮</span> <span>#大田出版</span></div></div></div></div></div>",
       "time": "08:00",
       "canvaUrl": "https://www.canva.com/design/DAHUxWiOlXU/z3tAn2O-2XfIKm1cn23p_g/view?utm_content=DAHUxWiOlXU&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h21f78da663",
       "ratio": "1-1",
@@ -3493,13 +3493,65 @@ var externalDB = {
       "title": "你就是困住自己的那座山",
       "status": "draft",
       "createdAt": "2026-09-29T07:36:53.511Z",
-      "updatedAt": "2026-09-29T07:36:56.828Z"
+      "updatedAt": "2026-09-29T09:21:45.147Z"
+    },
+    {
+      "_id": "p_1790673248827_vpav8o",
+      "caption": "<div>【圖文時間】 《幸福就是吃飯睡覺等待 vol.4》</div><div><br></div><div><div>我終於變得</div><div><br></div><div>能夠好好看重自己了｡</div><div><br></div><div>由於生病每周只能打工四天維持生計的麥卷聰子。</div><div><br></div><div>遇見社區房東鈴媽和阿司，逐漸拓展出屬於自己的幸福。</div><div><br></div><div>透過好吃的藥膳飲食、登山健行，</div><div><br></div><div>考慮在自然之中調整體質……？</div></div><div><br></div><div><div>★2022 年「這本漫畫真厲害！」女生部漫畫 第8名</div><div>★2025年NHK改編電視劇</div><div>★系列在日銷售突破100萬冊</div><div>★亞馬遜五星好評</div><div>★博客來選書</div></div><div><div><br></div><div>【隨書贈送】台灣限定 • 蒐集4號 • 日日好日 書籤特典（120mm × 70mm）</div></div><div><br></div><div>#大田出版 #幸福 #贈品</div>",
+      "time": "18:00",
+      "canvaUrl": "https://www.canva.com/design/DAHWkT-OYuo/tAzxYrStUqXb6dhcPmcCRw/view?utm_content=DAHWkT-OYuo&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h3d20b88452",
+      "ratio": "1-1",
+      "theme": "圖文時間.",
+      "title": "幸福就是吃飯睡覺等待 vol.4",
+      "status": "draft",
+      "createdAt": "2026-09-29T09:14:08.827Z",
+      "updatedAt": "2026-09-29T09:19:46.777Z"
+    },
+    {
+      "_id": "p_1790673274530_s57p9w",
+      "caption": "<div>【晚上多讀一點點】 《慢慢寄出去的心》</div><div><br></div>",
+      "time": "20:00",
+      "canvaUrl": "",
+      "ratio": "1-1",
+      "theme": "晚上多讀一點點",
+      "title": "慢慢寄出去的心",
+      "status": "draft",
+      "createdAt": "2026-09-29T09:14:34.530Z",
+      "updatedAt": "2026-09-29T09:14:34.530Z"
+    }
+  ],
+  "2026-10-03": [
+    {
+      "_id": "p_1790673166374_xk0gca",
+      "caption": "<div>【影片分享】 《幸福3》</div><div><br></div>",
+      "time": "12:00",
+      "canvaUrl": "",
+      "ratio": "4-5",
+      "theme": "影片分享",
+      "title": "幸福3",
+      "status": "draft",
+      "createdAt": "2026-09-29T09:12:46.374Z",
+      "updatedAt": "2026-09-29T09:13:24.242Z"
+    }
+  ],
+  "2026-10-04": [
+    {
+      "_id": "p_1790673195736_wkqy9x",
+      "caption": "<div>【影片分享】 《幸福4》</div><div><br></div>",
+      "time": "12:00",
+      "canvaUrl": "",
+      "ratio": "4-5",
+      "theme": "影片分享",
+      "title": "幸福4",
+      "status": "draft",
+      "createdAt": "2026-09-29T09:13:15.736Z",
+      "updatedAt": "2026-09-29T09:13:15.736Z"
     }
   ]
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-29T08:06:45.087Z",
+  "updatedAt": "2026-09-29T09:22:42.284Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
