@@ -3447,27 +3447,39 @@ var externalDB = {
     },
     {
       "_id": "p_1790667393096_gpbzmj",
-      "caption": "<div>【晚上多讀一點點】 《慢慢寄出去的心》</div><div><br></div>",
+      "caption": "<div>【晚上多讀一點點】 《慢慢寄出去的心》</div><div><br></div><div>輕輕一笑，好像悲傷就沒有那麼悲傷？</div><div><div><div><br></div><div>還是，笑著笑著就流出眼淚……</div><div><br></div><div>這裡的每一個人，總是若無其事說出：「今天是我的生日。」</div><div><br></div><div>有假的生日，也有真正的生日，沒有人知道。</div><div>離家出走的少年，瘋狂尋找時光膠囊的準高中生，</div><div>想進入夢境為媽媽唱搖籃曲的亡魂，</div><div>每天都會拍一張雲朵照片的高樓油漆工……</div><div>&nbsp;</div><div><br></div><div>生日與死亡，有遺憾，有灑脫，有喜悅，交織過去，願望未來。</div><div>&nbsp;</div><div><div>把心弄傷了。</div><div><br></div><div>但是心，大概是在什麼地方呢？</div><div><br></div><div>只願今天能夠幸福。寫小說時，我總會不知不覺許下這樣的願望。__作者 尹成姬</div></div><div><br></div><div>在「尹成姬式」的小說裡，幸福與不幸總是輪流著來，</div><div>不幸也有可愛的不幸呢。上一秒與下一秒，</div><div>不說安慰，卻被安慰了；不說同理，卻溫柔理解了。</div></div><div><br></div><div>#大田出版 #尹成姬 #溫柔 #小說</div></div>",
       "time": "20:00",
-      "canvaUrl": "",
+      "canvaUrl": "https://www.canva.com/design/DAHWkHw-NqU/v1Zcx3W8Br_36qQJCJG2lQ/view?utm_content=DAHWkHw-NqU&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h8fc64f4bca",
       "ratio": "1-1",
       "theme": "晚上多讀一點點",
       "title": "慢慢寄出去的心",
       "status": "draft",
       "createdAt": "2026-09-29T07:36:33.096Z",
-      "updatedAt": "2026-09-29T07:36:33.096Z"
+      "updatedAt": "2026-09-29T08:06:31.822Z"
     },
     {
       "_id": "p_1790668631348_bwgo1o",
-      "caption": "【大田布告欄】大田十月新書上市！<div><br></div><div><br></div>",
+      "caption": "【大田布告欄】《#幸福就是吃飯睡覺等待 vol.4》上市！<div><div><br></div><div>#十月一日全台上市</div><div>#重磅推薦</div><div><br></div><div><span>台灣讀者全面好評，一集又一集，停不下來！</span></div><div><br></div><div><div>接受自己目前做不到</div><div>不等於放棄希望</div><div><br></div><div>每個人都有自己的速度與契機</div><div>在幸福來臨前，要好好吃飯睡覺，並耐心等待</div><div><br></div><div>★2022 年「這本漫畫真厲害！」女生部漫畫 第8名</div><div>★2025年NHK改編電視劇</div><div>★系列在日銷售突破100萬冊</div><div>★亞馬遜五星好評</div><div>★博客來選書</div><div><br></div><div>【隨書贈送】台灣限定 • 蒐集4號 • 日日好日 書籤特典（120mm × 70mm）</div><div><br></div><div><div>我終於變得</div><div><br></div><div>能夠好好看重自己了｡</div><div><br></div><div>由於生病每周只能打工四天維持生計的麥卷聰子。</div><div><br></div><div>遇見社區房東鈴媽和阿司，逐漸拓展出屬於自己的幸福。</div><div><br></div><div>透過好吃的藥膳飲食、登山健行，</div><div><br></div><div>考慮在自然之中調整體質……？</div></div><div><br></div><div>#大田出版 #吃飯 #幸福</div><div><br></div><div><br></div><div><br></div></div></div><div><br></div>",
       "time": "12:00",
-      "canvaUrl": "",
-      "ratio": "4-5",
+      "canvaUrl": "https://www.canva.com/design/DAHV-5SXpro/exQtKHBTkDzgTs2UxobE4A/view?utm_content=DAHV-5SXpro&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h62bd937ed8",
+      "ratio": "1-1",
       "theme": "大田布告欄",
       "title": "大田十月新書上市！",
       "status": "draft",
       "createdAt": "2026-09-29T07:57:11.348Z",
-      "updatedAt": "2026-09-29T07:58:02.963Z"
+      "updatedAt": "2026-09-29T08:00:52.013Z"
+    },
+    {
+      "_id": "p_1790668789873_0x07uf",
+      "caption": "【大田布告欄】《#慢慢寄出去的心》上市！<div><br></div><div><div>#全台上市</div></div><div><br></div><div><div>以輕鬆笑談與幽默感驅散悲傷</div><div>尹成姬式小說的溫暖使人相信人性的良善</div></div><div><br></div><div><div>把心弄傷了。</div><div><br></div><div>但是心，大概是在什麼地方呢？</div><div><br></div><div>只願今天能夠幸福。寫小說時，我總會不知不覺許下這樣的願望。__作者 尹成姬</div><div><br></div><div><br></div><div>輕輕一笑，好像悲傷就沒有那麼悲傷？</div><div><br></div><div>還是，笑著笑著就流出眼淚……</div><div><br></div><div>這裡的每一個人，總是若無其事說出：「今天是我的生日。」</div><div><br></div><div>有假的生日，也有真正的生日，沒有人知道。</div><div>離家出走的少年，瘋狂尋找時光膠囊的準高中生，</div><div>想進入夢境為媽媽唱搖籃曲的亡魂，</div><div>每天都會拍一張雲朵照片的高樓油漆工……</div><div>&nbsp;</div><div><br></div><div>生日與死亡，有遺憾，有灑脫，有喜悅，交織過去，願望未來。</div><div>&nbsp;</div><div><br></div><div>在「尹成姬式」的小說裡，幸福與不幸總是輪流著來，</div><div>不幸也有可愛的不幸呢。上一秒與下一秒，</div><div>不說安慰，卻被安慰了；不說同理，卻溫柔理解了。</div></div><div><br></div><div>#大田出版 #尹成姬 #溫柔 #小說</div><div><div><div><br></div><div><br></div><div><br></div></div></div><div><br></div>",
+      "time": "12:00",
+      "canvaUrl": "https://www.canva.com/design/DAHV_KumUpU/m0-OzJLd01DDXnh86bg2Vw/view?utm_content=DAHV_KumUpU&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hea4fa7fff4",
+      "ratio": "1-1",
+      "theme": "",
+      "title": "",
+      "status": "draft",
+      "createdAt": "2026-09-29T07:59:49.873Z",
+      "updatedAt": "2026-09-29T08:00:50.168Z"
     }
   ],
   "2026-10-02": [
@@ -3487,7 +3499,7 @@ var externalDB = {
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-29T07:58:26.381Z",
+  "updatedAt": "2026-09-29T08:06:45.087Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
