@@ -3509,15 +3509,15 @@ var externalDB = {
     },
     {
       "_id": "p_1790673274530_s57p9w",
-      "caption": "<div>【晚上多讀一點點】 《慢慢寄出去的心》</div><div><br></div>",
+      "caption": "<div><div>【晚上多讀一點點】 《慢慢寄出去的心》</div><div><br></div><div><div>把心弄傷了。</div><div><br></div><div>但是心，大概是在什麼地方呢？</div><div><br></div><div>只願今天能夠幸福。寫小說時，我總會不知不覺許下這樣的願望。__作者 尹成姬</div></div><div><br></div><div>輕輕一笑，好像悲傷就沒有那麼悲傷？</div><div><div><div><br></div><div>還是，笑著笑著就流出眼淚……</div><div><br></div><div>這裡的每一個人，總是若無其事說出：「今天是我的生日。」</div><div><br></div><div>有假的生日，也有真正的生日，沒有人知道。</div><div>離家出走的少年，瘋狂尋找時光膠囊的準高中生，</div><div>想進入夢境為媽媽唱搖籃曲的亡魂，</div><div>每天都會拍一張雲朵照片的高樓油漆工……</div><div>&nbsp;</div><div><br></div><div>生日與死亡，有遺憾，有灑脫，有喜悅，交織過去，願望未來。</div><div>&nbsp;</div><div>在「尹成姬式」的小說裡，幸福與不幸總是輪流著來，</div><div>不幸也有可愛的不幸呢。上一秒與下一秒，</div><div>不說安慰，卻被安慰了；不說同理，卻溫柔理解了。</div></div><div><br></div><div>#大田出版 #尹成姬 #溫柔 #小說</div></div></div>",
       "time": "20:00",
-      "canvaUrl": "",
+      "canvaUrl": "https://www.canva.com/design/DAHWpv9eYaA/AUzvRXUz2IANeUzbRZfcrA/view?utm_content=DAHWpv9eYaA&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hd952c709d8",
       "ratio": "1-1",
       "theme": "晚上多讀一點點",
       "title": "慢慢寄出去的心",
       "status": "draft",
       "createdAt": "2026-09-29T09:14:34.530Z",
-      "updatedAt": "2026-09-29T09:14:34.530Z"
+      "updatedAt": "2026-09-30T06:43:36.269Z"
     }
   ],
   "2026-10-03": [
@@ -3547,11 +3547,25 @@ var externalDB = {
       "createdAt": "2026-09-29T09:13:15.736Z",
       "updatedAt": "2026-09-29T09:13:15.736Z"
     }
+  ],
+  "2026-10-05": [
+    {
+      "_id": "p_1790748435939_ycr8fg",
+      "caption": "<div>【早上只讀一點點】 《一次又一次又一次地重新開始》</div><div><br></div>",
+      "time": "09:00",
+      "canvaUrl": "",
+      "ratio": "1-1",
+      "theme": "早上只讀一點點",
+      "title": "一次又一次又一次地重新開始",
+      "status": "draft",
+      "createdAt": "2026-09-30T06:07:15.939Z",
+      "updatedAt": "2026-09-30T06:07:15.939Z"
+    }
   ]
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-29T09:57:49.745Z",
+  "updatedAt": "2026-09-30T06:44:41.230Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
