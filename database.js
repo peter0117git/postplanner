@@ -3551,21 +3551,21 @@ var externalDB = {
   "2026-10-05": [
     {
       "_id": "p_1790748435939_ycr8fg",
-      "caption": "<div>【早上只讀一點點】 《一次又一次又一次地重新開始》</div><div><br></div>",
+      "caption": "<div>【早上只讀一點點】 《一次又一次又一次地重新開始》</div><div><br></div><div><div>有個地方</div><div>海洋與天空交會，</div><div>那裡沒有邊界，</div><div>沒有名字，又那麼完美。</div><div>我渴望委身此地，</div><div>就住在海洋與天空之間，</div><div>住在這片拒絕任何定義的模糊地帶。</div><div>這裡，在湛藍深淵與</div><div>無垠蒼穹的交界之間，</div><div>我不必選邊站，</div><div>也無須劃定疆域。</div><div>它純粹存在著，</div><div>正如我渴望活著—</div><div>不受定義，</div><div>不被歸類，</div><div>不歸誰所有。</div><div>擺脫</div><div>隸屬於這裡或那裡的</div><div>沉重枷鎖，</div><div>在這片是海亦是天的空間，</div><div>活著便足矣。</div></div><div>-</div><div>摘自p.161</div><div><br></div><div>#大田出版 #會好起來的</div>",
       "time": "09:00",
-      "canvaUrl": "",
+      "canvaUrl": "https://www.canva.com/design/DAHWp5Y50bw/qvxOQgcSGh6UXVubTUDP5g/view?utm_content=DAHWp5Y50bw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=ha36e9ffc6c",
       "ratio": "1-1",
       "theme": "早上只讀一點點",
       "title": "一次又一次又一次地重新開始",
       "status": "draft",
       "createdAt": "2026-09-30T06:07:15.939Z",
-      "updatedAt": "2026-09-30T06:07:15.939Z"
+      "updatedAt": "2026-09-30T07:08:13.858Z"
     }
   ]
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-30T06:44:41.230Z",
+  "updatedAt": "2026-09-30T07:09:10.812Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
