@@ -3601,15 +3601,15 @@ var externalDB = {
   "2026-10-06": [
     {
       "_id": "p_1791168540674_xy6knf",
-      "caption": "<div>【早上只讀一點點】 《一次又一次又一次地重新開始》</div><div><br></div>",
+      "caption": "<div>【早上只讀一點點】 《一次又一次又一次地重新開始》</div><div><br></div><div>年歲帶來某種魔力</div><div>讓我們終於有能力看到</div><div>往昔匆匆過瞥過的</div><div>平凡中的不平凡。</div><div><br></div><div>#大田出版 #歲月</div>",
       "time": "08:00",
-      "canvaUrl": "",
+      "canvaUrl": "https://www.canva.com/design/DAHV0L5nE7o/rkSjYxxY7ALq1MufQzcQ3g/view?utm_content=DAHV0L5nE7o&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h611ce4e794",
       "ratio": "1-1",
       "theme": "早上只讀一點點",
       "title": "一次又一次又一次地重新開始",
       "status": "draft",
       "createdAt": "2026-10-05T02:49:00.674Z",
-      "updatedAt": "2026-10-05T02:49:00.674Z"
+      "updatedAt": "2026-10-05T03:28:00.240Z"
     },
     {
       "_id": "p_1791168566946_oh97pj",
@@ -3651,15 +3651,15 @@ var externalDB = {
     },
     {
       "_id": "p_1791168665758_9bhtj4",
-      "caption": "<div>【圖文時間】 《宇希時間》</div><div><br></div>",
+      "caption": "<div>【圖文時間】 《宇希時間》</div><div><span><br></span></div><div><span>那些無所不在的：最遠的地方</span></div><div>\n\n<div><br></div><div>因為生病，我放棄了很多。<span></span></div>\n\n<div>有時候我也會懷疑，我是真的生病了，還是我只是在拿「生病」當作逃避人生的理由？<span></span></div>\n\n<div>我原本申請上了加拿大的交換學生，但是越是接近出發日期，醫生和家人就越是擔心我的狀況，最終決定先放棄。<span></span></div>\n\n<div>我真的很期待在陌生的地方，展開一個人的生活，然而當時的我已經沒有力氣去到那麼遠的地方。<span></span></div>\n\n<div>我也放棄了和同學一起穿畢業袍的機會，對很多人來說，這也許再普通不過。看著周遭的人們繼續生活，我常常會忍不住想：為什麼他們做得到，我卻做不到呢？是我真的在逃避嗎？<span></span></div>\n\n<div>可是如果我真的只是在逃避，為什麼每一次放棄，我都這麼難過呢？<span></span></div>\n\n<div>生病久了以後，我開始分不清，到底怎麼樣才算是「我」。<span></span></div>\n\n<div>疾病好像不是一個，可以從身體裡完整拿出來的東西。我必須與它共存，有時候我真的不知道，是「我」不想走了，還是「我」已經走不動了。<span></span></div>\n\n<div>哪怕無法踏上新的土地、無法穿上畢業袍，至少我曾經很嚮往過。<span></span></div>\n\n<div>未來，我也許仍然必須放棄，但我已經很努力地，走到了當時能走到的地方。<span></span></div><div><br></div><div>#宇希的貓 #最遠的地方 #放棄 #共存</div></div>",
       "time": "18:00",
-      "canvaUrl": "",
+      "canvaUrl": "https://www.canva.com/design/DAHNdqdK6aI/PiMT2vlLGuDlWm3KmDjn9g/view?utm_content=DAHNdqdK6aI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=ha7005fd718",
       "ratio": "1-1",
       "theme": "圖文時間",
       "title": "宇希時間",
       "status": "draft",
       "createdAt": "2026-10-05T02:51:05.758Z",
-      "updatedAt": "2026-10-05T02:51:05.758Z"
+      "updatedAt": "2026-10-05T03:06:42.127Z"
     },
     {
       "_id": "p_1791168679130_o1holw",
@@ -3677,27 +3677,27 @@ var externalDB = {
   "2026-10-08": [
     {
       "_id": "p_1791168700384_8fu5yt",
-      "caption": "<div>【早上只讀一點點】 《你就是困住自己的那座山》</div><div><br></div>",
+      "caption": "<div>【早上只讀一點點】 《你就是困住自己的那座山》</div><div><br></div><div><div><div>〈自我破壞源於信念系統〉</div><div><br></div></div><div><div>你相信生活是什麼樣貌，就會把生活變成那個樣貌。</div></div><div><div>這就是為什麼意識到這些業已不合時宜的內在敘事，並鼓起勇氣改變這些內在敘事是如此重要。</div></div><div><div>也許在一生中的大部分時間裡，你都相信在一家體面的公司任職，並拿到人人稱羨的百萬年薪，是你人生的最高成就。也許你花了很多年的時間告訴自己：「我這個人很容易焦慮」，於是你真的開始認同這樣的自己，並將焦慮和恐懼視為本質，將之納入你的信念系統中。也許你是在一個思想封閉的社交圈或同溫層裡面長大的。也許你從來都不知道，針對政治或宗教，你其實可以提出質疑，或是得出不同於旁人的結論。也許你從未想過自己可以風格出眾、滿足現況或環遊世界。</div></div><div><div>如果你的情況並非上述，那麼你受限的信念可能源自想要確保自身的安全。</div></div><div><div>也許這就是為什麼你喜歡已知的事物讓你產生的安心感，勝於未知的事物讓你產生的脆弱感。也許這就是為什麼你喜歡冷漠勝於興奮。你或許認為苦難讓你更有價值，或者相信生活中每一件美好的事情都必然伴隨著「不美好」的一面。</div></div><div><div>想要真正地療癒這樣的自己，必須改變思維方式。你必須非常清楚地意識到那些消極和錯誤的信念，並開始改變自己的心態，讓心靈真正地為你服務。</div><div>-</div></div><div><div>（摘自P21-22）</div><div><br></div><div><span>#改變</span> <span>#焦慮</span> <span>#大田出版</span></div></div></div>",
       "time": "08:00",
-      "canvaUrl": "",
+      "canvaUrl": "https://www.canva.com/design/DAHUxWiOlXU/z3tAn2O-2XfIKm1cn23p_g/view?utm_content=DAHUxWiOlXU&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h21f78da663",
       "ratio": "1-1",
       "theme": "早上只讀一點點",
       "title": "你就是困住自己的那座山",
       "status": "draft",
       "createdAt": "2026-10-05T02:51:40.384Z",
-      "updatedAt": "2026-10-05T02:51:40.384Z"
+      "updatedAt": "2026-10-05T03:13:57.295Z"
     },
     {
       "_id": "p_1791168721781_3akoda",
-      "caption": "<div>【圖文時間】 《希望溫暖你的每一天(精采夜光版)》</div><div><br></div>",
+      "caption": "<div>【圖文時間】 《希望溫暖你的每一天(精采夜光版)》</div><div><br></div><div><div>遇挫折時，</div><div>克服挫折重新站起來的速度比以前更快。</div><div>跟別人比較時，</div><div>能看著自己的小小成長鼓勵自己。</div><div>被難過的情緒席捲時，</div><div>也能夠接受那就是自己的樣子。</div><div>恢復成自己的速度一點一點地加快。</div><div>這都是你成長的證據。</div></div><div><br></div><div>摘自p34~36</div><div><br></div><div>#大田出版 #療癒</div>",
       "time": "18:00",
-      "canvaUrl": "",
+      "canvaUrl": "https://www.canva.com/design/DAHV_smqQOY/vYG3mwknHTAF5L3CIAUCTA/view?utm_content=DAHV_smqQOY&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h62db24fd48",
       "ratio": "1-1",
       "theme": "圖文時間",
       "title": "希望溫暖你的每一天(精采夜光版)",
       "status": "draft",
       "createdAt": "2026-10-05T02:52:01.781Z",
-      "updatedAt": "2026-10-05T02:52:06.821Z"
+      "updatedAt": "2026-10-05T03:12:03.445Z"
     },
     {
       "_id": "p_1791168743388_etg7n6",
@@ -3715,15 +3715,15 @@ var externalDB = {
   "2026-10-09": [
     {
       "_id": "p_1791168800484_1ezj7y",
-      "caption": "<div>【早上只讀一點點】 《會好起來的，就算不是現在》</div><div><br></div>",
+      "caption": "<div>【早上只讀一點點】 《會好起來的，就算不是現在》</div><div><br></div><div>那些痛苦的時光，</div><div><div>那些我們以為就要活埋我們的事情......</div><div><br></div><div>往往讓我們打開心房。</div></div><div><br></div><div>#大田出版 #防備 #改變</div>",
       "time": "08:00",
-      "canvaUrl": "",
+      "canvaUrl": "https://www.canva.com/design/DAHXG2_tTG0/j07WNxfvUdIGQxBRmg8zUg/view?utm_content=DAHXG2_tTG0&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hd62a377c74",
       "ratio": "1-1",
       "theme": "早上只讀一點點",
       "title": "會好起來的，就算不是現在",
       "status": "draft",
       "createdAt": "2026-10-05T02:53:20.484Z",
-      "updatedAt": "2026-10-05T02:53:20.484Z"
+      "updatedAt": "2026-10-05T03:21:59.969Z"
     },
     {
       "_id": "p_1791168825084_1q04x0",
@@ -3753,7 +3753,7 @@ var externalDB = {
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-10-05T03:00:00.890Z",
+  "updatedAt": "2026-10-05T03:28:08.929Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
