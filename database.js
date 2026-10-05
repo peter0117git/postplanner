@@ -3575,27 +3575,27 @@ var externalDB = {
     },
     {
       "_id": "p_1791168488333_xi1i2m",
-      "caption": "<div>【圖文時間】 《幸福就是吃飯睡覺等待 vol.4》</div><div><br></div>",
+      "caption": "<div>【圖文時間】 《幸福就是吃飯睡覺等待 vol.4》</div><div><br></div><div><div>天氣慢慢轉涼了，<br>早起為自己準備一份暖暖的食物。</div><div>回過神，才發現上班時間快到了，<br>換上厚厚的外套，匆匆出了門。</div><div>感覺好像半騙著自己過活，<br>卻又確實地，一步一步踩在地上。</div><div><br></div></div><div><div>好好吃飯、好好睡覺，<br>然後耐心等待。</div><div><br></div><div>#幸福就是吃飯睡覺等待 #水凪トリ #大田出版 #療癒漫畫 #漫畫推薦</div></div>",
       "time": "18:00",
-      "canvaUrl": "",
+      "canvaUrl": "https://www.canva.com/design/DAHWj00GzhM/bOErjV0CgmGoQ7iylD5QUA/view?utm_content=DAHWj00GzhM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h3a8596578d",
       "ratio": "1-1",
       "theme": "圖文時間",
       "title": "幸福就是吃飯睡覺等待 vol.4",
       "status": "draft",
       "createdAt": "2026-10-05T02:48:08.333Z",
-      "updatedAt": "2026-10-05T02:48:08.333Z"
+      "updatedAt": "2026-10-05T05:57:22.528Z"
     },
     {
       "_id": "p_1791168505058_jf01im",
-      "caption": "<div>【晚上多讀一點點】 《慢慢寄出去的心》</div><div><br></div>",
+      "caption": "<div>【晚上多讀一點點】 《慢慢寄出去的心》</div><div><br></div><div><strong>生日與死亡，有遺憾，有灑脫，有喜悅，交織過去，願望未來。</strong></div><div><strong><br></strong></div><div>#尹成姬</div><div><br></div><div><div><span style=\"color:black\">這是一本帶著讀者兜兜轉轉的精彩小說！<span></span></span></div>\n\n<div><span style=\"color:black\">&nbsp;</span></div>\n\n<div><span style=\"color:black\">你還在想「我到底看了什麼？」情感就先被牽動了。<span></span></span></div>\n\n<div><span style=\"color:black\">&nbsp;</span></div>\n\n<div><span style=\"color:black\">《慢慢寄出去的心》由各式各樣的生日場景串起——<span></span></span></div>\n\n<div><span style=\"color:black\">&nbsp;</span></div>\n\n<div><span style=\"color:black\">以生日為由拜託朋友陪自己離家出走；<span></span></span></div>\n\n<div><span style=\"color:black\">&nbsp;</span></div>\n\n<div><span style=\"color:black\">不知道自己生日的孩子，想像自己出生那天的風景；<span></span></span></div>\n\n<div><span style=\"color:black\">&nbsp;</span></div>\n\n<div><span style=\"color:black\">假裝今天是自己生日，從此展開全新的人生；<span></span></span></div>\n\n<div><span style=\"color:black\">&nbsp;</span></div>\n\n<div><span style=\"color:black\">迂迴與幽默背後，是無法直視也無法直說的傷痛。<span></span></span></div></div><div><span style=\"color:black\"><br></span></div><div><div>輕輕一笑，好像悲傷就沒有那麼悲傷？</div><div>還是，笑著笑著就流出眼淚……</div><div>這裡的每一個人，總是若無其事說出：「今天是我的生日。」</div><div>有假的生日，也有真正的生日，沒有人知道。</div><div>離家出走的少年，瘋狂尋找時光膠囊的準高中生，</div><div>想進入夢境為媽媽唱搖籃曲的亡魂，</div><div>每天都會拍一張雲朵照片的高樓油漆工……</div></div><div><span style=\"color:black\"><br></span></div><div><div>在「尹成姬式」的小說裡，幸福與不幸總是輪流著來，</div><div>不幸也有可愛的不幸呢。上一秒與下一秒，</div><div>不說安慰，卻被安慰了；不說同理，卻溫柔理解了。<br></div></div><div><span style=\"color:black\"><br></span></div><div><span style=\"color:black\">#大田出版 #韓國文學</span></div>",
       "time": "20:00",
-      "canvaUrl": "",
+      "canvaUrl": "https://www.canva.com/design/DAHWpv9eYaA/AUzvRXUz2IANeUzbRZfcrA/view?utm_content=DAHWpv9eYaA&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hd952c709d8",
       "ratio": "1-1",
       "theme": "晚上多讀一點點",
       "title": "慢慢寄出去的心",
       "status": "draft",
       "createdAt": "2026-10-05T02:48:25.058Z",
-      "updatedAt": "2026-10-05T02:52:49.344Z"
+      "updatedAt": "2026-10-05T06:00:21.773Z"
     }
   ],
   "2026-10-06": [
@@ -3625,15 +3625,15 @@ var externalDB = {
     },
     {
       "_id": "p_1791168578924_htsj6q",
-      "caption": "<div>【晚上多讀一點點】 《#尋找蜘蛛：日本暢銷超過36萬冊，西加奈子的生命故事》</div><div><br></div>",
+      "caption": "<div>【晚上多讀一點點】 《#尋找蜘蛛：日本暢銷超過36萬冊，西加奈子的生命故事》</div><div><br></div><div>直木賞作家西加奈子異國抗癌手記！《尋找蜘蛛》赤裸寫下毫無保留的生命之書</div><div><br></div><div>撰文 龍貓大王通訊</div><div><br></div><div><div><span>生病不是件好事，生理上的不舒服，彷彿某種更強大的神秘力量宣告著，你的身體不是你的身體。但這有時還不是最糟的，如果你身處語言無法流利溝通、生活習慣不同的異鄉，那麼，光是向醫護人員溝通你有多不舒服，還要理解他們有異於母國的看待病症心態，這些似乎都在增加更多精神上的壓力。</span></div><div>&nbsp;</div><div><span>直木賞得主西加奈子就碰上了這麼糟糕的狀況：她旅居溫哥華時，碰上了全球疫情，而麻煩的是，此時她確診罹癌了。</span></div><div>&nbsp;</div><div><span>開始轉移的癌症正一步步奪走她的健康，但此時她的感官與知覺卻逐漸變得敏銳，她將病中心情寫成《尋找蜘蛛》一書。她寫面對癌症與治療的恐懼，寫異國親友們對她的支持，寫對於本國親友的思念。</span></div></div><div><span><br></span></div><div><span><div><span>西加奈子首部非虛構作品</span></div><div>&nbsp;</div><div><span>身處異國他鄉卻罹患了乳癌，語言的隔閡和遭受疾病折磨的身體，都充滿了恐懼。</span></div><div>&nbsp;</div><div><span>西加奈子用赤裸、毫無保留的言語寫下的，首部非虛構作品。</span></div><div><span><br></span></div><div><div><span>蜘蛛從這本書的書名一路爬進內文，直到書末。牠代表著癌症帶來的恐懼與威脅，卻也代表著她的血緣與家庭。癌症讓身在異鄉的她，反而更強烈地感受到日本傳統在自己身上留下的印記。一隻蜘蛛咬了她一口，醫生卻在她胸口摸到一顆腫塊。蜘蛛在《尋找蜘蛛》裡有著雙重含意，也是代表著這場大病對西加奈子帶來的雙重啟示。</span></div><div>&nbsp;</div><div><div><span>如果你需要支撐生活的動力，《尋找蜘蛛》會是一個好選擇，它會帶你從另一個角度檢視生活中的不快，同時檢視生活中那些細微的美好。如果你想理解東西文化的差異，《尋找蜘蛛》裡有大量的案例可以參考。這不是什麼勵志故事或是堅毅物語，也不是告訴你只要做這幾件事就能克服恐懼，這是一個試著與痛苦共存，並在其中找尋生活新秩序的人生紀錄。</span></div><div><span><br></span></div><div><span>#大田出版 #西加奈子 #生命</span></div></div></div></span></div>",
       "time": "20:00",
-      "canvaUrl": "",
+      "canvaUrl": "https://www.canva.com/design/DAHV0GJCZIE/pr4a1KAlSRQi6oQOp-v3Fw/view?utm_content=DAHV0GJCZIE&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h950640da17",
       "ratio": "1-1",
       "theme": "晚上多讀一點點",
       "title": "#尋找蜘蛛：日本暢銷超過36萬冊，西加奈子的生命故事",
       "status": "draft",
       "createdAt": "2026-10-05T02:49:38.924Z",
-      "updatedAt": "2026-10-05T02:53:01.833Z"
+      "updatedAt": "2026-10-05T06:15:15.261Z"
     }
   ],
   "2026-10-07": [
@@ -3753,7 +3753,7 @@ var externalDB = {
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-10-05T03:28:08.929Z",
+  "updatedAt": "2026-10-05T06:15:32.223Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
