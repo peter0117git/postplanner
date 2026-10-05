@@ -3587,15 +3587,15 @@ var externalDB = {
     },
     {
       "_id": "p_1791168505058_jf01im",
-      "caption": "<div>【晚上多讀一點點】 《慢慢寄出去的心》</div><div><br></div><div><strong>生日與死亡，有遺憾，有灑脫，有喜悅，交織過去，願望未來。</strong></div><div><strong><br></strong></div><div>#尹成姬</div><div><br></div><div><div><span style=\"color:black\">這是一本帶著讀者兜兜轉轉的精彩小說！<span></span></span></div>\n\n<div><span style=\"color:black\">&nbsp;</span></div>\n\n<div><span style=\"color:black\">你還在想「我到底看了什麼？」情感就先被牽動了。<span></span></span></div>\n\n<div><span style=\"color:black\">&nbsp;</span></div>\n\n<div><span style=\"color:black\">《慢慢寄出去的心》由各式各樣的生日場景串起——<span></span></span></div>\n\n<div><span style=\"color:black\">&nbsp;</span></div>\n\n<div><span style=\"color:black\">以生日為由拜託朋友陪自己離家出走；<span></span></span></div>\n\n<div><span style=\"color:black\">&nbsp;</span></div>\n\n<div><span style=\"color:black\">不知道自己生日的孩子，想像自己出生那天的風景；<span></span></span></div>\n\n<div><span style=\"color:black\">&nbsp;</span></div>\n\n<div><span style=\"color:black\">假裝今天是自己生日，從此展開全新的人生；<span></span></span></div>\n\n<div><span style=\"color:black\">&nbsp;</span></div>\n\n<div><span style=\"color:black\">迂迴與幽默背後，是無法直視也無法直說的傷痛。<span></span></span></div></div><div><span style=\"color:black\"><br></span></div><div><div>輕輕一笑，好像悲傷就沒有那麼悲傷？</div><div>還是，笑著笑著就流出眼淚……</div><div>這裡的每一個人，總是若無其事說出：「今天是我的生日。」</div><div>有假的生日，也有真正的生日，沒有人知道。</div><div>離家出走的少年，瘋狂尋找時光膠囊的準高中生，</div><div>想進入夢境為媽媽唱搖籃曲的亡魂，</div><div>每天都會拍一張雲朵照片的高樓油漆工……</div></div><div><span style=\"color:black\"><br></span></div><div><div>在「尹成姬式」的小說裡，幸福與不幸總是輪流著來，</div><div>不幸也有可愛的不幸呢。上一秒與下一秒，</div><div>不說安慰，卻被安慰了；不說同理，卻溫柔理解了。<br></div></div><div><span style=\"color:black\"><br></span></div><div><span style=\"color:black\">#大田出版 #韓國文學</span></div>",
+      "caption": "<div>【晚上多讀一點點】 《慢慢寄出去的心》</div><div><br></div><div>〈慢慢寄出去的心〉</div><div><br></div><div><div>我在回家的路上外帶一份章魚粥，把它放進冰箱，接著把爸爸昨天煮好的咖哩拿出來，吃了兩碗飯。在扁桃腺腫起來之前，要好好飽餐一頓。</div><div>每逢梅雨季剛開始，或是初雪落下的時候，我總是會嚴重感冒一次，有時候一年兩次，有時候只有一次。我也煮了麥茶裝進保溫瓶裡。</div><div>爸爸打電話來說他下班後會直接去醫院，我告訴他明天是星期六，別擔心我，好好陪在媽媽身邊。我已經吃過晚餐，碗也洗好了。爸爸說我真乖巧。我沒有說自己要感冒了。</div><div>凌晨開始發燒。</div><div>星期六早上，我勉強爬起身，換掉被汗水浸濕的內衣，喝了兩杯麥茶又再度睡去。</div><div>我做了一場夢。夢裡，我變成幼兒園裡的小孩。作為幼兒園學生的我，參加一場用筷子夾豆子的班級對抗賽。我們班是嫩芽班。四個孩子並排坐著，我是第三棒。右邊的孩子把黑豆放到我的盤子裡，我再把黑豆夾到左邊孩子的盤子裡。</div><div>前四顆豆子都很順利，到第五顆時我突然開始咳嗽。我咳得停不下來，不斷讓豆子掉到地上。</div><div>「都是因為妳才輸的。」</div><div>孩子們這麼說。</div><div>我哭著說：「我害大家輸了。」</div><div>沒有任何人來安慰我。</div><div>從夢中醒來後，發現額頭蓋著一條冰涼的毛巾。我打開房門走出去，看見小阿姨坐在沙發上打瞌睡。我把她搖醒。阿姨一看到我，便把手貼到我的額頭上。</div><div>「還在發燒呢。」</div><div>我也把手放到自己的額頭上。</div><div>「有退一點了。」</div><div>喉嚨腫得連口水都難以吞嚥，我還是硬著頭皮把粥吃完。</div><div>「早上探病的時候，妳媽媽一直擔心妳沒吃飯，所以我才想過來，給一個人待在這裡的外甥女弄點好吃的。妳生病至少該聯絡一下我啊。」</div><div>「阿姨妳又不會做菜，所以才沒叫妳。」</div><div>媽媽第一次住院接受化療時，阿姨曾經來過我們家。她做了些來路不明的料理。吃飯前我在社區裡跑了一圈，因為只有先流一身汗，她做的菜我才勉強吃得下去。</div><div>吃藥後又感到睏倦，半夢半醒間，我好幾次感覺到阿姨用冰涼的毛巾幫我擦拭額頭。我還想著要是再夢到那場夾豆子比賽，我一定要拿第一名，結果什麼也沒夢到。</div><div>星期天早上阿姨把我叫醒，要我喝果汁，然後我又再度昏睡過去。直到下午，精神才稍微恢復一些。</div><div>「我餓了。」</div><div>我才說完，阿姨便訂了炸雞。我去洗澡，阿姨則趁這段時間做蒸蛋。我喜歡用砂鍋做的蒸蛋，阿姨說她不會，只好用微波爐做。</div><div>每次重感冒之後，我都會吃辣味的BBQ炸雞。把一整隻雞吃完後，再用醬汁拌飯，配著蒸蛋一起吃，吃到肚子鼓得圓圓的。蒸蛋似乎沒有完全蒸熟，但還算能吃。</div><div>我拍著肚子低聲說「吃飽了」，感覺病後的疲憊感一下子煙消雲散。</div><div>「阿姨，每次重感冒之後洗澡，總感覺會洗出很多汙垢。這是為什麼？」</div><div>「誰知道呢，可能是流很多汗的關係吧。」</div><div>「可是運動就不會這樣。」</div><div>「跟那個汗不一樣。」</div><div>「不一樣嗎？」</div><div>「嗯，不一樣。」</div><div>和阿姨聊著聊著，我突然問她，那個「流汗男」最近過得怎麼樣。因為他特別容易流汗，每次見面腋下都是濕的，所以我私下都叫他「流汗男」。</div><div>「不知道，應該過得還行吧。」</div><div>「你們分手了？」</div><div>阿姨沒有回答，只是點點頭。</div><div>我對阿姨說，我本來就不喜歡「流汗男」，而像阿姨這樣不會做菜的人，應該要和什麼都吃得下的男人交往才對。</div><div>聽到我的話，阿姨說，其實「流汗男」很會做菜，分手之後，阿姨總是想起他以前做過的料理。</div><div>說到一半，阿姨猛地從沙發上彈起來。</div><div>「啊！郵筒！糟了，糟糕了！」</div><div>郵筒？阿姨沒有解釋，只是不斷重複說糟糕了。</div><div>偏偏在這個時候，電視上某個諧星喊出「亂七八糟，亂成一團了」。我怕那個諧星再喊一次，立刻拿起遙控器按下靜音。</div><div>阿姨在客廳裡來回踱步，忽然對我說：</div><div>「妳明天別去學校了，陪阿姨去個地方吧。」</div><div>阿姨說起這樣的故事：去年和高中同學旅行時，在那裡看到慢遞郵筒，阿姨寄給「流汗男」一張明信片，寫下要和他結婚的事。</div><div>慢遞郵筒中的明信片會在一年後送達，而那正是下個月。其實「流汗男」不久前結婚了，而且依然住在明信片上寫的住址。</div><div>阿姨的話簡而言之，就是她想要去找回那張明信片，但不太敢自己去，所以要我陪她。</div><div><br></div><div>摘自《慢慢寄出去的心》-〈慢慢寄出去的心〉p.61~65</div></div><div><br></div><div><span>#大田出版 #尹成姬 #溫柔 #小說</span></div>",
       "time": "20:00",
-      "canvaUrl": "https://www.canva.com/design/DAHWpv9eYaA/AUzvRXUz2IANeUzbRZfcrA/view?utm_content=DAHWpv9eYaA&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hd952c709d8",
-      "ratio": "1-1",
+      "canvaUrl": "https://www.canva.com/design/DAHXIEOLLC4/dgdWOiKx_02SpZSx6DIQlw/view?utm_content=DAHXIEOLLC4&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h05e9958596",
+      "ratio": "4-5",
       "theme": "晚上多讀一點點",
       "title": "慢慢寄出去的心",
       "status": "draft",
       "createdAt": "2026-10-05T02:48:25.058Z",
-      "updatedAt": "2026-10-05T06:00:21.773Z"
+      "updatedAt": "2026-10-05T09:05:25.350Z"
     }
   ],
   "2026-10-06": [
@@ -3739,7 +3739,7 @@ var externalDB = {
     },
     {
       "_id": "p_1791189391642_4qdz5o",
-      "caption": "<div>【圖文時間】 《幸福就是吃飯睡覺等待 vol.4》</div><div><br></div>",
+      "caption": "<div><div><div><span>生病以後，重新練習好好生活──專訪《幸福就是吃飯睡覺等待》漫畫作者水凪トリ｜《提案》10月號「修復的練習」</span></div></div><div><div><span><br></span></div></div><div><div><span>撰文｜廖昀靖</span></div></div><div><div><span>回訪與照片提供｜水凪トリ</span></div></div><div><div><span>翻譯｜鄭稟祿</span></div></div><div><div><span><br></span></div></div><div><div><span>38歲的麥卷聰子一週只打工四天，事情一做完就下班。不熟的同事猜測，聰子家大概很有錢吧，但根本不是──光是每週四次的通勤加上班，就快要了聰子的命。</span></div></div><div><div><span><br></span></div></div><div><div><span>漫畫《幸福就是吃飯睡覺等待》描述患有膠原病的聰子，在身心極限中找尋適合自己的生存方法。或許是來自作者水凪トリ罹患同樣病症的貼身經驗，沒有說教，只有簡單的食物、單純的人心。</span></div></div><div><div><span><br></span></div></div><div><div><span>誠品書店誌《提案》10月號「修復的練習」邀請同與疾病相依的寫作者廖昀靖 call out 向水凪トリ提問，深談關於生病以後的生活。</span></div></div><div><div><span><br></span></div></div><div><div><span>失去單邊聽力的廖昀靖</span></div></div><div><div><span>-----☏--Call out 連線--☏-----  </span></div></div><div><div><span>患上膠原病的水凪トリ</span></div></div><div><div><span><br></span></div></div><div><div><span>#廖昀靖</span></div></div><div><div><span>台灣寫作者。2019年某天一覺醒來發生突發性聽障，右耳幾乎失去聽力。住院治療7天後，主治醫師很快明確告訴她：妳要好很難了。找不到病因。</span></div></div><div><div><span>很快回到公司上班的她，感覺世界突然變得未知，彷彿過去所理解、運作的一切都已經不足夠了──這於是成為她冒險的起點。這趟內在探索的旅程，化作今年自費出版的《奶油色與石頭》。</span></div><div><span><br></span></div></div><div><div><span>#水凪トリ （Mizunagi Tori）</span></div></div><div><div><span>日本漫畫家。在患有慢性病療養期間，因接觸健康飲食療法「藥膳」得到改善，於是決定將「與無法痊癒的身體溫柔相處」的過程畫成漫畫《幸福就是吃飯睡覺等待》。</span></div></div><div><div><span>相信好好透過飲食和睡覺調整體質，讓幸福到來時能健康一點點。</span></div></div><div><div><span>＊以下內容涉及漫畫《幸福就是吃飯睡覺等待》劇情，在意者請斟酌閱讀＊</span></div></div><div><div><span><br></span></div></div><div><div><span>只做到八分滿，和別人不一樣也沒關係</span></div></div><div><div><span><br></span></div></div><div><div><span>昀靖：作品裡有許多讓我印象深刻的價值觀。房東鈴媽說「跟過去的自己比」只會難受，不如期待未來新的自己；青葉小姐談到「負能力」，接受自己做不到也是一種能力。</span></div></div><div><div><span>這些話，對因為生病而覺得自己「變差了」或「跟不上」社會的人，尤其重要。請問這些想法是您一開始就想傳達的，還是隨著角色逐漸成形，在描繪過程中自然發展出來的？</span></div></div><div><div><span><br></span></div></div><div><div><span>水凪：《幸福就是吃飯睡覺等待》是我還在向出版社投稿漫畫的那段期間，創作出來的。當時身體狀況也不太好，持續投稿約3年。期間被幾家雜誌拒絕，也曾在洽談室裡被人斥責過。不過很幸運地，最後還是走到了能夠出版單行本的階段。</span></div></div><div><div><span>後來，反而有一些當初投稿時沒有採用我的作品的雜誌主動找上門來，但這些工作我一個也沒辦法接。</span></div></div><div><div><span>這部作品是以一年10話、每話16頁的速度在畫，一般來說這其實是可以負荷的工作量，但我能明顯感覺到身體狀況變差。即使如此，我心裡還是一直有著「總有一天想做得更多！」的念頭。</span></div></div><div><div><span>到了2025年，又碰上連載、電視劇相關工作和採訪同時進行，腦袋變得像蒙上了一層膜一樣。後來暫停工作休息後，因為本身的慢性病影響，得了胃潰瘍。</span></div></div><div><div><span>今年重新開始畫漫畫後，我把速度降到以前的一半以下。只要太過勉強自己，喉嚨就會腫起來，所以現在會提醒自己，在變成那樣之前就先休息。</span></div></div><div><div><span>現在的我，做什麼都只能做到八分滿，也正在思考，像現在這樣的自己，今後要用什麼樣的步調才能繼續走下去。</span></div></div><div><div><span>我想，到了這個地步，也只能接受現況了。接下來，大概就是「慢慢思考今後該怎麼走」吧。慢一點也沒關係。聰子也是一邊和自己的狀況磨合，一步一步找出適合自己的生活方式。</span></div></div><div><div><span>我沒有在公司上過班，比較沒有那種「一定要配合社會主流」的感覺。另外，我很喜歡音樂，在自己最容易受到影響的年紀，龐克運動剛好傳入日本，所以我想「和別人不一樣也沒關係」這樣的價值觀，或許一直深植在我的心裡。雖然這麼說好像有點像在開玩笑……（第5集裡也會出現這樣的人物）。</span></div></div><div><div><span>不過，這些其實都是現在回頭想，才覺得「好像的確是這樣」。我並不是抱著「想透過《幸福就是吃飯睡覺等待》傳達什麼」這樣的想法去畫這部漫畫，而是在畫著畫著的過程中，反而像是故事裡的角色自己說出這些話來。</span></div></div><div><div><span><br></span></div></div><div><div><span>更多專訪內容在迷誠品！</span></div></div><div><div><span>小編放在留言連結～</span></div></div><div><div><span><br></span></div></div><div><div><span style=\"background-color:rgba(24, 119, 242, 0.2)\"><span>#幸福就是吃飯睡覺等待</span></span><span>  </span><span style=\"background-color:rgba(24, 119, 242, 0.2)\"><span>#大田出版</span></span><span> </span><span style=\"background-color:rgba(24, 119, 242, 0.2)\"><span>#水凪トリ</span></span><span> </span><span style=\"background-color:rgba(24, 119, 242, 0.2)\"><span>#專訪</span></span></div></div></div>",
       "time": "09:00",
       "canvaUrl": "",
       "ratio": "1-1",
@@ -3747,7 +3747,7 @@ var externalDB = {
       "title": "幸福就是吃飯睡覺等待 vol.4",
       "status": "draft",
       "createdAt": "2026-10-05T08:36:31.642Z",
-      "updatedAt": "2026-10-05T08:36:31.642Z"
+      "updatedAt": "2026-10-05T09:30:31.515Z"
     }
   ],
   "2026-10-12": [
@@ -3791,7 +3791,7 @@ var externalDB = {
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-10-05T09:02:47.728Z",
+  "updatedAt": "2026-10-05T09:31:06.686Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
