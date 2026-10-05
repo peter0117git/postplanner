@@ -3663,7 +3663,7 @@ var externalDB = {
     },
     {
       "_id": "p_1791168679130_o1holw",
-      "caption": "<div>【晚上多讀一點點】 《慢慢寄出去的心》</div><div><br></div><div><div>輕輕一笑，好像悲傷就沒有那麼悲傷？</div><div><div><div><br></div><div>還是，笑著笑著就流出眼淚……</div><div><br></div><div>這裡的每一個人，總是若無其事說出：「今天是我的生日。」</div><div><br></div><div>有假的生日，也有真正的生日，沒有人知道。</div><div>離家出走的少年，瘋狂尋找時光膠囊的準高中生，</div><div>想進入夢境為媽媽唱搖籃曲的亡魂，</div><div>每天都會拍一張雲朵照片的高樓油漆工……</div><div>&nbsp;</div><div><br></div><div>生日與死亡，有遺憾，有灑脫，有喜悅，交織過去，願望未來。</div><div>&nbsp;</div><div><div>把心弄傷了。</div><div><br></div><div>但是心，大概是在什麼地方呢？</div><div><br></div><div>只願今天能夠幸福。寫小說時，我總會不知不覺許下這樣的願望。__作者 尹成姬</div></div><div><br></div><div>在「尹成姬式」的小說裡，幸福與不幸總是輪流著來，</div><div>不幸也有可愛的不幸呢。上一秒與下一秒，</div><div>不說安慰，卻被安慰了；不說同理，卻溫柔理解了。</div></div><div><br></div><div>#大田出版 #尹成姬 #溫柔 #小說</div></div></div>",
+      "caption": "<div>【晚上多讀一點點】 《慢慢寄出去的心》</div><div><br></div><div><div>〈時光膠囊〉</div><div><br></div><div><div>在我十五歲生日那天，父親和姑姑向我承諾，以後只要是生日，不論我闖了多大的禍，都不會責罵我。</div><div>那天我和朋友們計畫舉辦一場很棒的生日派對，智久家的院子裡有一座蒙古包，我們打算在那裡玩通宵。智久的父親曾經在遊戲公司工作，後來因為罹患恐慌症請了長假。他在院子裡搭起蒙古包，白天做木工，晚上守著火堆發呆。</div><div><br></div><div>這樣度過一年之後，他為了那段時間發生的一切向女兒道歉，並問她在即將到來的生日想要做什麼。智久說，她想在蒙古包裡和朋友開一場睡衣派對。</div><div><br></div><div>我和智久的生日在同一天。我們說好在上高中前要辦一場終生難忘的生日派對，同款的睡衣都已經買好了。</div><div>結果在生日的前三天，爸爸突然說我們要搬家。我那時才知道家裡的炸雞店幾個月前就倒了，房租繳不出來，連押金都被收走了。</div><div><br></div><div>「這間房子星期六之前也要清空，然後我查了一下，星期六是良辰吉日，我們在那天搬家的話，說不定爸爸的運勢也會變好。」</div><div>爸爸如此說道。我生氣地反問他的人生到底什麼時候有好運過了。</div><div>之前這麼說的時候，爸爸總會搖搖頭說：「唉……怎麼這樣說話。」</div><div>但是那天他卻忽然流下眼淚，邊哭邊說：「對啊……對啊……」</div><div>因為爸爸哭了，我也不敢提起生日派對的事。</div><div>鄉下的老家只有姑姑一個人住。爺爺過世時留下一棟房子，爸爸和姑姑原本打算賣掉房子把錢平分，但房仲說那棟房子的行情連五千萬韓元都不到，不會有人願意買。</div><div>姑姑便以放棄討回爸爸跟她借的三千萬韓元為條件，獨自繼承這間鄉下房子。姑姑每到週末就去鄉下修繕那棟破舊的老房子，前年甚至直接辭掉工作回到家鄉定居，並在鎮上的小學對面開了一間麻花捲店，生意似乎還過得去。</div><div><br></div><div>搬家那天，爸爸和姑姑吵了起來，因為房間分配的問題。最大的主臥房是姑姑要用，第二大的房間歸我，第三間房間因為太小，連書桌都放不下，最後只能讓爸爸去住最小的那間。</div><div>他提出要和姑姑交換，姑姑則說這樣的話要付房租。爸爸聽了勃然大怒，說她怎麼可以對破產的人談錢。</div><div><br></div><div>「從小就這麼惡毒，吝嗇的女人。」爸爸責罵姑姑。</div><div>「你從小到大連一杯水都沒自己盛過，沒用的廢物。」姑姑也回嘴。</div><div><br></div><div>我看著兩人爭吵，大喊道：「太過分了！你們真的太過分了！今天是我生日欸！」</div><div>話一出口，我哭了出來，卻又覺得丟臉而立刻躲進廁所。</div><div>過了很久，爸爸敲響廁所的門，然後吹起口哨。</div><div>「Ra―So―Mi―Mi―」</div><div>那是黑背杜鵑的叫聲。</div><div><br></div><div>媽媽說，她第一次聽到鄉下房屋院子裡黑背杜鵑的啼叫，就是那次來幫爺爺上香的時候。媽媽問爸爸那種鳥叫什麼名字，爸爸卻回答不出來，因為鎮上的大哥們都把那種鳥叫做「脫光光鳥」，爸爸也一直認為那是牠的名字。</div><div>媽媽模仿著鳥鳴聲，一邊說道：「沒關係，沒關係。」</div><div>此後，不會吹口哨的爸爸為了模仿黑背杜鵑的叫聲，足足練習了六個月。</div><div><br></div><div>爸爸用口哨發出鳥叫聲的時候，媽媽總會從當中聽出隱藏的涵義。有的時候是「肚子好餓」，有的時候是「我好幸福」，有的時候則是「別生氣了」，而有的時候是「謝謝妳」。</div><div>「Ra―So―Mi―Mi―不好意思。Ra―So―Mi―Mi―不好意思。」</div><div><br></div><div>說完之後，爸爸又吹一次口哨，我忍不住噗哧笑出來。</div><div>走到外面，姑姑正在院子裡生火烤五花肉。她包好生菜後放到我的嘴裡，說：「生日快樂。還有，抱歉。」</div><div>我順口向爸爸要生日禮物，爸爸說：</div><div>「從今以後，只要是妳生日，不論妳闖多大的禍我都不會罵妳，真的，也不會碎碎念。」</div><div>聽到爸爸這麼說，我又哭了起來。</div><div>「一輩子都不會？不管我闖什麼禍？」</div><div>爸爸伸出小指頭說：「嗯，一輩子，不管妳做了什麼。」</div><div>「姑姑也要跟我約定。」</div><div>姑姑伸出小指頭。</div><div>「嗯，一輩子，不管妳做了什麼。」</div><div><br></div><div>摘自《慢慢寄出去的心》-〈時光膠囊〉p.30~32</div><div><br></div></div><div><div>#大田出版 #尹成姬 #溫柔 #小說</div></div></div>",
       "time": "20:00",
       "canvaUrl": "https://www.canva.com/design/DAHWkHw-NqU/v1Zcx3W8Br_36qQJCJG2lQ/view?utm_content=DAHWkHw-NqU&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h8fc64f4bca",
       "ratio": "1-1",
@@ -3671,7 +3671,7 @@ var externalDB = {
       "title": "慢慢寄出去的心",
       "status": "draft",
       "createdAt": "2026-10-05T02:51:19.130Z",
-      "updatedAt": "2026-10-05T06:34:27.571Z"
+      "updatedAt": "2026-10-05T08:19:58.403Z"
     }
   ],
   "2026-10-08": [
@@ -3703,13 +3703,13 @@ var externalDB = {
       "_id": "p_1791168743388_etg7n6",
       "caption": "<div>【晚上多讀一點點】 《慢慢寄出去的心》</div><div><br></div><div><div>慢慢行走、慢慢觀看、慢慢思考的人們的，幸福的一天。<br>為了描繪那一天，我也試著慢慢行走、慢慢觀看、慢慢思考。</div><div>——作者 尹成姬</div><div><br></div><div>把心弄傷了。</div><div>但是心，大概是在什麼地方呢？</div><div><br>輕輕一笑，好像悲傷就沒有那麼悲傷？</div><div>還是，笑著笑著就流出眼淚……</div><div>這裡的每一個人，總是若無其事說出：「今天是我的生日。」</div><div>有假的生日，也有真正的生日，沒有人知道。</div><div>離家出走的少年，瘋狂尋找時光膠囊的準高中生，</div><div>想進入夢境為媽媽唱搖籃曲的亡魂，</div><div>每天都會拍一張雲朵照片的高樓油漆工……</div><div>&nbsp;</div><div>生日與死亡，有遺憾，有灑脫，有喜悅，交織過去，願望未來。</div><div>&nbsp;</div><div>在「尹成姬式」的小說裡，幸福與不幸總是輪流著來，</div><div>不幸也有可愛的不幸呢。上一秒與下一秒，</div><div>不說安慰，卻被安慰了；不說同理，卻溫柔理解了。</div></div><div><br></div><div><span>#大田出版 #尹成姬 #溫柔 #小說</span></div>",
       "time": "20:00",
-      "canvaUrl": "https://www.canva.com/design/DAHXH49J8LY/Nr3XboihftEKgnGrgwKd7Q/view?utm_content=DAHXH49J8LY&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h5e2595babb#2",
+      "canvaUrl": "https://www.canva.com/design/DAHXH49J8LY/Nr3XboihftEKgnGrgwKd7Q/view?utm_content=DAHXH49J8LY&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h5e2595babb#1",
       "ratio": "4-5",
       "theme": "晚上多讀一點點",
       "title": "慢慢寄出去的心",
       "status": "draft",
       "createdAt": "2026-10-05T02:52:23.388Z",
-      "updatedAt": "2026-10-05T07:37:19.318Z"
+      "updatedAt": "2026-10-05T08:14:53.432Z"
     }
   ],
   "2026-10-09": [
@@ -3724,12 +3724,74 @@ var externalDB = {
       "status": "draft",
       "createdAt": "2026-10-05T02:53:20.484Z",
       "updatedAt": "2026-10-05T03:21:59.969Z"
+    },
+    {
+      "_id": "p_1791188714284_zw4cd3",
+      "caption": "<div><div><div>【晚上多讀一點點】 《外面是夏天》</div></div><div><div><span>#金愛爛</span></div></div><div><div>外面是夏天，但我的靈魂正在下雪。</div><div>某部分的我消失了，而且找不到挽回的辦法，</div><div>該怎麼從失去摯愛的傷痛中康復，該怎麼嚥下自己的脆弱與無知，</div><div>我想要往外面走去，往那豐饒耀眼的夏天走去，</div><div>我願意交換一切，只求時間能快點蛻去我痛苦的皮。</div></div><div><div>喪子的夫妻、初嘗虛榮的貧窮少年、替前輩揹鍋的年輕助教，</div><div>正要綻放的生命突然襲來寒冬……。</div><div>七個關於蛻變的故事，獻給所有與社會有時間差的生命們。</div></div><div><div>第四十八屆東仁文學獎得獎作品《外面是夏天》，是韓國作家金愛爛的第四部短篇小說集，她以＜沉默的未來＞成為李箱文學獎最年輕的得主，又以＜您想去哪裡呢？＞榮獲第八屆青年作家獎。本書在韓國銷量更是突破二十五萬冊，是金愛爛叫好又叫座的一部經典作品。</div></div><div><div>金愛爛是你遇見之後，就會愛上的小說家</div><div>她的文字，連金泰梨都愛不釋手！</div></div><div><div>「她最擅長描繪難以啟齒卻又無法迴避的情感。」——韓國百想視后 金泰梨</div><div>「一位值得等待的作家。」－－韓國讀者Geulwolmaya</div></div><div><div>「讀完之後，我感覺全身都濕透了。」－－韓國讀者Oktaeng</div></div><div><div>「我喜歡把《外面是夏天》比作一個傷心失去博物館，博物館裡陳列的七個短篇，講述了生活中無法避免的失去。」－－中國讀者 樹上的兔女爵</div></div><div><div>「讀完第一篇故事後，我立刻起了雞皮疙瘩……每一個字句都讓我發出『哇』的讚嘆，我不知道該如何形容這種感覺。我很難過，因為我覺得生活中一定也有人經歷過類似的痛苦。」－－韓國讀者 d**********0</div></div><div><div>「看完《你的夏天還好嗎？》緊接著看《外面是夏天》，作家本人的成長特别明顯。上一本充滿各種各樣的氣息，更敏感；這本就有那種『慢性心绞痛』的感覺，你看著看著就覺得怎麼回事？心口流血了。」－－中國讀者 廿姨太</div></div><div><div><span>#大田出版</span> <span>#你的夏天還好嗎</span></div></div></div>",
+      "time": "20:00",
+      "canvaUrl": "https://www.canva.com/design/DAHUfCfsUp8/4l77GqQz8ls3dkGUzAELkg/view?utm_content=DAHUfCfsUp8&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc3391f98c7",
+      "ratio": "1-1",
+      "theme": "晚上多讀一點點",
+      "title": "外面是夏天",
+      "status": "draft",
+      "createdAt": "2026-10-05T08:25:14.284Z",
+      "updatedAt": "2026-10-05T08:33:05.429Z"
+    },
+    {
+      "_id": "p_1791189391642_4qdz5o",
+      "caption": "<div>【圖文時間】 《幸福就是吃飯睡覺等待 vol.4》</div><div><br></div>",
+      "time": "09:00",
+      "canvaUrl": "",
+      "ratio": "1-1",
+      "theme": "圖文時間",
+      "title": "幸福就是吃飯睡覺等待 vol.4",
+      "status": "draft",
+      "createdAt": "2026-10-05T08:36:31.642Z",
+      "updatedAt": "2026-10-05T08:36:31.642Z"
+    }
+  ],
+  "2026-10-12": [
+    {
+      "_id": "p_1791189330457_1fdfo7",
+      "caption": "<div>【晚上多讀一點點】 《慢慢寄出去的心》</div><div><br></div>",
+      "time": "20:00",
+      "canvaUrl": "",
+      "ratio": "1-1",
+      "theme": "晚上多讀一點點",
+      "title": "慢慢寄出去的心",
+      "status": "draft",
+      "createdAt": "2026-10-05T08:35:30.457Z",
+      "updatedAt": "2026-10-05T08:35:30.457Z"
+    },
+    {
+      "_id": "p_1791189341460_u9znrr",
+      "caption": "<div>【早上只讀一點點】 《一次又一次又一次地重新開始》</div><div><br></div>",
+      "time": "08:00",
+      "canvaUrl": "",
+      "ratio": "1-1",
+      "theme": "早上只讀一點點",
+      "title": "一次又一次又一次地重新開始",
+      "status": "draft",
+      "createdAt": "2026-10-05T08:35:41.460Z",
+      "updatedAt": "2026-10-05T08:35:41.460Z"
+    },
+    {
+      "_id": "p_1791189370560_h5lohb",
+      "caption": "<div>【圖文時間】 《幸福就是吃飯睡覺等待 vol.4》</div><div><br></div>",
+      "time": "18:00",
+      "canvaUrl": "",
+      "ratio": "1-1",
+      "theme": "圖文時間",
+      "title": "幸福就是吃飯睡覺等待 vol.4",
+      "status": "draft",
+      "createdAt": "2026-10-05T08:36:10.560Z",
+      "updatedAt": "2026-10-05T08:36:10.560Z"
     }
   ]
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-10-05T07:38:02.825Z",
+  "updatedAt": "2026-10-05T08:36:39.642Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
