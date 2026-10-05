@@ -3701,7 +3701,7 @@ var externalDB = {
     },
     {
       "_id": "p_1791168743388_etg7n6",
-      "caption": "<div>【晚上多讀一點點】 《慢慢寄出去的心》</div><div><br></div>",
+      "caption": "<div>【晚上多讀一點點】 《慢慢寄出去的心》</div><div><br></div><div><div>慢慢行走、慢慢觀看、慢慢思考的人們的，幸福的一天。<br>為了描繪那一天，我也試著慢慢行走、慢慢觀看、慢慢思考。</div><div>——作者 尹成姬</div><div><br></div><div>把心弄傷了。</div><div>但是心，大概是在什麼地方呢？</div><div><br>輕輕一笑，好像悲傷就沒有那麼悲傷？</div><div>還是，笑著笑著就流出眼淚……</div><div>這裡的每一個人，總是若無其事說出：「今天是我的生日。」</div><div>有假的生日，也有真正的生日，沒有人知道。</div><div>離家出走的少年，瘋狂尋找時光膠囊的準高中生，</div><div>想進入夢境為媽媽唱搖籃曲的亡魂，</div><div>每天都會拍一張雲朵照片的高樓油漆工……</div><div>&nbsp;</div><div>生日與死亡，有遺憾，有灑脫，有喜悅，交織過去，願望未來。</div><div>&nbsp;</div><div>在「尹成姬式」的小說裡，幸福與不幸總是輪流著來，</div><div>不幸也有可愛的不幸呢。上一秒與下一秒，</div><div>不說安慰，卻被安慰了；不說同理，卻溫柔理解了。</div></div><div><br></div><div><span>#大田出版 #尹成姬 #溫柔 #小說</span></div>",
       "time": "20:00",
       "canvaUrl": "https://www.canva.com/design/DAHXH49J8LY/Nr3XboihftEKgnGrgwKd7Q/view?utm_content=DAHXH49J8LY&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h5e2595babb#2",
       "ratio": "4-5",
@@ -3709,7 +3709,7 @@ var externalDB = {
       "title": "慢慢寄出去的心",
       "status": "draft",
       "createdAt": "2026-10-05T02:52:23.388Z",
-      "updatedAt": "2026-10-05T07:34:03.037Z"
+      "updatedAt": "2026-10-05T07:37:19.318Z"
     }
   ],
   "2026-10-09": [
@@ -3724,36 +3724,12 @@ var externalDB = {
       "status": "draft",
       "createdAt": "2026-10-05T02:53:20.484Z",
       "updatedAt": "2026-10-05T03:21:59.969Z"
-    },
-    {
-      "_id": "p_1791168825084_1q04x0",
-      "caption": "<div>【圖文時間】 《幸福就是吃飯睡覺等待 vol.4》</div><div><br></div>",
-      "time": "18:00",
-      "canvaUrl": "",
-      "ratio": "1-1",
-      "theme": "圖文時間",
-      "title": "幸福就是吃飯睡覺等待 vol.4",
-      "status": "draft",
-      "createdAt": "2026-10-05T02:53:45.084Z",
-      "updatedAt": "2026-10-05T02:53:45.084Z"
-    },
-    {
-      "_id": "p_1791168847232_gsug7s",
-      "caption": "<div>【晚上多讀一點點】 《外面是夏天》</div><div><br></div>",
-      "time": "20:00",
-      "canvaUrl": "",
-      "ratio": "1-1",
-      "theme": "晚上多讀一點點",
-      "title": "外面是夏天",
-      "status": "draft",
-      "createdAt": "2026-10-05T02:54:07.232Z",
-      "updatedAt": "2026-10-05T02:54:07.232Z"
     }
   ]
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-10-05T07:35:01.084Z",
+  "updatedAt": "2026-10-05T07:38:02.825Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
@@ -3765,6 +3741,8 @@ var externalDBMeta = {
     "p_1789455366471_p84irw": "2026-09-16T07:13:00.684Z",
     "p_1789971985121_5cfc71": "2026-09-23T06:33:48.521Z",
     "p_1789982575874_99x1op": "2026-09-23T06:33:52.353Z",
-    "p_1790667151616_jsv0k5": "2026-09-29T07:35:22.666Z"
+    "p_1790667151616_jsv0k5": "2026-09-29T07:35:22.666Z",
+    "p_1791168825084_1q04x0": "2026-10-05T07:37:50.558Z",
+    "p_1791168847232_gsug7s": "2026-10-05T07:37:52.966Z"
   }
 };
