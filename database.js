@@ -3532,6 +3532,18 @@ var externalDB = {
       "status": "draft",
       "createdAt": "2026-09-29T09:12:46.374Z",
       "updatedAt": "2026-09-29T09:13:24.242Z"
+    },
+    {
+      "_id": "p_1790840100596_bv25ey",
+      "caption": "<div>【大田好消息】</div><div><br></div><div>《青椒肉絲的絲，麻婆豆腐的麻：舌尖上的中文》榮獲文化部2026年「第48次中小學生讀物選介」</div><div><br></div><div>#新井一二三</div><div><br></div><div>&nbsp;讓人垂涎三尺，怦然心動好吃的散文</div><div><br></div><div><div>解開食物隱藏的中文風情，美味加倍。</div><div><br></div><div>你知道在東京滿街的「拉麵」店，日本人卻覺得拉麵是中餐？</div><div><br></div><div>日語的餃子有山東口音？燒賣、叉燒有廣東語音？</div><div><br></div><div>但實際日本人愛鍋貼多於愛餃子？</div><div><br></div><div>台灣人創造新名詞「涮涮鍋」又是怎麼流行起來？</div><div><br></div><div>青椒肉絲、麻婆豆腐，原來一道一道菜的背後故事如此精彩！</div><div><br></div><div>從經典的回鍋肉、北京烤鴨、麻油麵線，到台灣、馬來西亞才吃得到的「幻之麵」，甚至是家常菜排名第一的「番茄炒蛋」，新井一二三長期在中文世界探索研究，日常生活更勤於在廚房切切煮煮，得出許多料理體驗與知識，這回她以輕鬆愉快的筆觸，不僅打開日本人的眼界，更讓我們對每天熟悉的味道，耳熟能詳的菜名，慢慢像拼圖遊戲一樣，在無限的變化當中，找出隱藏在其中的強大祕密。</div></div><div><br></div><div>#大田出版 #美食</div>",
+      "time": "08:00",
+      "canvaUrl": "",
+      "ratio": "4-5",
+      "theme": "大田好消息",
+      "title": "",
+      "status": "draft",
+      "createdAt": "2026-10-01T07:35:00.596Z",
+      "updatedAt": "2026-10-01T07:37:08.064Z"
     }
   ],
   "2026-10-04": [
@@ -3560,12 +3572,188 @@ var externalDB = {
       "status": "draft",
       "createdAt": "2026-09-30T06:07:15.939Z",
       "updatedAt": "2026-09-30T07:08:13.858Z"
+    },
+    {
+      "_id": "p_1791168488333_xi1i2m",
+      "caption": "<div>【圖文時間】 《幸福就是吃飯睡覺等待 vol.4》</div><div><br></div>",
+      "time": "18:00",
+      "canvaUrl": "",
+      "ratio": "1-1",
+      "theme": "圖文時間",
+      "title": "幸福就是吃飯睡覺等待 vol.4",
+      "status": "draft",
+      "createdAt": "2026-10-05T02:48:08.333Z",
+      "updatedAt": "2026-10-05T02:48:08.333Z"
+    },
+    {
+      "_id": "p_1791168505058_jf01im",
+      "caption": "<div>【晚上多讀一點點】 《慢慢寄出去的心》</div><div><br></div>",
+      "time": "20:00",
+      "canvaUrl": "",
+      "ratio": "1-1",
+      "theme": "晚上多讀一點點",
+      "title": "慢慢寄出去的心",
+      "status": "draft",
+      "createdAt": "2026-10-05T02:48:25.058Z",
+      "updatedAt": "2026-10-05T02:52:49.344Z"
+    }
+  ],
+  "2026-10-06": [
+    {
+      "_id": "p_1791168540674_xy6knf",
+      "caption": "<div>【早上只讀一點點】 《一次又一次又一次地重新開始》</div><div><br></div>",
+      "time": "08:00",
+      "canvaUrl": "",
+      "ratio": "1-1",
+      "theme": "早上只讀一點點",
+      "title": "一次又一次又一次地重新開始",
+      "status": "draft",
+      "createdAt": "2026-10-05T02:49:00.674Z",
+      "updatedAt": "2026-10-05T02:49:00.674Z"
+    },
+    {
+      "_id": "p_1791168566946_oh97pj",
+      "caption": "<div>【圖文時間】 《幸福就是吃飯睡覺等待 vol.4》</div><div><br></div>",
+      "time": "18:00",
+      "canvaUrl": "",
+      "ratio": "1-1",
+      "theme": "圖文時間",
+      "title": "幸福就是吃飯睡覺等待 vol.4",
+      "status": "draft",
+      "createdAt": "2026-10-05T02:49:26.946Z",
+      "updatedAt": "2026-10-05T02:49:26.946Z"
+    },
+    {
+      "_id": "p_1791168578924_htsj6q",
+      "caption": "<div>【晚上多讀一點點】 《#尋找蜘蛛：日本暢銷超過36萬冊，西加奈子的生命故事》</div><div><br></div>",
+      "time": "20:00",
+      "canvaUrl": "",
+      "ratio": "1-1",
+      "theme": "晚上多讀一點點",
+      "title": "#尋找蜘蛛：日本暢銷超過36萬冊，西加奈子的生命故事",
+      "status": "draft",
+      "createdAt": "2026-10-05T02:49:38.924Z",
+      "updatedAt": "2026-10-05T02:53:01.833Z"
+    }
+  ],
+  "2026-10-07": [
+    {
+      "_id": "p_1791168646535_25vixd",
+      "caption": "<div>【早上只讀一點點】 《你沒有更好的命運(出版十周年．增修紀念版)》</div><div><br></div>",
+      "time": "08:00",
+      "canvaUrl": "",
+      "ratio": "1-1",
+      "theme": "早上只讀一點點",
+      "title": "你沒有更好的命運(出版十周年．增修紀念版)",
+      "status": "draft",
+      "createdAt": "2026-10-05T02:50:46.535Z",
+      "updatedAt": "2026-10-05T02:50:46.535Z"
+    },
+    {
+      "_id": "p_1791168665758_9bhtj4",
+      "caption": "<div>【圖文時間】 《宇希時間》</div><div><br></div>",
+      "time": "18:00",
+      "canvaUrl": "",
+      "ratio": "1-1",
+      "theme": "圖文時間",
+      "title": "宇希時間",
+      "status": "draft",
+      "createdAt": "2026-10-05T02:51:05.758Z",
+      "updatedAt": "2026-10-05T02:51:05.758Z"
+    },
+    {
+      "_id": "p_1791168679130_o1holw",
+      "caption": "<div>【晚上多讀一點點】 《慢慢寄出去的心》</div><div><br></div>",
+      "time": "20:00",
+      "canvaUrl": "",
+      "ratio": "1-1",
+      "theme": "晚上多讀一點點",
+      "title": "慢慢寄出去的心",
+      "status": "draft",
+      "createdAt": "2026-10-05T02:51:19.130Z",
+      "updatedAt": "2026-10-05T02:51:19.130Z"
+    }
+  ],
+  "2026-10-08": [
+    {
+      "_id": "p_1791168700384_8fu5yt",
+      "caption": "<div>【早上只讀一點點】 《你就是困住自己的那座山》</div><div><br></div>",
+      "time": "08:00",
+      "canvaUrl": "",
+      "ratio": "1-1",
+      "theme": "早上只讀一點點",
+      "title": "你就是困住自己的那座山",
+      "status": "draft",
+      "createdAt": "2026-10-05T02:51:40.384Z",
+      "updatedAt": "2026-10-05T02:51:40.384Z"
+    },
+    {
+      "_id": "p_1791168721781_3akoda",
+      "caption": "<div>【圖文時間】 《希望溫暖你的每一天(精采夜光版)》</div><div><br></div>",
+      "time": "18:00",
+      "canvaUrl": "",
+      "ratio": "1-1",
+      "theme": "圖文時間",
+      "title": "希望溫暖你的每一天(精采夜光版)",
+      "status": "draft",
+      "createdAt": "2026-10-05T02:52:01.781Z",
+      "updatedAt": "2026-10-05T02:52:06.821Z"
+    },
+    {
+      "_id": "p_1791168743388_etg7n6",
+      "caption": "<div>【晚上多讀一點點】 《慢慢寄出去的心》</div><div><br></div>",
+      "time": "20:00",
+      "canvaUrl": "",
+      "ratio": "1-1",
+      "theme": "晚上多讀一點點",
+      "title": "慢慢寄出去的心",
+      "status": "draft",
+      "createdAt": "2026-10-05T02:52:23.388Z",
+      "updatedAt": "2026-10-05T02:52:29.831Z"
+    }
+  ],
+  "2026-10-09": [
+    {
+      "_id": "p_1791168800484_1ezj7y",
+      "caption": "<div>【早上只讀一點點】 《會好起來的，就算不是現在》</div><div><br></div>",
+      "time": "08:00",
+      "canvaUrl": "",
+      "ratio": "1-1",
+      "theme": "早上只讀一點點",
+      "title": "會好起來的，就算不是現在",
+      "status": "draft",
+      "createdAt": "2026-10-05T02:53:20.484Z",
+      "updatedAt": "2026-10-05T02:53:20.484Z"
+    },
+    {
+      "_id": "p_1791168825084_1q04x0",
+      "caption": "<div>【圖文時間】 《幸福就是吃飯睡覺等待 vol.4》</div><div><br></div>",
+      "time": "18:00",
+      "canvaUrl": "",
+      "ratio": "1-1",
+      "theme": "圖文時間",
+      "title": "幸福就是吃飯睡覺等待 vol.4",
+      "status": "draft",
+      "createdAt": "2026-10-05T02:53:45.084Z",
+      "updatedAt": "2026-10-05T02:53:45.084Z"
+    },
+    {
+      "_id": "p_1791168847232_gsug7s",
+      "caption": "<div>【晚上多讀一點點】 《外面是夏天》</div><div><br></div>",
+      "time": "20:00",
+      "canvaUrl": "",
+      "ratio": "1-1",
+      "theme": "晚上多讀一點點",
+      "title": "外面是夏天",
+      "status": "draft",
+      "createdAt": "2026-10-05T02:54:07.232Z",
+      "updatedAt": "2026-10-05T02:54:07.232Z"
     }
   ]
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-30T07:28:15.702Z",
+  "updatedAt": "2026-10-05T02:54:17.735Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
