@@ -3639,15 +3639,15 @@ var externalDB = {
   "2026-10-07": [
     {
       "_id": "p_1791168646535_25vixd",
-      "caption": "<div>【早上只讀一點點】 《你沒有更好的命運(出版十周年．增修紀念版)》</div><div><br></div>",
+      "caption": "<div>【早上只讀一點點】 《你沒有更好的命運(出版十周年．增修紀念版)》</div><div><br></div><div>#任明信</div><div><br></div><div>〈末日〉</div><div><br></div><div><div>我是真心希望你們來找我</div><div>帶著你們的靈魂</div><div>不帶多餘的期待</div><div><br></div><div>我們是如此幸福</div><div>關心的人都紛紛離開</div></div><div><br></div><div><div>太陽越來越溫暖</div><div>可愛的動物們正</div><div>可愛地消失</div><div><br></div><div>還要繼續失眠畢竟</div><div>海水尚未淹沒我們的床</div><div>我們不要睡眠</div><div>但如果你想</div><div>我會願意哄你</div><div>在沙灘上為你</div><div>攏幾朵浪當棉被</div></div><div><br></div><div><div>夜裡錯把航機當成流星</div><div>許願並且真的實現</div></div><div>-</div><div>摘自《你沒有更好的命運(出版十周年．增修紀念版)》-〈末日〉</div><div><br></div><div>#大田出版 #詩</div><div><br></div><div><br></div><div><br></div>",
       "time": "08:00",
-      "canvaUrl": "",
+      "canvaUrl": "https://www.canva.com/design/DAHXGibqY3w/wWFJYmHy3ht33shGGPDiEw/view?utm_content=DAHXGibqY3w&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h076f5a6d1c",
       "ratio": "1-1",
       "theme": "早上只讀一點點",
       "title": "你沒有更好的命運(出版十周年．增修紀念版)",
       "status": "draft",
       "createdAt": "2026-10-05T02:50:46.535Z",
-      "updatedAt": "2026-10-05T02:50:46.535Z"
+      "updatedAt": "2026-10-05T02:59:46.775Z"
     },
     {
       "_id": "p_1791168665758_9bhtj4",
@@ -3753,7 +3753,7 @@ var externalDB = {
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-10-05T02:54:17.735Z",
+  "updatedAt": "2026-10-05T03:00:00.890Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
