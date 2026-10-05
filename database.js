@@ -3613,15 +3613,15 @@ var externalDB = {
     },
     {
       "_id": "p_1791168566946_oh97pj",
-      "caption": "<div>【圖文時間】 《幸福就是吃飯睡覺等待 vol.4》</div><div><br></div>",
+      "caption": "<div>【圖文時間】 《幸福就是吃飯睡覺等待 vol.4》</div><div><br></div><div><div>平淡的相遇，也是一種幸運。</div><div>沒有特別戲劇化的開始，<br>只是剛好遇見彼此，<br>聊得來，也相處得自在。</div><div><br></div><div>#大田出版 #緣分</div></div>",
       "time": "18:00",
-      "canvaUrl": "",
+      "canvaUrl": "https://www.canva.com/design/DAHXHnOHYBM/51J0-XSoCxEnhHFUezX94w/view?utm_content=DAHXHnOHYBM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h5b661f96fa",
       "ratio": "1-1",
       "theme": "圖文時間",
       "title": "幸福就是吃飯睡覺等待 vol.4",
       "status": "draft",
       "createdAt": "2026-10-05T02:49:26.946Z",
-      "updatedAt": "2026-10-05T02:49:26.946Z"
+      "updatedAt": "2026-10-05T06:48:52.347Z"
     },
     {
       "_id": "p_1791168578924_htsj6q",
@@ -3663,15 +3663,15 @@ var externalDB = {
     },
     {
       "_id": "p_1791168679130_o1holw",
-      "caption": "<div>【晚上多讀一點點】 《慢慢寄出去的心》</div><div><br></div>",
+      "caption": "<div>【晚上多讀一點點】 《慢慢寄出去的心》</div><div><br></div><div><div>輕輕一笑，好像悲傷就沒有那麼悲傷？</div><div><div><div><br></div><div>還是，笑著笑著就流出眼淚……</div><div><br></div><div>這裡的每一個人，總是若無其事說出：「今天是我的生日。」</div><div><br></div><div>有假的生日，也有真正的生日，沒有人知道。</div><div>離家出走的少年，瘋狂尋找時光膠囊的準高中生，</div><div>想進入夢境為媽媽唱搖籃曲的亡魂，</div><div>每天都會拍一張雲朵照片的高樓油漆工……</div><div>&nbsp;</div><div><br></div><div>生日與死亡，有遺憾，有灑脫，有喜悅，交織過去，願望未來。</div><div>&nbsp;</div><div><div>把心弄傷了。</div><div><br></div><div>但是心，大概是在什麼地方呢？</div><div><br></div><div>只願今天能夠幸福。寫小說時，我總會不知不覺許下這樣的願望。__作者 尹成姬</div></div><div><br></div><div>在「尹成姬式」的小說裡，幸福與不幸總是輪流著來，</div><div>不幸也有可愛的不幸呢。上一秒與下一秒，</div><div>不說安慰，卻被安慰了；不說同理，卻溫柔理解了。</div></div><div><br></div><div>#大田出版 #尹成姬 #溫柔 #小說</div></div></div>",
       "time": "20:00",
-      "canvaUrl": "",
+      "canvaUrl": "https://www.canva.com/design/DAHWkHw-NqU/v1Zcx3W8Br_36qQJCJG2lQ/view?utm_content=DAHWkHw-NqU&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h8fc64f4bca",
       "ratio": "1-1",
       "theme": "晚上多讀一點點",
       "title": "慢慢寄出去的心",
       "status": "draft",
       "createdAt": "2026-10-05T02:51:19.130Z",
-      "updatedAt": "2026-10-05T02:51:19.130Z"
+      "updatedAt": "2026-10-05T06:34:27.571Z"
     }
   ],
   "2026-10-08": [
@@ -3703,13 +3703,13 @@ var externalDB = {
       "_id": "p_1791168743388_etg7n6",
       "caption": "<div>【晚上多讀一點點】 《慢慢寄出去的心》</div><div><br></div>",
       "time": "20:00",
-      "canvaUrl": "",
-      "ratio": "1-1",
+      "canvaUrl": "https://www.canva.com/design/DAHXH49J8LY/Nr3XboihftEKgnGrgwKd7Q/view?utm_content=DAHXH49J8LY&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h5e2595babb#2",
+      "ratio": "4-5",
       "theme": "晚上多讀一點點",
       "title": "慢慢寄出去的心",
       "status": "draft",
       "createdAt": "2026-10-05T02:52:23.388Z",
-      "updatedAt": "2026-10-05T02:52:29.831Z"
+      "updatedAt": "2026-10-05T07:34:03.037Z"
     }
   ],
   "2026-10-09": [
@@ -3753,7 +3753,7 @@ var externalDB = {
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-10-05T06:15:32.223Z",
+  "updatedAt": "2026-10-05T07:35:01.084Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
