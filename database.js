@@ -3727,7 +3727,7 @@ var externalDB = {
     },
     {
       "_id": "p_1791188714284_zw4cd3",
-      "caption": "<div><div><div>【晚上多讀一點點】 《外面是夏天》</div></div><div><div><span>#金愛爛</span></div></div><div><div>外面是夏天，但我的靈魂正在下雪。</div><div>某部分的我消失了，而且找不到挽回的辦法，</div><div>該怎麼從失去摯愛的傷痛中康復，該怎麼嚥下自己的脆弱與無知，</div><div>我想要往外面走去，往那豐饒耀眼的夏天走去，</div><div>我願意交換一切，只求時間能快點蛻去我痛苦的皮。</div></div><div><br></div><div><div>喪子的夫妻、初嘗虛榮的貧窮少年、替前輩揹鍋的年輕助教，</div><div>正要綻放的生命突然襲來寒冬……。</div><div>七個關於蛻變的故事，獻給所有與社會有時間差的生命們。</div></div><div><div>第四十八屆東仁文學獎得獎作品《外面是夏天》，是韓國作家金愛爛的第四部短篇小說集，她以＜沉默的未來＞成為李箱文學獎最年輕的得主，又以＜您想去哪裡呢？＞榮獲第八屆青年作家獎。本書在韓國銷量更是突破二十五萬冊，是金愛爛叫好又叫座的一部經典作品。</div></div><div><br></div><div><div>金愛爛是你遇見之後，就會愛上的小說家</div><div>她的文字，連金泰梨都愛不釋手！</div></div><div><br></div><div><div>「她最擅長描繪難以啟齒卻又無法迴避的情感。」——韓國百想視后 金泰梨</div><div>「一位值得等待的作家。」－－韓國讀者Geulwolmaya</div></div><div><div>「讀完之後，我感覺全身都濕透了。」－－韓國讀者Oktaeng</div></div><div><div>「我喜歡把《外面是夏天》比作一個傷心失去博物館，博物館裡陳列的七個短篇，講述了生活中無法避免的失去。」－－中國讀者 樹上的兔女爵</div></div><div><div>「讀完第一篇故事後，我立刻起了雞皮疙瘩……每一個字句都讓我發出『哇』的讚嘆，我不知道該如何形容這種感覺。我很難過，因為我覺得生活中一定也有人經歷過類似的痛苦。」－－韓國讀者 d**********0</div></div><div><div>「看完《你的夏天還好嗎？》緊接著看《外面是夏天》，作家本人的成長特别明顯。上一本充滿各種各樣的氣息，更敏感；這本就有那種『慢性心绞痛』的感覺，你看著看著就覺得怎麼回事？心口流血了。」－－中國讀者 廿姨太</div></div><div><br></div><div><div><span>#大田出版</span> <span>#你的夏天還好嗎 #韓國文學</span></div></div></div>",
+      "caption": "<div><div><div>【晚上多讀一點點】 《外面是夏天》</div></div><div><br></div><div><div><span>#金愛爛</span></div></div><div><div>外面是夏天，但我的靈魂正在下雪。</div><div><br></div><div>某部分的我消失了，而且找不到挽回的辦法，</div><div>該怎麼從失去摯愛的傷痛中康復，該怎麼嚥下自己的脆弱與無知，</div><div>我想要往外面走去，往那豐饒耀眼的夏天走去，</div><div>我願意交換一切，只求時間能快點蛻去我痛苦的皮。</div></div><div><br></div><div><div>喪子的夫妻、初嘗虛榮的貧窮少年、替前輩揹鍋的年輕助教，</div><div>正要綻放的生命突然襲來寒冬……。</div><div>七個關於蛻變的故事，獻給所有與社會有時間差的生命們。</div></div><div><div>第四十八屆東仁文學獎得獎作品《外面是夏天》，是韓國作家金愛爛的第四部短篇小說集，她以＜沉默的未來＞成為李箱文學獎最年輕的得主，又以＜您想去哪裡呢？＞榮獲第八屆青年作家獎。本書在韓國銷量更是突破二十五萬冊，是金愛爛叫好又叫座的一部經典作品。</div></div><div><br></div><div><div>金愛爛是你遇見之後，就會愛上的小說家</div><div>她的文字，連金泰梨都愛不釋手！</div></div><div><br></div><div><div>「她最擅長描繪難以啟齒卻又無法迴避的情感。」——韓國百想視后 金泰梨</div><div>「一位值得等待的作家。」－－韓國讀者Geulwolmaya</div></div><div><div>「讀完之後，我感覺全身都濕透了。」－－韓國讀者Oktaeng</div></div><div><div>「我喜歡把《外面是夏天》比作一個傷心失去博物館，博物館裡陳列的七個短篇，講述了生活中無法避免的失去。」－－中國讀者 樹上的兔女爵</div></div><div><div>「讀完第一篇故事後，我立刻起了雞皮疙瘩……每一個字句都讓我發出『哇』的讚嘆，我不知道該如何形容這種感覺。我很難過，因為我覺得生活中一定也有人經歷過類似的痛苦。」－－韓國讀者 d**********0</div></div><div><div>「看完《你的夏天還好嗎？》緊接著看《外面是夏天》，作家本人的成長特别明顯。上一本充滿各種各樣的氣息，更敏感；這本就有那種『慢性心绞痛』的感覺，你看著看著就覺得怎麼回事？心口流血了。」－－中國讀者 廿姨太</div></div><div><br></div><div><div><span>#大田出版</span> <span>#你的夏天還好嗎 #韓國文學</span></div></div></div>",
       "time": "20:00",
       "canvaUrl": "https://www.canva.com/design/DAHUfCfsUp8/4l77GqQz8ls3dkGUzAELkg/view?utm_content=DAHUfCfsUp8&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc3391f98c7",
       "ratio": "1-1",
@@ -3735,11 +3735,11 @@ var externalDB = {
       "title": "外面是夏天",
       "status": "draft",
       "createdAt": "2026-10-05T08:25:14.284Z",
-      "updatedAt": "2026-10-05T08:46:30.683Z"
+      "updatedAt": "2026-10-07T09:00:10.106Z"
     },
     {
       "_id": "p_1791189391642_4qdz5o",
-      "caption": "<div><div>【迷誠品作者專訪】<span>生病以後，重新練習好好生活──專訪《幸福就是吃飯睡覺等待》漫畫作者水凪トリ｜《提案》10月號「修復的練習」</span></div></div><div><div><span><br></span></div></div><div><div><span>撰文｜廖昀靖</span></div></div><div><div><span>回訪與照片提供｜水凪トリ</span></div></div><div><div><span>翻譯｜鄭稟祿</span></div></div><div><div><span><br></span></div></div><div><div><span>38歲的麥卷聰子一週只打工四天，事情一做完就下班。不熟的同事猜測，聰子家大概很有錢吧，但根本不是──光是每週四次的通勤加上班，就快要了聰子的命。</span></div></div><div><div><span><br></span></div></div><div><div><span>漫畫《幸福就是吃飯睡覺等待》描述患有膠原病的聰子，在身心極限中找尋適合自己的生存方法。或許是來自作者水凪トリ罹患同樣病症的貼身經驗，沒有說教，只有簡單的食物、單純的人心。</span></div></div><div><div><span><br></span></div></div><div><div><span>誠品書店誌《提案》10月號「修復的練習」邀請同與疾病相依的寫作者廖昀靖 call out 向水凪トリ提問，深談關於生病以後的生活。</span></div></div><div><div><span><br></span></div></div><div><div><span>失去單邊聽力的廖昀靖</span></div></div><div><div><span>-----☏--Call out 連線--☏-----  </span></div></div><div><div><span>患上膠原病的水凪トリ</span></div></div><div><div><span><br></span></div></div><div><div><span>#廖昀靖</span></div></div><div><div><span>台灣寫作者。2019年某天一覺醒來發生突發性聽障，右耳幾乎失去聽力。住院治療7天後，主治醫師很快明確告訴她：妳要好很難了。找不到病因。</span></div></div><div><div><span>很快回到公司上班的她，感覺世界突然變得未知，彷彿過去所理解、運作的一切都已經不足夠了──這於是成為她冒險的起點。這趟內在探索的旅程，化作今年自費出版的《奶油色與石頭》。</span></div><div><span><br></span></div></div><div><div><span>#水凪トリ （Mizunagi Tori）</span></div></div><div><div><span>日本漫畫家。在患有慢性病療養期間，因接觸健康飲食療法「藥膳」得到改善，於是決定將「與無法痊癒的身體溫柔相處」的過程畫成漫畫《幸福就是吃飯睡覺等待》。</span></div></div><div><div><span>相信好好透過飲食和睡覺調整體質，讓幸福到來時能健康一點點。</span></div></div><div><div><span>＊以下內容涉及漫畫《幸福就是吃飯睡覺等待》劇情，在意者請斟酌閱讀＊</span></div></div><div><div><span><br></span></div></div><div><div><span>只做到八分滿，和別人不一樣也沒關係</span></div></div><div><div><span><br></span></div></div><div><div><span>昀靖：作品裡有許多讓我印象深刻的價值觀。房東鈴媽說「跟過去的自己比」只會難受，不如期待未來新的自己；青葉小姐談到「負能力」，接受自己做不到也是一種能力。</span></div></div><div><div><span>這些話，對因為生病而覺得自己「變差了」或「跟不上」社會的人，尤其重要。請問這些想法是您一開始就想傳達的，還是隨著角色逐漸成形，在描繪過程中自然發展出來的？</span></div></div><div><div><span><br></span></div></div><div><div><span>水凪：《幸福就是吃飯睡覺等待》是我還在向出版社投稿漫畫的那段期間，創作出來的。當時身體狀況也不太好，持續投稿約3年。期間被幾家雜誌拒絕，也曾在洽談室裡被人斥責過。不過很幸運地，最後還是走到了能夠出版單行本的階段。</span></div></div><div><div><span>後來，反而有一些當初投稿時沒有採用我的作品的雜誌主動找上門來，但這些工作我一個也沒辦法接。</span></div></div><div><div><span>這部作品是以一年10話、每話16頁的速度在畫，一般來說這其實是可以負荷的工作量，但我能明顯感覺到身體狀況變差。即使如此，我心裡還是一直有著「總有一天想做得更多！」的念頭。</span></div></div><div><div><span>到了2025年，又碰上連載、電視劇相關工作和採訪同時進行，腦袋變得像蒙上了一層膜一樣。後來暫停工作休息後，因為本身的慢性病影響，得了胃潰瘍。</span></div></div><div><div><span>今年重新開始畫漫畫後，我把速度降到以前的一半以下。只要太過勉強自己，喉嚨就會腫起來，所以現在會提醒自己，在變成那樣之前就先休息。</span></div></div><div><div><span>現在的我，做什麼都只能做到八分滿，也正在思考，像現在這樣的自己，今後要用什麼樣的步調才能繼續走下去。</span></div></div><div><div><span>我想，到了這個地步，也只能接受現況了。接下來，大概就是「慢慢思考今後該怎麼走」吧。慢一點也沒關係。聰子也是一邊和自己的狀況磨合，一步一步找出適合自己的生活方式。</span></div></div><div><div><span>我沒有在公司上過班，比較沒有那種「一定要配合社會主流」的感覺。另外，我很喜歡音樂，在自己最容易受到影響的年紀，龐克運動剛好傳入日本，所以我想「和別人不一樣也沒關係」這樣的價值觀，或許一直深植在我的心裡。雖然這麼說好像有點像在開玩笑……（第5集裡也會出現這樣的人物）。</span></div></div><div><div><span>不過，這些其實都是現在回頭想，才覺得「好像的確是這樣」。我並不是抱著「想透過《幸福就是吃飯睡覺等待》傳達什麼」這樣的想法去畫這部漫畫，而是在畫著畫著的過程中，反而像是故事裡的角色自己說出這些話來。</span></div></div><div><div><span><br></span></div></div><div><div><span>更多專訪內容在迷誠品！</span></div></div><div><div><span>小編放在留言連結～</span></div></div><div><span><br></span></div><div><div><span style=\"background-color:rgba(24, 119, 242, 0.2)\"><span>#幸福就是吃飯睡覺等待</span></span><span>  </span><span style=\"background-color:rgba(24, 119, 242, 0.2)\"><span>#大田出版</span></span><span> </span><span style=\"background-color:rgba(24, 119, 242, 0.2)\"><span>#水凪トリ</span></span><span> </span><span style=\"background-color:rgba(24, 119, 242, 0.2)\"><span>#專訪</span></span></div></div><div><br></div><div><br></div>",
+      "caption": "<div><div>【作者專訪】<span>生病以後，重新練習好好生活──專訪《幸福就是吃飯睡覺等待》漫畫作者水凪トリ｜《提案》10月號「修復的練習」</span></div></div><div><div><span><br></span></div></div><div><div><span>撰文｜廖昀靖</span></div></div><div><div><span>回訪與照片提供｜水凪トリ</span></div></div><div><div><span>翻譯｜鄭稟祿</span></div></div><div><div><span><br></span></div></div><div><div><span>38歲的麥卷聰子一週只打工四天，事情一做完就下班。不熟的同事猜測，聰子家大概很有錢吧，但根本不是──光是每週四次的通勤加上班，就快要了聰子的命。</span></div></div><div><div><span><br></span></div></div><div><div><span>漫畫《幸福就是吃飯睡覺等待》描述患有膠原病的聰子，在身心極限中找尋適合自己的生存方法。或許是來自作者水凪トリ罹患同樣病症的貼身經驗，沒有說教，只有簡單的食物、單純的人心。</span></div></div><div><div><span><br></span></div></div><div><div><span>誠品書店誌《提案》10月號「修復的練習」邀請同與疾病相依的寫作者廖昀靖 call out 向水凪トリ提問，深談關於生病以後的生活。</span></div></div><div><div><span><br></span></div></div><div><div><span>失去單邊聽力的廖昀靖</span></div></div><div><div><span>-----☏--Call out 連線--☏-----  </span></div></div><div><div><span>患上膠原病的水凪トリ</span></div></div><div><div><span><br></span></div></div><div><div><span>#廖昀靖</span></div></div><div><div><span>台灣寫作者。2019年某天一覺醒來發生突發性聽障，右耳幾乎失去聽力。住院治療7天後，主治醫師很快明確告訴她：妳要好很難了。找不到病因。</span></div></div><div><div><span>很快回到公司上班的她，感覺世界突然變得未知，彷彿過去所理解、運作的一切都已經不足夠了──這於是成為她冒險的起點。這趟內在探索的旅程，化作今年自費出版的《奶油色與石頭》。</span></div><div><span><br></span></div></div><div><div><span>#水凪トリ （Mizunagi Tori）</span></div></div><div><div><span>日本漫畫家。在患有慢性病療養期間，因接觸健康飲食療法「藥膳」得到改善，於是決定將「與無法痊癒的身體溫柔相處」的過程畫成漫畫《幸福就是吃飯睡覺等待》。</span></div></div><div><div><span>相信好好透過飲食和睡覺調整體質，讓幸福到來時能健康一點點。</span></div></div><div><div><span>＊以下內容涉及漫畫《幸福就是吃飯睡覺等待》劇情，在意者請斟酌閱讀＊</span></div></div><div><div><span><br></span></div></div><div><div><span>只做到八分滿，和別人不一樣也沒關係</span></div></div><div><div><span><br></span></div></div><div><div><span>昀靖：作品裡有許多讓我印象深刻的價值觀。房東鈴媽說「跟過去的自己比」只會難受，不如期待未來新的自己；青葉小姐談到「負能力」，接受自己做不到也是一種能力。</span></div></div><div><div><span>這些話，對因為生病而覺得自己「變差了」或「跟不上」社會的人，尤其重要。請問這些想法是您一開始就想傳達的，還是隨著角色逐漸成形，在描繪過程中自然發展出來的？</span></div></div><div><div><span><br></span></div></div><div><div><span>水凪：《幸福就是吃飯睡覺等待》是我還在向出版社投稿漫畫的那段期間，創作出來的。當時身體狀況也不太好，持續投稿約3年。期間被幾家雜誌拒絕，也曾在洽談室裡被人斥責過。不過很幸運地，最後還是走到了能夠出版單行本的階段。</span></div></div><div><div><span>後來，反而有一些當初投稿時沒有採用我的作品的雜誌主動找上門來，但這些工作我一個也沒辦法接。</span></div></div><div><div><span>這部作品是以一年10話、每話16頁的速度在畫，一般來說這其實是可以負荷的工作量，但我能明顯感覺到身體狀況變差。即使如此，我心裡還是一直有著「總有一天想做得更多！」的念頭。</span></div></div><div><div><span>到了2025年，又碰上連載、電視劇相關工作和採訪同時進行，腦袋變得像蒙上了一層膜一樣。後來暫停工作休息後，因為本身的慢性病影響，得了胃潰瘍。</span></div></div><div><div><span>今年重新開始畫漫畫後，我把速度降到以前的一半以下。只要太過勉強自己，喉嚨就會腫起來，所以現在會提醒自己，在變成那樣之前就先休息。</span></div></div><div><div><span>現在的我，做什麼都只能做到八分滿，也正在思考，像現在這樣的自己，今後要用什麼樣的步調才能繼續走下去。</span></div></div><div><div><span>我想，到了這個地步，也只能接受現況了。接下來，大概就是「慢慢思考今後該怎麼走」吧。慢一點也沒關係。聰子也是一邊和自己的狀況磨合，一步一步找出適合自己的生活方式。</span></div></div><div><div><span>我沒有在公司上過班，比較沒有那種「一定要配合社會主流」的感覺。另外，我很喜歡音樂，在自己最容易受到影響的年紀，龐克運動剛好傳入日本，所以我想「和別人不一樣也沒關係」這樣的價值觀，或許一直深植在我的心裡。雖然這麼說好像有點像在開玩笑……（第5集裡也會出現這樣的人物）。</span></div></div><div><div><span>不過，這些其實都是現在回頭想，才覺得「好像的確是這樣」。我並不是抱著「想透過《幸福就是吃飯睡覺等待》傳達什麼」這樣的想法去畫這部漫畫，而是在畫著畫著的過程中，反而像是故事裡的角色自己說出這些話來。</span></div></div><div><div><br></div><div>——本篇節錄自「誠品提案10月號：修復的練習」專訪，全文請見QR code<br>作者 水凪トリ（Mizunagi Tori）</div></div><div><div><span><br></span></div></div><div><div><span>更多專訪內容在迷誠品！</span></div></div><div><div><span>小編放在留言連結～</span></div></div><div><span><br></span></div><div><div><span style=\"background-color:rgba(24, 119, 242, 0.2)\"><span>#幸福就是吃飯睡覺等待</span></span><span>  </span><span style=\"background-color:rgba(24, 119, 242, 0.2)\"><span>#大田出版</span></span><span> </span><span style=\"background-color:rgba(24, 119, 242, 0.2)\"><span>#水凪トリ</span></span><span> </span><span style=\"background-color:rgba(24, 119, 242, 0.2)\"><span>#專訪</span></span></div></div><div><br></div><div>文章摘自</div>",
       "time": "09:00",
       "canvaUrl": "https://www.canva.com/design/DAHXIcIzSj0/KQZ4ZvzNUoEJQAdJTVAM0A/view?utm_content=DAHXIcIzSj0&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h700e7678df",
       "ratio": "1-1",
@@ -3747,7 +3747,7 @@ var externalDB = {
       "title": "幸福就是吃飯睡覺等待 vol.4",
       "status": "draft",
       "createdAt": "2026-10-05T08:36:31.642Z",
-      "updatedAt": "2026-10-05T09:34:48.560Z"
+      "updatedAt": "2026-10-07T09:13:56.969Z"
     }
   ],
   "2026-10-12": [
@@ -3787,11 +3787,39 @@ var externalDB = {
       "createdAt": "2026-10-05T08:36:10.560Z",
       "updatedAt": "2026-10-05T08:36:10.560Z"
     }
+  ],
+  "2026-10-10": [
+    {
+      "_id": "p_1791363581421_60tjgr",
+      "caption": "<div>【影片分享】 《幸福3》</div><div><br></div>",
+      "time": "09:00",
+      "canvaUrl": "",
+      "ratio": "4-5",
+      "theme": "影片分享",
+      "title": "幸福3",
+      "status": "draft",
+      "createdAt": "2026-10-07T08:59:41.421Z",
+      "updatedAt": "2026-10-07T08:59:41.421Z"
+    }
+  ],
+  "2026-10-11": [
+    {
+      "_id": "p_1791363595955_1ocs9p",
+      "caption": "<div>【影片分享】 《幸福4》</div><div><br></div>",
+      "time": "09:00",
+      "canvaUrl": "",
+      "ratio": "4-5",
+      "theme": "影片分享",
+      "title": "幸福4",
+      "status": "draft",
+      "createdAt": "2026-10-07T08:59:55.955Z",
+      "updatedAt": "2026-10-07T08:59:55.955Z"
+    }
   ]
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-10-07T08:50:13.430Z",
+  "updatedAt": "2026-10-07T09:34:00.967Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
