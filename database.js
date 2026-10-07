@@ -3765,15 +3765,15 @@ var externalDB = {
     },
     {
       "_id": "p_1791189341460_u9znrr",
-      "caption": "<div>【早上只讀一點點】 《一次又一次又一次地重新開始》</div><div><br></div>",
+      "caption": "<div>【早上只讀一點點】 《<span>會好起來的，就算不是現在</span>》</div><div><br></div><div>「我不知道要走到哪裡，<br>總之我已經上路。」</div><div><br></div><div>#大田出版 #會好起來的</div>",
       "time": "08:00",
-      "canvaUrl": "",
-      "ratio": "1-1",
+      "canvaUrl": "https://www.canva.com/design/DAHS5Sym27Q/cOSkFGLNkhWsN6Wcbpt5RA/view?utm_content=DAHS5Sym27Q&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hab83e077ce",
+      "ratio": "4-5",
       "theme": "早上只讀一點點",
       "title": "一次又一次又一次地重新開始",
       "status": "draft",
       "createdAt": "2026-10-05T08:35:41.460Z",
-      "updatedAt": "2026-10-05T08:35:41.460Z"
+      "updatedAt": "2026-10-07T08:49:51.427Z"
     },
     {
       "_id": "p_1791189370560_h5lohb",
@@ -3791,7 +3791,7 @@ var externalDB = {
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-10-05T09:37:23.492Z",
+  "updatedAt": "2026-10-07T08:50:13.430Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
