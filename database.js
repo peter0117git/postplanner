@@ -3937,15 +3937,15 @@ var externalDB = {
       "time": "18:00",
       "canvaUrl": "https://www.canva.com/design/DAHXyHnAs4I/oMtxvZCOEkf6-Oj4q3sFoQ/view?utm_content=DAHXyHnAs4I&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h228ced003a",
       "ratio": "1-1",
-      "theme": "圖文時間",
+      "theme": "圖文時間.",
       "title": "幸福就是吃飯睡覺等待 vol.4",
       "status": "draft",
       "createdAt": "2026-10-12T07:29:30.453Z",
-      "updatedAt": "2026-10-15T02:56:38.781Z"
+      "updatedAt": "2026-10-15T07:10:47.246Z"
     },
     {
       "_id": "p_1792033081439_l0t5p8",
-      "caption": "<div>【晚上多讀一點點】 《你就是困住自己的那座山》</div><div><br></div><div><div><div>在我們的一生當中，會對你造成最大阻礙的不是別人，而是你自己。</div></div><div><div>如果在你現在的處境和你想要擁有的生活之間，存在著持續性的差距，而你為了彌合這一差距所做的努力，卻始終遭遇到自身的抗拒、痛苦和不適，那麼就表示你幾乎無時無刻都在進行自我破壞。</div></div><div><div>從表面上來看，自我破壞一詞似乎會讓人聯想到受虐狂。它似乎是自我憎恨、缺乏自信或缺乏意志力的產物。但事實上，自我破壞只是你無意識需求的一種顯現方式，而這種需求是透過自我破壞的行為來滿足的。若是想要克服它，必須經歷一個深度的心理挖掘過程。我們必須找到那些造成創傷的事件，釋放沒有被處理的情緒，並找出更健康的方式來滿足我們的需求、重塑自我形象，並提升例如情緒智商和彈性等等的各項能力，同時建立一些原則。</div></div><div><div>這個任務的難度非同小可，卻是我們每個人在人生的某個時刻都必須做的工作。</div></div><div><div>║在一開始的時候，自我破壞行為並非總是那麼顯而易見║</div></div><div><div>孩提之時，心理學家卡爾‧榮格在學校摔了一跤，撞到了頭。受傷時，他心想：「太好了，我現在應該不用再回學校了吧。」</div></div><div><div>儘管如今的榮格因其見解獨到而聞名，但實際上，他並不喜歡上學，也不喜歡與同齡人相處。跌倒事件發生後不久，榮格開始出現零星且無法控制的昏厥。他無意識地患上了所謂的「精神官能症」（未來的他肯定會如此宣稱），並最終意識到所有的精神官能症都是「合理痛苦的替代品」。</div></div><div><div>在榮格的例子中，他無意識地把昏厥和不用上學連結起來。他相信，昏厥是他無意識地渴望離開課堂的表現，因為他在課堂上會感到不舒服和不開心。同樣地，對許多人來說，他們的恐懼和依戀，往往只是更深層的問題促使他們表現出來的症狀，而他們找不到更好的方法因應這些問題。</div></div><div><br></div><div><div>摘自P14-15</div></div></div><div><br></div><div><span>#大田出版 #焦慮 #改變</span></div>",
+      "caption": "<div>【晚上多讀一點點】 《你就是困住自己的那座山》</div><div><br></div><div><div><div>在我們的一生當中，會對你造成最大阻礙的不是別人，而是你自己。</div></div><div><div>如果在你現在的處境和你想要擁有的生活之間，存在著持續性的差距，而你為了彌合這一差距所做的努力，卻始終遭遇到自身的抗拒、痛苦和不適，那麼就表示你幾乎無時無刻都在進行自我破壞。</div></div><div><div>從表面上來看，自我破壞一詞似乎會讓人聯想到受虐狂。它似乎是自我憎恨、缺乏自信或缺乏意志力的產物。但事實上，自我破壞只是你無意識需求的一種顯現方式，而這種需求是透過自我破壞的行為來滿足的。若是想要克服它，必須經歷一個深度的心理挖掘過程。我們必須找到那些造成創傷的事件，釋放沒有被處理的情緒，並找出更健康的方式來滿足我們的需求、重塑自我形象，並提升例如情緒智商和彈性等等的各項能力，同時建立一些原則。</div></div><div><div>這個任務的難度非同小可，卻是我們每個人在人生的某個時刻都必須做的工作。</div></div><div><br></div><div><div>║在一開始的時候，自我破壞行為並非總是那麼顯而易見║</div></div><div><br></div><div><div>孩提之時，心理學家卡爾‧榮格在學校摔了一跤，撞到了頭。受傷時，他心想：「太好了，我現在應該不用再回學校了吧。」</div></div><div><br></div><div><div>儘管如今的榮格因其見解獨到而聞名，但實際上，他並不喜歡上學，也不喜歡與同齡人相處。跌倒事件發生後不久，榮格開始出現零星且無法控制的昏厥。他無意識地患上了所謂的「精神官能症」（未來的他肯定會如此宣稱），並最終意識到所有的精神官能症都是「合理痛苦的替代品」。</div></div><div><div>在榮格的例子中，他無意識地把昏厥和不用上學連結起來。他相信，昏厥是他無意識地渴望離開課堂的表現，因為他在課堂上會感到不舒服和不開心。同樣地，對許多人來說，他們的恐懼和依戀，往往只是更深層的問題促使他們表現出來的症狀，而他們找不到更好的方法因應這些問題。</div></div><div><br></div><div><div>摘自P14-15</div></div></div><div><br></div><div><span>#大田出版 #焦慮 #改變</span></div>",
       "time": "20:00",
       "canvaUrl": "https://www.canva.com/design/DAHUxWiOlXU/z3tAn2O-2XfIKm1cn23p_g/view?utm_content=DAHUxWiOlXU&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h21f78da663",
       "ratio": "1-1",
@@ -3953,11 +3953,11 @@ var externalDB = {
       "title": "你就是困住自己的那座山",
       "status": "draft",
       "createdAt": "2026-10-15T02:58:01.439Z",
-      "updatedAt": "2026-10-15T07:01:32.366Z"
+      "updatedAt": "2026-10-15T07:05:03.512Z"
     },
     {
       "_id": "p_1792033109593_4i1kk0",
-      "caption": "<div>【早上只讀一點點】 《會好起來的，就算不是現在》</div><div><br></div><div>人生有時不必非理出個道理不可。</div><div>有時就是毫無道理可言。</div><div><br></div><div>#大田出版 #會好起來的 #圖文</div>",
+      "caption": "<div>【早上只讀一點點】 《會好起來的，就算不是現在》</div><div><br></div><div>人生有時不必非理出個道理不可。</div><div>有時就是毫無道理可言。</div><div><br></div><div>同場推薦《一次又一次又一次地重新開始》</div><div><span style=\"color:rgb(0, 0, 0);background-color:rgb(191, 192, 192)\">暢銷療癒圖文書《會好起來的，就算不是現在》 作者最新力作！</span></div><div><span>獻給所有正在重新開始的人。</span></div><div>這是一本關於人生循環的圖文書——<br>關於懷疑、崩解、重新站穩、再次敞開，然後再一次重生。</div><div><span style=\"color:rgb(0, 0, 0);background-color:rgb(191, 192, 192)\"><br></span></div><div>#大田出版 #會好起來的 #圖文</div>",
       "time": "08:00",
       "canvaUrl": "https://www.canva.com/design/DAHXG2_tTG0/j07WNxfvUdIGQxBRmg8zUg/view?utm_content=DAHXG2_tTG0&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hd62a377c74",
       "ratio": "1-1",
@@ -3965,7 +3965,7 @@ var externalDB = {
       "title": "會好起來的，就算不是現在",
       "status": "draft",
       "createdAt": "2026-10-15T02:58:29.593Z",
-      "updatedAt": "2026-10-15T03:10:42.161Z"
+      "updatedAt": "2026-10-15T07:15:50.822Z"
     }
   ],
   "2026-10-19": [
@@ -3980,12 +3980,36 @@ var externalDB = {
       "status": "draft",
       "createdAt": "2026-10-15T05:49:00.037Z",
       "updatedAt": "2026-10-15T05:50:04.218Z"
+    },
+    {
+      "_id": "p_1792048127150_mk6hgy",
+      "caption": "<div>【早上只讀一點點】 《一次又一次又一次地重新開始》</div><div><br></div>",
+      "time": "08:00",
+      "canvaUrl": "",
+      "ratio": "1-1",
+      "theme": "早上只讀一點點",
+      "title": "一次又一次又一次地重新開始",
+      "status": "draft",
+      "createdAt": "2026-10-15T07:08:47.150Z",
+      "updatedAt": "2026-10-15T07:08:47.150Z"
+    },
+    {
+      "_id": "p_1792048224349_f35ckh",
+      "caption": "<div>【圖文時間】 《幸福就是吃飯睡覺等待 vol.4》</div><div><br></div>",
+      "time": "18:00",
+      "canvaUrl": "",
+      "ratio": "1-1",
+      "theme": "圖文時間",
+      "title": "幸福就是吃飯睡覺等待 vol.4",
+      "status": "draft",
+      "createdAt": "2026-10-15T07:10:24.349Z",
+      "updatedAt": "2026-10-15T07:10:34.864Z"
     }
   ]
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-10-15T07:01:42.321Z",
+  "updatedAt": "2026-10-15T07:16:01.172Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
