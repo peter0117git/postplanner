@@ -3973,43 +3973,85 @@ var externalDB = {
       "_id": "p_1792043340037_afwc8t",
       "caption": "<div>【晚上多讀一點點】 《外面是夏天》</div><div><br></div><div>撰文/<span>人氣圖文作家 宇希</span></div><div><br></div><div><div><span>「過去並未消失不見，而是蔓延、傾洩。活著活著，與我擦身而過的人、我所經歷的時間、承受的情感，如今都滲入我的眼神中，構成了我的面貌。」——金愛爛《外面是夏天》</span><span></span></div>\n\n<div><span>&nbsp;</span></div>\n\n<div><span>這是由一個個失去，所構成的故事。</span><span></span></div>\n\n<div><span>&nbsp;</span></div>\n\n<div><span>「夏天」原本應該是明亮的、熱烈的，萬物都在生長的季節，但對於失去的人來說，他們被定格在了失去的瞬間。</span><span></span></div>\n\n<div><span>&nbsp;</span></div>\n\n<div><span>我們會問他人：「你放下了嗎？」、「現在好點了嗎？」</span><span></span></div>\n\n<div><span>可是有些事情，好像不是用「放下」來結束的。</span><span></span></div>\n\n<div><span>我們只是學會，在缺少的世界裡繼續生活。</span><span></span></div>\n\n<div><span>&nbsp;</span></div>\n\n<div><span>《外面是夏天》勾勒出一個人的冬天可以多麼漫長，長得足以讓人忘記，外面早已是夏天。</span><span></span></div><div><span><br></span></div><div><font>#大田出版 #金愛爛 #宇希 #韓國文學</font></div></div>",
       "time": "20:00",
-      "canvaUrl": "",
+      "canvaUrl": "https://www.canva.com/design/DAHVVobo1jY/86g46PDXHeC2M7U3PUS2Qw/view?utm_content=DAHVVobo1jY&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h48497cff90",
       "ratio": "1-1",
       "theme": "晚上多讀一點點",
       "title": "外面是夏天",
       "status": "draft",
       "createdAt": "2026-10-15T05:49:00.037Z",
-      "updatedAt": "2026-10-15T05:50:04.218Z"
+      "updatedAt": "2026-10-15T07:18:24.095Z"
     },
     {
       "_id": "p_1792048127150_mk6hgy",
-      "caption": "<div>【早上只讀一點點】 《一次又一次又一次地重新開始》</div><div><br></div>",
+      "caption": "<div>【早上只讀一點點】 《一次又一次又一次地重新開始》</div><div><br></div><div><div>我能掌控的</div><div>是我的觀點、</div><div>我的態度、希望、渴望、</div><div>如何消磨閒暇時光，</div><div>是我要閱讀哪些書、</div><div>我吃什麼、喝什麼，</div><div>我與誰共度時光。</div><div><br></div><div>無可掌控的</div><div>是其餘萬事萬物⋯⋯</div><div>我的原生家族、我的高矮胖瘦，</div><div>天候變化、世界局勢，</div><div>別人對我的看法，</div><div>人生重大事件的轉折變化。</div><div><br></div><div>我致力於我所能掌控之事：</div><div>好比我對形勢處境的看法、</div><div>如何因應，</div><div>又該採取哪些措施。</div></div><div><br></div><div>摘自p.27</div><div><br></div><div>#大田出版 #會好起來的 #焦慮 #改變</div>",
       "time": "08:00",
-      "canvaUrl": "",
+      "canvaUrl": "https://www.canva.com/design/DAHWp5Y50bw/qvxOQgcSGh6UXVubTUDP5g/view?utm_content=DAHWp5Y50bw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=ha36e9ffc6c",
       "ratio": "1-1",
       "theme": "早上只讀一點點",
       "title": "一次又一次又一次地重新開始",
       "status": "draft",
       "createdAt": "2026-10-15T07:08:47.150Z",
-      "updatedAt": "2026-10-15T07:08:47.150Z"
+      "updatedAt": "2026-10-15T07:41:50.987Z"
     },
     {
       "_id": "p_1792048224349_f35ckh",
-      "caption": "<div>【圖文時間】 《幸福就是吃飯睡覺等待 vol.4》</div><div><br></div>",
+      "caption": "<div>【圖文時間】 《幸福就是吃飯睡覺等待 vol.4》</div><div><br></div><div><div>把喜歡的食材放進湯裡，\n熱騰騰地吃上一口，&nbsp;</div><div>身體暖了，心情也跟著好起來了</div><div><br></div><div>原來生活中的小小幸福，&nbsp;</div><div>就藏在這些平凡的日常裡。</div><div><br></div><div>#幸福就是吃飯睡覺等待 #大田出版 #食療 #心情</div></div>",
       "time": "18:00",
-      "canvaUrl": "",
+      "canvaUrl": "https://www.canva.com/design/DAHXyBP5vNI/_icqcIuUlfTz5jsJDVW3xA/view?utm_content=DAHXyBP5vNI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc81a9aedcb",
       "ratio": "1-1",
       "theme": "圖文時間",
       "title": "幸福就是吃飯睡覺等待 vol.4",
       "status": "draft",
       "createdAt": "2026-10-15T07:10:24.349Z",
-      "updatedAt": "2026-10-15T07:10:34.864Z"
+      "updatedAt": "2026-10-15T07:35:00.667Z"
+    }
+  ],
+  "2026-10-20": [
+    {
+      "_id": "p_1792049716140_ca3y64",
+      "caption": "<div>【早上只讀一點點】 《你就是困住自己的那座山》</div><div><br></div><div><div><div>※你試圖去關心每一件事。</div><div><br></div><div>你的意志力是有限的。一天只能擁有這麼多。與其用有限的意志力去努力做好每一件事，不妨先決定好什麼事情對你來說最重要。把注意力集中在這件事情上，其他事情就放手讓它們離開。</div></div><div><div>（摘自P69）</div><div><br></div><div><span>#大田出版 #焦慮 #改變</span></div></div></div>",
+      "time": "08:00",
+      "canvaUrl": "https://www.canva.com/design/DAHYD57cUUA/hbylne7Jp7cppBU_v332Kw/view?utm_content=DAHYD57cUUA&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h1cf7fb5b73",
+      "ratio": "1-1",
+      "theme": "早上只讀一點點",
+      "title": "你就是困住自己的那座山",
+      "status": "draft",
+      "createdAt": "2026-10-15T07:35:16.140Z",
+      "updatedAt": "2026-10-15T07:38:22.358Z"
+    }
+  ],
+  "2026-10-17": [
+    {
+      "_id": "p_1792050129997_4fgwz0",
+      "caption": "<div>【影片分享】 《幸福就是吃飯睡覺等待 vol.3》</div><div><br></div>",
+      "time": "09:00",
+      "canvaUrl": "",
+      "ratio": "4-5",
+      "theme": "影片分享",
+      "title": "幸福就是吃飯睡覺等待 vol.3",
+      "status": "draft",
+      "createdAt": "2026-10-15T07:42:09.997Z",
+      "updatedAt": "2026-10-15T07:42:09.997Z"
+    }
+  ],
+  "2026-10-18": [
+    {
+      "_id": "p_1792050140206_59exj9",
+      "caption": "<div>【影片分享】 《幸福就是吃飯睡覺等待 vol.4》</div><div><br></div>",
+      "time": "09:00",
+      "canvaUrl": "",
+      "ratio": "4-5",
+      "theme": "影片分享",
+      "title": "幸福就是吃飯睡覺等待 vol.4",
+      "status": "draft",
+      "createdAt": "2026-10-15T07:42:20.206Z",
+      "updatedAt": "2026-10-15T07:42:20.206Z"
     }
   ]
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-10-15T07:16:01.172Z",
+  "updatedAt": "2026-10-15T07:42:29.930Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
