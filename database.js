@@ -3934,20 +3934,58 @@ var externalDB = {
     {
       "_id": "p_1791790170453_g90giv",
       "caption": "<div>【早上只讀一點點】 《幸福就是吃飯睡覺等待 vol.4》</div><div><br></div><div><div>幸福，從來就不只有一種模樣。</div><div><span>每個人，都有選擇幸福模樣的權利。</span></div><div><span><br></span></div><div><span>#大田出版 #</span>幸福就是吃飯睡覺等待</div></div>",
-      "time": "08:00",
+      "time": "18:00",
       "canvaUrl": "https://www.canva.com/design/DAHXyHnAs4I/oMtxvZCOEkf6-Oj4q3sFoQ/view?utm_content=DAHXyHnAs4I&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h228ced003a",
       "ratio": "1-1",
-      "theme": "早上只讀一點點",
+      "theme": "圖文時間",
       "title": "幸福就是吃飯睡覺等待 vol.4",
       "status": "draft",
       "createdAt": "2026-10-12T07:29:30.453Z",
-      "updatedAt": "2026-10-12T08:52:20.656Z"
+      "updatedAt": "2026-10-15T02:56:38.781Z"
+    },
+    {
+      "_id": "p_1792033081439_l0t5p8",
+      "caption": "<div>【早上只讀一點點】 《你就是困住自己的那座山》</div><div><br></div>",
+      "time": "20:00",
+      "canvaUrl": "",
+      "ratio": "1-1",
+      "theme": "晚上多讀一點點",
+      "title": "你就是困住自己的那座山",
+      "status": "draft",
+      "createdAt": "2026-10-15T02:58:01.439Z",
+      "updatedAt": "2026-10-15T04:15:27.672Z"
+    },
+    {
+      "_id": "p_1792033109593_4i1kk0",
+      "caption": "<div>【早上只讀一點點】 《會好起來的，就算不是現在》</div><div><br></div><div>人生有時不必非理出個道理不可。</div><div>有時就是毫無道理可言。</div><div><br></div><div>#大田出版 #會好起來的 #圖文</div>",
+      "time": "08:00",
+      "canvaUrl": "https://www.canva.com/design/DAHXG2_tTG0/j07WNxfvUdIGQxBRmg8zUg/view?utm_content=DAHXG2_tTG0&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hd62a377c74",
+      "ratio": "1-1",
+      "theme": "早上只讀一點點",
+      "title": "會好起來的，就算不是現在",
+      "status": "draft",
+      "createdAt": "2026-10-15T02:58:29.593Z",
+      "updatedAt": "2026-10-15T03:10:42.161Z"
+    }
+  ],
+  "2026-10-19": [
+    {
+      "_id": "p_1792043340037_afwc8t",
+      "caption": "<div>【晚上多讀一點點】 《外面是夏天》</div><div><br></div><div>撰文/<span>人氣圖文作家 宇希</span></div><div><br></div><div><div><span>「過去並未消失不見，而是蔓延、傾洩。活著活著，與我擦身而過的人、我所經歷的時間、承受的情感，如今都滲入我的眼神中，構成了我的面貌。」——金愛爛《外面是夏天》</span><span></span></div>\n\n<div><span>&nbsp;</span></div>\n\n<div><span>這是由一個個失去，所構成的故事。</span><span></span></div>\n\n<div><span>&nbsp;</span></div>\n\n<div><span>「夏天」原本應該是明亮的、熱烈的，萬物都在生長的季節，但對於失去的人來說，他們被定格在了失去的瞬間。</span><span></span></div>\n\n<div><span>&nbsp;</span></div>\n\n<div><span>我們會問他人：「你放下了嗎？」、「現在好點了嗎？」</span><span></span></div>\n\n<div><span>可是有些事情，好像不是用「放下」來結束的。</span><span></span></div>\n\n<div><span>我們只是學會，在缺少的世界裡繼續生活。</span><span></span></div>\n\n<div><span>&nbsp;</span></div>\n\n<div><span>《外面是夏天》勾勒出一個人的冬天可以多麼漫長，長得足以讓人忘記，外面早已是夏天。</span><span></span></div><div><span><br></span></div><div><font>#大田出版 #金愛爛 #宇希 #韓國文學</font></div></div>",
+      "time": "20:00",
+      "canvaUrl": "",
+      "ratio": "1-1",
+      "theme": "晚上多讀一點點",
+      "title": "外面是夏天",
+      "status": "draft",
+      "createdAt": "2026-10-15T05:49:00.037Z",
+      "updatedAt": "2026-10-15T05:50:04.218Z"
     }
   ]
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-10-12T09:26:12.852Z",
+  "updatedAt": "2026-10-15T05:50:14.079Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
