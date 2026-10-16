@@ -64,17 +64,36 @@ test('Facebook 長文預設收起並提供顯示更多', () => {
     assert.match(appSource, /function toggleFBExpand\(\)/);
 });
 
-test('Facebook 一般貼文鎖定第一張，圖文時間使用四圖排列', () => {
+test('Facebook 一般貼文鎖定第一張，圖文時間由使用者設定張數', () => {
     assert.match(appSource, /=== '圖文時間'/);
     assert.match(appSource, /firstCardOnly: !isFacebookGallery/);
-    assert.match(appSource, /facebookGallery: isFacebookGallery/);
-    assert.match(appSource, /pageNumber <= 4/);
+    assert.match(htmlSource, /id="edit-fb-image-count"[^>]+min="1" max="20"/);
+    assert.match(appSource, /function getFBImageCount\(post\)/);
+    assert.match(appSource, /facebookImageCount: fbImageCount/);
+    assert.match(appSource, /const visibleCount = Math\.min\(collageCount, 5\)/);
     assert.match(appSource, /實際發文僅使用第一張字卡/);
-    assert.match(appSource, /「圖文時間」使用四圖排列/);
     assert.match(appSource, /frame\.classList\.add\('fb-static-frame'\)/);
-    assert.match(cssSource, /\.fb-media\.fb-gallery-grid/);
-    assert.match(cssSource, /grid-template-columns: repeat\(2, 1fr\)/);
     assert.match(cssSource, /height: calc\(100% \+ 220px\); transform: translateY\(-50%\)/);
+});
+
+test('Facebook 依 2、3、4、5 張使用不同拼圖版型', () => {
+    assert.match(appSource, /count === 2\) return '雙圖平分'/);
+    assert.match(appSource, /count === 3\) return '一大兩小'/);
+    assert.match(appSource, /count === 4\) return '四格網格'/);
+    assert.match(appSource, /count === 5\) return '兩大三小'/);
+    assert.match(cssSource, /\.fb-collage\.fb-count-2:not\(\.fb-ratio-16-9\)/);
+    assert.match(cssSource, /\.fb-collage\.fb-count-2\.fb-ratio-16-9/);
+    assert.match(cssSource, /\.fb-collage\.fb-count-3:not\(\.fb-ratio-16-9\) \.fb-tile-1/);
+    assert.match(cssSource, /\.fb-collage\.fb-count-3\.fb-ratio-16-9 \.fb-tile-1/);
+    assert.match(cssSource, /\.fb-collage\.fb-count-4/);
+    assert.match(cssSource, /\.fb-collage\.fb-count-5/);
+});
+
+test('Facebook 超過五張時在第五格顯示剩餘張數', () => {
+    assert.match(appSource, /collageCount > visibleCount/);
+    assert.match(appSource, /overflow\.className = 'fb-overflow-count'/);
+    assert.match(appSource, /overflow\.textContent = `\+\$\{collageCount - visibleCount\}`/);
+    assert.match(cssSource, /\.fb-overflow-count/);
 });
 
 test('老闆預覽的 Canva 圖面不攔截垂直滾動且保留底部翻頁區', () => {

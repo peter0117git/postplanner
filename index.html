@@ -3,236 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>排版桌 — IG Post Planner v8.4.5</title>
+    <title>排版桌 — IG Post Planner v8.4.6</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;700;900&family=Noto+Sans+TC:wght@400;500;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/app.css?v=8.4.4">
-    <style>
-        /* v8.4.5：放大 Instagram 預覽並提升長輩操作性 */
-        @media (min-width: 900px) {
-            .dual-platform-preview {
-                display: grid !important;
-                grid-template-columns: minmax(0, 1.18fr) minmax(0, .92fr) !important;
-                gap: 20px !important;
-                align-items: start !important;
-            }
-        }
-
-        .instagram-preview-panel,
-        .instagram-preview-panel .ig-card {
-            min-width: 0 !important;
-            width: 100% !important;
-            max-width: none !important;
-        }
-
-        .instagram-preview-panel .ig-topbar {
-            min-height: 62px;
-            padding: 10px 14px;
-        }
-
-        .instagram-preview-panel .ig-avatar-ring {
-            width: 40px;
-            height: 40px;
-        }
-
-        .instagram-preview-panel .ig-username {
-            font-size: 15px;
-        }
-
-        .ig-viewer-tools {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 12px;
-            min-height: 54px;
-            padding: 8px 12px;
-            color: #5f5a54;
-            background: #fffaf1;
-            border-top: 1px solid #eee4d7;
-            border-bottom: 1px solid #e5dbcf;
-        }
-
-        .ig-viewer-hint {
-            font-size: 13px;
-            font-weight: 700;
-            line-height: 1.45;
-        }
-
-        .ig-enlarge-btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            flex: 0 0 auto;
-            min-height: 40px;
-            padding: 0 16px;
-            border: 0;
-            border-radius: 999px;
-            color: #fff;
-            background: #1b67d9;
-            box-shadow: 0 3px 10px rgba(27, 103, 217, .24);
-            font: 800 14px/1 "Noto Sans TC", sans-serif;
-            cursor: pointer;
-        }
-
-        .ig-enlarge-btn:hover {
-            background: #1457ba;
-            transform: translateY(-1px);
-        }
-
-        .ig-enlarge-btn:focus-visible {
-            outline: 4px solid rgba(27, 103, 217, .25);
-            outline-offset: 2px;
-        }
-
-        .instagram-preview-panel .ig-actions {
-            min-height: 54px;
-            padding: 10px 14px;
-        }
-
-        .instagram-preview-panel .ig-action-icon {
-            font-size: 25px;
-        }
-
-        .instagram-preview-panel .ig-caption-area {
-            padding: 4px 14px 15px;
-            font-size: 15px;
-            line-height: 1.72;
-        }
-
-        .instagram-preview-panel .ig-likes {
-            margin-bottom: 5px;
-        }
-
-        .instagram-preview-panel .ig-caption-line {
-            display: block !important;
-            line-height: 1.72 !important;
-            overflow: visible !important;
-        }
-
-        .instagram-preview-panel .ig-handle {
-            display: inline-block;
-            margin-right: 8px;
-        }
-
-        .instagram-preview-panel .ig-caption-text-inner {
-            white-space: pre-line;
-            overflow-wrap: anywhere;
-            word-break: break-word;
-        }
-
-        .instagram-preview-panel .ig-more-btn {
-            align-items: center !important;
-            justify-content: center !important;
-            min-height: 38px;
-            margin: 10px 0 2px !important;
-            padding: 0 14px !important;
-            border: 1px solid #d8d3cc !important;
-            border-radius: 10px !important;
-            color: #4f5359 !important;
-            background: #f7f7f7 !important;
-            font-size: 14px !important;
-            font-weight: 800 !important;
-            cursor: pointer;
-        }
-
-        .instagram-preview-panel #ig-more-trigger[style*="display:none"],
-        .instagram-preview-panel #ig-more-trigger[style*="display: none"] {
-            display: none !important;
-        }
-
-        .instagram-preview-panel #ig-more-trigger:not([style*="display:none"]):not([style*="display: none"]) {
-            display: flex !important;
-            width: max-content;
-        }
-
-        .instagram-preview-panel .ig-more-btn:hover {
-            color: #1457ba !important;
-            border-color: #8eb4ec !important;
-            background: #edf4ff !important;
-        }
-
-        .instagram-preview-panel .ig-time {
-            margin-top: 8px;
-        }
-
-        /* 放大後只保留輪播內容與清楚的退出按鈕。 */
-        .ig-card:fullscreen,
-        .ig-card.ig-fullscreen-fallback {
-            display: flex !important;
-            flex-direction: column;
-            width: 100vw !important;
-            max-width: none !important;
-            height: 100vh !important;
-            max-height: none !important;
-            margin: 0 !important;
-            border: 0 !important;
-            border-radius: 0 !important;
-            background: #111 !important;
-        }
-
-        .ig-card.ig-fullscreen-fallback {
-            position: fixed !important;
-            inset: 0 !important;
-            z-index: 100000 !important;
-        }
-
-        body.ig-preview-locked {
-            overflow: hidden !important;
-        }
-
-        .ig-card:fullscreen .ig-topbar,
-        .ig-card:fullscreen .ig-actions,
-        .ig-card:fullscreen .ig-caption-area,
-        .ig-card.ig-fullscreen-fallback .ig-topbar,
-        .ig-card.ig-fullscreen-fallback .ig-actions,
-        .ig-card.ig-fullscreen-fallback .ig-caption-area {
-            display: none !important;
-        }
-
-        .ig-card:fullscreen .ig-viewer-tools,
-        .ig-card.ig-fullscreen-fallback .ig-viewer-tools {
-            flex: 0 0 auto;
-            color: #fff;
-            background: #111;
-            border-color: #333;
-        }
-
-        .ig-card:fullscreen .ig-media,
-        .ig-card.ig-fullscreen-fallback .ig-media {
-            flex: 1 1 auto;
-            width: 100% !important;
-            height: auto !important;
-            min-height: 0 !important;
-            max-height: none !important;
-            aspect-ratio: auto !important;
-            border: 0 !important;
-            background: #111 !important;
-        }
-
-        .ig-card:fullscreen .ig-media iframe,
-        .ig-card.ig-fullscreen-fallback .ig-media iframe {
-            width: 100% !important;
-            height: 100% !important;
-        }
-
-        @media (max-width: 899px) {
-            .dual-platform-preview {
-                display: grid !important;
-                grid-template-columns: 1fr !important;
-            }
-
-            .ig-viewer-tools {
-                align-items: flex-start;
-                flex-direction: column;
-            }
-
-            .ig-enlarge-btn {
-                width: 100%;
-                min-height: 46px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="assets/css/app.css?v=8.4.6">
 </head>
 <body>
 
@@ -242,7 +17,7 @@
 <div class="topbar">
     <div class="brand-area">
         <span class="brand-mark">排版桌</span>
-        <span class="brand-sub">IG POST PLANNER · V8.4.5</span>
+        <span class="brand-sub">IG POST PLANNER · V8.4.6</span>
     </div>
 
     <div class="topbar-divider"></div>
@@ -261,6 +36,7 @@
         <span class="save-status" id="save-status">已載入</span>
         <span class="boss-preview-badge" id="boss-preview-badge">唯讀預覽</span>
         <div class="topbar-divider"></div>
+        <button class="topbar-btn weekly-export-entry" id="weekly-export-btn" onclick="openWeeklyExport()" title="匯出指定週的貼文文字列表">▤ 週文字</button>
         <button class="topbar-btn boss-preview-entry" id="boss-preview-btn" onclick="openBossPreview()" title="以唯讀模式開啟目前貼文">👁 老闆預覽</button>
         <button class="topbar-btn ghost-github" onclick="toggleGhOverlay()">☁ 同步</button>
         <button class="topbar-btn present-btn" id="present-btn" onclick="togglePresenting()">🖥 簡報</button>
@@ -358,12 +134,49 @@
                     <option value="16-9">16:9 橫式</option>
                 </select>
             </div>
+            <div class="form-group">
+                <label for="qa-fb-image-count">FB 圖片張數</label>
+                <input type="number" id="qa-fb-image-count" min="1" max="20" step="1" value="1" inputmode="numeric">
+                <span class="searchable-hint">主題為「圖文時間」時才會使用多圖拼貼</span>
+            </div>
         </div>
         <div class="qa-footer">
             <button class="qa-skip-link" onclick="skipQuickAdd()">略過範本，直接新增空白貼文</button>
             <div class="qa-footer-actions">
                 <button class="qa-cancel-btn" onclick="closeQuickAdd()">取消</button>
                 <button class="qa-submit-btn" onclick="submitQuickAdd()">＋ 新增貼文</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- =====================================================
+     每週貼文文字列表
+===================================================== -->
+<div class="workspace-modal-overlay" id="weekly-export-overlay">
+    <div class="workspace-modal-backdrop" onclick="closeWeeklyExport()"></div>
+    <div class="workspace-modal weekly-export-modal" role="dialog" aria-modal="true" aria-labelledby="weekly-export-title">
+        <div class="workspace-modal-header">
+            <div>
+                <span class="workspace-modal-kicker weekly-export-kicker">WEEKLY TEXT LIST</span>
+                <h2 id="weekly-export-title">每週貼文文字列表</h2>
+            </div>
+            <button class="workspace-modal-close" onclick="closeWeeklyExport()" aria-label="關閉">✕</button>
+        </div>
+        <div class="weekly-export-body">
+            <div class="weekly-export-nav">
+                <button type="button" class="weekly-export-nav-btn" onclick="changeWeeklyExportWeek(-1)" aria-label="上一週">◀</button>
+                <strong id="weekly-export-range">—</strong>
+                <button type="button" class="weekly-export-nav-btn" onclick="changeWeeklyExportWeek(1)" aria-label="下一週">▶</button>
+            </div>
+            <p class="weekly-export-note">依預計發布時間排序；輸出內容不會修改原本貼文。</p>
+            <textarea id="weekly-export-output" class="weekly-export-output" readonly spellcheck="false" aria-label="每週貼文文字列表"></textarea>
+        </div>
+        <div class="workspace-modal-footer weekly-export-footer">
+            <span id="weekly-export-count" class="weekly-export-count">共 0 則</span>
+            <div class="workspace-modal-actions">
+                <button class="workspace-secondary-btn" onclick="downloadWeeklyExport()">⬇ 下載 TXT</button>
+                <button class="workspace-primary-btn" id="weekly-export-copy-btn" onclick="copyWeeklyExport()">⧉ 複製列表</button>
             </div>
         </div>
     </div>
@@ -507,10 +320,6 @@
                     </div>
                     <div class="ig-more">···</div>
                 </div>
-                <div class="ig-viewer-tools">
-                    <span class="ig-viewer-hint">輪播不好按？放大後再用底部左右箭頭翻頁</span>
-                    <button type="button" class="ig-enlarge-btn" id="ig-enlarge-btn" onclick="toggleIGPreviewFullscreen()" aria-pressed="false">⛶ 放大翻頁</button>
-                </div>
                 <div class="ig-media r-1-1" id="prev-ig-media">
                     <div class="ig-media-empty">尚未設定 Canva 連結</div>
                 </div>
@@ -618,6 +427,12 @@
                                 <option value="published">已發布</option>
                             </select>
                         </div>
+                        <div class="form-group">
+                            <label for="edit-fb-image-count">FB 圖片張數</label>
+                            <input type="number" id="edit-fb-image-count" min="1" max="20" step="1" value="1"
+                                   inputmode="numeric" onchange="updateCurrentPost('fbImageCount', this.value)">
+                            <span class="searchable-hint">「圖文時間」依張數自動排版；其他主題固定首圖</span>
+                        </div>
                     </div>
                 </div>
 
@@ -691,63 +506,12 @@
     <button class="mobile-nav-btn" id="mnav-preview" onclick="mobileShowPanel('preview')">👁<span>預覽</span></button>
 </div>
 
-<script src="assets/js/services/storage.js?v=8.4.4" defer></script>
-<script src="assets/js/services/github.js?v=8.4.4" defer></script>
-<script src="assets/js/services/canva.js?v=8.4.4" defer></script>
-<script src="assets/js/services/post-composer.js?v=8.4.4" defer></script>
-<script src="assets/js/services/performance.js?v=8.4.4" defer></script>
-<script src="assets/js/app.js?v=8.4.4" defer></script>
-<script>
-    function setIGFullscreenButton(active) {
-        const button = document.getElementById('ig-enlarge-btn');
-        if (!button) return;
-        button.textContent = active ? '✕ 退出放大' : '⛶ 放大翻頁';
-        button.setAttribute('aria-pressed', active ? 'true' : 'false');
-    }
-
-    function toggleIGPreviewFullscreen() {
-        const card = document.getElementById('ig-preview-card');
-        if (!card) return;
-
-        const usingFallback = card.classList.contains('ig-fullscreen-fallback');
-        if (document.fullscreenElement === card) {
-            document.exitFullscreen();
-            return;
-        }
-
-        if (usingFallback) {
-            card.classList.remove('ig-fullscreen-fallback');
-            document.body.classList.remove('ig-preview-locked');
-            setIGFullscreenButton(false);
-            return;
-        }
-
-        if (card.requestFullscreen) {
-            card.requestFullscreen().catch(function () {
-                card.classList.add('ig-fullscreen-fallback');
-                document.body.classList.add('ig-preview-locked');
-                setIGFullscreenButton(true);
-            });
-        } else {
-            card.classList.add('ig-fullscreen-fallback');
-            document.body.classList.add('ig-preview-locked');
-            setIGFullscreenButton(true);
-        }
-    }
-
-    document.addEventListener('fullscreenchange', function () {
-        const card = document.getElementById('ig-preview-card');
-        setIGFullscreenButton(document.fullscreenElement === card);
-    });
-
-    document.addEventListener('keydown', function (event) {
-        const card = document.getElementById('ig-preview-card');
-        if (event.key === 'Escape' && card && card.classList.contains('ig-fullscreen-fallback')) {
-            card.classList.remove('ig-fullscreen-fallback');
-            document.body.classList.remove('ig-preview-locked');
-            setIGFullscreenButton(false);
-        }
-    });
-</script>
+<script src="assets/js/services/storage.js?v=8.4.6" defer></script>
+<script src="assets/js/services/github.js?v=8.4.6" defer></script>
+<script src="assets/js/services/canva.js?v=8.4.6" defer></script>
+<script src="assets/js/services/post-composer.js?v=8.4.6" defer></script>
+<script src="assets/js/services/performance.js?v=8.4.6" defer></script>
+<script src="assets/js/services/weekly-export.js?v=8.4.6" defer></script>
+<script src="assets/js/app.js?v=8.4.6" defer></script>
 </body>
 </html>

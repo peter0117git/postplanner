@@ -1,4 +1,4 @@
-# V8.4.4 流暢雙平台預覽版架構
+# V8.4.6 每週文字匯出版架構
 
 ## 設計目標
 
@@ -12,7 +12,10 @@
 8. Facebook 長文預設收合；一般主題只呈現首圖，「圖文時間」以 2×2 四圖格呈現。
 9. Facebook 的 Canva iframe 以加高並置中的方式裁掉底部控制列，並以透明層阻止誤觸。
 10. 老闆模式的 Instagram 圖面區以透明捲動層將滾輪交還外層，只保留底部 Canva 翻頁列可操作。
-11. 預覽媒體使用 paint containment 與 content visibility；四圖 iframe 採閒置時分批載入。
+11. 預覽媒體使用 paint containment 與 content visibility；多圖 iframe 採閒置時分批載入。
+12. `fbImageCount` 由編輯者設定；非「圖文時間」一律以 1 張計算。
+13. Facebook 拼圖依張數切換 2 張平分、3 張一大兩小、4 張四格、5 張兩大三小，6 張以上在第五格顯示剩餘數量。
+14. 每週文字列表以目前選定日期換算星期一至星期日，只讀取記憶體資料並產生純文字，不寫回資料庫。
 
 ## 元件責任
 
@@ -23,6 +26,7 @@
 - `assets/js/services/canva.js`：Canva 網址驗證與官方 embed 網址建立。
 - `assets/js/services/post-composer.js`：組合與檢查完整發布文案。
 - `assets/js/services/performance.js`：公開資料指紋與主題／書名索引。
+- `assets/js/services/weekly-export.js`：週起訖計算、貼文排序與純文字格式化。
 
 ## 資料流程
 
@@ -65,6 +69,14 @@ Canva 完整 /design/.../view 分享網址
   → 同時呈現 Instagram 完整輪播與 Facebook 發文樣貌
   → Facebook 長文預設收合並顯示「顯示更多」
   → Facebook 一般主題鎖定第 1 張；圖文時間顯示前 4 張的 2×2 圖格
+```
+
+```text
+一般模式點擊「週文字」
+  → 以目前日期換算該週星期一至星期日
+  → 各日貼文依發布時間排序
+  → 使用結構化主題與書名產生純文字
+  → 複製到剪貼簿或下載 UTF-8 TXT
 ```
 
 ## 故障隔離

@@ -20,9 +20,11 @@ let dataRevision = 0;
 let persistedRevision = 0;
 let metadataIndexDirty = true;
 let metadataIndexCache = { themes: [], books: [] };
+let weeklyExportAnchorDate = null;
+let currentWeeklyExport = null;
 let calYear, calMonth;     // 日曆浮動視窗的當前年月
 const DB_SCHEMA_VERSION = 2;
-const APP_VERSION = '8.4.4';
+const APP_VERSION = '8.4.6';
 const PAGE_PARAMS = new URLSearchParams(location.search);
 const IS_BOSS_PREVIEW = PAGE_PARAMS.get('preview') === 'boss';
 const PERSIST_DEBOUNCE_MS = 550;
@@ -292,6 +294,60 @@ function changePresentationPost(dir) {
 }
 
 /* =============================================================
+   每週貼文文字列表
+============================================================= */
+function openWeeklyExport() {
+    if (IS_BOSS_PREVIEW) return;
+    weeklyExportAnchorDate = selectedDateStr || fmtDate(new Date());
+    renderWeeklyExport();
+    document.getElementById('weekly-export-overlay').classList.add('open');
+}
+
+function closeWeeklyExport() {
+    document.getElementById('weekly-export-overlay').classList.remove('open');
+}
+
+function renderWeeklyExport() {
+    if (!weeklyExportAnchorDate) weeklyExportAnchorDate = selectedDateStr || fmtDate(new Date());
+    currentWeeklyExport = WeeklyExportService.buildWeek(db, weeklyExportAnchorDate, { getPlainText });
+    weeklyExportAnchorDate = currentWeeklyExport.startDate;
+    document.getElementById('weekly-export-range').textContent = currentWeeklyExport.rangeLabel;
+    document.getElementById('weekly-export-count').textContent = `共 ${currentWeeklyExport.postCount} 則`;
+    document.getElementById('weekly-export-output').value = currentWeeklyExport.text;
+}
+
+function changeWeeklyExportWeek(direction) {
+    const offset = Number(direction) < 0 ? -7 : 7;
+    weeklyExportAnchorDate = WeeklyExportService.shiftDate(weeklyExportAnchorDate, offset);
+    renderWeeklyExport();
+}
+
+async function copyWeeklyExport() {
+    if (!currentWeeklyExport) renderWeeklyExport();
+    try {
+        await writeClipboardText(currentWeeklyExport.text);
+        showToast(`已複製 ${currentWeeklyExport.postCount} 則貼文`);
+    } catch (error) {
+        console.error('Weekly export copy failed:', error);
+        const output = document.getElementById('weekly-export-output');
+        output.focus(); output.select();
+        showToast('自動複製失敗，已選取文字，請按 Ctrl+C', 4200);
+    }
+}
+
+function downloadWeeklyExport() {
+    if (!currentWeeklyExport) renderWeeklyExport();
+    const downloadUrl = URL.createObjectURL(new Blob([`\uFEFF${currentWeeklyExport.text}`], { type: 'text/plain;charset=utf-8' }));
+    const link = Object.assign(document.createElement('a'), {
+        href: downloadUrl,
+        download: currentWeeklyExport.filename
+    });
+    document.body.appendChild(link); link.click(); document.body.removeChild(link);
+    setTimeout(() => URL.revokeObjectURL(downloadUrl), 1000);
+    showToast('已下載每週貼文文字列表');
+}
+
+/* =============================================================
    備份
 ============================================================= */
 async function exportBackup() {
@@ -361,6 +417,22 @@ function normalizeMeta(value) {
         tombstones
     };
 }
+function normalizeFBImageCount(value, fallback = 1) {
+    const parsed = Number.parseInt(value, 10);
+    return Number.isInteger(parsed) ? Math.min(20, Math.max(1, parsed)) : fallback;
+}
+function getFBImageCount(post) {
+    if (String(post?.theme || '').trim() !== '圖文時間') return 1;
+    return normalizeFBImageCount(post?.fbImageCount, 4);
+}
+function getFBLayoutLabel(count) {
+    if (count === 1) return '單張首圖';
+    if (count === 2) return '雙圖平分';
+    if (count === 3) return '一大兩小';
+    if (count === 4) return '四格網格';
+    if (count === 5) return '兩大三小';
+    return `顯示前 5 張，另有 ${count - 5} 張`;
+}
 function normalizeDatabase(value, { strict = true } = {}) {
     if (!value || typeof value !== 'object' || Array.isArray(value)) {
         if (strict) throw new Error('資料庫必須是以日期分類的物件');
@@ -372,7 +444,12 @@ function normalizeDatabase(value, { strict = true } = {}) {
             if (strict) throw new Error(`日期 ${dateStr} 的格式不正確`);
             return;
         }
-        normalized[dateStr] = list.filter(p => p && typeof p === 'object' && !Array.isArray(p)).map(p => ({ ...cloneJson(p) }));
+        normalized[dateStr] = list.filter(p => p && typeof p === 'object' && !Array.isArray(p)).map(p => {
+            const post = { ...cloneJson(p) };
+            if (String(post.theme || '').trim() === '圖文時間' && post.fbImageCount == null) post.fbImageCount = 4;
+            if (post.fbImageCount != null) post.fbImageCount = normalizeFBImageCount(post.fbImageCount, 1);
+            return post;
+        });
     });
     migrateIds(normalized);
     return normalized;
@@ -806,6 +883,7 @@ function loadPost(id) {
     document.getElementById('edit-theme').value = post.theme || '';
     document.getElementById('edit-title').value = post.title || '';
     document.getElementById('edit-status').value = post.status || 'draft';
+    document.getElementById('edit-fb-image-count').value = String(getFBImageCount(post));
     document.getElementById('canva-url-input').value = post.canvaUrl || '';
     document.getElementById('edit-caption').innerHTML = post.caption || '';
     updateCanvaLauncherState(post);
@@ -825,8 +903,13 @@ function updateCurrentPost(field, value) {
     if (field === 'caption') value = sanitizeCaptionHtml(value);
     if (field === 'ratio' && !VALID_RATIOS.has(value)) return;
     if (field === 'status' && !VALID_STATUSES.has(value)) return;
+    if (field === 'fbImageCount') value = normalizeFBImageCount(value, 1);
     if (post[field] === value) return;
     post[field] = value;
+    if (field === 'theme') {
+        if (String(value).trim() === '圖文時間' && post.fbImageCount == null) post.fbImageCount = 4;
+        document.getElementById('edit-fb-image-count').value = String(getFBImageCount(post));
+    }
     const now = new Date().toISOString();
     post.createdAt = post.createdAt || now;
     post.updatedAt = now;
@@ -838,7 +921,7 @@ function updateCurrentPost(field, value) {
     if (field === 'caption') schedulePreviewRender();
     else if (field === 'canvaUrl') schedulePreviewRender(360);
     else if (field === 'theme') schedulePreviewRender(240);
-    else if (field === 'time' || field === 'ratio') updatePreview();
+    else if (field === 'time' || field === 'ratio' || field === 'fbImageCount') updatePreview();
 
     if (isTextInput) scheduleDayRender();
     else renderDay();
@@ -853,7 +936,7 @@ function createNewPost() {
     if (!db[selectedDateStr]) db[selectedDateStr] = [];
     const newId = newPostId();
     const now = new Date().toISOString();
-    db[selectedDateStr].push({ _id: newId, caption: '', time: '09:00', canvaUrl: '', ratio: '1-1', theme: '', title: '', status: 'draft', createdAt: now, updatedAt: now });
+    db[selectedDateStr].push({ _id: newId, caption: '', time: '09:00', canvaUrl: '', ratio: '1-1', theme: '', title: '', fbImageCount: 1, status: 'draft', createdAt: now, updatedAt: now });
     saveLocal({ metadata: true }); renderDay(); loadPost(newId);
 }
 async function deletePost() {
@@ -963,6 +1046,7 @@ function openQuickAdd() {
     document.getElementById('qa-canva-input').value = '';
 
     document.getElementById('qa-ratio-select').value = '4-5';
+    document.getElementById('qa-fb-image-count').value = '1';
     document.getElementById('quickadd-overlay').classList.add('open');
 }
 function closeQuickAdd() { document.getElementById('quickadd-overlay').classList.remove('open'); }
@@ -1070,6 +1154,7 @@ function submitQuickAdd() {
     const time = document.getElementById('qa-time-input').value || '09:00';
     const canvaUrl = document.getElementById('qa-canva-input').value.trim();
     const ratio = document.getElementById('qa-ratio-select').value || '4-5';
+    const fbImageCount = normalizeFBImageCount(document.getElementById('qa-fb-image-count').value, 1);
 
     let opening = '';
     if (theme) opening += `【${theme}】`;
@@ -1081,7 +1166,7 @@ function submitQuickAdd() {
     if (!db[selectedDateStr]) db[selectedDateStr] = [];
     const newId = newPostId();
     const now = new Date().toISOString();
-    db[selectedDateStr].push({ _id: newId, caption, time, canvaUrl, ratio, theme, title, status: 'draft', createdAt: now, updatedAt: now });
+    db[selectedDateStr].push({ _id: newId, caption, time, canvaUrl, ratio, theme, title, fbImageCount, status: 'draft', createdAt: now, updatedAt: now });
 
     qaAddStored('qa_themes', theme);
     qaAddStored('qa_books', title);
@@ -1252,21 +1337,32 @@ function appendStaticShield(container) {
     shield.setAttribute('aria-hidden', 'true');
     container.appendChild(shield);
 }
-function renderCanvaMedia(container, { ratio, embedUrl, publicCanva, sourceUrl, title, firstCardOnly = false, facebookGallery = false }) {
+function renderCanvaMedia(container, { ratio, embedUrl, publicCanva, sourceUrl, title, firstCardOnly = false, facebookImageCount = 1 }) {
     const baseClass = container.id === 'prev-fb-media' ? 'fb-media' : 'ig-media';
-    container.className = facebookGallery ? 'fb-media fb-gallery-grid' : `${baseClass} r-${ratio}`;
+    const collageCount = baseClass === 'fb-media' ? normalizeFBImageCount(facebookImageCount, 1) : 1;
+    const visibleCount = Math.min(collageCount, 5);
+    const hasCollage = baseClass === 'fb-media' && collageCount > 1;
+    container.className = hasCollage
+        ? `fb-media fb-collage fb-count-${visibleCount} fb-ratio-${ratio}`
+        : `${baseClass} r-${ratio}`;
     container.replaceChildren();
     if (embedUrl) {
-        if (facebookGallery) {
-            for (let pageNumber = 1; pageNumber <= 4; pageNumber += 1) {
+        if (hasCollage) {
+            for (let pageNumber = 1; pageNumber <= visibleCount; pageNumber += 1) {
                 const tile = document.createElement('div');
-                tile.className = 'fb-gallery-tile';
+                tile.className = `fb-gallery-tile fb-tile-${pageNumber}`;
                 tile.appendChild(createCanvaFrame(embedUrl, `${title}｜第 ${pageNumber} 張`, {
                     pageNumber,
                     staticPreview: true,
                     deferMs: pageNumber === 1 ? 0 : 300 + ((pageNumber - 2) * 450)
                 }));
                 appendStaticShield(tile);
+                if (pageNumber === visibleCount && collageCount > visibleCount) {
+                    const overflow = document.createElement('span');
+                    overflow.className = 'fb-overflow-count';
+                    overflow.textContent = `+${collageCount - visibleCount}`;
+                    tile.appendChild(overflow);
+                }
                 container.appendChild(tile);
             }
             return;
@@ -1295,10 +1391,13 @@ function updatePreview() {
     const publicCanva = CanvaService.parsePublicUrl(post.canvaUrl || '');
     const canvaEmbed = CanvaService.parseEmbedUrl(post.canvaUrl || '');
     const ratio = post.ratio || '1-1';
-    const isFacebookGallery = String(post.theme || '').trim() === '圖文時間';
+    const isFacebookSeries = String(post.theme || '').trim() === '圖文時間';
+    const fbImageCount = getFBImageCount(post);
+    const isFacebookGallery = fbImageCount > 1;
+    const fbLayoutLabel = getFBLayoutLabel(fbImageCount);
     const baseMediaKey = `${ratio}|${canvaEmbed?.embedUrl || publicCanva?.sourceUrl || ''}`;
     const instagramKey = `instagram|${baseMediaKey}`;
-    const facebookKey = `facebook|${baseMediaKey}|${isFacebookGallery ? 'gallery' : 'first'}`;
+    const facebookKey = `facebook|${baseMediaKey}|count-${fbImageCount}`;
     if (instagramKey !== lastRenderedMediaKeys.instagram) {
         lastRenderedMediaKeys.instagram = instagramKey;
         renderCanvaMedia(document.getElementById('prev-ig-media'), {
@@ -1316,16 +1415,16 @@ function updatePreview() {
             embedUrl: canvaEmbed?.embedUrl,
             publicCanva,
             sourceUrl: post.canvaUrl,
-            title: isFacebookGallery ? 'Facebook 圖文時間完整圖組預覽' : 'Facebook 第一張字卡預覽',
+            title: isFacebookGallery ? `Facebook ${fbImageCount} 張圖片預覽` : 'Facebook 第一張字卡預覽',
             firstCardOnly: !isFacebookGallery,
-            facebookGallery: isFacebookGallery
+            facebookImageCount: fbImageCount
         });
     }
-    document.getElementById('fb-media-rule').innerText = isFacebookGallery
-        ? 'Facebook 預覽｜「圖文時間」使用四圖排列'
+    document.getElementById('fb-media-rule').innerText = isFacebookSeries
+        ? `Facebook 預覽｜${fbImageCount} 張圖片 · ${fbLayoutLabel}`
         : 'Facebook 預覽｜實際發文僅使用第一張字卡';
-    document.getElementById('facebook-preview-summary').innerText = isFacebookGallery
-        ? '圖文時間 · 四圖排列'
+    document.getElementById('facebook-preview-summary').innerText = isFacebookSeries
+        ? `${fbImageCount} 張 · ${fbLayoutLabel}`
         : '一般貼文 · 僅第一張字卡';
     const raw = post.caption || '';
     const plain = getPlainText(raw);
@@ -1442,6 +1541,7 @@ document.addEventListener('keydown', e => {
     if (e.key === 'Escape') {
         if (document.body.classList.contains('editor-focused')) toggleEditorFocus(false);
         else if (document.getElementById('confirm-modal').classList.contains('show')) closeConfirmModal(false);
+        else if (document.getElementById('weekly-export-overlay').classList.contains('open')) closeWeeklyExport();
         else if (document.getElementById('publish-overlay').classList.contains('open')) closePublishComposer();
         else if (document.getElementById('canva-tool-overlay').classList.contains('open')) closeCanvaTool();
         else if (document.getElementById('quickadd-overlay').classList.contains('open')) closeQuickAdd();

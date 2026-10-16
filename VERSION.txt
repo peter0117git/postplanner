@@ -1,4 +1,4 @@
-IG Post Planner V8.4.4 — Smooth Instagram and Facebook Preview
+IG Post Planner V8.4.6 — Weekly Post Text Export
 
 Public database.js is revalidated once per launch with ETag and content fingerprints.
 Unchanged data is not reparsed, merged, or rewritten to IndexedDB.
@@ -11,3 +11,7 @@ Long Facebook captions start collapsed with a Show More control.
 Regular Facebook posts show the first card; 圖文時間 uses a locked 2-by-2 four-image layout.
 Boss-mode wheel scrolling bypasses Canva's canvas while its bottom page controls remain available.
 Preview paint containment, offscreen rendering skips, reduced scroll shadows, and staggered gallery loading lower frame drops.
+Editors can set the Facebook image count from 1 to 20 because Canva page counts are cross-origin.
+Facebook uses distinct layouts for 2, 3, 4, and 5 images; 6+ adds a remaining-count overlay to the fifth tile.
+The selected date now anchors a Monday-to-Sunday text list sorted by publishing time.
+Weekly lists can be copied or downloaded as a UTF-8 TXT without modifying planner data.
