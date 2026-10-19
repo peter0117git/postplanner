@@ -4375,16 +4375,16 @@ var externalDB = {
   "2026-10-28": [
     {
       "_id": "p_1792399906726_utf338",
-      "caption": "<div>【早上只讀一點點】 《下雨的人》</div><div><br></div>",
+      "caption": "<div>【早上只讀一點點】&nbsp;<span style=\"color:rgb(8, 8, 9)\">《寺山修司少女詩集(經典燙金版)》</span></div><div><br></div>",
       "time": "08:00",
       "canvaUrl": "",
       "ratio": "4-5",
       "theme": "早上只讀一點點",
-      "title": "下雨的人",
+      "title": "寺山修司少女詩集(經典燙金版)",
       "fbImageCount": 1,
       "status": "draft",
       "createdAt": "2026-10-19T08:51:46.726Z",
-      "updatedAt": "2026-10-19T08:51:46.726Z"
+      "updatedAt": "2026-10-19T09:46:16.239Z"
     },
     {
       "_id": "p_1792399919941_m7a96c",
@@ -4416,7 +4416,7 @@ var externalDB = {
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-10-19T09:19:08.876Z",
+  "updatedAt": "2026-10-19T09:46:24.958Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
