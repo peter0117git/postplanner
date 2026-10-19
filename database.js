@@ -4289,11 +4289,134 @@ var externalDB = {
       "createdAt": "2026-10-16T03:17:34.524Z",
       "updatedAt": "2026-10-19T08:45:00.958Z"
     }
+  ],
+  "2026-10-26": [
+    {
+      "_id": "p_1792399642892_ng4y1t",
+      "caption": "<div>【早上只讀一點點】 《#一次又一次又一次地重新開始》</div><div><br></div>",
+      "time": "08:00",
+      "canvaUrl": "",
+      "ratio": "1-1",
+      "theme": "早上只讀一點點",
+      "title": "#一次又一次又一次地重新開始",
+      "fbImageCount": 1,
+      "status": "draft",
+      "createdAt": "2026-10-19T08:47:22.892Z",
+      "updatedAt": "2026-10-19T08:47:22.892Z"
+    },
+    {
+      "_id": "p_1792399691447_7pphd3",
+      "caption": "<div>【新書搶先讀】 《幸福就是吃飯睡覺等待 vol.5》</div><div><br></div><div><br></div><div><br></div>",
+      "time": "18:00",
+      "canvaUrl": "",
+      "ratio": "1-1",
+      "theme": "新書搶先讀",
+      "title": "幸福就是吃飯睡覺等待 vol.5 搶先讀",
+      "fbImageCount": 1,
+      "status": "draft",
+      "createdAt": "2026-10-19T08:48:11.447Z",
+      "updatedAt": "2026-10-19T08:48:40.126Z"
+    },
+    {
+      "_id": "p_1792399736432_bhsubt",
+      "caption": "<div>【晚上多讀一點點】 《上帝不眨眼：50堂百萬人瘋傳的人生智慧》</div><div><br></div>",
+      "time": "20:00",
+      "canvaUrl": "",
+      "ratio": "4-5",
+      "theme": "晚上多讀一點點",
+      "title": "上帝不眨眼：50堂百萬人瘋傳的人生智慧",
+      "fbImageCount": 1,
+      "status": "draft",
+      "createdAt": "2026-10-19T08:48:56.432Z",
+      "updatedAt": "2026-10-19T08:48:56.432Z"
+    }
+  ],
+  "2026-10-27": [
+    {
+      "_id": "p_1792399775485_7a964d",
+      "caption": "<div>【早上只讀一點點】 《現在，就是療癒你的開始》</div><div><br></div>",
+      "time": "08:00",
+      "canvaUrl": "",
+      "ratio": "4-5",
+      "theme": "早上只讀一點點",
+      "title": "現在，就是療癒你的開始",
+      "fbImageCount": 1,
+      "status": "draft",
+      "createdAt": "2026-10-19T08:49:35.485Z",
+      "updatedAt": "2026-10-19T08:49:35.485Z"
+    },
+    {
+      "_id": "p_1792399796402_wtea5f",
+      "caption": "<div>【新書搶先讀】 《每天只畫一點點，365天燃燒你的植物魂》</div><div><br></div>",
+      "time": "18:00",
+      "canvaUrl": "",
+      "ratio": "1-1",
+      "theme": "新書搶先讀",
+      "title": "每天只畫一點點，365天燃燒你的植物魂",
+      "fbImageCount": 1,
+      "status": "draft",
+      "createdAt": "2026-10-19T08:49:56.402Z",
+      "updatedAt": "2026-10-19T08:49:56.402Z"
+    },
+    {
+      "_id": "p_1792399813960_vw5u12",
+      "caption": "<div>【晚上多讀一點點】 《#慢慢寄出去的心》</div><div><br></div>",
+      "time": "20:00",
+      "canvaUrl": "",
+      "ratio": "4-5",
+      "theme": "晚上多讀一點點",
+      "title": "#慢慢寄出去的心",
+      "fbImageCount": 1,
+      "status": "draft",
+      "createdAt": "2026-10-19T08:50:13.960Z",
+      "updatedAt": "2026-10-19T08:50:13.960Z"
+    }
+  ],
+  "2026-10-28": [
+    {
+      "_id": "p_1792399906726_utf338",
+      "caption": "<div>【早上只讀一點點】 《下雨的人》</div><div><br></div>",
+      "time": "08:00",
+      "canvaUrl": "",
+      "ratio": "4-5",
+      "theme": "早上只讀一點點",
+      "title": "下雨的人",
+      "fbImageCount": 1,
+      "status": "draft",
+      "createdAt": "2026-10-19T08:51:46.726Z",
+      "updatedAt": "2026-10-19T08:51:46.726Z"
+    },
+    {
+      "_id": "p_1792399919941_m7a96c",
+      "caption": "<div>【圖文時間】 《宇希時間》</div><div><br></div>",
+      "time": "18:00",
+      "canvaUrl": "",
+      "ratio": "4-5",
+      "theme": "圖文時間",
+      "title": "宇希時間",
+      "fbImageCount": 1,
+      "status": "draft",
+      "createdAt": "2026-10-19T08:51:59.941Z",
+      "updatedAt": "2026-10-19T08:51:59.941Z"
+    },
+    {
+      "_id": "p_1792400031360_f9frb8",
+      "caption": "<div>【晚上多讀一點點】 《#慢慢寄出去的心》</div><div><br></div>",
+      "time": "20:00",
+      "canvaUrl": "",
+      "ratio": "4-5",
+      "theme": "晚上多讀一點點",
+      "title": "#慢慢寄出去的心",
+      "fbImageCount": 1,
+      "status": "draft",
+      "createdAt": "2026-10-19T08:53:51.360Z",
+      "updatedAt": "2026-10-19T08:53:51.360Z"
+    }
   ]
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-10-19T08:46:27.486Z",
+  "updatedAt": "2026-10-19T08:54:10.306Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
