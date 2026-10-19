@@ -4225,75 +4225,75 @@ var externalDB = {
   "2026-10-23": [
     {
       "_id": "p_1792056055906_ghhluu",
-      "caption": "<div>【早上只讀一點點】 《一次又一次又一次地重新開始》</div><div><br></div>",
+      "caption": "<div>【早上只讀一點點】 《一次又一次又一次地重新開始》</div><div><br></div><div><div>不只身體會長大，導致衣服不合身，</div><div>曾經裹得我們暖烘烘的念頭、習慣、</div><div>人際關係和恐懼，也有不適用的一天。</div><div><br></div><div>突破固有邊界的過程或許不舒服，</div><div>但不安往往是成長的開始。</div></div><div><br></div><div>#大田出版 #療癒 #會好起來的</div>",
       "time": "08:00",
-      "canvaUrl": "",
+      "canvaUrl": "https://www.canva.com/design/DAHUx0ERHjc/XkMUHP9AzrsvMDqWj3FH3Q/view?utm_content=DAHUx0ERHjc&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc8ddfee9f3",
       "ratio": "1-1",
       "theme": "早上只讀一點點",
       "title": "一次又一次又一次地重新開始",
       "status": "draft",
       "createdAt": "2026-10-15T09:20:55.906Z",
-      "updatedAt": "2026-10-15T09:20:55.906Z"
+      "updatedAt": "2026-10-19T07:39:16.930Z"
     },
     {
       "_id": "p_1792056081255_y8appu",
-      "caption": "<div>【圖文時間】 《希望溫暖你的每一天(精采夜光版)》</div><div><br></div>",
+      "caption": "<div><div>【圖文時間】 《希望溫暖你的每一天(精采夜光版)》</div><div><br></div><div><div>遇挫折時，</div><div>克服挫折重新站起來的速度比以前更快。</div><div>跟別人比較時，</div><div>能看著自己的小小成長鼓勵自己。</div><div>被難過的情緒席捲時，</div><div>也能夠接受那就是自己的樣子。</div><div>恢復成自己的速度一點一點地加快。</div><div>這都是你成長的證據。</div></div><div><br></div><div>摘自p.34~36</div><div><br></div><div>#大田出版 #療癒</div></div>",
       "time": "18:00",
-      "canvaUrl": "",
+      "canvaUrl": "https://www.canva.com/design/DAHV_smqQOY/vYG3mwknHTAF5L3CIAUCTA/view?utm_content=DAHV_smqQOY&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h62db24fd48",
       "ratio": "1-1",
       "theme": "圖文時間",
       "title": "希望溫暖你的每一天(精采夜光版)",
       "status": "draft",
       "createdAt": "2026-10-15T09:21:21.255Z",
-      "updatedAt": "2026-10-15T09:21:21.255Z",
+      "updatedAt": "2026-10-19T07:41:06.911Z",
       "fbImageCount": 4
     },
     {
       "_id": "p_1792056097260_okd6y6",
-      "caption": "<div>【晚上多讀一點點】 《不要再怪自己想太多：精神科醫師寫給總是不安的你》</div><div><br></div>",
+      "caption": "<div>【晚上多讀一點點】 《不要再怪自己想太多：精神科醫師寫給總是不安的你》</div><div><br></div><div><div><div>其實擁有獨處時間，能解決許多人生問題</div></div><div><div>生活在現代社會是非常辛苦的事情，需要學習很多東西，還要有諸多考量。雖然我們接收到很多來自外界的刺激，但是大腦卻沒有足夠的時間去消化它們。因此某一刻大腦就會像超載的電腦一樣，運轉速度變慢，思維也變得遲緩。此時判斷力會急劇下降，可能會搞砸重要的決定。同時，創意也會枯竭，只能勉強維持現狀而已。如此一來，即使只是坐在椅子上，工作進展也會變得緩慢，並且成效不彰。即使睡得再多，也難以緩解疲勞，反而徒增壓力。</div></div><div><div>此時最需要的正是休息。我們被無數的刺激包圍，在不知不覺中看到、聽到、經歷到很多事情，並且受到影響。若想讓這些蜂擁而入的刺激不只是停留在瞬間的感覺或印象，而是能進一步發展成我們的思維方式，就需要有獨處的時間來思考和整理它們。</div><div>就像吃完食物後需要讓身體稍微休息，才能讓食物得到良好消化，以構成骨骼和肌肉一樣，如果想讓我們接收到的刺激被理解和消化，成為精神結構的一部分，我們就需要有足夠的時間去消化這些刺激。</div></div><div><div>當感覺大腦超載時，我們必須停止一切並稍事休息。我們應該阻止更多的刺激進入，讓大腦有時間消化之前接收到的資訊，並將其與現有的資訊整合。</div></div><div><div>因此，比爾．蓋茲（Bill Gates）每年會前往位於美國西北部的一座別墅兩次，度過為期一週的「思考週」（Think Week）。在這段時間內，他不會接見公司員工，連家人都謝絕拜訪，完全獨處以進行充電。若說微軟公司的重要事業構想都是在這段時間內產生的也不為過。</div></div><div><div>然而，能夠工作時專注於工作、休息時好好休息的人比想像中要少很多。有些人很難接受真正的休息。他們無法忍受放鬆和無所事事的時間。這些人認為，在不工作的時間裡應該做一些更重要和更具生產力的事情，而不是休息。他們在休息時間也難以安靜下來，反而更加持續不停地接收新事物。無法完全隔絕外部的所有刺激，結果讓我們的身心始終處於緊張狀態，大腦最終會因超載而全面崩潰。</div></div><div><div>放鬆緊張並休息絕不是浪費時間。不，如果想要活得更好，偶爾必須刻意阻斷所有刺激，享受獨處的時光。關掉手機，待在一個不受任何人干擾的空間裡，保護自己不受外界刺激，讓大腦充分休息。讓筋疲力竭的大腦重新恢復活力，讓思緒得以自由流動。</div></div><div><div>如此一來，原本複雜糾結的思緒會變得簡單清晰，疲憊的身體會恢復，心情也會變得輕鬆愉快。擺脫僵化的思維枷鎖，我們就能想到平時未曾思考或嘗試過的事物，並將思維朝更具創造性的方向發展。</div></div><div><div>另一方面，經常獨自去海外旅行的人都有一個異口同聲的說法：「旅行，是為了找到回家的路。」雖然在陌生的地方與陌生人相遇，獲得新奇的經歷非常有趣，但隨著時間推移，會莫名其妙地開始想家、嚮往日常生活、懷念起身邊的人。當初出發時無比厭倦的一切，在旅途中卻都變得令人懷念起來。</div><div>此時，我們會再次領悟到身邊的人是多麼珍貴的存在，對於與他們在一起時視為理所當然的一切也會心存感激。在旅途的尾聲，我們會渴望回家，想見到那些人。</div></div><div><div>當你疲憊不堪，誰都不想見的時候，就應該傾聽內心的聲音。因為你的心靈在發出訊號，表明需要獨處的時間來思考和整理。此時請停下手邊的工作，暫時將家人或愛人拋在腦後，騰出一段時間來獨處吧！</div></div><div><div>摘自p.249~251</div></div><div><div><span>#獨處</span> <span>#大田出版</span> <span>#現代生活</span></div></div></div>",
       "time": "20:00",
-      "canvaUrl": "",
+      "canvaUrl": "https://www.canva.com/design/DAHYbwySsQo/5F6yGuQ1P0vkKWSGLwkbWA/view?utm_content=DAHYbwySsQo&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hab271084b8",
       "ratio": "1-1",
       "theme": "晚上多讀一點點",
       "title": "不要再怪自己想太多：精神科醫師寫給總是不安的你",
       "status": "draft",
       "createdAt": "2026-10-15T09:21:37.260Z",
-      "updatedAt": "2026-10-16T03:16:34.563Z"
+      "updatedAt": "2026-10-19T07:45:49.504Z"
     }
   ],
   "2026-10-24": [
     {
       "_id": "p_1792056147090_xmxwy4",
-      "caption": "<div>【新書預告】 《幸福就是吃飯睡覺等待 vol.5》</div><div><br></div>",
+      "caption": "<div>【新書預告】 《幸福就是吃飯睡覺等待 vol.5》</div><div><br></div><div><div>我們</div><div>都比自己想像的</div><div>更勇敢</div><div><br></div><div>為什麼</div><div>會對可以跨越的事</div><div>感到害怕而裹足不前呢……？</div><div><br></div><div>★2022年「這本漫畫真厲害！」女生部漫畫 第8名</div><div>★2025年NHK改編電視劇</div><div>★系列在日銷售突破100萬冊</div><div>★亞馬遜五星好評 ★博客來選書</div><div><br></div><div>【隨書贈送】</div><div>台灣限定 • 蒐集5號 • 日日好日 書籤特典 （120mm × 70mm）</div><div><br></div><div>無可奈何的日子</div><div><br></div><div>如何撐過的祕訣｡</div><div><br></div><div>由於生病過著每周只能打工四天維持生計的麥卷聰子。</div><div><br></div><div>因為束手無策的身體狀況，有時得放棄某些堅持。</div><div><br></div><div>心情低落的日子，藉由好吃的飯菜養精蓄銳。</div><div><br></div><div>隨著社區和職場拓展的關係，聰子也漸漸懂得正向思考……？</div><div><br></div><div>★慢一點也沒關係★</div><div><br></div><div>「現在的我，做什麼都只能做到八分滿，也正在思考，像現在這樣的自己，今後要用什麼樣的步調才能繼續走下去。 我想，到了這個地步，也只能接受現況了。接下來，大概就是「慢慢思考今後該怎麼走」吧。慢一點也沒關係。聰子也是一邊和自己的狀況磨合，一步一步找出適合自己的生活方式。」</div><div><br></div><div>——節錄自「誠品提案10月號：修復的練習」作者 水凪トリ（Mizunagi Tori）專訪</div></div><div><br></div><div>#新書 #大田出版</div>",
       "time": "09:00",
-      "canvaUrl": "",
-      "ratio": "4-5",
+      "canvaUrl": "https://www.canva.com/design/DAHYb78Nuso/q_3CMuEm2dS-x8uyT23G-Q/view?utm_content=DAHYb78Nuso&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hf3f94f8139",
+      "ratio": "1-1",
       "theme": "新書預告",
       "title": "幸福就是吃飯睡覺等待 vol.5",
       "status": "draft",
       "createdAt": "2026-10-15T09:22:27.090Z",
-      "updatedAt": "2026-10-15T09:22:27.090Z"
+      "updatedAt": "2026-10-19T08:37:04.983Z"
     }
   ],
   "2026-10-25": [
     {
       "_id": "p_1792120654524_dzt50q",
-      "caption": "<div>【新書預告】 《每天只畫一點點，365天燃燒你的植物魂》</div><div><br></div>",
+      "caption": "<div>【新書預告】 《每天只畫一點點，365天燃燒你的植物魂》</div><div><br></div><div><div>★亞馬遜網路書店&nbsp; 藝術圖書類長銷五星好評★</div><div>&nbsp;</div><div>買一本送給自己 ，也送給好朋友</div><div>&nbsp;</div><div>天天畫，慢慢減壓&nbsp; 天天畫，創意激發</div><div>&nbsp;</div><div>觀察大自然&nbsp; 找到專屬你的森呼吸</div><div>&nbsp;</div><div><br></div><div>【精采收錄】</div><div>★精選藝術家名言，延伸與藝術的連結</div><div>★作者獨門畫畫技巧的分享</div><div>★彈性靈活的設計，無論在哪裡，能隨心實踐，不受限制</div><div><br></div><div><br></div><div><br></div><div>你無法控制大自然，但你可以享受大自然。</div><div><br></div><div>有時我們需要一段無所事事的時光，單純找回與大自然的連結；</div><div><br></div><div>有時允許自己做白日夢，將所有心事拋諸腦後。</div><div><br></div><div>&nbsp;</div><div><br></div><div>無論你生活在哪裡，只要一到戶外，</div><div><br></div><div>也許是一株植物、一隻動物、一片天空，</div><div><br></div><div>或是整幅風景……讓你驚奇、讚嘆。</div><div><br></div><div>來，找個舒服的地方坐下，放鬆身心，</div><div><br></div><div>畫什麼主題，不重要；最後的成品如何，不重要。</div><div><br></div><div>&nbsp;</div><div><br></div><div>這次嘗試在綠色中加入白色，創造出更多樣的綠色；</div><div><br></div><div>這次可以留些空白區域，呈現海浪反射的光線；</div><div><br></div><div>這次你不見得要在每個地方都添加線條細節，只要選定陰影；</div><div><br></div><div>這次你可能需要耐心等候鳥兒，那就先畫畫樹枝吧……</div><div><br></div><div>&nbsp;</div><div><br></div><div>洛娜‧史可碧《每天只畫一點點》精采系列，</div><div><br></div><div>現在我們走進豐富的大自然，汲取創意，激發想像。</div><div><br></div><div>每天完成一項，或每週完成幾項，甚至有空時隨時進行，</div><div><br></div><div>按照自己的步調，找到適合自己的方式，</div><div><br></div><div>即使畫錯，也不在意，因為每天只畫一點點就很開心。</div><div><br></div><div>【亞馬遜網路書店 讀者五顆星滿分好評】</div><div><br></div><div>◆幾秒鐘就能完成</div><div><br></div><div>這是一種舒緩且充滿樂趣的創作方式，每次只需畫上幾筆或鉛筆線條即可。尋找創意火花有時會讓人感到無所適從，但這些提示讓一切變得輕鬆許多。我也買了作者的另外兩本書。</div><div><br></div><div>◆獲取靈感的大寶庫</div><div><br></div><div>非常棒的一本書，裡面裝滿了各種點子與提示，也適合患有失智症且喜愛園藝與藝術的人。</div><div><br></div><div>◆建立自信心</div><div><br></div><div>有人推薦我這個系列，試著每天嘗試不同的媒材和藝術類型，藉此建立信心並養成練習習慣。因為這本內容以自然為主題，我買來送給朋友當生日禮物。</div><div><br></div><div>&nbsp;#新書 #大田出版</div></div>",
       "time": "09:00",
-      "canvaUrl": "",
-      "ratio": "4-5",
+      "canvaUrl": "https://www.canva.com/design/DAHYcII3QZg/WMd2Qn1rwNa-a-6liNI4Ig/view?utm_content=DAHYcII3QZg&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hf063f05931",
+      "ratio": "1-1",
       "theme": "新書預告",
       "title": "每天只畫一點點，365天繪出你的植物魂",
       "fbImageCount": 1,
       "status": "draft",
       "createdAt": "2026-10-16T03:17:34.524Z",
-      "updatedAt": "2026-10-16T03:18:00.502Z"
+      "updatedAt": "2026-10-19T08:45:00.958Z"
     }
   ]
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-10-19T07:30:02.050Z",
+  "updatedAt": "2026-10-19T08:46:27.486Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
