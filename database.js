@@ -64,7 +64,8 @@ var externalDB = {
       "theme": "圖文時間",
       "title": "便當實驗室又開張了",
       "createdAt": null,
-      "updatedAt": null
+      "updatedAt": null,
+      "fbImageCount": 4
     },
     {
       "headerUser": "username",
@@ -140,7 +141,8 @@ var externalDB = {
       "theme": "圖文時間",
       "title": "幸福就是吃飯睡覺等待",
       "createdAt": null,
-      "updatedAt": null
+      "updatedAt": null,
+      "fbImageCount": 4
     },
     {
       "headerUser": "大田出版",
@@ -209,7 +211,8 @@ var externalDB = {
       "theme": "圖文時間",
       "title": "宇希時間",
       "createdAt": null,
-      "updatedAt": null
+      "updatedAt": null,
+      "fbImageCount": 4
     },
     {
       "headerUser": "大田出版",
@@ -286,7 +289,8 @@ var externalDB = {
       "theme": "圖文時間",
       "title": "在一個人的夜晚",
       "createdAt": null,
-      "updatedAt": null
+      "updatedAt": null,
+      "fbImageCount": 4
     },
     {
       "headerUser": "大田出版",
@@ -491,7 +495,8 @@ var externalDB = {
       "theme": "圖文時間",
       "title": "宇希時間",
       "createdAt": null,
-      "updatedAt": null
+      "updatedAt": null,
+      "fbImageCount": 4
     },
     {
       "_id": "p_1782356983052_841j",
@@ -529,7 +534,8 @@ var externalDB = {
       "theme": "圖文時間",
       "title": "便當實驗室又開張了： 日日&特別日的菜單挑戰記",
       "createdAt": null,
-      "updatedAt": null
+      "updatedAt": null,
+      "fbImageCount": 4
     },
     {
       "_id": "p_1782356958551_kvmr",
@@ -579,7 +585,8 @@ var externalDB = {
       "theme": "圖文時間",
       "title": "悠悠哉哉一個人生活的好日子",
       "createdAt": null,
-      "updatedAt": null
+      "updatedAt": null,
+      "fbImageCount": 4
     },
     {
       "_id": "p_1782356963392_4fbe",
@@ -695,7 +702,8 @@ var externalDB = {
       "theme": "圖文時間",
       "title": "悠悠哉哉一個人生活的好日子",
       "createdAt": null,
-      "updatedAt": null
+      "updatedAt": null,
+      "fbImageCount": 4
     },
     {
       "_id": "p_1782884544091_zaas",
@@ -733,7 +741,8 @@ var externalDB = {
       "theme": "圖文時間",
       "title": "宇希時間",
       "createdAt": null,
-      "updatedAt": null
+      "updatedAt": null,
+      "fbImageCount": 4
     },
     {
       "_id": "p_1782884570751_pgb5",
@@ -771,7 +780,8 @@ var externalDB = {
       "theme": "圖文時間",
       "title": "幸福就是吃飯睡覺等待",
       "createdAt": null,
-      "updatedAt": null
+      "updatedAt": null,
+      "fbImageCount": 4
     },
     {
       "_id": "p_1782884572238_ozqu",
@@ -809,7 +819,8 @@ var externalDB = {
       "theme": "圖文時間",
       "title": "便當實驗室又開張了",
       "createdAt": null,
-      "updatedAt": null
+      "updatedAt": null,
+      "fbImageCount": 4
     },
     {
       "_id": "p_1782884576623_u1dk",
@@ -885,7 +896,8 @@ var externalDB = {
       "theme": "圖文時間",
       "title": "悠悠哉哉一個人生活的好日子",
       "createdAt": null,
-      "updatedAt": null
+      "updatedAt": null,
+      "fbImageCount": 4
     },
     {
       "_id": "p_1783325401917_sdaj",
@@ -923,7 +935,8 @@ var externalDB = {
       "theme": "圖文時間",
       "title": "宇希時間",
       "createdAt": null,
-      "updatedAt": null
+      "updatedAt": null,
+      "fbImageCount": 4
     },
     {
       "_id": "p_1783325511147_ehao",
@@ -961,7 +974,8 @@ var externalDB = {
       "theme": "圖文時間",
       "title": "幸福就是吃飯睡覺等待",
       "createdAt": null,
-      "updatedAt": null
+      "updatedAt": null,
+      "fbImageCount": 4
     },
     {
       "_id": "p_1783325658432_4g4v",
@@ -999,7 +1013,8 @@ var externalDB = {
       "theme": "圖文時間",
       "title": "希望溫暖你的每一天(精彩夜光版)",
       "createdAt": null,
-      "updatedAt": null
+      "updatedAt": null,
+      "fbImageCount": 4
     },
     {
       "_id": "p_1783325732166_oex2",
@@ -1155,7 +1170,8 @@ var externalDB = {
       "theme": "圖文時間",
       "title": "悠悠哉哉一個人生活的好日子",
       "createdAt": null,
-      "updatedAt": null
+      "updatedAt": null,
+      "fbImageCount": 4
     },
     {
       "_id": "p_1784534684421_elc0",
@@ -1193,7 +1209,8 @@ var externalDB = {
       "theme": "圖文時間",
       "title": "宇希時間",
       "createdAt": null,
-      "updatedAt": null
+      "updatedAt": null,
+      "fbImageCount": 4
     },
     {
       "_id": "p_1784534846530_1ztx",
@@ -1231,7 +1248,8 @@ var externalDB = {
       "theme": "圖文時間",
       "title": "希望溫暖你的每一天(精采夜光版)",
       "createdAt": null,
-      "updatedAt": null
+      "updatedAt": null,
+      "fbImageCount": 4
     },
     {
       "_id": "p_1784535053069_kmhk",
@@ -1335,7 +1353,8 @@ var externalDB = {
       "theme": "圖文時間",
       "title": "悠悠哉哉一個人生活的好日子",
       "createdAt": null,
-      "updatedAt": null
+      "updatedAt": null,
+      "fbImageCount": 4
     },
     {
       "_id": "p_1785143859839_9nai",
@@ -1423,7 +1442,8 @@ var externalDB = {
       "theme": "圖文時間",
       "title": "宇希時間",
       "createdAt": null,
-      "updatedAt": null
+      "updatedAt": null,
+      "fbImageCount": 4
     },
     {
       "_id": "p_1785291234390_6g2t",
@@ -1461,7 +1481,8 @@ var externalDB = {
       "theme": "圖文時間",
       "title": "便當實驗室又開張了： 日日&特別日的菜單挑戰記",
       "createdAt": null,
-      "updatedAt": null
+      "updatedAt": null,
+      "fbImageCount": 4
     },
     {
       "_id": "p_1785291450927_vdk4",
@@ -1499,7 +1520,8 @@ var externalDB = {
       "theme": "圖文時間",
       "title": "希望溫暖你的每一天(精采夜光版)",
       "createdAt": null,
-      "updatedAt": null
+      "updatedAt": null,
+      "fbImageCount": 4
     },
     {
       "_id": "p_1785306361643_qqc3",
@@ -1577,7 +1599,8 @@ var externalDB = {
       "theme": "圖文時間",
       "title": "一次又一次又一次地重新開始",
       "createdAt": null,
-      "updatedAt": null
+      "updatedAt": null,
+      "fbImageCount": 4
     },
     {
       "_id": "p_1785293454818_g17d",
@@ -1615,7 +1638,8 @@ var externalDB = {
       "theme": "圖文時間",
       "title": "悠悠哉哉一個人生活的好日子",
       "createdAt": null,
-      "updatedAt": null
+      "updatedAt": null,
+      "fbImageCount": 4
     },
     {
       "_id": "p_1785738723486_ocyc",
@@ -1653,7 +1677,8 @@ var externalDB = {
       "theme": "圖文時間",
       "title": "宇希時間",
       "createdAt": "2026-08-05T02:42:22.812Z",
-      "updatedAt": "2026-08-05T02:50:52.322Z"
+      "updatedAt": "2026-08-05T02:50:52.322Z",
+      "fbImageCount": 4
     },
     {
       "_id": "p_1785738836547_bhm7",
@@ -1703,7 +1728,8 @@ var externalDB = {
       "theme": "圖文時間",
       "title": "幸福就是吃飯睡覺等待",
       "createdAt": "2026-08-05T03:21:22.200Z",
-      "updatedAt": "2026-08-05T03:21:22.200Z"
+      "updatedAt": "2026-08-05T03:21:22.200Z",
+      "fbImageCount": 4
     }
   ],
   "2026-08-07": [
@@ -1729,7 +1755,8 @@ var externalDB = {
       "theme": "圖文時間",
       "title": "一次又一次又一次地重新開始",
       "createdAt": "2026-08-05T03:24:18.318Z",
-      "updatedAt": "2026-08-07T07:43:16.673Z"
+      "updatedAt": "2026-08-07T07:43:16.673Z",
+      "fbImageCount": 4
     },
     {
       "_id": "p_1785739168776_j4kt",
@@ -1781,7 +1808,8 @@ var externalDB = {
       "theme": "圖文時間",
       "title": "幸福就是吃飯睡覺等待",
       "createdAt": "2026-08-07T03:19:56.607Z",
-      "updatedAt": "2026-08-07T03:36:03.651Z"
+      "updatedAt": "2026-08-07T03:36:03.651Z",
+      "fbImageCount": 4
     },
     {
       "_id": "p_1785830446460_dv5u",
@@ -1833,7 +1861,8 @@ var externalDB = {
       "title": "便當實驗室又開張了： 日日&特別日的菜單挑戰記",
       "status": "draft",
       "createdAt": "2026-08-07T04:30:19.196Z",
-      "updatedAt": "2026-08-07T07:00:16.095Z"
+      "updatedAt": "2026-08-07T07:00:16.095Z",
+      "fbImageCount": 4
     },
     {
       "_id": "p_1786077062905_mpogzb",
@@ -1871,7 +1900,8 @@ var externalDB = {
       "title": "宇希時間",
       "status": "draft",
       "createdAt": "2026-08-07T04:31:53.552Z",
-      "updatedAt": "2026-08-07T07:09:29.623Z"
+      "updatedAt": "2026-08-07T07:09:29.623Z",
+      "fbImageCount": 4
     },
     {
       "_id": "p_1786077129272_d1p75r",
@@ -1909,7 +1939,8 @@ var externalDB = {
       "title": "希望溫暖你的每一天(精采夜光版)",
       "status": "draft",
       "createdAt": "2026-08-07T04:32:50.296Z",
-      "updatedAt": "2026-08-13T06:30:53.630Z"
+      "updatedAt": "2026-08-13T06:30:53.630Z",
+      "fbImageCount": 4
     },
     {
       "_id": "p_1786077196029_5zoco9",
@@ -1947,7 +1978,8 @@ var externalDB = {
       "title": "悠悠哉哉一個人生活的好日子",
       "status": "draft",
       "createdAt": "2026-08-07T04:34:04.553Z",
-      "updatedAt": "2026-08-12T08:17:59.769Z"
+      "updatedAt": "2026-08-12T08:17:59.769Z",
+      "fbImageCount": 4
     },
     {
       "_id": "p_1786077262073_tb0oor",
@@ -2013,7 +2045,8 @@ var externalDB = {
       "title": "幸福就是吃飯睡覺等待vol.2",
       "status": "draft",
       "createdAt": "2026-08-13T08:37:51.151Z",
-      "updatedAt": "2026-08-17T04:09:45.056Z"
+      "updatedAt": "2026-08-17T04:09:45.056Z",
+      "fbImageCount": 4
     },
     {
       "_id": "p_1786610297611_6sb6ta",
@@ -2051,7 +2084,8 @@ var externalDB = {
       "title": "希望溫暖你的每一天(精采夜光版)",
       "status": "draft",
       "createdAt": "2026-08-17T05:35:28.979Z",
-      "updatedAt": "2026-08-17T06:32:52.749Z"
+      "updatedAt": "2026-08-17T06:32:52.749Z",
+      "fbImageCount": 4
     },
     {
       "_id": "p_1786945012296_txwler",
@@ -2089,7 +2123,8 @@ var externalDB = {
       "title": "宇希時間",
       "status": "draft",
       "createdAt": "2026-08-17T05:37:48.928Z",
-      "updatedAt": "2026-08-17T06:23:01.508Z"
+      "updatedAt": "2026-08-17T06:23:01.508Z",
+      "fbImageCount": 4
     },
     {
       "_id": "p_1786945105670_5r17eq",
@@ -2127,7 +2162,8 @@ var externalDB = {
       "title": "一次又一次又一次地重新開始",
       "status": "draft",
       "createdAt": "2026-08-17T05:58:22.558Z",
-      "updatedAt": "2026-08-20T09:27:12.725Z"
+      "updatedAt": "2026-08-20T09:27:12.725Z",
+      "fbImageCount": 4
     },
     {
       "_id": "p_1786946351554_k75tg5",
@@ -2153,7 +2189,8 @@ var externalDB = {
       "title": "幸福就是吃飯睡覺等待 vol.3搶先讀",
       "status": "draft",
       "createdAt": "2026-08-20T06:31:55.362Z",
-      "updatedAt": "2026-08-20T09:38:52.678Z"
+      "updatedAt": "2026-08-20T09:38:52.678Z",
+      "fbImageCount": 4
     },
     {
       "_id": "p_1787211322568_7qz25x",
@@ -2219,7 +2256,8 @@ var externalDB = {
       "title": "一次又一次又一次地重新開始",
       "status": "draft",
       "createdAt": "2026-08-20T08:04:58.519Z",
-      "updatedAt": "2026-08-24T08:48:56.293Z"
+      "updatedAt": "2026-08-24T08:48:56.293Z",
+      "fbImageCount": 4
     },
     {
       "_id": "p_1787293600141_a81vo5",
@@ -2269,7 +2307,8 @@ var externalDB = {
       "title": "幸福就是吃飯睡覺等待 vol.3",
       "status": "draft",
       "createdAt": "2026-08-24T06:38:39.315Z",
-      "updatedAt": "2026-08-24T08:59:05.992Z"
+      "updatedAt": "2026-08-24T08:59:05.992Z",
+      "fbImageCount": 4
     },
     {
       "_id": "p_1787553540831_11uqeg",
@@ -2307,7 +2346,8 @@ var externalDB = {
       "title": "宇希時間",
       "status": "draft",
       "createdAt": "2026-08-24T06:41:34.820Z",
-      "updatedAt": "2026-08-24T07:44:49.108Z"
+      "updatedAt": "2026-08-24T07:44:49.108Z",
+      "fbImageCount": 4
     },
     {
       "_id": "p_1787553723019_ajji0d",
@@ -2345,7 +2385,8 @@ var externalDB = {
       "title": "悠悠哉哉一個人生活的好日子",
       "status": "draft",
       "createdAt": "2026-08-24T08:45:49.090Z",
-      "updatedAt": "2026-08-26T05:43:10.937Z"
+      "updatedAt": "2026-08-26T05:43:10.937Z",
+      "fbImageCount": 4
     },
     {
       "_id": "p_1787723023942_nrrrxw",
@@ -2383,7 +2424,8 @@ var externalDB = {
       "title": "希望溫暖你的每一天(精采夜光版)",
       "status": "draft",
       "createdAt": "2026-08-26T05:46:01.055Z",
-      "updatedAt": "2026-08-26T09:06:49.306Z"
+      "updatedAt": "2026-08-26T09:06:49.306Z",
+      "fbImageCount": 4
     },
     {
       "_id": "p_1787723199507_iyypk3",
@@ -2487,7 +2529,8 @@ var externalDB = {
       "title": "幸福就是吃飯睡覺等待 vol.3",
       "status": "draft",
       "createdAt": "2026-08-31T02:56:32.980Z",
-      "updatedAt": "2026-09-01T07:32:38.405Z"
+      "updatedAt": "2026-09-01T07:32:38.405Z",
+      "fbImageCount": 4
     },
     {
       "_id": "p_1788145011070_xj14x4",
@@ -2549,7 +2592,8 @@ var externalDB = {
       "title": "宇希時間",
       "status": "draft",
       "createdAt": "2026-08-31T03:07:18.825Z",
-      "updatedAt": "2026-09-01T07:12:10.118Z"
+      "updatedAt": "2026-09-01T07:12:10.118Z",
+      "fbImageCount": 4
     },
     {
       "_id": "p_1788145666717_nhf4w4",
@@ -2587,7 +2631,8 @@ var externalDB = {
       "title": "希望溫暖你的每一天(精采夜光版)",
       "status": "draft",
       "createdAt": "2026-08-31T06:57:37.407Z",
-      "updatedAt": "2026-08-31T06:57:42.540Z"
+      "updatedAt": "2026-08-31T06:57:42.540Z",
+      "fbImageCount": 4
     },
     {
       "_id": "p_1788249438720_o0sauy",
@@ -2625,7 +2670,8 @@ var externalDB = {
       "title": "幸福就是吃飯睡覺等待 vol.3",
       "status": "draft",
       "createdAt": "2026-09-01T08:03:23.221Z",
-      "updatedAt": "2026-09-01T08:26:45.436Z"
+      "updatedAt": "2026-09-01T08:26:45.436Z",
+      "fbImageCount": 4
     },
     {
       "_id": "p_1788249838627_ta2pn1",
@@ -2651,7 +2697,8 @@ var externalDB = {
       "title": "幸福就是吃飯睡覺等待 vol.3",
       "status": "draft",
       "createdAt": "2026-09-07T05:35:30.617Z",
-      "updatedAt": "2026-09-07T07:47:23.805Z"
+      "updatedAt": "2026-09-07T07:47:23.805Z",
+      "fbImageCount": 4
     },
     {
       "_id": "p_1788759355450_4il8c4",
@@ -2689,7 +2736,8 @@ var externalDB = {
       "title": "希望溫暖你的每一天(精采夜光版)",
       "status": "draft",
       "createdAt": "2026-09-07T06:21:54.988Z",
-      "updatedAt": "2026-09-07T07:49:57.613Z"
+      "updatedAt": "2026-09-07T07:49:57.613Z",
+      "fbImageCount": 4
     },
     {
       "_id": "p_1788762145346_k9czww",
@@ -2727,7 +2775,8 @@ var externalDB = {
       "title": "宇希時間",
       "status": "draft",
       "createdAt": "2026-09-07T06:23:34.884Z",
-      "updatedAt": "2026-09-07T08:12:43.212Z"
+      "updatedAt": "2026-09-07T08:12:43.212Z",
+      "fbImageCount": 4
     },
     {
       "_id": "p_1788762243993_hner7o",
@@ -2765,7 +2814,8 @@ var externalDB = {
       "title": "幸福就是吃飯睡覺等待 vol.3",
       "status": "draft",
       "createdAt": "2026-09-08T05:49:01.993Z",
-      "updatedAt": "2026-09-08T06:12:46.058Z"
+      "updatedAt": "2026-09-08T06:12:46.058Z",
+      "fbImageCount": 4
     },
     {
       "_id": "p_1788846588710_5f91jr",
@@ -2803,7 +2853,8 @@ var externalDB = {
       "title": "希望溫暖你的每一天(精采夜光版)",
       "status": "draft",
       "createdAt": "2026-09-08T06:33:17.332Z",
-      "updatedAt": "2026-09-10T07:49:45.576Z"
+      "updatedAt": "2026-09-10T07:49:45.576Z",
+      "fbImageCount": 4
     },
     {
       "_id": "p_1789018710904_ljz3b3",
@@ -2881,7 +2932,8 @@ var externalDB = {
       "title": "希望溫暖你的每一天(精采夜光版)",
       "status": "draft",
       "createdAt": "2026-09-10T06:00:46.163Z",
-      "updatedAt": "2026-09-14T03:08:06.304Z"
+      "updatedAt": "2026-09-14T03:08:06.304Z",
+      "fbImageCount": 4
     },
     {
       "_id": "p_1789357724818_3l25eh",
@@ -2919,7 +2971,8 @@ var externalDB = {
       "title": "幸福就是吃飯睡覺等待 vol.3",
       "status": "draft",
       "createdAt": "2026-09-14T06:06:43.153Z",
-      "updatedAt": "2026-09-14T08:58:15.751Z"
+      "updatedAt": "2026-09-14T08:58:15.751Z",
+      "fbImageCount": 4
     },
     {
       "_id": "p_1789367992098_605k0r",
@@ -2957,7 +3010,8 @@ var externalDB = {
       "title": "宇希時間",
       "status": "draft",
       "createdAt": "2026-09-15T02:04:01.172Z",
-      "updatedAt": "2026-09-15T02:04:47.194Z"
+      "updatedAt": "2026-09-15T02:04:47.194Z",
+      "fbImageCount": 4
     },
     {
       "_id": "p_1789455215190_kug9jv",
@@ -2995,7 +3049,8 @@ var externalDB = {
       "title": "幸福就是吃飯睡覺等待 vol.3",
       "status": "draft",
       "createdAt": "2026-09-15T06:54:14.219Z",
-      "updatedAt": "2026-09-15T07:47:16.767Z"
+      "updatedAt": "2026-09-15T07:47:16.767Z",
+      "fbImageCount": 4
     },
     {
       "_id": "p_1789455299759_7sb8y5",
@@ -3033,7 +3088,8 @@ var externalDB = {
       "title": "希望溫暖你的每一天(精采夜光版)",
       "status": "draft",
       "createdAt": "2026-09-15T06:55:49.836Z",
-      "updatedAt": "2026-09-16T05:43:11.524Z"
+      "updatedAt": "2026-09-16T05:43:11.524Z",
+      "fbImageCount": 4
     },
     {
       "_id": "p_1789545213695_fs5unh",
@@ -3111,7 +3167,8 @@ var externalDB = {
       "title": "幸福就是吃飯睡覺等待",
       "status": "draft",
       "createdAt": "2026-09-16T08:11:00.428Z",
-      "updatedAt": "2026-09-16T08:46:28.363Z"
+      "updatedAt": "2026-09-16T08:46:28.363Z",
+      "fbImageCount": 4
     },
     {
       "_id": "p_1789546356088_448vnh",
@@ -3149,7 +3206,8 @@ var externalDB = {
       "title": "幸福就是吃飯睡覺等待 vol.3",
       "status": "draft",
       "createdAt": "2026-09-21T06:10:31.113Z",
-      "updatedAt": "2026-09-21T07:20:49.737Z"
+      "updatedAt": "2026-09-21T07:20:49.737Z",
+      "fbImageCount": 4
     },
     {
       "_id": "p_1789971051429_p44j5k",
@@ -3187,7 +3245,8 @@ var externalDB = {
       "title": "宇希時間",
       "status": "draft",
       "createdAt": "2026-09-21T06:14:37.756Z",
-      "updatedAt": "2026-09-21T06:49:52.774Z"
+      "updatedAt": "2026-09-21T06:49:52.774Z",
+      "fbImageCount": 4
     },
     {
       "_id": "p_1789971659746_mfis73",
@@ -3225,7 +3284,8 @@ var externalDB = {
       "title": "希望溫暖你的每一天(精采夜光版)",
       "status": "draft",
       "createdAt": "2026-09-21T06:21:53.542Z",
-      "updatedAt": "2026-09-21T07:36:58.072Z"
+      "updatedAt": "2026-09-21T07:36:58.072Z",
+      "fbImageCount": 4
     },
     {
       "_id": "p_1789971768269_55j73t",
@@ -3263,7 +3323,8 @@ var externalDB = {
       "title": "一次又一次又一次地重新開始",
       "status": "draft",
       "createdAt": "2026-09-21T06:23:51.808Z",
-      "updatedAt": "2026-09-23T09:21:51.667Z"
+      "updatedAt": "2026-09-23T09:21:51.667Z",
+      "fbImageCount": 4
     },
     {
       "_id": "p_1789971919745_uo0sle",
@@ -3405,7 +3466,8 @@ var externalDB = {
       "title": "宇希時間",
       "status": "draft",
       "createdAt": "2026-09-23T06:04:09.519Z",
-      "updatedAt": "2026-09-23T06:58:09.375Z"
+      "updatedAt": "2026-09-23T06:58:09.375Z",
+      "fbImageCount": 4
     },
     {
       "_id": "p_1790667338235_soyfgw",
@@ -3443,7 +3505,8 @@ var externalDB = {
       "title": "幸福就是吃飯睡覺等待 vol.4",
       "status": "draft",
       "createdAt": "2026-09-29T07:33:12.993Z",
-      "updatedAt": "2026-09-29T07:56:20.072Z"
+      "updatedAt": "2026-09-29T07:56:20.072Z",
+      "fbImageCount": 4
     },
     {
       "_id": "p_1790667393096_gpbzmj",
@@ -3583,7 +3646,8 @@ var externalDB = {
       "title": "幸福就是吃飯睡覺等待 vol.4",
       "status": "draft",
       "createdAt": "2026-10-05T02:48:08.333Z",
-      "updatedAt": "2026-10-05T05:57:22.528Z"
+      "updatedAt": "2026-10-05T05:57:22.528Z",
+      "fbImageCount": 4
     },
     {
       "_id": "p_1791168505058_jf01im",
@@ -3621,7 +3685,8 @@ var externalDB = {
       "title": "幸福就是吃飯睡覺等待 vol.4",
       "status": "draft",
       "createdAt": "2026-10-05T02:49:26.946Z",
-      "updatedAt": "2026-10-05T06:48:52.347Z"
+      "updatedAt": "2026-10-05T06:48:52.347Z",
+      "fbImageCount": 4
     },
     {
       "_id": "p_1791168578924_htsj6q",
@@ -3659,7 +3724,8 @@ var externalDB = {
       "title": "宇希時間",
       "status": "draft",
       "createdAt": "2026-10-05T02:51:05.758Z",
-      "updatedAt": "2026-10-05T03:06:42.127Z"
+      "updatedAt": "2026-10-05T03:06:42.127Z",
+      "fbImageCount": 4
     },
     {
       "_id": "p_1791168679130_o1holw",
@@ -3697,7 +3763,8 @@ var externalDB = {
       "title": "希望溫暖你的每一天(精采夜光版)",
       "status": "draft",
       "createdAt": "2026-10-05T02:52:01.781Z",
-      "updatedAt": "2026-10-05T03:12:03.445Z"
+      "updatedAt": "2026-10-05T03:12:03.445Z",
+      "fbImageCount": 4
     },
     {
       "_id": "p_1791168743388_etg7n6",
@@ -3785,7 +3852,8 @@ var externalDB = {
       "title": "幸福就是吃飯睡覺等待 vol.4",
       "status": "draft",
       "createdAt": "2026-10-05T08:36:10.560Z",
-      "updatedAt": "2026-10-12T06:21:41.255Z"
+      "updatedAt": "2026-10-12T06:21:41.255Z",
+      "fbImageCount": 4
     }
   ],
   "2026-10-10": [
@@ -3877,7 +3945,8 @@ var externalDB = {
       "title": "宇希時間",
       "status": "draft",
       "createdAt": "2026-10-12T06:29:59.983Z",
-      "updatedAt": "2026-10-12T06:57:25.015Z"
+      "updatedAt": "2026-10-12T06:57:25.015Z",
+      "fbImageCount": 4
     },
     {
       "_id": "p_1791786617586_t4tzhl",
@@ -3915,7 +3984,8 @@ var externalDB = {
       "title": "幸福就是吃飯睡覺等待 vol.4",
       "status": "draft",
       "createdAt": "2026-10-12T07:28:16.572Z",
-      "updatedAt": "2026-10-12T09:06:42.267Z"
+      "updatedAt": "2026-10-12T09:06:42.267Z",
+      "fbImageCount": 4
     },
     {
       "_id": "p_1791790109665_y9s6pb",
@@ -4003,7 +4073,8 @@ var externalDB = {
       "title": "幸福就是吃飯睡覺等待 vol.4",
       "status": "draft",
       "createdAt": "2026-10-15T07:10:24.349Z",
-      "updatedAt": "2026-10-15T07:35:00.667Z"
+      "updatedAt": "2026-10-15T07:35:00.667Z",
+      "fbImageCount": 4
     }
   ],
   "2026-10-20": [
@@ -4023,25 +4094,26 @@ var externalDB = {
       "_id": "p_1792055479853_m7tyia",
       "caption": "<div>【圖文時間】 《幸福就是吃飯睡覺等待 vol.1》</div><div><br></div>",
       "time": "09:00",
-      "canvaUrl": "",
+      "canvaUrl": "https://www.canva.com/design/DAHYa7ajHtQ/ddtS7aT5HPdFkcO2XbSCWA/view?utm_content=DAHYa7ajHtQ&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h05fcc7bb2c",
       "ratio": "1-1",
       "theme": "圖文時間",
       "title": "幸福就是吃飯睡覺等待 vol.1",
       "status": "draft",
       "createdAt": "2026-10-15T09:11:19.853Z",
-      "updatedAt": "2026-10-15T09:11:19.853Z"
+      "updatedAt": "2026-10-19T03:42:15.574Z",
+      "fbImageCount": 4
     },
     {
       "_id": "p_1792055488620_5se7hx",
-      "caption": "<div>【晚上多讀一點點】 《#慢慢寄出去的心》</div><div><br></div>",
+      "caption": "<div>【晚上多讀一點點】 《#慢慢寄出去的心》</div><div><br></div><div><div>我聽過最多關於阿姨的話，是「她什麼都不做就是在幫忙了」。可是偏偏阿姨是那個最不可能乖乖待著不動的人。在所有阿姨經歷的事件裡，我最喜歡的是她讓學校門口那家已經關門的小吃店重新開張的趣事。那個故事不論聽幾次，我都還是覺得好笑。</div><div>阿姨說，她高一的時候每天都去吃那家小吃店現做的辣炒年糕，體重增加了足足十五公斤。</div><div>「變胖也無所謂啊，真的有那麼好吃。」</div><div>後來上了高二，那家小吃店關門大吉。不論你信不信，阿姨因為再也吃不到辣炒年糕，連期中考都搞砸了。有人散布謠言，說那家店會重複使用剩下的食物。小吃店老闆的心被謠言所傷，於是把店關了。</div><div>「是誰說的？」</div><div>其實我早已聽過好幾次，還是故意問。阿姨從「那個壞女人啊……」開始說起。那個壞女人，指的是對面小吃店老闆的姪女，是剛轉學過來不久的學生。因為自己叔叔的店生意實在太差，便散播那種謠言。阿姨順著謠言一路追查，花了一整個星期詢問幾十個孩子，最後才把事情查清楚。聽到這裡，我又問：</div><div>「阿姨，我真的不懂。那個小吃店老闆啊，如果她是被冤枉的，不是應該更拚命去做生意嗎？為什麼乾脆直接關店了？」</div><div>阿姨搖下車窗，深吸一口氣。</div><div>「那朵黃色的花很漂亮吧，可是它沒有香味。這世上也會有那樣的人，沒有拚命去爭，不代表沒有勇氣。」</div><div>我也跟著深吸一口氣，試著去聞花的香氣，卻什麼味道也沒有。阿姨又把車窗關上。我還是不太理解阿姨的意思。</div><div>阿姨去找商場裡的人打聽小吃店老闆的下落，從和老闆情同姊妹的美髮店老闆那裡聽說她回了老家。小吃店老闆的大哥在老家那邊一所國中的校門口開文具店，她說過想去那裡再開一家小吃店。</div><div>從那天起，阿姨每隔三天寫一封信。信裡寫著，重複使用剩下食物的誤會已經解除了，造謠的孩子也在小吃店門口貼上道歉文，全校都人盡皆知，希望她能回來。</div><div><br></div><div><div>摘自 《 #慢慢寄出去的心》-〈<span>慢慢寄出去的心</span>〉p.67~68</div><div><br></div><div><span>#大田出版 #尹成姬 #溫柔 #小說</span></div></div></div>",
       "time": "20:00",
-      "canvaUrl": "",
-      "ratio": "1-1",
+      "canvaUrl": "https://www.canva.com/design/DAHXxSBg54A/QAz_6AQAd8xA3YzRoTeRXA/view?utm_content=DAHXxSBg54A&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h3a39d240f1",
+      "ratio": "4-5",
       "theme": "晚上多讀一點點",
       "title": "#慢慢寄出去的心",
       "status": "draft",
       "createdAt": "2026-10-15T09:11:28.620Z",
-      "updatedAt": "2026-10-15T09:11:28.620Z"
+      "updatedAt": "2026-10-19T04:09:13.186Z"
     }
   ],
   "2026-10-17": [
@@ -4095,7 +4167,8 @@ var externalDB = {
       "title": "宇希時間",
       "status": "draft",
       "createdAt": "2026-10-15T09:10:17.846Z",
-      "updatedAt": "2026-10-15T09:10:17.846Z"
+      "updatedAt": "2026-10-15T09:10:17.846Z",
+      "fbImageCount": 4
     },
     {
       "_id": "p_1792055453446_of6w3i",
@@ -4133,7 +4206,8 @@ var externalDB = {
       "title": "幸福就是吃飯睡覺等待 vol.2",
       "status": "draft",
       "createdAt": "2026-10-15T09:20:12.849Z",
-      "updatedAt": "2026-10-15T09:20:12.849Z"
+      "updatedAt": "2026-10-15T09:20:12.849Z",
+      "fbImageCount": 4
     },
     {
       "_id": "p_1792056032356_q6qudq",
@@ -4171,19 +4245,20 @@ var externalDB = {
       "title": "希望溫暖你的每一天(精采夜光版)",
       "status": "draft",
       "createdAt": "2026-10-15T09:21:21.255Z",
-      "updatedAt": "2026-10-15T09:21:21.255Z"
+      "updatedAt": "2026-10-15T09:21:21.255Z",
+      "fbImageCount": 4
     },
     {
       "_id": "p_1792056097260_okd6y6",
-      "caption": "<div>【晚上多讀一點點】 《#尋找蜘蛛：日本暢銷超過36萬冊，西加奈子的生命故事》</div><div><br></div>",
+      "caption": "<div>【晚上多讀一點點】 《不要再怪自己想太多：精神科醫師寫給總是不安的你》</div><div><br></div>",
       "time": "20:00",
       "canvaUrl": "",
       "ratio": "1-1",
       "theme": "晚上多讀一點點",
-      "title": "#尋找蜘蛛：日本暢銷超過36萬冊，西加奈子的生命故事",
+      "title": "不要再怪自己想太多：精神科醫師寫給總是不安的你",
       "status": "draft",
       "createdAt": "2026-10-15T09:21:37.260Z",
-      "updatedAt": "2026-10-15T09:21:37.260Z"
+      "updatedAt": "2026-10-16T03:16:34.563Z"
     }
   ],
   "2026-10-24": [
@@ -4199,11 +4274,26 @@ var externalDB = {
       "createdAt": "2026-10-15T09:22:27.090Z",
       "updatedAt": "2026-10-15T09:22:27.090Z"
     }
+  ],
+  "2026-10-25": [
+    {
+      "_id": "p_1792120654524_dzt50q",
+      "caption": "<div>【新書預告】 《每天只畫一點點，365天燃燒你的植物魂》</div><div><br></div>",
+      "time": "09:00",
+      "canvaUrl": "",
+      "ratio": "4-5",
+      "theme": "新書預告",
+      "title": "每天只畫一點點，365天繪出你的植物魂",
+      "fbImageCount": 1,
+      "status": "draft",
+      "createdAt": "2026-10-16T03:17:34.524Z",
+      "updatedAt": "2026-10-16T03:18:00.502Z"
+    }
   ]
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-10-16T02:39:47.018Z",
+  "updatedAt": "2026-10-19T04:09:35.975Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
