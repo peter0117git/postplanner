@@ -4293,16 +4293,16 @@ var externalDB = {
   "2026-10-26": [
     {
       "_id": "p_1792399642892_ng4y1t",
-      "caption": "<div>【早上只讀一點點】 《#一次又一次又一次地重新開始》</div><div><br></div>",
+      "caption": "<div>【早上只讀一點點】 《最強提問力：問更好的問題，獲得更棒的答案》</div><div><br></div>",
       "time": "08:00",
       "canvaUrl": "",
       "ratio": "1-1",
       "theme": "早上只讀一點點",
-      "title": "#一次又一次又一次地重新開始",
+      "title": "最強提問力：問更好的問題，獲得更棒的答案",
       "fbImageCount": 1,
       "status": "draft",
       "createdAt": "2026-10-19T08:47:22.892Z",
-      "updatedAt": "2026-10-19T08:47:22.892Z"
+      "updatedAt": "2026-10-19T09:18:58.525Z"
     },
     {
       "_id": "p_1792399691447_7pphd3",
@@ -4401,22 +4401,22 @@ var externalDB = {
     },
     {
       "_id": "p_1792400031360_f9frb8",
-      "caption": "<div>【晚上多讀一點點】 《#慢慢寄出去的心》</div><div><br></div>",
+      "caption": "<div>【晚上多讀一點點】 《尋找蜘蛛：日本暢銷超過36萬冊，西加奈子的生命故事》</div><div><br></div>",
       "time": "20:00",
       "canvaUrl": "",
       "ratio": "4-5",
       "theme": "晚上多讀一點點",
-      "title": "#慢慢寄出去的心",
+      "title": "尋找蜘蛛：日本暢銷超過36萬冊，西加奈子的生命故事",
       "fbImageCount": 1,
       "status": "draft",
       "createdAt": "2026-10-19T08:53:51.360Z",
-      "updatedAt": "2026-10-19T08:53:51.360Z"
+      "updatedAt": "2026-10-19T09:18:46.098Z"
     }
   ]
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-10-19T08:54:10.306Z",
+  "updatedAt": "2026-10-19T09:19:08.876Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
