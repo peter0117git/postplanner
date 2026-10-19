@@ -4147,79 +4147,79 @@ var externalDB = {
   "2026-10-21": [
     {
       "_id": "p_1792055401036_vkmf3u",
-      "caption": "<div>【早上只讀一點點】 《昨日，無人接聽》</div><div><br></div>",
+      "caption": "<div>【早上只讀一點點】 《昨日，無人接聽》</div><div><br></div><div><div>#陳繁齊</div><div><br></div><div><span>〈交集 〉</span></div><div><span><br></span></div><div><div>我曾在某條斑馬線上見過你</div><div>你並不知道。由右至左</div><div>不快也不慢，彷彿所有巧遇</div><div>只是一種宇宙的運算</div><div><br></div><div>接著紅燈熄了</div><div>我鑽過線的縫隙</div><div>目的地仍在遠方</div><div>記憶是一條穿過市區的道路</div><div>沒有誰住在那裡</div></div><div><span><br></span></div><div><span>摘自</span>《<span>昨日，無人接聽</span>》-〈<span>交集</span>&nbsp;〉</div><div><br></div><div>#大田出版 #詩集</div></div>",
       "time": "08:00",
-      "canvaUrl": "",
+      "canvaUrl": "https://www.canva.com/design/DAHYbJR9I90/O2rsgYVTtKQ0xjkjksPstQ/view?utm_content=DAHYbJR9I90&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc9ba4f3347",
       "ratio": "1-1",
       "theme": "早上只讀一點點",
       "title": "昨日，無人接聽",
       "status": "draft",
       "createdAt": "2026-10-15T09:10:01.036Z",
-      "updatedAt": "2026-10-15T09:10:01.036Z"
+      "updatedAt": "2026-10-19T04:19:27.227Z"
     },
     {
       "_id": "p_1792055417846_x82r26",
-      "caption": "<div>【圖文時間】 《宇希時間》</div><div><br></div>",
+      "caption": "<div>【圖文時間】 《宇希時間》</div><div><br></div><div><div>如果有一天，連熟悉的自己都慢慢忘記了，<br>那些曾經的快樂、難過，還有珍貴的回憶，<br>是不是也會跟著一點一點消失？</div><div><br></div><div>但請記得，<br>就算有些事情想不起來了，<br>也不代表那些回憶不曾存在。</div><div><br></div><div>慢一點也沒關係，<br>你不需要一個人記得所有事情。</div><div><br></div><div>因為總有人，會陪你一起記得。</div><div><br></div><div>#宇希的貓</div></div>",
       "time": "18:00",
-      "canvaUrl": "",
+      "canvaUrl": "https://www.canva.com/design/DAHNdqdK6aI/PiMT2vlLGuDlWm3KmDjn9g/view?utm_content=DAHNdqdK6aI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=ha7005fd718",
       "ratio": "1-1",
       "theme": "圖文時間",
       "title": "宇希時間",
       "status": "draft",
       "createdAt": "2026-10-15T09:10:17.846Z",
-      "updatedAt": "2026-10-15T09:10:17.846Z",
+      "updatedAt": "2026-10-19T06:09:52.279Z",
       "fbImageCount": 4
     },
     {
       "_id": "p_1792055453446_of6w3i",
-      "caption": "<div>【晚上多讀一點點】 《#慢慢寄出去的心》</div><div><br></div>",
+      "caption": "<div>【晚上多讀一點點】 《#慢慢寄出去的心》</div><div><br></div><div><div>我是導演的話會拍出怎樣的電影呢？我想不出什麼了不起的故事，只感到眼睛酸澀。</div><div>聖圭走到台上，而我像個來看演員謝幕的觀眾那樣鼓掌，接著舉手發問。</div><div>「可以請你介紹一下這次所飾演的角色嗎？」</div><div>聽到我這麼說，聖圭將握緊的右手放到嘴邊，像是拿著麥克風一樣，說：「啊，啊，聽得到嗎？」</div><div>我打開手機的手電筒，把光照向聖圭所在的地方。</div><div>「首先，謝謝各位來看我的電影。我在這部電影裡飾演一名高中生，因為生日那天爸爸沒有煮海帶湯給他喝，一氣之下離家出走。」</div><div>聽到聖圭的話，我晃了晃手機。為了這種理由找我一起離家出走？</div><div>「你是小學生嗎？」我對聖圭吐槽道。「那麼想吃的話自己煮來吃，我生日那天就是自己煮海帶湯泡麵來吃的。」</div><div>聖圭說其實不是那樣的，接著說起另一段故事。</div><div>上高中之後，他一直不願意把帽T脫下，他的父親下最後通牒，在他脫下帽子之前，不會再跟他說任何一句話。之後每當聖圭的父親有話要對他說，便會留言在餐桌上：把辛奇鍋熱來吃、今天十點後才下班、襪子不要反著脫。</div><div>可是今天早上，桌上沒有留下任何紙條。</div><div>「至少也應該留一句『生日快樂』，不是嗎？」</div><div>我沒有回答，但還是點了點頭。</div><div>聖圭憤怒地留下紙條，說自己要離家出走，不會再回來。然後他先到學校，又回家撕掉那張紙條，重新拿出一張新的，在上面寫下「對不起」。</div><div>把對不起寫出來後，他感覺自己有了開口說話的勇氣，於是在信裡寫下自己第一次戴起帽T帽子的緣由。</div><div>文具店倒閉之後，聖圭的父親把他送到育幼院。</div><div>「我爸說他會咬牙拚命賺錢，三年後再來接我。最後雖然晚了點，但他還是有遵守那個約定。」</div><div>在育幼院的日子裡，聖圭有一個很要好的朋友。某一年聖誕節，有人送給他一件衣服當作禮物，衣服後方有蜘蛛人的披風。聖圭很想穿那件衣服，但還是讓給了那個孩子。</div><div>那個孩子穿著蜘蛛人的衣服整天跑來跑去。</div><div>「他爬到椅子上再跳下來，又爬到桌子上再跳下來，然後又爬到溜滑梯再跳下來。」</div><div>他跳下來時腳沒有站好，身體向後倒，後腦勺撞上花壇邊緣的石頭。</div><div>「救護車把他載去醫院，但他再也沒有回來了。」</div><div>聖圭直到小學三年級，才再次跟父親一起生活。那年聖誕節，是他人生中第一次和父親一起去遊樂園。</div><div>在兩人一起搭乘遊樂設施時，有個聲音湊到聖圭耳邊低聲說：「你真好命啊。」</div><div>聖圭一聽到聲音便知道是誰。</div><div>「從那之後那個孩子就一直跟著我，而且總是嫉妒我過得比他幸福。」</div><div>後來某一天，聖圭在學校操場遇見一位正在練習立定跳遠的學長。聖圭問他是不是運動選手，學長說不是，只是某天收到一條兩公尺長的捲尺當作禮物，便以兩公尺為目標開始練習立定跳遠。雖然還沒辦法跳到兩公尺，但是明年應該就有機會了。</div><div>學長一邊說，一邊叫聖圭也試試看。</div><div>聖圭站上白色踏板，深吸一口氣，將身體和手臂往後，再往前一跳。屁股著地。</div><div>學長笑著說再來一次。</div><div>又是屁股著地，然後又屁股著地。連續摔五次屁股之後，聖圭哭了。</div><div>學長一邊替他擦眼淚，一邊說：「起跳之前，想想人生中最幸福的回憶，身體會『咻』一下地飛起來。」</div><div>聖圭站在踏板上閉起眼睛。</div><div>母親用手指向天空說：「你看那邊。」</div><div>順著母親的指尖望去，天上有一道彩虹。每當年幼的聖圭哭鬧，他的母親總會說「你看那邊」來安撫他。</div><div>母親指尖總是朝向美麗的風景。</div><div>聖圭張開雙眼，深深吸一口氣，向前一躍。感覺自己彷彿回到父親曾經吹出的那個巨大肥皂泡泡裡，泡泡在空中飄了好久、好久。</div><div>落地之後，聖圭大聲喊道：「『咻』一下飛起來了，對吧？有看到吧？」</div><div>學長摸了摸聖圭的頭，脫下自己身上的帽T幫聖圭穿上。</div><div>「送給你，要長到這麼大。好好長大才穿得了它。」</div><div>那天，聖圭把帽T套在頭上，坐在蹺蹺板上，直到夕陽西下。</div><div>我想起小時候蓋過的毯子，上面畫著小鹿，溫暖、柔軟的毯子。</div><div>「把帽子戴起來的時候，會有一種被包覆在肥皂泡泡裡的感覺，覺得自己好像能飛去任何地方。啊，對了。從那之後，『那個孩子』沒有再出現過，他消失了，那便是這部電影的最後一幕。」</div><div>我鼓起掌，一直到聖圭從台上走下來坐到我旁邊，都沒有停下。</div></div><div><br></div><div><div>摘自 《 #慢慢寄出去的心》-〈魔法師們〉p.21~24</div><div><br></div><div><span>#大田出版 #尹成姬 #溫柔 #小說</span></div></div>",
       "time": "18:00",
-      "canvaUrl": "",
-      "ratio": "1-1",
+      "canvaUrl": "https://www.canva.com/design/DAHXx0e1W04/nTfIlvFybgZKCh4XUcxnMw/view?utm_content=DAHXx0e1W04&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h0b64dc9111",
+      "ratio": "4-5",
       "theme": "晚上多讀一點點",
       "title": "#慢慢寄出去的心",
       "status": "draft",
       "createdAt": "2026-10-15T09:10:53.446Z",
-      "updatedAt": "2026-10-15T09:10:53.446Z"
+      "updatedAt": "2026-10-19T06:06:44.133Z"
     }
   ],
   "2026-10-22": [
     {
       "_id": "p_1792055998817_w86jps",
-      "caption": "<div>【早上只讀一點點】 《如何愛你的負面情感》</div><div><br></div>",
+      "caption": "<div>【早上只讀一點點】 《如何愛你的負面情感》</div><div><br></div><div><div>自己的心情曖昧不定的話，被問到時就有可能一時情急而將就回答，之後卻悔不當初。</div><div>「要如何才能改掉將就回答的習慣呢？」對於這個問題，我得到的結論是：「就算自己的想法曖昧不定，或者自相矛盾，只要照實說出來就好了。」</div><div>在意什麼事就誠實地詢問對方，即使如此還是猶豫不決的話，就據實以告，只要你是誠懇的，對方理當不會感到不悅。</div><div>無論如何都「無法決定」或「不想決定」時，就老實說出自己的感受，接下來「一切隨緣」，這也是一種處理方式。</div><div><br></div><div>摘自 《如何愛你的負面情感》p.37</div></div><div><br></div><div>#大田出版</div>",
       "time": "09:00",
-      "canvaUrl": "",
+      "canvaUrl": "https://www.canva.com/design/DAHVP5eObP0/dO_khCIOMRfuJg6VA4C45A/view?utm_content=DAHVP5eObP0&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h9b0d5b0c64",
       "ratio": "1-1",
       "theme": "早上只讀一點點",
       "title": "如何愛你的負面情感",
       "status": "draft",
       "createdAt": "2026-10-15T09:19:58.817Z",
-      "updatedAt": "2026-10-15T09:19:58.817Z"
+      "updatedAt": "2026-10-19T07:14:17.473Z"
     },
     {
       "_id": "p_1792056012849_c0fwiw",
-      "caption": "<div>【圖文時間】 《幸福就是吃飯睡覺等待 vol.2》</div><div><br></div>",
+      "caption": "<div>【圖文時間】 《幸福就是吃飯睡覺等待 vol.2》</div><div><br></div><div><div>能好好吃飯、安心睡覺，</div><div>身邊還有讓自己感到溫暖的人，<br>就是平凡生活裡最珍貴的幸福。</div><div><br></div><div>#大田出版 #漫畫 #幸福就是吃飯睡覺等待</div></div>",
       "time": "09:00",
-      "canvaUrl": "",
+      "canvaUrl": "https://www.canva.com/design/DAHYb9F-4T0/AjEO_s1_ggfHCRsREK0hLw/view?utm_content=DAHYb9F-4T0&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2957dfb036",
       "ratio": "1-1",
       "theme": "圖文時間",
       "title": "幸福就是吃飯睡覺等待 vol.2",
       "status": "draft",
       "createdAt": "2026-10-15T09:20:12.849Z",
-      "updatedAt": "2026-10-15T09:20:12.849Z",
+      "updatedAt": "2026-10-19T07:16:03.528Z",
       "fbImageCount": 4
     },
     {
       "_id": "p_1792056032356_q6qudq",
-      "caption": "<div>【晚上多讀一點點】 《#慢慢寄出去的心》</div><div><br></div>",
+      "caption": "<div>【晚上多讀一點點】 《#慢慢寄出去的心》</div><div><br></div><div><div>貞媛告訴我粉絲簽名會上發生的事。有位成員在唱熱門歌曲串燒的時候褲子破了。</div><div>「他唱一唱突然開始跳舞，然後西裝褲就那樣破了，看到便想起以前那件事。」</div><div>貞媛笑了。</div><div>高二那年，貞媛在校慶活動跳舞時，褲子的屁股部位裂開。可即使如此，貞媛也沒有停下。演出結束後，貞媛對觀賞表演的孩子們說，有拍影片的人請舉手。許多孩子都舉起手。</div><div>「我們約好，把影片刪掉。」</div><div>貞媛喊道。孩子們也跟著喊：「刪掉，刪掉！」</div><div>貞媛身穿裂開褲子跳舞的影片沒有被傳到其他地方，校長還在畢業典禮提及這個小插曲，說是因為有這樣的好學生們，大家都能夠成為很好的大人。</div><div>秀賢端著塗滿奶油的方格鬆餅走來，貞媛看到後念叨說他會變胖。</div><div>秀賢說：「這是我的生日蛋糕。今天是我生日。」</div><div>我明白這句話是什麼意思，隨即馬上接話。</div><div>「對，今天是秀賢的生日。」</div><div>貞媛睜大雙眼問這是什麼意思，我和秀賢都沒有告訴她。</div><div>「想知道的話妳也去看電影吧。」</div><div>那個無從知曉自己生日在什麼時候的孩子，每年都會換一次生日。有一年，他的生日定在初雪降臨的那天，有一年定在月全食，有一年辦了三次生日派對，也有一年沒有生日。</div><div>「今年阿姨我的生日定在六月二十一吧，那是一年裡白天最長的日子。」</div><div>我說道。秀賢答應那天一定不會忘記傳給我生日祝福。</div><div>和貞媛分別後，我在回家路途的小巷裡發現一輛車牌號碼為0621的汽車，我拿出手機拍下車牌號碼。</div><div>如果把不是出生的某天當成是生日，那還能喝到海帶湯嗎？</div></div><div><br></div><div><div>摘自 《 #慢慢寄出去的心》-〈夏日甜瓜〉p.166~167</div><div><br></div><div><span>#大田出版 #尹成姬 #溫柔 #小說</span></div></div>",
       "time": "20:00",
-      "canvaUrl": "",
+      "canvaUrl": "https://www.canva.com/design/DAHXydebpfo/wTI7C4bqpbBNmqfm4hjPtg/view?utm_content=DAHXydebpfo&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h82aaa41725",
       "ratio": "4-5",
       "theme": "晚上多讀一點點",
       "title": "#慢慢寄出去的心",
       "status": "draft",
       "createdAt": "2026-10-15T09:20:32.356Z",
-      "updatedAt": "2026-10-15T09:20:32.356Z"
+      "updatedAt": "2026-10-19T07:25:25.775Z"
     }
   ],
   "2026-10-23": [
@@ -4293,7 +4293,7 @@ var externalDB = {
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-10-19T04:09:35.975Z",
+  "updatedAt": "2026-10-19T07:30:02.050Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
