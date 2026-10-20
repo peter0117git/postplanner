@@ -4293,16 +4293,16 @@ var externalDB = {
   "2026-10-26": [
     {
       "_id": "p_1792399642892_ng4y1t",
-      "caption": "<div>【早上只讀一點點】 《最強提問力：問更好的問題，獲得更棒的答案》</div><div><br></div>",
+      "caption": "<div>【早上只讀一點點】 《最強提問力：問更好的問題，獲得更棒的答案》</div><div><br></div><div><div><div>是譴責還是判斷？</div></div><div><div>對那些堅持「批判就是不對」的人來說，可以思考一下「你不可以批判」這個概念本身就是一個強大的批判。這是一個完美的矛盾。像這樣的定論通常都是因為負面的判斷所產生的。我還沒聽過有誰會抱怨被判為、被視為有才華、有魅力或美麗的人。如果羅傑說，「弗瑞德最近的表現懶散又隨便」，我們很可能會說，「你不要這樣批評他，羅傑！他可能只是有別的事情煩心！」不過如果羅傑說的是「弗瑞德最近非常有活力又認真」，沒有人會對這番話提出抗議。</div></div><div><div>如果用邏輯觀點去看待這件事，會覺得有點奇怪：為什麼我們可以說某人很有才華、有魅力或很美，但是不能說他懶惰、自大、愛說謊或自以為是？本質上看來，以上都是做出批判的例子啊。這樣來說，就很像雙重標準了。同樣的行為，只要是正面的就沒關係，是負面的就不可以。</div></div><div><div>也許是因為我們常常把「譴責」跟「判斷」混為一談的緣故。譴責的重點是否定和拒絕，而判斷則是因為有相當的理由而產生結論。所以說，在羅傑的這個例子裡，可以理性、清楚並提供論證地陳述：他從不整理桌面、他的鍵盤上都是咖啡漬、約好的事情做不到、幾乎沒辦法在交期完成交辦事宜。這就是判斷：「弗瑞德做事很隨便，因為……」不過如果你接下去說，做事隨便的人是廢物，那你就是往責難的方向偏移了。</div></div><div><div>而我們太常同時做這兩件事。我們會說，「天啊，弗瑞德真的很隨便！」話說出口的時候，表情和口氣都出賣了我們對這個觀察結果的看法。我們會同時判斷和責難。培養蘇格拉底式態度就是要把這兩件事分開來：就事論事，盡可能地做出客觀判斷。下一步就是要質疑這個判斷，問問自己，「真的是這樣嗎？我說的這番話，或是我在想的東西都真的是這樣嗎？」</div><div><br></div><div>摘自p.123</div><div><br></div><div>#大田出版&nbsp;</div><div><br></div><div><br></div></div></div>",
       "time": "08:00",
-      "canvaUrl": "",
+      "canvaUrl": "https://www.canva.com/design/DAHYgzgj-OA/whxbN50t5ZWj3uavUyNZFw/view?utm_content=DAHYgzgj-OA&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h303563224d",
       "ratio": "1-1",
       "theme": "早上只讀一點點",
       "title": "最強提問力：問更好的問題，獲得更棒的答案",
       "fbImageCount": 1,
       "status": "draft",
       "createdAt": "2026-10-19T08:47:22.892Z",
-      "updatedAt": "2026-10-19T09:18:58.525Z"
+      "updatedAt": "2026-10-20T04:09:18.406Z"
     },
     {
       "_id": "p_1792399691447_7pphd3",
@@ -4412,11 +4412,149 @@ var externalDB = {
       "createdAt": "2026-10-19T08:53:51.360Z",
       "updatedAt": "2026-10-19T09:18:46.098Z"
     }
+  ],
+  "2026-10-29": [
+    {
+      "_id": "p_1792470166340_qinszv",
+      "caption": "<div>【早上只讀一點點】</div><div><br></div>",
+      "time": "08:00",
+      "canvaUrl": "",
+      "ratio": "1-1",
+      "theme": "早上只讀一點點",
+      "title": "",
+      "fbImageCount": 1,
+      "status": "draft",
+      "createdAt": "2026-10-20T04:22:46.340Z",
+      "updatedAt": "2026-10-20T04:22:46.340Z"
+    },
+    {
+      "_id": "p_1792470178038_efpw0t",
+      "caption": "<div>【圖文時間】</div><div><br></div>",
+      "time": "18:00",
+      "canvaUrl": "",
+      "ratio": "4-5",
+      "theme": "圖文時間",
+      "title": "",
+      "fbImageCount": 1,
+      "status": "draft",
+      "createdAt": "2026-10-20T04:22:58.038Z",
+      "updatedAt": "2026-10-20T04:22:58.038Z"
+    },
+    {
+      "_id": "p_1792470182156_c4idfx",
+      "caption": "<div>【晚上多讀一點點】</div><div><br></div>",
+      "time": "20:00",
+      "canvaUrl": "",
+      "ratio": "4-5",
+      "theme": "晚上多讀一點點",
+      "title": "",
+      "fbImageCount": 1,
+      "status": "draft",
+      "createdAt": "2026-10-20T04:23:02.156Z",
+      "updatedAt": "2026-10-20T04:23:02.156Z"
+    }
+  ],
+  "2026-10-30": [
+    {
+      "_id": "p_1792470195333_p9pfq7",
+      "caption": "<div>【早上只讀一點點】</div><div><br></div>",
+      "time": "08:00",
+      "canvaUrl": "",
+      "ratio": "4-5",
+      "theme": "早上只讀一點點",
+      "title": "",
+      "fbImageCount": 1,
+      "status": "draft",
+      "createdAt": "2026-10-20T04:23:15.333Z",
+      "updatedAt": "2026-10-20T04:23:15.333Z"
+    },
+    {
+      "_id": "p_1792470208473_e0x3tp",
+      "caption": "<div>【圖文時間】</div><div><br></div>",
+      "time": "18:00",
+      "canvaUrl": "",
+      "ratio": "4-5",
+      "theme": "圖文時間",
+      "title": "",
+      "fbImageCount": 1,
+      "status": "draft",
+      "createdAt": "2026-10-20T04:23:28.473Z",
+      "updatedAt": "2026-10-20T04:23:28.473Z"
+    },
+    {
+      "_id": "p_1792470213228_lvlq0q",
+      "caption": "<div>【晚上多讀一點點】</div><div><br></div>",
+      "time": "20:00",
+      "canvaUrl": "",
+      "ratio": "4-5",
+      "theme": "晚上多讀一點點",
+      "title": "",
+      "fbImageCount": 1,
+      "status": "draft",
+      "createdAt": "2026-10-20T04:23:33.228Z",
+      "updatedAt": "2026-10-20T04:23:33.228Z"
+    }
+  ],
+  "2026-10-31": [
+    {
+      "_id": "p_1792470244727_31xyrk",
+      "caption": "<div>【新書預告】 《幸福就是吃飯睡覺等待 vol.5》</div><div><br></div>",
+      "time": "09:00",
+      "canvaUrl": "",
+      "ratio": "4-5",
+      "theme": "新書預告",
+      "title": "幸福就是吃飯睡覺等待 vol.5",
+      "fbImageCount": 1,
+      "status": "draft",
+      "createdAt": "2026-10-20T04:24:04.727Z",
+      "updatedAt": "2026-10-20T04:24:04.727Z"
+    },
+    {
+      "_id": "p_1792470261924_9zoxtx",
+      "caption": "<div>【新書預告】 《每天只畫一點點，365天燃燒你的植物魂》</div><div><br></div>",
+      "time": "09:00",
+      "canvaUrl": "",
+      "ratio": "4-5",
+      "theme": "新書預告",
+      "title": "每天只畫一點點，365天燃燒你的植物魂",
+      "fbImageCount": 1,
+      "status": "draft",
+      "createdAt": "2026-10-20T04:24:21.924Z",
+      "updatedAt": "2026-10-20T04:24:21.924Z"
+    }
+  ],
+  "2026-11-01": [
+    {
+      "_id": "p_1792470278476_cyocwq",
+      "caption": "<div>【影片分享】 《幸福就是吃飯睡覺等待 vol.5》</div><div><br></div>",
+      "time": "09:00",
+      "canvaUrl": "",
+      "ratio": "4-5",
+      "theme": "影片分享",
+      "title": "幸福就是吃飯睡覺等待 vol.5",
+      "fbImageCount": 1,
+      "status": "draft",
+      "createdAt": "2026-10-20T04:24:38.476Z",
+      "updatedAt": "2026-10-20T04:24:38.476Z"
+    },
+    {
+      "_id": "p_1792470314213_987ukc",
+      "caption": "<div>【大田布告欄】 《大田十一月新書上市！》</div><div><br></div>",
+      "time": "09:00",
+      "canvaUrl": "",
+      "ratio": "4-5",
+      "theme": "大田布告欄",
+      "title": "大田十一月新書上市！",
+      "fbImageCount": 1,
+      "status": "draft",
+      "createdAt": "2026-10-20T04:25:14.213Z",
+      "updatedAt": "2026-10-20T04:25:14.213Z"
+    }
   ]
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-10-19T09:46:24.958Z",
+  "updatedAt": "2026-10-20T04:25:28.409Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
