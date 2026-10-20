@@ -4306,16 +4306,16 @@ var externalDB = {
     },
     {
       "_id": "p_1792399691447_7pphd3",
-      "caption": "<div>【新書搶先讀】 《幸福就是吃飯睡覺等待 vol.5》</div><div><br></div><div><br></div><div><br></div>",
+      "caption": "<div>【新書搶先讀】 《幸福就是吃飯睡覺等待 vol.5》</div><div><br></div><div><div>新人物登場！✨</div><div>家裡傳來神祕的聲響，找了半天才發現……原來是手機在響！</div><div>這次登場的麥卷奶奶，又會帶來什麼有趣的故事呢？</div><div><br></div><div>&nbsp;🍊 台灣限定「日日好日」書籤特典&nbsp;</div><div>📅&nbsp; 12月1日溫暖上市！</div><div><br></div><div>#幸福就是吃飯睡覺等待 #水凪トリ #大田出版 #漫畫推薦</div></div><div><br></div>",
       "time": "18:00",
-      "canvaUrl": "",
+      "canvaUrl": "https://www.canva.com/design/DAHXyHnAs4I/oMtxvZCOEkf6-Oj4q3sFoQ/view?utm_content=DAHXyHnAs4I&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h228ced003a",
       "ratio": "1-1",
       "theme": "新書搶先讀",
       "title": "幸福就是吃飯睡覺等待 vol.5 搶先讀",
       "fbImageCount": 1,
       "status": "draft",
       "createdAt": "2026-10-19T08:48:11.447Z",
-      "updatedAt": "2026-10-19T08:48:40.126Z"
+      "updatedAt": "2026-10-20T07:57:12.768Z"
     },
     {
       "_id": "p_1792399736432_bhsubt",
@@ -4554,7 +4554,7 @@ var externalDB = {
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-10-20T04:25:28.409Z",
+  "updatedAt": "2026-10-20T07:57:24.716Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
