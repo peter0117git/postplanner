@@ -4092,7 +4092,7 @@ var externalDB = {
     },
     {
       "_id": "p_1792055479853_m7tyia",
-      "caption": "<div>【圖文時間】 《幸福就是吃飯睡覺等待 vol.1》</div><div><br></div>",
+      "caption": "<div>【圖文時間】 《幸福就是吃飯睡覺等待 vol.1》</div><div><br></div><div><div><div>她離開了原本的工作，</div><div>也開始重新學習一件以前從沒想過的事——</div></div><div><div>不再勉強自己。</div></div><div><div>不是努力回到從前，</div><div>而是慢慢找到現在的自己，</div><div>也能 <span>#好好生活</span> 下去的方法。</div><div><br></div></div><div><div><span>#幸福就是吃飯睡覺等待</span> <span>#水凪トリ</span> <span>#漫畫</span> <span>#療癒</span></div></div></div>",
       "time": "09:00",
       "canvaUrl": "https://www.canva.com/design/DAHYa7ajHtQ/ddtS7aT5HPdFkcO2XbSCWA/view?utm_content=DAHYa7ajHtQ&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h05fcc7bb2c",
       "ratio": "1-1",
@@ -4100,7 +4100,7 @@ var externalDB = {
       "title": "幸福就是吃飯睡覺等待 vol.1",
       "status": "draft",
       "createdAt": "2026-10-15T09:11:19.853Z",
-      "updatedAt": "2026-10-19T03:42:15.574Z",
+      "updatedAt": "2026-10-20T09:23:50.105Z",
       "fbImageCount": 4
     },
     {
@@ -4264,7 +4264,7 @@ var externalDB = {
   "2026-10-24": [
     {
       "_id": "p_1792056147090_xmxwy4",
-      "caption": "<div>【新書預告】 《幸福就是吃飯睡覺等待 vol.5》</div><div><br></div><div><div>我們</div><div>都比自己想像的</div><div>更勇敢</div><div><br></div><div>為什麼</div><div>會對可以跨越的事</div><div>感到害怕而裹足不前呢……？</div><div><br></div><div>★2022年「這本漫畫真厲害！」女生部漫畫 第8名</div><div>★2025年NHK改編電視劇</div><div>★系列在日銷售突破100萬冊</div><div>★亞馬遜五星好評 ★博客來選書</div><div><br></div><div>【隨書贈送】</div><div>台灣限定 • 蒐集5號 • 日日好日 書籤特典 （120mm × 70mm）</div><div><br></div><div>無可奈何的日子</div><div><br></div><div>如何撐過的祕訣｡</div><div><br></div><div>由於生病過著每周只能打工四天維持生計的麥卷聰子。</div><div><br></div><div>因為束手無策的身體狀況，有時得放棄某些堅持。</div><div><br></div><div>心情低落的日子，藉由好吃的飯菜養精蓄銳。</div><div><br></div><div>隨著社區和職場拓展的關係，聰子也漸漸懂得正向思考……？</div><div><br></div><div>★慢一點也沒關係★</div><div><br></div><div>「現在的我，做什麼都只能做到八分滿，也正在思考，像現在這樣的自己，今後要用什麼樣的步調才能繼續走下去。 我想，到了這個地步，也只能接受現況了。接下來，大概就是「慢慢思考今後該怎麼走」吧。慢一點也沒關係。聰子也是一邊和自己的狀況磨合，一步一步找出適合自己的生活方式。」</div><div><br></div><div>——節錄自「誠品提案10月號：修復的練習」作者 水凪トリ（Mizunagi Tori）專訪</div></div><div><br></div><div>#新書 #大田出版</div>",
+      "caption": "<div>【新書預告】 《幸福就是吃飯睡覺等待 vol.5》</div><div><br></div><div>#12月1日全台上市</div><div>#幸福就是吃飯睡覺等待</div><div><br></div><div><div>我們</div><div>都比自己想像的</div><div>更勇敢</div><div><br></div><div>為什麼</div><div>會對可以跨越的事</div><div>感到害怕而裹足不前呢……？</div><div><br></div><div>★2022年「這本漫畫真厲害！」女生部漫畫 第8名</div><div>★2025年NHK改編電視劇</div><div>★系列在日銷售突破100萬冊</div><div>★亞馬遜五星好評 ★博客來選書</div><div><br></div><div>【隨書贈送】</div><div>台灣限定 • 蒐集5號 • 日日好日 書籤特典 （120mm × 70mm）</div><div><br></div><div>無可奈何的日子</div><div><br></div><div>如何撐過的祕訣｡</div><div><br></div><div>由於生病過著每周只能打工四天維持生計的麥卷聰子。</div><div><br></div><div>因為束手無策的身體狀況，有時得放棄某些堅持。</div><div><br></div><div>心情低落的日子，藉由好吃的飯菜養精蓄銳。</div><div><br></div><div>隨著社區和職場拓展的關係，聰子也漸漸懂得正向思考……？</div><div><br></div><div>★慢一點也沒關係★</div><div><br></div><div>「現在的我，做什麼都只能做到八分滿，也正在思考，像現在這樣的自己，今後要用什麼樣的步調才能繼續走下去。 我想，到了這個地步，也只能接受現況了。接下來，大概就是「慢慢思考今後該怎麼走」吧。慢一點也沒關係。聰子也是一邊和自己的狀況磨合，一步一步找出適合自己的生活方式。」</div><div><br></div><div>——節錄自「誠品提案10月號：修復的練習」作者 水凪トリ（Mizunagi Tori）專訪</div></div><div><br></div><div>#新書 #大田出版</div>",
       "time": "09:00",
       "canvaUrl": "https://www.canva.com/design/DAHYb78Nuso/q_3CMuEm2dS-x8uyT23G-Q/view?utm_content=DAHYb78Nuso&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hf3f94f8139",
       "ratio": "1-1",
@@ -4272,7 +4272,7 @@ var externalDB = {
       "title": "幸福就是吃飯睡覺等待 vol.5",
       "status": "draft",
       "createdAt": "2026-10-15T09:22:27.090Z",
-      "updatedAt": "2026-10-19T08:37:04.983Z"
+      "updatedAt": "2026-10-20T09:39:17.379Z"
     }
   ],
   "2026-10-25": [
@@ -4554,7 +4554,7 @@ var externalDB = {
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-10-20T09:07:51.576Z",
+  "updatedAt": "2026-10-20T09:39:29.516Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
