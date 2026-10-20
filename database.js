@@ -4306,7 +4306,7 @@ var externalDB = {
     },
     {
       "_id": "p_1792399691447_7pphd3",
-      "caption": "<div>【新書搶先讀】 《幸福就是吃飯睡覺等待 vol.5》</div><div><br></div><div><div>新人物登場！✨</div><div>家裡傳來神祕的聲響，找了半天才發現……原來是手機在響！</div><div>這次登場的麥卷奶奶，又會帶來什麼有趣的故事呢？</div><div><br></div><div>&nbsp;🍊 台灣限定「日日好日」書籤特典&nbsp;</div><div>📅&nbsp; 12月1日溫暖上市！</div><div><br></div><div>#幸福就是吃飯睡覺等待 #水凪トリ #大田出版 #漫畫推薦</div></div><div><br></div>",
+      "caption": "<div>【新書搶先讀】 《幸福就是吃飯睡覺等待 vol.5》</div><div><br></div><div><div>新人物登場！✨</div><div>家裡傳來神祕的聲響，找了半天才發現……原來是手機在響！</div><div>這次登場的麥卷媽媽，又會帶來什麼有趣的故事呢？</div><div><br></div><div>&nbsp;🍊 台灣限定「日日好日」書籤特典&nbsp;</div><div>📅&nbsp; 12月1日溫暖上市！</div><div><br></div><div>#幸福就是吃飯睡覺等待 #水凪トリ #大田出版 #漫畫推薦</div></div><div><br></div>",
       "time": "18:00",
       "canvaUrl": "https://www.canva.com/design/DAHXyHnAs4I/oMtxvZCOEkf6-Oj4q3sFoQ/view?utm_content=DAHXyHnAs4I&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h228ced003a",
       "ratio": "1-1",
@@ -4315,7 +4315,7 @@ var externalDB = {
       "fbImageCount": 1,
       "status": "draft",
       "createdAt": "2026-10-19T08:48:11.447Z",
-      "updatedAt": "2026-10-20T07:57:12.768Z"
+      "updatedAt": "2026-10-20T09:02:42.984Z"
     },
     {
       "_id": "p_1792399736432_bhsubt",
@@ -4334,16 +4334,16 @@ var externalDB = {
   "2026-10-27": [
     {
       "_id": "p_1792399775485_7a964d",
-      "caption": "<div>【早上只讀一點點】 《現在，就是療癒你的開始》</div><div><br></div>",
+      "caption": "<div>【早上只讀一點點】 《現在，就是療癒你的開始》</div><div><br></div><div><div><div><span>#最巨大的療癒通常會以最平凡的方式發生</span></div></div><div><div>開始踏上療癒之旅後，你會尋找各種各樣的頓悟。那些能夠改變生命、敞開靈魂、顛覆思維的真理。劇烈的變化、迅疾的變動、猛烈地釋放掉那些你再也無法忍受的東西，以及執著地尋找那些能讓你感覺好一點的東西，哪怕只是一瞬間也無妨。</div></div><div><div>療癒最隱微的難處之一在於，最深厚的改變，往往是以最平凡的方式發生。</div></div><div><div>所謂的療癒，就是設定一個療癒的目的。把自己的目的寫在一張紙上，放在你經常能夠看到的地方。你要明白，<span>沒有人會知道一開始就要做些什麼</span>，所以有時候，踏上療癒之旅最有效的啟程方式，就是清楚地 <span>向宇宙表明</span> 我們打算做些什麼。</div></div><div><div>所謂的療癒，就是創造出你能深度休息的空間。給予自己前所未有的 <span>深度休息</span>。所謂的療癒，就是意識到身體知道該做些什麼，而你的職責就是支持它，別擋它的路。</div></div><div><div>所謂的療癒，就是改變所處的環境，無論是大方向還是小方向。這可能意味著搬家。這可能意味著清理空間中各種遺留下來的物品，讓你不再生活於一間名為「過去」的博物館中。所謂的療癒，就是意識到自己將會適應周遭的一切，因此你必須做出明智的選擇。必須在自己的小小世界裡，至少創造出一個寧靜的角落，並終於明白「<span>家</span>」從來都不存在於外界，而是 <span>存在你的心中</span>。</div></div><div><div>(摘自P.41- P.42)</div><div><span>#改變</span> <span>#療癒</span> <span>#心理勵志</span> <span>#大田出版</span></div></div></div>",
       "time": "08:00",
-      "canvaUrl": "",
-      "ratio": "4-5",
+      "canvaUrl": "https://www.canva.com/design/DAHUlqyCYUQ/oyEGcO6qMToMQUSmtsf-5Q/view?utm_content=DAHUlqyCYUQ&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hcb44575df7",
+      "ratio": "1-1",
       "theme": "早上只讀一點點",
       "title": "現在，就是療癒你的開始",
       "fbImageCount": 1,
       "status": "draft",
       "createdAt": "2026-10-19T08:49:35.485Z",
-      "updatedAt": "2026-10-19T08:49:35.485Z"
+      "updatedAt": "2026-10-20T09:07:32.690Z"
     },
     {
       "_id": "p_1792399796402_wtea5f",
@@ -4554,7 +4554,7 @@ var externalDB = {
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-10-20T08:58:42.550Z",
+  "updatedAt": "2026-10-20T09:07:51.576Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
