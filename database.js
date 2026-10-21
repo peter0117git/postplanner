@@ -4388,16 +4388,16 @@ var externalDB = {
     },
     {
       "_id": "p_1792399919941_m7a96c",
-      "caption": "<div>【圖文時間】 《宇希時間》</div><div><br></div>",
+      "caption": "<div>【圖文時間】 《宇希時間》</div><div><br></div><div><div><span>那些無所不在的：生日快樂<span></span></span></div>\n\n<div><span>從小，我以為自己會當上藝術家、小說家，那些我熱愛多年的事物。<span></span></span></div>\n\n<div><span>有好長的時間，我都這麼相信並努力著。<span></span></span></div>\n\n<div><span>但是忽然有一天，我好像什麼都做不到了。<span></span></span></div>\n\n<div><span>無法創作，總是哭泣，甚至連下床都很吃力。<span></span></span></div>\n\n<div><span>因此又活過一年，真的太不容易了。<span></span></span></div>\n\n<div><span>今年也要好好對自己說一聲：生日快樂。</span><span></span></div><div><span><br></span></div><div><font>#宇希的貓</font></div></div>",
       "time": "18:00",
-      "canvaUrl": "",
-      "ratio": "4-5",
+      "canvaUrl": "https://www.canva.com/design/DAHNdqdK6aI/PiMT2vlLGuDlWm3KmDjn9g/view?utm_content=DAHNdqdK6aI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=ha7005fd718",
+      "ratio": "1-1",
       "theme": "圖文時間",
       "title": "宇希時間",
       "fbImageCount": 1,
       "status": "draft",
       "createdAt": "2026-10-19T08:51:59.941Z",
-      "updatedAt": "2026-10-19T08:51:59.941Z"
+      "updatedAt": "2026-10-21T08:54:29.403Z"
     },
     {
       "_id": "p_1792400031360_f9frb8",
@@ -4554,7 +4554,7 @@ var externalDB = {
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-10-21T07:34:48.047Z",
+  "updatedAt": "2026-10-21T08:54:37.448Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
