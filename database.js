@@ -4306,20 +4306,20 @@ var externalDB = {
     },
     {
       "_id": "p_1792399691447_7pphd3",
-      "caption": "<div>【新書搶先讀】 《幸福就是吃飯睡覺等待 vol.5》</div><div><br></div><div><div>新人物登場！✨</div><div>家裡傳來神祕的聲響，找了半天才發現……原來是手機在響！</div><div>這次登場的麥卷媽媽，又會帶來什麼有趣的故事呢？</div><div><br></div><div>&nbsp;🍊 台灣限定「日日好日」書籤特典&nbsp;</div><div>📅&nbsp; 12月1日溫暖上市！</div><div><br></div><div>#幸福就是吃飯睡覺等待 #水凪トリ #大田出版 #漫畫推薦</div></div><div><br></div>",
+      "caption": "<div>【圖文時間】 《幸福就是吃飯睡覺等待 vol.5》</div><div><br></div><div>#新書搶先讀</div><div><span>#12月1日上市</span></div><div><br></div><div><div>新人物登場！✨</div><div>家裡傳來神祕的聲響，找了半天才發現……原來是手機在響！</div><div>這次登場的麥卷媽媽，又會帶來什麼有趣的故事呢？</div><div><br></div><div>&nbsp;🍊 台灣限定「日日好日」書籤特典&nbsp;</div><div>📅&nbsp; 12月1日溫暖上市！</div><div><br></div><div>#幸福就是吃飯睡覺等待 #水凪トリ #大田出版 #漫畫推薦</div></div><div><br></div>",
       "time": "18:00",
       "canvaUrl": "https://www.canva.com/design/DAHXyHnAs4I/oMtxvZCOEkf6-Oj4q3sFoQ/view?utm_content=DAHXyHnAs4I&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h228ced003a",
       "ratio": "1-1",
-      "theme": "新書搶先讀",
+      "theme": "圖文時間",
       "title": "幸福就是吃飯睡覺等待 vol.5 搶先讀",
       "fbImageCount": 1,
       "status": "draft",
       "createdAt": "2026-10-19T08:48:11.447Z",
-      "updatedAt": "2026-10-20T09:02:42.984Z"
+      "updatedAt": "2026-10-21T09:00:53.806Z"
     },
     {
       "_id": "p_1792399736432_bhsubt",
-      "caption": "<div>【晚上多讀一點點】 《上帝不眨眼：50堂百萬人瘋傳的人生智慧》</div><div><br></div><div><div><div>我不再讓我的蠟燭蒙塵了。</div></div><div><div>我過去曾為此很有罪惡感。朋友們送給我可愛的香精蠟燭，有肉桂蘋果、法式香草、蜂蜜香料等味道，也有能夠傳遞平和、愛與和諧氣氛的芳療蠟燭，蠟燭周圍還裝飾了葉子和玫瑰花瓣，我卻從沒點過這些蠟燭。</div><div>我不想用光這些蠟燭，於是月復一月、年復一年地放任它們積灰塵。有人曾送我一個放在玻璃球內，周圍環繞著滿天星的蠟燭組。我收藏了數年，直到有天打算去撢上面的積塵時，才發現蠟燭早已在陽光下融掉了。</div><div>我不該傻到忽略了我的蠟燭。我從小閱讀埃爾瑪．博貝克（Erma Bombeck）的文章，她是我母親最愛的專欄作家，也是我第一個認識的報紙專欄作家。埃爾瑪是一位幽默的家庭主婦，也是唯一能讓我母親開懷大笑的作家。我媽收藏了她的每一本書，在埃爾瑪得了乳癌後，她的文章變得更動人了。兩年後，埃爾瑪的腎臟因為遺傳性疾病衰竭，她在接受器官移植後過世。</div><div>在埃爾瑪其中一篇最精彩的文章中，她反思如果人生有機會重來，她會做什麼改變。我每次讀完這篇文章都發誓要向她看齊。</div><div>我決心不再一邊和母親通電話一邊查看電子郵件；我要停止一心多用，選擇活在當下；開車時不再講手機而專注於擋風玻璃前方的風景。</div></div><div><div>我發誓要多花點時間從事戶外活動，而不擔心頭髮被雨水打濕；又或是劉海因為濕氣而塌陷。</div><div>我計畫要在壁爐裡多添柴火，而不擔心火熄滅後房子會有多冷，或是客廳的煙會有多大。</div></div><div><div>我決定更隨興地接受朋友的邀約，即使很臨時才約好要一起吃晚餐也沒關係。我要少談論自己，多聽聽他們分享生活。</div><div><br></div><div><br></div><div>摘自(p125~126)</div></div><div><br></div><div><div><span>#人生課堂</span> <span>#自我</span> <span>#感情</span> <span>#生活</span></div></div></div>",
+      "caption": "<div>【晚上多讀一點點】 《上帝不眨眼：50堂百萬人瘋傳的人生智慧》</div><div><br></div><div>〈別等特別的日子才用上好東西，因為今天就很重要〉</div><div><br></div><div><div><div>我不再讓我的蠟燭蒙塵了。</div></div><div><div>我過去曾為此很有罪惡感。朋友們送給我可愛的香精蠟燭，有肉桂蘋果、法式香草、蜂蜜香料等味道，也有能夠傳遞平和、愛與和諧氣氛的芳療蠟燭，蠟燭周圍還裝飾了葉子和玫瑰花瓣，我卻從沒點過這些蠟燭。</div><div>我不想用光這些蠟燭，於是月復一月、年復一年地放任它們積灰塵。有人曾送我一個放在玻璃球內，周圍環繞著滿天星的蠟燭組。我收藏了數年，直到有天打算去撢上面的積塵時，才發現蠟燭早已在陽光下融掉了。</div><div>我不該傻到忽略了我的蠟燭。我從小閱讀埃爾瑪．博貝克（Erma Bombeck）的文章，她是我母親最愛的專欄作家，也是我第一個認識的報紙專欄作家。埃爾瑪是一位幽默的家庭主婦，也是唯一能讓我母親開懷大笑的作家。我媽收藏了她的每一本書，在埃爾瑪得了乳癌後，她的文章變得更動人了。兩年後，埃爾瑪的腎臟因為遺傳性疾病衰竭，她在接受器官移植後過世。</div><div>在埃爾瑪其中一篇最精彩的文章中，她反思如果人生有機會重來，她會做什麼改變。我每次讀完這篇文章都發誓要向她看齊。</div><div>我決心不再一邊和母親通電話一邊查看電子郵件；我要停止一心多用，選擇活在當下；開車時不再講手機而專注於擋風玻璃前方的風景。</div></div><div><div>我發誓要多花點時間從事戶外活動，而不擔心頭髮被雨水打濕；又或是劉海因為濕氣而塌陷。</div><div>我計畫要在壁爐裡多添柴火，而不擔心火熄滅後房子會有多冷，或是客廳的煙會有多大。</div></div><div><div>我決定更隨興地接受朋友的邀約，即使很臨時才約好要一起吃晚餐也沒關係。我要少談論自己，多聽聽他們分享生活。</div><div><br></div><div>摘自(p125~126)</div></div><div><br></div><div><div><span>#人生課堂</span> <span>#自我</span> <span>#感情</span> <span>#生活</span></div></div></div>",
       "time": "20:00",
       "canvaUrl": "https://www.canva.com/design/DAHXIEOLLC4/dgdWOiKx_02SpZSx6DIQlw/view?utm_content=DAHXIEOLLC4&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h05e9958596",
       "ratio": "4-5",
@@ -4328,7 +4328,7 @@ var externalDB = {
       "fbImageCount": 1,
       "status": "draft",
       "createdAt": "2026-10-19T08:48:56.432Z",
-      "updatedAt": "2026-10-20T08:58:33.607Z"
+      "updatedAt": "2026-10-21T08:57:04.303Z"
     }
   ],
   "2026-10-27": [
@@ -4347,16 +4347,16 @@ var externalDB = {
     },
     {
       "_id": "p_1792399796402_wtea5f",
-      "caption": "<div>【新書搶先讀】 《每天只畫一點點，365天燃燒你的植物魂》</div><div><br></div><div>#12月1日上市</div><div><br></div><div><div>★亞馬遜網路書店&nbsp; 藝術圖書類長銷五星好評★</div><div>&nbsp;</div><div>買一本送給自己 ，也送給好朋友&nbsp;</div><div>天天畫，慢慢減壓&nbsp; 天天畫，創意激發&nbsp;</div><div>觀察大自然&nbsp; 找到專屬你的森呼吸</div><div>&nbsp;</div><div>【精采收錄】</div><div>★精選藝術家名言，延伸與藝術的連結</div><div>★作者獨門畫畫技巧的分享</div><div>★彈性靈活的設計，無論在哪裡，能隨心實踐，不受限制</div><div><br></div><div><br></div><div>你無法控制大自然，但你可以享受大自然。</div><div>有時我們需要一段無所事事的時光，單純找回與大自然的連結；</div><div>有時允許自己做白日夢，將所有心事拋諸腦後。</div><div><br></div><div>&nbsp;無論你生活在哪裡，只要一到戶外，</div><div>也許是一株植物、一隻動物、一片天空，</div><div>或是整幅風景……讓你驚奇、讚嘆。</div><div><br></div><div>來，找個舒服的地方坐下，放鬆身心，</div><div>畫什麼主題，不重要；最後的成品如何，不重要。</div><div><br></div><div>&nbsp;</div><div><br></div><div>這次嘗試在綠色中加入白色，創造出更多樣的綠色；</div><div>這次可以留些空白區域，呈現海浪反射的光線；</div><div>這次你不見得要在每個地方都添加線條細節，只要選定陰影；</div><div>這次你可能需要耐心等候鳥兒，那就先畫畫樹枝吧……</div><div><br></div><div>&nbsp;</div><div><br></div><div>洛娜‧史可碧《每天只畫一點點》精采系列，</div><div>現在我們走進豐富的大自然，汲取創意，激發想像。</div><div>每天完成一項，或每週完成幾項，甚至有空時隨時進行，</div><div>按照自己的步調，找到適合自己的方式，</div><div>即使畫錯，也不在意，因為每天只畫一點點就很開心。</div><div><br></div><div>【亞馬遜網路書店 讀者五顆星滿分好評】</div><div><br></div><div>◆幾秒鐘就能完成</div><div><br></div><div>這是一種舒緩且充滿樂趣的創作方式，每次只需畫上幾筆或鉛筆線條即可。尋找創意火花有時會讓人感到無所適從，但這些提示讓一切變得輕鬆許多。我也買了作者的另外兩本書。</div><div><br></div><div>◆獲取靈感的大寶庫</div><div><br></div><div>非常棒的一本書，裡面裝滿了各種點子與提示，也適合患有失智症且喜愛園藝與藝術的人。</div><div><br></div><div>◆建立自信心</div><div><br></div><div>有人推薦我這個系列，試著每天嘗試不同的媒材和藝術類型，藉此建立信心並養成練習習慣。因為這本內容以自然為主題，我買來送給朋友當生日禮物。</div><div><br></div><div>&nbsp;#新書 #大田出版 #繪畫 #插圖</div></div>",
+      "caption": "<div>【圖文時間】 《每天只畫一點點，365天燃燒你的植物魂》</div><div><br></div><div>#新書搶先讀</div><div>#12月1日上市</div><div><br></div><div><div>★亞馬遜網路書店&nbsp; 藝術圖書類長銷五星好評★</div><div>&nbsp;</div><div>買一本送給自己 ，也送給好朋友&nbsp;</div><div>天天畫，慢慢減壓&nbsp; 天天畫，創意激發&nbsp;</div><div>觀察大自然&nbsp; 找到專屬你的森呼吸</div><div>&nbsp;</div><div>【精采收錄】</div><div>★精選藝術家名言，延伸與藝術的連結</div><div>★作者獨門畫畫技巧的分享</div><div>★彈性靈活的設計，無論在哪裡，能隨心實踐，不受限制</div><div><br></div><div><br></div><div>你無法控制大自然，但你可以享受大自然。</div><div>有時我們需要一段無所事事的時光，單純找回與大自然的連結；</div><div>有時允許自己做白日夢，將所有心事拋諸腦後。</div><div><br></div><div>&nbsp;無論你生活在哪裡，只要一到戶外，</div><div>也許是一株植物、一隻動物、一片天空，</div><div>或是整幅風景……讓你驚奇、讚嘆。</div><div><br></div><div>來，找個舒服的地方坐下，放鬆身心，</div><div>畫什麼主題，不重要；最後的成品如何，不重要。</div><div><br></div><div>&nbsp;</div><div><br></div><div>這次嘗試在綠色中加入白色，創造出更多樣的綠色；</div><div>這次可以留些空白區域，呈現海浪反射的光線；</div><div>這次你不見得要在每個地方都添加線條細節，只要選定陰影；</div><div>這次你可能需要耐心等候鳥兒，那就先畫畫樹枝吧……</div><div><br></div><div>&nbsp;</div><div><br></div><div>洛娜‧史可碧《每天只畫一點點》精采系列，</div><div>現在我們走進豐富的大自然，汲取創意，激發想像。</div><div>每天完成一項，或每週完成幾項，甚至有空時隨時進行，</div><div>按照自己的步調，找到適合自己的方式，</div><div>即使畫錯，也不在意，因為每天只畫一點點就很開心。</div><div><br></div><div>【亞馬遜網路書店 讀者五顆星滿分好評】</div><div><br></div><div>◆幾秒鐘就能完成</div><div><br></div><div>這是一種舒緩且充滿樂趣的創作方式，每次只需畫上幾筆或鉛筆線條即可。尋找創意火花有時會讓人感到無所適從，但這些提示讓一切變得輕鬆許多。我也買了作者的另外兩本書。</div><div><br></div><div>◆獲取靈感的大寶庫</div><div><br></div><div>非常棒的一本書，裡面裝滿了各種點子與提示，也適合患有失智症且喜愛園藝與藝術的人。</div><div><br></div><div>◆建立自信心</div><div><br></div><div>有人推薦我這個系列，試著每天嘗試不同的媒材和藝術類型，藉此建立信心並養成練習習慣。因為這本內容以自然為主題，我買來送給朋友當生日禮物。</div><div><br></div><div>&nbsp;#新書 #大田出版 #繪畫 #插圖</div></div>",
       "time": "18:00",
       "canvaUrl": "https://www.canva.com/design/DAHYnv1Ln_Y/XkH5c6kESSnHjtjObRrghQ/view?utm_content=DAHYnv1Ln_Y&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h91fbfdfbb6",
       "ratio": "1-1",
-      "theme": "新書搶先讀",
+      "theme": "圖文時間",
       "title": "每天只畫一點點，365天燃燒你的植物魂",
       "fbImageCount": 1,
       "status": "draft",
       "createdAt": "2026-10-19T08:49:56.402Z",
-      "updatedAt": "2026-10-21T07:04:24.503Z"
+      "updatedAt": "2026-10-21T09:00:51.021Z"
     },
     {
       "_id": "p_1792399813960_vw5u12",
@@ -4554,7 +4554,7 @@ var externalDB = {
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-10-21T08:54:37.448Z",
+  "updatedAt": "2026-10-21T09:01:11.289Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
