@@ -4375,16 +4375,16 @@ var externalDB = {
   "2026-10-28": [
     {
       "_id": "p_1792399906726_utf338",
-      "caption": "<div>【早上只讀一點點】&nbsp;<span style=\"color:rgb(8, 8, 9)\">《寺山修司少女詩集(經典燙金版)》</span></div><div><br></div>",
+      "caption": "<div>【早上只讀一點點】&nbsp;<span style=\"color:rgb(8, 8, 9)\">《寺山修司少女詩集(經典燙金版)》</span></div><div><br></div><div>#寺山修司</div><div><br></div><div><div>〈 感到悲傷的時候 〉</div><div><br></div><div>感到悲傷的時候</div><div>且去看海</div><div><br></div><div>逛完舊書店後</div><div>且去看海</div><div><br></div><div>當你生病時</div><div>且去看海</div><div><br></div><div>心靈貧乏的早晨</div><div>且去看海</div></div><div><br></div><div><div>啊！大海</div><div>有著寬闊的肩膀和胸膛</div><div><br></div><div>再怎麼痛苦的早晨</div><div>再怎麼難受的夜晚</div><div>都會過去的</div><div><br></div><div>人生歲月有時終</div><div>只有大海永無止境</div><div><br></div><div>感到悲傷的時候</div><div>且去看海</div></div><div><br></div><div><div>孤單一人的夜晚</div><div>且去看海</div></div><div><br></div><div>摘自<span style=\"color:rgb(8, 8, 9)\">《寺山修司少女詩集(經典燙金版)》-</span>〈感到悲傷的時候〉</div><div><br></div><div>#詩集 #大田出版</div>",
       "time": "08:00",
-      "canvaUrl": "",
-      "ratio": "4-5",
+      "canvaUrl": "https://www.canva.com/design/DAHYn4Cwrww/tfiB12LtZqhIOeXPFv0JYA/view?utm_content=DAHYn4Cwrww&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hda651f8530",
+      "ratio": "1-1",
       "theme": "早上只讀一點點",
       "title": "寺山修司少女詩集(經典燙金版)",
       "fbImageCount": 1,
       "status": "draft",
       "createdAt": "2026-10-19T08:51:46.726Z",
-      "updatedAt": "2026-10-19T09:46:16.239Z"
+      "updatedAt": "2026-10-21T07:34:37.586Z"
     },
     {
       "_id": "p_1792399919941_m7a96c",
@@ -4554,7 +4554,7 @@ var externalDB = {
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-10-21T07:04:35.809Z",
+  "updatedAt": "2026-10-21T07:34:48.047Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
