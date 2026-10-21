@@ -4347,16 +4347,16 @@ var externalDB = {
     },
     {
       "_id": "p_1792399796402_wtea5f",
-      "caption": "<div>【新書搶先讀】 《每天只畫一點點，365天燃燒你的植物魂》</div><div><br></div>",
+      "caption": "<div>【新書搶先讀】 《每天只畫一點點，365天燃燒你的植物魂》</div><div><br></div><div>#12月1日上市</div><div><br></div><div><div>★亞馬遜網路書店&nbsp; 藝術圖書類長銷五星好評★</div><div>&nbsp;</div><div>買一本送給自己 ，也送給好朋友&nbsp;</div><div>天天畫，慢慢減壓&nbsp; 天天畫，創意激發&nbsp;</div><div>觀察大自然&nbsp; 找到專屬你的森呼吸</div><div>&nbsp;</div><div>【精采收錄】</div><div>★精選藝術家名言，延伸與藝術的連結</div><div>★作者獨門畫畫技巧的分享</div><div>★彈性靈活的設計，無論在哪裡，能隨心實踐，不受限制</div><div><br></div><div><br></div><div>你無法控制大自然，但你可以享受大自然。</div><div>有時我們需要一段無所事事的時光，單純找回與大自然的連結；</div><div>有時允許自己做白日夢，將所有心事拋諸腦後。</div><div><br></div><div>&nbsp;無論你生活在哪裡，只要一到戶外，</div><div>也許是一株植物、一隻動物、一片天空，</div><div>或是整幅風景……讓你驚奇、讚嘆。</div><div><br></div><div>來，找個舒服的地方坐下，放鬆身心，</div><div>畫什麼主題，不重要；最後的成品如何，不重要。</div><div><br></div><div>&nbsp;</div><div><br></div><div>這次嘗試在綠色中加入白色，創造出更多樣的綠色；</div><div>這次可以留些空白區域，呈現海浪反射的光線；</div><div>這次你不見得要在每個地方都添加線條細節，只要選定陰影；</div><div>這次你可能需要耐心等候鳥兒，那就先畫畫樹枝吧……</div><div><br></div><div>&nbsp;</div><div><br></div><div>洛娜‧史可碧《每天只畫一點點》精采系列，</div><div>現在我們走進豐富的大自然，汲取創意，激發想像。</div><div>每天完成一項，或每週完成幾項，甚至有空時隨時進行，</div><div>按照自己的步調，找到適合自己的方式，</div><div>即使畫錯，也不在意，因為每天只畫一點點就很開心。</div><div><br></div><div>【亞馬遜網路書店 讀者五顆星滿分好評】</div><div><br></div><div>◆幾秒鐘就能完成</div><div><br></div><div>這是一種舒緩且充滿樂趣的創作方式，每次只需畫上幾筆或鉛筆線條即可。尋找創意火花有時會讓人感到無所適從，但這些提示讓一切變得輕鬆許多。我也買了作者的另外兩本書。</div><div><br></div><div>◆獲取靈感的大寶庫</div><div><br></div><div>非常棒的一本書，裡面裝滿了各種點子與提示，也適合患有失智症且喜愛園藝與藝術的人。</div><div><br></div><div>◆建立自信心</div><div><br></div><div>有人推薦我這個系列，試著每天嘗試不同的媒材和藝術類型，藉此建立信心並養成練習習慣。因為這本內容以自然為主題，我買來送給朋友當生日禮物。</div><div><br></div><div>&nbsp;#新書 #大田出版 #繪畫 #插圖</div></div>",
       "time": "18:00",
-      "canvaUrl": "",
+      "canvaUrl": "https://www.canva.com/design/DAHYnv1Ln_Y/XkH5c6kESSnHjtjObRrghQ/view?utm_content=DAHYnv1Ln_Y&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h91fbfdfbb6",
       "ratio": "1-1",
       "theme": "新書搶先讀",
       "title": "每天只畫一點點，365天燃燒你的植物魂",
       "fbImageCount": 1,
       "status": "draft",
       "createdAt": "2026-10-19T08:49:56.402Z",
-      "updatedAt": "2026-10-19T08:49:56.402Z"
+      "updatedAt": "2026-10-21T07:04:24.503Z"
     },
     {
       "_id": "p_1792399813960_vw5u12",
@@ -4365,11 +4365,11 @@ var externalDB = {
       "canvaUrl": "",
       "ratio": "4-5",
       "theme": "晚上多讀一點點",
-      "title": "#慢慢寄出去的心",
+      "title": "慢慢寄出去的心",
       "fbImageCount": 1,
       "status": "draft",
       "createdAt": "2026-10-19T08:50:13.960Z",
-      "updatedAt": "2026-10-19T08:50:13.960Z"
+      "updatedAt": "2026-10-21T07:02:57.292Z"
     }
   ],
   "2026-10-28": [
@@ -4554,7 +4554,7 @@ var externalDB = {
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-10-21T03:02:09.875Z",
+  "updatedAt": "2026-10-21T07:04:35.809Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
