@@ -4360,16 +4360,16 @@ var externalDB = {
     },
     {
       "_id": "p_1792399813960_vw5u12",
-      "caption": "<div>【晚上多讀一點點】 《#慢慢寄出去的心》</div><div><br></div>",
+      "caption": "<div>【晚上多讀一點點】 《慢慢寄出去的心》</div><div><br></div><div><div>喝完茶之後，我們回到郵筒建築，發現已經有人坐在桌前寫信。我也向阿姨要一千韓元買了張明信片，在寄件人的欄位寫上我的名字，在收件人的欄位寫上媽媽的名字。</div><div>那位寫信的人寫完一行，就呆呆望向窗外，接著又再寫一行。我模仿他的樣子，茫然望向窗外，卻一句話都想不出來。直到那個人寫完，將明信片投入郵筒，我一個字都下不了筆。</div><div>兩對情侶來了又走了，一對母女來了又走了之後，一個肚子微微隆起的男人走進來。他把新明信片補到架上，檢查桌上的筆是否完好。我連忙跑到外面，叫喚在附近閒晃的阿姨。阿姨立刻跑過來。</div><div>負責的職員說，他今天上午出差，是請別的同事過來幫忙開門的，現在結束出差、回辦公室的路上順便過來看看，還問我們是不是打算一直等到五點。他還說很抱歉，寄出的明信片不能退還。</div><div>「原本這個郵筒上有寫我的電話號碼，」職員說，「但實在是太多人打電話來問能不能拿回明信片，所以我把電話號碼拿掉了。是想找寄給前男友的信吧？」</div><div>阿姨一時之間回答不出來。職員自言自語地說想不透既然都要分手，為什麼還要在明信片上寫我愛你這種話。那段自言自語響徹整棟建築。</div><div>阿姨低聲說了句：「笨蛋。」職員一定聽見了，但他沒有任何回應。</div><div>沒有辦法，我只好向職員撒謊，說阿姨的男朋友上個月死了，請他想想死去的兒子的女朋友所寫的信，最後送到那對父母手裡的情景。我原本還擔心這個謊言會被識破，沒想到職員的眼睛突然睜大，接著他向阿姨道歉。他的道歉鄭重到讓我對自己說謊的事感到愧疚。</div><div>職員帶我和阿姨去倉庫，那裡放著十二個巨大袋子。職員說每到月底，他會把郵筒中的明信片取出來裝進新的袋子，在袋口貼上日期標籤，存放在倉庫裡。而存放在倉庫裡的袋子滿一年後會被送去郵局，袋中的明信片才會被寄出，因此倉庫裡永遠都會有十二個袋子。</div><div>阿姨說出她去年和朋友一起來旅行的月分，職員便找來其中一個袋子。</div><div>「給妳們一個小時。」</div><div>職員把袋子裡的明信片全倒在倉庫的地板上。我和阿姨坐在地上開始找信。</div><div>我盡量不去讀明信片上的內容，但還是免不了有一兩行字句闖入我的視線。寄給自己的人比我想像中還要多，讓我很驚訝。</div><div>寫給自己的信往往都用差不多的句子結尾：像現在一樣繼續努力吧。你一直以來都做得很好。</div><div>像現在一樣。</div><div>都做得很好。</div><div>那種話讓我覺得很怪，我應該永遠無法對自己說出那種話。</div><div>「阿姨？」</div><div>我叫阿姨一聲。</div><div>「幹嘛？別胡思亂想，趕緊找信吧。」</div><div>阿姨回覆道。</div><div>「我剛剛說流汗男死了，抱歉。」</div><div>阿姨說沒關係，還說她和流汗男叔叔去算過命，算命的說他會很長壽，叫我不用擔心。</div><div>「可是阿姨，仔細想想，雖然有點丟臉，但讓那張明信片寄出去不是反而更好嗎？結婚之後女方看到明信片，說不定他們夫妻倆會吵架呢，這樣不就能報復流汗男嗎？」</div><div>阿姨直勾勾地看著我，然後搖搖頭。</div><div>「才剛結婚，新娘現在想必很幸福吧。不論她是誰，我都不想傷害她。」</div><div>聽了阿姨的話，我又想起「傷心」這個詞。對呀，讓別人傷心，自己的心也會受傷，媽媽以前經常這麼說。</div><div>媽媽從來都沒有讓別人傷心，為什麼她心裡會受傷呢？</div><div>一想到這裡我突然覺得很委屈，而我越委屈就越生氣。</div><div>為了不讓自己發怒，我隨手拿起一張明信片讀了起來。</div><div>明信片用歪七扭八的字寫著：「媽媽、爸爸，等我七歲的時候，一定會乖乖聽話。」寄件人是朴敏珠。</div><div>敏珠的父母下個月會收到這張明信片，然後一邊笑著對敏珠說，明明都已經七歲了，怎麼還是不聽話呢。</div><div>如此一想，心裡好像舒坦了一些。</div><div>「找到了。」</div><div>阿姨把那張明信片拿到我眼前晃了晃。我伸手說要看，她說這個絕對不行。</div><div>我們把明信片重新裝回袋子裡。我走到倉庫外把職員叫進來。</div><div>阿姨對他說，剛剛罵他笨蛋很抱歉，說改天會送個禮物給他，想跟他要一張名片。</div><div>職員卻搖搖頭。</div><div>「我們今天沒有見過面。什麼找回明信片的事情當然也沒有發生過，知道嗎？」</div></div><div><br></div><div><span>摘自 《 #慢慢寄出去的心》-〈夏日甜瓜〉p.71~75</span></div><div><span><br></span></div><div><span>#大田出版 #尹成姬 #溫柔 #小說</span></div>",
       "time": "20:00",
-      "canvaUrl": "",
+      "canvaUrl": "https://www.canva.com/design/DAHXxSBg54A/QAz_6AQAd8xA3YzRoTeRXA/view?utm_content=DAHXxSBg54A&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h3a39d240f1",
       "ratio": "4-5",
       "theme": "晚上多讀一點點",
       "title": "慢慢寄出去的心",
       "fbImageCount": 1,
       "status": "draft",
       "createdAt": "2026-10-19T08:50:13.960Z",
-      "updatedAt": "2026-10-21T07:02:57.292Z"
+      "updatedAt": "2026-10-27T08:06:02.906Z"
     }
   ],
   "2026-10-28": [
@@ -4403,14 +4403,14 @@ var externalDB = {
       "_id": "p_1792400031360_f9frb8",
       "caption": "<div>【晚上多讀一點點】 《尋找蜘蛛：日本暢銷超過36萬冊，西加奈子的生命故事》</div><div><br></div>",
       "time": "20:00",
-      "canvaUrl": "",
+      "canvaUrl": "https://www.canva.com/design/DAHXxSBg54A/QAz_6AQAd8xA3YzRoTeRXA/view?utm_content=DAHXxSBg54A&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h3a39d240f1",
       "ratio": "4-5",
       "theme": "晚上多讀一點點",
       "title": "尋找蜘蛛：日本暢銷超過36萬冊，西加奈子的生命故事",
       "fbImageCount": 1,
       "status": "draft",
       "createdAt": "2026-10-19T08:53:51.360Z",
-      "updatedAt": "2026-10-19T09:18:46.098Z"
+      "updatedAt": "2026-10-27T08:04:43.120Z"
     }
   ],
   "2026-10-29": [
@@ -4550,11 +4550,134 @@ var externalDB = {
       "createdAt": "2026-10-20T04:25:14.213Z",
       "updatedAt": "2026-10-20T04:25:14.213Z"
     }
+  ],
+  "2026-11-02": [
+    {
+      "_id": "p_1793082745958_ykcd18",
+      "caption": "<div>【早上只讀一點點】</div><div><br></div>",
+      "time": "08:00",
+      "canvaUrl": "",
+      "ratio": "1-1",
+      "theme": "早上只讀一點點",
+      "title": "",
+      "fbImageCount": 1,
+      "status": "draft",
+      "createdAt": "2026-10-27T06:32:25.958Z",
+      "updatedAt": "2026-10-27T06:32:25.958Z"
+    },
+    {
+      "_id": "p_1793082824893_6v2o83",
+      "caption": "<div>【圖文時間】</div><div><br></div>",
+      "time": "18:00",
+      "canvaUrl": "",
+      "ratio": "1-1",
+      "theme": "圖文時間",
+      "title": "",
+      "fbImageCount": 1,
+      "status": "draft",
+      "createdAt": "2026-10-27T06:33:44.893Z",
+      "updatedAt": "2026-10-27T06:33:44.893Z"
+    },
+    {
+      "_id": "p_1793082834726_0qj5s8",
+      "caption": "<div>【晚上多讀一點點】</div><div><br></div>",
+      "time": "20:00",
+      "canvaUrl": "",
+      "ratio": "1-1",
+      "theme": "晚上多讀一點點",
+      "title": "",
+      "fbImageCount": 1,
+      "status": "draft",
+      "createdAt": "2026-10-27T06:33:54.726Z",
+      "updatedAt": "2026-10-27T06:33:54.726Z"
+    }
+  ],
+  "2026-11-03": [
+    {
+      "_id": "p_1793082853453_h2zzge",
+      "caption": "<div>【早上只讀一點點】</div><div><br></div>",
+      "time": "08:00",
+      "canvaUrl": "",
+      "ratio": "1-1",
+      "theme": "早上只讀一點點",
+      "title": "",
+      "fbImageCount": 1,
+      "status": "draft",
+      "createdAt": "2026-10-27T06:34:13.453Z",
+      "updatedAt": "2026-10-27T06:34:13.453Z"
+    },
+    {
+      "_id": "p_1793082862956_go42lw",
+      "caption": "<div>【圖文時間】</div><div><br></div>",
+      "time": "18:00",
+      "canvaUrl": "",
+      "ratio": "1-1",
+      "theme": "圖文時間",
+      "title": "",
+      "fbImageCount": 1,
+      "status": "draft",
+      "createdAt": "2026-10-27T06:34:22.956Z",
+      "updatedAt": "2026-10-27T06:34:22.956Z"
+    },
+    {
+      "_id": "p_1793082868993_ghdhxw",
+      "caption": "<div>【晚上多讀一點點】</div><div><br></div>",
+      "time": "20:00",
+      "canvaUrl": "",
+      "ratio": "1-1",
+      "theme": "晚上多讀一點點",
+      "title": "",
+      "fbImageCount": 1,
+      "status": "draft",
+      "createdAt": "2026-10-27T06:34:28.993Z",
+      "updatedAt": "2026-10-27T06:34:28.993Z"
+    }
+  ],
+  "2026-11-04": [
+    {
+      "_id": "p_1793082877123_0owiqu",
+      "caption": "<div>【早上只讀一點點】</div><div><br></div>",
+      "time": "08:00",
+      "canvaUrl": "",
+      "ratio": "1-1",
+      "theme": "早上只讀一點點",
+      "title": "",
+      "fbImageCount": 1,
+      "status": "draft",
+      "createdAt": "2026-10-27T06:34:37.123Z",
+      "updatedAt": "2026-10-27T06:34:37.123Z"
+    },
+    {
+      "_id": "p_1793082892731_mnvzip",
+      "caption": "<div>【圖文時間】</div><div><br></div>",
+      "time": "18:00",
+      "canvaUrl": "",
+      "ratio": "4-5",
+      "theme": "圖文時間",
+      "title": "",
+      "fbImageCount": 1,
+      "status": "draft",
+      "createdAt": "2026-10-27T06:34:52.731Z",
+      "updatedAt": "2026-10-27T06:34:52.731Z"
+    },
+    {
+      "_id": "p_1793082899158_e342l5",
+      "caption": "<div>【晚上多讀一點點】</div><div><br></div>",
+      "time": "20:00",
+      "canvaUrl": "",
+      "ratio": "1-1",
+      "theme": "晚上多讀一點點",
+      "title": "",
+      "fbImageCount": 1,
+      "status": "draft",
+      "createdAt": "2026-10-27T06:34:59.158Z",
+      "updatedAt": "2026-10-27T06:34:59.158Z"
+    }
   ]
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-10-21T09:01:53.825Z",
+  "updatedAt": "2026-10-27T08:11:28.914Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
