@@ -4470,7 +4470,7 @@ var externalDB = {
     },
     {
       "_id": "p_1792470208473_e0x3tp",
-      "caption": "<div>【圖文時間】「高木直子新書 × 大田 LINE 貼圖</div>兩大驚喜，搶先預告！」<div><br></div><div><strong>加入大田 LINE 好友，閱讀好消息不漏接！</strong></div><div>想找喜歡的書，不用再四處搜尋！</div><div>現在透過大田 LINE 官方帳號的圖文選單，就能輕鬆查看每月新書、各大購書平台連結，讓閱讀更方便！</div><div><br></div><div><strong>新朋友限定搶先看！</strong></div><div>為了歡迎大家加入，我們也將搶先在 LINE 分享 <strong>高木直子新書消息</strong>，以及即將推出的 <strong>大田 LINE 貼圖</strong> 最新資訊！</div><div>更多新書消息、閱讀驚喜，都在大田 LINE 等著你！</div><div><br></div><div>現在就加入大田 LINE 好友，一起迎接更多閱讀日常吧！</div><div><br></div><div>#高木直子 #大田出版 #貼圖 #新書 #line</div>",
+      "caption": "<div>【圖文時間】「高木直子新書 × 大田 LINE 貼圖</div>兩大驚喜，搶先預告！」<div><br></div><div><strong>加入大田 LINE 好友，閱讀好消息不漏接！</strong></div><div>想找喜歡的書，不用再四處搜尋！</div><div>現在透過大田 LINE 官方帳號的圖文選單，就能輕鬆查看每月新書、各大購書平台連結，讓閱讀更方便！</div><div><br></div><div><strong>新朋友限定搶先看！</strong></div><div>為了歡迎大家加入，我們也將搶先在 LINE 分享 <strong>高木直子新書消息</strong>，以及即將推出的 <strong>大田 LINE 貼圖</strong> 最新資訊！</div><div>更多新書消息、閱讀驚喜，都在大田 LINE 等著你！</div><div><br></div><div>現在就<span>掃描QRcode或是點擊留言區網址！</span></div><div>加入大田 LINE 好友，一起迎接更多閱讀日常吧！</div><div><br></div><div>#高木直子 #大田出版 #貼圖 #新書 #line</div>",
       "time": "18:00",
       "canvaUrl": "https://www.canva.com/design/DAHZQse7SPY/WOEFRqFEQoXQRaF4CiFb-w/view?utm_content=DAHZQse7SPY&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h61dc202493",
       "ratio": "1-1",
@@ -4479,7 +4479,7 @@ var externalDB = {
       "fbImageCount": 1,
       "status": "draft",
       "createdAt": "2026-10-20T04:23:28.473Z",
-      "updatedAt": "2026-10-28T03:17:07.781Z"
+      "updatedAt": "2026-10-28T04:23:09.094Z"
     },
     {
       "_id": "p_1792470213228_lvlq0q",
@@ -4498,29 +4498,29 @@ var externalDB = {
   "2026-10-31": [
     {
       "_id": "p_1792470244727_31xyrk",
-      "caption": "<div>【新書預告】 《幸福就是吃飯睡覺等待 vol.5》</div><div><br></div>",
+      "caption": "<div><div>【新書預告】 《幸福就是吃飯睡覺等待 vol.5》</div><div><br></div><div>#12月1日全台上市</div><div>#幸福就是吃飯睡覺等待</div><div><br></div><div><div>我們</div><div>都比自己想像的</div><div>更勇敢</div><div><br></div><div>為什麼</div><div>會對可以跨越的事</div><div>感到害怕而裹足不前呢……？</div><div><br></div><div>★2022年「這本漫畫真厲害！」女生部漫畫 第8名</div><div>★2025年NHK改編電視劇</div><div>★系列在日銷售突破100萬冊</div><div>★亞馬遜五星好評 ★博客來選書</div><div><br></div><div>【隨書贈送】</div><div>台灣限定 • 蒐集5號 • 日日好日 書籤特典 （120mm × 70mm）</div><div><br></div><div>無可奈何的日子</div><div><br></div><div>如何撐過的祕訣｡</div><div><br></div><div>由於生病過著每周只能打工四天維持生計的麥卷聰子。</div><div><br></div><div>因為束手無策的身體狀況，有時得放棄某些堅持。</div><div><br></div><div>心情低落的日子，藉由好吃的飯菜養精蓄銳。</div><div><br></div><div>隨著社區和職場拓展的關係，聰子也漸漸懂得正向思考……？</div><div><br></div><div>★慢一點也沒關係★</div><div><br></div><div>「現在的我，做什麼都只能做到八分滿，也正在思考，像現在這樣的自己，今後要用什麼樣的步調才能繼續走下去。 我想，到了這個地步，也只能接受現況了。接下來，大概就是「慢慢思考今後該怎麼走」吧。慢一點也沒關係。聰子也是一邊和自己的狀況磨合，一步一步找出適合自己的生活方式。」</div><div><br></div><div>——節錄自「誠品提案10月號：修復的練習」作者 水凪トリ（Mizunagi Tori）專訪</div></div><div><br></div><div>#新書 #大田出版</div></div>",
       "time": "09:00",
-      "canvaUrl": "",
-      "ratio": "4-5",
+      "canvaUrl": "https://www.canva.com/design/DAHYb78Nuso/q_3CMuEm2dS-x8uyT23G-Q/view?utm_content=DAHYb78Nuso&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hf3f94f8139",
+      "ratio": "1-1",
       "theme": "新書預告",
       "title": "幸福就是吃飯睡覺等待 vol.5",
       "fbImageCount": 1,
       "status": "draft",
       "createdAt": "2026-10-20T04:24:04.727Z",
-      "updatedAt": "2026-10-20T04:24:04.727Z"
+      "updatedAt": "2026-10-28T04:08:20.937Z"
     },
     {
       "_id": "p_1792470261924_9zoxtx",
-      "caption": "<div>【新書預告】 《每天只畫一點點，365天燃燒你的植物魂》</div><div><br></div>",
+      "caption": "<div><div>【新書預告】 《每天只畫一點點，365天燃燒你的植物魂》</div><div><br></div><div><span>#12月1日全台上市</span></div><div><br></div><div><div>★亞馬遜網路書店&nbsp; 藝術圖書類長銷五星好評★</div><div>&nbsp;</div><div>買一本送給自己 ，也送給好朋友</div><div>&nbsp;</div><div>天天畫，慢慢減壓&nbsp; 天天畫，創意激發</div><div>&nbsp;</div><div>觀察大自然&nbsp; 找到專屬你的森呼吸</div><div>&nbsp;</div><div><br></div><div>【精采收錄】</div><div>★精選藝術家名言，延伸與藝術的連結</div><div>★作者獨門畫畫技巧的分享</div><div>★彈性靈活的設計，無論在哪裡，能隨心實踐，不受限制</div><div><br></div><div><br></div><div><br></div><div>你無法控制大自然，但你可以享受大自然。</div><div><br></div><div>有時我們需要一段無所事事的時光，單純找回與大自然的連結；</div><div><br></div><div>有時允許自己做白日夢，將所有心事拋諸腦後。</div><div><br></div><div>&nbsp;</div><div><br></div><div>無論你生活在哪裡，只要一到戶外，</div><div><br></div><div>也許是一株植物、一隻動物、一片天空，</div><div><br></div><div>或是整幅風景……讓你驚奇、讚嘆。</div><div><br></div><div>來，找個舒服的地方坐下，放鬆身心，</div><div><br></div><div>畫什麼主題，不重要；最後的成品如何，不重要。</div><div><br></div><div>&nbsp;</div><div><br></div><div>這次嘗試在綠色中加入白色，創造出更多樣的綠色；</div><div><br></div><div>這次可以留些空白區域，呈現海浪反射的光線；</div><div><br></div><div>這次你不見得要在每個地方都添加線條細節，只要選定陰影；</div><div><br></div><div>這次你可能需要耐心等候鳥兒，那就先畫畫樹枝吧……</div><div><br></div><div>&nbsp;</div><div><br></div><div>洛娜‧史可碧《每天只畫一點點》精采系列，</div><div><br></div><div>現在我們走進豐富的大自然，汲取創意，激發想像。</div><div><br></div><div>每天完成一項，或每週完成幾項，甚至有空時隨時進行，</div><div><br></div><div>按照自己的步調，找到適合自己的方式，</div><div><br></div><div>即使畫錯，也不在意，因為每天只畫一點點就很開心。</div><div><br></div><div>【亞馬遜網路書店 讀者五顆星滿分好評】</div><div><br></div><div>◆幾秒鐘就能完成</div><div><br></div><div>這是一種舒緩且充滿樂趣的創作方式，每次只需畫上幾筆或鉛筆線條即可。尋找創意火花有時會讓人感到無所適從，但這些提示讓一切變得輕鬆許多。我也買了作者的另外兩本書。</div><div><br></div><div>◆獲取靈感的大寶庫</div><div><br></div><div>非常棒的一本書，裡面裝滿了各種點子與提示，也適合患有失智症且喜愛園藝與藝術的人。</div><div><br></div><div>◆建立自信心</div><div><br></div><div>有人推薦我這個系列，試著每天嘗試不同的媒材和藝術類型，藉此建立信心並養成練習習慣。因為這本內容以自然為主題，我買來送給朋友當生日禮物。</div><div><br></div><div>&nbsp;#新書 #大田出版</div></div></div>",
       "time": "09:00",
-      "canvaUrl": "",
-      "ratio": "4-5",
+      "canvaUrl": "https://www.canva.com/design/DAHYcII3QZg/WMd2Qn1rwNa-a-6liNI4Ig/view?utm_content=DAHYcII3QZg&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hf063f05931",
+      "ratio": "1-1",
       "theme": "新書預告",
       "title": "每天只畫一點點，365天燃燒你的植物魂",
       "fbImageCount": 1,
       "status": "draft",
       "createdAt": "2026-10-20T04:24:21.924Z",
-      "updatedAt": "2026-10-20T04:24:21.924Z"
+      "updatedAt": "2026-10-28T04:08:39.262Z"
     }
   ],
   "2026-11-01": [
@@ -4539,16 +4539,16 @@ var externalDB = {
     },
     {
       "_id": "p_1792470314213_987ukc",
-      "caption": "<div>【大田布告欄】 《大田十一月新書上市！》</div><div><br></div>",
+      "caption": "<div>【大田布告欄】 大田十一月新書上市！</div><div><br></div><div><div>《幸福就是吃飯睡覺等待 vol.5》</div><div><br></div><div>#12月1日全台上市</div><div>#幸福就是吃飯睡覺等待</div><div><br></div><div><div>我們</div><div>都比自己想像的</div><div>更勇敢</div><div><br></div><div>為什麼</div><div>會對可以跨越的事</div><div>感到害怕而裹足不前呢……？</div><div><br></div><div>★2022年「這本漫畫真厲害！」女生部漫畫 第8名</div><div>★2025年NHK改編電視劇</div><div>★系列在日銷售突破100萬冊</div><div>★亞馬遜五星好評 ★博客來選書</div><div><br></div><div>【隨書贈送】</div><div>台灣限定 • 蒐集5號 • 日日好日 書籤特典 （120mm × 70mm）</div><div><br></div><div>無可奈何的日子</div><div><br></div><div>如何撐過的祕訣｡</div><div><br></div><div>由於生病過著每周只能打工四天維持生計的麥卷聰子。</div><div><br></div><div>因為束手無策的身體狀況，有時得放棄某些堅持。</div><div><br></div><div>心情低落的日子，藉由好吃的飯菜養精蓄銳。</div><div><br></div><div>隨著社區和職場拓展的關係，聰子也漸漸懂得正向思考……？</div><div><br></div><div>★慢一點也沒關係★</div><div><br></div><div>「現在的我，做什麼都只能做到八分滿，也正在思考，像現在這樣的自己，今後要用什麼樣的步調才能繼續走下去。 我想，到了這個地步，也只能接受現況了。接下來，大概就是「慢慢思考今後該怎麼走」吧。慢一點也沒關係。聰子也是一邊和自己的狀況磨合，一步一步找出適合自己的生活方式。」</div><div><br></div><div>——節錄自「誠品提案10月號：修復的練習」作者 水凪トリ（Mizunagi Tori）專訪</div></div><div><br></div><div><div>《每天只畫一點點，365天燃燒你的植物魂》</div><div><br></div><div><span>#12月1日全台上市</span></div><div><br></div><div><div>★亞馬遜網路書店&nbsp; 藝術圖書類長銷五星好評★</div><div>&nbsp;</div><div>買一本送給自己 ，也送給好朋友</div><div>&nbsp;</div><div>天天畫，慢慢減壓&nbsp; 天天畫，創意激發</div><div>&nbsp;</div><div>觀察大自然&nbsp; 找到專屬你的森呼吸</div><div>&nbsp;</div><div><br></div><div>【精采收錄】</div><div>★精選藝術家名言，延伸與藝術的連結</div><div>★作者獨門畫畫技巧的分享</div><div>★彈性靈活的設計，無論在哪裡，能隨心實踐，不受限制</div><div><br></div><div><br></div><div><br></div><div>你無法控制大自然，但你可以享受大自然。</div><div><br></div><div>有時我們需要一段無所事事的時光，單純找回與大自然的連結；</div><div><br></div><div>有時允許自己做白日夢，將所有心事拋諸腦後。</div><div><br></div><div>&nbsp;</div><div><br></div><div>無論你生活在哪裡，只要一到戶外，</div><div><br></div><div>也許是一株植物、一隻動物、一片天空，</div><div><br></div><div>或是整幅風景……讓你驚奇、讚嘆。</div><div><br></div><div>來，找個舒服的地方坐下，放鬆身心，</div><div><br></div><div>畫什麼主題，不重要；最後的成品如何，不重要。</div><div><br></div><div>&nbsp;</div><div><br></div><div>這次嘗試在綠色中加入白色，創造出更多樣的綠色；</div><div><br></div><div>這次可以留些空白區域，呈現海浪反射的光線；</div><div><br></div><div>這次你不見得要在每個地方都添加線條細節，只要選定陰影；</div><div><br></div><div>這次你可能需要耐心等候鳥兒，那就先畫畫樹枝吧……</div><div><br></div><div>&nbsp;</div><div><br></div><div>洛娜‧史可碧《每天只畫一點點》精采系列，</div><div><br></div><div>現在我們走進豐富的大自然，汲取創意，激發想像。</div><div><br></div><div>每天完成一項，或每週完成幾項，甚至有空時隨時進行，</div><div><br></div><div>按照自己的步調，找到適合自己的方式，</div><div><br></div><div>即使畫錯，也不在意，因為每天只畫一點點就很開心。</div><div><br></div><div>【亞馬遜網路書店 讀者五顆星滿分好評】</div><div><br></div><div>◆幾秒鐘就能完成</div><div><br></div><div>這是一種舒緩且充滿樂趣的創作方式，每次只需畫上幾筆或鉛筆線條即可。尋找創意火花有時會讓人感到無所適從，但這些提示讓一切變得輕鬆許多。我也買了作者的另外兩本書。</div><div><br></div><div>◆獲取靈感的大寶庫</div><div><br></div><div>非常棒的一本書，裡面裝滿了各種點子與提示，也適合患有失智症且喜愛園藝與藝術的人。</div><div><br></div><div>◆建立自信心</div><div><br></div><div>有人推薦我這個系列，試著每天嘗試不同的媒材和藝術類型，藉此建立信心並養成練習習慣。因為這本內容以自然為主題，我買來送給朋友當生日禮物。</div><div><br></div><div>&nbsp;#新書 #大田出版</div></div></div><div><br></div><div><br></div></div>",
       "time": "09:00",
-      "canvaUrl": "",
-      "ratio": "4-5",
+      "canvaUrl": "https://www.canva.com/design/DAHZRKGSqBI/P0SKMimQ_B6fVzCTEqjvXQ/view?utm_content=DAHZRKGSqBI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hb0d9285ecd",
+      "ratio": "1-1",
       "theme": "大田布告欄",
       "title": "大田十一月新書上市！",
       "fbImageCount": 1,
       "status": "draft",
       "createdAt": "2026-10-20T04:25:14.213Z",
-      "updatedAt": "2026-10-20T04:25:14.213Z"
+      "updatedAt": "2026-10-28T04:24:00.766Z"
     }
   ],
   "2026-11-02": [
@@ -4677,7 +4677,7 @@ var externalDB = {
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-10-28T04:05:27.722Z",
+  "updatedAt": "2026-10-28T04:24:01.269Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
