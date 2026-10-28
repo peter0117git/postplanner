@@ -4554,130 +4554,242 @@ var externalDB = {
   "2026-11-02": [
     {
       "_id": "p_1793082745958_ykcd18",
-      "caption": "<div>【早上只讀一點點】</div><div><br></div>",
+      "caption": "<div>【早上只讀一點點】 《現在，就是療癒你的開始》</div>",
       "time": "08:00",
       "canvaUrl": "",
       "ratio": "1-1",
       "theme": "早上只讀一點點",
-      "title": "",
+      "title": "現在，就是療癒你的開始",
       "fbImageCount": 1,
       "status": "draft",
       "createdAt": "2026-10-27T06:32:25.958Z",
-      "updatedAt": "2026-10-27T06:32:25.958Z"
+      "updatedAt": "2026-10-28T04:25:23.664Z"
     },
     {
       "_id": "p_1793082824893_6v2o83",
-      "caption": "<div>【圖文時間】</div><div><br></div>",
+      "caption": "<div>【圖文時間】 《幸福就是吃飯睡覺等待 vol.5》</div>",
       "time": "18:00",
       "canvaUrl": "",
       "ratio": "1-1",
       "theme": "圖文時間",
-      "title": "",
+      "title": "幸福就是吃飯睡覺等待 vol.5",
       "fbImageCount": 1,
       "status": "draft",
       "createdAt": "2026-10-27T06:33:44.893Z",
-      "updatedAt": "2026-10-27T06:33:44.893Z"
+      "updatedAt": "2026-10-28T04:25:18.694Z"
     },
     {
       "_id": "p_1793082834726_0qj5s8",
-      "caption": "<div>【晚上多讀一點點】</div><div><br></div>",
+      "caption": "<div>【晚上多讀一點點】 《你的夏天還好嗎？》</div>",
       "time": "20:00",
       "canvaUrl": "",
       "ratio": "1-1",
       "theme": "晚上多讀一點點",
-      "title": "",
+      "title": "你的夏天還好嗎？",
       "fbImageCount": 1,
       "status": "draft",
       "createdAt": "2026-10-27T06:33:54.726Z",
-      "updatedAt": "2026-10-27T06:33:54.726Z"
+      "updatedAt": "2026-10-28T04:25:43.250Z"
     }
   ],
   "2026-11-03": [
     {
       "_id": "p_1793082853453_h2zzge",
-      "caption": "<div>【早上只讀一點點】</div><div><br></div>",
+      "caption": "<div>【早上只讀一點點】 《會好起來的，就算慢一點也沒關係》</div>",
       "time": "08:00",
       "canvaUrl": "",
       "ratio": "1-1",
       "theme": "早上只讀一點點",
-      "title": "",
+      "title": "會好起來的，就算慢一點也沒關係",
       "fbImageCount": 1,
       "status": "draft",
       "createdAt": "2026-10-27T06:34:13.453Z",
-      "updatedAt": "2026-10-27T06:34:13.453Z"
+      "updatedAt": "2026-10-28T04:26:03.301Z"
     },
     {
       "_id": "p_1793082862956_go42lw",
-      "caption": "<div>【圖文時間】</div><div><br></div>",
+      "caption": "<div>【圖文時間】 《每天只畫一點點，365天燃燒你的植物魂》</div>",
       "time": "18:00",
       "canvaUrl": "",
       "ratio": "1-1",
       "theme": "圖文時間",
-      "title": "",
+      "title": "每天只畫一點點，365天燃燒你的植物魂",
       "fbImageCount": 1,
       "status": "draft",
       "createdAt": "2026-10-27T06:34:22.956Z",
-      "updatedAt": "2026-10-27T06:34:22.956Z"
+      "updatedAt": "2026-10-28T04:26:12.020Z"
     },
     {
       "_id": "p_1793082868993_ghdhxw",
-      "caption": "<div>【晚上多讀一點點】</div><div><br></div>",
+      "caption": "<div>【晚上多讀一點點】 《外面是夏天》</div>",
       "time": "20:00",
       "canvaUrl": "",
       "ratio": "1-1",
       "theme": "晚上多讀一點點",
-      "title": "",
+      "title": "外面是夏天",
       "fbImageCount": 1,
       "status": "draft",
       "createdAt": "2026-10-27T06:34:28.993Z",
-      "updatedAt": "2026-10-27T06:34:28.993Z"
+      "updatedAt": "2026-10-28T04:26:31.270Z"
     }
   ],
   "2026-11-04": [
     {
       "_id": "p_1793082877123_0owiqu",
-      "caption": "<div>【早上只讀一點點】</div><div><br></div>",
+      "caption": "<div>【早上只讀一點點】 《脆弱練習》</div><div><br></div><div>#陳繁齊</div><div><br></div><div><span style=\"color:rgb(0, 0, 0)\"> 難過時候，謹記睡前澆花，</span><br><span style=\"color:rgb(0, 0, 0)\">想像自己也愛好水分，</span><br><span style=\"color:rgb(0, 0, 0)\">床是土壤，把自己深深栽進。</span><br><span style=\"color:rgb(0, 0, 0)\">明天，又能更茁壯一點。</span></div>",
       "time": "08:00",
       "canvaUrl": "",
       "ratio": "1-1",
       "theme": "早上只讀一點點",
-      "title": "",
+      "title": "脆弱練習",
       "fbImageCount": 1,
       "status": "draft",
       "createdAt": "2026-10-27T06:34:37.123Z",
-      "updatedAt": "2026-10-27T06:34:37.123Z"
+      "updatedAt": "2026-10-28T04:27:33.553Z"
     },
     {
       "_id": "p_1793082892731_mnvzip",
-      "caption": "<div>【圖文時間】</div><div><br></div>",
+      "caption": "<div>【圖文時間】 《宇希時間》</div>",
       "time": "18:00",
       "canvaUrl": "",
       "ratio": "4-5",
       "theme": "圖文時間",
-      "title": "",
+      "title": "宇希時間",
       "fbImageCount": 1,
       "status": "draft",
       "createdAt": "2026-10-27T06:34:52.731Z",
-      "updatedAt": "2026-10-27T06:34:52.731Z"
+      "updatedAt": "2026-10-28T04:28:24.110Z"
     },
     {
       "_id": "p_1793082899158_e342l5",
-      "caption": "<div>【晚上多讀一點點】</div><div><br></div>",
+      "caption": "<div>【晚上多讀一點點】 《慢慢寄出去的心》</div>",
       "time": "20:00",
       "canvaUrl": "",
       "ratio": "1-1",
       "theme": "晚上多讀一點點",
-      "title": "",
+      "title": "慢慢寄出去的心",
       "fbImageCount": 1,
       "status": "draft",
       "createdAt": "2026-10-27T06:34:59.158Z",
-      "updatedAt": "2026-10-27T06:34:59.158Z"
+      "updatedAt": "2026-10-28T04:27:58.789Z"
+    }
+  ],
+  "2026-11-05": [
+    {
+      "_id": "p_1793161691210_wb4slj",
+      "caption": "<div>【早上只讀一點點】 《一次又一次又一次地重新開始》</div><div><br></div>",
+      "time": "08:00",
+      "canvaUrl": "",
+      "ratio": "1-1",
+      "theme": "早上只讀一點點",
+      "title": "一次又一次又一次地重新開始",
+      "fbImageCount": 1,
+      "status": "draft",
+      "createdAt": "2026-10-28T04:28:11.210Z",
+      "updatedAt": "2026-10-28T04:28:11.210Z"
+    },
+    {
+      "_id": "p_1793161721345_7o5d5e",
+      "caption": "<div>【圖文時間】 《幸福就是吃飯睡覺等待 vol.5》</div><div><br></div>",
+      "time": "18:00",
+      "canvaUrl": "",
+      "ratio": "1-1",
+      "theme": "圖文時間",
+      "title": "幸福就是吃飯睡覺等待 vol.5",
+      "fbImageCount": 1,
+      "status": "draft",
+      "createdAt": "2026-10-28T04:28:41.345Z",
+      "updatedAt": "2026-10-28T04:28:41.345Z"
+    },
+    {
+      "_id": "p_1793161732655_64h98u",
+      "caption": "<div>【晚上多讀一點點】 《尋找蜘蛛：日本暢銷超過36萬冊，西加奈子的生命故事》</div><div><br></div>",
+      "time": "20:00",
+      "canvaUrl": "",
+      "ratio": "1-1",
+      "theme": "晚上多讀一點點",
+      "title": "尋找蜘蛛：日本暢銷超過36萬冊，西加奈子的生命故事",
+      "fbImageCount": 1,
+      "status": "draft",
+      "createdAt": "2026-10-28T04:28:52.655Z",
+      "updatedAt": "2026-10-28T04:28:52.655Z"
+    }
+  ],
+  "2026-11-06": [
+    {
+      "_id": "p_1793161746080_flz84z",
+      "caption": "<div>【早上只讀一點點】 《上帝不眨眼：50堂百萬人瘋傳的人生智慧》</div><div><br></div>",
+      "time": "09:00",
+      "canvaUrl": "",
+      "ratio": "1-1",
+      "theme": "早上只讀一點點",
+      "title": "上帝不眨眼：50堂百萬人瘋傳的人生智慧",
+      "fbImageCount": 1,
+      "status": "draft",
+      "createdAt": "2026-10-28T04:29:06.080Z",
+      "updatedAt": "2026-10-28T04:29:06.080Z"
+    },
+    {
+      "_id": "p_1793161755604_b1w2o4",
+      "caption": "<div>【圖文時間】 《每天只畫一點點，365天燃燒你的植物魂》</div><div><br></div>",
+      "time": "09:00",
+      "canvaUrl": "",
+      "ratio": "1-1",
+      "theme": "圖文時間",
+      "title": "每天只畫一點點，365天燃燒你的植物魂",
+      "fbImageCount": 1,
+      "status": "draft",
+      "createdAt": "2026-10-28T04:29:15.604Z",
+      "updatedAt": "2026-10-28T04:29:15.604Z"
+    },
+    {
+      "_id": "p_1793161804616_8gloui",
+      "caption": "<div>【晚上多讀一點點】 《接近無限透明的藍》</div><div><br></div>",
+      "time": "20:00",
+      "canvaUrl": "",
+      "ratio": "1-1",
+      "theme": "晚上多讀一點點",
+      "title": "接近無限透明的藍",
+      "fbImageCount": 1,
+      "status": "draft",
+      "createdAt": "2026-10-28T04:30:04.616Z",
+      "updatedAt": "2026-10-28T04:30:04.616Z"
+    }
+  ],
+  "2026-11-07": [
+    {
+      "_id": "p_1793161821258_38rs12",
+      "caption": "<div>【影片分享】 《幸福就是吃飯睡覺等待 vol.5》</div><div><br></div>",
+      "time": "09:00",
+      "canvaUrl": "",
+      "ratio": "16-9",
+      "theme": "影片分享",
+      "title": "幸福就是吃飯睡覺等待 vol.5",
+      "fbImageCount": 1,
+      "status": "draft",
+      "createdAt": "2026-10-28T04:30:21.258Z",
+      "updatedAt": "2026-10-28T04:30:23.653Z"
+    }
+  ],
+  "2026-11-08": [
+    {
+      "_id": "p_1793161851498_uu8tzw",
+      "caption": "<div>【大田布告欄】 《回函抽獎》</div><div><br></div>",
+      "time": "09:00",
+      "canvaUrl": "",
+      "ratio": "16-9",
+      "theme": "大田布告欄",
+      "title": "回函抽獎",
+      "fbImageCount": 1,
+      "status": "draft",
+      "createdAt": "2026-10-28T04:30:51.498Z",
+      "updatedAt": "2026-10-28T04:30:51.498Z"
     }
   ]
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-10-28T04:24:01.269Z",
+  "updatedAt": "2026-10-28T04:32:16.978Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
