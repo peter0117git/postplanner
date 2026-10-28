@@ -4470,7 +4470,7 @@ var externalDB = {
     },
     {
       "_id": "p_1792470208473_e0x3tp",
-      "caption": "<div>【圖文時間】大田出版有LINE啦！</div><div><br></div><div><strong>加入大田 LINE 好友，閱讀好消息不漏接！</strong></div><div>想找喜歡的書，不用再四處搜尋！</div><div>現在透過大田 LINE 官方帳號的圖文選單，就能輕鬆查看每月新書、各大購書平台連結，讓閱讀更方便！</div><div><br></div><div><strong>新朋友限定搶先看！</strong></div><div>為了歡迎大家加入，我們也將搶先在 LINE 分享 <strong>高木直子新書消息</strong>，以及即將推出的 <strong>大田 LINE 貼圖</strong> 最新資訊！</div><div>更多新書消息、閱讀驚喜，都在大田 LINE 等著你！</div><div><br></div><div>現在就加入大田 LINE 好友，一起迎接更多閱讀日常吧！</div><div><br></div><div>#高木直子 #大田出版 #貼圖 #新書</div>",
+      "caption": "<div>【圖文時間】「高木直子新書 × 大田 LINE 貼圖</div>兩大驚喜，搶先預告！」<div><br></div><div><strong>加入大田 LINE 好友，閱讀好消息不漏接！</strong></div><div>想找喜歡的書，不用再四處搜尋！</div><div>現在透過大田 LINE 官方帳號的圖文選單，就能輕鬆查看每月新書、各大購書平台連結，讓閱讀更方便！</div><div><br></div><div><strong>新朋友限定搶先看！</strong></div><div>為了歡迎大家加入，我們也將搶先在 LINE 分享 <strong>高木直子新書消息</strong>，以及即將推出的 <strong>大田 LINE 貼圖</strong> 最新資訊！</div><div>更多新書消息、閱讀驚喜，都在大田 LINE 等著你！</div><div><br></div><div>現在就加入大田 LINE 好友，一起迎接更多閱讀日常吧！</div><div><br></div><div>#高木直子 #大田出版 #貼圖 #新書 #line</div>",
       "time": "18:00",
       "canvaUrl": "https://www.canva.com/design/DAHZQse7SPY/WOEFRqFEQoXQRaF4CiFb-w/view?utm_content=DAHZQse7SPY&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h61dc202493",
       "ratio": "1-1",
@@ -4479,7 +4479,7 @@ var externalDB = {
       "fbImageCount": 1,
       "status": "draft",
       "createdAt": "2026-10-20T04:23:28.473Z",
-      "updatedAt": "2026-10-28T03:02:42.572Z"
+      "updatedAt": "2026-10-28T03:17:07.781Z"
     },
     {
       "_id": "p_1792470213228_lvlq0q",
@@ -4677,7 +4677,7 @@ var externalDB = {
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-10-28T03:02:54.806Z",
+  "updatedAt": "2026-10-28T03:17:22.178Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
