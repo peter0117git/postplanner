@@ -4401,16 +4401,16 @@ var externalDB = {
     },
     {
       "_id": "p_1792400031360_f9frb8",
-      "caption": "<div>【晚上多讀一點點】 《尋找蜘蛛：日本暢銷超過36萬冊，西加奈子的生命故事》</div><div><br></div>",
+      "caption": "<div>【晚上多讀一點點】 《尋找蜘蛛：日本暢銷超過36萬冊，西加奈子的生命故事》</div><div><br></div><div><div>我深深地體悟到，人不可能只憑自己活下去。雖然聽起來明明很理所當然，但是在我內心深處，多少還是有些自豪，光靠自己也能活下去吧。至少在東京時似乎可以。</div><div>在三十二歲時，我買了自己的公寓。人生最昂貴的一筆購物雖然讓我的手顫抖，但也令我感到興奮。從來沒想過自己能夠買房子。接下來我養了撿到的貓，遇見後來的先生並且結婚，但是我從未放棄成為一個獨立的人。不論是面對銀行、醫院、貸款，或者是停車場，我都是靠自己處理。即使是乍看困難的事，只要肯努力，一定會有所收穫。</div><div>不過在溫哥華，有些超出我的能力範圍。不論多麼努力，還是有語言的隔閡，光是這一點就讓可能性受限許多（竟然連打電話到診所都失敗）。</div><div>啊，我自己一個人什麼都做不到，好弱。每天我都這麼想。這既不可恥也不須逃避，純粹是事實。</div><div>我很弱。</div><div>我，很弱。</div><div>每天抱持著這樣的自覺，漸漸地自己的輪廓變得簡單。雖然感到不安，但同時也覺得很清爽。</div><div>因此我對柔術感到著迷。雖然我從來沒學過武術，反應也很慢，很容易陷入驚慌，一不留神呼吸就停止了。我弱得很徹底。不管跟誰對練，都會被擊敗。有時候我就維持躺著，無法動彈，一直維持到下一堂課開始。我躺成大字形，望著運動館的天花板。</div><div>心裡想著「我好弱呀」。</div><div>我當然覺得難為情，不過就在坦然接受這種心情時，似乎也觸及到什麼。原來自己與軟弱共存於這個身體內，我訝異地正視這個事實。</div><div><br></div><div>摘自p.68~69</div><div><br></div><div>#大田出版 #共存 #軟弱 #日本文學 #西加奈子</div></div>",
       "time": "20:00",
-      "canvaUrl": "https://www.canva.com/design/DAHXxSBg54A/QAz_6AQAd8xA3YzRoTeRXA/view?utm_content=DAHXxSBg54A&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h3a39d240f1",
-      "ratio": "4-5",
+      "canvaUrl": "https://www.canva.com/design/DAHZRHc8I54/D2eXjJsnjhk0NULPiGzUaA/view?utm_content=DAHZRHc8I54&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2f59e2d887",
+      "ratio": "1-1",
       "theme": "晚上多讀一點點",
       "title": "尋找蜘蛛：日本暢銷超過36萬冊，西加奈子的生命故事",
       "fbImageCount": 1,
       "status": "draft",
       "createdAt": "2026-10-19T08:53:51.360Z",
-      "updatedAt": "2026-10-27T08:04:43.120Z"
+      "updatedAt": "2026-10-28T04:05:18.732Z"
     }
   ],
   "2026-10-29": [
@@ -4429,16 +4429,16 @@ var externalDB = {
     },
     {
       "_id": "p_1792470178038_efpw0t",
-      "caption": "<div>【圖文時間】</div><div><br></div>",
+      "caption": "<div>【圖文時間】 《悠悠哉哉&nbsp; 一個人生活的好日子》</div><div><br></div><div><div>不必等到週末，也能替自己安排一點小快樂。</div><div>在家倒上一杯喜歡的酒，<br>讓忙碌了一天的心情慢慢放鬆。</div><div><br></div><div>生活不一定要有特別的理由，<br>偶爾寵愛自己，就是最剛好的幸福。</div><div><br></div><div>#小津萬里子 #大田出版<br>#小確幸 #悠悠哉哉一個人生活的好日子</div></div>",
       "time": "18:00",
-      "canvaUrl": "",
-      "ratio": "4-5",
+      "canvaUrl": "https://www.canva.com/design/DAHM0MXyb9U/x1qIL8AMN1t2g6MJARYKHw/view?utm_content=DAHM0MXyb9U&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hfc046955aa",
+      "ratio": "1-1",
       "theme": "圖文時間",
       "title": "悠悠哉哉  一個人生活的好日子",
       "fbImageCount": 1,
       "status": "draft",
       "createdAt": "2026-10-20T04:22:58.038Z",
-      "updatedAt": "2026-10-21T02:59:15.919Z"
+      "updatedAt": "2026-10-28T03:28:35.196Z"
     },
     {
       "_id": "p_1792470182156_c4idfx",
@@ -4457,16 +4457,16 @@ var externalDB = {
   "2026-10-30": [
     {
       "_id": "p_1792470195333_p9pfq7",
-      "caption": "<div>【早上只讀一點點】</div><div><br></div>",
+      "caption": "<div>【早上只讀一點點】 《會好起來的，就算不是現在》</div><div><br></div><div>非得放手才知道</div><div>我沒有甚麼放不下。</div><div><br></div><div>#大田出版 #焦慮 #改變 #放手</div>",
       "time": "08:00",
-      "canvaUrl": "",
-      "ratio": "4-5",
+      "canvaUrl": "https://www.canva.com/design/DAHS5Sym27Q/cOSkFGLNkhWsN6Wcbpt5RA/view?utm_content=DAHS5Sym27Q&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hab83e077ce",
+      "ratio": "1-1",
       "theme": "早上只讀一點點",
       "title": "會好起來的，就算不是現在",
       "fbImageCount": 1,
       "status": "draft",
       "createdAt": "2026-10-20T04:23:15.333Z",
-      "updatedAt": "2026-10-21T03:00:07.750Z"
+      "updatedAt": "2026-10-28T04:00:26.279Z"
     },
     {
       "_id": "p_1792470208473_e0x3tp",
@@ -4677,7 +4677,7 @@ var externalDB = {
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-10-28T03:17:22.178Z",
+  "updatedAt": "2026-10-28T04:05:27.722Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
