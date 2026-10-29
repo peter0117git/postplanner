@@ -4554,16 +4554,16 @@ var externalDB = {
     },
     {
       "_id": "p_1793082824893_6v2o83",
-      "caption": "<div>【圖文時間】 《幸福就是吃飯睡覺等待 vol.5》</div>",
+      "caption": "<div>【圖文時間】 《幸福就是吃飯睡覺等待 vol.4》</div><div><br></div><div>撰文/Comic 名作復活</div><div><br></div><div><div><div>你有多久沒有在不同的時間</div><div>走一趟平常會經過的地方了</div></div><div><div>《<span>#幸福就是吃飯睡覺等待</span>》裡</div><div>有一段讓人很想試試看的生活安排</div><div>聰子 在清晨到附近的公園走走</div><div>地方並沒有換</div><div>卻因為時間不同而有了另一種感覺</div><div>連鳥叫聲都變得格外清楚</div></div><div><div>平常只是經過的公園</div><div>原來也有自己不熟悉的樣子</div><div>不用先規劃一趟很遠的旅行</div><div>住處附近就有可以重新發現的風景</div></div><div><div>我覺得這是這套漫畫很迷人的地方是</div><div>它讓人開始好奇</div><div>自己每天生活的範圍裡</div><div>是不是也有一些從來沒注意過的事</div></div><div><div>我們常常對遠方的景點很熟悉</div><div>知道哪裡適合拍照打卡</div><div>也存了不少以後想去的餐廳</div><div>但對家裡到車站之間的那條路</div><div>可能只記得走完需要幾分鐘</div></div><div><div>跟著 聰子 看這些小地方</div><div>會讓人想把原本趕路的行程</div><div>偶爾改成一小段散步</div><div>看看店家今天擺出了什麼</div><div>或是那棵一直經過的樹</div><div>最近是不是換了顏色</div></div><div><div>漫畫裡還有一次</div><div>聰子 和 青葉 到東京的谷根千一帶逛逛</div><div>兩人走進橄欖油店試吃</div><div>又去吃豆腐料理的自助餐</div><div>途中也看看店裡販售的日用品</div></div><div><div>沒有什麼驚人的大發現</div><div>只是試到一個以前不熟悉的味道</div><div>看到一件有點想帶回家的東西</div><div>出門前後的心情就有了不同</div></div><div><div>這段生活很有畫面</div><div>原本只是普通的一天</div><div>後來卻多了一家可以記住的店</div><div>以及下次和人聊天時能分享的小事</div><div>那個好像每天都差不多的生活圈</div><div>也跟著多出了一點變化</div></div><div><div>作者 <span>#水凪トリ</span> 把這些事情畫進漫畫</div><div>讓吃飯與出門不只剩下固定的流程</div><div>人物會挑選、會好奇</div><div>也會因為一個小小的發現而高興</div><div>這些反應看著看著</div><div>很容易讓人也想跟著試試</div></div><div><div>不過這部作品還有一個可愛的細節</div><div>阿司 出門後</div><div>平常由他準備飯菜的 鈴姐</div><div>吃了自己一直想吃的泡麵</div></div><div><div>這一幕讓整個生活變得親切許多</div><div>原來她也有想吃泡麵的時候</div><div>平常的餐桌有平常的樂趣</div><div>偶爾換成自己惦記的味道</div><div>同樣可以是一件開心的事</div></div><div><div>如果每一餐都得做得很講究</div><div>每次出門都必須得到一些收穫</div><div>那麼生活</div><div>也很容易變成另一張待辦清單</div><div>鈴姐 這一碗泡麵</div><div>反而讓人覺得沒那麼拘謹了</div></div><div><div>所以這套書適合帶回生活的</div><div>是對日常重新產生一點興趣</div><div>今天想喝什麼</div><div>下次有空想走哪一條路</div><div>那家小店賣的東西到底是什麼味道</div></div><div><div>這些問題都不大</div><div>卻會讓明天多一點可以期待的內容</div><div>生活也比較不容易只剩下</div><div>上班、回家和等下一次放假</div></div><div><div>這部作品很適合喜歡看日常細節的人</div><div>不用只追著劇情的結果往下讀</div><div>也可以看看他們怎麼選一餐</div><div>怎麼度過一段原本沒特別安排的時間</div><div>慢慢找出自己也喜歡的生活片段</div></div><div><div>很適合一次只讀幾話</div><div>再挑一件自己有興趣的小事試試</div><div>不用照著裡面的生活全部重來</div><div>能多發現一個喜歡的味道</div><div>或一段願意再走一次的路</div><div>這本漫畫就已經走進你的日常了</div></div><div><div>——</div></div><div><div>#水凪トリ #大田出版 #幸福就是吃飯睡覺等待</div></div></div>",
       "time": "18:00",
-      "canvaUrl": "",
+      "canvaUrl": "https://www.canva.com/design/DAHYb9F-4T0/AjEO_s1_ggfHCRsREK0hLw/view?utm_content=DAHYb9F-4T0&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2957dfb036",
       "ratio": "1-1",
       "theme": "圖文時間",
-      "title": "幸福就是吃飯睡覺等待 vol.5",
+      "title": "幸福就是吃飯睡覺等待 vol.4",
       "fbImageCount": 1,
       "status": "draft",
       "createdAt": "2026-10-27T06:33:44.893Z",
-      "updatedAt": "2026-10-28T04:25:18.694Z"
+      "updatedAt": "2026-10-29T05:48:50.034Z"
     },
     {
       "_id": "p_1793082834726_0qj5s8",
@@ -4623,16 +4623,16 @@ var externalDB = {
   "2026-11-04": [
     {
       "_id": "p_1793082877123_0owiqu",
-      "caption": "<div>【早上只讀一點點】 《脆弱練習》</div><div><br></div><div>#陳繁齊</div><div><br></div><div><span style=\"color:rgb(0, 0, 0)\"> 難過時候，謹記睡前澆花，</span><br><span style=\"color:rgb(0, 0, 0)\">想像自己也愛好水分，</span><br><span style=\"color:rgb(0, 0, 0)\">床是土壤，把自己深深栽進。</span><br><span style=\"color:rgb(0, 0, 0)\">明天，又能更茁壯一點。</span></div>",
+      "caption": "<div>【早上只讀一點點】 《<span>如果我有勇氣失去你</span>》</div><div><br></div><div><div><div>〈閃閃發光〉 <span>#原子邦妮</span></div></div><div><div>有多久沒有這樣靜靜跟自己待著</div><div>沒有等待誰</div><div>沒有期望什麼</div><div>因一首曲子落淚</div><div>為一篇樂章狂喜</div></div><div><div>那是真正的你</div><div>有一點夢想</div><div>有自己喜歡的事</div><div>有將會遇見的人</div></div><div><div>只是那樣平板的每日</div><div>讓你忘記了嗎</div></div><div><div>就算只有一瞬間也好</div><div>請想起來</div><div>那個曾經閃閃發光的你</div><div>然後不管能持續多久都好</div><div>用那樣的你去無畏地活著</div></div><div><div>-</div></div><div><div>本文摘自</div></div><div><div>原子邦妮《<span>#如果我有勇氣失去你</span>》-〈閃閃發光〉</div></div></div>",
       "time": "08:00",
       "canvaUrl": "",
       "ratio": "1-1",
       "theme": "早上只讀一點點",
-      "title": "脆弱練習",
+      "title": "如果我有勇氣失去你",
       "fbImageCount": 1,
       "status": "draft",
       "createdAt": "2026-10-27T06:34:37.123Z",
-      "updatedAt": "2026-10-28T04:27:33.553Z"
+      "updatedAt": "2026-10-29T05:50:40.940Z"
     },
     {
       "_id": "p_1793082892731_mnvzip",
@@ -4776,7 +4776,7 @@ var externalDB = {
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-10-29T05:35:32.396Z",
+  "updatedAt": "2026-10-29T05:52:48.582Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
