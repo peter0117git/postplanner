@@ -4264,7 +4264,7 @@ var externalDB = {
   "2026-10-24": [
     {
       "_id": "p_1792056147090_xmxwy4",
-      "caption": "<div>【新書預告】 《幸福就是吃飯睡覺等待 vol.5》</div><div><br></div><div>#12月1日全台上市</div><div>#幸福就是吃飯睡覺等待</div><div><br></div><div><div>我們</div><div>都比自己想像的</div><div>更勇敢</div><div><br></div><div>為什麼</div><div>會對可以跨越的事</div><div>感到害怕而裹足不前呢……？</div><div><br></div><div>★2022年「這本漫畫真厲害！」女生部漫畫 第8名</div><div>★2025年NHK改編電視劇</div><div>★系列在日銷售突破100萬冊</div><div>★亞馬遜五星好評 ★博客來選書</div><div><br></div><div>【隨書贈送】</div><div>台灣限定 • 蒐集5號 • 日日好日 書籤特典 （120mm × 70mm）</div><div><br></div><div>無可奈何的日子</div><div><br></div><div>如何撐過的祕訣｡</div><div><br></div><div>由於生病過著每周只能打工四天維持生計的麥卷聰子。</div><div><br></div><div>因為束手無策的身體狀況，有時得放棄某些堅持。</div><div><br></div><div>心情低落的日子，藉由好吃的飯菜養精蓄銳。</div><div><br></div><div>隨著社區和職場拓展的關係，聰子也漸漸懂得正向思考……？</div><div><br></div><div>★慢一點也沒關係★</div><div><br></div><div>「現在的我，做什麼都只能做到八分滿，也正在思考，像現在這樣的自己，今後要用什麼樣的步調才能繼續走下去。 我想，到了這個地步，也只能接受現況了。接下來，大概就是「慢慢思考今後該怎麼走」吧。慢一點也沒關係。聰子也是一邊和自己的狀況磨合，一步一步找出適合自己的生活方式。」</div><div><br></div><div>——節錄自「誠品提案10月號：修復的練習」作者 水凪トリ（Mizunagi Tori）專訪</div></div><div><br></div><div>#新書 #大田出版</div>",
+      "caption": "<div>【新書預告】 《幸福就是吃飯睡覺等待 vol.5》</div><div><br></div><div>#11月1日全台上市</div><div>#幸福就是吃飯睡覺等待</div><div><br></div><div><div>我們</div><div>都比自己想像的</div><div>更勇敢</div><div><br></div><div>為什麼</div><div>會對可以跨越的事</div><div>感到害怕而裹足不前呢……？</div><div><br></div><div>★2022年「這本漫畫真厲害！」女生部漫畫 第8名</div><div>★2025年NHK改編電視劇</div><div>★系列在日銷售突破100萬冊</div><div>★亞馬遜五星好評 ★博客來選書</div><div><br></div><div>【隨書贈送】</div><div>台灣限定 • 蒐集5號 • 日日好日 書籤特典 （120mm × 70mm）</div><div><br></div><div>無可奈何的日子</div><div><br></div><div>如何撐過的祕訣｡</div><div><br></div><div>由於生病過著每周只能打工四天維持生計的麥卷聰子。</div><div><br></div><div>因為束手無策的身體狀況，有時得放棄某些堅持。</div><div><br></div><div>心情低落的日子，藉由好吃的飯菜養精蓄銳。</div><div><br></div><div>隨著社區和職場拓展的關係，聰子也漸漸懂得正向思考……？</div><div><br></div><div>★慢一點也沒關係★</div><div><br></div><div>「現在的我，做什麼都只能做到八分滿，也正在思考，像現在這樣的自己，今後要用什麼樣的步調才能繼續走下去。 我想，到了這個地步，也只能接受現況了。接下來，大概就是「慢慢思考今後該怎麼走」吧。慢一點也沒關係。聰子也是一邊和自己的狀況磨合，一步一步找出適合自己的生活方式。」</div><div><br></div><div>——節錄自「誠品提案10月號：修復的練習」作者 水凪トリ（Mizunagi Tori）專訪</div></div><div><br></div><div>#新書 #大田出版</div>",
       "time": "09:00",
       "canvaUrl": "https://www.canva.com/design/DAHYb78Nuso/q_3CMuEm2dS-x8uyT23G-Q/view?utm_content=DAHYb78Nuso&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hf3f94f8139",
       "ratio": "1-1",
@@ -4272,13 +4272,13 @@ var externalDB = {
       "title": "幸福就是吃飯睡覺等待 vol.5",
       "status": "draft",
       "createdAt": "2026-10-15T09:22:27.090Z",
-      "updatedAt": "2026-10-20T09:39:17.379Z"
+      "updatedAt": "2026-10-30T04:45:42.676Z"
     }
   ],
   "2026-10-25": [
     {
       "_id": "p_1792120654524_dzt50q",
-      "caption": "<div>【新書預告】 《每天只畫一點點，365天燃燒你的植物魂》</div><div><br></div><div><span>#12月1日全台上市</span></div><div><br></div><div><div>★亞馬遜網路書店&nbsp; 藝術圖書類長銷五星好評★</div><div>&nbsp;</div><div>買一本送給自己 ，也送給好朋友</div><div>&nbsp;</div><div>天天畫，慢慢減壓&nbsp; 天天畫，創意激發</div><div>&nbsp;</div><div>觀察大自然&nbsp; 找到專屬你的森呼吸</div><div>&nbsp;</div><div><br></div><div>【精采收錄】</div><div>★精選藝術家名言，延伸與藝術的連結</div><div>★作者獨門畫畫技巧的分享</div><div>★彈性靈活的設計，無論在哪裡，能隨心實踐，不受限制</div><div><br></div><div><br></div><div><br></div><div>你無法控制大自然，但你可以享受大自然。</div><div><br></div><div>有時我們需要一段無所事事的時光，單純找回與大自然的連結；</div><div><br></div><div>有時允許自己做白日夢，將所有心事拋諸腦後。</div><div><br></div><div>&nbsp;</div><div><br></div><div>無論你生活在哪裡，只要一到戶外，</div><div><br></div><div>也許是一株植物、一隻動物、一片天空，</div><div><br></div><div>或是整幅風景……讓你驚奇、讚嘆。</div><div><br></div><div>來，找個舒服的地方坐下，放鬆身心，</div><div><br></div><div>畫什麼主題，不重要；最後的成品如何，不重要。</div><div><br></div><div>&nbsp;</div><div><br></div><div>這次嘗試在綠色中加入白色，創造出更多樣的綠色；</div><div><br></div><div>這次可以留些空白區域，呈現海浪反射的光線；</div><div><br></div><div>這次你不見得要在每個地方都添加線條細節，只要選定陰影；</div><div><br></div><div>這次你可能需要耐心等候鳥兒，那就先畫畫樹枝吧……</div><div><br></div><div>&nbsp;</div><div><br></div><div>洛娜‧史可碧《每天只畫一點點》精采系列，</div><div><br></div><div>現在我們走進豐富的大自然，汲取創意，激發想像。</div><div><br></div><div>每天完成一項，或每週完成幾項，甚至有空時隨時進行，</div><div><br></div><div>按照自己的步調，找到適合自己的方式，</div><div><br></div><div>即使畫錯，也不在意，因為每天只畫一點點就很開心。</div><div><br></div><div>【亞馬遜網路書店 讀者五顆星滿分好評】</div><div><br></div><div>◆幾秒鐘就能完成</div><div><br></div><div>這是一種舒緩且充滿樂趣的創作方式，每次只需畫上幾筆或鉛筆線條即可。尋找創意火花有時會讓人感到無所適從，但這些提示讓一切變得輕鬆許多。我也買了作者的另外兩本書。</div><div><br></div><div>◆獲取靈感的大寶庫</div><div><br></div><div>非常棒的一本書，裡面裝滿了各種點子與提示，也適合患有失智症且喜愛園藝與藝術的人。</div><div><br></div><div>◆建立自信心</div><div><br></div><div>有人推薦我這個系列，試著每天嘗試不同的媒材和藝術類型，藉此建立信心並養成練習習慣。因為這本內容以自然為主題，我買來送給朋友當生日禮物。</div><div><br></div><div>&nbsp;#新書 #大田出版</div></div>",
+      "caption": "<div>【新書預告】 《每天只畫一點點，365天燃燒你的植物魂》</div><div><br></div><div><span>#11月1日全台上市</span></div><div><br></div><div><div>★亞馬遜網路書店&nbsp; 藝術圖書類長銷五星好評★</div><div>&nbsp;</div><div>買一本送給自己 ，也送給好朋友</div><div>&nbsp;</div><div>天天畫，慢慢減壓&nbsp; 天天畫，創意激發</div><div>&nbsp;</div><div>觀察大自然&nbsp; 找到專屬你的森呼吸</div><div>&nbsp;</div><div><br></div><div>【精采收錄】</div><div>★精選藝術家名言，延伸與藝術的連結</div><div>★作者獨門畫畫技巧的分享</div><div>★彈性靈活的設計，無論在哪裡，能隨心實踐，不受限制</div><div><br></div><div><br></div><div><br></div><div>你無法控制大自然，但你可以享受大自然。</div><div><br></div><div>有時我們需要一段無所事事的時光，單純找回與大自然的連結；</div><div><br></div><div>有時允許自己做白日夢，將所有心事拋諸腦後。</div><div><br></div><div>&nbsp;</div><div><br></div><div>無論你生活在哪裡，只要一到戶外，</div><div><br></div><div>也許是一株植物、一隻動物、一片天空，</div><div><br></div><div>或是整幅風景……讓你驚奇、讚嘆。</div><div><br></div><div>來，找個舒服的地方坐下，放鬆身心，</div><div><br></div><div>畫什麼主題，不重要；最後的成品如何，不重要。</div><div><br></div><div>&nbsp;</div><div><br></div><div>這次嘗試在綠色中加入白色，創造出更多樣的綠色；</div><div><br></div><div>這次可以留些空白區域，呈現海浪反射的光線；</div><div><br></div><div>這次你不見得要在每個地方都添加線條細節，只要選定陰影；</div><div><br></div><div>這次你可能需要耐心等候鳥兒，那就先畫畫樹枝吧……</div><div><br></div><div>&nbsp;</div><div><br></div><div>洛娜‧史可碧《每天只畫一點點》精采系列，</div><div><br></div><div>現在我們走進豐富的大自然，汲取創意，激發想像。</div><div><br></div><div>每天完成一項，或每週完成幾項，甚至有空時隨時進行，</div><div><br></div><div>按照自己的步調，找到適合自己的方式，</div><div><br></div><div>即使畫錯，也不在意，因為每天只畫一點點就很開心。</div><div><br></div><div>【亞馬遜網路書店 讀者五顆星滿分好評】</div><div><br></div><div>◆幾秒鐘就能完成</div><div><br></div><div>這是一種舒緩且充滿樂趣的創作方式，每次只需畫上幾筆或鉛筆線條即可。尋找創意火花有時會讓人感到無所適從，但這些提示讓一切變得輕鬆許多。我也買了作者的另外兩本書。</div><div><br></div><div>◆獲取靈感的大寶庫</div><div><br></div><div>非常棒的一本書，裡面裝滿了各種點子與提示，也適合患有失智症且喜愛園藝與藝術的人。</div><div><br></div><div>◆建立自信心</div><div><br></div><div>有人推薦我這個系列，試著每天嘗試不同的媒材和藝術類型，藉此建立信心並養成練習習慣。因為這本內容以自然為主題，我買來送給朋友當生日禮物。</div><div><br></div><div>&nbsp;#新書 #大田出版</div></div>",
       "time": "09:00",
       "canvaUrl": "https://www.canva.com/design/DAHYcII3QZg/WMd2Qn1rwNa-a-6liNI4Ig/view?utm_content=DAHYcII3QZg&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hf063f05931",
       "ratio": "1-1",
@@ -4287,7 +4287,7 @@ var externalDB = {
       "fbImageCount": 1,
       "status": "draft",
       "createdAt": "2026-10-16T03:17:34.524Z",
-      "updatedAt": "2026-10-20T09:41:17.172Z"
+      "updatedAt": "2026-10-30T04:46:23.691Z"
     }
   ],
   "2026-10-26": [
@@ -4526,7 +4526,7 @@ var externalDB = {
     },
     {
       "_id": "p_1793249217115_45tty9",
-      "caption": "<div>【大田布告欄】 大田十一月新書上市！</div><div><br></div><div><div>《每天只畫一點點，365天燃燒你的植物魂》</div><div><br></div><div><span>#12月1日全台上市</span></div><div><br></div><div><div>★亞馬遜網路書店&nbsp; 藝術圖書類長銷五星好評★</div><div>&nbsp;</div><div>買一本送給自己 ，也送給好朋友</div><div>&nbsp;</div><div>天天畫，慢慢減壓&nbsp; 天天畫，創意激發</div><div>&nbsp;</div><div>觀察大自然&nbsp; 找到專屬你的森呼吸</div><div>&nbsp;</div><div><br></div><div>【精采收錄】</div><div>★精選藝術家名言，延伸與藝術的連結</div><div>★作者獨門畫畫技巧的分享</div><div>★彈性靈活的設計，無論在哪裡，能隨心實踐，不受限制</div><div><br></div><div><br></div><div><br></div><div>你無法控制大自然，但你可以享受大自然。</div><div><br></div><div>有時我們需要一段無所事事的時光，單純找回與大自然的連結；</div><div><br></div><div>有時允許自己做白日夢，將所有心事拋諸腦後。</div><div><br></div><div>&nbsp;</div><div><br></div><div>無論你生活在哪裡，只要一到戶外，</div><div><br></div><div>也許是一株植物、一隻動物、一片天空，</div><div><br></div><div>或是整幅風景……讓你驚奇、讚嘆。</div><div><br></div><div>來，找個舒服的地方坐下，放鬆身心，</div><div><br></div><div>畫什麼主題，不重要；最後的成品如何，不重要。</div><div><br></div><div>&nbsp;</div><div><br></div><div>這次嘗試在綠色中加入白色，創造出更多樣的綠色；</div><div><br></div><div>這次可以留些空白區域，呈現海浪反射的光線；</div><div><br></div><div>這次你不見得要在每個地方都添加線條細節，只要選定陰影；</div><div><br></div><div>這次你可能需要耐心等候鳥兒，那就先畫畫樹枝吧……</div><div><br></div><div>&nbsp;</div><div><br></div><div>洛娜‧史可碧《每天只畫一點點》精采系列，</div><div><br></div><div>現在我們走進豐富的大自然，汲取創意，激發想像。</div><div><br></div><div>每天完成一項，或每週完成幾項，甚至有空時隨時進行，</div><div><br></div><div>按照自己的步調，找到適合自己的方式，</div><div><br></div><div>即使畫錯，也不在意，因為每天只畫一點點就很開心。</div><div><br></div><div>【亞馬遜網路書店 讀者五顆星滿分好評】</div><div><br></div><div>◆幾秒鐘就能完成</div><div><br></div><div>這是一種舒緩且充滿樂趣的創作方式，每次只需畫上幾筆或鉛筆線條即可。尋找創意火花有時會讓人感到無所適從，但這些提示讓一切變得輕鬆許多。我也買了作者的另外兩本書。</div><div><br></div><div>◆獲取靈感的大寶庫</div><div><br></div><div>非常棒的一本書，裡面裝滿了各種點子與提示，也適合患有失智症且喜愛園藝與藝術的人。</div><div><br></div><div>◆建立自信心</div><div><br></div><div>有人推薦我這個系列，試著每天嘗試不同的媒材和藝術類型，藉此建立信心並養成練習習慣。因為這本內容以自然為主題，我買來送給朋友當生日禮物。</div><div><br></div><div>&nbsp;#新書 #大田出版</div></div></div>",
+      "caption": "<div>【大田布告欄】 大田十一月新書上市！</div><div><br></div><div><div>《每天只畫一點點，365天燃燒你的植物魂》</div><div><br></div><div><span>#11月1日全台上市</span></div><div><br></div><div><div>★亞馬遜網路書店&nbsp; 藝術圖書類長銷五星好評★</div><div>&nbsp;</div><div>買一本送給自己 ，也送給好朋友</div><div>&nbsp;</div><div>天天畫，慢慢減壓&nbsp; 天天畫，創意激發</div><div>&nbsp;</div><div>觀察大自然&nbsp; 找到專屬你的森呼吸</div><div>&nbsp;</div><div><br></div><div>【精采收錄】</div><div>★精選藝術家名言，延伸與藝術的連結</div><div>★作者獨門畫畫技巧的分享</div><div>★彈性靈活的設計，無論在哪裡，能隨心實踐，不受限制</div><div><br></div><div><br></div><div><br></div><div>你無法控制大自然，但你可以享受大自然。</div><div><br></div><div>有時我們需要一段無所事事的時光，單純找回與大自然的連結；</div><div><br></div><div>有時允許自己做白日夢，將所有心事拋諸腦後。</div><div><br></div><div>&nbsp;</div><div><br></div><div>無論你生活在哪裡，只要一到戶外，</div><div><br></div><div>也許是一株植物、一隻動物、一片天空，</div><div><br></div><div>或是整幅風景……讓你驚奇、讚嘆。</div><div><br></div><div>來，找個舒服的地方坐下，放鬆身心，</div><div><br></div><div>畫什麼主題，不重要；最後的成品如何，不重要。</div><div><br></div><div>&nbsp;</div><div><br></div><div>這次嘗試在綠色中加入白色，創造出更多樣的綠色；</div><div><br></div><div>這次可以留些空白區域，呈現海浪反射的光線；</div><div><br></div><div>這次你不見得要在每個地方都添加線條細節，只要選定陰影；</div><div><br></div><div>這次你可能需要耐心等候鳥兒，那就先畫畫樹枝吧……</div><div><br></div><div>&nbsp;</div><div><br></div><div>洛娜‧史可碧《每天只畫一點點》精采系列，</div><div><br></div><div>現在我們走進豐富的大自然，汲取創意，激發想像。</div><div><br></div><div>每天完成一項，或每週完成幾項，甚至有空時隨時進行，</div><div><br></div><div>按照自己的步調，找到適合自己的方式，</div><div><br></div><div>即使畫錯，也不在意，因為每天只畫一點點就很開心。</div><div><br></div><div>【亞馬遜網路書店 讀者五顆星滿分好評】</div><div><br></div><div>◆幾秒鐘就能完成</div><div><br></div><div>這是一種舒緩且充滿樂趣的創作方式，每次只需畫上幾筆或鉛筆線條即可。尋找創意火花有時會讓人感到無所適從，但這些提示讓一切變得輕鬆許多。我也買了作者的另外兩本書。</div><div><br></div><div>◆獲取靈感的大寶庫</div><div><br></div><div>非常棒的一本書，裡面裝滿了各種點子與提示，也適合患有失智症且喜愛園藝與藝術的人。</div><div><br></div><div>◆建立自信心</div><div><br></div><div>有人推薦我這個系列，試著每天嘗試不同的媒材和藝術類型，藉此建立信心並養成練習習慣。因為這本內容以自然為主題，我買來送給朋友當生日禮物。</div><div><br></div><div>&nbsp;#新書 #大田出版</div></div></div>",
       "time": "06:00",
       "canvaUrl": "https://www.canva.com/design/DAHYcII3QZg/WMd2Qn1rwNa-a-6liNI4Ig/view?utm_content=DAHYcII3QZg&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hf063f05931",
       "ratio": "1-1",
@@ -4535,7 +4535,7 @@ var externalDB = {
       "fbImageCount": 1,
       "status": "draft",
       "createdAt": "2026-10-29T04:46:57.115Z",
-      "updatedAt": "2026-10-29T04:47:10.563Z"
+      "updatedAt": "2026-10-30T06:49:07.609Z"
     }
   ],
   "2026-11-02": [
@@ -4554,7 +4554,7 @@ var externalDB = {
     },
     {
       "_id": "p_1793082824893_6v2o83",
-      "caption": "<div>【圖文時間】 《幸福就是吃飯睡覺等待 vol.4》</div><div><br></div><div>撰文/Comic 名作復活</div><div><br></div><div><div><div>你有多久沒有在不同的時間</div><div>走一趟平常會經過的地方了</div></div><div><div>《<span>#幸福就是吃飯睡覺等待</span>》裡</div><div>有一段讓人很想試試看的生活安排</div><div>聰子 在清晨到附近的公園走走</div><div>地方並沒有換</div><div>卻因為時間不同而有了另一種感覺</div><div>連鳥叫聲都變得格外清楚</div></div><div><div>平常只是經過的公園</div><div>原來也有自己不熟悉的樣子</div><div>不用先規劃一趟很遠的旅行</div><div>住處附近就有可以重新發現的風景</div></div><div><div>我覺得這是這套漫畫很迷人的地方是</div><div>它讓人開始好奇</div><div>自己每天生活的範圍裡</div><div>是不是也有一些從來沒注意過的事</div></div><div><div>我們常常對遠方的景點很熟悉</div><div>知道哪裡適合拍照打卡</div><div>也存了不少以後想去的餐廳</div><div>但對家裡到車站之間的那條路</div><div>可能只記得走完需要幾分鐘</div></div><div><div>跟著 聰子 看這些小地方</div><div>會讓人想把原本趕路的行程</div><div>偶爾改成一小段散步</div><div>看看店家今天擺出了什麼</div><div>或是那棵一直經過的樹</div><div>最近是不是換了顏色</div></div><div><div>漫畫裡還有一次</div><div>聰子 和 青葉 到東京的谷根千一帶逛逛</div><div>兩人走進橄欖油店試吃</div><div>又去吃豆腐料理的自助餐</div><div>途中也看看店裡販售的日用品</div></div><div><div>沒有什麼驚人的大發現</div><div>只是試到一個以前不熟悉的味道</div><div>看到一件有點想帶回家的東西</div><div>出門前後的心情就有了不同</div></div><div><div>這段生活很有畫面</div><div>原本只是普通的一天</div><div>後來卻多了一家可以記住的店</div><div>以及下次和人聊天時能分享的小事</div><div>那個好像每天都差不多的生活圈</div><div>也跟著多出了一點變化</div></div><div><div>作者 <span>#水凪トリ</span> 把這些事情畫進漫畫</div><div>讓吃飯與出門不只剩下固定的流程</div><div>人物會挑選、會好奇</div><div>也會因為一個小小的發現而高興</div><div>這些反應看著看著</div><div>很容易讓人也想跟著試試</div></div><div><div>不過這部作品還有一個可愛的細節</div><div>阿司 出門後</div><div>平常由他準備飯菜的 鈴姐</div><div>吃了自己一直想吃的泡麵</div></div><div><div>這一幕讓整個生活變得親切許多</div><div>原來她也有想吃泡麵的時候</div><div>平常的餐桌有平常的樂趣</div><div>偶爾換成自己惦記的味道</div><div>同樣可以是一件開心的事</div></div><div><div>如果每一餐都得做得很講究</div><div>每次出門都必須得到一些收穫</div><div>那麼生活</div><div>也很容易變成另一張待辦清單</div><div>鈴姐 這一碗泡麵</div><div>反而讓人覺得沒那麼拘謹了</div></div><div><div>所以這套書適合帶回生活的</div><div>是對日常重新產生一點興趣</div><div>今天想喝什麼</div><div>下次有空想走哪一條路</div><div>那家小店賣的東西到底是什麼味道</div></div><div><div>這些問題都不大</div><div>卻會讓明天多一點可以期待的內容</div><div>生活也比較不容易只剩下</div><div>上班、回家和等下一次放假</div></div><div><div>這部作品很適合喜歡看日常細節的人</div><div>不用只追著劇情的結果往下讀</div><div>也可以看看他們怎麼選一餐</div><div>怎麼度過一段原本沒特別安排的時間</div><div>慢慢找出自己也喜歡的生活片段</div></div><div><div>很適合一次只讀幾話</div><div>再挑一件自己有興趣的小事試試</div><div>不用照著裡面的生活全部重來</div><div>能多發現一個喜歡的味道</div><div>或一段願意再走一次的路</div><div>這本漫畫就已經走進你的日常了</div></div><div><div>——</div></div><div><div>#水凪トリ #大田出版 #幸福就是吃飯睡覺等待</div></div></div>",
+      "caption": "<div>【圖文時間】 《幸福就是吃飯睡覺等待 vol.4》</div><div><br></div><div>撰文/Comic 名作復活</div><div><br></div><div><div><div>你有多久沒有在不同的時間</div><div>走一趟平常會經過的地方了</div></div><div><div>《<span>#幸福就是吃飯睡覺等待</span>》裡</div><div>有一段讓人很想試試看的生活安排</div><div>聰子 在清晨到附近的公園走走</div><div>地方並沒有換</div><div>卻因為時間不同而有了另一種感覺</div><div>連鳥叫聲都變得格外清楚</div></div><div><div>平常只是經過的公園</div><div>原來也有自己不熟悉的樣子</div><div>不用先規劃一趟很遠的旅行</div><div>住處附近就有可以重新發現的風景</div></div><div><div>我覺得這是這套漫畫很迷人的地方是</div><div>它讓人開始好奇</div><div>自己每天生活的範圍裡</div><div>是不是也有一些從來沒注意過的事</div></div><div><div>我們常常對遠方的景點很熟悉</div><div>知道哪裡適合拍照打卡</div><div>也存了不少以後想去的餐廳</div><div>但對家裡到車站之間的那條路</div><div>可能只記得走完需要幾分鐘</div></div><div><div>跟著 聰子 看這些小地方</div><div>會讓人想把原本趕路的行程</div><div>偶爾改成一小段散步</div><div>看看店家今天擺出了什麼</div><div>或是那棵一直經過的樹</div><div>最近是不是換了顏色</div></div><div><div>漫畫裡還有一次</div><div>聰子 和 青葉 到東京的谷根千一帶逛逛</div><div>兩人走進橄欖油店試吃</div><div>又去吃豆腐料理的自助餐</div><div>途中也看看店裡販售的日用品</div></div><div><div>沒有什麼驚人的大發現</div><div>只是試到一個以前不熟悉的味道</div><div>看到一件有點想帶回家的東西</div><div>出門前後的心情就有了不同</div></div><div><div>這段生活很有畫面</div><div>原本只是普通的一天</div><div>後來卻多了一家可以記住的店</div><div>以及下次和人聊天時能分享的小事</div><div>那個好像每天都差不多的生活圈</div><div>也跟著多出了一點變化</div></div><div><div>作者 <span>#水凪トリ</span> 把這些事情畫進漫畫</div><div>讓吃飯與出門不只剩下固定的流程</div><div>人物會挑選、會好奇</div><div>也會因為一個小小的發現而高興</div><div>這些反應看著看著</div><div>很容易讓人也想跟著試試</div></div><div><div>不過這部作品還有一個可愛的細節</div><div>阿司 出門後</div><div>平常由他準備飯菜的 鈴姐</div><div>吃了自己一直想吃的泡麵</div></div><div><div>這一幕讓整個生活變得親切許多</div><div>原來她也有想吃泡麵的時候</div><div>平常的餐桌有平常的樂趣</div><div>偶爾換成自己惦記的味道</div><div>同樣可以是一件開心的事</div></div><div><div>如果每一餐都得做得很講究</div><div>每次出門都必須得到一些收穫</div><div>那麼生活</div><div>也很容易變成另一張待辦清單</div><div>鈴姐 這一碗泡麵</div><div>反而讓人覺得沒那麼拘謹了</div></div><div><div>所以這套書適合帶回生活的</div><div>是對日常重新產生一點興趣</div><div>今天想喝什麼</div><div>下次有空想走哪一條路</div><div>那家小店賣的東西到底是什麼味道</div></div><div><div>這些問題都不大</div><div>卻會讓明天多一點可以期待的內容</div><div>生活也比較不容易只剩下</div><div>上班、回家和等下一次放假</div></div><div><div>這部作品很適合喜歡看日常細節的人</div><div>不用只追著劇情的結果往下讀</div><div>也可以看看他們怎麼選一餐</div><div>怎麼度過一段原本沒特別安排的時間</div><div>慢慢找出自己也喜歡的生活片段</div></div><div><div>很適合一次只讀幾話</div><div>再挑一件自己有興趣的小事試試</div><div>不用照著裡面的生活全部重來</div><div>能多發現一個喜歡的味道</div><div>或一段願意再走一次的路</div><div>這本漫畫就已經走進你的日常了</div></div><div><div>——</div></div><div>同場推薦！</div><div><span>幸福就是吃飯睡覺等待vol.5已經上市啦~</span></div><div><span>購書連結詳情請至留言區或IG個人首頁查詢！</span></div><div><br></div><div><div>#水凪トリ #大田出版 #幸福就是吃飯睡覺等待</div></div></div>",
       "time": "18:00",
       "canvaUrl": "https://www.canva.com/design/DAHYb9F-4T0/AjEO_s1_ggfHCRsREK0hLw/view?utm_content=DAHYb9F-4T0&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2957dfb036",
       "ratio": "1-1",
@@ -4563,35 +4563,35 @@ var externalDB = {
       "fbImageCount": 1,
       "status": "draft",
       "createdAt": "2026-10-27T06:33:44.893Z",
-      "updatedAt": "2026-10-29T05:48:50.034Z"
+      "updatedAt": "2026-10-30T04:02:56.250Z"
     },
     {
       "_id": "p_1793082834726_0qj5s8",
-      "caption": "<div>【晚上多讀一點點】 《你的夏天還好嗎？》</div>",
+      "caption": "<div>【晚上多讀一點點】 《外面是夏天》</div><div><br></div><div><div>「媽。」</div><div>「嗯？」</div><div>「妳為什麼跟爸爸分開？」</div><div>突如其來的問題，為了不顯露驚慌，我慢慢抬起頭。</div><div>「⋯⋯之前不是說過了嗎？」</div><div>「不是那個。真正的理由。」</div><div>傑伊在我面前假裝自己是大人，做出世故的表情，就像比我還了解社會一樣。</div><div>「是因為我的關係吧？」</div><div>「我不是說過很多遍了？不是。」</div><div>「那是為什麼⋯⋯？」</div><div>「不要講些有的沒的快吃飯吧。」</div><div>「告訴我，就當作是生日禮物。」</div><div>⋯⋯要我告訴他。一陣迷茫，我反而笑了出來。這怎麼解釋？告訴你就會懂嗎？</div><div>可能聽起來很奇怪，傑伊啊，大人們要分手不是那麼容易的。即便確認過彼此有無法貼合的間隙，也並不一定意味著別離。努力尋求妥協，是對待他人的禮儀，也是一種謙虛的方式。</div><div>當然還是有些人會分開，並不是因為誰錯了，只是各自盡了最大努力，遺憾的是仍會產生那樣的結果。</div><div>因為彼此固有的存在方式和壓力不同，不是不見面，是無法見面。就像以又快又急的速度掠過地球的行星一樣，照數學原理來說，兩個巨大的潛在事件擦肩而過，雄偉而固有的形態，咻！</div><div>有時候，我們根本就看不出發生了什麼事，以非常強烈飛快的速度，咻！但在各自內部有某些東西被燃燒，當發現時早已消失了。雖然只是擦身而過，但被燒焦了，如果直接撞上會粉身碎骨，所以在掠過的同時燃燒。</div><div>所謂大人的身體裡說不定有很多那種灰燼吧，那些灰燼在體內留下只有自己能理解的暗號，對於對方沒有說的話，同時產生疑問和敬畏。</div><div>怎麼會講到這個？對了，媽媽和爸爸⋯⋯就是累了。</div><div>「理解」是需要花費心力的事，就像累得躺下時會先摘下帽子扔出去一樣⋯⋯那種事無法完全說明清楚。只能說在考慮如何擺脫困境時，會說出並非完全的真話和假話。</div><div>「問我為什麼跟爸爸分開？」</div><div>「嗯。」</div><div>「嗯⋯⋯因為我們想的不一樣。」</div><div>傑伊意外地露出輕輕一笑，然後用訓誡般的口吻說出只有在教科書上才會出現的話。</div><div>「那應該要討論啊，現在是民主主義社會嘛。」</div><div><br></div><div>——#金愛爛《外面是夏天》〈遮蓋的手〉p.185~187</div><div><br></div><div>#大田出版 #韓國文學 #遺憾 #分開</div></div>",
       "time": "20:00",
-      "canvaUrl": "",
+      "canvaUrl": "https://www.canva.com/design/DAHUfCfsUp8/4l77GqQz8ls3dkGUzAELkg/view?utm_content=DAHUfCfsUp8&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc3391f98c7",
       "ratio": "1-1",
       "theme": "晚上多讀一點點",
-      "title": "你的夏天還好嗎？",
+      "title": "外面是夏天",
       "fbImageCount": 1,
       "status": "draft",
       "createdAt": "2026-10-27T06:33:54.726Z",
-      "updatedAt": "2026-10-28T04:25:43.250Z"
+      "updatedAt": "2026-11-02T08:07:37.310Z"
     }
   ],
   "2026-11-03": [
     {
       "_id": "p_1793082853453_h2zzge",
-      "caption": "<div>【早上只讀一點點】 《會好起來的，就算慢一點也沒關係》</div>",
+      "caption": "<div>【早上只讀一點點】 《會好起來的，就算慢一點也沒關係》</div><div><br></div><div>你的身體可能比大腦更早感受到失落。</div><div><br></div><div>#大田出版 #察覺 #失落 #焦慮 #會好起來的</div>",
       "time": "08:00",
-      "canvaUrl": "",
-      "ratio": "1-1",
+      "canvaUrl": "https://www.canva.com/design/DAHV0NUBB0A/Ddnr4Vab4uPKBZcm-3mdpQ/view?utm_content=DAHV0NUBB0A&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h738c17ca01",
+      "ratio": "4-5",
       "theme": "早上只讀一點點",
       "title": "會好起來的，就算慢一點也沒關係",
       "fbImageCount": 1,
       "status": "draft",
       "createdAt": "2026-10-27T06:34:13.453Z",
-      "updatedAt": "2026-10-28T04:26:03.301Z"
+      "updatedAt": "2026-11-02T07:52:25.285Z"
     },
     {
       "_id": "p_1793082862956_go42lw",
@@ -4608,31 +4608,31 @@ var externalDB = {
     },
     {
       "_id": "p_1793082868993_ghdhxw",
-      "caption": "<div>【晚上多讀一點點】 《外面是夏天》</div>",
+      "caption": "<div>【晚上多讀一點點】 《你的夏天還好嗎?》</div>",
       "time": "20:00",
       "canvaUrl": "",
       "ratio": "1-1",
       "theme": "晚上多讀一點點",
-      "title": "外面是夏天",
+      "title": "你的夏天還好嗎?",
       "fbImageCount": 1,
       "status": "draft",
       "createdAt": "2026-10-27T06:34:28.993Z",
-      "updatedAt": "2026-10-28T04:26:31.270Z"
+      "updatedAt": "2026-11-02T08:07:53.073Z"
     }
   ],
   "2026-11-04": [
     {
       "_id": "p_1793082877123_0owiqu",
-      "caption": "<div>【早上只讀一點點】 《<span>如果我有勇氣失去你</span>》</div><div><br></div><div><div><div>〈閃閃發光〉 <span>#原子邦妮</span></div></div><div><div>有多久沒有這樣靜靜跟自己待著</div><div>沒有等待誰</div><div>沒有期望什麼</div><div>因一首曲子落淚</div><div>為一篇樂章狂喜</div></div><div><div>那是真正的你</div><div>有一點夢想</div><div>有自己喜歡的事</div><div>有將會遇見的人</div></div><div><div>只是那樣平板的每日</div><div>讓你忘記了嗎</div></div><div><div>就算只有一瞬間也好</div><div>請想起來</div><div>那個曾經閃閃發光的你</div><div>然後不管能持續多久都好</div><div>用那樣的你去無畏地活著</div></div><div><div>-</div></div><div><div>本文摘自</div></div><div><div>原子邦妮《<span>#如果我有勇氣失去你</span>》-〈閃閃發光〉</div></div></div>",
+      "caption": "<div>【早上只讀一點點】 《<span>如果我有勇氣失去你</span>》</div><div><br></div><div><div><div>〈閃閃發光〉 <span>#原子邦妮</span></div></div><div><div>有多久沒有這樣靜靜跟自己待著</div><div>沒有等待誰</div><div>沒有期望什麼</div><div>因一首曲子落淚</div><div>為一篇樂章狂喜</div></div><div><div>那是真正的你</div><div>有一點夢想</div><div>有自己喜歡的事</div><div>有將會遇見的人</div></div><div><div>只是那樣平板的每日</div><div>讓你忘記了嗎</div></div><div><div>就算只有一瞬間也好</div><div>請想起來</div><div>那個曾經閃閃發光的你</div><div>然後不管能持續多久都好</div><div>用那樣的你去無畏地活著</div></div><div><div>-</div></div><div><div>本文摘自</div></div><div><div>原子邦妮《<span>#如果我有勇氣失去你</span>》-〈閃閃發光〉</div></div></div><div><br></div><div>#大田出版 #原子邦妮 #詩集</div>",
       "time": "08:00",
-      "canvaUrl": "",
+      "canvaUrl": "https://www.canva.com/design/DAHZXqjBNHI/DZfK9R7TXZgYLvE8I7IfCw/view?utm_content=DAHZXqjBNHI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h07ab387995",
       "ratio": "1-1",
       "theme": "早上只讀一點點",
       "title": "如果我有勇氣失去你",
       "fbImageCount": 1,
       "status": "draft",
       "createdAt": "2026-10-27T06:34:37.123Z",
-      "updatedAt": "2026-10-29T05:50:40.940Z"
+      "updatedAt": "2026-10-29T06:51:47.465Z"
     },
     {
       "_id": "p_1793082892731_mnvzip",
@@ -4776,7 +4776,7 @@ var externalDB = {
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-10-29T05:57:41.664Z",
+  "updatedAt": "2026-11-02T08:08:02.866Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
