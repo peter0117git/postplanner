@@ -4545,12 +4545,12 @@ var externalDB = {
       "time": "08:00",
       "canvaUrl": "https://www.canva.com/design/DAHZXCw1VPI/-AMFw4usmhjLIjNHb8WtYQ/view?utm_content=DAHZXCw1VPI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h0620bcb37f",
       "ratio": "1-1",
-      "theme": "早上只讀一點點",
+      "theme": "早上只畫一點點",
       "title": "每天只畫一點點，365天燃燒你的植物魂",
       "fbImageCount": 1,
       "status": "draft",
       "createdAt": "2026-10-27T06:32:25.958Z",
-      "updatedAt": "2026-10-29T05:35:07.978Z"
+      "updatedAt": "2026-11-02T08:41:03.503Z"
     },
     {
       "_id": "p_1793082824893_6v2o83",
@@ -4595,16 +4595,16 @@ var externalDB = {
     },
     {
       "_id": "p_1793082862956_go42lw",
-      "caption": "<div>【圖文時間】 《每天只畫一點點，365天燃燒你的植物魂》</div>",
+      "caption": "<div>【圖文時間】 《每天只畫一點點，365天燃燒你的植物魂》</div><div><br></div><div><div>不必刻意安排，讓想像力像野花一樣自由生長。</div><div>在紙上畫一片草地，添上幾朵小花，再邀請昆蟲和更多植物一起加入。</div><div>不需要追求完美，也不必遵循固定的模樣，只要跟著自己的心情，讓色彩與線條慢慢延伸。</div><div>偶爾放下生活的煩惱，享受無所事事的片刻。</div><div>拿起畫筆，創造一座屬於自己的小小花園吧！</div><div><br></div><div>#大田出版 #繪畫 #插畫 #每天只畫一點點</div></div>",
       "time": "18:00",
-      "canvaUrl": "",
+      "canvaUrl": "https://www.canva.com/design/DAHZXCw1VPI/-AMFw4usmhjLIjNHb8WtYQ/view?utm_content=DAHZXCw1VPI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h0620bcb37f",
       "ratio": "1-1",
       "theme": "圖文時間",
       "title": "每天只畫一點點，365天燃燒你的植物魂",
       "fbImageCount": 1,
       "status": "draft",
       "createdAt": "2026-10-27T06:34:22.956Z",
-      "updatedAt": "2026-10-28T04:26:12.020Z"
+      "updatedAt": "2026-11-02T08:45:47.794Z"
     },
     {
       "_id": "p_1793082868993_ghdhxw",
@@ -4668,12 +4668,12 @@ var externalDB = {
       "time": "08:00",
       "canvaUrl": "",
       "ratio": "1-1",
-      "theme": "早上只讀一點點",
+      "theme": "早上只畫一點點",
       "title": "每天只畫一點點，365天燃燒你的植物魂",
       "fbImageCount": 1,
       "status": "draft",
       "createdAt": "2026-10-28T04:28:11.210Z",
-      "updatedAt": "2026-10-29T04:48:10.106Z"
+      "updatedAt": "2026-11-02T08:41:07.754Z"
     },
     {
       "_id": "p_1793161721345_7o5d5e",
@@ -4776,7 +4776,7 @@ var externalDB = {
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-11-02T08:08:02.866Z",
+  "updatedAt": "2026-11-02T08:45:58.362Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
