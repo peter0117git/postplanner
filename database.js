@@ -4608,16 +4608,16 @@ var externalDB = {
     },
     {
       "_id": "p_1793082868993_ghdhxw",
-      "caption": "<div>【晚上多讀一點點】 《你的夏天還好嗎?》</div>",
+      "caption": "<div>【晚上多讀一點點】 《你的夏天還好嗎?》</div><div><br></div><div><div>迎新會那天，我悄悄離開會場跑到外面的草地，也是因為這個原因，我希望在我消失之後，有人會發現我曾經在那裡。</div><div>從會場離開後我也沒回家，就在人文學院附近徘徊。雖然不喜歡像模仿什麼似的自怨自艾、扭捏作態，但我還是期待有人可以像在畫中找出隱藏的寶物一般，發現我並在額頭上畫一個大圓圈。</div><div>而就在那裡，在人文學院黑暗的走廊上，學長就站在走廊盡頭，那個修長又模糊的剪影。他不知是剛好去洗手間，還是要確認個人置物櫃，重點是學長認出了我。</div><div>「妳是美英對吧？徐美英。」</div><div>「啊?!對。」</div><div>我很意外學長居然知道我的名字，同時也有一點隱約的不安，難道是因為我胖胖的所以才引人注目嗎？或者只是在剛才的真心話大冒險中，因為一個骯髒無聊的惡作劇失敗才湊巧跑出來的？</div><div>「聽說妳是從雲山來的？我爸的老家也在那裡。」</div><div>「啊！是。」</div><div>「怎麼自己一個人？」</div><div>「喔……我……沒有……只是在想點事情而已。」</div><div>也許是這藉口一聽就破綻百出，或是因為我眼睛眨得太厲害了，學長微微一笑。</div><div>「在裡頭沒看到妳，所以就出來找妳。待會兒見。」</div><div>我躊躇了一會兒，決定往他的反方向走。其實並沒有目的地，但我必須做出好像要去哪裡的樣子才行。</div><div>他往草地走去才沒幾步，突然轉頭說了一句：</div><div>「抬起頭來，妳這小傢伙。」</div><div>也許是因為這個原因吧，後來有一次，有人問我愛情是什麼？</div><div>我回答：「是發現我不在的那個人。」</div><div><br></div><div>——摘自《你的夏天還好嗎》〈你的夏天還好嗎〉p.10~12</div><div>#你的夏天還好嗎 #金愛爛 #大田出版</div></div>",
       "time": "20:00",
-      "canvaUrl": "",
+      "canvaUrl": "https://www.canva.com/design/DAHUfj-Jpfo/YzTX5cVymrNektvCj6qo6Q/view?utm_content=DAHUfj-Jpfo&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hf24202c62e",
       "ratio": "1-1",
       "theme": "晚上多讀一點點",
       "title": "你的夏天還好嗎?",
       "fbImageCount": 1,
       "status": "draft",
       "createdAt": "2026-10-27T06:34:28.993Z",
-      "updatedAt": "2026-11-02T08:07:53.073Z"
+      "updatedAt": "2026-11-02T09:22:34.972Z"
     }
   ],
   "2026-11-04": [
@@ -4632,33 +4632,33 @@ var externalDB = {
       "fbImageCount": 1,
       "status": "draft",
       "createdAt": "2026-10-27T06:34:37.123Z",
-      "updatedAt": "2026-10-29T06:51:47.465Z"
+      "updatedAt": "2026-11-02T09:17:23.674Z"
     },
     {
       "_id": "p_1793082892731_mnvzip",
-      "caption": "<div>【圖文時間】 《宇希時間》</div>",
+      "caption": "<div>【圖文時間】 《宇希時間》</div><div><br></div><div><div>如果能回到過去，<br>不想再對自己說「堅強一點」，<br>而是想好好珍惜每一次擁抱、多說幾句話，<br>再多陪媽媽一會兒。</div><div>因為我們總以為還有明天，<br>卻忘了，能夠相伴的每一天，都是珍貴的禮物。</div><div>如果今天還能見到想念的人，<br>就好好抱抱他吧。</div><div><br></div><div>#大田出版 #宇希的貓 #宇希 #親情 #陪伴 #珍惜當下</div></div>",
       "time": "18:00",
-      "canvaUrl": "",
-      "ratio": "4-5",
+      "canvaUrl": "https://www.canva.com/design/DAHNdqdK6aI/PiMT2vlLGuDlWm3KmDjn9g/view?utm_content=DAHNdqdK6aI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=ha7005fd718",
+      "ratio": "1-1",
       "theme": "圖文時間",
       "title": "宇希時間",
       "fbImageCount": 1,
       "status": "draft",
       "createdAt": "2026-10-27T06:34:52.731Z",
-      "updatedAt": "2026-10-28T04:28:24.110Z"
+      "updatedAt": "2026-11-02T09:17:32.661Z"
     },
     {
       "_id": "p_1793082899158_e342l5",
-      "caption": "<div>【晚上多讀一點點】 《慢慢寄出去的心》</div>",
+      "caption": "<div><div>【晚上多讀一點點】 《慢慢寄出去的心》</div></div><div><br></div><div><div>直到班導師聯絡之後，爸爸才知道我一直用腳尖走路。雖然跑了好幾家小兒科，但依舊沒有改善。</div><div>「所以我爸開始帶我到處旅行。」</div><div>爸爸的上司因為有個正值叛逆期的兒子而操心不已，他建議爸爸去露營，說躺在帳篷裡，海浪聲、風聲都會變得清晰，只要並肩躺著一起聽那些聲音，就算什麼話都不說，關係也會變好。</div><div>因此我和爸爸每到週末便會走遍全國的海邊。</div><div>某天晚上，或許是睡前吃了西瓜，我突然想上廁所。出了帳篷朝海邊走去，在沙灘上小便。想要回到帳篷時，卻怎麼也找不到原來的帳篷。</div><div>我喊著爸爸，卻沒有任何回應。沒有辦法，我只好再度走回沙灘，把不曉得是誰丟下的席子攤開坐在上面。</div><div>我打起瞌睡，夢見自己在海邊放煙火。</div><div>張開眼睛時，爸爸正坐在我身邊。</div><div>我揉起眼睛。</div><div>「你看那邊。」</div><div>爸爸用手指向大海。</div><div>順著爸爸的指尖望去，太陽露出一抹弧光，像是指甲邊緣那半彎的月影。</div><div>爸爸扶我起身，接著站在我身後，把我抱住，像擁入懷裡一般。</div><div>他朝正在升起的太陽伸出手。</div><div>「要不要試著用手托起太陽？」爸爸說道。</div><div>我跟著他伸出手，讓太陽停在中指的指尖上。</div><div>「嘿咻！嘿咻！」爸爸說。</div><div>我出力慢慢把手往上抬，指尖傳來一股沉甸甸的觸感。</div><div>「嘿咻！嘿咻！」</div><div>我也跟著爸爸一起喊，直到太陽完全升起，我和爸爸一起把太陽推向天空。</div><div>當太陽脫離海面，變成一個完整的圓的瞬間，我的腳跟落了下來。</div><div>身體的重量完整地沉到腳底板，我嚇得往後仰，摔倒在地。</div><div>爸爸撫摸我的頭，說：</div><div>「吃早餐吧。」</div><div>我忽然餓得難以忍受。</div><div><br></div><div>——摘自《慢慢寄出去的心》</div><div><br></div></div><div><div><span>#大田出版</span> <span>#尹成姬</span> <span>#溫柔</span> <span>#小說</span></div></div>",
       "time": "20:00",
-      "canvaUrl": "",
-      "ratio": "1-1",
+      "canvaUrl": "https://www.canva.com/design/DAHXydebpfo/wTI7C4bqpbBNmqfm4hjPtg/view?utm_content=DAHXydebpfo&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h82aaa41725",
+      "ratio": "4-5",
       "theme": "晚上多讀一點點",
       "title": "慢慢寄出去的心",
       "fbImageCount": 1,
       "status": "draft",
       "createdAt": "2026-10-27T06:34:59.158Z",
-      "updatedAt": "2026-10-28T04:27:58.789Z"
+      "updatedAt": "2026-11-02T09:30:29.834Z"
     }
   ],
   "2026-11-05": [
@@ -4776,7 +4776,7 @@ var externalDB = {
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-11-02T08:45:58.362Z",
+  "updatedAt": "2026-11-02T09:31:01.078Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
