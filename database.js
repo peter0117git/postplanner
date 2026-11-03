@@ -4705,42 +4705,42 @@ var externalDB = {
   "2026-11-06": [
     {
       "_id": "p_1793161746080_flz84z",
-      "caption": "<div>【早上只讀一點點】 《上帝不眨眼：50堂百萬人瘋傳的人生智慧》</div><div><br></div>",
+      "caption": "<div>【早上只讀一點點】 《上帝不眨眼：50堂百萬人瘋傳的人生智慧》</div><div><br></div><div><div><div>生命沒有美麗包裝，但仍是一個禮物</div></div><div><div>我有位朋友的電子郵件簽名檔是李歐納．柯恩一首歌的副歌歌詞，歌詞裡提醒我們不需要追求完美表現。我的朋友擁抱了自己在藝術和音樂方面的不完美，並相信這些缺點是讓光可以透進來的縫隙。</div></div><div><div>你可以在每天短暫的空閒時間裡讓生活更豐富，你可以讓其他人大笑、微笑、充滿希望、歌唱、思考。一年中最重要的日子並非聖誕節或復活節、紀念日或生日，最重要的是當下，所以只要用盡全力活在當下天就夠了。</div></div><div><div>要做到這點表示你可能會遇上一些麻煩，因為生命總是一團亂。沒錯，但生命是個禮物，每天都是，只是這個禮物沒有用蝴蝶結包裝起來。多年前，有位耶穌會的神父批評我的生活態度太小心翼翼。他說我就像得到了一件可以穿去參加派對的美麗洋裝，但我卻因為害怕弄髒洋裝，所以整場派對都呆坐在原地，不吃蛋糕、不喝雞尾酒，也不玩遊戲，以免弄髒衣服。</div></div><div><div>他說得對，我太害怕跌倒、太害怕失敗、太害怕享受生命，以至於我只是坐在一旁呆看。我不會再這麼做了。癌症徹底打醒了我。</div></div><div><div>既然我已經在人生的派對現場了，就要放肆享受，盡可能玩得全身髒兮兮……而且我不玩到最後一刻，不會甘心離場。</div></div><div><div>擷取自《上帝不眨眼：50堂百萬人瘋傳的人生智慧》 第50堂課p.288</div></div></div>",
       "time": "09:00",
-      "canvaUrl": "",
-      "ratio": "1-1",
+      "canvaUrl": "https://www.canva.com/design/DAHXIEOLLC4/dgdWOiKx_02SpZSx6DIQlw/view?utm_content=DAHXIEOLLC4&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h05e9958596",
+      "ratio": "4-5",
       "theme": "早上只讀一點點",
       "title": "上帝不眨眼：50堂百萬人瘋傳的人生智慧",
       "fbImageCount": 1,
       "status": "draft",
       "createdAt": "2026-10-28T04:29:06.080Z",
-      "updatedAt": "2026-10-28T04:29:06.080Z"
+      "updatedAt": "2026-11-03T06:19:18.122Z"
     },
     {
       "_id": "p_1793161755604_b1w2o4",
-      "caption": "<div>【圖文時間】&nbsp;<span>《幸福就是吃飯睡覺等待</span><span> vol.5</span><span>》</span></div><div><br></div>",
+      "caption": "<div>【圖文時間】&nbsp;<span>《幸福就是吃飯睡覺等待</span><span> vol.5</span><span>》</span></div><div><br></div><div><div>從買蘿蔔、切絲、曬乾，到親手做成料理，</div><div>每一步都讓人充滿期待。</div><div><br></div><div>《幸福就是吃飯睡覺等待 vol.5》</div><div><br></div><div>#大田出版 #幸福就是吃飯睡覺等待 #水凪トリ #漫畫 #日常</div></div>",
       "time": "09:00",
-      "canvaUrl": "",
+      "canvaUrl": "https://www.canva.com/design/DAHZ1jgC_wE/3HuNwN7vXKZKeXLyOqfGdg/view?utm_content=DAHZ1jgC_wE&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hedf83e3846",
       "ratio": "1-1",
       "theme": "圖文時間",
       "title": "幸福就是吃飯睡覺等待 vol.5",
       "fbImageCount": 1,
       "status": "draft",
       "createdAt": "2026-10-28T04:29:15.604Z",
-      "updatedAt": "2026-11-02T09:38:32.589Z"
+      "updatedAt": "2026-11-03T07:04:16.894Z"
     },
     {
       "_id": "p_1793161804616_8gloui",
-      "caption": "<div>【晚上多讀一點點】 《接近無限透明的藍》</div><div><br></div>",
+      "caption": "<div>【晚上多讀一點點】 《接近無限透明的藍》</div><div><br></div><div><div>◎第十九屆群像新人獎</div><div>　　第七十五屆芥川龍之介賞</div><div>　　日本銷售超過三百五十萬本</div><div>　　村上龍成名小說！</div><div>&nbsp;</div><div>　　24歲即奠定大師地位的代表作！</div><div>　　影響日本許多知名作家的驚人之作！</div><div>　　譯者張致斌依據原版重新翻譯的完整正確譯本！</div><div>　　1976年出版立刻引起話題，並獲得日本文壇最高榮譽芥川獎！</div><div>&nbsp;</div><div>　　你到底是什麼人？</div><div>　　你到底在懼怕什麼？</div><div>　　你是如何變成一具任人玩弄的人偶的呢？</div><div>　　濃烈的感官體驗，狂亂了青春；</div><div>　　脫序的生活，譜成了迷幻的歌；</div><div>　　基地裡那年輕失落的靈魂，</div><div>　　麻痺自己只因不想再感傷，</div><div>　　戲謔人生是為了反抗對他嗤之以鼻的社會。</div><div>　　他其實想化作那出現在黎明時，近乎透明的光暈。</div><div>　　那彷彿能反射出真實的他，無限透明的藍光。</div><div>　　如同詩句韻律般優美起伏的，</div><div>　　接近無限透明的藍……&nbsp;</div></div><div><br></div><div><div><div>◎向村上龍先生致敬</div></div><div><div>那一年，台北國際書展，邀請村上龍來演講。</div></div><div><div>演講非常精彩，但如此重要的小說家，台灣當時竟沒有一本真正授權的書⋯⋯</div></div><div><div>後來談了版權，找到了深愛村上龍小說的譯者，開始一本一本重新翻譯。</div></div><div><div>接近無限透明的藍、寄物櫃的嬰孩、69、跑啊！高橋、共生虫、希望之國、五分後的世界、到處存在的場所到處不存在的我、55歲開始的Hello Life、老人恐怖份子、最後家族、所有男人都是消耗品、村上龍料理小說、村上龍電影小說、寂寞國殺人⋯⋯</div></div><div><div>他的小說精準預言日本社會，讀來格外驚心。</div></div><div><div>最近重新改版封面的《接近無限透的藍》，距離他得到芥川賞，已經是半世紀了。</div></div><div><div>有的書，續約維持出版；有的書，市場難以青睞，已經絕版。</div></div><div><div>像這一本《寂寞國殺人》，在短短八千多字的敘述，字字句句簡潔提煉出許多問題與反思，小說家不以「人性失序」來譴責少年殺人事件，也不以因為環境問題，教育問題來搪塞。一個創作者，他看到整個日本的進化，成了一個龐大的寂寞國體，在這個充滿寂寞因子的民族裡，持續富裕，持續進步，持續禮貌待人，卻渾然不知自我的持續寂寞……</div></div><div><div>今天聽聞小說家人間登出。作為一個讀者與編輯，向你深深敬禮致意。謝謝你的文字和「像鯊魚般的好奇心」。</div></div><div><div><span>＃村上龍&nbsp;#大田出版</span></div></div></div>",
       "time": "20:00",
-      "canvaUrl": "",
-      "ratio": "1-1",
+      "canvaUrl": "https://www.canva.com/design/DAHZ14aRBcE/Q3JAzcQT56BnxepQz864ig/view?utm_content=DAHZ14aRBcE&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h65a30387ba",
+      "ratio": "4-5",
       "theme": "晚上多讀一點點",
       "title": "接近無限透明的藍",
       "fbImageCount": 1,
       "status": "draft",
       "createdAt": "2026-10-28T04:30:04.616Z",
-      "updatedAt": "2026-10-28T04:30:04.616Z"
+      "updatedAt": "2026-11-03T07:39:45.881Z"
     }
   ],
   "2026-11-07": [
@@ -4776,7 +4776,7 @@ var externalDB = {
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-11-03T06:09:19.296Z",
+  "updatedAt": "2026-11-03T07:44:00.414Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
