@@ -4731,7 +4731,7 @@ var externalDB = {
     },
     {
       "_id": "p_1793161804616_8gloui",
-      "caption": "<div>【晚上多讀一點點】 《接近無限透明的藍》</div><div><br></div><div><div>◎第十九屆群像新人獎</div><div>　　第七十五屆芥川龍之介賞</div><div>　　日本銷售超過三百五十萬本</div><div>　　村上龍成名小說！</div><div>&nbsp;</div><div>　　24歲即奠定大師地位的代表作！</div><div>　　影響日本許多知名作家的驚人之作！</div><div>　　譯者張致斌依據原版重新翻譯的完整正確譯本！</div><div>　　1976年出版立刻引起話題，並獲得日本文壇最高榮譽芥川獎！</div><div>&nbsp;</div><div>　　你到底是什麼人？</div><div>　　你到底在懼怕什麼？</div><div>　　你是如何變成一具任人玩弄的人偶的呢？</div><div>　　濃烈的感官體驗，狂亂了青春；</div><div>　　脫序的生活，譜成了迷幻的歌；</div><div>　　基地裡那年輕失落的靈魂，</div><div>　　麻痺自己只因不想再感傷，</div><div>　　戲謔人生是為了反抗對他嗤之以鼻的社會。</div><div>　　他其實想化作那出現在黎明時，近乎透明的光暈。</div><div>　　那彷彿能反射出真實的他，無限透明的藍光。</div><div>　　如同詩句韻律般優美起伏的，</div><div>　　接近無限透明的藍……&nbsp;</div></div><div><br></div><div><div><div>◎向村上龍先生致敬</div></div><div><div>那一年，台北國際書展，邀請村上龍來演講。</div></div><div><div>演講非常精彩，但如此重要的小說家，台灣當時竟沒有一本真正授權的書⋯⋯</div></div><div><div>後來談了版權，找到了深愛村上龍小說的譯者，開始一本一本重新翻譯。</div></div><div><div>接近無限透明的藍、寄物櫃的嬰孩、69、跑啊！高橋、共生虫、希望之國、五分後的世界、到處存在的場所到處不存在的我、55歲開始的Hello Life、老人恐怖份子、最後家族、所有男人都是消耗品、村上龍料理小說、村上龍電影小說、寂寞國殺人⋯⋯</div></div><div><div>他的小說精準預言日本社會，讀來格外驚心。</div></div><div><div>最近重新改版封面的《接近無限透的藍》，距離他得到芥川賞，已經是半世紀了。</div></div><div><div>有的書，續約維持出版；有的書，市場難以青睞，已經絕版。</div></div><div><div>像這一本《寂寞國殺人》，在短短八千多字的敘述，字字句句簡潔提煉出許多問題與反思，小說家不以「人性失序」來譴責少年殺人事件，也不以因為環境問題，教育問題來搪塞。一個創作者，他看到整個日本的進化，成了一個龐大的寂寞國體，在這個充滿寂寞因子的民族裡，持續富裕，持續進步，持續禮貌待人，卻渾然不知自我的持續寂寞……</div></div><div><div>今天聽聞小說家人間登出。作為一個讀者與編輯，向你深深敬禮致意。謝謝你的文字和「像鯊魚般的好奇心」。</div></div><div><div><span>＃村上龍&nbsp;#大田出版</span></div></div></div>",
+      "caption": "<div>【晚上多讀一點點】 《接近無限透明的藍》</div><div><br></div><div><div>◎第十九屆群像新人獎</div><div>　　第七十五屆芥川龍之介賞</div><div>　　日本銷售超過三百五十萬本</div><div>　　村上龍成名小說！</div><div>&nbsp;</div><div>　　24歲即奠定大師地位的代表作！</div><div>　　影響日本許多知名作家的驚人之作！</div><div>　　譯者張致斌依據原版重新翻譯的完整正確譯本！</div><div>　　1976年出版立刻引起話題，並獲得日本文壇最高榮譽芥川獎！</div><div>&nbsp;</div><div>　　你到底是什麼人？</div><div>　　你到底在懼怕什麼？</div><div>　　你是如何變成一具任人玩弄的人偶的呢？</div><div>　　濃烈的感官體驗，狂亂了青春；</div><div>　　脫序的生活，譜成了迷幻的歌；</div><div>　　基地裡那年輕失落的靈魂，</div><div>　　麻痺自己只因不想再感傷，</div><div>　　戲謔人生是為了反抗對他嗤之以鼻的社會。</div><div>　　他其實想化作那出現在黎明時，近乎透明的光暈。</div><div>　　那彷彿能反射出真實的他，無限透明的藍光。</div><div>　　如同詩句韻律般優美起伏的，</div><div>　　接近無限透明的藍……&nbsp;</div></div><div><div><br></div><div><div><span>＃村上龍&nbsp;#大田出版</span></div></div></div>",
       "time": "20:00",
       "canvaUrl": "https://www.canva.com/design/DAHZ14aRBcE/Q3JAzcQT56BnxepQz864ig/view?utm_content=DAHZ14aRBcE&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h65a30387ba",
       "ratio": "4-5",
@@ -4740,7 +4740,7 @@ var externalDB = {
       "fbImageCount": 1,
       "status": "draft",
       "createdAt": "2026-10-28T04:30:04.616Z",
-      "updatedAt": "2026-11-03T07:39:45.881Z"
+      "updatedAt": "2026-11-03T08:11:16.115Z"
     }
   ],
   "2026-11-07": [
@@ -4817,7 +4817,7 @@ var externalDB = {
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-11-03T08:09:45.247Z",
+  "updatedAt": "2026-11-03T08:11:31.079Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
