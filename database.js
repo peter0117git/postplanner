@@ -4705,7 +4705,7 @@ var externalDB = {
   "2026-11-06": [
     {
       "_id": "p_1793161746080_flz84z",
-      "caption": "<div>【早上只讀一點點】 《上帝不眨眼：50堂百萬人瘋傳的人生智慧》</div><div><br></div><div><div><div>生命沒有美麗包裝，但仍是一個禮物</div></div><div><div>我有位朋友的電子郵件簽名檔是李歐納．柯恩一首歌的副歌歌詞，歌詞裡提醒我們不需要追求完美表現。我的朋友擁抱了自己在藝術和音樂方面的不完美，並相信這些缺點是讓光可以透進來的縫隙。</div></div><div><div>你可以在每天短暫的空閒時間裡讓生活更豐富，你可以讓其他人大笑、微笑、充滿希望、歌唱、思考。一年中最重要的日子並非聖誕節或復活節、紀念日或生日，最重要的是當下，所以只要用盡全力活在當下天就夠了。</div></div><div><div>要做到這點表示你可能會遇上一些麻煩，因為生命總是一團亂。沒錯，但生命是個禮物，每天都是，只是這個禮物沒有用蝴蝶結包裝起來。多年前，有位耶穌會的神父批評我的生活態度太小心翼翼。他說我就像得到了一件可以穿去參加派對的美麗洋裝，但我卻因為害怕弄髒洋裝，所以整場派對都呆坐在原地，不吃蛋糕、不喝雞尾酒，也不玩遊戲，以免弄髒衣服。</div></div><div><div>他說得對，我太害怕跌倒、太害怕失敗、太害怕享受生命，以至於我只是坐在一旁呆看。我不會再這麼做了。癌症徹底打醒了我。</div></div><div><div>既然我已經在人生的派對現場了，就要放肆享受，盡可能玩得全身髒兮兮……而且我不玩到最後一刻，不會甘心離場。</div></div><div><div>擷取自《上帝不眨眼：50堂百萬人瘋傳的人生智慧》 第50堂課p.288</div></div></div>",
+      "caption": "<div>【早上只讀一點點】 《上帝不眨眼：50堂百萬人瘋傳的人生智慧》</div><div><br></div><div><div><div>生命沒有美麗包裝，但仍是一個禮物</div></div><div><div>我有位朋友的電子郵件簽名檔是李歐納．柯恩一首歌的副歌歌詞，歌詞裡提醒我們不需要追求完美表現。我的朋友擁抱了自己在藝術和音樂方面的不完美，並相信這些缺點是讓光可以透進來的縫隙。</div></div><div><div>你可以在每天短暫的空閒時間裡讓生活更豐富，你可以讓其他人大笑、微笑、充滿希望、歌唱、思考。一年中最重要的日子並非聖誕節或復活節、紀念日或生日，最重要的是當下，所以只要用盡全力活在當下天就夠了。</div></div><div><div>要做到這點表示你可能會遇上一些麻煩，因為生命總是一團亂。沒錯，但生命是個禮物，每天都是，只是這個禮物沒有用蝴蝶結包裝起來。多年前，有位耶穌會的神父批評我的生活態度太小心翼翼。他說我就像得到了一件可以穿去參加派對的美麗洋裝，但我卻因為害怕弄髒洋裝，所以整場派對都呆坐在原地，不吃蛋糕、不喝雞尾酒，也不玩遊戲，以免弄髒衣服。</div></div><div><div>他說得對，我太害怕跌倒、太害怕失敗、太害怕享受生命，以至於我只是坐在一旁呆看。我不會再這麼做了。癌症徹底打醒了我。</div></div><div><div>既然我已經在人生的派對現場了，就要放肆享受，盡可能玩得全身髒兮兮……而且我不玩到最後一刻，不會甘心離場。</div></div><div><br></div><div><div>擷取自《上帝不眨眼：50堂百萬人瘋傳的人生智慧》 第50堂課p.288</div></div></div><div><br></div><div>#大田出版 #禮物 #人生</div>",
       "time": "09:00",
       "canvaUrl": "https://www.canva.com/design/DAHXIEOLLC4/dgdWOiKx_02SpZSx6DIQlw/view?utm_content=DAHXIEOLLC4&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h05e9958596",
       "ratio": "4-5",
@@ -4714,11 +4714,11 @@ var externalDB = {
       "fbImageCount": 1,
       "status": "draft",
       "createdAt": "2026-10-28T04:29:06.080Z",
-      "updatedAt": "2026-11-03T06:19:18.122Z"
+      "updatedAt": "2026-11-03T07:55:59.179Z"
     },
     {
       "_id": "p_1793161755604_b1w2o4",
-      "caption": "<div>【圖文時間】&nbsp;<span>《幸福就是吃飯睡覺等待</span><span> vol.5</span><span>》</span></div><div><br></div><div><div>從買蘿蔔、切絲、曬乾，到親手做成料理，</div><div>每一步都讓人充滿期待。</div><div><br></div><div>《幸福就是吃飯睡覺等待 vol.5》</div><div><br></div><div>#大田出版 #幸福就是吃飯睡覺等待 #水凪トリ #漫畫 #日常</div></div>",
+      "caption": "<div>【圖文時間】&nbsp;<span>《幸福就是吃飯睡覺等待</span><span> vol.5</span><span>》</span></div><div><br></div><div><div>從買蘿蔔、切絲、曬乾，到親手做成料理，</div><div>每一步都讓人充滿期待、幸福。</div><div><br></div><div>#大田出版 #幸福就是吃飯睡覺等待 #水凪トリ #漫畫 #日常</div></div>",
       "time": "09:00",
       "canvaUrl": "https://www.canva.com/design/DAHZ1jgC_wE/3HuNwN7vXKZKeXLyOqfGdg/view?utm_content=DAHZ1jgC_wE&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hedf83e3846",
       "ratio": "1-1",
@@ -4727,7 +4727,7 @@ var externalDB = {
       "fbImageCount": 1,
       "status": "draft",
       "createdAt": "2026-10-28T04:29:15.604Z",
-      "updatedAt": "2026-11-03T07:04:16.894Z"
+      "updatedAt": "2026-11-03T07:56:09.937Z"
     },
     {
       "_id": "p_1793161804616_8gloui",
@@ -4761,7 +4761,7 @@ var externalDB = {
   "2026-11-08": [
     {
       "_id": "p_1793161851498_uu8tzw",
-      "caption": "<div>【大田布告欄】 《回函抽獎》</div><div><br></div>",
+      "caption": "<div>【大田布告欄】&nbsp;<span>🎉</span>讀者回函｜雙月抽獎得獎名單<span>🎉</span></div><div><span><br></span></div><div>\n\n<div>感謝每一位讀者用心填寫讀者回函，分享對大田出版書籍的心得、建議與回饋<span></span></div>\n\n<div>每一份回函，都是我們持續努力的動力！<span></span></div><div><br></div>\n\n<div><span>🎁</span><span> </span>恭喜本次幸運得獎讀者！<span></span></div>\n\n<div>江○希<span></span></div>\n\n<div>黃○捷\n<span></span></div>\n\n<div>林○瑱<span></span></div>\n\n<div>王○雯<span></span></div>\n\n<div>陳○瑩<span></span></div>\n\n<div>邱○庭\n<span></span></div>\n\n<div>連○誼\n<span></span></div>\n\n<div>廖○伊<span></span></div>\n\n<div>柯○妏 <span></span></div>\n\n<div>江○樺<span><br>\n</span>我們將送出一份神秘小禮物，感謝你們的支持與鼓勵！<span></span></div>\n\n<div>也歡迎大家持續填寫讀者回函，下一次的幸運得主可能就是你！<span></span></div><div><br></div><div><span>#</span>大田出版<span> #</span>讀者回函<span> #</span>抽獎公告<span></span></div></div>",
       "time": "09:00",
       "canvaUrl": "",
       "ratio": "16-9",
@@ -4770,13 +4770,13 @@ var externalDB = {
       "fbImageCount": 1,
       "status": "draft",
       "createdAt": "2026-10-28T04:30:51.498Z",
-      "updatedAt": "2026-10-28T04:30:51.498Z"
+      "updatedAt": "2026-11-03T07:57:01.975Z"
     }
   ]
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-11-03T07:54:44.047Z",
+  "updatedAt": "2026-11-03T07:57:14.059Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
