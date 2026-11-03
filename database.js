@@ -4761,7 +4761,7 @@ var externalDB = {
   "2026-11-08": [
     {
       "_id": "p_1793161851498_uu8tzw",
-      "caption": "<div>【大田布告欄】&nbsp;<span>🎉</span>讀者回函｜雙月抽獎得獎名單<span>🎉</span></div><div><span><br></span></div><div>\n\n<div>感謝每一位讀者用心填寫讀者回函，分享對大田出版書籍的心得、建議與回饋<span></span></div>\n\n<div>每一份回函，都是我們持續努力的動力！<span></span></div><div><br></div>\n\n<div><span>🎁</span><span> </span>恭喜本次幸運得獎讀者！<span></span></div>\n\n<div>江○希<span></span></div>\n\n<div>黃○捷\n<span></span></div>\n\n<div>林○瑱<span></span></div>\n\n<div>王○雯<span></span></div>\n\n<div>陳○瑩<span></span></div>\n\n<div>邱○庭\n<span></span></div>\n\n<div>連○誼\n<span></span></div>\n\n<div>廖○伊<span></span></div>\n\n<div>柯○妏 <span></span></div>\n\n<div>江○樺<span><br>\n</span>我們將送出一份神秘小禮物，感謝你們的支持與鼓勵！<span></span></div>\n\n<div>也歡迎大家持續填寫讀者回函，下一次的幸運得主可能就是你！<span></span></div><div><br></div><div><span>#</span>大田出版<span> #</span>讀者回函<span> #</span>抽獎公告<span></span></div></div>",
+      "caption": "<div><span>🎉</span>【讀者回函｜雙月抽小禮物名單】<span>🎉</span><span></span></div>\n\n<div><span>&nbsp;</span></div>\n\n<div>今年收到不少讀者回函，<span></span></div>\n\n<div>我們決定抽出其中的<span>10</span>位，<span></span></div>\n\n<div>贈送小禮物給 抽中的讀者。<span></span></div>\n\n<div>也想謝謝每一位填寫回函卡的讀者，<span></span></div>\n\n<div>那些留言與建議，是大田源源不絕的暖流！<span></span></div><div><br></div>\n\n<div><span>🎁</span><span> </span>恭喜<span>10</span>位抽到小禮物的讀者：<span></span></div>\n\n<div>桃園市\n江○希<span></span></div>\n\n<div>台中市\n黃○捷 <span></span></div>\n\n<div>台中市\n林○瑱<span></span></div>\n\n<div>台北市\n王○雯<span></span></div>\n\n<div>台南市\n陳○瑩<span></span></div>\n\n<div>桃園市\n邱○庭 <span></span></div>\n\n<div>新北市\n連○誼 <span></span></div>\n\n<div>新北市\n廖○伊<span></span></div>\n\n<div>新北市\n柯○妏 <span></span></div>\n\n<div>宜蘭縣\n江○樺</div><div><span><br>\n</span>我們將陸續寄出小禮物，也謝謝你們回函卡與鼓勵！<span></span></div><div><br></div>\n\n<div>買書的讀者們，記得掃描大田出版的回函<span>QRCODE</span>，並填上完整資料與回饋，<span></span></div>\n\n<div>我們會持續雙月抽喔。<span></span></div>\n\n<div><span>&nbsp;</span></div>\n\n<div><span>#</span>大田出版<span> #</span>讀者回函<span> #</span>抽獎公告<span></span></div>",
       "time": "09:00",
       "canvaUrl": "",
       "ratio": "16-9",
@@ -4770,7 +4770,7 @@ var externalDB = {
       "fbImageCount": 1,
       "status": "draft",
       "createdAt": "2026-10-28T04:30:51.498Z",
-      "updatedAt": "2026-11-03T07:57:01.975Z"
+      "updatedAt": "2026-11-03T08:43:59.563Z"
     }
   ],
   "2026-11-09": [
@@ -5011,7 +5011,7 @@ var externalDB = {
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-11-03T08:18:38.671Z",
+  "updatedAt": "2026-11-03T08:44:13.367Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
