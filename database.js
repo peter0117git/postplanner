@@ -4776,7 +4776,7 @@ var externalDB = {
   "2026-11-09": [
     {
       "_id": "p_1793692671481_8o1f2d",
-      "caption": "<div>【早上只畫一點點】 《每天只畫一點點，365天燃燒你的植物魂》</div><div><br></div>",
+      "caption": "<div>【早上只畫一點點】 《每天只畫一點點:365天繪出你的植物魂》</div><div><br></div>",
       "time": "08:00",
       "canvaUrl": "",
       "ratio": "4-5",
@@ -4785,7 +4785,7 @@ var externalDB = {
       "fbImageCount": 1,
       "status": "draft",
       "createdAt": "2026-11-03T07:57:51.481Z",
-      "updatedAt": "2026-11-03T07:58:17.700Z"
+      "updatedAt": "2026-11-05T06:18:33.647Z"
     },
     {
       "_id": "p_1793692693762_8ewofl",
@@ -4817,20 +4817,20 @@ var externalDB = {
   "2026-11-10": [
     {
       "_id": "p_1793693539782_p1t9mr",
-      "caption": "<div>【早上只讀一點點】 《一次又一次又一次重新開始》</div><div><br></div>",
+      "caption": "<div>【早上只讀一點點】 《一次又一次又一次的重新開始》</div><div><br></div>",
       "time": "08:00",
       "canvaUrl": "",
       "ratio": "4-5",
       "theme": "早上只讀一點點",
-      "title": "一次又一次又一次重新開始",
+      "title": "一次又一次又一次的重新開始",
       "fbImageCount": 1,
       "status": "draft",
       "createdAt": "2026-11-03T08:12:19.782Z",
-      "updatedAt": "2026-11-03T08:12:19.782Z"
+      "updatedAt": "2026-11-05T06:18:22.987Z"
     },
     {
       "_id": "p_1793693564013_cr3xdy",
-      "caption": "<div>【圖文時間】 《每天只畫一點點，365天繪出你的植物魂》</div><div><br></div>",
+      "caption": "<div>【圖文時間】 《每天只畫一點點:365天繪出你的植物魂》</div><div><br></div>",
       "time": "18:00",
       "canvaUrl": "",
       "ratio": "4-5",
@@ -4839,7 +4839,7 @@ var externalDB = {
       "fbImageCount": 1,
       "status": "draft",
       "createdAt": "2026-11-03T08:12:44.013Z",
-      "updatedAt": "2026-11-03T08:12:44.013Z"
+      "updatedAt": "2026-11-05T06:18:28.967Z"
     },
     {
       "_id": "p_1793693596758_rogkds",
@@ -4899,16 +4899,16 @@ var externalDB = {
   "2026-11-12": [
     {
       "_id": "p_1793693705199_96z86v",
-      "caption": "<div>【早上只畫一點點】 《每天只畫一點點，365天繪出你的植物魂》</div><div><br></div>",
+      "caption": "<div>【早上只畫一點點】 《每天只畫一點點:365天繪出你的植物魂》</div><div><br></div>",
       "time": "09:00",
       "canvaUrl": "",
       "ratio": "4-5",
       "theme": "早上只畫一點點",
-      "title": "每天只畫一點點，365天繪出你的植物魂",
+      "title": "每天只畫一點點:365天繪出你的植物魂",
       "fbImageCount": 1,
       "status": "draft",
       "createdAt": "2026-11-03T08:15:05.199Z",
-      "updatedAt": "2026-11-03T08:15:05.199Z"
+      "updatedAt": "2026-11-05T06:18:13.232Z"
     },
     {
       "_id": "p_1793693721210_4vjofb",
@@ -4996,22 +4996,22 @@ var externalDB = {
   "2026-11-15": [
     {
       "_id": "p_1793693899056_snf8eh",
-      "caption": "<div>【新書預告】 《一個人去遠足》</div><div><br></div>",
+      "caption": "<div>【影片分享】 《每天只畫一點點:365天繪出你的植物魂》</div><div><br></div>",
       "time": "09:00",
       "canvaUrl": "",
-      "ratio": "4-5",
-      "theme": "新書預告",
-      "title": "一個人去遠足",
+      "ratio": "16-9",
+      "theme": "影片分享",
+      "title": "每天只畫一點點:365天繪出你的植物魂",
       "fbImageCount": 1,
       "status": "draft",
       "createdAt": "2026-11-03T08:18:19.056Z",
-      "updatedAt": "2026-11-03T08:18:19.056Z"
+      "updatedAt": "2026-11-05T06:19:01.627Z"
     }
   ]
 };
 var externalDBMeta = {
   "schemaVersion": 2,
-  "updatedAt": "2026-11-03T08:44:13.367Z",
+  "updatedAt": "2026-11-05T06:19:09.489Z",
   "tombstones": {
     "p_1785830088136_6sci": "2026-08-07T02:44:23.243Z",
     "p_1785836391120_kw773a": "2026-08-07T04:29:07.505Z",
